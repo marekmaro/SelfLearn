@@ -121,6 +121,7 @@ export async function renderToday(root, { date: requested, onChange }) {
           { class: 'meta-row' },
           s > 0 ? h('span', { class: 'pill koi', title: 'Seria dni z ukończonym wydaniem' }, icon('flame'), `${s} ${plural(s, 'dzień', 'dni', 'dni')}`) : null,
           h('span', { class: 'pill' }, icon('clock'), `ok. ${minutes} min`),
+          h('a', { class: 'pill nurt pill-link', href: '#ustawienia', title: 'Zmień działy, długość wydania i przypomnienie' }, icon('sliders'), 'Dostosuj'),
         ),
       ),
       h('h1', { class: 'date' }, formatLong(date)),
@@ -523,6 +524,7 @@ export async function renderToday(root, { date: requested, onChange }) {
           { class: 'inline-actions' },
           due > 0 ? h('a', { class: 'btn', href: '#powtorki' }, `Powtórki (${due})`, icon('arrow')) : null,
           h('a', { class: 'btn secondary', href: '#zeszyt' }, 'Zeszyt'),
+          h('a', { class: 'btn ghost', href: '#ustawienia' }, icon('sliders'), 'Zmień tematy'),
         ),
       ),
     ];

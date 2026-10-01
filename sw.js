@@ -1,5 +1,5 @@
 // Service worker: aplikacja działa offline, a wydania odświeżają się z sieci.
-const VERSION = 'v1';
+const VERSION = 'v2';
 const SHELL = `selflearn-shell-${VERSION}`;
 const CONTENT = 'selflearn-content';
 const FONTS = 'selflearn-fonts';

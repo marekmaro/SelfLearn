@@ -50,10 +50,11 @@ async function route() {
   } else if (hash === 'zeszyt') {
     setTab('zeszyt');
     renderSaved(root);
-  } else if (hash === 'profil') {
+  } else if (hash === 'profil' || hash === 'ustawienia') {
     setTab('profil');
     await renderProfile(root, {
       ...common,
+      focus: hash === 'ustawienia' ? 'ustawienia' : null,
       onReset: () => {
         location.hash = '';
         route();

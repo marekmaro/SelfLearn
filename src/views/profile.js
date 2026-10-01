@@ -1,4 +1,4 @@
-// Profil: poziom (karp → smok), ustawienia, przypomnienie, archiwum wydań, kopia danych.
+// Profil: ustawienia wydania, przypomnienie, poziom (karp → smok), archiwum wydań, kopia danych.
 import { SECTIONS, FACT_KINDS, LEVELS } from '../config.js';
 import { getState, update, completedCount, streak, resetAll, exportJSON, importJSON } from '../store.js';
 import { loadIndex } from '../data.js';
@@ -7,7 +7,7 @@ import { icsFile, googleCalendarUrl } from '../calendar.js';
 import { h, mount, icon, toast, plural } from '../ui.js';
 import { multiChoice, segmented } from './onboarding.js';
 
-export async function renderProfile(root, { onReset, onChange }) {
+export async function renderProfile(root, { onReset, onChange, focus }) {
   let index = null;
   try {
     index = await loadIndex();
@@ -18,6 +18,7 @@ export async function renderProfile(root, { onReset, onChange }) {
 
   function saveProfile(fn) {
     update((s) => fn(s.profile));
+    toast('Zapisano');
     onChange?.();
   }
 
@@ -32,35 +33,45 @@ export async function renderProfile(root, { onReset, onChange }) {
 
     mount(
       root,
-      h('header', { class: 'masthead' }, h('p', { class: 'eyebrow' }, 'Profil'), h('h1', null, profile.name || 'Ty')),
+      h('header', { class: 'masthead' }, h('p', { class: 'eyebrow' }, 'Profil i ustawienia'), h('h1', null, profile.name || 'Ty')),
 
       h(
         'section',
-        { class: 'card level-card' },
-        h('p', { class: 'eyebrow' }, 'Twój poziom'),
-        h('p', { class: 'level-name', style: 'margin:0' }, level.name),
-        h('div', { class: 'level-track', 'aria-hidden': 'true' }, LEVELS.map((_, i) => h('span', { class: i <= levelIdx ? 'on' : '' }))),
-        h('p', { class: 'read', style: 'margin:0' }, level.text, next ? ` Następny poziom, „${next.name}”, po ${next.min} ${plural(next.min, 'wydaniu', 'wydaniach', 'wydaniach')}.` : ''),
+        { class: 'section', id: 'ustawienia' },
+        h('h2', null, 'Twoje wydanie'),
+        h('p', { class: 'muted', style: 'margin:0' }, 'Zmiany zapisują się od razu i działają już w dzisiejszym wydaniu.'),
         h(
-          'p',
-          { class: 'legend' },
-          'Według chińskiej legendy karp, który płynie pod prąd Żółtej Rzeki i przeskoczy wodospad Smoczej Bramy, zmienia się w smoka. Każde ukończone wydanie to kolejny ruch płetwą.',
+          'div',
+          { class: 'field' },
+          h('label', { for: 'profile-name' }, 'Imię w powitaniu'),
+          h('input', {
+            class: 'input',
+            id: 'profile-name',
+            type: 'text',
+            autocomplete: 'given-name',
+            maxlength: 30,
+            value: profile.name,
+            onchange: (e) => {
+              const name = e.target.value.trim();
+              if (!name) {
+                e.target.value = profile.name;
+                toast('Imię nie może być puste');
+                return;
+              }
+              saveProfile((p) => { p.name = name; });
+              render();
+            },
+          }),
         ),
-      ),
-
-      h(
-        'div',
-        { class: 'stats', style: 'margin-top:12px' },
-        h('div', { class: 'stat' }, h('strong', null, count), h('span', null, plural(count, 'wydanie', 'wydania', 'wydań'))),
-        h('div', { class: 'stat' }, h('strong', null, s), h('span', null, `${plural(s, 'dzień', 'dni', 'dni')} serii`)),
-        h('div', { class: 'stat' }, h('strong', null, Object.keys(getState().deck).length), h('span', null, 'w powtórkach')),
-      ),
-
-      h(
-        'section',
-        { class: 'section' },
-        h('h2', null, 'Tematy'),
-        multiChoice(SECTIONS, profile.sections, (ids) => saveProfile((p) => { p.sections = ids.length ? ids : ['polska']; })),
+        h('h3', { class: 'group-title', style: 'margin-top:8px' }, 'Działy wiadomości'),
+        multiChoice(SECTIONS, profile.sections, (ids) => {
+          if (!ids.length) {
+            toast('Zostaw co najmniej jeden dział');
+            render();
+            return;
+          }
+          saveProfile((p) => { p.sections = ids; });
+        }),
         h('h3', { class: 'group-title', style: 'margin-top:8px' }, 'Ciekawostki najpierw z'),
         multiChoice(FACT_KINDS, profile.factKinds, (ids) => saveProfile((p) => { p.factKinds = ids; })),
         h('h3', { class: 'group-title', style: 'margin-top:8px' }, 'Czas dziennie'),
@@ -116,6 +127,32 @@ export async function renderProfile(root, { onReset, onChange }) {
             icon('calendar'),
             'iPhone / Outlook (.ics)',
           ),
+        ),
+      ),
+
+      h(
+        'section',
+        { class: 'section' },
+        h('h2', null, 'Postępy'),
+        h(
+          'div',
+          { class: 'card level-card' },
+          h('p', { class: 'eyebrow' }, 'Twój poziom'),
+          h('p', { class: 'level-name', style: 'margin:0' }, level.name),
+          h('div', { class: 'level-track', 'aria-hidden': 'true' }, LEVELS.map((_, i) => h('span', { class: i <= levelIdx ? 'on' : '' }))),
+          h('p', { class: 'read', style: 'margin:0' }, level.text, next ? ` Następny poziom, „${next.name}”, po ${next.min} ${plural(next.min, 'wydaniu', 'wydaniach', 'wydaniach')}.` : ''),
+          h(
+            'p',
+            { class: 'legend' },
+            'Według chińskiej legendy karp, który płynie pod prąd Żółtej Rzeki i przeskoczy wodospad Smoczej Bramy, zmienia się w smoka. Każde ukończone wydanie to kolejny ruch płetwą.',
+          ),
+        ),
+        h(
+          'div',
+          { class: 'stats' },
+          h('div', { class: 'stat' }, h('strong', null, count), h('span', null, plural(count, 'wydanie', 'wydania', 'wydań'))),
+          h('div', { class: 'stat' }, h('strong', null, s), h('span', null, `${plural(s, 'dzień', 'dni', 'dni')} serii`)),
+          h('div', { class: 'stat' }, h('strong', null, Object.keys(getState().deck).length), h('span', null, 'w powtórkach')),
         ),
       ),
 
@@ -220,4 +257,5 @@ export async function renderProfile(root, { onReset, onChange }) {
   }
 
   render();
+  if (focus) root.querySelector(`#${focus}`)?.scrollIntoView({ block: 'start' });
 }

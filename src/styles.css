@@ -175,6 +175,9 @@ h3 { font-size: var(--step-1); }
 .pill.koi { background: var(--koi-soft); color: var(--koi); }
 .pill.nurt { background: var(--nurt-soft); color: var(--nurt); }
 .pill .icon svg { width: 14px; height: 14px; }
+.pill-link { text-decoration: none; min-height: 32px; }
+.pill-link:hover { filter: brightness(0.97); }
+#ustawienia { scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 12px); }
 
 .banner {
   background: var(--nurt-soft);

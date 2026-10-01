@@ -21,8 +21,8 @@ Codzienna rutyna Claude Code (ok. 5:00)
   → szuka wiadomości z ostatniej doby i pisze wydanie wg CONTENT_GUIDE.md
   → zapisuje content/editions/RRRR-MM-DD.json, sprawdza je (scripts/validate.mjs)
   → commit i push na main
-GitHub Actions
-  → publikuje stronę na GitHub Pages
+GitHub Pages
+  → publikuje stronę z gałęzi main
 Telefon
   → aplikacja pobiera nowe wydanie; postępy trzyma lokalnie, działa też offline
 ```
@@ -40,9 +40,11 @@ Wystarczy Node.js 18 lub nowszy, bez instalowania zależności.
 
 ## Publikacja (jednorazowo)
 
-1. Scal tę gałąź z `main`.
-2. W repozytorium: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Po kilku minutach strona będzie pod adresem `https://marekmaro.github.io/SelfLearn/`.
+1. W repozytorium: **Settings → Pages → Build and deployment**.
+2. **Source: Deploy from a branch**, **Branch: main**, folder **/ (root)**, potem **Save**.
+3. Po 1–2 minutach strona działa pod adresem `https://marekmaro.github.io/SelfLearn/`.
+
+Każdy kolejny commit na `main` (np. nowe wydanie) publikuje się sam. Plik `.nojekyll` wyłącza przetwarzanie Jekyll, więc pliki trafiają na stronę bez zmian.
 
 ### Instalacja na telefonie
 

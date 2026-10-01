@@ -1,0 +1,86 @@
+{
+  "format": "Jedna książka na tydzień (7 dni). Dni 1–5: po jednej kluczowej idei. Dzień 6: najważniejszy morał i plan zastosowania. Dzień 7: podsumowanie całości i pytanie do rozmowy we dwoje.",
+  "current": { "id": "atomowe-nawyki", "startedOn": "2026-10-01" },
+  "queue": [
+    {
+      "id": "atomowe-nawyki",
+      "title": "Atomowe nawyki",
+      "author": "James Clear",
+      "genre": "rozwój osobisty",
+      "why": "Na start: o tym, jak małe codzienne kroki sumują się w duże zmiany. Pasuje do aplikacji, która sama jest codziennym nawykiem.",
+      "plan": [
+        "1% lepiej każdego dnia: nawyki jako procent składany",
+        "Systemy zamiast celów",
+        "Nawyki oparte na tożsamości: kim chcesz być",
+        "Cztery prawa zmiany zachowania: oczywiste, atrakcyjne, łatwe, satysfakcjonujące",
+        "Zasada dwóch minut i łączenie nawyków",
+        "Morał i plan: jeden nawyk, jeden system",
+        "Podsumowanie tygodnia"
+      ],
+      "source": "https://jamesclear.com/atomic-habits"
+    },
+    {
+      "id": "sapiens",
+      "title": "Sapiens. Od zwierząt do bogów",
+      "author": "Yuval Noah Harari",
+      "genre": "historia, światopogląd",
+      "why": "Szeroki obraz dziejów człowieka: rewolucja poznawcza, rolnicza i naukowa. Dobra rama dla codziennych wiadomości."
+    },
+    {
+      "id": "pulapki-myslenia",
+      "title": "Pułapki myślenia. O myśleniu szybkim i wolnym",
+      "author": "Daniel Kahneman",
+      "genre": "psychologia",
+      "why": "Jak naprawdę podejmujemy decyzje i gdzie umysł nas oszukuje. Przydaje się przy czytaniu każdej wiadomości."
+    },
+    {
+      "id": "factfulness",
+      "title": "Factfulness",
+      "author": "Hans Rosling",
+      "genre": "świat w danych",
+      "why": "Dlaczego świat jest w lepszym stanie, niż myślimy, i jak czytać dane bez paniki."
+    },
+    {
+      "id": "zycie-3-0",
+      "title": "Życie 3.0. Człowiek w erze sztucznej inteligencji",
+      "author": "Max Tegmark",
+      "genre": "AI",
+      "why": "Szerokie spojrzenie na to, dokąd może prowadzić AI i jakie decyzje musimy podjąć już teraz."
+    },
+    {
+      "id": "dlaczego-spimy",
+      "title": "Dlaczego śpimy",
+      "author": "Matthew Walker",
+      "genre": "zdrowie",
+      "why": "Sen jako fundament zdrowia i pamięci. Przy streszczeniu zaznaczamy tezy, które naukowcy kwestionują."
+    },
+    {
+      "id": "solaris",
+      "title": "Solaris",
+      "author": "Stanisław Lem",
+      "genre": "literatura, nauka",
+      "why": "Polska klasyka o granicach poznania. Esencja i morał działają też dla powieści."
+    },
+    {
+      "id": "czlowiek-w-poszukiwaniu-sensu",
+      "title": "Człowiek w poszukiwaniu sensu",
+      "author": "Viktor E. Frankl",
+      "genre": "filozofia, psychologia",
+      "why": "Krótka i mocna książka o tym, że sens można znaleźć w każdych warunkach."
+    },
+    {
+      "id": "praca-gleboka",
+      "title": "Praca głęboka",
+      "author": "Cal Newport",
+      "genre": "technologia, skupienie",
+      "why": "Jak odzyskać skupienie w świecie powiadomień."
+    },
+    {
+      "id": "rozmyslania",
+      "title": "Rozmyślania",
+      "author": "Marek Aureliusz",
+      "genre": "filozofia",
+      "why": "Stoicyzm z pierwszej ręki: zapiski cesarza o spokoju, obowiązku i tym, na co mamy wpływ."
+    }
+  ]
+}

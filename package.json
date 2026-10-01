@@ -1,0 +1,12 @@
+{
+  "name": "selflearn",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Codzienne wydanie do nauki: Polska, świat, Twoje tematy, ciekawostki, książka tygodnia i powtórki.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "index": "node scripts/build-index.mjs",
+    "check": "node scripts/build-index.mjs && node scripts/validate.mjs"
+  }
+}

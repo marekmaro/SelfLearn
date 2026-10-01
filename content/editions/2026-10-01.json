@@ -1,0 +1,428 @@
+{
+  "date": "2026-10-01",
+  "intro": "Dziś m.in. koniec misji USA w Iraku, ostra groźba Rosji wobec NATO, nowa „Lalka” w kinach i pierwszy dzień z „Atomowymi nawykami”.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Sąd wydał list żelazny Marcinowi Romanowskiemu. Prokuratura zapowiada zażalenie",
+      "summary": "Sąd Okręgowy w Warszawie zdecydował w środę o wydaniu listu żelaznego byłemu wiceministrowi sprawiedliwości i posłowi PiS Marcinowi Romanowskiemu. Gdy decyzja się uprawomocni, areszt tymczasowy wobec niego ma zostać uchylony. Według sądu nie ma obecnie obawy, że Romanowski będzie utrudniał śledztwo w sprawie Funduszu Sprawiedliwości. Decyzja nie jest prawomocna, a prokuratura zapowiedziała zażalenie.",
+      "why": "List żelazny pozwala podejrzanemu, który przebywa za granicą, wrócić i odpowiadać z wolnej stopy. To jeden z najgłośniejszych sporów o rozliczenia poprzedniej władzy, a o dalszym biegu sprawy zdecyduje sąd drugiej instancji.",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/prawo-karne/art45213591-marcin-romanowski-dostal-list-zelazny-decyzja-sadu" },
+        { "name": "TVN24", "url": "https://tvn24.pl/polska/list-zelazny-dla-marcina-romanowskiego-bedzie-zazalenie-prokuratury-st9263122" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Tajemnicza przesyłka w Żandarmerii Wojskowej w Nowej Dębie",
+      "summary": "W środę rano do placówki Żandarmerii Wojskowej w Nowej Dębie na Podkarpaciu trafiła koperta nadana w Niemczech, a w niej pocztówka podpisana „Pozdrawiam Złota”. Po jej otwarciu siedem osób źle się poczuło, dwóch żołnierzy i pracownik wojska trafili do szpitala, ewakuowano 133 osoby. Badania wykluczyły obecność środków chemicznych, biologicznych i radiologicznych, a poszkodowanych wypisano ze szpitala.",
+      "why": "Nawet niegroźna przesyłka potrafi sparaliżować pracę wojskowej instytucji i sprawdza procedury bezpieczeństwa. Kto ją wysłał i po co, wyjaśnia teraz prokuratura w Rzeszowie.",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/wojsko/art45228601-tajemnicza-przesylka-w-zandarmerii-wojskowej-trzy-osoby-trafily-do-szpitala" },
+        { "name": "Wprost", "url": "https://www.wprost.pl/kraj/12458289/nowa-deba-nieznana-przesylka-w-zw-wyniki-ogledzin-i-badan.html" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Prokuratura bada umowę PZPN z firmą Publicon Sport",
+      "summary": "Jak podały media, Prokuratura Rejonowa Warszawa-Ochota prowadzi śledztwo w sprawie działań na szkodę Polskiego Związku Piłki Nożnej. Chodzi o niegospodarność i szkodę majątkową wielkich rozmiarów, nie mniejszą niż 4 mln zł. Śledczy sprawdzą, czy zawarcie 9 lutego 2023 r. umowy z wrocławską firmą Publicon Sport, pośrednikiem w sprawach partnerskich i marketingowych, było ekonomicznie nieuzasadnione. Szczegóły umowy ujawnił w 2025 r. reportaż TVN24.",
+      "why": "PZPN zarządza ogromnymi pieniędzmi z praw medialnych i sponsoringu reprezentacji. Śledztwo sprawdzi, czy osoby odpowiedzialne za majątek związku działały na jego szkodę.",
+      "sources": [
+        { "name": "WP SportoweFakty", "url": "https://sportowefakty.wp.pl/pilka-nozna/1276811/media-pzpn-pod-lupa-prokuratury-szkoda-majatkowa-wielkich-rozmiarow" },
+        { "name": "Meczyki.pl", "url": "https://www.meczyki.pl/newsy/pilka-nozna/media-prokuratura-bada-kontrowersyjna-umowe-pzpn-u-ruszylo-sledztwo/314345" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Rusza rok akademicki 2026/2027. Prezydent apeluje o więcej pieniędzy na naukę",
+      "summary": "Na ponad 300 uczelniach w Polsce rozpoczął się nowy rok akademicki. Prezydent Karol Nawrocki wziął udział w inauguracji w Akademii im. Jakuba z Paradyża w Gorzowie Wielkopolskim. Życzył środowisku akademickiemu odwagi badawczej i oczekuje od rządu realnego wzrostu nakładów na naukę i szkolnictwo wyższe.",
+      "why": "Od finansowania nauki zależy, czy zdolni badacze zostają w kraju i czy polskie uczelnie mogą konkurować z zagranicznymi. Temat wróci przy pracach nad budżetem na przyszły rok.",
+      "sources": [
+        { "name": "Nauka w Polsce (PAP)", "url": "https://naukawpolsce.pl/aktualnosci/news,115195,prezydent-zyczy-srodowisku-akademickiemu-odwagi-badawczej-od-rzadu-oczekuje" },
+        { "name": "Gazeta Lubuska", "url": "https://gazetalubuska.pl/prezydent-karol-nawrocki-w-gorzowie-przyjechal-na-inauguracje-roku-akademickiego-w-akademii-jakuba-z-paradyza/ar/c1p2-29400271" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Na Podkarpaciu wydobyto kolejne części rakiety V-2",
+      "summary": "W gminie Niwiska koło Kolbuszowej wydobyto kolejne fragmenty niemieckiej rakiety V-2 z czasów II wojny światowej, m.in. stożek głowicy, części zbiornika na nadtlenek wodoru i elementy układu sterowania. Rakieta wystrzelona z poligonu w Bliźnie przeleciała ok. 10 km i spadła. Niektóre części leżały prawie 8 m pod ziemią, a przy wydobyciu pracowało ponad 40 osób. Znaleziska trafią do Parku Historycznego w Bliźnie.",
+      "why": "Blizna była jednym z miejsc, gdzie Niemcy testowali V-2, pierwszy pocisk balistyczny dalekiego zasięgu. Informacje o tej broni zdobyte przez polskie podziemie pomogły aliantom.",
+      "sources": [
+        { "name": "Nowiny24", "url": "https://nowiny24.pl/kolejne-fragmenty-rakiety-v-2-wydobyte-z-ziemi-niezwykle-znalezisko-na-podkarpaciu/ar/c1p2-29397091" },
+        { "name": "IPN Rzeszów", "url": "https://rzeszow.ipn.gov.pl/pl8/aktualnosci/233551,Elementy-niemieckiej-rakiety-V-2-odkryte-w-okolicach-Parku-Historycznego-w-Blizn.html" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Ostatni amerykańscy żołnierze opuszczają Irak",
+      "summary": "Prezydent USA Donald Trump ogłosił, że ostatnie siły amerykańskie opuszczają Irak. Po wycofaniu się z bazy lotniczej w Irbilu USA zakończyły misję Inherent Resolve przeciw Państwu Islamskiemu, a jej dowództwo przeniesiono do Jordanii. Wycofanie odbyło się zgodnie z porozumieniem Waszyngtonu i Bagdadu z 2024 r. Władze irackiego Kurdystanu obawiają się utraty amerykańskiej obrony przeciwlotniczej.",
+      "why": "To symboliczny koniec epoki, która zaczęła się inwazją w 2003 r. Otwarte pozostaje pytanie, kto wypełni lukę w bezpieczeństwie regionu.",
+      "sources": [
+        { "name": "ABC News", "url": "https://abcnews.com/International/us-troops-expected-leave-iraq-wednesday-12-year/story?id=136871869" },
+        { "name": "Fox News", "url": "https://www.foxnews.com/world/us-ends-operation-inherent-resolve-mission-iraq-final-forces-leave-erbil" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Rosja grozi NATO bronią jądrową w sprawie Kaliningradu",
+      "summary": "Rosja ostrzegła NATO, że jest gotowa użyć „całego arsenału”, łącznie z bronią jądrową, jeśli Sojusz spróbuje odciąć obwód kaliningradzki od reszty kraju. W piśmie padła też groźba uderzeń w „ośrodki decyzyjne” państw członkowskich. NATO odpowiedziało, że jest sojuszem obronnym, a jego ćwiczenia nie zagrażają Rosji, i wezwało Moskwę do zakończenia „nieodpowiedzialnej retoryki nuklearnej”.",
+      "why": "Obwód kaliningradzki graniczy bezpośrednio z Polską i Litwą, więc ta groźba dotyczy nas wprost. Rozmówca Reutersa z europejskiego resortu obrony ocenił ją jako wyjątkowo ostrą.",
+      "sources": [
+        { "name": "The Korea Times", "url": "https://www.koreatimes.co.kr/world/20261001/russia-sends-nuclear-warning-to-nato-as-tensions-rise-in-the-baltic" },
+        { "name": "NV (za Reutersem)", "url": "https://english.nv.ua/nation/russia-warns-nato-of-nuclear-response-over-kaliningrad-reuters-50646053.html" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "USA kazały irańskiej delegacji opuścić Nowy Jork",
+      "summary": "Sekretarz stanu USA Marco Rubio polecił irańskiej delegacji na Zgromadzenie Ogólne ONZ, w tym szefowi MSZ Abbasowi Araghcziemu, natychmiast opuścić Stany Zjednoczone. Pośrednie rozmowy utknęły, gdy USA odrzuciły irańskie żądanie zmiany formatu i miejsca kolejnych negocjacji. Irańska misja przy ONZ twierdzi, że wylot był zaplanowany wcześniej.",
+      "why": "Rozmowy USA z Iranem są w impasie. Od ich wyniku zależy stabilność Bliskiego Wschodu, a pośrednio także ceny ropy i paliw.",
+      "sources": [
+        { "name": "The Hill", "url": "https://thehill.com/homenews/administration/6122998-rubio-orders-iranian-delegation-out/" },
+        { "name": "The Media Line", "url": "https://themedialine.org/headlines/rubio-orders-iranian-un-delegation-to-leave-us-after-talks-stall/" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Maroko ma pierwszą kobietę na stanowisku premiera",
+      "summary": "Król Mohammed VI powołał na premiera Fatimę Ezzahrę El Mansouri, pierwszą kobietę na tym stanowisku w historii Maroka. To prawniczka, dotychczasowa ministra mieszkalnictwa i polityki miejskiej, wcześniej pierwsza kobieta na stanowisku burmistrza Marrakeszu. Jej centrowa Partia Autentyczności i Nowoczesności zdobyła w wyborach 97 z 395 mandatów, więc musi zbudować koalicję.",
+      "why": "To dopiero trzecia kobieta na czele rządu w państwie arabskim, po dwóch premierkach Tunezji. Sama El Mansouri nazwała ten dzień historycznym dla kobiet w Maroku.",
+      "sources": [
+        { "name": "UPI", "url": "https://www.upi.com/Top_News/World-News/2026/09/30/morocco-fatima-zahra-el-mansouri-prime-minister-female/4951790782821/" },
+        { "name": "The Washington Post", "url": "https://www.washingtonpost.com/world/2026/09/29/morocco-appoints-its-first-female-prime-minister/" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Bójka pilotów w kokpicie. Lot z Dubaju do Tel Awiwu wylądował w Arabii Saudyjskiej",
+      "summary": "Samolot linii flydubai (lot FZ1073) ze 174 pasażerami, w tym 27 dziećmi, wylądował awaryjnie w Tabuku w Arabii Saudyjskiej po tym, jak drugi pilot zaatakował kapitana. Maszyna nadała kod sytuacji awaryjnej, a potem kod porwania, więc Izrael poderwał myśliwce. Kapitan zdołał otworzyć drzwi kokpitu, a pasażerowie obezwładnili napastnika. Ranny kapitan jest w stabilnym stanie, a flydubai zawiesiły loty do Izraela na czas śledztwa.",
+      "why": "Bezpieczeństwo lotu zależy także od kondycji psychicznej załogi. Po katastrofie Germanwings w 2015 r. ten temat wraca przy każdym takim incydencie.",
+      "sources": [
+        { "name": "Ynetnews", "url": "https://www.ynetnews.com/article/s1lpsm95ge" },
+        { "name": "The Times of Israel", "url": "https://www.timesofisrael.com/liveblog-september-30-2026/" }
+      ]
+    },
+    {
+      "id": "tech-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "456 małych reaktorów dla centrów danych. Atomowy „ul” w Utah",
+      "summary": "Startup Valar Atomics planuje w ramach „Project Beehive” zbudować na ponad 9 tys. akrów (ok. 3,6 tys. ha) ziemi federalnej koło miasta Price w Utah centra danych i 456 małych reaktorów jądrowych, a także zakład produkcji paliwa i składowiska odpadów. Reaktory dawałyby łącznie ok. 9,6 GW mocy, a cały stan Utah produkuje dziś średnio ok. 4 GW. Pierwsze reaktory miałyby ruszyć w 2028 r. Projekt przechodzi ocenę środowiskową.",
+      "why": "AI potrzebuje ogromnych ilości prądu, a firmy technologiczne coraz częściej szukają go w atomie. To test, czy małe reaktory modułowe da się budować seryjnie.",
+      "sources": [{ "name": "NPR", "url": "https://www.npr.org/2026/09/30/nx-s1-5983482/valar-atomic-nuclear-data-center-project-beehive-utah" }]
+    },
+    {
+      "id": "tech-2",
+      "section": "technologia",
+      "rank": 2,
+      "title": "Meta wypuszcza Muse, asystenta AI, który działa w Twoim imieniu",
+      "summary": "Meta udostępniła Muse, agenta AI, który po uzyskaniu dostępu do kont i aplikacji sam wysyła maile, rezerwuje podróże, wypełnia formularze i śledzi długofalowe cele. Działa na razie tylko w USA, za darmo albo w abonamencie za 20 lub 100 dolarów miesięcznie. 29 września Meta dodała wersję dla małych firm z integracjami m.in. ze Slackiem, Canvą i Shopify. Opisano już pierwszy problem: Muse podał kupującemu adres sprzedającego z Marketplace.",
+      "why": "Agenci AI, którzy nie tylko odpowiadają, ale działają za nas, to kolejny etap tej technologii. Rodzą nowe pytania o to, komu dajemy dostęp do danych i kto odpowiada za błędy.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/09/30/nx-s1-5986301/meta-just-launched-an-ai-agent-and-others-are-following-is-the-internet-ready" },
+        { "name": "9to5Mac", "url": "https://9to5mac.com/2026/09/17/meta-ai-launches-muse-personal-agent-including-a-new-mobile-app-for-iphone/" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Amerykański regulator bada bezpieczeństwo AI w OpenAI i Anthropic",
+      "summary": "Federalna Komisja Handlu (FTC) wszczęła szerokie postępowanie w sprawie bezpieczeństwa systemów AI firm Anthropic i OpenAI. Sprawdzi, czy firmy nie stosowały nieuczciwych lub wprowadzających w błąd praktyk i czy ich produkty nie szkodzą konsumentom. Przewodniczący FTC Andrew Ferguson przygotowuje wezwania, które zobowiążą szefów firm do przekazania dokumentów i złożenia zeznań. W tle są wcześniej nieujawnione incydenty bezpieczeństwa.",
+      "why": "Administracja Trumpa chce pokazać, że do kontroli AI wystarczą istniejące przepisy, bez nowych regulacji. Wynik może wyznaczyć, jak w praktyce wygląda nadzór nad AI w USA.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html" },
+        { "name": "Axios", "url": "https://www.axios.com/2026/09/30/ftc-openai-anthropic-ai-safety-investigation" }
+      ]
+    },
+    {
+      "id": "ai-2",
+      "section": "ai",
+      "rank": 2,
+      "title": "Szefowie firm AI podpisali z Trumpem dobrowolne porozumienie o bezpieczeństwie",
+      "summary": "Donald Trump i liderzy branży AI, m.in. Dario Amodei (Anthropic), Sundar Pichai (Google), Mark Zuckerberg (Meta), Greg Brockman (OpenAI), Jensen Huang (Nvidia) i Elon Musk (xAI), podpisali dobrowolne porozumienie. Firmy mają wprowadzić wewnętrzne mechanizmy kontroli, zlecać niezależne audyty i powołać komitety rad nadzorczych, które ocenią ich wyniki. Krytycy wskazują, że wiele z tych działań firmy już prowadzą, a zapisy są ogólnikowe.",
+      "why": "To model samoregulacji zamiast twardego prawa, inny niż unijny AI Act. Spór o to, czy dobrowolne zobowiązania wystarczą, będzie wracał przez najbliższe lata.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/09/30/nx-s1-5985699/trump-self-police-ai-development" },
+        { "name": "France 24", "url": "https://www.france24.com/en/technology/20260929-trump-says-ai-companies-sign-voluntary-accord-on-safety-controls" }
+      ]
+    },
+    {
+      "id": "ai-3",
+      "section": "ai",
+      "rank": 3,
+      "title": "OpenAI oskarża chiński Moonshot AI o próbę wydobycia ukrytego rozumowania modeli",
+      "summary": "OpenAI poinformowało, że wykryło i zablokowało skoordynowaną kampanię, w której próbowano zmusić jego modele do ujawnienia ukrytego toku rozumowania. Firma łączy ją z osobami powiązanymi z chińskim Moonshot AI, twórcą chatbota Kimi. Szczyt nastąpił 24–25 lipca: 16 tys. podobnych zapytań od ponad 4 tys. użytkowników. Według OpenAI nie doszło do włamania do baz danych ani rozmów użytkowników.",
+      "why": "To przykład tzw. destylacji, czyli trenowania własnego modelu na odpowiedziach cudzego. Wyścig AI między USA a Chinami toczy się także o ochronę wiedzy zapisanej w modelach.",
+      "sources": [{ "name": "CNBC", "url": "https://www.cnbc.com/2026/10/01/openai-chinas-moonshot-ai-kimi.html" }]
+    },
+    {
+      "id": "nauka-1",
+      "section": "nauka",
+      "rank": 1,
+      "title": "Najdłuższy błysk rentgenowski po zderzeniu gwiazd neutronowych. Narodziny magnetara?",
+      "summary": "Astronomowie zebrali mocne dowody, że część tajemniczych, kilkuminutowych błysków rentgenowskich powstaje, gdy zderzają się dwie gwiazdy neutronowe i rodzi się magnetar, czyli gwiazda o skrajnie silnym polu magnetycznym. Rekordowe zdarzenie świeciło w promieniach X przez prawie 10 minut. Źródło namierzono po alercie satelity Einstein Probe, m.in. teleskopem VLT. Wyniki opublikowało „Science Bulletin”.",
+      "why": "Zderzenia gwiazd neutronowych rozpoznawano dotąd głównie po krótkich błyskach gamma trwających poniżej 2 sekund. Jeśli zostawiają też długie błyski rentgenowskie, wiele z nich mogło nam umykać.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/09/260930020252.htm" },
+        { "name": "EurekAlert!", "url": "https://www.eurekalert.org/news-releases/1145534" }
+      ]
+    },
+    {
+      "id": "nauka-2",
+      "section": "nauka",
+      "rank": 2,
+      "title": "Życie na Enceladusie może być łatwiej wykryć, niż sądzono",
+      "summary": "Naukowcy z Freie Universität Berlin opublikowali w „Science Advances” dwa badania o księżycu Saturna. Pierwsze pokazuje, że krople oceanu zamarzają w szczelinach lodu wolniej, niż myślano, więc w pojedynczych drobinach lodu wyrzucanych w kosmos mogą się gromadzić stężone sole i związki organiczne. Drugie wykazało, że bakterie wytwarzające metan przetrwałyby w symulowanych warunkach Enceladusa. Sonda przelatująca przez gejzery mogłaby więc wykryć ślady życia już dostępną technologią.",
+      "why": "Enceladus ma pod lodem globalny ocean słonej wody i jest jednym z najlepszych kandydatów na życie poza Ziemią. Te wyniki wzmacniają argumenty za misją do jego gejzerów.",
+      "sources": [
+        { "name": "Freie Universität Berlin", "url": "https://www.fu-berlin.de/en/presse/informationen/fup/2026/fup_26_116-enceladus-cassini-mikroben-science-postberg/index.html" },
+        { "name": "Universe Today", "url": "https://www.universetoday.com/articles/finding-life-on-enceladus-could-be-easier-than-we-thought-says-new-research" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Dieta MIND może opóźniać starzenie się mózgu o ok. 2,5 roku",
+      "summary": "Badacze przeanalizowali dane 1647 osób w średnim i starszym wieku (średnio 60 lat na starcie) z kohorty Framingham, obserwowanych przez ok. 12 lat. U osób, które ściślej trzymały się diety MIND, mózg kurczył się wolniej i ubywało mniej istoty szarej. Najsilniejszy efekt odpowiadał ok. 2,5 roku opóźnienia starzenia mózgu. Korzystnie wypadały jagody i drób, niekorzystnie słodycze i smażony fast food.",
+      "why": "MIND łączy dietę śródziemnomorską z dietą DASH, która obniża ciśnienie. To badanie obserwacyjne, więc nie dowodzi przyczyny, ale dokłada kolejny argument, że to, co jemy, wpływa na mózg.",
+      "sources": [{ "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/09/260930225503.htm" }]
+    },
+    {
+      "id": "zdrowie-2",
+      "section": "zdrowie",
+      "rank": 2,
+      "title": "Co 13. osoba przed trzydziestką ma już blaszki miażdżycowe",
+      "summary": "W badaniu REACT obrazowo zbadano tętnice wieńcowe, szyjne i udowe ok. 16 tys. pozornie zdrowych dorosłych. Ponad połowa miała oznaki miażdżycy. Zmiany wykryto u ok. 1 na 13 osób w wieku 18–29 lat, a w grupie 60–70 lat u 9 na 10. Wyniki przedstawiono na kongresie Europejskiego Towarzystwa Kardiologicznego i opublikowano w „New England Journal of Medicine”.",
+      "why": "Miażdżyca rozwija się latami bez objawów, a choroby serca i naczyń to główna przyczyna zgonów w Polsce. Autorzy proponują profilaktykę opartą na wczesnym wykrywaniu zmian.",
+      "sources": [
+        { "name": "CNIC", "url": "https://www.cnic.es/en/noticias/nejm-react-reveals-silent-atherosclerosis-already-affects-1-13-young-adults-aged-18-29-and" },
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/09/260929053541.htm" }
+      ]
+    },
+    {
+      "id": "kultura-1",
+      "section": "kultura",
+      "rank": 1,
+      "title": "„Lalka” Macieja Kawalskiego weszła do kin",
+      "summary": "30 września do polskich kin trafiła nowa ekranizacja powieści Bolesława Prusa w reżyserii Macieja Kawalskiego. Wokulskiego gra Marcin Dorociński, Izabelę Łęcką Kamila Urzędowska, a Rzeckiego Marek Kondrat. W obsadzie są też m.in. Maja Komorowska, Agata Kulesza i Andrzej Seweryn. Recenzje są mieszane: krytycy chwalą stronę wizualną i role, część zarzuca filmowi chłód i brak pasji.",
+      "why": "„Lalka” to jedna z najważniejszych polskich powieści o ambicji, miłości i awansie społecznym. Nowa adaptacja to dobra okazja, by sprawdzić, które jej pytania są wciąż aktualne.",
+      "sources": [
+        { "name": "Interia (recenzja)", "url": "https://film.interia.pl/recenzje/news-ekranizacja-na-jaka-czekalismy-ten-film-to-klasa-sama-w-sobi,nId,23545994" },
+        { "name": "Filmweb", "url": "https://www.filmweb.pl/film/Lalka-2026-10057628" }
+      ]
+    },
+    {
+      "id": "kultura-2",
+      "section": "kultura",
+      "rank": 2,
+      "title": "Nagroda Nike 2026: zwycięzcę poznamy w niedzielę",
+      "summary": "Gala Nagrody Literackiej Nike odbędzie się 4 października w Bibliotece Uniwersyteckiej w Warszawie, transmisję o 20:30 pokażą TVP2 i TVP Kultura. W finale jest siedem książek, m.in. „Null” Szczepana Twardocha, „Tylko durnie żyją do końca” Zyty Rudzkiej, „Najmądrzejszy. Biografia Sokratesa” Krzysztofa Łapińskiego i reportaż Anny Bikont „Nie koniec, nie początek”. Zwycięzca dostanie statuetkę i 100 tys. zł.",
+      "why": "Nike to najważniejsza polska nagroda literacka. Lista finalistów to gotowa lista lektur na jesień.",
+      "sources": [
+        { "name": "WP Pilot", "url": "https://pilot.wp.pl/strefapilota/gala-nagrody-literackiej-nike-2026-juz-4-pazdziernika-kto-ma-szanse-na-statuetke-i-gdzie-ogladac" },
+        { "name": "Booklips", "url": "https://booklips.pl/newsy/znamy-finalowa-siodemke-nagrody-literackiej-nike-2026/" }
+      ]
+    },
+    {
+      "id": "pokemon-1",
+      "section": "pokemon",
+      "rank": 1,
+      "title": "Jutro premiera: Enhanced 2-Pack z Gengarem i Mini Portfolio z Pitch Black",
+      "summary": "2 października w USA trafia do sprzedaży „Enhanced 2-Pack Blister” za 10,99 USD: dwa boostery, metalowa moneta z Gengarem i promki w wersji cosmos holo z Gengarem, Marshadowem i Mimikyu Zespołu R. Tego samego dnia debiutuje Mini Portfolio z dodatku Pitch Black, czyli mały segregator na 60 kart z jednym boosterem, za 5,49 USD.",
+      "why": "Tanie produkty z promkami to dobry sposób na zdobycie konkretnych kart bez kupowania całych boxów. Ceny i terminy w Europie mogą się różnić.",
+      "sources": [
+        { "name": "Screen Rant", "url": "https://screenrant.com/pokemon-tcg-products-releasing-october-2026/" },
+        { "name": "PokeGuardian", "url": "https://www.pokeguardian.com/3280637_pokemon-tcg-enhanced-2-pack-blister-gengar-marshadow-team-rocket-s-mimikyu-revealed" }
+      ]
+    },
+    {
+      "id": "pokemon-2",
+      "section": "pokemon",
+      "rank": 2,
+      "title": "Delta Reign z Mega Rayquazą ex: prerelease już od 24 października",
+      "summary": "Kolejny dodatek z serii Mega Evolution, Delta Reign, zadebiutuje 6 listopada 2026 r. Będzie miał ponad 135 kart, w tym cztery nowe Mega Evolution ex: Rayquazę, Golurka, Malamara i Golisopoda, a także trzy nowe legendarne stadiony. Turnieje prerelease potrwają od 24 października do 1 listopada, a w Pokémon TCG Live dodatek pojawi się 5 listopada.",
+      "why": "Prerelease to najlepszy moment, żeby zagrać nowymi kartami w lokalnym sklepie, zanim zmieni się meta. Warto już teraz sprawdzić terminy w pobliskich sklepach.",
+      "sources": [
+        { "name": "Pokémon.com", "url": "https://www.pokemon.com/us/news/the-pokemon-tcg-mega-evolution-delta-reign-expansion-arrives-november-6-2026" },
+        { "name": "PokeBeach", "url": "https://www.pokebeach.com/2026/08/delta-reign-tcg-set-officially-revealed-for-november-full-product-lineup" }
+      ]
+    },
+    {
+      "id": "pokemon-3",
+      "section": "pokemon",
+      "rank": 3,
+      "title": "TCG Pocket: w październiku pierwsze karty dwutypowe",
+      "summary": "W Pokémon TCG Pocket w październiku pojawią się pierwsze karty z dwoma typami. Na start dostaniemy Mega Mewtwo X ex, który łączy typ Psychic i Fighting. Do gry trafią też nowe karty ex z pokemonami startowymi, m.in. Fuecoco i Piplupem. Zapowiedź padła podczas Pokémon XP przy Mistrzostwach Świata 2026.",
+      "why": "Karty dwutypowe mają przewagę typów nad większą liczbą przeciwników i pasują do większej liczby talii, więc mogą mocno zmienić metę.",
+      "sources": [
+        { "name": "Nintendo Insider", "url": "https://www.nintendo-insider.com/dual-type-cards-coming-to-pokemon-tcg-pocket-this-october/" },
+        { "name": "ComicBook", "url": "https://comicbook.com/gaming/news/pokemon-tcg-pocket-just-announced-its-first-ever-dual-type-pokemon-cards-heres-the-trailer/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Niesporczaki przeżyły próżnię kosmosu",
+      "body": "Niesporczaki to zwierzęta mniejsze niż milimetr, żyjące m.in. w mchach. W stanie tzw. kryptobiozy prawie całkowicie się odwadniają i zwalniają metabolizm niemal do zera. W 2007 r. w eksperymencie na satelicie Foton-M3 część z nich przeżyła wystawienie na próżnię kosmiczną, a niektóre nawet na silne promieniowanie UV Słońca. Po powrocie na Ziemię złożyły jaja, z których wykluło się zdrowe potomstwo.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Niesporczaki" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "nauka",
+      "title": "Bakterii w ciele mamy mniej więcej tyle, ile własnych komórek",
+      "body": "Przez lata powtarzano, że bakterii w naszym organizmie jest 10 razy więcej niż ludzkich komórek. Ta liczba pochodziła z szacunku z lat 70. W 2016 r. naukowcy z Izraela i Kanady przeliczyli to dokładniej: u człowieka ważącego 70 kg jest ok. 38 bilionów bakterii i ok. 30 bilionów własnych komórek, czyli stosunek bliski 1:1. Większość bakterii żyje w jelicie grubym.",
+      "source": { "name": "PLOS Biology (2016)", "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002533" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "historia",
+      "title": "Notatki Marii Skłodowskiej-Curie wciąż są radioaktywne",
+      "body": "Maria Skłodowska-Curie to jedyna osoba nagrodzona Noblem w dwóch dziedzinach nauk ścisłych: z fizyki (1903) i chemii (1911). Przez lata pracowała z radem i polonem bez ochrony, jakiej wymagamy dziś. Jej notatniki są przechowywane we Francuskiej Bibliotece Narodowej w ołowianych pudłach i wciąż promieniują, bo rad-226 ma okres półtrwania ok. 1600 lat. Dostęp do nich wymaga specjalnych środków ostrożności.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Maria_Sk%C5%82odowska-Curie" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1958,
+      "title": "NASA rozpoczyna działalność",
+      "body": "1 października 1958 r. zaczęła działać NASA. Przejęła pracowników i laboratoria starszego komitetu NACA, który od 1915 r. zajmował się badaniami lotniczymi. Impulsem był szok po wystrzeleniu przez ZSRR Sputnika rok wcześniej. Jedenaście lat później astronauci NASA stanęli na Księżycu.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/National_Aeronautics_and_Space_Administration" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1939,
+      "title": "Wojska niemieckie wkraczają do Warszawy",
+      "body": "1 października 1939 r., trzy dni po podpisaniu kapitulacji, do Warszawy wkroczyły wojska niemieckie. Stolica broniła się od 8 września, mimo ciężkich bombardowań i braku wody. Dla mieszkańców zaczęło się ponad pięć lat okupacji.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Obrona_Warszawy_(1939)" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1908,
+      "title": "Ford wprowadza Model T",
+      "body": "1 października 1908 r. na rynek trafił Ford Model T, pierwszy samochód, na który mogła sobie pozwolić klasa średnia. Od 1913 r. powstawał na ruchomej linii montażowej, co skróciło montaż z ponad 12 godzin do ok. półtorej godziny. Do 1927 r. wyprodukowano ponad 15 milionów egzemplarzy.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Ford_T" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Prawo Goodharta",
+    "definition": "Gdy miara staje się celem, przestaje być dobrą miarą.",
+    "origin": "Brytyjski ekonomista Charles Goodhart opisał to zjawisko w 1975 r. przy okazji polityki monetarnej, a zwięzłą wersję spopularyzowała antropolożka Marilyn Strathern. Gdy ludzie lub firmy są nagradzani za wynik wskaźnika, zaczynają poprawiać sam wskaźnik, a nie to, co miał mierzyć.",
+    "examples": [
+      "Firmy AI chwalą się wynikami w testach (benchmarkach), a modele bywają dostrajane pod konkretne testy zamiast pod rzeczywiste umiejętności.",
+      "Uczeń rozliczany wyłącznie z ocen uczy się pod sprawdzian, a nie po to, żeby rozumieć.",
+      "Przy nawykach: liczba przeczytanych stron nie mówi, ile z lektury zostało w głowie. Dlatego w tej aplikacji jest quiz i powtórki."
+    ],
+    "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "atomowe-nawyki",
+    "title": "Atomowe nawyki",
+    "author": "James Clear",
+    "day": 1,
+    "days": 7,
+    "ideaTitle": "1% lepiej każdego dnia",
+    "idea": "Clear pokazuje nawyki jako procent składany samodoskonalenia. Poprawa o 1% dziennie przez rok daje wynik ok. 37 razy lepszy (1,01³⁶⁵ ≈ 37,8), a pogarszanie się o 1% dziennie zbija go prawie do zera (0,99³⁶⁵ ≈ 0,03). Pojedynczego dnia różnicy nie widać, dlatego łatwo porzucić dobre nawyki i lekceważyć złe. Efekty długo kumulują się niewidocznie, jak lód, który podgrzewamy od −5°C i który zaczyna topnieć dopiero przy zerze.",
+    "moral": "Liczy się kierunek, a nie dzisiejszy wynik. To, co robisz codziennie, mówi o Twojej przyszłości więcej niż to, gdzie jesteś teraz.",
+    "action": "Wybierz jedną drobną rzecz, którą możesz robić codziennie przez 2 minuty, np. 10 przysiadów albo jedną stronę książki, i zrób ją dziś. To wydanie też jest takim nawykiem.",
+    "source": { "name": "O książce (jamesclear.com)", "url": "https://jamesclear.com/atomic-habits" }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-01-q1",
+      "ref": "fact-1",
+      "question": "Co pozwala niesporczakom przetrwać skrajne warunki, nawet próżnię kosmiczną?",
+      "options": [
+        "Gruby pancerz z chityny",
+        "Kryptobioza, czyli niemal całkowite odwodnienie i zatrzymanie metabolizmu",
+        "Zdolność do fotosyntezy",
+        "Gorączka utrzymująca stałą temperaturę ciała"
+      ],
+      "answer": 1,
+      "explanation": "W kryptobiozie niesporczak prawie całkowicie się odwadnia i spowalnia metabolizm niemal do zera. W tym stanie przeżył nawet próżnię kosmiczną w eksperymencie z 2007 r."
+    },
+    {
+      "id": "2026-10-01-q2",
+      "ref": "fact-2",
+      "question": "Ile mniej więcej bakterii przypada na jedną ludzką komórkę w naszym ciele według szacunków z 2016 r.?",
+      "options": ["Ok. 100", "Ok. 10", "Ok. 1", "Ok. 0,1"],
+      "answer": 2,
+      "explanation": "Ok. 38 bilionów bakterii na ok. 30 bilionów komórek człowieka, czyli stosunek bliski 1:1. Popularne „10 razy więcej” to przestarzały szacunek z lat 70."
+    },
+    {
+      "id": "2026-10-01-q3",
+      "ref": "fact-3",
+      "question": "W jakich dziedzinach Maria Skłodowska-Curie otrzymała Nagrody Nobla?",
+      "options": ["Fizyka i chemia", "Chemia i medycyna", "Fizyka i medycyna", "Chemia i nagroda pokojowa"],
+      "answer": 0,
+      "explanation": "Fizyka w 1903 r. (wspólnie z Piotrem Curie i Henrim Becquerelem) i chemia w 1911 r. To jedyna osoba z Noblami w dwóch dziedzinach nauk ścisłych."
+    },
+    {
+      "id": "2026-10-01-q4",
+      "ref": "otd-1",
+      "question": "Z jakiej instytucji wyrosła NASA w 1958 r.?",
+      "options": ["NACA", "Bell Labs", "Projekt Manhattan", "DARPA"],
+      "answer": 0,
+      "explanation": "NASA przejęła ludzi i laboratoria NACA, komitetu badań lotniczych działającego od 1915 r."
+    },
+    {
+      "id": "2026-10-01-q5",
+      "ref": "otd-3",
+      "question": "Co od 1913 r. pozwoliło Fordowi drastycznie skrócić montaż Modelu T?",
+      "options": ["Ruchoma linia montażowa", "Roboty przemysłowe", "Napęd elektryczny", "Import części z Europy"],
+      "answer": 0,
+      "explanation": "Ruchoma linia montażowa skróciła montaż z ponad 12 godzin do ok. półtorej godziny, dzięki czemu samochód stał się tańszy."
+    },
+    {
+      "id": "2026-10-01-q6",
+      "ref": "concept",
+      "question": "Co mówi prawo Goodharta?",
+      "options": [
+        "Gdy miara staje się celem, przestaje być dobrą miarą",
+        "Praca rozrasta się, by wypełnić dostępny na nią czas",
+        "Najprostsze wyjaśnienie jest zwykle najlepsze",
+        "Wszystko, co może pójść źle, pójdzie źle"
+      ],
+      "answer": 0,
+      "explanation": "Pozostałe odpowiedzi to prawo Parkinsona, brzytwa Ockhama i prawo Murphy'ego. Też warto je znać."
+    },
+    {
+      "id": "2026-10-01-q7",
+      "ref": "book",
+      "question": "Ile mniej więcej razy lepszy byłby wynik po roku poprawy o 1% każdego dnia?",
+      "options": ["Ok. 3,7 razy", "Ok. 37 razy", "Ok. 365 razy", "Ok. 2 razy"],
+      "answer": 1,
+      "explanation": "1,01 do potęgi 365 to ok. 37,8. Tak działa procent składany: małe zmiany sumują się nie liniowo, ale wykładniczo."
+    }
+  ],
+  "evening": {
+    "question": "Jaki mały nawyk chcielibyście zacząć razem od jutra i kiedy dokładnie w ciągu dnia będziecie go robić?",
+    "hint": "Clear radzi doczepić nowy nawyk do czegoś, co już robicie, np. „po porannej kawie czytamy wydanie”."
+  }
+}

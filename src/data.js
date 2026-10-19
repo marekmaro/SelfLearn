@@ -1,5 +1,8 @@
-// Wydania leżą jako pliki JSON w content/. Generuje je codzienna rutyna (patrz CONTENT_GUIDE.md).
+// Wydania leżą jako pliki JSON w content/. Mogą też być zapisane tylko na tym telefonie
+// (przygotowane w zakładce „Przygotuj wydanie”).
 import { todayISO } from './dates.js';
+import { localEditions } from './store.js';
+import { indexEntry } from './edition.js';
 
 const editions = new Map();
 let indexPromise = null;
@@ -10,9 +13,11 @@ async function getJSON(url) {
   return res.json();
 }
 
+// Lista wydań: indeks z serwera + wydania z tego telefonu + dzisiejszy plik,
+// gdyby ktoś dodał go bez aktualizacji indeksu.
 export function loadIndex({ fresh = false } = {}) {
   if (!indexPromise || fresh) {
-    indexPromise = getJSON('content/index.json').catch((err) => {
+    indexPromise = buildIndex().catch((err) => {
       indexPromise = null;
       throw err;
     });
@@ -20,7 +25,33 @@ export function loadIndex({ fresh = false } = {}) {
   return indexPromise;
 }
 
+async function buildIndex() {
+  const byDate = new Map();
+  let remoteError = null;
+  try {
+    const remote = await getJSON('content/index.json');
+    for (const e of remote.editions || []) byDate.set(e.date, e);
+  } catch (err) {
+    remoteError = err;
+  }
+  for (const ed of Object.values(localEditions())) {
+    if (!byDate.has(ed.date)) byDate.set(ed.date, { ...indexEntry(ed), local: true });
+  }
+  const today = todayISO();
+  if (!byDate.has(today)) {
+    try {
+      byDate.set(today, indexEntry(await loadEdition(today)));
+    } catch {
+      // Dzisiejszego wydania jeszcze nie ma.
+    }
+  }
+  if (!byDate.size && remoteError) throw remoteError;
+  return { editions: [...byDate.values()].sort((a, b) => b.date.localeCompare(a.date)) };
+}
+
 export async function loadEdition(date) {
+  const local = localEditions()[date];
+  if (local) return local;
   if (!editions.has(date)) {
     editions.set(
       date,
@@ -33,6 +64,15 @@ export async function loadEdition(date) {
   return editions.get(date);
 }
 
+export function forgetEdition(date) {
+  editions.delete(date);
+  indexPromise = null;
+}
+
+export async function loadBooks() {
+  return getJSON('content/books.json');
+}
+
 // Wybiera wydanie do pokazania: dzisiejsze, a jeśli go jeszcze nie ma – najnowsze wcześniejsze.
 export function pickDate(index, requested) {
   const dates = (index.editions || []).map((e) => e.date).sort().reverse();
@@ -40,4 +80,13 @@ export function pickDate(index, requested) {
   if (requested && dates.includes(requested)) return requested;
   const today = todayISO();
   return dates.find((d) => d <= today) || dates[0];
+}
+
+// Poprzednie wydanie (do rozgrzewki „Test z wczoraj”).
+export function previousDate(index, date) {
+  return (index.editions || [])
+    .map((e) => e.date)
+    .filter((d) => d < date)
+    .sort()
+    .pop() || null;
 }

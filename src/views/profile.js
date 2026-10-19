@@ -1,13 +1,26 @@
-// Profil: poziom (karp → smok), ustawienia, przypomnienie, archiwum wydań, kopia danych.
-import { SECTIONS, FACT_KINDS, LEVELS } from '../config.js';
-import { getState, update, completedCount, streak, resetAll, exportJSON, importJSON } from '../store.js';
+// Profil: ustawienia wydania, przypomnienie, poziom (karp → smok), archiwum wydań, kopia danych.
+import { SECTIONS, SECTION_GROUPS, FACT_KINDS, LEVELS } from '../config.js';
+import {
+  getState,
+  update,
+  completedCount,
+  streak,
+  longestStreak,
+  totalActiveDays,
+  resetAll,
+  exportJSON,
+  importJSON,
+  githubSettings,
+  setGithubSettings,
+} from '../store.js';
 import { loadIndex } from '../data.js';
 import { formatLong } from '../dates.js';
 import { icsFile, googleCalendarUrl } from '../calendar.js';
+import { checkAccess } from '../github.js';
 import { h, mount, icon, toast, plural } from '../ui.js';
 import { multiChoice, segmented } from './onboarding.js';
 
-export async function renderProfile(root, { onReset, onChange }) {
+export async function renderProfile(root, { onReset, onChange, focus }) {
   let index = null;
   try {
     index = await loadIndex();
@@ -18,7 +31,78 @@ export async function renderProfile(root, { onReset, onChange }) {
 
   function saveProfile(fn) {
     update((s) => fn(s.profile));
+    toast('Zapisano');
     onChange?.();
+  }
+
+  function publishingSection() {
+    const gh = githubSettings();
+    return h(
+      'section',
+      { class: 'section', id: 'publikowanie' },
+      h('h2', null, 'Publikowanie wydań'),
+      h(
+        'p',
+        { class: 'muted', style: 'margin:0' },
+        'Wydanie pisze czat AI (Claude, ChatGPT, Gemini) z dostępem do internetu. Aplikacja przygotuje dla niego polecenie, sprawdzi odpowiedź i ją opublikuje.',
+      ),
+      h('div', { class: 'inline-actions' }, h('a', { class: 'btn', href: '#przygotuj' }, 'Przygotuj wydanie', icon('arrow'))),
+      h(
+        'details',
+        { open: gh.token ? null : true },
+        h('summary', null, gh.token ? 'Token GitHuba: zapisany' : 'Publikowanie jednym przyciskiem (token GitHuba)'),
+        h(
+          'ol',
+          { class: 'howto small' },
+          h('li', null, 'Na github.com: Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.'),
+          h('li', null, `Repository access: Only select repositories → ${gh.repo}.`),
+          h('li', null, 'Permissions → Repository permissions → Contents: Read and write. Reszta bez zmian.'),
+          h('li', null, 'Wygeneruj token, skopiuj go i wklej poniżej.'),
+        ),
+        h(
+          'div',
+          { class: 'field' },
+          h('label', { for: 'gh-repo' }, 'Repozytorium'),
+          h('input', { class: 'input', id: 'gh-repo', type: 'text', value: `${gh.owner}/${gh.repo}`, autocomplete: 'off', spellcheck: 'false' }),
+        ),
+        h(
+          'div',
+          { class: 'field' },
+          h('label', { for: 'gh-token' }, 'Token'),
+          h('input', { class: 'input', id: 'gh-token', type: 'password', placeholder: gh.token ? '•••••••• (zapisany)' : 'github_pat_…', autocomplete: 'off' }),
+        ),
+        h('p', { class: 'small muted', style: 'margin:0' }, 'Token zostaje tylko na tym telefonie i nie trafia do kopii danych.'),
+        h(
+          'div',
+          { class: 'inline-actions' },
+          h(
+            'button',
+            {
+              type: 'button',
+              class: 'btn secondary',
+              onclick: async () => {
+                const [owner, repo] = root.querySelector('#gh-repo').value.trim().split('/');
+                const token = root.querySelector('#gh-token').value.trim() || gh.token;
+                if (!owner || !repo) return toast('Wpisz repozytorium jako właściciel/nazwa.');
+                if (!token) return toast('Wklej token.');
+                setGithubSettings({ owner, repo, token });
+                try {
+                  await checkAccess(githubSettings());
+                  toast('Token działa. Możesz publikować.');
+                } catch (err) {
+                  toast(err.message);
+                }
+                render();
+              },
+            },
+            'Zapisz i sprawdź',
+          ),
+          gh.token
+            ? h('button', { type: 'button', class: 'btn ghost', onclick: () => { setGithubSettings({ token: '' }); toast('Token usunięty'); render(); } }, 'Usuń token')
+            : null,
+        ),
+      ),
+    );
   }
 
   function render() {
@@ -32,35 +116,50 @@ export async function renderProfile(root, { onReset, onChange }) {
 
     mount(
       root,
-      h('header', { class: 'masthead' }, h('p', { class: 'eyebrow' }, 'Profil'), h('h1', null, profile.name || 'Ty')),
+      h('header', { class: 'masthead' }, h('p', { class: 'eyebrow' }, 'Profil i ustawienia'), h('h1', null, profile.name || 'Ty')),
 
       h(
         'section',
-        { class: 'card level-card' },
-        h('p', { class: 'eyebrow' }, 'Twój poziom'),
-        h('p', { class: 'level-name', style: 'margin:0' }, level.name),
-        h('div', { class: 'level-track', 'aria-hidden': 'true' }, LEVELS.map((_, i) => h('span', { class: i <= levelIdx ? 'on' : '' }))),
-        h('p', { class: 'read', style: 'margin:0' }, level.text, next ? ` Następny poziom, „${next.name}”, po ${next.min} ${plural(next.min, 'wydaniu', 'wydaniach', 'wydaniach')}.` : ''),
+        { class: 'section', id: 'ustawienia' },
+        h('h2', null, 'Twoje wydanie'),
+        h('p', { class: 'muted', style: 'margin:0' }, 'Zmiany zapisują się od razu i działają już w dzisiejszym wydaniu.'),
         h(
-          'p',
-          { class: 'legend' },
-          'Według chińskiej legendy karp, który płynie pod prąd Żółtej Rzeki i przeskoczy wodospad Smoczej Bramy, zmienia się w smoka. Każde ukończone wydanie to kolejny ruch płetwą.',
+          'div',
+          { class: 'field' },
+          h('label', { for: 'profile-name' }, 'Imię w powitaniu'),
+          h('input', {
+            class: 'input',
+            id: 'profile-name',
+            type: 'text',
+            autocomplete: 'given-name',
+            maxlength: 30,
+            value: profile.name,
+            onchange: (e) => {
+              const name = e.target.value.trim();
+              if (!name) {
+                e.target.value = profile.name;
+                toast('Imię nie może być puste');
+                return;
+              }
+              saveProfile((p) => { p.name = name; });
+              render();
+            },
+          }),
         ),
-      ),
-
-      h(
-        'div',
-        { class: 'stats', style: 'margin-top:12px' },
-        h('div', { class: 'stat' }, h('strong', null, count), h('span', null, plural(count, 'wydanie', 'wydania', 'wydań'))),
-        h('div', { class: 'stat' }, h('strong', null, s), h('span', null, `${plural(s, 'dzień', 'dni', 'dni')} serii`)),
-        h('div', { class: 'stat' }, h('strong', null, Object.keys(getState().deck).length), h('span', null, 'w powtórkach')),
-      ),
-
-      h(
-        'section',
-        { class: 'section' },
-        h('h2', null, 'Tematy'),
-        multiChoice(SECTIONS, profile.sections, (ids) => saveProfile((p) => { p.sections = ids.length ? ids : ['polska']; })),
+        h('h3', { class: 'group-title', style: 'margin-top:8px' }, 'Działy wiadomości'),
+        multiChoice(
+          SECTIONS,
+          profile.sections,
+          (ids) => {
+            if (!ids.length) {
+              toast('Zostaw co najmniej jeden dział');
+              render();
+              return;
+            }
+            saveProfile((p) => { p.sections = ids; });
+          },
+          SECTION_GROUPS,
+        ),
         h('h3', { class: 'group-title', style: 'margin-top:8px' }, 'Ciekawostki najpierw z'),
         multiChoice(FACT_KINDS, profile.factKinds, (ids) => saveProfile((p) => { p.factKinds = ids; })),
         h('h3', { class: 'group-title', style: 'margin-top:8px' }, 'Czas dziennie'),
@@ -116,6 +215,35 @@ export async function renderProfile(root, { onReset, onChange }) {
             icon('calendar'),
             'iPhone / Outlook (.ics)',
           ),
+        ),
+      ),
+
+      publishingSection(),
+
+      h(
+        'section',
+        { class: 'section' },
+        h('h2', null, 'Postępy'),
+        h(
+          'div',
+          { class: 'card level-card' },
+          h('p', { class: 'eyebrow' }, 'Twój poziom'),
+          h('p', { class: 'level-name', style: 'margin:0' }, level.name),
+          h('div', { class: 'level-track', 'aria-hidden': 'true' }, LEVELS.map((_, i) => h('span', { class: i <= levelIdx ? 'on' : '' }))),
+          h('p', { class: 'read', style: 'margin:0' }, level.text, next ? ` Następny poziom, „${next.name}”, po ${next.min} ${plural(next.min, 'wydaniu', 'wydaniach', 'wydaniach')}.` : ''),
+          h(
+            'p',
+            { class: 'legend' },
+            'Według chińskiej legendy karp, który płynie pod prąd Żółtej Rzeki i przeskoczy wodospad Smoczej Bramy, zmienia się w smoka. Każde ukończone wydanie to kolejny ruch płetwą.',
+          ),
+        ),
+        h(
+          'div',
+          { class: 'stats four' },
+          h('div', { class: 'stat' }, h('strong', null, s), h('span', null, `${plural(s, 'dzień', 'dni', 'dni')} z rzędu`)),
+          h('div', { class: 'stat' }, h('strong', null, longestStreak()), h('span', null, 'najdłuższa seria')),
+          h('div', { class: 'stat' }, h('strong', null, totalActiveDays()), h('span', null, 'dni nauki łącznie')),
+          h('div', { class: 'stat' }, h('strong', null, count), h('span', null, `${plural(count, 'wydanie', 'wydania', 'wydań')} za Tobą`)),
         ),
       ),
 
@@ -220,4 +348,5 @@ export async function renderProfile(root, { onReset, onChange }) {
   }
 
   render();
+  if (focus) root.querySelector(`#${focus}`)?.scrollIntoView({ block: 'start' });
 }

@@ -1,0 +1,25 @@
+name: Sprawdzenie wydań
+
+on:
+  push:
+    branches-ignore: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Sprawdź wydania i indeks
+        run: node scripts/validate.mjs
+
+      - name: Sprawdź składnię skryptów aplikacji
+        run: for f in src/*.js src/views/*.js sw.js scripts/*.mjs; do node --check "$f"; done

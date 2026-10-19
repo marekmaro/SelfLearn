@@ -2,15 +2,17 @@
 
 Codzienne wydanie do nauki i poszerzania horyzontów, w formie aplikacji na telefon (PWA). Codziennie 10–20 minut:
 
+- **Rozgrzewka**: 3 pytania a/b/c z poprzedniego wydania,
 - **Polska: top 5** i **Świat: top 5**: streszczenie, „dlaczego to ważne” i link do pełnego artykułu,
-- **Twoje tematy**: technologia, nauka, AI, zdrowie, kultura, Pokémon TCG (wybierane w ankiecie),
+- **Twoje tematy**: 22 działy w 7 grupach, m.in. bezpieczeństwo, gospodarka, mieszkania, prawo, technologia, AI, nauka, kosmos, historia, zdrowie, psychologia, edukacja, klimat, zwierzęta, kultura, filmy, muzyka, gry, sport, motoryzacja, podróże, Pokémon TCG,
 - **Ciekawostki**: nauka, przyroda, historia, kosmos, psychologia,
 - **Ten dzień w historii**,
 - **Pojęcie dnia**: model myślowy albo błąd poznawczy,
 - **Książka tygodnia**: jedna idea dziennie, morał i „zastosuj dziś”,
 - **Quiz** z ciekawostek, pojęcia i książki (bez pytań z wiadomości), a potem **powtórki** w odstępach 1, 3, 7, 16 i 35 dni,
 - **Pytanie na wieczór** do rozmowy we dwoje,
-- **Zeszyt** na zapisane karty i notatki, **seria dni** i poziomy od ikry do smoka (legenda o karpiu i Smoczej Bramie).
+- **Seria dni** jak w Duolingo: dzień się liczy po rozgrzewce albo całym wydaniu, z paskiem ostatnich 7 dni i kamieniami milowymi,
+- **Zeszyt** na zapisane karty i notatki oraz poziomy od ikry do smoka (legenda o karpiu i Smoczej Bramie).
 
 Każda osoba ma własny profil, postępy i powtórki na swoim telefonie. Wydania są wspólne.
 
@@ -21,8 +23,8 @@ Codzienna rutyna Claude Code (ok. 5:00)
   → szuka wiadomości z ostatniej doby i pisze wydanie wg CONTENT_GUIDE.md
   → zapisuje content/editions/RRRR-MM-DD.json, sprawdza je (scripts/validate.mjs)
   → commit i push na main
-GitHub Actions
-  → publikuje stronę na GitHub Pages
+GitHub Pages
+  → publikuje stronę z gałęzi main
 Telefon
   → aplikacja pobiera nowe wydanie; postępy trzyma lokalnie, działa też offline
 ```
@@ -40,9 +42,26 @@ Wystarczy Node.js 18 lub nowszy, bez instalowania zależności.
 
 ## Publikacja (jednorazowo)
 
-1. Scal tę gałąź z `main`.
-2. W repozytorium: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Po kilku minutach strona będzie pod adresem `https://marekmaro.github.io/SelfLearn/`.
+Aplikacja to zwykłe pliki statyczne, więc działa na Vercelu albo na GitHub Pages. Wystarczy jedno z nich.
+
+### Vercel (polecane)
+
+1. Zaloguj się na [vercel.com](https://vercel.com) kontem GitHub (plan Hobby jest darmowy).
+2. **Add New… → Project**, wybierz repozytorium `SelfLearn` i kliknij **Import**. Jeśli go nie widać: **Adjust GitHub App Permissions** i dodaj dostęp do `SelfLearn`.
+3. **Framework Preset: Other**, Root Directory `./`, reszta bez zmian. Kliknij **Deploy**.
+4. Po kilkudziesięciu sekundach aplikacja działa pod adresem `https://<nazwa-projektu>.vercel.app`.
+
+`vercel.json` przed każdą publikacją uruchamia `npm run build`: sprawdza wydania (`scripts/validate.mjs`) i składa stronę w katalogu `public/` (`scripts/build-site.mjs`). Wydanie z błędem nie trafi na stronę, a działać będzie poprzednia wersja. Każdy commit na `main` publikuje się sam. Każda inna gałąź dostaje własny adres podglądu.
+
+### GitHub Pages
+
+1. W repozytorium: **Settings → Pages → Build and deployment**.
+2. **Source: Deploy from a branch**, **Branch: main**, folder **/ (root)**, potem **Save**.
+3. Po 1–2 minutach strona działa pod adresem `https://marekmaro.github.io/SelfLearn/`.
+
+Plik `.nojekyll` wyłącza przetwarzanie Jekyll, więc pliki trafiają na stronę bez zmian.
+
+Postępy są zapisane osobno dla każdego adresu. Przy przenosinach z jednego adresu na drugi użyj **Profil → Skopiuj kopię danych** i **Wczytaj kopię danych**.
 
 ### Instalacja na telefonie
 
@@ -52,6 +71,26 @@ Wystarczy Node.js 18 lub nowszy, bez instalowania zależności.
 Przypomnienie o wybranej godzinie dodaje się w zakładce **Profil** (Kalendarz Google albo plik .ics dla iPhone'a).
 
 ## Codzienne treści
+
+Są dwa sposoby. Oba korzystają z tych samych zasad (`src/prompt.js`).
+
+### Sposób 1: z czatu AI, w aplikacji (bez konfiguracji)
+
+W aplikacji: **Dziś → Przygotuj dzisiejsze wydanie** (albo **Profil → Publikowanie wydań**).
+
+1. **Skopiuj polecenie.** Aplikacja sama wpisze w nie datę, działy, książkę tygodnia z dniem i tematem, tematy do pominięcia i materiał do rozgrzewki.
+   - **Projekt w Claude (polecane):** raz utwórz w Claude projekt „SelfLearn” i wklej do jego instrukcji „instrukcje projektu”. Potem codziennie w tym projekcie zaczynasz nowy czat i wklejasz krótkie „polecenie dnia”.
+   - **Całość:** jedno długie polecenie do dowolnego czatu (Claude, ChatGPT, Gemini, Perplexity).
+   - Czat musi mieć **włączone wyszukiwanie w internecie**. Bez niego odpowie `BRAK_WYSZUKIWANIA`, a aplikacja to wychwyci.
+2. **Wklej odpowiedź** (cały blok JSON) i naciśnij **Sprawdź**. Aplikacja wypisze, co poprawić, i da gotową listę poprawek do odesłania czatowi.
+3. **Opublikuj:**
+   - **Opublikuj dla obojga**: jednym przyciskiem przez API GitHuba. Wymaga tokenu (Profil → Publikowanie wydań): fine-grained token tylko do tego repozytorium, z uprawnieniem *Contents: Read and write*. Token zostaje na telefonie.
+   - **Skopiuj plik i otwórz GitHub**: bez tokenu. Wklejasz plik na stronie GitHuba i klikasz *Commit changes*.
+   - **Tylko na tym telefonie**: od razu, ale druga osoba go nie zobaczy.
+
+Wydanie możesz przygotować też wieczorem na następny dzień (pole „Na dzień”). To samo polecenie wypisze `node scripts/prompt.mjs RRRR-MM-DD`.
+
+### Sposób 2: automatycznie, rutyną Claude Code
 
 Wydanie przygotowuje **rutyna Claude Code** (claude.ai/code/routines), która działa w ramach subskrypcji Claude, bez dodatkowych opłat za API. Liczy się do limitów użycia konta.
 
@@ -69,13 +108,14 @@ Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesię
 | Ścieżka | Co zawiera |
 |---|---|
 | `index.html`, `src/` | Aplikacja (czysty JavaScript, moduły ES, bez kroku budowania) |
-| `src/views/` | Widoki: ankieta, wydanie, powtórki, zeszyt, profil |
+| `src/views/` | Widoki: ankieta, wydanie, powtórki, zeszyt, profil, przygotowanie wydania |
+| `src/prompt.js`, `src/edition.js` | Polecenie dla czatu AI oraz sprawdzanie wydań (wspólne dla aplikacji i skryptów) |
 | `sw.js`, `manifest.webmanifest`, `assets/` | Tryb offline, instalacja na telefonie, ikony |
 | `content/editions/` | Wydania, jeden plik JSON na dzień |
 | `content/index.json` | Lista wydań (generowana przez `scripts/build-index.mjs`) |
-| `content/books.json` | Kolejka książek tygodnia |
+| `content/books.json` | Kolejka książek tygodnia (zmiana co 7 dni od `startDate`) |
 | `CONTENT_GUIDE.md` | Instrukcja pisania wydań (dla rutyny) |
-| `scripts/` | Walidacja, indeks, lokalny serwer |
+| `scripts/` | Walidacja, indeks, polecenie dnia (`prompt.mjs`), lokalny serwer |
 
 ## Pomysły na kolejne kroki
 
@@ -84,3 +124,4 @@ Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesię
 - Wspólne statystyki pary i wspólna seria.
 - Przycisk „pogłęb” przy karcie: prostsze wyjaśnienie, więcej kontekstu, pytanie do AI.
 - Niedzielne podsumowanie tygodnia z quizem z całego tygodnia.
+- Wątki: śledzenie długich tematów z osią czasu.

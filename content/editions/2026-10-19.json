@@ -1,0 +1,723 @@
+{
+  "date": "2026-10-19",
+  "intro": "Dziś m.in. myśliwce i alert RCB na wschodzie Polski, ponad tysiąc ukraińskich dronów nad Rosją, pierwszy tytuł WTA Mai Chwalińskiej i drugi dzień z „Atomowymi nawykami”.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Myśliwce w powietrzu i alert RCB dla Lubelskiego i Podkarpackiego",
+      "summary": "W poniedziałek polskie lotnictwo poderwało myśliwce w związku z rosyjskimi atakami dronów na zachodnią Ukrainę. RCB wysłało alert mieszkańcom województw lubelskiego i podkarpackiego, odwołany po około dwóch godzinach, a lotniska w Lublinie i Rzeszowie czasowo wstrzymały loty. Dzień wcześniej wojsko szukało na południe od Lublina obiektu, który mógł naruszyć polską przestrzeń powietrzną. Niczego nie znaleziono, a naruszenia nie potwierdzono.",
+      "why": "Rosyjskie ataki tuż przy granicy regularnie wymuszają gotowość polskiej obrony powietrznej. Wojsko ostrzega też, że część wpisów w sieci na ten temat może być celową manipulacją.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-10-19/polska-poderwala-mysliwce-alert-rcb-dla-dwoch-wojewodztw/" },
+        { "name": "RMF24", "url": "https://www.rmf24.pl/regiony/lublin/news-pilny-komunikat-wojska-poszukiwania-niezidentyfikowanego-obi,nIdn,1022345" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Spór o Trybunał Konstytucyjny. Sąd nie aresztował mężczyzny zatrzymanego przed TK",
+      "summary": "W środę ślubowanie na sędziego TK złożył Maciej Berek, ale prezes Trybunału Bogdan Święczkowski nie dopuścił go do pracy, a prezydent Karol Nawrocki uważa, że Berek sędzią nie jest. Przed gmachem TK trwają demonstracje. W piątek w pobliżu zgromadzenia policja zatrzymała Piotra W., któremu prokuratura zarzuca naruszenie nietykalności policjantki. Mężczyzna zaprzecza, a sąd oddalił wniosek prokuratury o areszt.",
+      "why": "Spór o to, kto legalnie zasiada w Trybunale, trwa od lat. Od jego rozstrzygnięcia zależy, czy wyroki TK będą powszechnie uznawane.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-10-18/glosne-zatrzymanie-piotra-w-jest-decyzja-sadu-w-sprawie-aresztu/" },
+        { "name": "Polsat News (ślubowanie Berka)", "url": "https://www.polsatnews.pl/wiadomosc/2026-10-14/przepychanki-z-policja-przed-siedziba-trybunalu-konstytucyjnego/" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Dron wybuchł nad Litwą. Wilno pyta, czy wleciał z Polski, MON zaprzecza",
+      "summary": "W niedzielę nad północną Litwą eksplodował obiekt przypominający drona. Odłamki uszkodziły samochód, nikt nie został ranny. Ukraińskie MSZ przeprosiło i ocenia, że ukraiński dron mógł zboczyć z kursu przez rosyjskie zakłócanie sygnałów. Litewski minister obrony mówił, że obiekt mógł wlecieć z terytorium Polski, i zaproponował wspólne śledztwo. Rzecznik MON odpowiada, że polskie radary nie potwierdzają przekroczenia granicy.",
+      "why": "Wojna za wschodnią granicą coraz częściej przenosi się na niebo państw NATO. Szybkie wyjaśnienie trasy drona jest ważne dla zaufania między sojusznikami.",
+      "sources": [
+        { "name": "TVN24", "url": "https://tvn24.pl/swiat/eksplozja-drona-nad-litwa-ukraincy-przeprosili-st9292974" },
+        { "name": "RMF24", "url": "https://rmf24.pl/fakty/swiat/news-skad-nadlecial-obiekt-ktory-spadl-w-jodancach-litwa-proponuj,nIdn,1022372" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Prezydent podpisał osiem ustaw, trzy zawetował",
+      "summary": "Prezydent Karol Nawrocki podpisał osiem ustaw i zawetował trzy, w tym nowelizację Kodeksu wyborczego oraz ustawę o wykonywaniu wyroków Europejskiego Trybunału Praw Człowieka. Poinformował o tym rzecznik prezydenta Rafał Leśkiewicz. Zawetowane ustawy wracają do Sejmu, który może odrzucić weto większością trzech piątych głosów.",
+      "why": "Liczba wet pokazuje skalę konfliktu między prezydentem a rządem. Bez większości 3/5 w Sejmie zawetowane przepisy nie wejdą w życie.",
+      "sources": [{ "name": "Interia", "url": "https://wydarzenia.interia.pl/kraj/news-prezydent-podjal-decyzje-ws-kolejnych-ustaw-trzy-weta-i-osie,nId,23558984" }]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Emerytury w 2027 r. mogą wzrosnąć bardziej, niż zakładano",
+      "summary": "Według najnowszych prognoz opartych na projekcie budżetu na 2027 r. marcowa waloryzacja emerytur i rent może wynieść ok. 3,66%, a nie 3,48%, jak zakładano w czerwcu. Powodem są wyższe oczekiwania co do inflacji, m.in. przez ceny paliw. Przy tym wskaźniku najniższa emerytura wzrosłaby z 1978,49 zł o ok. 72 zł brutto. Ostateczny wskaźnik zostanie ogłoszony w lutym 2027 r.",
+      "why": "Waloryzacja zależy od tegorocznej inflacji i wzrostu płac, więc prognozy mogą się jeszcze zmienić. Dla budżetu każdy dodatkowy punkt procentowy to miliardy złotych.",
+      "sources": [
+        { "name": "GP24", "url": "https://gp24.pl/emerytury-w-2027-roku-pojda-w-gore-nowe-wyliczenia-daja-powody-do-radosci-15-10-2026/ar/c3p2-29414011" },
+        { "name": "Infor.pl", "url": "https://www.infor.pl/twoje-pieniadze/swiadczenia/7628499,waloryzacja-emerytur-2027-pojawily-sie-pierwsze-prognozy-i-stawki-dla-seniorow.html" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Ukraina wysłała ponad tysiąc dronów na Rosję. Trump krytykuje Zełenskiego",
+      "summary": "W nocy na niedzielę Ukraina przeprowadziła jeden z największych ataków dronowych tej wojny. Rosyjskie ministerstwo obrony twierdzi, że zestrzeliło 1015 dronów. W Petersburgu zapalił się terminal eksportu ropy i skład paliw, zginęła jedna osoba, a pięć zostało rannych. Donald Trump, który domagał się wstrzymania ataków na rosyjską energetykę, stwierdził, że Wołodymyr Zełenski „nie chce zakończyć tej wojny”.",
+      "why": "Uderzenia w rosyjską energetykę to jeden z głównych sposobów, w jaki Ukraina osłabia Rosję. Konflikt Kijowa z Waszyngtonem utrudnia jednak rozmowy o zakończeniu wojny.",
+      "sources": [
+        { "name": "CNN", "url": "https://www.cnn.com/2026/10/18/europe/ukraine-russia-drone-attack-trump-intl" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/10/19/ukrainian-drone-attack-on-russias-st-petersburg-kills-1-hits-energy-sites" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Trump zawiesił nowe sankcje na Rosję. Zełenski: to błąd",
+      "summary": "Prezydent USA podpisał rozporządzenie wstrzymujące sankcje i cła na Rosję przewidziane w ustawie uchwalonej przez Kongres, w tym możliwe cła do 500% na rosyjskie towary. Zrobił to na dwa dni przed ich wejściem w życie. Wcześniej USA zawarły umowę na zakup rosyjskiego oleju napędowego, by obniżyć światowe ceny paliw. Decyzję skrytykowali politycy obu partii w Kongresie, a Wołodymyr Zełenski nazwał ją błędem.",
+      "why": "Sankcje to główne narzędzie nacisku Zachodu na Rosję. Ich zawieszenie może dać Moskwie więcej pieniędzy ze sprzedaży surowców, choć jednocześnie obniża ceny ropy.",
+      "sources": [
+        { "name": "CNN", "url": "https://www.cnn.com/2026/10/16/europe/us-ukraine-russia-sanctions-intl-hnk" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Zamieszki we Francji po protestach przeciw drożyźnie. Spłonął ratusz w Limoges",
+      "summary": "Protesty przeciw rosnącym kosztom życia, w których według francuskiego MSW wzięło udział ok. 550 tys. osób, w sobotę przerodziły się w zamieszki. Minister spraw wewnętrznych Laurent Nuñez podał, że zatrzymano ponad 1800 osób, a ponad 500 policjantów, strażaków i żandarmów zostało rannych. W Limoges zamaskowani sprawcy podpalili zabytkowy, ponad 140-letni ratusz, a jego wieża zegarowa runęła.",
+      "why": "Francja zmaga się z drożyzną i napięciami politycznymi przed wyborami prezydenckimi w 2027 r. Skala zamieszek pokazuje, jak koszty życia przekładają się na niepokoje społeczne w Europie.",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/spoleczenstwo/art45351991-pozar-zabytkowego-ratusza-w-limoges-we-francji-zamaskowani-sprawcy-podpalili-budynek" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-10-18/rekordowa-liczba-zatrzyman-w-paryzu-demonstracje-przerodzily-sie-w-zamieszki/" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Alberta głosuje, czy zacząć drogę do odłączenia od Kanady",
+      "summary": "Mieszkańcy kanadyjskiej prowincji Alberta głosują dziś w referendum z dziesięcioma pytaniami. Ostatnie dotyczy tego, czy rząd prowincji ma rozpocząć prawną procedurę prowadzącą do późniejszego, wiążącego głosowania nad odłączeniem od Kanady. Dzisiejszy wynik nie jest wiążący. W sondażu z 17 października 68% badanych chciało pozostać w Kanadzie, a 26% rozpocząć proces.",
+      "why": "Alberta to bogata w ropę prowincja i ważna część kanadyjskiej gospodarki. Nawet niewiążące referendum sprawdza jedność Kanady i siłę ruchów separatystycznych.",
+      "sources": [
+        { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/2026_Alberta_independence_referendum" },
+        { "name": "The Canadian Wire", "url": "https://www.thecanadianwire.com/news/alberta-referendum-october-19-2026-how-to-vote-and-what-is-binding" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Papież Leon XIV pierwszy raz publicznie po operacji raka płuca",
+      "summary": "71-letni papież Leon XIV pojawił się w niedzielę w oknie Pałacu Apostolskiego i poprowadził modlitwę Anioł Pański. 13 października lekarze usunęli mu dolny płat prawego płuca, w którym wykryto gruczolakoraka. Papież zapowiedział, że do obowiązków będzie wracał stopniowo. Lekarze uznali, że może odbyć planowaną w listopadzie podróż do Ameryki Południowej.",
+      "why": "Stan zdrowia papieża ma znaczenie dla ponad miliarda katolików. Nie wiadomo jeszcze, czy potrzebne będzie dalsze leczenie, np. chemioterapia.",
+      "sources": [
+        { "name": "CNN", "url": "https://edition.cnn.com/2026/10/18/europe/pope-angelus-sunday-cancer-intl" },
+        { "name": "The Globe and Mail", "url": "https://www.theglobeandmail.com/world/article-pope-leo-cancer-surgery/" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Tusk: Rosja może eskalować jeszcze przed Wigilią",
+      "summary": "Po szczycie UE w Brukseli premier Donald Tusk powiedział, że według informacji polskich, ukraińskich i sojuszniczych służb można się spodziewać eskalacji ze strony Rosji jeszcze przed świętami. Ostrzegł przed sabotażem i prowokacjami na większą skalę niż dotąd, zwłaszcza na granicach i kolei. Dodał, że najbliższe kilkanaście miesięcy może przesądzić o przyszłości Ukrainy i całej Europy.",
+      "why": "Przez Polskę płynie większość pomocy dla Ukrainy, co czyni ją celem działań hybrydowych. Ostrzeżenie oznacza większą czujność służb wokół kolei i infrastruktury.",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/polityka/art45350811-tusk-po-szczycie-ue-jesli-ukraina-padnie-bedziemy-mieli-wszyscy-bardzo-powazne-problemy" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-10-16/tusk-alarmuje-po-szczycie-ue-bedziemy-mieli-wszyscy-bardzo-powazne-problemy/" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "section": "bezpieczenstwo",
+      "rank": 2,
+      "title": "Kijów i Waszyngton spierają się o łączność satelitarną Starshield",
+      "summary": "Ukraińskie wojsko straciło normalny dostęp do szybkiej łączności satelitarnej Starshield, czyli wojskowej odmiany Starlinka. Wołodymyr Zełenski uważa, że stoi za tym rząd USA. Elon Musk twierdzi, że systemy kontroluje amerykańskie wojsko i prezydent, a Donald Trump i Marco Rubio zaprzeczają, by spowolnienie było celowe. Według doradcy Zełenskiego awarie usunięto, ale prędkość łącza nadal jest ograniczona.",
+      "why": "Łączność satelitarna to dziś układ nerwowy ukraińskiej armii. Spór pokazuje, jak bardzo bezpieczeństwo państw zależy od prywatnych firm technologicznych.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/10/18/nx-s1-6007382/ukraine-us-starshield-starlink-what-to-know-trump" },
+        { "name": "NBC News", "url": "https://www.nbcnews.com/world/ukraine/ukraine-starlink-restrictions-military-intel-trump-zelenskyy-russia-rcna603412" }
+      ]
+    },
+    {
+      "id": "gospodarka-1",
+      "section": "gospodarka",
+      "rank": 1,
+      "title": "Paliwa w tym tygodniu: benzyna i diesel tanieją, LPG drożeje",
+      "summary": "Według prognozy e-petrol.pl na 19–25 października litr benzyny 95 ma kosztować 6,78–6,89 zł, oleju napędowego 7,86–7,99 zł, a LPG 3,51–3,62 zł, czyli wyraźnie więcej niż tydzień temu (3,39 zł). Ceny maksymalne na poniedziałek to 6,89 zł za benzynę 95 i 8,00 zł za olej napędowy. To prognoza, więc ceny na stacjach mogą się różnić.",
+      "why": "Ceny paliw przekładają się na koszty transportu i ceny w sklepach, a w efekcie na inflację i waloryzację świadczeń.",
+      "sources": [
+        { "name": "WP Moto", "url": "https://moto.wp.pl/prognoza-cen-paliw-na-19-25-pazdziernika-diesel-i-benzyna-w-dol-lpg-podrozeje-7340634039629856a" },
+        { "name": "Petrol24", "url": "https://www.petrol24.pl/4408/maksymalne-ceny-paliw-17-19-pazdziernika-2026/" }
+      ]
+    },
+    {
+      "id": "nieruchomosci-1",
+      "section": "nieruchomosci",
+      "rank": 1,
+      "title": "Mieszkania w ogłoszeniach: średnio 14,4 tys. zł za metr",
+      "summary": "Według serwisu Tabelaofert średnia cena ofertowa mieszkań w Polsce wynosi 14 422 zł za m², o ok. 5% więcej niż przed rokiem. Najdrożej jest w Warszawie (18 492 zł/m²), a najszybciej ceny rosną w Gdańsku, o ok. 11% rok do roku. To ceny z ogłoszeń, a nie z faktycznie zawartych transakcji.",
+      "why": "Ceny wciąż rosną, ale wolniej niż w poprzednich latach. Kupujący mają więcej czasu na porównanie ofert.",
+      "sources": [{ "name": "Tabelaofert", "url": "https://tabelaofert.pl/ceny-mieszkan" }]
+    },
+    {
+      "id": "nieruchomosci-2",
+      "section": "nieruchomosci",
+      "rank": 2,
+      "title": "W Warszawie ceny w ogłoszeniach rosną szybciej niż w transakcjach",
+      "summary": "We wrześniu ceny ofertowe mieszkań w stolicy były o 8,3% wyższe niż przed rokiem, ale ceny w faktycznie zawartych transakcjach wzrosły tylko o 1,3%. Według danych SonarHome wzrost cen transakcyjnych na rynku wtórnym jest niższy niż inflacja i wzrost płac.",
+      "why": "Rosnąca różnica między ceną w ogłoszeniu a ceną sprzedaży oznacza więcej miejsca na negocjacje dla kupujących.",
+      "sources": [{ "name": "Finwire", "url": "https://finwire.pl/artykuly/ceny-mieszkan-warszawa-wrzesien-2026-18492-zl-m2-oferta-transakcja" }]
+    },
+    {
+      "id": "prawo-1",
+      "section": "prawo",
+      "rank": 1,
+      "title": "Od 18 października tylko elektroniczne zaświadczenia z medycyny pracy",
+      "summary": "Okres przejściowy się skończył: od 18 października lekarze medycyny pracy wystawiają zaświadczenia o zdolności do pracy, z nielicznymi wyjątkami, wyłącznie w formie elektronicznej. Wcześniej lekarz mógł wybrać papier albo e-dokument.",
+      "why": "Dotyczy to każdego, kto idzie na badania wstępne lub okresowe. Działy kadr muszą być gotowe na odbiór dokumentów elektronicznych.",
+      "sources": [{ "name": "Interia", "url": "https://wydarzenia.interia.pl/kraj/news-wazne-zmiany-w-medycynie-pracy-wchodza-w-zycie-18-pazdzierni,nId,23551647" }]
+    },
+    {
+      "id": "prawo-2",
+      "section": "prawo",
+      "rank": 2,
+      "title": "Ustawa o szybkim blokowaniu nielegalnych treści w Senacie. Prezydent stawia warunek",
+      "summary": "Sejm uchwalił 8 października nowelizację, która pozwoli sądom i właściwym organom szybko nakazywać blokowanie nielegalnych treści w internecie. To reakcja na serię ataków w szkołach i druga wersja przepisów, bo pierwszą prezydent zawetował w styczniu. Ustawą zajmuje się teraz Senat. Karol Nawrocki zapowiada, że podpisze ją tylko wtedy, gdy nie będzie ograniczała wolności w sieci.",
+      "why": "Przepisy wdrażają unijny akt o usługach cyfrowych (DSA). Spór dotyczy granicy między ochroną przed szkodliwymi treściami a wolnością słowa.",
+      "sources": [
+        { "name": "Interia", "url": "https://wydarzenia.interia.pl/kraj/news-nawrocki-stawia-warunek-w-sprawie-glosnej-ustawy-rzad-ma-pew,nId,23559063" },
+        { "name": "Interia (głosowanie w Sejmie)", "url": "https://wydarzenia.interia.pl/kraj/news-sejm-reaguje-na-serie-atakow-w-szkolach-ustawa-przeglosowana,nId,23555617" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Rekordowy kwartał ASML dzięki popytowi na chipy do AI",
+      "summary": "Holenderski ASML, jedyny na świecie producent maszyn do litografii EUV, bez których nie da się produkować najnowocześniejszych chipów, miał w III kwartale rekordowe 11,7 mld euro sprzedaży i 5 mld euro zysku netto. Sprzedał 113 nowych i 8 używanych systemów. Na IV kwartał spodziewa się 14,2–15,2 mld euro sprzedaży, a w całym roku 44–45 mld euro.",
+      "why": "Zamówienia na maszyny ASML to barometr inwestycji w chipy dla sztucznej inteligencji. Rekordowe wyniki pokazują, że boom na AI wciąż napędza całą branżę.",
+      "sources": [
+        { "name": "Yahoo Finance (komunikat ASML)", "url": "https://finance.yahoo.com/markets/stocks/articles/asml-reports-11-7-billion-050000954.html" },
+        { "name": "Investing.com", "url": "https://ng.investing.com/news/stock-market-news/asml-q3-2026-slides-record-sales-driven-by-ai-chip-demand-93CH-2736554" }
+      ]
+    },
+    {
+      "id": "technologia-2",
+      "section": "technologia",
+      "rank": 2,
+      "title": "Niezałatana luka w Wi-Fi Broadcomu pozwala przejąć router z bliska",
+      "summary": "Badacz Quentin Kaiser opisał lukę w kodzie WPS (szybkiego parowania Wi-Fi) w układach Broadcomu, używanych w routerach wielu producentów. Napastnik w zasięgu sieci może bez znajomości hasła uruchomić na routerze dowolny kod z najwyższymi uprawnieniami. Błąd pochodzi co najmniej z 2010 r., a dla starszych układów nie ma poprawki. Nie odnotowano ataków z jej użyciem.",
+      "why": "Router to brama do całej domowej sieci. Warto zaktualizować jego oprogramowanie i wyłączyć WPS, jeśli z niego nie korzystamy.",
+      "sources": [
+        { "name": "The Hacker News", "url": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html" },
+        { "name": "Quentin Kaiser (opis badacza)", "url": "https://quentinkaiser.be/security/2026/10/16/one-parser-two-bugs/" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Anthropic przeznaczy 5% akcji na fundusz dla dobra publicznego",
+      "summary": "Anthropic, twórca asystenta Claude, ogłosił utworzenie funduszu, któremu przekaże 5% swoich akcji, jeśli zgodzą się na to akcjonariusze. Za każdy wzrost wartości firmy o 50% ponad ustalony poziom zarząd może dołożyć kolejne 2%. Pieniądze mają trafiać m.in. do organizacji non-profit i do grup dotkniętych zmianami na rynku pracy przez AI. Szczegóły zarządzania funduszem firma poda w najbliższych miesiącach.",
+      "why": "Firmy AI są pod rosnącą presją, by dzielić się zyskami z technologii, która może zmienić rynek pracy. Jak fundusz zadziała w praktyce, okaże się dopiero po ogłoszeniu szczegółów.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund" }
+      ]
+    },
+    {
+      "id": "ai-2",
+      "section": "ai",
+      "rank": 2,
+      "title": "Po krytyce matematyków OpenAI daje 5 mln dolarów na weryfikację wyników AI",
+      "summary": "OpenAI przekaże 5 mln dolarów fundacji Simonsa na warsztaty i programy, które pomogą matematykom sprawdzać i rozwijać wyniki uzyskane przez AI. To odpowiedź na krytykę: stowarzyszenie Association for Human Mathematics zarzuciło firmie m.in. lekceważenie norm naukowych przy pracy nad dawnym problemem, a dwóch matematyków twierdzi, że byli blisko podobnego wyniku. OpenAI zaprzecza, by korzystało z ich pracy. Cała inicjatywa, z udziałem Anthropic, ma 15 mln dolarów.",
+      "why": "AI zaczyna samodzielnie dowodzić twierdzeń. To rodzi nowe pytania o to, kto jest autorem odkrycia i kto ma je weryfikować.",
+      "sources": [{ "name": "Euronews", "url": "https://www.euronews.com/2026/10/16/openai-tries-to-solve-mathematician-backlash-problem-by-pledging-5-million-to-math-foundat" }]
+    },
+    {
+      "id": "nauka-1",
+      "section": "nauka",
+      "rank": 1,
+      "title": "Enzym „Pac-Man” rozkłada bioplastiki, a przy okazji penicylinę",
+      "summary": "Naukowcy z Uniwersytetu w Konstancji opisali bakteryjny enzym nazwany „Pac-Manem” ze względu na szerokie centrum aktywne. Rozkłada on niektóre poliestry i plastiki biodegradowalne, a także penicylinę. W testach glebowych bioplastiki rozłożyły się całkowicie w 250–330 dni, a zwykły polietylen HDPE pozostał prawie nienaruszony.",
+      "why": "Pokazuje to, że plastiki z wiązaniami, które mikroby potrafią rozciąć, mogą naprawdę zniknąć ze środowiska. Rozkład penicyliny badacze łączą z możliwym wpływem na oporność na antybiotyki, choć tego nie dowiedziono.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/10/261014015509.htm" },
+        { "name": "Phys.org", "url": "https://phys.org/news/2026-09-pac-enzyme-bioplastics-penicillin-laboratory.html" }
+      ]
+    },
+    {
+      "id": "nauka-2",
+      "section": "nauka",
+      "rank": 2,
+      "title": "Jurajski ptak, który nie latał",
+      "summary": "W „Nature” opisano Yuezhuornis yangyuanensis, ptaka sprzed ok. 148–150 mln lat z chińskiej prowincji Fujian. Miał wyraźnie krótkie skrzydła, o mniej więcej jedną trzecią krótsze od nóg, i ważył ok. 821 g. Autorzy uznają, że żył na ziemi i nie latał. To jeden z najwcześniejszych przedstawicieli linii prowadzącej do ptaków.",
+      "why": "Dotąd zakładano, że wczesne ptaki ewoluowały głównie w stronę coraz lepszego latania. Ta skamieniałość sugeruje, że już w jurze niektóre wybrały życie na ziemi.",
+      "sources": [
+        { "name": "Nature", "url": "https://www.nature.com/articles/s41586-026-10972-z" },
+        { "name": "Phys.org", "url": "https://phys.org/news/2026-10-early-birds-evolved-flight-jurassic.html" }
+      ]
+    },
+    {
+      "id": "kosmos-1",
+      "section": "kosmos",
+      "rank": 1,
+      "title": "Czarne dziury każdej wielkości wystrzeliwują dżety według tej samej reguły",
+      "summary": "Astronomowie Andrew Mummery z Institute for Advanced Study i Adelle Goodwin z Uniwersytetu Curtin przeanalizowali przypadki rozerwania gwiazd przez czarne dziury. Dżety, czyli strumienie materii, pojawiają się, gdy tempo „karmienia się” czarnej dziury spada do ok. 2% granicy Eddingtona (maksymalnego tempa opadania materii). Ta sama reguła działa u czarnych dziur o masie kilku Słońc i milionów razy cięższych. Wyniki opublikowało „Nature Astronomy”.",
+      "why": "Jedna reguła dla obiektów tak różnej wielkości upraszcza obraz Wszechświata. Pomaga też przewidywać, kiedy po rozerwaniu gwiazdy pojawią się rozbłyski radiowe.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/10/261014015507.htm" },
+        { "name": "Institute for Advanced Study", "url": "https://www.ias.edu/news/ias-scholar-reveals-universal-rule-black-hole-burps" }
+      ]
+    },
+    {
+      "id": "kosmos-2",
+      "section": "kosmos",
+      "rank": 2,
+      "title": "Ostatnie panele słoneczne dla stacji ISS. NASA szykuje dwa spacery kosmiczne",
+      "summary": "NASA we wtorek przedstawi plan dwóch spacerów kosmicznych, które dokończą wymianę paneli słonecznych Międzynarodowej Stacji Kosmicznej. Ostatnią parę rozwijanych paneli IROSA przywiózł statek Dragon z misji CRS-35, wystrzelony 13 października. Spacery zaplanowano na 29 października i 5 listopada. Po ich zakończeniu stacja będzie wytwarzać ok. 215 kW zamiast 160 kW.",
+      "why": "Więcej energii pozwoli prowadzić więcej eksperymentów w ostatnich latach działania stacji.",
+      "sources": [
+        { "name": "SpaceQ", "url": "https://spaceq.ca/josh-kutryk-spacewalks-station-solar-arrays/" },
+        { "name": "Tech Times", "url": "https://www.techtimes.com/articles/328954/20261013/spacex-crs-35-delivers-final-solar-arrays-completing-iss-power-upgrade.htm" }
+      ]
+    },
+    {
+      "id": "historia-1",
+      "section": "historia",
+      "rank": 1,
+      "title": "Neandertalczyk zabity drewnianą włócznią 75 tys. lat temu?",
+      "summary": "Naukowcy opisali w „Scientific Reports” neandertalczyka z jaskini Szanidar w irackim Kurdystanie, który zginął ok. 75 tys. lat temu w wieku ok. 45 lat. W jego łopatce jest okrągły otwór o średnicy 15 mm. Według autorów zostawiła go zaostrzona drewniana włócznia, która przebiła klatkę piersiową od przodu. Może to być najstarszy znany przypadek śmiertelnej rany od drewnianej włóczni. Nie wiadomo, czy był to atak, czy wypadek na polowaniu.",
+      "why": "Szanidar to jedno z najważniejszych stanowisk neandertalskich, znane m.in. ze śladów opieki nad rannymi. Nowe znalezisko uzupełnia obraz życia naszych ewolucyjnych kuzynów.",
+      "sources": [
+        { "name": "Phys.org", "url": "https://phys.org/news/2026-10-fatal-neanderthal-wound-earliest-evidence.html" },
+        { "name": "Archaeology Magazine", "url": "https://archaeologymag.com/2026/10/wound-in-75000-year-old-neanderthal-shoulder-blade/" }
+      ]
+    },
+    {
+      "id": "historia-2",
+      "section": "historia",
+      "rank": 2,
+      "title": "W egipskim grobowcu odkryto poruszającą elegię dla ojca",
+      "summary": "Podczas wykopalisk w nekropolii Bir asz-Szagala w Egipcie archeolodzy odkryli grobowiec z cegły mułowej. Na kamiennej płycie wyryto 19-wierszowy poemat, elegię zmarłego mężczyzny poświęconą jego ojcu.",
+      "why": "Takie teksty pokazują, że żałoba i miłość do bliskich wyrażane w poezji są tak stare jak cywilizacja.",
+      "sources": [{ "name": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/smart-news/archaeologists-in-egypt-discover-a-mud-brick-tomb-featuring-a-heartbreaking-elegy-to-an-ancient-mans-father-180989677/" }]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Reforma psychiatrii dorosłych znów odłożona",
+      "summary": "Centra Zdrowia Psychicznego nie wejdą do powszechnego systemu od stycznia, a pilotaż ma zostać przedłużony, podaje Rynek Zdrowia. Ministerstwo Zdrowia nie sfinalizowało jeszcze standardu ich działania. Agencja Oceny Technologii Medycznych przekazała NFZ rekomendacje 12 października, a zarządzenie prezesa NFZ ma się pojawić na początku listopada.",
+      "why": "Centra mają zapewniać pomoc psychiatryczną blisko domu i bez skierowania. Od ich wdrożenia w całym kraju zależy dostęp do takiej opieki.",
+      "sources": [{ "name": "Rynek Zdrowia", "url": "https://www.rynekzdrowia.pl/Psychiatria/Centra-zdrowia-psychicznego-nie-wejda-do-systemu-od-stycznia-Pilotaz-ma-zostac-przedluzony,290072,16.html" }]
+    },
+    {
+      "id": "zdrowie-2",
+      "section": "zdrowie",
+      "rank": 2,
+      "title": "Głęboki sen uwalnia hormon wzrostu, a ten pomaga regulować budzenie",
+      "summary": "Naukowcy z UC Berkeley opisali w „Cell” dwukierunkową zależność między snem a hormonem wzrostu, który odbudowuje mięśnie i spala tłuszcz. Sen pobudza wydzielanie hormonu, a narastający w nocy hormon pobudza w pniu mózgu tzw. miejsce sinawe, które odpowiada za czujność i sprzyja przebudzeniu. Gdy to miejsce jest zbyt aktywne, zaczyna paradoksalnie wywoływać senność. Badanie przeprowadzono na myszach.",
+      "why": "To kolejny argument, że głęboki sen to regeneracja całego ciała, a nie tylko odpoczynek. Badacze widzą w tym trop do leczenia zaburzeń snu przy cukrzycy oraz chorobach Parkinsona i Alzheimera.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/10/261016081140.htm" },
+        { "name": "ScienceAlert", "url": "https://www.sciencealert.com/study-reveals-brain-system-that-repairs-your-body-while-you-sleep" }
+      ]
+    },
+    {
+      "id": "psychologia-1",
+      "section": "psychologia",
+      "rank": 1,
+      "title": "Stres wzmacnia pamięć o emocjonalnych wydarzeniach",
+      "summary": "Badacze z Uniwersytetu Yale opisali w „Science Advances”, jak hormon stresu kortyzol wzmacnia pamięć o emocjonalnych wydarzeniach. Zmienia on działanie sieci mózgowych związanych z emocjami i pamięcią oraz sposób, w jaki się ze sobą komunikują. Autorka badania, prof. Elizabeth Goldfarb, sprawdza, kiedy stres może nam pomagać.",
+      "why": "Stres nie zawsze szkodzi pamięci, bo pomaga zapamiętać to, co ważne. Te same mechanizmy mogą jednak podtrzymywać natrętne wspomnienia w zaburzeniach lękowych i PTSD.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://sciencedaily.com/releases/2026/10/261014015517.htm" },
+        { "name": "Yale School of Medicine", "url": "https://medicine.yale.edu/news-article/stress-amplifies-the-brains-ability-to-encode-memory-new-study-finds/" }
+      ]
+    },
+    {
+      "id": "psychologia-2",
+      "section": "psychologia",
+      "rank": 2,
+      "title": "Głęboka stymulacja mózgu przy depresji: badacze wskazali kluczowe szlaki",
+      "summary": "Badacze z Mount Sinai przeanalizowali największą jak dotąd grupę pacjentów z depresją lekooporną leczonych głęboką stymulacją mózgu (DBS) w okolicy zakrętu obręczy. W kilku niezależnych grupach trwała poprawa wiązała się ze stymulacją trzech konkretnych szlaków istoty białej. Wyniki opublikował „American Journal of Psychiatry”.",
+      "why": "DBS to wciąż eksperymentalna metoda dla osób, którym nie pomogły leki ani terapia. Dokładniejsze wskazanie celu może zwiększyć szanse na skuteczne leczenie.",
+      "sources": [{ "name": "Mount Sinai", "url": "https://www.mountsinai.org/about/newsroom/2026/deep-brain-stimulation-remodels-brain-wiring-and-alters-functional-changes-to-brain-wide-networks-landmark-depression-study-reveals" }]
+    },
+    {
+      "id": "edukacja-1",
+      "section": "edukacja",
+      "rank": 1,
+      "title": "MEN: nauczyciele mają móc zajrzeć do plecaka ucznia",
+      "summary": "Po serii ataków w szkołach minister edukacji Barbara Nowacka zapowiada zmiany w prawie oświatowym. Dyrektor, a według jej późniejszych wypowiedzi także nauczyciel, mógłby zajrzeć do plecaka ucznia i zabrać przedmiot, który może być niebezpieczny, np. śrubokręt. Szkoły miałyby w statutach określić zasady wpuszczania osób z zewnątrz. Ministra zapowiada, że przepisy nie będą przyjmowane w pośpiechu.",
+      "why": "Dziś przeszukać plecak mogą tylko policja i straż miejska. Zmiana wymaga wyważenia bezpieczeństwa i praw ucznia, dlatego MEN chce zebrać opinie nauczycieli i związków zawodowych.",
+      "sources": [
+        { "name": "Głos Nauczycielski", "url": "https://glos.pl/dyrektorzy-szkol-zyskaja-nowe-uprawnienia-szefowa-men-zapowiada-zmiany-w-przepisach-chodzi-m-in-o-mozliwosc-przeszukania-plecaka" },
+        { "name": "Forsal", "url": "https://forsal.pl/kraj/bezpieczenstwo/artykuly/11329140,men-zapowiada-rozszerzenie-uprawnien-dyrektorow-szkol-tak-resort-chce.html" }
+      ]
+    },
+    {
+      "id": "srodowisko-1",
+      "section": "srodowisko",
+      "rank": 1,
+      "title": "Rusza szczyt ONZ o przyrodzie. Cele na 2030 r. są zagrożone",
+      "summary": "W Erywaniu w Armenii rozpoczyna się dziś konferencja ONZ o różnorodności biologicznej COP17 (19–30 października). Państwa po raz pierwszy ocenią postępy w realizacji globalnych celów z Kunming-Montrealu. Wstępny raport pokazuje, że ponad trzy czwarte krajów ma krajowe cele, ale tempo działań jest za wolne, by osiągnąć którykolwiek z 23 celów do 2030 r. Ochroną objęto 18,4% lądów i 10% mórz, wobec celu 30%.",
+      "why": "Utrata przyrody szkodzi rolnictwu, zdrowiu i gospodarce. Unia Europejska chce, by Erywań był szczytem dowodów, a nie tylko obietnic.",
+      "sources": [
+        { "name": "Komisja Europejska", "url": "https://environment.ec.europa.eu/news/eu-delivering-cop17-nature-biodiversity-targets-2026-10-16_en" },
+        { "name": "GIZ", "url": "https://www.giz.de/en/newsroom/stories/un-biodiversity-conference-2026-cop17-in-a-nutshell" }
+      ]
+    },
+    {
+      "id": "srodowisko-2",
+      "section": "srodowisko",
+      "rank": 2,
+      "title": "Wiatry Santa Ana rozniosły pożary w południowej Kalifornii",
+      "summary": "Pierwsze w tym sezonie wiatry Santa Ana rozniosły kilka pożarów w południowej Kalifornii. Pożar Norte w hrabstwie Orange objął ok. 570 akrów (ok. 230 ha) i uszkodził lub zniszczył kilka domów, a w szczycie ewakuacją objęto ok. 16 tys. osób. Największy, pożar Henderson na terenie bazy Camp Pendleton, objął ponad 3 tys. akrów. W niedzielę większość nakazów ewakuacji odwołano.",
+      "why": "Naukowcy łączą wydłużanie się sezonu pożarów z ocieplaniem klimatu. Najbardziej narażone są domy na skraju dzikich terenów.",
+      "sources": [
+        { "name": "KTLA", "url": "https://ktla.com/news/california/here-is-the-status-of-the-wildfires-burning-in-southern-california-right-now" },
+        { "name": "CNN", "url": "https://www.cnn.com/2026/10/16/weather/california-wildfires-santa-ana-winds-climate" }
+      ]
+    },
+    {
+      "id": "zwierzeta-1",
+      "section": "zwierzeta",
+      "rank": 1,
+      "title": "57 nowych gatunków z podwodnych kanionów Argentyny",
+      "summary": "Po wyprawie do podwodnych kanionów u wybrzeży Argentyny naukowcy z sieci Ocean Census opisali 57 nowych gatunków morskich i 5 nowych rodzajów. Jeden z badanych kanionów jest prawie dwa razy głębszy od Wielkiego Kanionu Kolorado.",
+      "why": "Ogromnej części życia w oceanach wciąż nie znamy. Każda taka wyprawa pokazuje, co możemy stracić, zanim zdążymy to poznać.",
+      "sources": [{ "name": "Discover Wildlife", "url": "https://www.discoverwildlife.com/animal-facts/marine-animals/deep-sea-species-discovery-workshop-argentina" }]
+    },
+    {
+      "id": "zwierzeta-2",
+      "section": "zwierzeta",
+      "rank": 2,
+      "title": "Głębinowe „robaki spaghetti” z przyssawkami",
+      "summary": "Australian Museum i australijska agencja naukowa CSIRO opisały nowy rodzaj głębinowych „robaków spaghetti”, czyli morskich pierścienic, które mają na ciele przyssawki.",
+      "why": "Głębiny to wciąż najsłabiej poznana część planety. Nowe rodzaje odkrywa się tam niemal przy każdej wyprawie.",
+      "sources": [{ "name": "Australian Museum", "url": "https://australian.museum/about/organisation/media-centre/deep-sea-spaghetti-worm/" }]
+    },
+    {
+      "id": "kultura-1",
+      "section": "kultura",
+      "rank": 1,
+      "title": "Festiwal FONOMO w Bydgoszczy: Nagroda im. Poli Negri dla Mikołaja Trzaski",
+      "summary": "W niedzielę zakończył się 15. FONOMO Music & Film Festival w Bydgoszczy, poświęcony muzyce filmowej. Nagrodę im. Poli Negri przyznano Mikołajowi Trzasce, saksofoniście i kompozytorowi muzyki m.in. do filmów Wojciecha Smarzowskiego.",
+      "why": "Muzyka filmowa często decyduje o tym, jak zapamiętujemy film. Twórczość Trzaski to dobry początek, żeby się w nią wsłuchać.",
+      "sources": [{ "name": "Radio PIK", "url": "https://www.radiopik.pl/40,142930,fonomo-music-amp-film-festival-w-bydgoszczy-nagr" }]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "„Cudze rzeczy” z Grand Prix Warszawskiego Festiwalu Filmowego",
+      "summary": "Główną nagrodę 42. Warszawskiego Międzynarodowego Festiwalu Filmowego, Warsaw Grand Prix i 120 tys. zł, zdobył film „Cudze rzeczy” Grzegorza Dębowskiego. Za najlepszą reżyserię nagrodzono Caia Chengjie („Kwartet z Suzhou”), a nagrodę specjalną jury dostała Maria Dębska za rolę w „Przez ścianę” Macieja Sobieszczańskiego. Wśród dokumentów wygrał „Tymczasem w Namibii” Jonasa Spriestersbacha.",
+      "why": "Nagrody WMFF to dobra podpowiedź, na które filmy warto czekać w kinach w najbliższych miesiącach.",
+      "sources": [
+        { "name": "Filmweb", "url": "https://www.filmweb.pl/news/42.+WMFF:+znamy+zwyci%C4%99zc%C3%B3w+festiwalu-169161" },
+        { "name": "Interia", "url": "https://film.interia.pl/wmff/news-wielki-final-42-wmff-kim-sa-laureaci-gdzie-obejrzec-nagrodzo,nId,23559822" }
+      ]
+    },
+    {
+      "id": "filmy-2",
+      "section": "filmy",
+      "rank": 2,
+      "title": "„Street Fighter” wygrywa weekend w amerykańskich kinach",
+      "summary": "Ekranizacja gry „Street Fighter” zadebiutowała na pierwszym miejscu amerykańskiego box office z ok. 31 mln dolarów w pierwszy weekend. Drugie było „You Can See Everything” (ok. 15 mln), a trzecie „Other Mommy” (ok. 8,35 mln). To wstępne szacunki.",
+      "why": "Ekranizacje gier coraz częściej przyciągają tłumy do kin, choć przez lata uchodziły za pewne klapy.",
+      "sources": [{ "name": "The Numbers", "url": "https://www.the-numbers.com/weekend-box-office-chart" }]
+    },
+    {
+      "id": "muzyka-1",
+      "section": "muzyka",
+      "rank": 1,
+      "title": "Nosowska wydaje „NIGREDO”. Polskie premiery października",
+      "summary": "Nosowska wyda 23 października album „NIGREDO”, na CD i w kolekcjonerskiej edycji na dwóch płytach winylowych. W październiku ukazały się też m.in. „Żeremie” Igora Herbuta i solowy debiut Natalii Grosiak „Tamtej dziewczyny już nie ma”.",
+      "why": "Jesień to szczyt premier płytowych. To dobry moment, żeby odświeżyć swoją playlistę.",
+      "sources": [{ "name": "Dzień Dobry TVN", "url": "https://dziendobry.tvn.pl/gwiazdy/polskie-premiery-plytowe-pazdziernika-2026-igor-herbut-nosowska-i-inni-st9262016" }]
+    },
+    {
+      "id": "muzyka-2",
+      "section": "muzyka",
+      "rank": 2,
+      "title": "John Legend i Pharrell Williams: album „Muse” w piątek",
+      "summary": "23 października John Legend wyda album „Muse”, w całości wyprodukowany przez Pharrella Williamsa. Wśród październikowych premier są też nowe płyty Greta Van Fleet i Pet Shop Boys oraz jubileuszowe wydanie „Back to Black” Amy Winehouse na 20-lecie albumu.",
+      "why": "Współpraca dwóch tak różnych artystów to jedna z ciekawszych premier jesieni.",
+      "sources": [{ "name": "Dzień Dobry TVN", "url": "https://dziendobry.tvn.pl/gwiazdy/zagraniczne-premiery-plytowe-pazdziernika-2026-czego-sluchac-st9258202" }]
+    },
+    {
+      "id": "gry-1",
+      "section": "gry",
+      "rank": 1,
+      "title": "Zwiastun premierowy GTA VI. Gra trafi do sklepów 19 listopada",
+      "summary": "Rockstar opublikował 90-sekundowy zwiastun premierowy „Grand Theft Auto VI”, nagrany w całości na PS5. Gra ukaże się 19 listopada na PlayStation 5 i Xbox Series X|S, w cenie 79,99 dolara za wersję standardową. Wersji na PC nie zapowiedziano. Premierę dwukrotnie przekładano: z 2025 r. na 26 maja 2026 r., a potem na listopad.",
+      "why": "To jedna z najbardziej wyczekiwanych gier w historii. Jej sprzedaż będzie testem kondycji całej branży.",
+      "sources": [
+        { "name": "gHacks", "url": "https://www.ghacks.net/2026/10/16/rockstar-releases-the-gta-6-launch-trailer-ahead-of-the-november-19-console-release/" },
+        { "name": "Rockstar Games", "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026" }
+      ]
+    },
+    {
+      "id": "gry-2",
+      "section": "gry",
+      "rank": 2,
+      "title": "„Warhammer 40,000: Boltgun 2” już w sprzedaży",
+      "summary": "14 października ukazał się „Warhammer 40,000: Boltgun 2”, kontynuacja strzelanki w stylu gier z lat 90., na PS5, Xbox Series X|S i PC. Wersja na Switch 2 ma się pojawić wkrótce.",
+      "why": "Szybkie strzelanki w stylu retro to jeden z ulubionych gatunków graczy, którzy tęsknią za klasyką lat 90.",
+      "sources": [{ "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Warhammer_40,000:_Boltgun_2" }]
+    },
+    {
+      "id": "sport-1",
+      "section": "sport",
+      "rank": 1,
+      "title": "Maja Chwalińska wygrała turniej WTA 1000 w Wuhanie",
+      "summary": "Maja Chwalińska pokonała w finale w Wuhanie Brytyjkę Sonay Kartal 2:6, 6:4, 6:2 i zdobyła pierwszy tytuł WTA w karierze, od razu rangi 1000. W półfinale wyeliminowała Igę Świątek. Jest trzecią Polką z tytułem WTA 1000, po Agnieszce Radwańskiej i Idze Świątek. W poniedziałkowym rankingu awansuje na 11. miejsce, a za zwycięstwo dostała 665 tys. dolarów.",
+      "why": "Polska ma kolejną tenisistkę w ścisłej światowej czołówce. To sukces, jakiego niewielu się spodziewało jeszcze na początku sezonu.",
+      "sources": [
+        { "name": "Eurosport", "url": "https://eurosport.tvn24.pl/tenis/wta-wuhan/2026/maja-chwalinska-z-pierwszym-tytulem-wta-1000-w-karierze.-polka-pokonala-sonay-kartal-w-finale-turnieju-w-wuhanie_sto23346794/story.shtml" },
+        { "name": "WTA", "url": "https://www.wtatennis.com/news/4593967/chwalinska-rallies-past-kartal-for-first-wta-title-in-wuhan" }
+      ]
+    },
+    {
+      "id": "sport-2",
+      "section": "sport",
+      "rank": 2,
+      "title": "Lech rozbił Koronę 6:1",
+      "summary": "W 11. kolejce Ekstraklasy Lech Poznań pokonał Koronę Kielce 6:1 (4:0 do przerwy). Po dwa gole strzelili Pablo Rodríguez i Mikael Ishak, po jednym Patrik Wålemark i Yannick Agnero, a dla Korony trafił Camilo Mena. Mecz obejrzało ponad 37 tys. widzów. Kilka dni wcześniej Lech przegrał w Lidze Europy z Bayerem Leverkusen 0:4.",
+      "why": "Tak wysoka wygrana tuż po porażce w Europie to dla Lecha ważny sygnał przed kolejnymi meczami ligowymi i pucharowymi.",
+      "sources": [
+        { "name": "Echo Dnia", "url": "https://echodnia.eu/swietokrzyskie/lech-poznan-korona-kielce-6-1-w-pko-bp-ekstraklasie-fatalny-mecz-zespolu-jacka-zielinskiego-co-dalej-z-trenerem/ar/c2p2-29448209" },
+        { "name": "KKSLech.com", "url": "https://kkslech.com/2026/10/18/bramki-i-skrot-meczu-lech-korona-61/" }
+      ]
+    },
+    {
+      "id": "motoryzacja-1",
+      "section": "motoryzacja",
+      "rank": 1,
+      "title": "Rekordowy wrzesień w salonach, ale elektryki w odwrocie",
+      "summary": "We wrześniu zarejestrowano 62 492 nowe samochody osobowe i dostawcze, o 12,5% więcej niż rok wcześniej. To rekord dla tego miesiąca i ósmy z rzędu miesiąc wzrostów. Chińskie marki miały 15,6% rynku samochodów osobowych. Rejestracje aut elektrycznych spadły za to o ok. 22%, do ok. 3,5 tys., a ich udział zmalał do ok. 6%.",
+      "why": "Po wyczerpaniu dopłat z programu NaszEauto sprzedaż elektryków hamuje. Szybko rośnie za to pozycja chińskich producentów.",
+      "sources": [
+        { "name": "Samar", "url": "https://www.samar.pl/rynek-w-liczbach/rejestracje-nowych-samochodow-osobowych-i-dostawczych-2026-2026" },
+        { "name": "ISBnews (Investing.com)", "url": "https://pl.investing.com/news/stock-market-news/samar-rejestracje-nowych-aut-wzrosly-o-125-rr-we-ix-udzial-chinskich-marek-156-1588873" }
+      ]
+    },
+    {
+      "id": "motoryzacja-2",
+      "section": "motoryzacja",
+      "rank": 2,
+      "title": "NaszEauto: umowy na dopłaty tylko do 31 października",
+      "summary": "NFOŚiGW zwiększył budżet programu dopłat do aut elektrycznych NaszEauto do 1,26 mld zł, żeby objąć osoby, które złożyły wnioski warunkowo. Umowy można zawierać do 31 października, a pieniądze trafią do beneficjentów najpóźniej do końca roku. Nowego naboru nie ma i nie ogłoszono nowego ogólnopolskiego programu dopłat.",
+      "why": "Kto czeka na dopłatę, powinien pilnować terminu podpisania umowy.",
+      "sources": [{ "name": "Interia Motoryzacja", "url": "https://motoryzacja.interia.pl/wiadomosci/news-1-26-mld-zl-w-programie-naszeauto-dobra-wiadomosc-w-sprawie,nId,23552138" }]
+    },
+    {
+      "id": "podroze-1",
+      "section": "podroze",
+      "rank": 1,
+      "title": "W niedzielę zmiana czasu i zimowe rozkłady lotów",
+      "summary": "W nocy z soboty na niedzielę 25 października przestawimy zegarki z 3:00 na 2:00 i pośpimy godzinę dłużej. Od tej niedzieli linie lotnicze przechodzą też na zimowy rozkład lotów. Opublikowano projekt rozporządzenia, który utrzymuje zmiany czasu w latach 2027–2031.",
+      "why": "Zmiana czasu przez kilka dni wpływa na sen. Warto wcześniej sprawdzić godziny lotów i pociągów zaplanowanych na ten weekend.",
+      "sources": [
+        { "name": "TVP Łódź", "url": "https://lodz.tvp.pl/95716912/zmiana-czasu-na-zimowy-2026-kiedy-przestawiamy-zegarki" },
+        { "name": "TVP.pl", "url": "https://www.tvp.pl/informacje/z-kraju/zmiana-czasu-na-zimowy-2026-kiedy-przestawiamy-zegarki,95965598" }
+      ]
+    },
+    {
+      "id": "podroze-2",
+      "section": "podroze",
+      "rank": 2,
+      "title": "Ryanair: zimą 13 tras z Katowic, w tym trzy nowe",
+      "summary": "Ryanair zapowiedział na zimę 13 tras z Katowic, w tym trzy nowe: do Turynu, Neapolu i Malagi. Przewoźnik prowadzi też promocyjną sprzedaż biletów.",
+      "why": "Nowe trasy z regionalnych lotnisk to tańszy sposób na zimowy wyjazd bez dojazdu do Warszawy.",
+      "sources": [{ "name": "RMF24", "url": "https://www.rmf24.pl/regiony/slaskie/news-oto-nowe-polaczenia-lotnicze-z-katowic-dokad-polecimy-w-sezo,nIdn,1021868" }]
+    },
+    {
+      "id": "pokemon-1",
+      "section": "pokemon",
+      "rank": 1,
+      "title": "TCG Pocket zwalnia: nowe dodatki co sześć tygodni",
+      "summary": "Twórcy Pokémon TCG Pocket zapowiedzieli, że nowe dodatki będą się ukazywać mniej więcej co sześć tygodni zamiast co cztery, bo kolekcjonowanie robi się coraz trudniejsze. Pod koniec października rusza nowa seria z kartami dwutypowymi i specjalną paczką z pokemonami startowymi ze wszystkich dziewięciu regionów. 30 października gra kończy dwa lata.",
+      "why": "Wolniejsze tempo to więcej czasu na skompletowanie kolekcji i mniej presji na wydawanie pieniędzy.",
+      "sources": [
+        { "name": "iPhone in Canada", "url": "https://www.iphoneincanada.ca/2026/10/16/pokemon-tcg-pocket-slowing-down-new-expansion-releases/" },
+        { "name": "Pokémon GO Hub", "url": "https://pokemongohub.net/post/news/pokemon-tcg-pocket-announces-slower-pack-releases-new-cards-and-battle-features/" }
+      ]
+    },
+    {
+      "id": "pokemon-2",
+      "section": "pokemon",
+      "rank": 2,
+      "title": "Delta Reign: prerelease od soboty",
+      "summary": "Od 24 października w sklepach ruszają turnieje prerelease dodatku Mega Evolution: Delta Reign z Mega Rayquazą ex. Premiera dodatku 6 listopada. Nowością są Legendary Stadiums, czyli pary kart stadionu z łączącą się grafiką. 23 października ukaże się też Deck Crafter's Collection 2026, zestaw do budowania talii turniejowych.",
+      "why": "Prerelease to najlepsza okazja, żeby zagrać nowymi kartami, zanim zmieni się meta. Terminy warto sprawdzić w pobliskim sklepie.",
+      "sources": [
+        { "name": "Pokénnoisseur", "url": "https://pokennoisseur.ca/tools/release-calendar" },
+        { "name": "Pokémon.com", "url": "https://www.pokemon.com/us/news/the-pokemon-tcg-mega-evolution-delta-reign-expansion-arrives-november-6-2026" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "kosmos",
+      "title": "Na Wenus doba trwa dłużej niż rok",
+      "body": "Wenus obraca się wokół własnej osi wyjątkowo wolno: jeden obrót zajmuje jej ok. 243 ziemskie dni. Słońce okrąża szybciej, w ok. 225 dni. Do tego kręci się w przeciwną stronę niż większość planet, więc Słońce wschodzi tam na zachodzie. Czas od jednego wschodu Słońca do następnego to ok. 117 ziemskich dni.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Wenus" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "psychologia",
+      "title": "Sprawdzanie się uczy lepiej niż ponowne czytanie",
+      "body": "W badaniu z 2006 r. Henry Roediger i Jeffrey Karpicke porównali studentów, którzy kilka razy czytali ten sam tekst, z tymi, którzy po lekturze próbowali sobie przypomnieć jego treść. Po tygodniu druga grupa pamiętała wyraźnie więcej, choć to pierwsza była bardziej pewna swojej wiedzy. To efekt testowania: samo przypominanie wzmacnia ślad w pamięci. Dlatego w SelfLearn jest rozgrzewka i powtórki.",
+      "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Testing_effect" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "przyroda",
+      "title": "Ośmiornica ma trzy serca i niebieską krew",
+      "body": "Dwa serca ośmiornicy pompują krew przez skrzela, a trzecie rozprowadza ją po całym ciele. Krew jest niebieska, bo tlen przenosi w niej hemocyjanina zawierająca miedź, a nie hemoglobina z żelazem jak u nas. Serce główne przestaje bić podczas pływania, dlatego ośmiornice częściej pełzają po dnie, niż pływają.",
+      "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Octopus" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1984,
+      "title": "Porwanie i zabójstwo ks. Jerzego Popiełuszki",
+      "body": "19 października 1984 r. funkcjonariusze SB uprowadzili ks. Jerzego Popiełuszkę, kapelana „Solidarności”, wracającego z Bydgoszczy do Warszawy. Zamordowali go tej samej nocy, a ciało wrzucili do Wisły. Odnaleziono je 30 października pod Włocławkiem. W pogrzebie wzięły udział setki tysięcy ludzi, a w 2010 r. ksiądz został beatyfikowany.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Jerzy_Popie%C5%82uszko" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1987,
+      "title": "Czarny poniedziałek na giełdach",
+      "body": "19 października 1987 r., również w poniedziałek, amerykański indeks Dow Jones spadł w ciągu jednej sesji o 22,6%. To wciąż największy jednodniowy procentowy spadek w jego historii. Panika rozlała się na giełdy na całym świecie, a po krachu wprowadzono m.in. mechanizmy automatycznie wstrzymujące handel przy gwałtownych spadkach.",
+      "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Black_Monday_(1987)" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1781,
+      "title": "Kapitulacja Brytyjczyków pod Yorktown",
+      "body": "19 października 1781 r. brytyjski generał Charles Cornwallis skapitulował pod Yorktown przed wojskami amerykańskimi i francuskimi pod wodzą Jerzego Waszyngtona. W praktyce rozstrzygnęło to wojnę o niepodległość Stanów Zjednoczonych. Pokój podpisano dwa lata później w Paryżu.",
+      "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Błąd przeżywalności",
+    "definition": "Wyciąganie wniosków tylko z przypadków, które „przetrwały”, z pominięciem tych, które odpadły po drodze.",
+    "origin": "Klasyczny przykład pochodzi z II wojny światowej. Statystyk Abraham Wald analizował samoloty, które wróciły z misji z przestrzelinami. Zamiast wzmacniać miejsca z największą liczbą dziur, zalecił wzmocnić te, w których dziur nie było, bo samoloty trafione właśnie tam po prostu nie wracały.",
+    "examples": [
+      "Słuchamy rad milionerów, którzy rzucili studia, ale nie widzimy tysięcy osób, którym ta sama decyzja nie wyszła.",
+      "Z książki tygodnia: zwycięzcy i przegrani mają często te same cele, więc sam cel nie tłumaczy sukcesu.",
+      "Z dzisiejszych wiadomości: kinowy hit na podstawie gry nie znaczy, że ekranizacje gier zwykle się udają. O klapach szybko zapominamy."
+    ],
+    "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Survivorship_bias" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "atomowe-nawyki",
+    "title": "Atomowe nawyki",
+    "author": "James Clear",
+    "day": 2,
+    "days": 7,
+    "ideaTitle": "Systemy zamiast celów",
+    "idea": "Cel to wynik, który chcesz osiągnąć, a system to codzienne działania, które do niego prowadzą. Clear wskazuje kilka problemów z myśleniem wyłącznie celami. Zwycięzcy i przegrani mają zwykle te same cele, więc to nie cel decyduje o wyniku. Osiągnięcie celu to chwilowa zmiana: raz posprzątany pokój znów zarośnie bałaganem, jeśli nie zmienią się nawyki, które go zabałaganiły. Cele odkładają też zadowolenie na „kiedy już osiągnę”, a po ich osiągnięciu łatwo wrócić do starych zachowań.",
+    "moral": "O wynikach decyduje codzienny system, a nie sam cel. Cel wyznacza kierunek, a postęp robi system.",
+    "action": "Weź jeden swój cel i zapisz do niego system w jednym zdaniu: co konkretnie, kiedy i gdzie będziesz robić codziennie, np. „po kolacji czytam 10 stron”.",
+    "source": { "name": "O książce (jamesclear.com)", "url": "https://jamesclear.com/atomic-habits" }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-19-q1",
+      "ref": "fact-1",
+      "question": "Co trwa dłużej na Wenus?",
+      "options": ["Obrót wokół własnej osi", "Okrążenie Słońca", "Oba trwają tyle samo", "Wenus się nie obraca"],
+      "answer": 0,
+      "explanation": "Obrót wokół osi zajmuje Wenus ok. 243 ziemskie dni, a okrążenie Słońca ok. 225 dni. Do tego Wenus kręci się w przeciwną stronę niż większość planet."
+    },
+    {
+      "id": "2026-10-19-q2",
+      "ref": "fact-2",
+      "question": "Co według badań najlepiej utrwala to, czego się uczymy?",
+      "options": ["Wielokrotne czytanie tekstu", "Podkreślanie najważniejszych zdań", "Przypominanie sobie z pamięci, czyli sprawdzanie się", "Słuchanie muzyki podczas nauki"],
+      "answer": 2,
+      "explanation": "To efekt testowania. Osoby, które próbowały sobie przypomnieć materiał, po tygodniu pamiętały więcej niż te, które go tylko ponownie czytały."
+    },
+    {
+      "id": "2026-10-19-q3",
+      "ref": "fact-3",
+      "question": "Dlaczego krew ośmiornicy jest niebieska?",
+      "options": ["Brakuje w niej tlenu", "Tlen przenosi w niej hemocyjanina z miedzią", "Zawiera chlorofil", "Zawiera hemoglobinę z żelazem"],
+      "answer": 1,
+      "explanation": "Hemocyjanina zawiera miedź i po związaniu tlenu ma niebieski kolor. Nasza hemoglobina zawiera żelazo, dlatego krew jest czerwona."
+    },
+    {
+      "id": "2026-10-19-q4",
+      "ref": "otd-2",
+      "question": "O ile procent spadł indeks Dow Jones w Czarny poniedziałek 19 października 1987 r.?",
+      "options": ["Ok. 2%", "Ok. 9%", "Ok. 22,6%", "Ok. 50%"],
+      "answer": 2,
+      "explanation": "Spadek o 22,6% w jeden dzień to największy jednodniowy procentowy spadek w historii tego indeksu."
+    },
+    {
+      "id": "2026-10-19-q5",
+      "ref": "otd-1",
+      "question": "Kim był ks. Jerzy Popiełuszko?",
+      "options": ["Pierwszym polskim kardynałem", "Przywódcą powstania warszawskiego", "Ministrem w rządzie Tadeusza Mazowieckiego", "Kapelanem „Solidarności” zamordowanym przez funkcjonariuszy SB"],
+      "answer": 3,
+      "explanation": "Funkcjonariusze SB uprowadzili go i zamordowali 19 października 1984 r. W 2010 r. został beatyfikowany."
+    },
+    {
+      "id": "2026-10-19-q6",
+      "ref": "concept",
+      "question": "Na czym polega błąd przeżywalności?",
+      "options": ["Przeceniamy ryzyko po złych wiadomościach", "Trzymamy się pierwszej usłyszanej liczby", "Wyciągamy wnioski tylko z przypadków, które przetrwały", "Wierzymy w to, co potwierdza nasze zdanie"],
+      "answer": 2,
+      "explanation": "Pozostałe odpowiedzi to heurystyka dostępności, efekt zakotwiczenia i efekt potwierdzenia. Też warto je znać."
+    },
+    {
+      "id": "2026-10-19-q7",
+      "ref": "book",
+      "question": "Dlaczego według Jamesa Cleara sam cel nie wystarczy?",
+      "options": ["Bo cele zawsze są zbyt ambitne", "Bo zwycięzcy i przegrani często mają te same cele", "Bo cele trzeba zmieniać co tydzień", "Bo cele szkodzą zdrowiu"],
+      "answer": 1,
+      "explanation": "Skoro te same cele mają ci, którym się udało, i ci, którym się nie udało, o wyniku decyduje codzienny system działań."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-10-19-r1",
+      "question": "Na pokładzie jakiego satelity w 2007 r. niesporczaki przetrwały próżnię kosmiczną?",
+      "options": ["Hubble", "Foton-M3", "Sputnik 1"],
+      "answer": 1,
+      "explanation": "W eksperymencie na rosyjskim satelicie Foton-M3 część niesporczaków przeżyła próżnię, a niektóre także silne promieniowanie UV."
+    },
+    {
+      "id": "2026-10-19-r2",
+      "question": "Kiedy wojska niemieckie wkroczyły do Warszawy w 1939 r.?",
+      "options": ["1 października", "1 września", "17 września"],
+      "answer": 0,
+      "explanation": "Trzy dni po podpisaniu kapitulacji. Warszawa broniła się od 8 września."
+    },
+    {
+      "id": "2026-10-19-r3",
+      "question": "Ile mniej więcej wynosi wynik pogarszania się o 1% dziennie przez rok (0,99 do potęgi 365)?",
+      "options": ["Ok. 0,9", "Ok. 0,5", "Ok. 0,03"],
+      "answer": 2,
+      "explanation": "Małe codzienne straty też się kumulują. Po roku zostaje ok. 3% wyjściowego poziomu."
+    }
+  ],
+  "evening": {
+    "question": "Jaki wspólny cel moglibyście zamienić w prosty system: co konkretnie, kiedy i gdzie będziecie robić?",
+    "hint": "Np. zamiast „więcej się ruszać”: „we wtorki i czwartki po pracy 20 minut spaceru razem”."
+  }
+}

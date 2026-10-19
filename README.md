@@ -51,7 +51,7 @@ Aplikacja to zwykłe pliki statyczne, więc działa na Vercelu albo na GitHub Pa
 3. **Framework Preset: Other**, Root Directory `./`, reszta bez zmian. Kliknij **Deploy**.
 4. Po kilkudziesięciu sekundach aplikacja działa pod adresem `https://<nazwa-projektu>.vercel.app`.
 
-`vercel.json` uruchamia `node scripts/validate.mjs` przed każdą publikacją: wydanie z błędem nie trafi na stronę, a działać będzie poprzednia wersja. Każdy commit na `main` publikuje się sam. Każda inna gałąź dostaje własny adres podglądu.
+`vercel.json` przed każdą publikacją uruchamia `npm run build`: sprawdza wydania (`scripts/validate.mjs`) i składa stronę w katalogu `public/` (`scripts/build-site.mjs`). Wydanie z błędem nie trafi na stronę, a działać będzie poprzednia wersja. Każdy commit na `main` publikuje się sam. Każda inna gałąź dostaje własny adres podglądu.
 
 ### GitHub Pages
 

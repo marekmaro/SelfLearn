@@ -52,5 +52,7 @@ if (!targets.length) {
 
 for (const w of warnings) console.warn(`uwaga  ${w}`);
 for (const e of errors) console.error(`błąd   ${e}`);
-console.log(`\nSprawdzono ${files.length} ${files.length === 1 ? 'wydanie' : 'wydań'}: ${errors.length} błędów, ${warnings.length} uwag.`);
+const n = files.length;
+const word = n === 1 ? 'wydanie' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'wydania' : 'wydań';
+console.log(`\nSprawdzono ${n} ${word}: błędy: ${errors.length}, uwagi: ${warnings.length}.`);
 process.exit(errors.length ? 1 : 0);

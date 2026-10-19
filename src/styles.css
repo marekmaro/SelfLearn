@@ -535,6 +535,8 @@ textarea {
 }
 
 .choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.choice-groups { display: grid; gap: 14px; }
+.choice-group { display: grid; gap: 8px; }
 .choice {
   display: inline-flex;
   align-items: center;

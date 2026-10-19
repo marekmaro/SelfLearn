@@ -1,5 +1,5 @@
 // „Przygotuj wydanie”: polecenie dla czatu AI → wklejenie odpowiedzi → sprawdzenie → publikacja.
-import { SECTIONS, MAIN_SECTIONS } from '../config.js';
+import { SECTIONS, SECTION_GROUPS, MAIN_SECTIONS } from '../config.js';
 import { loadIndex, loadEdition, loadBooks, forgetEdition } from '../data.js';
 import { todayISO, addDays, isISODate, formatLong } from '../dates.js';
 import { getState, update, saveLocalEdition, githubSettings } from '../store.js';
@@ -218,6 +218,7 @@ export async function renderPrepare(root, { onChange }) {
               saveSettings({ generateSections: sections });
               if (ctx) ctx = { ...ctx, sections };
             },
+            SECTION_GROUPS,
           ),
         ),
         h(

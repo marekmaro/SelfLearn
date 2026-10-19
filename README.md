@@ -4,7 +4,7 @@ Codzienne wydanie do nauki i poszerzania horyzontów, w formie aplikacji na tele
 
 - **Rozgrzewka**: 3 pytania a/b/c z poprzedniego wydania,
 - **Polska: top 5** i **Świat: top 5**: streszczenie, „dlaczego to ważne” i link do pełnego artykułu,
-- **Twoje tematy** do wyboru: gospodarka, technologia, AI, nauka, kosmos, zdrowie, klimat, kultura, sport, gry, motoryzacja, Pokémon TCG,
+- **Twoje tematy**: 22 działy w 7 grupach, m.in. bezpieczeństwo, gospodarka, mieszkania, prawo, technologia, AI, nauka, kosmos, historia, zdrowie, psychologia, edukacja, klimat, zwierzęta, kultura, filmy, muzyka, gry, sport, motoryzacja, podróże, Pokémon TCG,
 - **Ciekawostki**: nauka, przyroda, historia, kosmos, psychologia,
 - **Ten dzień w historii**,
 - **Pojęcie dnia**: model myślowy albo błąd poznawczy,

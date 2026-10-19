@@ -1,5 +1,5 @@
 // Profil: ustawienia wydania, przypomnienie, poziom (karp → smok), archiwum wydań, kopia danych.
-import { SECTIONS, FACT_KINDS, LEVELS } from '../config.js';
+import { SECTIONS, SECTION_GROUPS, FACT_KINDS, LEVELS } from '../config.js';
 import {
   getState,
   update,
@@ -147,14 +147,19 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
           }),
         ),
         h('h3', { class: 'group-title', style: 'margin-top:8px' }, 'Działy wiadomości'),
-        multiChoice(SECTIONS, profile.sections, (ids) => {
-          if (!ids.length) {
-            toast('Zostaw co najmniej jeden dział');
-            render();
-            return;
-          }
-          saveProfile((p) => { p.sections = ids; });
-        }),
+        multiChoice(
+          SECTIONS,
+          profile.sections,
+          (ids) => {
+            if (!ids.length) {
+              toast('Zostaw co najmniej jeden dział');
+              render();
+              return;
+            }
+            saveProfile((p) => { p.sections = ids; });
+          },
+          SECTION_GROUPS,
+        ),
         h('h3', { class: 'group-title', style: 'margin-top:8px' }, 'Ciekawostki najpierw z'),
         multiChoice(FACT_KINDS, profile.factKinds, (ids) => saveProfile((p) => { p.factKinds = ids; })),
         h('h3', { class: 'group-title', style: 'margin-top:8px' }, 'Czas dziennie'),

@@ -1,5 +1,5 @@
 // Ankieta na start: imię, tematy, ciekawostki, czas dziennie, pora przypomnienia.
-import { SECTIONS, FACT_KINDS, DEFAULT_PROFILE } from '../config.js';
+import { SECTIONS, SECTION_GROUPS, FACT_KINDS, DEFAULT_PROFILE } from '../config.js';
 import { getState, update } from '../store.js';
 import { h, mount, icon, koiMark } from '../ui.js';
 
@@ -51,9 +51,14 @@ export function renderOnboarding(root, { onDone }) {
       render: () => [
         h('h1', null, 'Co Cię interesuje?'),
         h('p', { class: 'lead' }, 'Polska i świat to zawsze top 5. Do tego wybierz działy, które chcesz czytać codziennie.'),
-        multiChoice(SECTIONS, draft.sections, (ids) => {
-          draft.sections = ids;
-        }),
+        multiChoice(
+          SECTIONS,
+          draft.sections,
+          (ids) => {
+            draft.sections = ids;
+          },
+          SECTION_GROUPS,
+        ),
       ],
       canNext: () => draft.sections.length > 0,
     },
@@ -169,29 +174,37 @@ export function renderOnboarding(root, { onDone }) {
   render();
 }
 
-function multiChoice(options, selected, onChange) {
+// Wybór wielu opcji. Gdy podasz grupy, opcje są pokazane pod nagłówkami grup.
+function multiChoice(options, selected, onChange, groups = null) {
   const chosen = new Set(selected);
+  const chip = (o) =>
+    h(
+      'button',
+      {
+        type: 'button',
+        class: 'choice',
+        'aria-pressed': chosen.has(o.id) ? 'true' : 'false',
+        title: o.hint || null,
+        onclick: (e) => {
+          if (chosen.has(o.id)) chosen.delete(o.id);
+          else chosen.add(o.id);
+          e.currentTarget.setAttribute('aria-pressed', chosen.has(o.id) ? 'true' : 'false');
+          onChange(options.map((x) => x.id).filter((id) => chosen.has(id)));
+        },
+      },
+      o.label,
+    );
+
+  if (!groups) return h('div', { class: 'choices', role: 'group' }, options.map(chip));
   return h(
     'div',
-    { class: 'choices', role: 'group' },
-    options.map((o) =>
-      h(
-        'button',
-        {
-          type: 'button',
-          class: 'choice',
-          'aria-pressed': chosen.has(o.id) ? 'true' : 'false',
-          title: o.hint || null,
-          onclick: (e) => {
-            if (chosen.has(o.id)) chosen.delete(o.id);
-            else chosen.add(o.id);
-            e.currentTarget.setAttribute('aria-pressed', chosen.has(o.id) ? 'true' : 'false');
-            onChange(options.map((x) => x.id).filter((id) => chosen.has(id)));
-          },
-        },
-        o.label,
+    { class: 'choice-groups' },
+    groups
+      .map((g) => ({ g, items: options.filter((o) => o.group === g.id) }))
+      .filter(({ items }) => items.length)
+      .map(({ g, items }) =>
+        h('div', { class: 'choice-group', role: 'group', 'aria-label': g.label }, h('p', { class: 'eyebrow' }, g.label), h('div', { class: 'choices' }, items.map(chip))),
       ),
-    ),
   );
 }
 

@@ -50,18 +50,30 @@ Wzór gotowego wydania: [`content/editions/2026-10-01.json`](content/editions/20
 |---|---|---|
 | `polska` | dokładnie 5 | Sprawy ważne dla kraju i codziennego życia: polityka, gospodarka, prawo, bezpieczeństwo, społeczeństwo. |
 | `swiat` | dokładnie 5 | Wydarzenia o największym znaczeniu globalnym, ze szczególnym uwzględnieniem tego, co dotyczy Polski i Europy. |
-| `gospodarka` | 2 | Ceny, praca, podatki, rynki, kursy walut. |
-| `technologia` | 2–3 | Sprzęt, internet, energia, cyberbezpieczeństwo. |
-| `ai` | 2–3 | Modele, firmy, regulacje, wpływ na pracę i życie. |
-| `nauka` | 2–3 | Odkrycia opublikowane w recenzowanych pismach lub ogłoszone przez instytucje naukowe. |
+| `bezpieczenstwo` | 2 | Wojsko, NATO, wojna w Ukrainie, zagrożenia hybrydowe. |
+| `gospodarka` | 2 | Ceny, paliwa, praca, podatki, rynki, kursy walut. |
+| `nieruchomosci` | 2 | Ceny mieszkań, kredyty, najem. |
+| `prawo` | 2 | Nowe przepisy, które dotyczą zwykłych ludzi: urzędy, praca, prawa konsumenta. |
+| `technologia` | 2 | Sprzęt, internet, chipy, cyberbezpieczeństwo. |
+| `ai` | 2 | Modele, firmy, regulacje, wpływ na pracę i życie. |
+| `nauka` | 2 | Odkrycia opublikowane w recenzowanych pismach lub ogłoszone przez instytucje naukowe. |
 | `kosmos` | 2 | Misje, astronomia, odkrycia. |
-| `zdrowie` | 2–3 | Wyniki badań z zaznaczeniem ich ograniczeń (obserwacyjne czy kliniczne, wielkość grupy). Bez porad medycznych. |
+| `historia` | 2 | Odkrycia archeologów i historyków. |
+| `zdrowie` | 2 | Wyniki badań z zaznaczeniem ich ograniczeń (na zwierzętach czy ludziach, obserwacyjne czy kliniczne), zmiany w ochronie zdrowia. Bez porad medycznych. |
+| `psychologia` | 2 | Badania o umyśle, emocjach i relacjach. |
+| `edukacja` | 2 | Szkoła, studia, zmiany w oświacie. |
 | `srodowisko` | 2 | Klimat, przyroda, energia odnawialna, ekstremalna pogoda. |
-| `kultura` | 2–3 | Polska i światowa: film, książki, muzyka, wystawy, nagrody. |
-| `sport` | 2 | Najważniejsze wyniki i wydarzenia, z naciskiem na polskich sportowców. |
+| `zwierzeta` | 2 | Nowe gatunki, zachowania zwierząt, ochrona przyrody. |
+| `kultura` | 2 | Książki, teatr, sztuka, festiwale, nagrody. |
+| `filmy` | 2 | Premiery, festiwale filmowe, box office, seriale. |
+| `muzyka` | 2 | Płyty, koncerty, artyści. |
 | `gry` | 2 | Gry wideo i planszowe: premiery, branża. |
+| `sport` | 2 | Najważniejsze wyniki i wydarzenia, z naciskiem na polskich sportowców. |
 | `motoryzacja` | 2 | Samochody, elektromobilność, przepisy drogowe. |
-| `pokemon` | 2–3 | Pokémon TCG: nowe dodatki i produkty, terminy prerelease, zmiany w zasadach, turnieje, TCG Pocket. |
+| `podroze` | 2 | Loty, kierunki, przepisy w podróży. |
+| `pokemon` | 2 | Pokémon TCG: nowe dodatki i produkty, terminy prerelease, zmiany w zasadach, turnieje, TCG Pocket. |
+
+Jeśli w danym dziale nie ma wartej uwagi wiadomości z ostatnich dni, lepiej dać jedną dobrą niż dwie słabe.
 
 Polska i świat są zawsze. Pozostałe działy: te, które wymienia polecenie dnia (czyli te z ostatniego wydania; zmienia się je w aplikacji w „Przygotuj wydanie → Działy w wydaniu”).
 

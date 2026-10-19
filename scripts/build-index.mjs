@@ -2,17 +2,14 @@
 // Uruchom po dodaniu nowego wydania: node scripts/build-index.mjs
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { indexEntry } from '../src/edition.js';
 
 const dir = 'content/editions';
 const editions = readdirSync(dir)
   .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
   .sort()
   .reverse()
-  .map((f) => {
-    const ed = JSON.parse(readFileSync(join(dir, f), 'utf8'));
-    const top = (ed.news || []).find((n) => n.section === 'polska' && n.rank === 1) || (ed.news || [])[0];
-    return { date: ed.date, headline: top?.title || '' };
-  });
+  .map((f) => indexEntry(JSON.parse(readFileSync(join(dir, f), 'utf8'))));
 
 writeFileSync('content/index.json', `${JSON.stringify({ editions }, null, 2)}\n`);
 const n = editions.length;

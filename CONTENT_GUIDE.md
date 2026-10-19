@@ -1,6 +1,8 @@
 # Jak przygotować wydanie dnia
 
 Instrukcja dla codziennej rutyny (Claude Code), która rano tworzy nowe wydanie SelfLearn.
+Te same zasady dostaje czat AI, gdy wydanie przygotowujesz ręcznie w aplikacji („Przygotuj wydanie”).
+Ich źródło to `src/prompt.js`, a `node scripts/prompt.mjs` wypisuje gotowe polecenie na dany dzień.
 Czytelnicy to para z Polski. Wydanie czyta się 10–20 minut, a jego celem jest szersze spojrzenie na świat i nauka, a nie przewijanie.
 
 Wzór gotowego wydania: [`content/editions/2026-10-01.json`](content/editions/2026-10-01.json).
@@ -9,13 +11,12 @@ Wzór gotowego wydania: [`content/editions/2026-10-01.json`](content/editions/20
 
 1. **Ustal datę** w strefie Europe/Warsaw: `TZ=Europe/Warsaw date +%F`. Plik wydania to `content/editions/RRRR-MM-DD.json`.
    Jeśli taki plik już istnieje, zakończ pracę bez zmian.
-2. **Przejrzyj 3 poprzednie wydania** (najnowsze pliki w `content/editions/`), żeby nie powtarzać tematów, ciekawostek, pojęć ani pytań.
+2. **Wygeneruj polecenie dnia:** `node scripts/prompt.mjs RRRR-MM-DD`. Zawiera działy, książkę i dzień tygodnia książki, tematy do pominięcia i materiał do rozgrzewki. Trzymaj się go razem z zasadami poniżej.
 3. **Zbierz wiadomości** z ostatnich 24–36 godzin (źródła niżej). Używaj WebSearch, a gdy sieć na to pozwala, także WebFetch i kanałów RSS.
    Jeśli WebFetch jest zablokowany, opieraj się na tym, co pokazują wyniki WebSearch, i **nie dopisuj faktów, których tam nie ma**.
 4. **Napisz wydanie** według zasad poniżej i zapisz plik.
-5. **Zaktualizuj książkę tygodnia** w `content/books.json`, jeśli zaczyna się nowa (patrz „Książka tygodnia”).
-6. **Sprawdź:** `node scripts/build-index.mjs && node scripts/validate.mjs`. Popraw wszystkie błędy, a uwagi przejrzyj.
-7. **Zapisz zmiany:** commit `Wydanie RRRR-MM-DD` i `git push origin HEAD:main`. Publikacja na stronie dzieje się automatycznie.
+5. **Sprawdź:** `node scripts/build-index.mjs && node scripts/validate.mjs`. Popraw wszystkie błędy, a uwagi przejrzyj.
+6. **Zapisz zmiany:** commit `Wydanie RRRR-MM-DD` i `git push origin HEAD:main`. Publikacja na stronie dzieje się automatycznie.
 
 ## Zasady ogólne
 
@@ -38,6 +39,7 @@ Wzór gotowego wydania: [`content/editions/2026-10-01.json`](content/editions/20
   "concept": { /* pojęcie dnia */ },
   "book": { /* książka tygodnia */ },
   "quiz": [ /* 5–7 pytań */ ],
+  "recap": [ /* 3 pytania a/b/c z poprzedniego wydania */ ],
   "evening": { "question": "…", "hint": "…" }
 }
 ```
@@ -48,12 +50,20 @@ Wzór gotowego wydania: [`content/editions/2026-10-01.json`](content/editions/20
 |---|---|---|
 | `polska` | dokładnie 5 | Sprawy ważne dla kraju i codziennego życia: polityka, gospodarka, prawo, bezpieczeństwo, społeczeństwo. |
 | `swiat` | dokładnie 5 | Wydarzenia o największym znaczeniu globalnym, ze szczególnym uwzględnieniem tego, co dotyczy Polski i Europy. |
+| `gospodarka` | 2 | Ceny, praca, podatki, rynki, kursy walut. |
 | `technologia` | 2–3 | Sprzęt, internet, energia, cyberbezpieczeństwo. |
 | `ai` | 2–3 | Modele, firmy, regulacje, wpływ na pracę i życie. |
 | `nauka` | 2–3 | Odkrycia opublikowane w recenzowanych pismach lub ogłoszone przez instytucje naukowe. |
+| `kosmos` | 2 | Misje, astronomia, odkrycia. |
 | `zdrowie` | 2–3 | Wyniki badań z zaznaczeniem ich ograniczeń (obserwacyjne czy kliniczne, wielkość grupy). Bez porad medycznych. |
+| `srodowisko` | 2 | Klimat, przyroda, energia odnawialna, ekstremalna pogoda. |
 | `kultura` | 2–3 | Polska i światowa: film, książki, muzyka, wystawy, nagrody. |
+| `sport` | 2 | Najważniejsze wyniki i wydarzenia, z naciskiem na polskich sportowców. |
+| `gry` | 2 | Gry wideo i planszowe: premiery, branża. |
+| `motoryzacja` | 2 | Samochody, elektromobilność, przepisy drogowe. |
 | `pokemon` | 2–3 | Pokémon TCG: nowe dodatki i produkty, terminy prerelease, zmiany w zasadach, turnieje, TCG Pocket. |
+
+Polska i świat są zawsze. Pozostałe działy: te, które wymienia polecenie dnia (czyli te z ostatniego wydania; zmienia się je w aplikacji w „Przygotuj wydanie → Działy w wydaniu”).
 
 Każda pozycja:
 
@@ -110,9 +120,9 @@ Model myślowy, błąd poznawczy, prawo lub termin z ekonomii, nauki czy filozof
 
 ### Książka tygodnia (`book`)
 
-1. Otwórz `content/books.json`. Dzień książki = liczba dni od `current.startedOn` + 1.
-2. Jeśli wychodzi więcej niż 7, zacznij następną książkę z `queue` (po bieżącej; po ostatniej wróć na początek kolejki): ustaw `current.id` i `current.startedOn` na dzisiejszą datę, a dzień na 1.
-3. Jeśli książka ma `plan`, trzymaj się go. Jeśli nie, rozpisz tydzień według pola `format` i dopisz `plan` do `books.json`.
+1. Książkę i dzień wyznacza kalendarz z `content/books.json`: od `startDate` co 7 dni kolejna książka z `queue` (po ostatniej wraca pierwsza). Polecenie dnia podaje je gotowe.
+2. Jeśli książka ma `plan`, trzymaj się go. Polecenie podaje też idee omówione już w tym tygodniu, żeby ich nie powtarzać.
+3. Pliku `books.json` nie trzeba zmieniać z dnia na dzień.
 4. Dni 1–5: jedna kluczowa idea dziennie. Dzień 6: najważniejszy morał i plan zastosowania. Dzień 7: podsumowanie tygodnia.
 5. Opisuj idee własnymi słowami. Przy tezach, które naukowcy kwestionują, zaznacz to wprost.
 
@@ -142,6 +152,14 @@ Model myślowy, błąd poznawczy, prawo lub termin z ekonomii, nauki czy filozof
 - Poprawną odpowiedź umieszczaj na różnych pozycjach.
 - `explanation`: 1–2 zdania, które utrwalają wiedzę także po błędnej odpowiedzi.
 
+### Rozgrzewka (`recap`)
+
+Dokładnie 3 pytania o materiał z **poprzedniego wydania** (ciekawostki, historia, pojęcie, książka). Polecenie dnia podaje ten materiał. Gdy poprzedniego wydania nie ma, pomiń pole.
+
+- `id`: `RRRR-MM-DD-r1…r3` (data dzisiejszego wydania).
+- 3 odpowiedzi (a, b, c), `answer` to 0, 1 albo 2, krótkie `explanation`.
+- Pytaj z innej strony niż wczorajszy quiz. Bez pola `recap` aplikacja sama ułoży rozgrzewkę z wczorajszego quizu.
+
 ### Na wieczór (`evening`)
 
 Jedno otwarte pytanie do rozmowy we dwoje, związane z książką albo pojęciem dnia. Ciepłe i praktyczne, bez tonu terapii. `hint` to krótka podpowiedź, jak zacząć.
@@ -157,7 +175,8 @@ Jedno otwarte pytanie do rozmowy we dwoje, związane z książką albo pojęciem
 
 ## Lista kontrolna przed commitem
 
-- [ ] Polska i świat mają po 5 wiadomości, pozostałe działy po 2–3.
+- [ ] Polska i świat mają po 5 wiadomości, pozostałe działy z polecenia po 2.
+- [ ] Rozgrzewka ma 3 pytania a/b/c o poprzednie wydanie (jeśli było).
 - [ ] Każdy link pochodzi z wyników wyszukiwania lub pobranej strony.
 - [ ] Liczby, nazwiska i daty zgadzają się ze źródłami.
 - [ ] Brak powtórek z 3 poprzednich wydań.

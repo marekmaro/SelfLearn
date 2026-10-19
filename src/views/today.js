@@ -1,8 +1,8 @@
-// Widok wydania: rozdziały (Polska → Świat → Twoje tematy → … → Na wieczór),
-// każdy kończy się przyciskiem „Dalej”. Po ostatnim wydanie jest ukończone.
+// Widok wydania: rozgrzewka z wczorajszej wiedzy, potem rozdziały (Polska → Świat → Twoje tematy → …
+// → Na wieczór), każdy kończy się przyciskiem „Dalej”. Po ostatnim wydanie jest ukończone.
 import { SECTIONS, MAIN_SECTIONS, TIME_BUDGETS, FACT_KINDS, WORDS_PER_MINUTE, LEVELS } from '../config.js';
-import { loadIndex, loadEdition, pickDate } from '../data.js';
-import { todayISO, formatLong, formatShort } from '../dates.js';
+import { loadIndex, loadEdition, pickDate, previousDate } from '../data.js';
+import { todayISO, formatLong, formatShort, addDays } from '../dates.js';
 import {
   getState,
   update,
@@ -12,6 +12,9 @@ import {
   toggleSaved,
   streak,
   completedCount,
+  markActive,
+  isActive,
+  weekActivity,
 } from '../store.js';
 import { grade, dueCards } from '../srs.js';
 import { h, mount, icon, koiMark, sourceLinks, toast, plural } from '../ui.js';
@@ -36,8 +39,20 @@ export async function renderToday(root, { date: requested, onChange }) {
     return;
   }
 
+  // Rozgrzewka: 3 pytania z poprzedniego wydania.
+  const prevDate = previousDate(index, date);
+  let prevEdition = null;
+  if (prevDate) {
+    try {
+      prevEdition = await loadEdition(prevDate);
+    } catch {
+      prevEdition = null;
+    }
+  }
+  const warmup = buildWarmup(edition, prevEdition, editionProgress(prevDate || ''));
+
   const profile = getState().profile;
-  const chapters = buildChapters(edition, profile);
+  const chapters = buildChapters(edition, profile, warmup.length ? { prevDate } : null);
   const expanded = new Set();
 
   function currentChapterId() {
@@ -69,7 +84,10 @@ export async function renderToday(root, { date: requested, onChange }) {
         justCompleted = true;
       }
     });
-    if (justCompleted) toast('Wydanie ukończone');
+    if (justCompleted) {
+      const milestone = markActive('wydanie');
+      toast(milestone ? `Seria: ${milestone} dni z rzędu!` : 'Wydanie ukończone');
+    }
     render({ scroll: true });
     onChange?.();
   }
@@ -115,19 +133,24 @@ export async function renderToday(root, { date: requested, onChange }) {
       h(
         'div',
         { class: 'masthead-top' },
-        h('p', { class: 'eyebrow' }, date === today ? `Dzień dobry${name}` : 'Wydanie z archiwum'),
+        h('p', { class: 'eyebrow' }, requested && requested !== today ? 'Wydanie z archiwum' : `Dzień dobry${name}`),
         h(
           'div',
           { class: 'meta-row' },
-          s > 0 ? h('span', { class: 'pill koi', title: 'Seria dni z ukończonym wydaniem' }, icon('flame'), `${s} ${plural(s, 'dzień', 'dni', 'dni')}`) : null,
           h('span', { class: 'pill' }, icon('clock'), `ok. ${minutes} min`),
           h('a', { class: 'pill nurt pill-link', href: '#ustawienia', title: 'Zmień działy, długość wydania i przypomnienie' }, icon('sliders'), 'Dostosuj'),
         ),
       ),
       h('h1', { class: 'date' }, formatLong(date)),
+      streakWidget(s),
       edition.intro ? h('p', { class: 'read intro' }, edition.intro) : null,
       date < today && !requested
-        ? h('p', { class: 'banner' }, `Dzisiejsze wydanie jeszcze się przygotowuje. Poniżej najnowsze, z ${formatShort(date)}.`)
+        ? h(
+            'div',
+            { class: 'banner' },
+            h('p', { style: 'margin:0' }, `Dzisiejszego wydania jeszcze nie ma. Poniżej najnowsze, z ${formatShort(date)}.`),
+            h('a', { class: 'btn secondary', href: '#przygotuj', style: 'margin-top:10px' }, 'Przygotuj dzisiejsze wydanie', icon('arrow')),
+          )
         : null,
       h(
         'div',
@@ -187,6 +210,7 @@ export async function renderToday(root, { date: requested, onChange }) {
       ),
     );
 
+    if (ch.type === 'warmup') body.push(...warmupView());
     if (ch.type === 'news') body.push(...ch.groups.map((g) => newsGroup(g, false)));
     if (ch.type === 'topics') body.push(...ch.groups.map((g) => newsGroup(g, true)));
     if (ch.type === 'facts') body.push(limitedList(ch.id, ch.items, ch.limit, factCard));
@@ -393,6 +417,79 @@ export async function renderToday(root, { date: requested, onChange }) {
     );
   }
 
+  // ---------- Rozgrzewka ----------
+
+  function warmupView() {
+    const p = editionProgress(date);
+    const answers = p.warmup || {};
+    const answered = warmup.filter((q) => answers[q.id] !== undefined).length;
+    const right = warmup.filter((q) => answers[q.id] === q.answer).length;
+    return [
+      h(
+        'p',
+        { class: 'muted' },
+        answered < warmup.length
+          ? 'Trzy szybkie pytania z poprzedniego wydania. Przypominanie sobie to najlepszy sposób, żeby wiedza została na dłużej. Rozgrzewka wystarczy też, żeby utrzymać serię dni.'
+          : `Rozgrzewka zaliczona: ${right} z ${warmup.length}. Seria na dziś jest bezpieczna.`,
+      ),
+      ...warmup.map((q, i) => warmupCard(q, i, answers)),
+    ];
+  }
+
+  function warmupCard(q, i, answers) {
+    const chosen = answers[q.id];
+    const done = chosen !== undefined;
+    const card = h(
+      'article',
+      { class: 'card q' },
+      h('p', { class: 'eyebrow' }, `Pytanie ${i + 1} z ${warmup.length}`),
+      h('p', { class: 'q-text' }, q.question),
+      h(
+        'div',
+        { class: 'options' },
+        q.options.map((opt, oi) => {
+          let cls = 'option lettered';
+          if (done && oi === q.answer) cls += ' is-right';
+          else if (done && oi === chosen) cls += ' is-wrong';
+          return h(
+            'button',
+            { type: 'button', class: cls, disabled: done, onclick: () => answerWarmup(q, oi) },
+            h('span', { class: 'letter', 'aria-hidden': 'true' }, 'abc'[oi] || ''),
+            h('span', null, opt),
+          );
+        }),
+      ),
+    );
+    if (done) {
+      const ok = chosen === q.answer;
+      card.append(
+        h('p', { class: `verdict ${ok ? 'ok' : 'bad'}` }, ok ? 'Dobrze!' : `Poprawna odpowiedź: ${'abc'[q.answer]}.`),
+        q.explanation ? h('p', { class: 'read' }, q.explanation) : null,
+      );
+    }
+    return card;
+  }
+
+  function answerWarmup(q, chosen) {
+    const today = todayISO();
+    const correct = chosen === q.answer;
+    let allDone = false;
+    updateEdition(date, (p) => {
+      p.warmup ||= {};
+      p.warmup[q.id] = chosen;
+      allDone = warmup.every((x) => p.warmup[x.id] !== undefined);
+    });
+    update((s) => {
+      grade(s.deck, q, correct, today, { from: { date: prevDate, title: q.fromTitle || null } });
+    });
+    if (allDone) {
+      const milestone = markActive('rozgrzewka');
+      toast(milestone ? `Seria: ${milestone} dni z rzędu!` : 'Rozgrzewka zaliczona');
+    }
+    render();
+    onChange?.();
+  }
+
   function quizView() {
     const p = editionProgress(date);
     const answered = Object.keys(p.quiz).length;
@@ -535,7 +632,7 @@ export async function renderToday(root, { date: requested, onChange }) {
 
 // ---------- Budowa rozdziałów ----------
 
-export function buildChapters(edition, profile) {
+export function buildChapters(edition, profile, warmup = null) {
   const budget = TIME_BUDGETS[profile?.minutes] || TIME_BUDGETS[15];
   const wanted = new Set(profile?.sections || MAIN_SECTIONS);
   const bySection = {};
@@ -543,6 +640,15 @@ export function buildChapters(edition, profile) {
   for (const list of Object.values(bySection)) list.sort((a, b) => (a.rank ?? 99) - (b.rank ?? 99));
 
   const chapters = [];
+  if (warmup) {
+    const yesterday = addDays(edition.date, -1);
+    chapters.push({
+      id: 'rozgrzewka',
+      label: 'Rozgrzewka',
+      title: warmup.prevDate === yesterday ? 'Test z wczoraj' : `Test z wydania ${formatShort(warmup.prevDate)}`,
+      type: 'warmup',
+    });
+  }
   for (const id of MAIN_SECTIONS) {
     if (wanted.has(id) && bySection[id]?.length) {
       chapters.push({
@@ -581,6 +687,88 @@ export function buildChapters(edition, profile) {
   return chapters;
 }
 
+// ---------- Seria dni ----------
+
+const DOW = ['Nd', 'Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'So'];
+const dowOf = (iso) => DOW[new Date(`${iso}T12:00:00`).getDay()];
+
+function streakWidget(s) {
+  const today = todayISO();
+  const week = weekActivity(today);
+  const activeToday = isActive(today);
+  let status;
+  if (s === 0) status = 'Zacznij serię: zrób rozgrzewkę albo przeczytaj wydanie do końca.';
+  else if (activeToday) status = 'Dzisiejszy dzień zaliczony. Wróć jutro, żeby seria rosła.';
+  else status = 'Dziś jeszcze przed Tobą. Wystarczy rozgrzewka, żeby nie stracić serii.';
+
+  return h(
+    'div',
+    { class: `streak${activeToday ? ' is-today' : ''}` },
+    h(
+      'div',
+      { class: 'streak-main' },
+      h('span', { class: 'streak-flame', 'aria-hidden': 'true' }, icon('flame')),
+      h('strong', { class: 'streak-num' }, s),
+      h('span', { class: 'streak-label' }, `${plural(s, 'dzień', 'dni', 'dni')} z rzędu`),
+    ),
+    h(
+      'ol',
+      { class: 'streak-week', 'aria-label': 'Ostatnie 7 dni' },
+      week.map((d) =>
+        h(
+          'li',
+          { class: [d.active ? 'on' : '', d.isToday ? 'today' : ''].filter(Boolean).join(' ') },
+          h('span', { class: 'dow' }, d.isToday ? 'Dziś' : dowOf(d.date)),
+          h('span', { class: 'dot', 'aria-label': d.active ? 'zaliczony' : 'brak' }, d.active ? icon('check') : null),
+        ),
+      ),
+    ),
+    h('p', { class: 'streak-status' }, status),
+  );
+}
+
+// ---------- Rozgrzewka ----------
+
+// 3 pytania a/b/c: z pola „recap” wydania (gdy czat je przygotował),
+// a jeśli go nie ma – z quizu poprzedniego wydania, najpierw te z błędną odpowiedzią.
+export function buildWarmup(edition, prevEdition, prevProgress) {
+  if (Array.isArray(edition.recap) && edition.recap.length) {
+    return edition.recap.slice(0, 3).map((q) => ({ ...q, fromTitle: q.fromTitle || null }));
+  }
+  if (!prevEdition?.quiz?.length) return [];
+  const answers = prevProgress?.quiz || {};
+  const score = (q) => (answers[q.id] === undefined ? 1 : answers[q.id] === q.answer ? 2 : 0);
+  const ranked = prevEdition.quiz
+    .map((q, i) => ({ q, i }))
+    .sort((a, b) => score(a.q) - score(b.q) || a.i - b.i)
+    .map((x) => x.q);
+  return ranked.slice(0, 3).map((q) => toThreeOptions(q, findRef(prevEdition, q.ref)?.title));
+}
+
+function toThreeOptions(q, fromTitle) {
+  const hsh = hash(q.id);
+  const wrong = q.options.map((_, i) => i).filter((i) => i !== q.answer);
+  const picked = wrong.length <= 2 ? wrong : [wrong[hsh % wrong.length], wrong[(hsh + 1) % wrong.length]];
+  const idxs = [q.answer, ...picked];
+  const r = hsh % idxs.length;
+  const order = [...idxs.slice(r), ...idxs.slice(0, r)];
+  return {
+    id: q.id,
+    ref: q.ref,
+    question: q.question,
+    options: order.map((i) => q.options[i]),
+    answer: order.indexOf(q.answer),
+    explanation: q.explanation,
+    fromTitle: fromTitle || null,
+  };
+}
+
+function hash(text) {
+  let x = 0;
+  for (const ch of String(text)) x = (x * 31 + ch.codePointAt(0)) >>> 0;
+  return x;
+}
+
 function rankKind(pref, kind) {
   const i = pref.indexOf(kind);
   return i === -1 ? 99 : i;
@@ -609,6 +797,8 @@ function estimateMinutes(chapters, edition, expanded) {
       total += words(b.ideaTitle, b.idea, b.moral, b.action);
     } else if (ch.type === 'quiz') {
       total += edition.quiz.length * 60;
+    } else if (ch.type === 'warmup') {
+      total += 3 * 50;
     } else if (ch.type === 'evening') {
       total += 120;
     }

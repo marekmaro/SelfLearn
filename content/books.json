@@ -1,6 +1,7 @@
 {
   "format": "Jedna książka na tydzień (7 dni). Dni 1–5: po jednej kluczowej idei. Dzień 6: najważniejszy morał i plan zastosowania. Dzień 7: podsumowanie całości i pytanie do rozmowy we dwoje.",
-  "current": { "id": "atomowe-nawyki", "startedOn": "2026-10-01" },
+  "startDate": "2026-10-18",
+  "note": "Książka zmienia się co 7 dni w kolejności z listy queue (po ostatniej wraca pierwsza). startDate to pierwszy dzień pierwszej książki z kolejki. Żeby zacząć cykl od nowa, ustaw startDate na dzień, w którym ma ruszyć pierwsza książka.",
   "queue": [
     {
       "id": "atomowe-nawyki",

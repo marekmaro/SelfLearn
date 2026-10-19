@@ -2,11 +2,17 @@
 export const SECTIONS = [
   { id: 'polska', label: 'Polska', hint: 'Najważniejsze sprawy w kraju' },
   { id: 'swiat', label: 'Świat', hint: 'Co dzieje się poza Polską' },
+  { id: 'gospodarka', label: 'Gospodarka i finanse', hint: 'Ceny, praca, rynki, Twoje pieniądze' },
   { id: 'technologia', label: 'Technologia', hint: 'Sprzęt, internet, energia' },
-  { id: 'nauka', label: 'Nauka', hint: 'Odkrycia i badania' },
   { id: 'ai', label: 'Sztuczna inteligencja', hint: 'Modele, firmy, regulacje' },
+  { id: 'nauka', label: 'Nauka', hint: 'Odkrycia i badania' },
+  { id: 'kosmos', label: 'Kosmos', hint: 'Misje, astronomia, odkrycia' },
   { id: 'zdrowie', label: 'Zdrowie', hint: 'Medycyna i styl życia' },
+  { id: 'srodowisko', label: 'Klimat i środowisko', hint: 'Pogoda, przyroda, energia odnawialna' },
   { id: 'kultura', label: 'Kultura', hint: 'Film, książki, muzyka' },
+  { id: 'sport', label: 'Sport', hint: 'Najważniejsze wyniki i wydarzenia' },
+  { id: 'gry', label: 'Gry', hint: 'Gry wideo i planszowe' },
+  { id: 'motoryzacja', label: 'Motoryzacja', hint: 'Samochody, elektryki, przepisy' },
   { id: 'pokemon', label: 'Pokémon TCG', hint: 'Dodatki, turnieje, TCG Pocket' },
 ];
 
@@ -51,3 +57,9 @@ export const LEITNER_DAYS = [0, 1, 3, 7, 16, 35];
 export const LEITNER_MAX = LEITNER_DAYS.length - 1;
 
 export const WORDS_PER_MINUTE = 190;
+
+// Kamienie milowe serii, jak w Duolingo.
+export const STREAK_MILESTONES = [3, 7, 14, 30, 50, 100, 200, 365];
+
+// Repozytorium, do którego aplikacja publikuje wydania (GitHub Pages: <owner>.github.io/<repo>/).
+export const DEFAULT_REPO = { owner: 'marekmaro', repo: 'SelfLearn', branch: 'main' };

@@ -7,6 +7,7 @@ import { renderToday } from './views/today.js';
 import { renderReview } from './views/review.js';
 import { renderSaved } from './views/saved.js';
 import { renderProfile } from './views/profile.js';
+import { renderPrepare } from './views/prepare.js';
 
 const root = document.getElementById('app');
 
@@ -50,11 +51,14 @@ async function route() {
   } else if (hash === 'zeszyt') {
     setTab('zeszyt');
     renderSaved(root);
-  } else if (hash === 'profil' || hash === 'ustawienia') {
+  } else if (hash === 'przygotuj') {
+    setTab('dzis');
+    await renderPrepare(root, common);
+  } else if (hash === 'profil' || hash === 'ustawienia' || hash === 'publikowanie') {
     setTab('profil');
     await renderProfile(root, {
       ...common,
-      focus: hash === 'ustawienia' ? 'ustawienia' : null,
+      focus: hash === 'profil' ? null : hash,
       onReset: () => {
         location.hash = '';
         route();

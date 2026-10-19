@@ -2,15 +2,17 @@
 
 Codzienne wydanie do nauki i poszerzania horyzontów, w formie aplikacji na telefon (PWA). Codziennie 10–20 minut:
 
+- **Rozgrzewka**: 3 pytania a/b/c z poprzedniego wydania,
 - **Polska: top 5** i **Świat: top 5**: streszczenie, „dlaczego to ważne” i link do pełnego artykułu,
-- **Twoje tematy**: technologia, nauka, AI, zdrowie, kultura, Pokémon TCG (wybierane w ankiecie),
+- **Twoje tematy** do wyboru: gospodarka, technologia, AI, nauka, kosmos, zdrowie, klimat, kultura, sport, gry, motoryzacja, Pokémon TCG,
 - **Ciekawostki**: nauka, przyroda, historia, kosmos, psychologia,
 - **Ten dzień w historii**,
 - **Pojęcie dnia**: model myślowy albo błąd poznawczy,
 - **Książka tygodnia**: jedna idea dziennie, morał i „zastosuj dziś”,
 - **Quiz** z ciekawostek, pojęcia i książki (bez pytań z wiadomości), a potem **powtórki** w odstępach 1, 3, 7, 16 i 35 dni,
 - **Pytanie na wieczór** do rozmowy we dwoje,
-- **Zeszyt** na zapisane karty i notatki, **seria dni** i poziomy od ikry do smoka (legenda o karpiu i Smoczej Bramie).
+- **Seria dni** jak w Duolingo: dzień się liczy po rozgrzewce albo całym wydaniu, z paskiem ostatnich 7 dni i kamieniami milowymi,
+- **Zeszyt** na zapisane karty i notatki oraz poziomy od ikry do smoka (legenda o karpiu i Smoczej Bramie).
 
 Każda osoba ma własny profil, postępy i powtórki na swoim telefonie. Wydania są wspólne.
 
@@ -55,6 +57,26 @@ Przypomnienie o wybranej godzinie dodaje się w zakładce **Profil** (Kalendarz 
 
 ## Codzienne treści
 
+Są dwa sposoby. Oba korzystają z tych samych zasad (`src/prompt.js`).
+
+### Sposób 1: z czatu AI, w aplikacji (bez konfiguracji)
+
+W aplikacji: **Dziś → Przygotuj dzisiejsze wydanie** (albo **Profil → Publikowanie wydań**).
+
+1. **Skopiuj polecenie.** Aplikacja sama wpisze w nie datę, działy, książkę tygodnia z dniem i tematem, tematy do pominięcia i materiał do rozgrzewki.
+   - **Projekt w Claude (polecane):** raz utwórz w Claude projekt „SelfLearn” i wklej do jego instrukcji „instrukcje projektu”. Potem codziennie w tym projekcie zaczynasz nowy czat i wklejasz krótkie „polecenie dnia”.
+   - **Całość:** jedno długie polecenie do dowolnego czatu (Claude, ChatGPT, Gemini, Perplexity).
+   - Czat musi mieć **włączone wyszukiwanie w internecie**. Bez niego odpowie `BRAK_WYSZUKIWANIA`, a aplikacja to wychwyci.
+2. **Wklej odpowiedź** (cały blok JSON) i naciśnij **Sprawdź**. Aplikacja wypisze, co poprawić, i da gotową listę poprawek do odesłania czatowi.
+3. **Opublikuj:**
+   - **Opublikuj dla obojga**: jednym przyciskiem przez API GitHuba. Wymaga tokenu (Profil → Publikowanie wydań): fine-grained token tylko do tego repozytorium, z uprawnieniem *Contents: Read and write*. Token zostaje na telefonie.
+   - **Skopiuj plik i otwórz GitHub**: bez tokenu. Wklejasz plik na stronie GitHuba i klikasz *Commit changes*.
+   - **Tylko na tym telefonie**: od razu, ale druga osoba go nie zobaczy.
+
+Wydanie możesz przygotować też wieczorem na następny dzień (pole „Na dzień”). To samo polecenie wypisze `node scripts/prompt.mjs RRRR-MM-DD`.
+
+### Sposób 2: automatycznie, rutyną Claude Code
+
 Wydanie przygotowuje **rutyna Claude Code** (claude.ai/code/routines), która działa w ramach subskrypcji Claude, bez dodatkowych opłat za API. Liczy się do limitów użycia konta.
 
 - Harmonogram: codziennie ok. 5:00 czasu polskiego.
@@ -71,13 +93,14 @@ Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesię
 | Ścieżka | Co zawiera |
 |---|---|
 | `index.html`, `src/` | Aplikacja (czysty JavaScript, moduły ES, bez kroku budowania) |
-| `src/views/` | Widoki: ankieta, wydanie, powtórki, zeszyt, profil |
+| `src/views/` | Widoki: ankieta, wydanie, powtórki, zeszyt, profil, przygotowanie wydania |
+| `src/prompt.js`, `src/edition.js` | Polecenie dla czatu AI oraz sprawdzanie wydań (wspólne dla aplikacji i skryptów) |
 | `sw.js`, `manifest.webmanifest`, `assets/` | Tryb offline, instalacja na telefonie, ikony |
 | `content/editions/` | Wydania, jeden plik JSON na dzień |
 | `content/index.json` | Lista wydań (generowana przez `scripts/build-index.mjs`) |
-| `content/books.json` | Kolejka książek tygodnia |
+| `content/books.json` | Kolejka książek tygodnia (zmiana co 7 dni od `startDate`) |
 | `CONTENT_GUIDE.md` | Instrukcja pisania wydań (dla rutyny) |
-| `scripts/` | Walidacja, indeks, lokalny serwer |
+| `scripts/` | Walidacja, indeks, polecenie dnia (`prompt.mjs`), lokalny serwer |
 
 ## Pomysły na kolejne kroki
 
@@ -86,3 +109,4 @@ Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesię
 - Wspólne statystyki pary i wspólna seria.
 - Przycisk „pogłęb” przy karcie: prostsze wyjaśnienie, więcej kontekstu, pytanie do AI.
 - Niedzielne podsumowanie tygodnia z quizem z całego tygodnia.
+- Wątki: śledzenie długich tematów z osią czasu.

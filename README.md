@@ -42,11 +42,26 @@ Wystarczy Node.js 18 lub nowszy, bez instalowania zależności.
 
 ## Publikacja (jednorazowo)
 
+Aplikacja to zwykłe pliki statyczne, więc działa na Vercelu albo na GitHub Pages. Wystarczy jedno z nich.
+
+### Vercel (polecane)
+
+1. Zaloguj się na [vercel.com](https://vercel.com) kontem GitHub (plan Hobby jest darmowy).
+2. **Add New… → Project**, wybierz repozytorium `SelfLearn` i kliknij **Import**. Jeśli go nie widać: **Adjust GitHub App Permissions** i dodaj dostęp do `SelfLearn`.
+3. **Framework Preset: Other**, Root Directory `./`, reszta bez zmian. Kliknij **Deploy**.
+4. Po kilkudziesięciu sekundach aplikacja działa pod adresem `https://<nazwa-projektu>.vercel.app`.
+
+`vercel.json` uruchamia `node scripts/validate.mjs` przed każdą publikacją: wydanie z błędem nie trafi na stronę, a działać będzie poprzednia wersja. Każdy commit na `main` publikuje się sam. Każda inna gałąź dostaje własny adres podglądu.
+
+### GitHub Pages
+
 1. W repozytorium: **Settings → Pages → Build and deployment**.
 2. **Source: Deploy from a branch**, **Branch: main**, folder **/ (root)**, potem **Save**.
 3. Po 1–2 minutach strona działa pod adresem `https://marekmaro.github.io/SelfLearn/`.
 
-Każdy kolejny commit na `main` (np. nowe wydanie) publikuje się sam. Plik `.nojekyll` wyłącza przetwarzanie Jekyll, więc pliki trafiają na stronę bez zmian.
+Plik `.nojekyll` wyłącza przetwarzanie Jekyll, więc pliki trafiają na stronę bez zmian.
+
+Postępy są zapisane osobno dla każdego adresu. Przy przenosinach z jednego adresu na drugi użyj **Profil → Skopiuj kopię danych** i **Wczytaj kopię danych**.
 
 ### Instalacja na telefonie
 

@@ -22,6 +22,7 @@ Wzór gotowego wydania: [`content/editions/2026-10-01.json`](content/editions/20
 
 - Język polski, zdania krótkie i konkretne, bez żargonu. Terminy obce wyjaśniaj w nawiasie.
 - **Każda informacja musi mieć źródło**, czyli adres strony, którą faktycznie widzisz w wynikach wyszukiwania lub pobrałeś. Nigdy nie zgaduj ani nie składaj adresów.
+- Link prowadzi wprost do artykułu: nie na stronę główną serwisu, nie przez przekierowania (vertexaisearch…, google.com/url) i bez parametrów `utm_…`. W tekstach nie ma przypisów ani znaczników cytowań.
 - Streszczaj własnymi słowami. Nie kopiuj akapitów z artykułów. Cytat najwyżej jedno krótkie zdanie, w cudzysłowie.
 - Neutralny ton. Przy sprawach politycznych podawaj stanowiska obu stron, bez ocennych przymiotników. Fakty oddzielaj od opinii („według…”, „krytycy wskazują…”).
 - Bez sensacji. Liczby, nazwiska i daty podawaj tak, jak w źródle.
@@ -187,7 +188,7 @@ Jedno otwarte pytanie do rozmowy we dwoje, związane z książką albo pojęciem
 
 ## Lista kontrolna przed commitem
 
-- [ ] Polska i świat mają po 5 wiadomości, pozostałe działy z polecenia po 2.
+- [ ] Polska i świat mają po 5 wiadomości, pozostałe działy z polecenia po 1–2 (dział bez wartościowej wiadomości pomijamy).
 - [ ] Rozgrzewka ma 3 pytania a/b/c o poprzednie wydanie (jeśli było).
 - [ ] Każdy link pochodzi z wyników wyszukiwania lub pobranej strony.
 - [ ] Liczby, nazwiska i daty zgadzają się ze źródłami.

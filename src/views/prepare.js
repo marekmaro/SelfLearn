@@ -4,8 +4,8 @@ import { loadIndex, loadEdition, loadBooks, forgetEdition } from '../data.js';
 import { todayISO, addDays, isISODate, formatLong } from '../dates.js';
 import { getState, update, saveLocalEdition, githubSettings } from '../store.js';
 import { bookForDate, BOOK_DAYS } from '../books.js';
-import { projectInstructions, dailyMessage, fullPrompt } from '../prompt.js';
-import { validateEdition, extractJSON, describeEdition } from '../edition.js';
+import { projectInstructions, dailyMessage, fullPrompt, CHATS } from '../prompt.js';
+import { validateEdition, extractJSON, cleanEdition, describeEdition } from '../edition.js';
 import { publishEdition, newFileUrl } from '../github.js';
 import { h, mount, icon, toast } from '../ui.js';
 import { multiChoice, segmented } from './onboarding.js';
@@ -81,10 +81,13 @@ export async function renderPrepare(root, { onChange }) {
   const draft = readDraft();
   let date = isISODate(draft.date) && draft.date >= todayISO() ? draft.date : todayISO();
   let mode = getState().settings?.promptMode || 'projekt';
+  let chat = CHATS.find((c) => c.id === getState().settings?.chat) || CHATS[0];
+  let parts = getState().settings?.promptParts || chat.parts;
   let sections = getState().settings?.generateSections || null;
   let ctx = null;
   let parsed = null;
   let check = null;
+  let fixes = [];
   let publishState = null;
 
   async function refreshContext() {
@@ -98,7 +101,7 @@ export async function renderPrepare(root, { onChange }) {
       }
       sections = defaultSections(latest);
     }
-    ctx = await buildContext(date, sections);
+    ctx = { ...(await buildContext(date, sections)), parts };
     render();
   }
 
@@ -112,6 +115,12 @@ export async function renderPrepare(root, { onChange }) {
   function render() {
     const gh = githubSettings();
     const promptText = ctx ? (mode === 'projekt' ? dailyMessage(ctx) : fullPrompt(ctx)) : 'Przygotowuję polecenie…';
+    const setParts = (v) => {
+      parts = v;
+      saveSettings({ promptParts: v });
+      if (ctx) ctx = { ...ctx, parts: v };
+      render();
+    };
 
     mount(
       root,
@@ -155,15 +164,33 @@ export async function renderPrepare(root, { onChange }) {
         'section',
         { class: 'section step' },
         h('h2', null, h('span', { class: 'step-num' }, '1'), 'Skopiuj polecenie'),
+        h('p', { class: 'muted', style: 'margin:0' }, 'Wybierz czat z dostępem do internetu. Polecenie i wskazówki dopasują się do niego.'),
         h(
-          'p',
-          { class: 'muted', style: 'margin:0' },
-          'Najlepiej działa Claude z włączonym wyszukiwaniem w sieci. Pasuje też ChatGPT, Gemini albo Perplexity, o ile mają dostęp do internetu.',
+          'div',
+          { class: 'choices', role: 'radiogroup', 'aria-label': 'Czat AI' },
+          CHATS.map((c) =>
+            h(
+              'button',
+              {
+                type: 'button',
+                class: 'choice',
+                role: 'radio',
+                'aria-checked': c.id === chat.id ? 'true' : 'false',
+                onclick: () => {
+                  chat = c;
+                  saveSettings({ chat: c.id });
+                  setParts(c.parts);
+                },
+              },
+              c.label,
+            ),
+          ),
         ),
+        h('ul', { class: 'tips small' }, chat.tips.map((t) => h('li', null, t))),
         segmented(
           [
-            { value: 'projekt', label: 'Projekt', sub: 'w Claude, polecane' },
-            { value: 'calosc', label: 'Całość', sub: 'dowolny czat' },
+            { value: 'projekt', label: 'Projekt', sub: 'zasady raz, potem krótko' },
+            { value: 'calosc', label: 'Całość', sub: 'wszystko w jednym' },
           ],
           mode,
           (v) => {
@@ -171,6 +198,14 @@ export async function renderPrepare(root, { onChange }) {
             saveSettings({ promptMode: v });
             render();
           },
+        ),
+        segmented(
+          [
+            { value: 1, label: 'Jedna', sub: 'odpowiedź' },
+            { value: 2, label: 'Dwie', sub: 'części, gdy czat ucina' },
+          ],
+          parts,
+          setParts,
         ),
         mode === 'projekt'
           ? h(
@@ -180,14 +215,14 @@ export async function renderPrepare(root, { onChange }) {
                 'li',
                 null,
                 h('strong', null, 'Raz: '),
-                'w Claude utwórz projekt „SelfLearn” i wklej w jego instrukcje stałe zasady.',
-                h('div', { class: 'inline-actions' }, h('button', { type: 'button', class: 'btn secondary', onclick: () => copy(projectInstructions(), 'Instrukcje') }, 'Kopiuj instrukcje projektu')),
+                `wklej stałe zasady do instrukcji projektu (${chat.id === 'gemini' ? 'w Gemini: Gem' : chat.id === 'perplexity' ? 'w Perplexity: Space' : 'np. projekt „SelfLearn”'}).`,
+                h('div', { class: 'inline-actions' }, h('button', { type: 'button', class: 'btn secondary', onclick: () => copy(projectInstructions(), 'Instrukcje') }, 'Kopiuj stałe zasady')),
               ),
               h(
                 'li',
                 null,
                 h('strong', null, 'Codziennie: '),
-                'w tym projekcie zacznij nowy czat i wklej polecenie dnia.',
+                parts === 2 ? 'nowy czat w projekcie, wklej polecenie dnia, a po pierwszej części napisz „dalej”.' : 'nowy czat w projekcie i wklej polecenie dnia.',
                 h(
                   'div',
                   { class: 'inline-actions' },
@@ -200,11 +235,14 @@ export async function renderPrepare(root, { onChange }) {
               { class: 'inline-actions' },
               h('button', { type: 'button', class: 'btn', disabled: !ctx, onclick: () => copy(fullPrompt(ctx), 'Polecenie') }, 'Kopiuj całe polecenie'),
             ),
-        h(
-          'div',
-          { class: 'inline-actions' },
-          h('a', { class: 'btn ghost', href: 'https://claude.ai/new', target: '_blank', rel: 'noopener noreferrer' }, 'Otwórz Claude', icon('external')),
-        ),
+        parts === 2 && mode !== 'projekt' ? h('p', { class: 'small muted', style: 'margin:0' }, 'Po pierwszej części napisz w czacie „dalej”, żeby dostać drugą.') : null,
+        chat.url
+          ? h(
+              'div',
+              { class: 'inline-actions' },
+              h('a', { class: 'btn ghost', href: chat.url, target: '_blank', rel: 'noopener noreferrer' }, `Otwórz ${chat.label}`, icon('external')),
+            )
+          : null,
         h(
           'details',
           null,
@@ -237,7 +275,13 @@ export async function renderPrepare(root, { onChange }) {
         'section',
         { class: 'section step' },
         h('h2', null, h('span', { class: 'step-num' }, '2'), 'Wklej odpowiedź'),
-        h('p', { class: 'muted', style: 'margin:0' }, 'Skopiuj z czatu cały blok z wydaniem (przycisk kopiowania w rogu bloku) i wklej poniżej.'),
+        h(
+          'p',
+          { class: 'muted', style: 'margin:0' },
+          parts === 2
+            ? 'Skopiuj z czatu oba bloki (przycisk kopiowania w rogu bloku) i wklej je poniżej, jeden pod drugim.'
+            : 'Skopiuj z czatu cały blok z wydaniem (przycisk kopiowania w rogu bloku) i wklej poniżej.',
+        ),
         h('textarea', {
           class: 'mono',
           id: 'prep-answer',
@@ -309,6 +353,7 @@ export async function renderPrepare(root, { onChange }) {
       check.errors.length
         ? h('p', null, h('strong', null, `Do poprawki: ${check.errors.length}. `), 'Wklej czatowi poniższą listę z prośbą o poprawienie wydania.')
         : h('p', null, h('strong', null, 'Wydanie wygląda dobrze. '), describeEdition(parsed)),
+      fixes.length ? h('p', { class: 'small' }, `Poprawione automatycznie: ${fixes.join('; ')}.`) : null,
       check.errors.length ? h('ul', null, check.errors.slice(0, 12).map((e) => h('li', null, e))) : null,
       check.errors.length
         ? h('button', { type: 'button', class: 'btn secondary', onclick: () => copy(`Popraw w wydaniu:\n- ${check.errors.join('\n- ')}\nOdpowiedz całym poprawionym wydaniem w jednym bloku json.`, 'Lista poprawek') }, 'Kopiuj listę poprawek')
@@ -328,10 +373,17 @@ export async function renderPrepare(root, { onChange }) {
       render();
       return;
     }
+    const truncated = Boolean(parsed.__truncated);
+    ({ edition: parsed, fixes } = cleanEdition(parsed));
     if (!parsed.date) parsed.date = date;
     check = validateEdition(parsed);
     if (parsed.date !== date) {
       check.errors.unshift(`Data w odpowiedzi (${parsed.date}) różni się od wybranej (${date}). Zmień datę wyżej albo poproś czat o poprawkę.`);
+    }
+    if (!parsed.facts && !parsed.quiz && Array.isArray(parsed.news) && parsed.news.length) {
+      check.errors.unshift('To dopiero pierwsza część (same wiadomości). Napisz w czacie „dalej” i wklej drugą część pod pierwszą.');
+    } else if (truncated) {
+      check.errors.unshift('Ostatni blok jest ucięty. Napisz czatowi „dokończ” i wklej brakujący fragment albo całą odpowiedź jeszcze raz.');
     }
     render();
     root.querySelector('.check-result')?.scrollIntoView({ block: 'nearest' });

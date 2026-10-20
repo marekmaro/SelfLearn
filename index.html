@@ -11,12 +11,23 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="SelfLearn">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo-apple-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
   <link rel="stylesheet" href="src/styles.css">
+  <script>
+    // Wybrany wygląd (motyw, kolor, krój, tekst) zanim strona się narysuje, bez mignięcia domyślnego motywu.
+    try {
+      var look = ((JSON.parse(localStorage.getItem('selflearn:v1')) || {}).settings || {}).look || {};
+      var r = document.documentElement;
+      if (look.theme && look.theme !== 'system') r.dataset.theme = look.theme;
+      if (look.accent) r.dataset.accent = look.accent;
+      if (look.font) r.dataset.font = look.font;
+      if (look.textSize) r.style.setProperty('--text-scale', String(look.textSize));
+    } catch (e) {}
+  </script>
 </head>
 <body>
   <main id="app" tabindex="-1">

@@ -1,11 +1,13 @@
 // Ankieta na start: imię, tematy, ciekawostki, czas dziennie, pora przypomnienia.
 import { SECTIONS, SECTION_GROUPS, FACT_KINDS, DEFAULT_PROFILE } from '../config.js';
 import { getState, update } from '../store.js';
+import { getNotify, refreshReminders } from '../notify.js';
 import { h, mount, icon, koiMark } from '../ui.js';
 
 export function renderOnboarding(root, { onDone }) {
   const existing = getState().profile;
   const draft = structuredClone(existing || DEFAULT_PROFILE);
+  let eveningOn = getNotify().eveningOn;
   let step = 0;
 
   const steps = [
@@ -95,7 +97,7 @@ export function renderOnboarding(root, { onDone }) {
         h(
           'p',
           { class: 'lead' },
-          'Nowe wydanie jest gotowe codziennie przed 6:00. Wybierz porę, a w profilu dodasz przypomnienie do kalendarza w telefonie.',
+          'Wybierz porę na codzienne wydanie. W profilu dodasz przypomnienie do kalendarza albo włączysz powiadomienia.',
         ),
         h(
           'div',
@@ -110,6 +112,18 @@ export function renderOnboarding(root, { onDone }) {
               draft.reminder = e.target.value || DEFAULT_PROFILE.reminder;
             },
           }),
+        ),
+        h(
+          'label',
+          { class: 'check' },
+          h('input', {
+            type: 'checkbox',
+            checked: eveningOn,
+            onchange: (e) => {
+              eveningOn = e.target.checked;
+            },
+          }),
+          'Wieczorem przypomnij, jeśli seria dni jest zagrożona',
         ),
       ],
       next: existing ? 'Zapisz' : 'Otwórz pierwsze wydanie',
@@ -165,9 +179,13 @@ export function renderOnboarding(root, { onDone }) {
   }
 
   function finish() {
+    const notify = { ...getNotify(), morning: draft.reminder, eveningOn };
     update((st) => {
       st.profile = { ...draft, createdAt: existing?.createdAt || new Date().toISOString() };
+      st.settings ||= {};
+      st.settings.notify = notify;
     });
+    refreshReminders();
     onDone();
   }
 

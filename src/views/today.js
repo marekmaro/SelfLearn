@@ -18,6 +18,9 @@ import {
 } from '../store.js';
 import { grade, dueCards } from '../srs.js';
 import { h, mount, icon, koiMark, sourceLinks, toast, plural } from '../ui.js';
+import { getLook, openAppearanceSheet } from '../look.js';
+import { speechSupported, startListening, stopListening, isListening } from '../listen.js';
+import { challengeFor, shareChallenge, verdict } from '../challenge.js';
 
 const sectionLabel = (id) => SECTIONS.find((s) => s.id === id)?.label || id;
 const kindLabel = (id) => FACT_KINDS.find((k) => k.id === id)?.label || id;
@@ -54,6 +57,8 @@ export async function renderToday(root, { date: requested, onChange }) {
   const profile = getState().profile;
   const chapters = buildChapters(edition, profile, warmup.length ? { prevDate } : null);
   const expanded = new Set();
+  const openCards = new Set();
+  let lastChapter = null;
 
   function currentChapterId() {
     const p = editionProgress(date);
@@ -98,23 +103,32 @@ export async function renderToday(root, { date: requested, onChange }) {
     const activeId = showEnd ? null : currentChapterId();
     const active = chapters.find((c) => c.id === activeId);
 
-    const content = h('section', { class: 'chapter', id: 'rozdzial', 'aria-live': 'polite' });
+    const chapterKey = activeId || 'koniec';
+    const entering = lastChapter !== null && lastChapter !== chapterKey;
+    lastChapter = chapterKey;
+
+    const content = h('section', {
+      class: `chapter${entering ? ' entering' : ''}`,
+      id: 'rozdzial',
+      'aria-live': 'polite',
+      dataset: { date, chapter: chapterKey },
+    });
     if (showEnd || !active) {
       content.append(...endView());
     } else {
       content.append(...chapterView(active));
     }
 
-    mount(
-      root,
-      masthead(),
-      chapterStrip(activeId),
-      content,
-    );
+    const strip = chapterStrip(activeId);
+    mount(root, masthead(), strip, content);
 
-    const current = root.querySelector('.chip[aria-current="step"]');
-    current?.scrollIntoView({ block: 'nearest', inline: 'center' });
-    if (scroll) content.scrollIntoView({ block: 'start' });
+    // Wysokość paska rozdziałów (zależy od wielkości tekstu) – potrzebna do przewijania pod nim.
+    document.documentElement.style.setProperty('--chapters-h', `${strip.offsetHeight}px`);
+    const scroller = strip.querySelector('.chapters-scroll');
+    const current = strip.querySelector('.chip[aria-current="step"]');
+    if (scroller && current) scroller.scrollLeft = current.offsetLeft - (scroller.clientWidth - current.offsetWidth) / 2;
+    if (scroll) content.scrollIntoView({ block: 'start', behavior: 'instant' });
+    updateReadProgress();
   }
 
   // ---------- Nagłówek ----------
@@ -137,13 +151,39 @@ export async function renderToday(root, { date: requested, onChange }) {
         h(
           'div',
           { class: 'meta-row' },
-          h('span', { class: 'pill' }, icon('clock'), `ok. ${minutes} min`),
-          h('a', { class: 'pill nurt pill-link', href: '#ustawienia', title: 'Zmień działy, długość wydania i przypomnienie' }, icon('sliders'), 'Dostosuj'),
+          h('span', { class: 'pill', title: 'Szacowany czas czytania' }, icon('clock'), `${minutes} min`),
+          speechSupported()
+            ? h(
+                'button',
+                {
+                  type: 'button',
+                  class: 'pill pill-link nurt',
+                  'aria-label': 'Posłuchaj wydania',
+                  title: 'Posłuchaj wydania: telefon przeczyta je na głos',
+                  onclick: () => (isListening() ? stopListening() : listen()),
+                },
+                icon('headphones'),
+                'Posłuchaj',
+              )
+            : null,
+          h(
+            'button',
+            {
+              type: 'button',
+              class: 'pill pill-link aa',
+              'aria-label': 'Wygląd: motyw, kolor i wielkość tekstu',
+              title: 'Wygląd: motyw, kolor i wielkość tekstu',
+              onclick: () => openAppearanceSheet({ onChange: () => render() }),
+            },
+            'Aa',
+          ),
+          h('a', { class: 'pill pill-link icon-pill', href: '#ustawienia', title: 'Dostosuj: działy, długość wydania i przypomnienia', 'aria-label': 'Dostosuj wydanie' }, icon('sliders')),
         ),
       ),
       h('h1', { class: 'date' }, formatLong(date)),
       streakWidget(s),
       edition.intro ? h('p', { class: 'read intro' }, edition.intro) : null,
+      challengeBanner(),
       date < today && !requested
         ? h(
             'div',
@@ -162,34 +202,32 @@ export async function renderToday(root, { date: requested, onChange }) {
 
   function chapterStrip(activeId) {
     const p = editionProgress(date);
+    const items = chapters.map((c) => {
+      const done = p.done.includes(c.id);
+      return h(
+        'li',
+        null,
+        h(
+          'button',
+          {
+            type: 'button',
+            class: `chip${done ? ' is-done' : ''}`,
+            'aria-current': c.id === activeId ? 'step' : null,
+            onclick: () => goTo(c.id),
+          },
+          done ? icon('check') : null,
+          c.label,
+        ),
+      );
+    });
+    if (p.completedOn) {
+      items.push(h('li', null, h('button', { type: 'button', class: 'chip', 'aria-current': activeId ? null : 'step', onclick: () => goTo('koniec') }, 'Podsumowanie')));
+    }
     return h(
       'nav',
       { class: 'chapters', 'aria-label': 'Rozdziały wydania' },
-      h(
-        'ol',
-        null,
-        chapters.map((c) => {
-          const done = p.done.includes(c.id);
-          return h(
-            'li',
-            null,
-            h(
-              'button',
-              {
-                type: 'button',
-                class: `chip${done ? ' is-done' : ''}`,
-                'aria-current': c.id === activeId ? 'step' : null,
-                onclick: () => goTo(c.id),
-              },
-              done ? icon('check') : null,
-              c.label,
-            ),
-          );
-        }),
-        p.completedOn
-          ? h('li', null, h('button', { type: 'button', class: 'chip', 'aria-current': activeId ? null : 'step', onclick: () => goTo('koniec') }, 'Podsumowanie'))
-          : null,
-      ),
+      h('div', { class: 'chapters-scroll' }, h('ol', null, items)),
+      h('span', { class: 'read-progress', 'aria-hidden': 'true' }, h('span')),
     );
   }
 
@@ -206,7 +244,7 @@ export async function renderToday(root, { date: requested, onChange }) {
         { class: 'chapter-head' },
         h('p', { class: 'eyebrow' }, `Rozdział ${idx + 1} z ${chapters.length}`),
         h('h2', null, ch.title || ch.label),
-        ch.lead ? h('p', { class: 'muted' }, ch.lead) : null,
+        ch.type === 'topics' ? topicNav(ch.groups) : ch.lead ? h('p', { class: 'muted' }, ch.lead) : null,
       ),
     );
 
@@ -237,6 +275,26 @@ export async function renderToday(root, { date: requested, onChange }) {
     return body;
   }
 
+  // Spis działów na górze „Twoich tematów”: dotknięcie przewija do działu.
+  function topicNav(groups) {
+    return h(
+      'div',
+      { class: 'subnav', role: 'navigation', 'aria-label': 'Działy w tym rozdziale' },
+      groups.map((g) =>
+        h(
+          'button',
+          {
+            type: 'button',
+            class: 'subnav-chip',
+            onclick: () => document.getElementById(`dzial-${g.section}`)?.scrollIntoView({ block: 'start', behavior: smoothScroll() }),
+          },
+          sectionLabel(g.section),
+          h('span', { class: 'count' }, g.items.length),
+        ),
+      ),
+    );
+  }
+
   function newsGroup(group, showTitle) {
     const items = group.items;
     const key = `news:${group.section}`;
@@ -244,7 +302,7 @@ export async function renderToday(root, { date: requested, onChange }) {
     const hidden = items.length - limit;
     return h(
       'div',
-      { class: 'group' },
+      { class: 'group', id: showTitle ? `dzial-${group.section}` : null },
       showTitle ? h('h3', { class: 'group-title' }, sectionLabel(group.section)) : null,
       items.slice(0, limit).map((item, i) => newsCard(item, i + 1)),
       hidden > 0
@@ -292,27 +350,48 @@ export async function renderToday(root, { date: requested, onChange }) {
   }
 
   function newsCard(item, rank) {
-    return h(
-      'article',
-      { class: 'card' },
-      h('div', { class: 'news-head' }, h('span', { class: 'rank', 'aria-label': `Miejsce ${rank}` }, rank), h('h3', null, item.title)),
-      h('p', { class: 'read' }, item.summary),
-      item.why
-        ? h('div', { class: 'why' }, h('p', { class: 'eyebrow' }, 'Dlaczego to ważne'), h('p', null, item.why))
-        : null,
-      h(
-        'div',
-        { class: 'card-foot' },
-        sourceLinks(item.sources),
-        saveButton(item.id, { type: 'news', section: item.section, title: item.title, text: item.summary, sources: item.sources }),
-      ),
+    const head = h('div', { class: 'news-head' }, h('span', { class: 'rank', 'aria-label': `Miejsce ${rank}` }, rank), h('h3', null, item.title));
+    const why = item.why
+      ? h('div', { class: 'why' }, h('p', { class: 'eyebrow' }, 'Dlaczego to ważne'), h('p', null, item.why))
+      : null;
+    const foot = h(
+      'div',
+      { class: 'card-foot' },
+      sourceLinks(item.sources),
+      saveButton(item.id, { type: 'news', section: item.section, title: item.title, text: item.summary, sources: item.sources }),
     );
+
+    // Widok „Nagłówki”: tytuł i pierwsze zdanie, reszta po dotknięciu.
+    if (getLook().layout === 'skrot') {
+      return h(
+        'details',
+        {
+          class: 'card news-compact',
+          dataset: { item: item.id },
+          open: openCards.has(item.id),
+          ontoggle: (e) => {
+            if (e.currentTarget.open) openCards.add(item.id);
+            else openCards.delete(item.id);
+          },
+        },
+        h(
+          'summary',
+          null,
+          head,
+          h('p', { class: 'lead' }, firstSentence(item.summary)),
+          h('span', { class: 'expand-hint' }, h('span', { class: 'when-closed' }, 'Czytaj dalej'), h('span', { class: 'when-open' }, 'Zwiń'), icon('chevron')),
+        ),
+        h('div', { class: 'news-body' }, h('p', { class: 'read' }, item.summary), why, foot),
+      );
+    }
+
+    return h('article', { class: 'card', dataset: { item: item.id } }, head, h('p', { class: 'read' }, item.summary), why, foot);
   }
 
   function factCard(item) {
     return h(
       'article',
-      { class: 'card' },
+      { class: 'card', dataset: { item: item.id } },
       h('p', { class: 'eyebrow kind' }, kindLabel(item.kind)),
       h('h3', null, item.title),
       h('p', { class: 'read' }, item.body),
@@ -328,7 +407,7 @@ export async function renderToday(root, { date: requested, onChange }) {
   function otdCard(item) {
     return h(
       'article',
-      { class: 'card' },
+      { class: 'card', dataset: { item: item.id } },
       h('span', { class: 'year' }, item.year),
       h('h3', null, item.title),
       h('p', { class: 'read' }, item.body),
@@ -344,7 +423,7 @@ export async function renderToday(root, { date: requested, onChange }) {
   function conceptCard(c) {
     return h(
       'article',
-      { class: 'card' },
+      { class: 'card', dataset: { item: 'concept' } },
       h('h3', { class: 'concept-term' }, c.term),
       h('p', { class: 'quote-like' }, c.definition),
       c.origin ? h('p', { class: 'read' }, c.origin) : null,
@@ -369,7 +448,7 @@ export async function renderToday(root, { date: requested, onChange }) {
     const p = editionProgress(date);
     return h(
       'article',
-      { class: 'card' },
+      { class: 'card', dataset: { item: 'book' } },
       h(
         'div',
         { class: 'book-cover' },
@@ -494,16 +573,115 @@ export async function renderToday(root, { date: requested, onChange }) {
     const p = editionProgress(date);
     const answered = Object.keys(p.quiz).length;
     const right = edition.quiz.filter((q) => p.quiz[q.id] === q.answer).length;
+    const done = answered >= edition.quiz.length;
+    const challenge = challengeFor(date);
     return [
       h(
         'p',
         { class: 'muted' },
-        answered < edition.quiz.length
+        !done
           ? 'Pytania z dzisiejszych ciekawostek, pojęcia i książki. Każda odpowiedź trafia do powtórek, więc wiedza zostanie na dłużej.'
           : `Wynik: ${right} z ${edition.quiz.length}. Pytania wrócą w powtórkach w odpowiednim momencie.`,
       ),
+      challenge && !done
+        ? h('div', { class: 'challenge' }, icon('trophy'), h('p', null, h('strong', null, `Wyzwanie: ${challenge.from} ma ${challenge.score}/${challenge.total}.`), ' Pobijesz ten wynik?'))
+        : null,
       ...edition.quiz.map((q, i) => questionCard(q, i)),
+      done ? challengeResult(right) : null,
     ];
+  }
+
+  // Po quizie: porównanie z wyzwaniem albo propozycja wysłania własnego.
+  function challengeResult(right) {
+    const total = edition.quiz.length;
+    const challenge = challengeFor(date);
+    return h(
+      'div',
+      { class: 'challenge' },
+      icon('trophy'),
+      h(
+        'div',
+        null,
+        challenge
+          ? h('p', null, h('strong', null, `Ty: ${right}/${total} · ${challenge.from}: ${challenge.score}/${challenge.total}. `), verdict(right, challenge))
+          : h('p', null, h('strong', null, 'Wyzwanie we dwoje. '), 'Wyślij link drugiej osobie: rozwiąże ten sam quiz i zobaczycie, kto wygrał.'),
+        h(
+          'button',
+          { type: 'button', class: 'btn secondary', onclick: () => shareChallenge(date, right, total) },
+          icon('share'),
+          challenge ? 'Odeślij swój wynik' : 'Wyślij wyzwanie',
+        ),
+      ),
+    );
+  }
+
+  function challengeBanner() {
+    const challenge = challengeFor(date);
+    const p = editionProgress(date);
+    if (!challenge || !edition.quiz?.length || Object.keys(p.quiz).length >= edition.quiz.length) return null;
+    return h(
+      'div',
+      { class: 'challenge' },
+      icon('trophy'),
+      h(
+        'div',
+        null,
+        h('p', null, h('strong', null, `${challenge.from} rzuca Ci wyzwanie: ${challenge.score}/${challenge.total} w quizie.`)),
+        h('button', { type: 'button', class: 'btn secondary', onclick: () => goTo('quiz') }, 'Do quizu', icon('arrow')),
+      ),
+    );
+  }
+
+  // ---------- Posłuchaj ----------
+
+  // Kolejka dla lektora: to samo, co widać w wydaniu (bez rozgrzewki i quizu, które wymagają dotknięć).
+  function listenItems() {
+    const items = [];
+    const add = (id, chapter, label, text) => items.push({ id, chapter, label, text });
+    add('intro', chapters.find((c) => c.type !== 'warmup')?.id, 'Wstęp', `${formatLong(date)}. ${edition.intro || ''}`);
+    for (const ch of chapters) {
+      if (ch.groups) {
+        for (const g of ch.groups) {
+          const n = expanded.has(`news:${g.section}`) ? g.items.length : g.limit;
+          g.items.slice(0, n).forEach((it, i) => {
+            const lead = i === 0 ? `${sectionLabel(g.section)}. ` : '';
+            add(it.id, ch.id, it.title, `${lead}${it.title}. ${it.summary} ${it.why ? `Dlaczego to ważne: ${it.why}` : ''}`);
+          });
+        }
+      } else if (ch.type === 'facts' || ch.type === 'otd') {
+        const n = expanded.has(ch.id) ? ch.items.length : ch.limit;
+        ch.items.slice(0, n).forEach((it, i) => {
+          const lead = i === 0 ? `${ch.label}. ` : '';
+          const head = ch.type === 'otd' ? `Rok ${it.year}. ${it.title}.` : `${kindLabel(it.kind)}: ${it.title}.`;
+          add(it.id, ch.id, ch.type === 'otd' ? `${it.year}: ${it.title}` : it.title, `${lead}${head} ${it.body}`);
+        });
+      } else if (ch.type === 'concept') {
+        const c = edition.concept;
+        add('concept', ch.id, `Pojęcie: ${c.term}`, `Pojęcie dnia: ${c.term}. ${c.definition} ${c.origin || ''} ${(c.examples || []).join(' ')}`);
+      } else if (ch.type === 'book') {
+        const b = edition.book;
+        add('book', ch.id, `${b.title}: ${b.ideaTitle}`, `Książka tygodnia: „${b.title}”, ${b.author}. Dzień ${b.day} z ${b.days}: ${b.ideaTitle}. ${b.idea} Morał: ${b.moral} Zastosuj dziś: ${b.action}`);
+      } else if (ch.type === 'evening') {
+        add('evening', ch.id, 'Na wieczór', `Na wieczór we dwoje: ${edition.evening.question} ${edition.evening.hint || ''}`);
+      }
+    }
+    return items.filter((it) => it.text.trim());
+  }
+
+  function listen() {
+    startListening(listenItems(), {
+      onItem: (item) => {
+        // Lektor prowadzi przez wydanie, ale tylko gdy to wydanie jest nadal na ekranie.
+        const shown = document.getElementById('rozdzial');
+        if (!shown || shown.dataset.date !== date) return;
+        if (item.chapter && shown.dataset.chapter !== item.chapter) goTo(item.chapter, { scroll: false });
+        document.querySelector('.is-speaking')?.classList.remove('is-speaking');
+        const card = item.id === 'intro' ? root.querySelector('.masthead') : root.querySelector(`[data-item="${item.id}"]`);
+        if (!card) return;
+        card.classList.add('is-speaking');
+        card.scrollIntoView({ block: item.id === 'intro' ? 'start' : 'center', behavior: smoothScroll() });
+      },
+    });
   }
 
   function questionCard(q, i) {
@@ -562,7 +740,7 @@ export async function renderToday(root, { date: requested, onChange }) {
     const p = editionProgress(date);
     return h(
       'article',
-      { class: 'card' },
+      { class: 'card', dataset: { item: 'evening' } },
       h('p', { class: 'eyebrow' }, 'Pytanie na wieczór we dwoje'),
       h('p', { class: 'evening-q' }, ev.question),
       ev.hint ? h('p', { class: 'read muted' }, ev.hint) : null,
@@ -610,6 +788,7 @@ export async function renderToday(root, { date: requested, onChange }) {
           h('div', { class: 'stat' }, h('strong', null, `${right}/${edition.quiz?.length ?? 0}`), h('span', null, 'w quizie')),
           h('div', { class: 'stat' }, h('strong', null, count), h('span', null, plural(count, 'wydanie', 'wydania', 'wydań'))),
         ),
+        edition.quiz?.length && Object.keys(p.quiz).length >= edition.quiz.length ? challengeResult(right) : null,
         h(
           'p',
           { class: 'read' },
@@ -628,6 +807,95 @@ export async function renderToday(root, { date: requested, onChange }) {
   }
 
   render();
+  restorePosition(date);
+  watchScroll();
+}
+
+// ---------- Przewijanie ----------
+
+const POS_KEY = 'selflearn:pozycja';
+let scrollWatched = false;
+let saveTimer = null;
+
+function smoothScroll() {
+  return matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+}
+
+// Cienka linia pod paskiem rozdziałów: ile z bieżącego rozdziału już przeczytane.
+function updateReadProgress() {
+  const bar = document.querySelector('.read-progress > span');
+  const chapter = document.getElementById('rozdzial');
+  if (!bar || !chapter) return;
+  const stripH = document.querySelector('.chapters')?.offsetHeight || 0;
+  const top = chapter.getBoundingClientRect().top + window.scrollY - stripH;
+  const span = chapter.offsetHeight - (window.innerHeight - stripH);
+  const ratio = span <= 0 ? 1 : (window.scrollY - top) / span;
+  bar.style.transform = `scaleX(${Math.min(1, Math.max(0, ratio))})`;
+}
+
+// Zapamiętuje miejsce w rozdziale, żeby po powrocie do aplikacji czytać dalej.
+function savePosition() {
+  const chapter = document.getElementById('rozdzial');
+  if (!chapter) return;
+  const offset = Math.round(window.scrollY - (chapter.getBoundingClientRect().top + window.scrollY));
+  try {
+    localStorage.setItem(POS_KEY, JSON.stringify({ date: chapter.dataset.date, chapter: chapter.dataset.chapter, offset }));
+  } catch {
+    // Brak pamięci – trudno, zaczniemy od początku rozdziału.
+  }
+}
+
+function restorePosition(date) {
+  let pos = null;
+  try {
+    pos = JSON.parse(localStorage.getItem(POS_KEY) || 'null');
+  } catch {
+    pos = null;
+  }
+  const chapter = document.getElementById('rozdzial');
+  if (!pos || !chapter || pos.date !== date || pos.chapter !== chapter.dataset.chapter || pos.offset < 160) return;
+  requestAnimationFrame(() => {
+    const top = chapter.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: top + pos.offset, behavior: 'instant' });
+    updateReadProgress();
+  });
+}
+
+function watchScroll() {
+  if (scrollWatched) return;
+  scrollWatched = true;
+  let ticking = false;
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        ticking = false;
+        updateReadProgress();
+      });
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(savePosition, 400);
+    },
+    { passive: true },
+  );
+  window.addEventListener('resize', updateReadProgress, { passive: true });
+}
+
+// Pierwsze zdanie streszczenia (do widoku „Nagłówki”), z ominięciem skrótów typu „ul.”, „ok.”, „J.”.
+const ABBREVIATIONS = new Set(['ul', 'al', 'pl', 'ok', 'tzw', 'np', 'r', 'godz', 'ks', 'św', 'prof', 'dr', 'gen', 'płk', 'art', 'nr', 'tys', 'mln', 'mld', 'zł', 'in', 'wg', 'ang', 'im', 'sen', 'min']);
+
+export function firstSentence(text = '') {
+  const re = /[.!?…](?=\s+[A-ZĄĆĘŁŃÓŚŹŻ„"(])/g;
+  let m;
+  while ((m = re.exec(text))) {
+    const before = text.slice(0, m.index).split(/[\s(]/).pop();
+    const word = before.split('.').pop();
+    if (m[0] === '.' && (ABBREVIATIONS.has(word.toLowerCase()) || /^[A-ZĄĆĘŁŃÓŚŹŻ]$/.test(word))) continue;
+    if (m.index < 30) continue;
+    return text.slice(0, m.index + 1);
+  }
+  return text.length > 220 ? `${text.slice(0, 200).replace(/\s+\S*$/, '')}…` : text;
 }
 
 // ---------- Budowa rozdziałów ----------

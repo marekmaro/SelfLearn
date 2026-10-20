@@ -21,5 +21,8 @@ jobs:
       - name: Sprawdź wydania i indeks
         run: node scripts/validate.mjs
 
+      - name: Sprawdź obsługę odpowiedzi różnych czatów AI
+        run: node scripts/selftest.mjs
+
       - name: Sprawdź składnię skryptów aplikacji
         run: for f in src/*.js src/views/*.js sw.js scripts/*.mjs; do node --check "$f"; done

@@ -1,5 +1,6 @@
 // Wypisuje pełne polecenie dla czatu AI na dany dzień (to samo, co „Przygotuj wydanie” w aplikacji).
-// Użycie: node scripts/prompt.mjs [RRRR-MM-DD]   (domyślnie dziś w strefie Europe/Warsaw)
+// Użycie: node scripts/prompt.mjs [RRRR-MM-DD] [--dwie-czesci]   (domyślnie dziś w strefie Europe/Warsaw)
+// --dwie-czesci: czat odpowie w dwóch blokach (dla czatów, które ucinają długie odpowiedzi).
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { fullPrompt } from '../src/prompt.js';
@@ -7,8 +8,10 @@ import { bookForDate } from '../src/books.js';
 import { addDays } from '../src/dates.js';
 import { MAIN_SECTIONS } from '../src/config.js';
 
+const args = process.argv.slice(2);
+const parts = args.includes('--dwie-czesci') ? 2 : 1;
 const date =
-  process.argv[2] ||
+  args.find((a) => /^\d{4}-\d{2}-\d{2}$/.test(a)) ||
   new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Warsaw', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 
 const dir = 'content/editions';
@@ -34,4 +37,4 @@ if (bookInfo) {
 // Działy: Polska, Świat i te, które były w ostatnim wydaniu.
 const sections = [...new Set([...MAIN_SECTIONS, ...(previous?.news || []).map((n) => n.section)])];
 
-console.log(fullPrompt({ date, sections, bookInfo, recent, previous, bookHistory }));
+console.log(fullPrompt({ date, sections, bookInfo, recent, previous, bookHistory, parts }));

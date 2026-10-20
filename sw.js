@@ -1,8 +1,11 @@
 // Service worker: aplikacja działa offline, a wydania odświeżają się z sieci.
-const VERSION = 'v4';
+const VERSION = 'v5';
 const SHELL = `selflearn-shell-${VERSION}`;
 const CONTENT = 'selflearn-content';
 const FONTS = 'selflearn-fonts';
+const META = 'selflearn-meta';
+const META_URL = new URL('./__meta.json', self.registration.scope).href;
+const SYNC_TAG = 'selflearn-dzien';
 
 const SHELL_FILES = [
   './',
@@ -27,9 +30,14 @@ const SHELL_FILES = [
   './src/views/saved.js',
   './src/views/profile.js',
   './src/views/prepare.js',
-  './assets/icon.svg',
-  './assets/icon-192.png',
-  './assets/icon-512.png',
+  './src/look.js',
+  './src/notify.js',
+  './src/listen.js',
+  './src/challenge.js',
+  './assets/logo.svg',
+  './assets/logo-192.png',
+  './assets/logo-512.png',
+  './assets/logo-badge-96.png',
 ];
 
 self.addEventListener('install', (event) => {
@@ -105,4 +113,97 @@ async function staleWhileRevalidate(request, cacheName) {
     })
     .catch(() => cached);
   return cached || network;
+}
+
+// ---------- Przypomnienia w tle ----------
+// Telefon (Chrome na Androidzie, aplikacja na ekranie głównym) co jakiś czas budzi service worker.
+// Sprawdzamy wtedy, czy jest nowe wydanie i czy seria jest zagrożona. Stan zapisuje aplikacja (src/notify.js).
+
+self.addEventListener('periodicsync', (event) => {
+  if (event.tag === SYNC_TAG) event.waitUntil(dailyCheck());
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  const url = new URL(event.notification.data?.url || './#dzis', self.registration.scope).href;
+  event.waitUntil(
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((list) => {
+      const open = list.find((c) => c.url.startsWith(self.registration.scope));
+      if (open) return open.focus().then((c) => (c && 'navigate' in c ? c.navigate(url) : c));
+      return self.clients.openWindow(url);
+    }),
+  );
+});
+
+function isoDate(d) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+function toMinutes(time) {
+  const [h, m] = String(time || '00:00').split(':').map(Number);
+  return h * 60 + (m || 0);
+}
+
+function daysWord(n) {
+  return n === 1 ? 'dzień' : 'dni';
+}
+
+async function todaysHeadline(today) {
+  try {
+    const url = new URL(`./content/editions/${today}.json`, self.registration.scope).href;
+    const res = await fetch(url, { cache: 'no-cache' });
+    if (!res.ok) return null;
+    (await caches.open(CONTENT)).put(url, res.clone());
+    const ed = await res.json();
+    const top = (ed.news || []).find((n) => n.section === 'polska' && n.rank === 1) || (ed.news || [])[0];
+    return top?.title || 'Nowe wydanie czeka.';
+  } catch {
+    return null;
+  }
+}
+
+async function dailyCheck() {
+  const cache = await caches.open(META);
+  const res = await cache.match(META_URL);
+  if (!res) return;
+  const meta = await res.json();
+  const n = meta.notify || {};
+  if (!n.system) return;
+
+  const now = new Date();
+  const today = isoDate(now);
+  const yesterday = isoDate(new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1));
+  const minutes = now.getHours() * 60 + now.getMinutes();
+  const days = Array.isArray(n.days) && n.days.length ? n.days : [0, 1, 2, 3, 4, 5, 6];
+  if (!days.includes(now.getDay()) || meta.activeOn === today) return;
+
+  // Seria trwa, jeśli ostatni zaliczony dzień to wczoraj.
+  const streak = meta.streakEnd === yesterday ? meta.streak || 0 : 0;
+  const sent = meta.sent || {};
+  const show = (title, body, tag) =>
+    self.registration.showNotification(title, {
+      body,
+      tag,
+      lang: 'pl',
+      icon: new URL('./assets/logo-192.png', self.registration.scope).href,
+      badge: new URL('./assets/logo-badge-96.png', self.registration.scope).href,
+      data: { url: './#dzis' },
+    });
+
+  const eveningAt = n.eveningOn ? toMinutes(n.evening) : 24 * 60;
+  if (sent.morning !== today && minutes >= toMinutes(n.morning) && minutes < eveningAt) {
+    const headline = await todaysHeadline(today);
+    if (headline) {
+      const tail = streak > 0 ? `Seria: ${streak} ${daysWord(streak)}. Nie przerywaj jej.` : '10–20 minut i dzień zaliczony.';
+      await show('Wydanie na dziś jest gotowe', `${headline}\n${tail}`, 'selflearn-rano');
+      sent.morning = today;
+      if (n.badge !== false && self.navigator.setAppBadge) self.navigator.setAppBadge(1).catch(() => {});
+    }
+  }
+  if (n.eveningOn && sent.evening !== today && minutes >= eveningAt) {
+    if (streak > 0) await show(`Seria ${streak} ${daysWord(streak)} czeka na Ciebie`, 'Wystarczy rozgrzewka: 3 pytania z wczoraj, około minuty.', 'selflearn-wieczor');
+    else await show('Minuta nauki przed snem?', 'Rozgrzewka z wczorajszej wiedzy zaczyna nową serię.', 'selflearn-wieczor');
+    sent.evening = today;
+  }
+  await cache.put(META_URL, new Response(JSON.stringify({ ...meta, sent }), { headers: { 'Content-Type': 'application/json' } }));
 }

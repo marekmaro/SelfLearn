@@ -190,7 +190,7 @@ function repoFromLocation() {
   return m && repo ? { owner: m[1], repo } : {};
 }
 
-// ---------- Zeszyt ----------
+// ---------- Ulubione ----------
 
 export function savedKey(date, id) {
   return `${date}:${id}`;
@@ -207,4 +207,31 @@ export function toggleSaved(date, id, entry) {
     else s.saved[key] = { ...entry, date, savedAt: new Date().toISOString() };
   });
   return Boolean(state.saved[key]);
+}
+
+// Własna notatka przy ulubionym wpisie.
+export function setSavedNote(key, note) {
+  update((s) => {
+    if (s.saved[key]) s.saved[key].note = note;
+  });
+}
+
+// Usuwa wpis i zwraca go, żeby dało się cofnąć usunięcie.
+export function removeSaved(key) {
+  const entry = state.saved[key];
+  update((s) => {
+    delete s.saved[key];
+  });
+  return entry;
+}
+
+export function restoreSaved(key, entry) {
+  if (!entry) return;
+  update((s) => {
+    s.saved[key] = entry;
+  });
+}
+
+export function savedCountFor(date) {
+  return Object.keys(state.saved).filter((k) => k.startsWith(`${date}:`)).length;
 }

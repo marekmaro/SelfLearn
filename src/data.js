@@ -90,3 +90,21 @@ export function previousDate(index, date) {
     .sort()
     .pop() || null;
 }
+
+// Sąsiednie wydania do strzałek „poprzedni / następny dzień” nad wydaniem.
+// latest to wydanie pokazywane pod #dzis (dzisiejsze albo najnowsze wcześniejsze).
+export function neighborDates(index, date) {
+  const dates = (index.editions || []).map((e) => e.date).sort();
+  const i = dates.indexOf(date);
+  return {
+    prev: i > 0 ? dates[i - 1] : null,
+    next: i >= 0 && i < dates.length - 1 ? dates[i + 1] : null,
+    latest: pickDate(index, null),
+  };
+}
+
+// Adres wydania: najnowsze otwiera się jako „Dziś”, starsze z archiwum.
+export function editionHref(date, latest, item = null) {
+  if (item) return `#wydanie-${date}/${item}`;
+  return date === latest ? '#dzis' : `#wydanie-${date}`;
+}

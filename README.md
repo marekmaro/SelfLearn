@@ -12,7 +12,9 @@ Codzienne wydanie do nauki i poszerzania horyzontów, w formie aplikacji na tele
 - **Quiz** z ciekawostek, pojęcia i książki (bez pytań z wiadomości), a potem **powtórki** w odstępach 1, 3, 7, 16 i 35 dni,
 - **Pytanie na wieczór** do rozmowy we dwoje,
 - **Seria dni** jak w Duolingo: dzień się liczy po rozgrzewce albo całym wydaniu, z paskiem ostatnich 7 dni i kamieniami milowymi,
-- **Zeszyt** na zapisane karty i notatki oraz poziomy od ikry do smoka (legenda o karpiu i Smoczej Bramie),
+- **Ulubione**: serce przy wiadomości, ciekawostce, historii, pojęciu albo książce zapisuje ją w osobnej zakładce. Są tam też filtry, wyszukiwanie (także bez polskich znaków), własne notatki przy wpisach, otwieranie wpisu w jego wydaniu i wysyłanie drugiej osobie. Trafiają tam również notatki z pytań na wieczór,
+- **Oś czasu**: strzałki „poprzedni / następny dzień” nad wydaniem i widok wszystkich dni od dziś wstecz, ze skrótem każdego dnia do szybkiego przypomnienia. Podczas przewijania linia wypełnia się nurtem, karp płynie razem z Tobą, a dzień na środku ekranu jest podświetlony,
+- **Poziomy** od ikry do smoka (legenda o karpiu i Smoczej Bramie),
 - **Posłuchaj**: telefon czyta wydanie na głos (offline, bez kosztów), przewija za lektorem i podświetla czytaną kartę; tempo 0,9–1,5×,
 - **Wyzwanie we dwoje**: po quizie wysyłasz link z wynikiem, druga osoba rozwiązuje ten sam quiz i widzicie porównanie,
 - **Wygląd**: motyw jasny, sepia, ciemny albo jak w telefonie, 5 kolorów, 4 wielkości tekstu, krój gazetowy lub prosty, widok pełny albo same nagłówki,
@@ -119,7 +121,8 @@ Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesię
 | Ścieżka | Co zawiera |
 |---|---|
 | `index.html`, `src/` | Aplikacja (czysty JavaScript, moduły ES, bez kroku budowania) |
-| `src/views/` | Widoki: ankieta, wydanie, powtórki, zeszyt, profil, przygotowanie wydania |
+| `src/views/` | Widoki: ankieta, wydanie, oś czasu, powtórki, ulubione, profil, przygotowanie wydania |
+| `src/favorites.js` | Ulubione: filtry, wyszukiwanie i tekst do wysłania (bez DOM, testowane w `scripts/selftest.mjs`) |
 | `src/prompt.js`, `src/edition.js` | Polecenie dla czatu AI, wskazówki dla czatów, sprawdzanie i czyszczenie wydań (wspólne dla aplikacji i skryptów) |
 | `src/look.js`, `src/notify.js` | Wygląd (motywy, kolory, tekst) i przypomnienia (kalendarz, powiadomienia, liczba na ikonie) |
 | `src/listen.js`, `src/challenge.js` | Wydanie czytane na głos i wyzwanie quizowe we dwoje |

@@ -1,8 +1,8 @@
 // Widok wydania: rozgrzewka z wczorajszej wiedzy, potem rozdziały (Polska → Świat → Twoje tematy → …
 // → Na wieczór), każdy kończy się przyciskiem „Dalej”. Po ostatnim wydanie jest ukończone.
 import { SECTIONS, MAIN_SECTIONS, TIME_BUDGETS, FACT_KINDS, WORDS_PER_MINUTE, LEVELS } from '../config.js';
-import { loadIndex, loadEdition, pickDate, previousDate } from '../data.js';
-import { todayISO, formatLong, formatShort, addDays } from '../dates.js';
+import { loadIndex, loadEdition, pickDate, previousDate, neighborDates, editionHref } from '../data.js';
+import { todayISO, formatLong, formatShort, formatTiny, addDays } from '../dates.js';
 import {
   getState,
   update,
@@ -25,7 +25,7 @@ import { challengeFor, shareChallenge, verdict } from '../challenge.js';
 const sectionLabel = (id) => SECTIONS.find((s) => s.id === id)?.label || id;
 const kindLabel = (id) => FACT_KINDS.find((k) => k.id === id)?.label || id;
 
-export async function renderToday(root, { date: requested, onChange }) {
+export async function renderToday(root, { date: requested, focus = null, onChange }) {
   let index;
   let date;
   let edition;
@@ -38,12 +38,14 @@ export async function renderToday(root, { date: requested, onChange }) {
     }
     edition = await loadEdition(date);
   } catch (err) {
-    mount(root, errorState(err, () => renderToday(root, { date: requested, onChange })));
+    mount(root, errorState(err, () => renderToday(root, { date: requested, focus, onChange })));
     return;
   }
 
   // Rozgrzewka: 3 pytania z poprzedniego wydania.
   const prevDate = previousDate(index, date);
+  const around = neighborDates(index, date);
+  const isArchive = date !== around.latest;
   let prevEdition = null;
   if (prevDate) {
     try {
@@ -147,7 +149,7 @@ export async function renderToday(root, { date: requested, onChange }) {
       h(
         'div',
         { class: 'masthead-top' },
-        h('p', { class: 'eyebrow' }, requested && requested !== today ? 'Wydanie z archiwum' : `Dzień dobry${name}`),
+        h('p', { class: 'eyebrow' }, isArchive ? 'Wydanie z archiwum' : `Dzień dobry${name}`),
         h(
           'div',
           { class: 'meta-row' },
@@ -180,11 +182,19 @@ export async function renderToday(root, { date: requested, onChange }) {
           h('a', { class: 'pill pill-link icon-pill', href: '#ustawienia', title: 'Dostosuj: działy, długość wydania i przypomnienia', 'aria-label': 'Dostosuj wydanie' }, icon('sliders')),
         ),
       ),
+      dayNav(),
       h('h1', { class: 'date' }, formatLong(date)),
-      streakWidget(s),
+      isArchive
+        ? h(
+            'div',
+            { class: 'banner archive-banner' },
+            h('p', { style: 'margin:0' }, 'Wracasz do wcześniejszego dnia. Twoje odpowiedzi i postępy z tamtego wydania są zapisane.'),
+            h('a', { class: 'btn secondary', href: '#dzis' }, 'Wróć do dziś', icon('arrow')),
+          )
+        : streakWidget(s),
       edition.intro ? h('p', { class: 'read intro' }, edition.intro) : null,
       challengeBanner(),
-      date < today && !requested
+      date < today && !isArchive
         ? h(
             'div',
             { class: 'banner' },
@@ -197,6 +207,32 @@ export async function renderToday(root, { date: requested, onChange }) {
         { class: 'progress', role: 'progressbar', 'aria-label': 'Postęp wydania', 'aria-valuemin': 0, 'aria-valuemax': chapters.length, 'aria-valuenow': doneCount },
         h('span', { style: `width:${chapters.length ? (doneCount / chapters.length) * 100 : 0}%` }),
       ),
+    );
+  }
+
+  // Strzałki „poprzedni / następny dzień” i wejście na oś czasu.
+  function dayNav() {
+    const step = (target, dir) => {
+      if (!target) return h('span', { class: `day-step ${dir} is-empty`, 'aria-hidden': 'true' });
+      const label = dir === 'next' && target === around.latest && target === todayISO() ? 'Dziś' : formatTiny(target);
+      return h(
+        'a',
+        {
+          class: `day-step ${dir}`,
+          href: editionHref(target, around.latest),
+          'aria-label': `${dir === 'prev' ? 'Poprzednie wydanie' : 'Następne wydanie'}: ${formatLong(target)}`,
+        },
+        dir === 'prev' ? icon('back') : null,
+        label,
+        dir === 'next' ? icon('arrow') : null,
+      );
+    };
+    return h(
+      'nav',
+      { class: 'day-nav', 'aria-label': 'Poprzednie i następne dni' },
+      step(around.prev, 'prev'),
+      h('a', { class: 'day-step timeline-link', href: '#dni', 'aria-label': 'Oś czasu: wszystkie poprzednie dni' }, icon('timeline'), 'Oś czasu'),
+      step(around.next, 'next'),
     );
   }
 
@@ -330,22 +366,30 @@ export async function renderToday(root, { date: requested, onChange }) {
 
   function saveButton(id, entry) {
     const pressed = isSaved(date, id);
+    const label = (on) => (on ? 'Usuń z ulubionych' : 'Dodaj do ulubionych');
     return h(
       'button',
       {
         type: 'button',
-        class: 'icon-btn',
+        class: 'icon-btn fav-btn',
         'aria-pressed': pressed ? 'true' : 'false',
-        'aria-label': pressed ? 'Usuń z zeszytu' : 'Zapisz w zeszycie',
-        title: pressed ? 'Usuń z zeszytu' : 'Zapisz w zeszycie',
+        'aria-label': label(pressed),
+        title: label(pressed),
         onclick: (e) => {
+          const btn = e.currentTarget;
           const now = toggleSaved(date, id, entry);
-          e.currentTarget.setAttribute('aria-pressed', now ? 'true' : 'false');
-          e.currentTarget.setAttribute('aria-label', now ? 'Usuń z zeszytu' : 'Zapisz w zeszycie');
-          toast(now ? 'Zapisane w zeszycie' : 'Usunięte z zeszytu');
+          btn.setAttribute('aria-pressed', now ? 'true' : 'false');
+          btn.setAttribute('aria-label', label(now));
+          btn.setAttribute('title', label(now));
+          if (now) {
+            btn.classList.remove('pop');
+            void btn.offsetWidth;
+            btn.classList.add('pop');
+          }
+          toast(now ? 'Dodane do ulubionych' : 'Usunięte z ulubionych', now ? { action: { label: 'Zobacz', onClick: () => (location.hash = '#ulubione') } } : {});
         },
       },
-      icon('bookmark'),
+      icon('heart'),
     );
   }
 
@@ -747,7 +791,7 @@ export async function renderToday(root, { date: requested, onChange }) {
       h(
         'div',
         { class: 'field' },
-        h('label', { for: `note-${date}`, class: 'small muted' }, 'Twoja notatka (trafi do zeszytu)'),
+        h('label', { for: `note-${date}`, class: 'small muted' }, 'Twoja notatka (zobaczysz ją w Ulubionych)'),
         h('textarea', {
           id: `note-${date}`,
           placeholder: 'Jedno, dwa zdania…',
@@ -799,15 +843,42 @@ export async function renderToday(root, { date: requested, onChange }) {
           'div',
           { class: 'inline-actions' },
           due > 0 ? h('a', { class: 'btn', href: '#powtorki' }, `Powtórki (${due})`, icon('arrow')) : null,
-          h('a', { class: 'btn secondary', href: '#zeszyt' }, 'Zeszyt'),
+          h('a', { class: 'btn secondary', href: '#ulubione' }, icon('heart'), 'Ulubione'),
+          h('a', { class: 'btn secondary', href: '#dni' }, icon('timeline'), 'Oś czasu'),
           h('a', { class: 'btn ghost', href: '#ustawienia' }, icon('sliders'), 'Zmień tematy'),
         ),
       ),
     ];
   }
 
+  // Otwarcie wydania na konkretnej karcie (np. z Ulubionych): przejdź do rozdziału, rozwiń listę i podświetl kartę.
+  function focusItem(id) {
+    const inGroups = (c) => (c.groups || []).find((g) => g.items.some((i) => i.id === id));
+    const ch = chapters.find((c) => {
+      if (c.type === 'news' || c.type === 'topics') return Boolean(inGroups(c));
+      if (c.type === 'facts' || c.type === 'otd') return c.items.some((i) => i.id === id);
+      return { concept: 'concept', book: 'book', evening: 'evening', quiz: 'quiz' }[c.type] === id;
+    });
+    if (!ch) {
+      toast('Tego działu nie ma teraz w Twoim wydaniu. Możesz go włączyć w ustawieniach.');
+      return false;
+    }
+    const group = inGroups(ch);
+    if (group) expanded.add(`news:${group.section}`);
+    if (ch.type === 'facts' || ch.type === 'otd') expanded.add(ch.id);
+    openCards.add(id);
+    goTo(ch.id, { scroll: false });
+    const el = root.querySelector(`[data-item="${CSS.escape(id)}"]`) || document.getElementById('rozdzial');
+    requestAnimationFrame(() => {
+      el.scrollIntoView({ block: 'start', behavior: 'instant' });
+      el.classList.add('is-found');
+      setTimeout(() => el.classList.remove('is-found'), 2600);
+    });
+    return true;
+  }
+
   render();
-  restorePosition(date);
+  if (!focus || !focusItem(focus)) restorePosition(date);
   watchScroll();
 }
 

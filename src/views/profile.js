@@ -1,4 +1,4 @@
-// Profil: ustawienia wydania, wygląd, przypomnienia, publikowanie, poziom (karp → smok), archiwum, kopia danych.
+// Profil: ustawienia wydania, wygląd, przypomnienia, publikowanie, poziom (karp → smok), archiwum (oś czasu), kopia danych.
 import { SECTIONS, SECTION_GROUPS, FACT_KINDS, LEVELS } from '../config.js';
 import {
   getState,
@@ -14,7 +14,6 @@ import {
   setGithubSettings,
 } from '../store.js';
 import { loadIndex } from '../data.js';
-import { formatLong } from '../dates.js';
 import { icsFile, googleCalendarUrl } from '../calendar.js';
 import { checkAccess } from '../github.js';
 import { appearancePanel, applyLook } from '../look.js';
@@ -401,23 +400,21 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
         h('h2', null, 'Archiwum wydań'),
         index?.editions?.length
           ? h(
-              'ul',
-              { class: 'list' },
-              [...index.editions]
-                .sort((a, b) => b.date.localeCompare(a.date))
-                .map((e) =>
-                  h(
-                    'li',
-                    { class: 'row' },
-                    h(
-                      'div',
-                      null,
-                      h('a', { href: `#wydanie-${e.date}`, class: 'date' }, formatLong(e.date)),
-                      e.headline ? h('p', { class: 'small muted', style: 'margin:2px 0 0' }, e.headline) : null,
-                    ),
-                    progress[e.date]?.completedOn ? h('span', { class: 'pill nurt' }, icon('check'), 'Przeczytane') : null,
-                  ),
+              'a',
+              { class: 'row archive-link', href: '#dni' },
+              h(
+                'div',
+                null,
+                h('strong', null, 'Oś czasu'),
+                h(
+                  'p',
+                  { class: 'small muted', style: 'margin:2px 0 0' },
+                  `${index.editions.length} ${plural(index.editions.length, 'wydanie', 'wydania', 'wydań')}, ${
+                    index.editions.filter((e) => progress[e.date]?.completedOn).length
+                  } przeczytanych. Wróć do dowolnego dnia i przypomnij sobie, co było.`,
                 ),
+              ),
+              icon('timeline'),
             )
           : h('p', { class: 'muted' }, 'Archiwum pojawi się po wczytaniu wydań.'),
       ),
@@ -483,7 +480,7 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
           ? h(
               'div',
               { class: 'card' },
-              h('p', { class: 'read', style: 'margin:0' }, 'Na pewno? Zniknie profil, postępy, powtórki i zeszyt z tego telefonu.'),
+              h('p', { class: 'read', style: 'margin:0' }, 'Na pewno? Znikną profil, postępy, powtórki i ulubione z tego telefonu.'),
               h(
                 'div',
                 { class: 'inline-actions' },

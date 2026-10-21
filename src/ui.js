@@ -47,6 +47,10 @@ const ICONS = {
   prev: '<svg viewBox="0 0 24 24"><path d="M18 6l-8 6 8 6z" fill="currentColor"/><path d="M6 6v12"/></svg>',
   close: '<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>',
   share: '<svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="17" cy="6" r="2.5"/><circle cx="17" cy="18" r="2.5"/><path d="M8.2 10.8l6.6-3.6M8.2 13.2l6.6 3.6"/></svg>',
+  heart: '<svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>',
+  search: '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>',
+  note: '<svg viewBox="0 0 24 24"><path d="M5 19l1-4 10-10 3 3-10 10z"/><path d="M14 7l3 3"/></svg>',
+  timeline: '<svg viewBox="0 0 24 24"><path d="M7 3v18"/><circle cx="7" cy="7" r="2"/><circle cx="7" cy="16" r="2"/><path d="M11 7h9M11 16h6"/></svg>',
   trophy: '<svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20h7M10 17h4"/></svg>',
 };
 
@@ -89,12 +93,47 @@ export function sourceLinks(sources = []) {
 }
 
 let toastTimer = null;
-export function toast(message) {
+// Krótki komunikat na dole ekranu. Z action pokazuje też przycisk, np. „Cofnij” albo „Zobacz”.
+export function toast(message, { action } = {}) {
   document.querySelector('.toast')?.remove();
-  const el = h('div', { class: 'toast', role: 'status' }, message);
+  const el = h('div', { class: 'toast', role: 'status' }, h('span', null, message));
+  if (action) {
+    el.append(
+      h(
+        'button',
+        {
+          type: 'button',
+          class: 'toast-action',
+          onclick: () => {
+            el.remove();
+            action.onClick();
+          },
+        },
+        action.label,
+      ),
+    );
+  }
   document.body.append(el);
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => el.remove(), 2400);
+  toastTimer = setTimeout(() => el.remove(), action ? 4500 : 2400);
+}
+
+// Udostępnianie z telefonu (np. do Messengera), a gdy się nie da – kopia do schowka.
+export async function shareOrCopy({ title, text, url }) {
+  try {
+    if (navigator.share) {
+      await navigator.share({ title, text, url });
+      return;
+    }
+  } catch (err) {
+    if (err?.name === 'AbortError') return;
+  }
+  try {
+    await navigator.clipboard.writeText([text, url].filter(Boolean).join('\n'));
+    toast('Skopiowane. Wklej, gdzie chcesz.');
+  } catch {
+    toast('Nie udało się skopiować.');
+  }
 }
 
 export function plural(n, one, few, many) {

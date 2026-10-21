@@ -38,3 +38,25 @@ export function formatShort(iso) {
 export function isISODate(s) {
   return typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s);
 }
+
+const MONTHS_SHORT = ['sty', 'lut', 'mar', 'kwi', 'maj', 'cze', 'lip', 'sie', 'wrz', 'paź', 'lis', 'gru'];
+const DAYS_SHORT = ['Nd', 'Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'So'];
+const monthFmt = new Intl.DateTimeFormat('pl-PL', { month: 'long', year: 'numeric' });
+const weekdayFmt = new Intl.DateTimeFormat('pl-PL', { weekday: 'long' });
+
+// „Wt 20 paź” – na przyciski „poprzedni / następny dzień”.
+export function formatTiny(iso) {
+  const d = parseISO(iso);
+  return `${DAYS_SHORT[d.getDay()]} ${d.getDate()} ${MONTHS_SHORT[d.getMonth()]}`;
+}
+
+// „Październik 2026”
+export function formatMonth(iso) {
+  const text = monthFmt.format(parseISO(iso));
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+// „wtorek”
+export function formatWeekday(iso) {
+  return weekdayFmt.format(parseISO(iso));
+}

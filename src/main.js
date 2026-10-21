@@ -5,7 +5,8 @@ import { todayISO, isISODate } from './dates.js';
 import { renderOnboarding } from './views/onboarding.js';
 import { renderToday } from './views/today.js';
 import { renderReview } from './views/review.js';
-import { renderSaved } from './views/saved.js';
+import { renderFavorites } from './views/favorites.js';
+import { renderTimeline, leaveTimeline } from './views/timeline.js';
 import { renderProfile } from './views/profile.js';
 import { renderPrepare } from './views/prepare.js';
 import { applyLook, getLook } from './look.js';
@@ -58,14 +59,18 @@ async function route() {
   }
 
   updateBadge();
+  leaveTimeline();
   const common = { onChange: updateBadge };
 
   if (hash === 'powtorki') {
     setTab('powtorki');
     renderReview(root, common);
-  } else if (hash === 'zeszyt') {
-    setTab('zeszyt');
-    renderSaved(root);
+  } else if (hash === 'ulubione' || hash === 'zeszyt') {
+    setTab('ulubione');
+    renderFavorites(root);
+  } else if (hash === 'dni') {
+    setTab('dzis');
+    await renderTimeline(root);
   } else if (hash === 'przygotuj') {
     setTab('dzis');
     await renderPrepare(root, common);
@@ -82,8 +87,10 @@ async function route() {
     });
   } else {
     setTab('dzis');
-    const requested = hash.startsWith('wydanie-') ? hash.slice('wydanie-'.length) : null;
-    await renderToday(root, { ...common, date: isISODate(requested) ? requested : null });
+    // #wydanie-2026-10-20 albo #wydanie-2026-10-20/pl-1 (otwiera wydanie na tej karcie, np. z Ulubionych).
+    const m = hash.match(/^wydanie-(\d{4}-\d{2}-\d{2})(?:\/(.+))?$/);
+    const requested = m && isISODate(m[1]) ? m[1] : null;
+    await renderToday(root, { ...common, date: requested, focus: m?.[2] || null });
   }
 }
 

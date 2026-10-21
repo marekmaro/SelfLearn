@@ -1,0 +1,772 @@
+{
+  "date": "2026-10-21",
+  "intro": "Dziś m.in. Sejm za zmianami w prawie aborcyjnym, 800 plus bez corocznych wniosków, Trump naciska na Zełenskiego, pierwszy przypadek eboli w Nigerii i czwarty dzień z „Atomowymi nawykami”: cztery prawa zmiany zachowania.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Sejm przyjął dwie ustawy o aborcji. Teraz Senat i prezydent",
+      "summary": "We wtorek Sejm uchwalił dwie ustawy dotyczące aborcji. Nowelizację Kodeksu karnego przygotowaną przez posłów KO i Lewicy poparło 217 posłów, 213 było przeciw, a 3 wstrzymało się od głosu. Uchyla ona przepisy, które przewidują do 3 lat więzienia za przerwanie ciąży za zgodą kobiety i za pomoc w tym (art. 152 § 1 i 2). Lekarze, pielęgniarki i położne nie popełnią przestępstwa, gdy ratują życie lub zdrowie kobiety albo przy ciężkich wadach płodu. Druga ustawa, projekt Trzeciej Drogi, przywraca przesłankę ciężkich wad płodu, uchyloną wyrokiem TK z 2020 r. Za było 233 posłów, przeciw 203. Teraz ustawami zajmie się Senat, a potem prezydent, który może je zawetować.",
+      "why": "To pierwsza od lat zmiana prawa aborcyjnego przegłosowana w Sejmie. O tym, czy wejdzie w życie, zdecyduje prezydent Karol Nawrocki.",
+      "sources": [
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/polska/ustawy-w-sprawie-aborcji-jest-decyzja-sejmu-st9297226"
+        },
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/polityka/news-dekryminalizacja-aborcji-sejm-zaglosowal-za-drugi-projekt-ro,nIdn,1022726"
+        },
+        {
+          "name": "Rynek Zdrowia",
+          "url": "https://www.rynekzdrowia.pl/Prawo/Sejm-zdecydowal-aborcja-na-nowych-zasadach-217-poslow-za-213-przeciw,290205,2.html"
+        }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "800 plus bez corocznych wniosków. Rząd przyjął projekt",
+      "summary": "Rada Ministrów przyjęła w poniedziałek projekt zmian w programie Rodzina 800 plus. Wniosek o świadczenie będzie składany tylko raz, a prawo do niego będzie przedłużane automatycznie na kolejne okresy. Rodzice nadal będą musieli zgłaszać zmiany, które wpływają na prawo do świadczenia, np. wyjazd za granicę. Nowe zasady mają obowiązywać od 1 czerwca 2027 r., czyli od okresu świadczeniowego 2027/2028. Projekt trafi teraz do Sejmu, a później do Senatu i prezydenta.",
+      "why": "Co roku miliony rodzin musiały pamiętać o wniosku, żeby nie stracić pieniędzy. Automatyczne przedłużenie to przykład pojęcia dnia: domyślnej opcji, która działa na korzyść ludzi.",
+      "sources": [
+        {
+          "name": "Portal Samorządowy",
+          "url": "https://www.portalsamorzadowy.pl/zmiany-w-prawie/koniec-uciazliwego-obowiazku-rzad-przyjal-projekt-zmian-w-800-plus,680875.html"
+        },
+        {
+          "name": "wGospodarce",
+          "url": "https://wgospodarce.pl/informacje/158751-wazne-zmiany-w-programie-800-coraz-blizej"
+        },
+        {
+          "name": "Forsal",
+          "url": "https://forsal.pl/gospodarka/aktualnosci/artykuly/11235851,automatyczne-800-bez-wnioskow-zmiany-od-1-czerwca-2027-roku-projekt.html"
+        }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Prezydent Litwy w Warszawie. Nawrocki o porozumieniu USA z Rosją",
+      "summary": "We wtorek prezydent Litwy Gitanas Nausėda spotkał się w Warszawie z Karolem Nawrockim. Polski prezydent mówił o amerykańsko-rosyjskim porozumieniu w sprawie oleju napędowego. Jego zdaniem stabilizacja rynku paliw „nie powinna prowadzić do osłabienia presji na Rosję”, a sprawa wymaga wspólnej refleksji sojuszników. Zauważył jednak, że także Europa przez lata wydała miliardy na rosyjskie surowce. Nawrocki nazwał Rosję największym zagrożeniem dla regionu. Według Interii wspólnym priorytetem obu prezydentów jest wzmacnianie wschodniej flanki NATO i obecność wojsk USA w Europie.",
+      "why": "Polska i Litwa dzielą przesmyk suwalski, wąski pas między Białorusią a obwodem królewieckim. To jedno z najbardziej wrażliwych miejsc NATO.",
+      "sources": [
+        {
+          "name": "Polsat News",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-10-20/wizyta-prezydenta-litwy-w-polsce/"
+        },
+        {
+          "name": "Interia",
+          "url": "https://wydarzenia.interia.pl/kraj/news-nawrocki-nie-jednym-glosem-z-trumpem-wskazal-taktyke-wobec-r,nId,23561305"
+        }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Sondaż IBRiS: KO prowadzi, partia Brauna z 11,4%",
+      "summary": "W sondażu IBRiS dla Polsat News z 14–16 października KO ma 27,8% poparcia, PiS 19,1%, Konfederacja 12,7%, a Konfederacja Korony Polskiej Grzegorza Brauna 11,4%, o 2 pkt proc. więcej niż w sierpniu. Pod progiem wyborczym znalazły się m.in. Razem (3,8%) i Polska 2050 (0,5%). Przy takim wyniku KO, PSL i Lewica miałyby razem 206 mandatów, czyli o 25 za mało do większości. Inne pracownie widzą partię Brauna niżej, np. CBOS daje jej 7,3%.",
+      "why": "Sondaż to tylko zdjęcie nastrojów, ale rosnące poparcie dla partii spoza głównego nurtu może zmienić układ sił w Sejmie. Wybory parlamentarne odbędą się jesienią 2027 r.",
+      "sources": [
+        {
+          "name": "Polsat News",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-10-20/nowy-sondaz-partyjny-sygnal-dla-rzadu-uwage-zwraca-wynik-partii-brauna/"
+        },
+        {
+          "name": "Interia",
+          "url": "https://wydarzenia.interia.pl/kraj/news-koalicja-obywatelska-na-czele-prawica-zyskuje-dwie-partie-po,nId,23560680"
+        }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Myśliwce w powietrzu i alerty RCB na wschodzie Polski",
+      "summary": "We wtorek, w czasie rosyjskiego ataku na zachodnią Ukrainę, polskie dowództwo znów poderwało myśliwce. Rządowe Centrum Bezpieczeństwa wysłało alerty mieszkańcom Lubelszczyzny, a według Polsat News także Podkarpacia. Tego dnia był to już drugi alert. Lotniska w Lublinie i Rzeszowie czasowo wstrzymały ruch. Dowództwo Operacyjne podało, że były to działania zapobiegawcze, a polska przestrzeń powietrzna nie została naruszona.",
+      "why": "Takie alerty powtarzają się przy każdym większym ataku Rosji blisko polskiej granicy. Warto wiedzieć, co zrobić po SMS-ie z RCB i gdzie jest najbliższe schronienie.",
+      "sources": [
+        {
+          "name": "Polsat News",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-10-20/polska-poderwala-mysliwce-rosyjski-atak-na-terenie-ukrainy/"
+        },
+        {
+          "name": "Defence24",
+          "url": "https://defence24.pl/sily-zbrojne/alerty-rcb-i-wstrzymane-loty-wojsko-zabezpiecza-niebo"
+        },
+        {
+          "name": "TVP Info",
+          "url": "https://www.tvp.info/95661503/alert-rcb-dla-mieszkancow-wojewodztw-lubelskiego-i-podkarpackiego-po-rosyjskim-uderzeniu-na-ukraine"
+        }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Trump do Zełenskiego: czas na porozumienie. Witkoff jedzie do Putina",
+      "summary": "Donald Trump wezwał we wtorek Wołodymyra Zełenskiego do zawarcia porozumienia z Rosją. Mówił, że USA nie dostały w zamian za pomoc nic poza „smutkiem, śmiercią” i ogromnymi stratami finansowymi. Wcześniej Zełenski rozmawiał w Oslo z wysłannikiem USA Steve'em Witkoffem, a premier Norwegii nazwał te rozmowy konstruktywnymi. Według Axiosa w środę Witkoff przedstawi Władimirowi Putinowi w Petersburgu zaktualizowaną propozycję pokojową, a Jared Kushner dołączy zdalnie. Zełenski mówił o gwarancjach bezpieczeństwa na wzór art. 5 NATO. Ukrainie według doniesień kończą się pociski do systemów Patriot.",
+      "why": "Od wyniku tych rozmów zależy, czy wojna za naszą wschodnią granicą zbliży się do końca i na jakich warunkach.",
+      "sources": [
+        {
+          "name": "Axios",
+          "url": "https://www.axios.com/2026/10/20/putin-witkoff-russia-ukraine-war"
+        },
+        {
+          "name": "Kyiv Post",
+          "url": "https://www.kyivpost.com/post/87673"
+        },
+        {
+          "name": "TVP World",
+          "url": "https://tvpworld.com/96034476/zelenskyy-witkoff-hold-constructive-ukraine-peace-talks-in-oslo-norway-pm"
+        }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Pierwszy przypadek eboli w Nigerii. Chora przyleciała z Ugandy",
+      "summary": "Nigeria potwierdziła 20 października pierwszy przypadek eboli w stolicy kraju, Abudży. Chora to kobieta, która przyleciała z Ugandy. Objawy miała od 7 października, a 11 października trafiła do szpitala. Służby odnalazły i obserwują 44 osoby, które miały z nią kontakt. Na początku miesiąca zakażenie potwierdziła też Kenia. Według AP w trwającej epidemii wywołanej szczepem Bundibugyo zakaziło się już ponad 9 tys. osób, a ponad 4,3 tys. zmarło.",
+      "why": "Nigeria to najludniejszy kraj Afryki, z ponad 200 mln mieszkańców i dużymi lotniskami. Szybkie wykrycie i śledzenie kontaktów decydują o tym, czy wirus się rozprzestrzeni.",
+      "sources": [
+        {
+          "name": "ABC News (AP)",
+          "url": "https://abcnews.com/Health/wireStory/nigeria-confirms-ebola-case-abuja-woman-arrived-uganda-137431821"
+        },
+        {
+          "name": "Premium Times",
+          "url": "https://www.premiumtimesng.com/news/headlines/918591-breaking-nigeria-confirms-ebola-case-in-abuja-begins-contact-tracing.html"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/20/kenya-confirms-ninth-ebola-case"
+        }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Niemcy: inwestorzy obiecali ok. 230 mld euro. Nvidia i Amazon na czele",
+      "summary": "Na szczycie Invest in Germany w Berlinie (19–20 października) firmy zapowiedziały inwestycje warte według kanclerza Friedricha Merza ok. 230 mld euro. Amazon chce zainwestować w Niemczech 16 mld euro w 2027 r., w tym ok. 4,8 mld euro w centra danych AWS w okolicach Frankfurtu. Rząd podpisał z Nvidią list intencyjny o współpracy przy sztucznej inteligencji dla fabryk i robotyki. Według „Handelsblatta” wkład państwa może sięgnąć setek milionów euro. Inwestycje zapowiedziały też m.in. Schwarz, Blackstone, Microsoft i Sanofi. Szczyt skrytykowała m.in. Lewica (Die Linke).",
+      "why": "Niemcy to największy partner handlowy Polski. Ożywienie ich gospodarki oznacza więcej zamówień dla polskich firm.",
+      "sources": [
+        {
+          "name": "France 24 (AFP)",
+          "url": "https://www.france24.com/en/live-news/20261020-investors-pledge-230-billion-euros-at-german-summit-merz"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/20/german-chancellor-urges-businesses-to-embrace-ai.html"
+        },
+        {
+          "name": "The Next Web",
+          "url": "https://thenextweb.com/news/amazon-plans-to-make-a-e16bn-investment-in-germany-in-2027"
+        }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Supertajfun Champi najsilniejszą burzą roku. Tajwan czeka na prognozy",
+      "summary": "Supertajfun Champi osiągnął prędkość wiatru ok. 300 km/h i zrównał się z Sinlaku jako najsilniejszy sztorm tego roku na Ziemi. 17 października przeszedł ok. 16 km od wyspy Guam jako odpowiednik huraganu 4. kategorii. Według prognoz do 21 października pozostanie bardzo silny i przesunie się nad wody na południe od wysp Riukiu. Tajwan nie jest jeszcze pewny trasy tajfunu, ale ostrzega przed silnym wiatrem i deszczem w drugiej połowie tygodnia.",
+      "why": "Na Tajwanie powstaje większość najnowocześniejszych chipów na świecie, więc każdy silny tajfun obserwują też firmy elektroniczne.",
+      "sources": [
+        {
+          "name": "Fox Weather",
+          "url": "https://www.foxweather.com/weather-news/super-typhoon-champi-pacific-area-to-watch-tropics"
+        },
+        {
+          "name": "Taiwan News",
+          "url": "https://www.taiwannews.com.tw/news/6461253"
+        },
+        {
+          "name": "Honolulu Star-Advertiser",
+          "url": "https://www.staradvertiser.com/2026/10/17/breaking-news/super-typhoon-champi-passes-near-guam-with-extremely-dangerous-winds/"
+        }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Pożar w bazie wojskowej w Kanadzie. Nie żyje czterech żołnierzy",
+      "summary": "W sobotę w bazie wojskowej Wainwright w kanadyjskiej Albercie zginęło czterech żołnierzy, a kilkudziesięciu zostało rannych. Pożar traw, podsycany porywami wiatru do 96 km/h, dotarł do strzelnicy. Telewizja CBC, powołując się na niepotwierdzone informacje, podaje, że ofiar może być siedem. Władze wykluczają terroryzm. Premier Mark Carney nazwał to tragedią i polecił opuścić flagi do połowy masztu.",
+      "why": "Pożar traw przy silnym wietrze potrafi w kilka minut objąć duży teren. Wiosną to częsty problem także w Polsce.",
+      "sources": [
+        {
+          "name": "Times of Israel (AP)",
+          "url": "https://www.timesofisrael.com/liveblog_entry/canadas-carney-says-4-service-members-killed-in-fire-at-alberta-military-base/"
+        },
+        {
+          "name": "The Irish News",
+          "url": "https://www.irishnews.com/news/world/carney-says-four-service-members-killed-in-fire-at-alberta-military-base-NLKO2NFXXNKIXHIH4ARFNASI34/"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Finlandia kupi milion min przeciwpiechotnych",
+      "summary": "Fińska armia chce kupić od krajowych producentów milion min przeciwpiechotnych za ok. 100 mln euro. Umowy mają zostać podpisane do końca 2027 r., a produkcja ma ruszyć w 2028 r. Zdolnych do niej jest ok. sześć fińskich firm. W czasie pokoju miny mają leżeć w magazynach, a nie w ziemi. Finlandia, Polska, Litwa, Łotwa i Estonia wystąpiły z konwencji ottawskiej, która zakazuje takiej broni. Międzynarodowa Kampania na rzecz Zakazu Min apeluje do Finlandii i Polski o zmianę decyzji.",
+      "why": "Kraje graniczące z Rosją przygotowują się na wypadek inwazji. Miny mają spowolnić atak, ale po wojnach przez lata zabijają też cywilów.",
+      "sources": [
+        {
+          "name": "Yle",
+          "url": "https://yle.fi/a/74-20252139"
+        },
+        {
+          "name": "Helsinki Times",
+          "url": "https://www.helsinkitimes.fi/finland/finland-news/domestic/29409-finland-plans-to-buy-one-million-landmines-for-100-million.html"
+        },
+        {
+          "name": "Militarnyi",
+          "url": "https://militarnyi.com/en/news/finland-to-purchase-one-million-domestic-anti-personnel-mines-for-100-million/"
+        }
+      ]
+    },
+    {
+      "id": "gospodarka-1",
+      "section": "gospodarka",
+      "rank": 1,
+      "title": "Raporty ESG tylko dla największych firm. Rząd przyjął projekt",
+      "summary": "Rząd przyjął projekt nowelizacji ustawy o rachunkowości, który ogranicza obowiązek raportowania ESG, czyli informacji o wpływie firmy na środowisko i ludzi oraz o sposobie zarządzania. Obowiązek obejmie tylko firmy zatrudniające ponad 1000 osób i mające ponad 1,9 mld zł przychodu. Według rządu zwolnionych zostanie ok. 90% przedsiębiorstw, które dotąd miały go spełniać. Nowe zasady mają dotyczyć lat obrotowych zaczynających się po 31 grudnia 2026 r. To wdrożenie unijnych zmian upraszczających te przepisy.",
+      "why": "Mniej raportów to niższe koszty dla średnich firm, ale też mniej porównywalnych danych dla inwestorów i banków.",
+      "sources": [
+        {
+          "name": "Bankier.pl",
+          "url": "https://www.bankier.pl/wiadomosc/90-proc-firm-uniknie-biurokracji-Rzad-upraszcza-raportowanie-ESG-9215504.html"
+        },
+        {
+          "name": "Puls HR",
+          "url": "https://www.pulshr.pl/csr/duze-zmiany-dla-firm-raportowanie-esg-obejmie-znacznie-mniej-przedsiebiorstw,122660.html"
+        }
+      ]
+    },
+    {
+      "id": "prawo-1",
+      "section": "prawo",
+      "rank": 1,
+      "title": "KSeF: kary za błędy odroczone do końca 2027 r.",
+      "summary": "Rząd przyjął projekt, który odracza do końca 2027 r. kary pieniężne za błędy przy korzystaniu z Krajowego Systemu e-Faktur. Sam obowiązek wystawiania e-faktur nie jest przesuwany, a najmniejsze firmy dołączą do systemu od 1 stycznia 2027 r. Projekt przedłuża też o 3,5 roku tzw. odwrotne obciążenie VAT przy handlu gazem, energią elektryczną i uprawnieniami do emisji. Zmiany muszą jeszcze przyjąć Sejm i Senat oraz podpisać prezydent.",
+      "why": "Firmy mają więcej czasu na naukę systemu bez ryzyka kar, ale terminy samego obowiązku się nie zmieniają.",
+      "sources": [
+        {
+          "name": "Biznes24",
+          "url": "https://biznes24.pl/rzad-przyjal-projekt-ws-odroczenia-kar-pienieznych-za-bledy-zwiazane-z-ksef/"
+        },
+        {
+          "name": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/ekonomia/959632/kary-za-bledy-zwiazane-z-ksef-moga-byc-odroczone-rzad-przyjal-projekt-ustawy.html"
+        },
+        {
+          "name": "ifirma.pl",
+          "url": "https://www.ifirma.pl/blog/brak-kar-za-ksef-do-konca-2027-roku-co-abolicja-oznacza-w-praktyce/"
+        }
+      ]
+    },
+    {
+      "id": "nieruchomosci-1",
+      "section": "nieruchomosci",
+      "rank": 1,
+      "title": "Kredyty hipoteczne drożeją, choć RPP nie ruszyła stóp",
+      "summary": "Na posiedzeniu 6–7 października Rada Polityki Pieniężnej po raz siódmy z rzędu utrzymała stopę referencyjną na poziomie 3,75%. Stopy są bez zmian od marca. WIBOR 3M wynosi jednak 3,89%, bo rynek spodziewa się podwyżek, a kredyty o stałej stopie kosztowały we wrześniu średnio ok. 6,2%. Inflacja we wrześniu wyniosła ok. 4%. Ekonomiści Pekao oczekują podwyżek stóp od listopada. PKO BP prognozuje wzrost cen mieszkań o 5%, bo deweloperzy ruszają z mniejszą liczbą inwestycji: w sześciu największych aglomeracjach o 24% mniej niż przed rokiem.",
+      "why": "Każde 0,25 pkt proc. wyżej to przy kredycie 750 tys. zł na 25 lat ok. 120 zł wyższa rata miesięcznie.",
+      "sources": [
+        {
+          "name": "Finwire",
+          "url": "https://finwire.pl/artykuly/stopy-procentowe-nbp-pazdziernik-2026-koniec-obnizek-kredyt-przed-podwyzka"
+        },
+        {
+          "name": "ilezametr.pl",
+          "url": "https://ilezametr.pl/stopy-procentowe-rpp-pazdziernik-2026-posiedzenie-hipoteki-stala-stopa/"
+        },
+        {
+          "name": "Finwire: prognoza PKO BP",
+          "url": "https://finwire.pl/artykuly/ceny-mieszkan-2026-pko-bp-prognoza-wzrost-5-procent-podaz"
+        }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Samsung sprzedał już większość przyszłorocznej pamięci. Elektronika może drożeć",
+      "summary": "Według dziennika „Korea Economic Daily” Samsung ma już zakontraktowane ok. 80% przyszłorocznej produkcji pamięci w długoterminowych umowach, m.in. z Nvidią, Google i Microsoftem. Część kontraktów ma obowiązywać co najmniej 5 lat, z przedpłatami i cenami minimalnymi. Firma spodziewa się, że niedobór pamięci pogłębi się w 2027 r. i potrwa do 2028 r. Samsung nie potwierdził liczby 80%.",
+      "why": "Gdy centra danych AI wykupują pamięć, mniej trafia do telefonów i komputerów. To może oznaczać wyższe ceny sprzętu.",
+      "sources": [
+        {
+          "name": "Guru3D",
+          "url": "https://www.guru3d.com/story/samsung-reportedly-locks-nearly-of-next-years-memory-capacity-for-ai-customers/"
+        },
+        {
+          "name": "Khaleej Times",
+          "url": "https://www.khaleejtimes.com/business/tech/samsung-sees-chip-shortage-extending-to-2028-signs-long-term-supply-deals"
+        }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Reuters: OpenAI chce zebrać 30 mld dolarów przed debiutem Anthropic",
+      "summary": "Według Reutersa OpenAI przyspiesza rundę finansowania wartą ok. 30 mld dolarów, przy wycenie ponad 1,4 bln dolarów. Chce ją zamknąć przed planowanym na połowę listopada wejściem na giełdę firmy Anthropic. Rozmowy mają się toczyć m.in. z SoftBankiem i funduszem MGX z Abu Zabi. Trwa też spór o to, jak obie firmy liczą swoje przychody. Obie zapowiedziały fundusze, przez które część ich wartości ma trafić do społeczeństwa.",
+      "why": "Wyceny rzędu biliona dolarów pokazują, ile inwestorzy stawiają na AI. Uwaga: to wydanie przygotowuje Claude, model firmy Anthropic, dlatego trzymamy się samych faktów z Reutersa.",
+      "sources": [
+        {
+          "name": "BNN Bloomberg (Reuters)",
+          "url": "https://www.bnnbloomberg.ca/business/company-news/2026/10/20/openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say-reuters-exclusive/"
+        },
+        {
+          "name": "Fast Company",
+          "url": "https://www.fastcompany.com/91626999/anthropic-openai-wealth-share-ipos"
+        }
+      ]
+    },
+    {
+      "id": "nauka-1",
+      "section": "nauka",
+      "rank": 1,
+      "title": "Związek, który zabija groźną bakterię jelitową i oszczędza dobre",
+      "summary": "Naukowcy z Centrum Badań nad Zakażeniami im. Helmholtza w Niemczech opisali naturalny związek o nazwie argyryna B. W testach laboratoryjnych i na myszach skutecznie działał na bakterię Clostridioides difficile, a prawie nie szkodził pożytecznym bakteriom jelitowym. C. difficile często atakuje po kuracji zwykłymi antybiotykami, które niszczą florę jelit, i wywołuje ciężkie biegunki. To wciąż badania przedkliniczne, więc na ewentualny lek trzeba będzie poczekać latami.",
+      "why": "Zakażenia C. difficile to częsty problem w szpitalach, także w Polsce. Lek, który nie niszczy flory jelitowej, mógłby przerwać błędne koło nawrotów.",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://sciencedaily.com/releases/2026/10/261019093353.htm"
+        }
+      ]
+    },
+    {
+      "id": "kosmos-1",
+      "section": "kosmos",
+      "rank": 1,
+      "title": "Najdokładniejszy pomiar helu z pierwszych minut Wszechświata",
+      "summary": "Zespół kierowany przez Uniwersytet Minnesoty zmierzył, ile helu powstało w pierwszych minutach po Wielkim Wybuchu. Badacze przyjrzeli się 15 galaktykom, w których gwiazdy prawie nie zmieniły pierwotnego składu gazu. Wynik jest ok. trzy razy dokładniejszy niż wcześniejsze, a niepewność spadła do 0,5%. Takie pomiary pozwalają sprawdzić, czy model Wielkiego Wybuchu zgadza się z obserwacjami.",
+      "why": "Ilość pierwotnego helu zależy od warunków w pierwszych minutach Wszechświata, więc to jeden z nielicznych sposobów, by zajrzeć tak daleko wstecz.",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/10/261019093442.htm"
+        }
+      ]
+    },
+    {
+      "id": "kosmos-2",
+      "section": "kosmos",
+      "rank": 2,
+      "title": "Teleskop Euclid przypadkiem odkrył kometę",
+      "summary": "Europejski teleskop kosmiczny Euclid, który mapuje miliardy galaktyk, przypadkiem zarejestrował nową kometę. Otrzymała oznaczenie C/2026 S1 (Euclid). Litera C oznacza kometę nieokresową, która nie wraca regularnie w pobliże Słońca. S1 mówi, że była pierwszą kometą odkrytą w drugiej połowie września.",
+      "why": "Teleskopy budowane do innych celów coraz częściej odkrywają przy okazji małe ciała Układu Słonecznego.",
+      "sources": [
+        {
+          "name": "Popular Science",
+          "url": "https://popsci.com/science/new-comet-discovered-euclid-space-telescope"
+        }
+      ]
+    },
+    {
+      "id": "historia-1",
+      "section": "historia",
+      "rank": 1,
+      "title": "Peru: grób dziecka z elity kultury Moche u stóp Świątyni Księżyca",
+      "summary": "Archeolodzy z projektu Huacas de Moche odkryli w Trujillo grób małego dziecka z elity kultury Moche. Znajdował się na platformie grobowej Uhlego u stóp Huaca de la Luna, czyli Świątyni Księżyca, jednej z najważniejszych świątyń tej kultury. Komora miała ok. 1,2 × 0,7 × 1,2 m, a obok szczątków leżały 32 przedmioty z ceramiki. Dziecko żyło prawdopodobnie w ostatnim okresie tej społeczności. Wcześniej na tej platformie znajdowano groby dorosłych o wysokim statusie.",
+      "why": "Kultura Moche rozwijała się na północnym wybrzeżu Peru ok. 1500 lat temu, setki lat przed Inkami. Bogaty grób tak małego dziecka to rzadka wskazówka, jak ta społeczność traktowała swoją elitę.",
+      "sources": [
+        {
+          "name": "Andina",
+          "url": "https://andina.pe/ingles/noticia-peru-elite-moche-infants-tomb-discovered-at-huaca-de-luna-in-trujillo-1095676.aspx"
+        }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Stłuszczenie wątroby to w rzeczywistości pięć różnych chorób",
+      "summary": "Badacze z Mayo Clinic zaproponowali, by stłuszczeniową chorobę wątroby podzielić na pięć podtypów biologicznych. Każdy wiąże się z innym ryzykiem powikłań. Taki podział może pomóc lekarzom szybciej wskazać pacjentów, którzy potrzebują ścisłej kontroli albo leczenia, i lepiej dobierać terapie.",
+      "why": "Stłuszczenie wątroby to jedna z najczęstszych chorób, często bez objawów. Wczoraj pisaliśmy o podobnym podejściu do depresji: jedna nazwa może kryć kilka różnych chorób.",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/10/261016070642.htm"
+        }
+      ]
+    },
+    {
+      "id": "edukacja-1",
+      "section": "edukacja",
+      "rank": 1,
+      "title": "Szkoły: ćwiczenia ewakuacji i ukrycia się, kontrola plecaków",
+      "summary": "Ministerstwo Edukacji Narodowej przedstawiło do konsultacji projekt rozporządzenia o bezpieczeństwie i higienie w szkołach. Przewiduje on ćwiczenia ewakuacji oraz ukrycia się na wypadek ataku, np. napastnika lub drona, według doniesień dwa razy w roku. MEN zapowiada też zmiany w ustawach: możliwość sprawdzenia plecaka w wyjątkowych sytuacjach, kontrolę wejść do szkół, ochronę nauczycieli jak funkcjonariuszy publicznych (art. 63 Karty Nauczyciela) i bezpłatną pomoc psychologiczną. To odpowiedź na ataki nożowników w szkołach.",
+      "why": "Dotyczy to wszystkich rodzin z dziećmi w wieku szkolnym. Projekty są jeszcze na etapie konsultacji, więc szczegóły mogą się zmienić.",
+      "sources": [
+        {
+          "name": "Głos Nauczycielski",
+          "url": "https://glos.pl/ataki-w-szkolach-jak-men-chce-chronic-uczniow-i-nauczycieli-bedzie-nowy-program-bezpieczenstwa"
+        },
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/polska/barbara-nowacka-zapowiadala-zmiany-w-szkolach-co-zostanie-wprowadzone-st9296889"
+        },
+        {
+          "name": "Gazeta Prawna",
+          "url": "https://www.gazetaprawna.pl/wiadomosci/artykuly/11327267,ataki-nozownikow-w-szkole-jeszcze-w-2026-r-maja-byc-wdrozone-procedu.html"
+        }
+      ]
+    },
+    {
+      "id": "zwierzeta-1",
+      "section": "zwierzeta",
+      "rank": 1,
+      "title": "Skrzydła lelka: wolno na łowach, gorzej przy prędkości",
+      "summary": "Naukowcy z Uniwersytetu w Lund zbadali w tunelu aerodynamicznym lelka zwyczajnego, nocnego ptaka polującego na owady. Szerokie końce skrzydeł pomagają mu latać powoli podczas łowów, ale przy większej prędkości wytwarzają siłę nośną mniej wydajnie. Badacze odkryli też, że lelek wytwarza ciąg przy ruchu skrzydeł w górę. Wcześniej wiązano to głównie z owadami i nietoperzami.",
+      "why": "Lelki gniazdują także w Polsce, głównie w suchych borach sosnowych. Zimę spędzają w Afryce, więc ich skrzydła muszą łączyć łowy i daleką wędrówkę.",
+      "sources": [
+        {
+          "name": "YourWeather",
+          "url": "https://www.yourweather.co.uk/news/science/the-nightjar-s-wings-hide-a-surprising-secret-about-flight.html"
+        }
+      ]
+    },
+    {
+      "id": "kultura-1",
+      "section": "kultura",
+      "rank": 1,
+      "title": "„Pan Darek” Żulczyka: dziś premiera ostatniej części świata „Ślepnąc od świateł”",
+      "summary": "21 października nakładem Świata Książki ukazuje się powieść Jakuba Żulczyka „Pan Darek”. To trzecia i ostatnia książka ze świata „Ślepnąc od świateł”, po samej powieści i „Dawno temu w Warszawie”. Akcja dzieje się w 1990 r. Tytułowy bohater to Dario, gangster, którego w serialu HBO zagrał Jan Frycz.",
+      "why": "Serial „Ślepnąc od świateł” był jedną z najgłośniejszych polskich produkcji HBO, więc książka może trafić także do widzów, którzy nie czytali poprzednich części.",
+      "sources": [
+        {
+          "name": "TVP Info",
+          "url": "https://www.tvp.info/95412968/powiesc-pan-darek-jakuba-zulczyka-kontynuacja-slepnac-od-swiatel-i-dawno-temu-w-warszawie"
+        },
+        {
+          "name": "eBilet",
+          "url": "https://www.ebilet.pl/now/slepnac-od-swiatel-z-trzecia-czescia-zulczyk-zapowiada-powiesc-pan-darek/"
+        }
+      ]
+    },
+    {
+      "id": "muzyka-1",
+      "section": "muzyka",
+      "rank": 1,
+      "title": "Konkurs Wieniawskiego: dziś poznamy finalistów",
+      "summary": "W Poznaniu trwa 17. Międzynarodowy Konkurs Skrzypcowy im. Henryka Wieniawskiego, który potrwa do 25 października. W półfinale gra szóstka skrzypków: Jooha Choi, Anna Im, SooBeen Lee, Jinzhu Li, Bohdan Luts i Meng Zou. Najwyżej z Polaków zaszła Zofia Anna Olesik, która odpadła po trzecim etapie. Zwycięzca dostanie 60 tys. euro i na dwa lata skrzypce Stradivariusa z 1727 r. Poprzednią edycję w 2022 r. wygrała Japonka Hina Maeda.",
+      "why": "To jeden z najstarszych konkursów skrzypcowych na świecie, pierwszy odbył się w 1935 r. Przesłuchania można oglądać za darmo w internecie.",
+      "sources": [
+        {
+          "name": "Radio Poznań",
+          "url": "https://radiopoznan.fm/informacje/17-miedzynarodowy-konkurs-skrzypcowy-im-henryka-wieniawskiego/szesciu-skrzypkow-powalczy-w-iv-etapie-konkursu-wieniawskiego"
+        },
+        {
+          "name": "Rzeczpospolita",
+          "url": "https://www.rp.pl/muzyka-klasyczna/art45355351-konkurs-wieniawskiego-final-bez-polki-dominuja-kobiety"
+        },
+        {
+          "name": "Ten Poznań",
+          "url": "https://tenpoznan.pl/skrzypce-stradivariusa-i-120-tysiecy-euro-dla-laureatow-konkursu-wieniawskiego"
+        }
+      ]
+    },
+    {
+      "id": "gry-1",
+      "section": "gry",
+      "rank": 1,
+      "title": "ID@Xbox: „Mouthwashing” na Xboksie i w Game Pass 29 października",
+      "summary": "Na pokazie ID@Xbox x IGN Microsoft przedstawił gry niezależnych twórców. Psychologiczny horror „Mouthwashing” trafi na Xboksa i do Game Pass 29 października. Zapowiedziano też kontynuację gry „A Game About Digging a Hole Together”, „Magenta Down” na 2027 r. i „Zero Parades: Director's Cut” na 3 listopada. W piątek premierę ma też „Call of Duty: Modern Warfare 4”.",
+      "why": "Niezależne gry często dają najwięcej świeżych pomysłów, a dzięki Game Pass można je sprawdzić bez osobnego zakupu.",
+      "sources": [
+        {
+          "name": "Xbox Wire",
+          "url": "https://news.xbox.com/en-us/2026/10/20/id-xbox-ign-showcase-october-2026"
+        },
+        {
+          "name": "Game Informer",
+          "url": "https://gameinformer.com/2026/10/20/heres-a-recap-of-the-october-2026-idxbox-showcase"
+        }
+      ]
+    },
+    {
+      "id": "sport-1",
+      "section": "sport",
+      "rank": 1,
+      "title": "Liga Mistrzów: PSG pokonało Barcelonę 4:2, grad goli we wtorek",
+      "summary": "We wtorek rozegrano pierwszą część trzeciej kolejki fazy ligowej Ligi Mistrzów. Paris Saint-Germain wygrało z FC Barceloną 4:2. Liverpool pokonał Villarreal 4:3, Napoli wygrało z Bodø/Glimt 4:3, a Manchester City rozbił AEK Ateny 5:1. AS Roma pokonała Slovan Bratysława 4:0, Borussia Dortmund wygrała w Baku z Sabahem 2:1, a PSV Eindhoven z FC Porto 1:0. Remisami skończyły się mecze Fenerbahçe ze Slavią Praga (2:2) i VfB Stuttgart z Atlético Madryt (1:1). Pozostałe mecze kolejki odbędą się w środę.",
+      "why": "Po trzech z ośmiu kolejek tabela fazy ligowej zaczyna pokazywać, kto walczy o bezpośredni awans do 1/8 finału.",
+      "sources": [
+        {
+          "name": "Polsat Sport",
+          "url": "https://www.polsatsport.pl/wiadomosc/2026-10-20/liga-mistrzow-wyniki-meczow-20-pazdziernika-tabela/"
+        }
+      ]
+    },
+    {
+      "id": "podroze-1",
+      "section": "podroze",
+      "rank": 1,
+      "title": "Od niedzieli zimowy rozkład lotów. Z Wrocławia do Marrakeszu",
+      "summary": "W niedzielę 25 października lotniska przechodzą na zimowy rozkład lotów. Jedną z nowości jest połączenie Ryanaira z Wrocławia do Marrakeszu, dwa razy w tygodniu, w piątki i niedziele. To drugi kierunek w Maroku z wrocławskiego lotniska, po Agadirze. Tego samego dnia zmieniamy czas na zimowy, więc warto dwa razy sprawdzić godziny wylotu.",
+      "why": "Maroko to jeden z najpopularniejszych zimowych kierunków, a lot bez przesiadki skraca podróż z Dolnego Śląska.",
+      "sources": [
+        {
+          "name": "Tanie-Loty.com.pl",
+          "url": "https://www.tanie-loty.com.pl/czytelnia/aktualnosci/ryanair-poleci-z-wroclawia-do-marrakeszu-nowa-trasa-ruszy-jesienia/"
+        }
+      ]
+    },
+    {
+      "id": "pokemon-1",
+      "section": "pokemon",
+      "rank": 1,
+      "title": "TCG Pocket: misje z Pikachu na 30-lecie, a za tydzień „Dual Fusion”",
+      "summary": "Od 20 października w Pokémon TCG Pocket trwa wydarzenie „Pika Pika!” z misjami z okazji 30-lecia karcianki. Za kolejne dni gry można dostać m.in. paczkę promocyjną z Pikachu, koszulki na karty z Pikachu i Pichu, monetę, ikony profilu oraz kartę promocyjną Pikachu ex. 28 października o 18:00 czasu pacyficznego (29 października ok. 2:00 w Polsce) startuje dodatek „Dual Fusion” z pierwszymi kartami dwutypowymi. Na czele są Mega Mewtwo X ex (Psychic/Fighting) i Mega Greninja ex (Water/Dark).",
+      "why": "Do 28 października można jeszcze otwierać paczkę Deluxe Pack: Mega, więc warto zaplanować, na co wydać zapasy.",
+      "sources": [
+        {
+          "name": "Pokézentrum",
+          "url": "https://pokezentrum.de/pokemon-karten-news/feiere-das-30-pokemon-jubilaeum-in-pokemon-tcg-pocket/"
+        },
+        {
+          "name": "Shane the Gamer",
+          "url": "https://shanethegamer.com/news/pokemon-tcg-pocket-dual-fusion-lands-october-29-with-the-games-first-dual-type-cards"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "kosmos",
+      "title": "Saturn pływałby w wannie",
+      "body": "Średnia gęstość Saturna to ok. 0,687 g/cm³, mniej niż gęstość wody (1 g/cm³). To jedyna planeta Układu Słonecznego lżejsza od wody: gdyby istniała wystarczająco wielka wanna, Saturn by w niej pływał. Planeta składa się głównie z wodoru i helu, a przez szybki obrót (doba trwa ok. 10,5 godziny) jest wyraźnie spłaszczona na biegunach.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Saturn"
+      }
+    },
+    {
+      "id": "fact-2",
+      "kind": "psychologia",
+      "title": "Niedokończone sprawy siedzą w głowie dłużej",
+      "body": "W 1927 r. psycholożka Bluma Zeigarnik opisała, że ludzie lepiej pamiętają zadania przerwane niż ukończone. To tzw. efekt Zeigarnik. Późniejsze powtórzenia badań dały mieszane wyniki, ale pokrewny efekt Owsiankiny, czyli skłonność do wracania do przerwanych zadań, jest dobrze potwierdzony. Jest też dobra wiadomość: w badaniu Masicampo i Baumeistera z 2011 r. samo zapisanie planu, jak dokończyć sprawę, zmniejszało natrętne myśli o niej.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Zeigarnik_effect"
+      }
+    },
+    {
+      "id": "fact-3",
+      "kind": "przyroda",
+      "title": "Kolibry potrafią latać do tyłu",
+      "body": "Kolibry obracają skrzydła w stawie barkowym tak, że wytwarzają siłę nośną przy ruchu w przód i w tył. Dzięki temu mogą zawisać w miejscu, a nawet latać do tyłu. Serce niektórych gatunków bije nawet ok. 1260 razy na minutę. Taki silnik zużywa mnóstwo energii, więc w nocy kolibry zapadają w odrętwienie: obniżają temperaturę ciała i zwalniają przemianę materii, żeby nie umrzeć z głodu do rana.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Hummingbird"
+      }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1963,
+      "title": "Śmierć Józefa Franczaka „Lalka”, ostatniego żołnierza podziemia",
+      "body": "21 października 1963 r. w Majdanie Kozic Górnych na Lubelszczyźnie funkcjonariusze SB i ZOMO zastrzelili Józefa Franczaka ps. Lalek. Był ostatnim żołnierzem antykomunistycznego podziemia, który ukrywał się z bronią. Po dezercji z ludowego Wojska Polskiego w 1945 r. ukrywał się prawie 19 lat, pomagany przez okolicznych mieszkańców. Wydał go donosiciel z bliskiego otoczenia. Jego szczątki odnaleziono i zidentyfikowano dopiero w 2014 r.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/J%C3%B3zef_Franczak"
+      }
+    },
+    {
+      "id": "otd-2",
+      "year": 1833,
+      "title": "Urodził się Alfred Nobel",
+      "body": "21 października 1833 r. w Sztokholmie urodził się Alfred Nobel, chemik i wynalazca. W 1866 r. wynalazł dynamit, a w sumie zgromadził 355 patentów. Według popularnej anegdoty w 1888 r. francuska gazeta przez pomyłkę opublikowała jego nekrolog, nazywając go „kupcem śmierci”. W testamencie z 1895 r. przeznaczył większość majątku na nagrody dla tych, którzy przynoszą ludzkości największy pożytek. Pierwsze Nagrody Nobla wręczono w 1901 r.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Alfred_Nobel"
+      }
+    },
+    {
+      "id": "otd-3",
+      "year": 1959,
+      "title": "Otwarcie Muzeum Guggenheima w Nowym Jorku",
+      "body": "21 października 1959 r. przy Piątej Alei w Nowym Jorku otwarto Muzeum Solomona R. Guggenheima. Zaprojektował je Frank Lloyd Wright: zwiedzający idą po spiralnej rampie, która wznosi się wokół otwartego wnętrza pod szklaną kopułą. Wright pracował nad projektem ponad 15 lat i zmarł w kwietniu 1959 r., pół roku przed otwarciem. Dziś budynek jest na liście światowego dziedzictwa UNESCO.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Solomon_R._Guggenheim_Museum"
+      }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Efekt domyślności",
+    "definition": "Skłonność do pozostawania przy opcji, która jest ustawiona z góry, nawet gdy zmiana jest łatwa.",
+    "origin": "Klasyczne badanie Erica Johnsona i Daniela Goldsteina z 2003 r. pokazało, że w krajach, gdzie każdy jest domyślnie dawcą narządów (i może się wypisać), dawców jest wielokrotnie więcej niż tam, gdzie trzeba się zapisać. Richard Thaler i Cass Sunstein spopularyzowali to zjawisko w książce „Impuls” (2008).",
+    "examples": [
+      "Pracownicze Plany Kapitałowe: do PPK zapisuje się automatycznie, a kto nie chce oszczędzać, musi złożyć rezygnację.",
+      "Z dzisiejszych wiadomości: 800 plus ma się przedłużać samo. Domyślną opcją staje się „dostaję świadczenie”, a nie „zapomniałem o wniosku”.",
+      "Z książki tygodnia: otoczenie to domyślne ustawienie Twoich nawyków. Książka na poduszce wygrywa z telefonem na szafce.",
+      "Aplikacje włączają domyślnie autoodtwarzanie i powiadomienia, bo wiedzą, że mało kto je wyłączy."
+    ],
+    "source": {
+      "name": "Wikipedia (ang.)",
+      "url": "https://en.wikipedia.org/wiki/Default_effect"
+    }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "atomowe-nawyki",
+    "title": "Atomowe nawyki",
+    "author": "James Clear",
+    "day": 4,
+    "days": 7,
+    "ideaTitle": "Cztery prawa zmiany zachowania: oczywiste, atrakcyjne, łatwe, satysfakcjonujące",
+    "idea": "Każdy nawyk to pętla czterech kroków: wskazówka (coś zauważasz), pragnienie (chcesz zmiany stanu), reakcja (działasz) i nagroda (czujesz ulgę lub przyjemność). Z tej pętli Clear wyprowadza cztery prawa. Żeby zbudować dobry nawyk, zrób go oczywistym, atrakcyjnym, łatwym i satysfakcjonującym. Żeby zerwać ze złym, odwróć prawa: zrób go niewidocznym, nieatrakcyjnym, trudnym i niesatysfakcjonującym. Przykład z czytaniem: książka leży na poduszce (oczywiste), czytasz ją przy ulubionej herbacie (atrakcyjne), zaczynasz od dwóch stron (łatwe), a potem zaznaczasz dzień w kalendarzu (satysfakcjonujące).",
+    "moral": "Nawyki to kwestia projektu, a nie silnej woli. Zamiast się zmuszać, zmień warunki tak, żeby dobre zachowanie było najprostsze.",
+    "action": "Wybierz jeden nawyk i napisz po jednym zdaniu dla każdego z czterech praw: jak go uczynisz oczywistym, atrakcyjnym, łatwym i satysfakcjonującym.",
+    "source": {
+      "name": "O książce (jamesclear.com)",
+      "url": "https://jamesclear.com/atomic-habits"
+    }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-21-q1",
+      "ref": "fact-1",
+      "question": "Co wyróżnia Saturna spośród planet Układu Słonecznego?",
+      "options": [
+        "Ma najwięcej księżyców o stałej powierzchni",
+        "Jego średnia gęstość jest mniejsza niż gęstość wody",
+        "Obraca się w przeciwną stronę niż Ziemia",
+        "Nie ma pola magnetycznego"
+      ],
+      "answer": 1,
+      "explanation": "Średnia gęstość Saturna to ok. 0,687 g/cm³, a wody 1 g/cm³. W odpowiednio wielkiej wannie Saturn by pływał."
+    },
+    {
+      "id": "2026-10-21-q2",
+      "ref": "fact-2",
+      "question": "Co według badania z 2011 r. pomaga uciszyć natrętne myśli o niedokończonej sprawie?",
+      "options": [
+        "Natychmiastowe dokończenie wszystkich zadań",
+        "Zapomnienie o niej przez sen",
+        "Wypicie kawy",
+        "Zapisanie planu, jak ją dokończyć"
+      ],
+      "answer": 3,
+      "explanation": "Masicampo i Baumeister pokazali, że sam konkretny plan zmniejsza natrętne myśli, choć zadanie wciąż czeka. Efekt Zeigarnik opisuje, że niedokończone sprawy pamiętamy lepiej."
+    },
+    {
+      "id": "2026-10-21-q3",
+      "ref": "fact-3",
+      "question": "Co potrafią kolibry dzięki budowie stawu barkowego?",
+      "options": [
+        "Zawisać w miejscu i latać do tyłu",
+        "Szybować bez ruchu skrzydeł przez wiele godzin",
+        "Nurkować głęboko pod wodą",
+        "Lecieć bez przerwy przez cały rok"
+      ],
+      "answer": 0,
+      "explanation": "Kolibry wytwarzają siłę nośną przy ruchu skrzydeł w przód i w tył, więc mogą zawisać i cofać się w locie. Nocą zapadają w odrętwienie, żeby oszczędzać energię."
+    },
+    {
+      "id": "2026-10-21-q4",
+      "ref": "otd-1",
+      "question": "Kim był Józef Franczak „Lalek”, zastrzelony 21 października 1963 r.?",
+      "options": [
+        "Przywódcą strajków w Stoczni Gdańskiej",
+        "Polskim lotnikiem z bitwy o Anglię",
+        "Ostatnim ukrywającym się z bronią żołnierzem antykomunistycznego podziemia",
+        "Pierwszym polskim kosmonautą"
+      ],
+      "answer": 2,
+      "explanation": "Franczak ukrywał się prawie 19 lat, od 1945 do 1963 r. Zginął w obławie SB i ZOMO w Majdanie Kozic Górnych."
+    },
+    {
+      "id": "2026-10-21-q5",
+      "ref": "otd-2",
+      "question": "Który wynalazek przyniósł Alfredowi Noblowi fortunę?",
+      "options": [
+        "Telefon",
+        "Dynamit",
+        "Żarówka",
+        "Silnik spalinowy"
+      ],
+      "answer": 1,
+      "explanation": "Nobel wynalazł dynamit w 1866 r. W testamencie z 1895 r. przeznaczył majątek na nagrody, pierwszy raz wręczone w 1901 r."
+    },
+    {
+      "id": "2026-10-21-q6",
+      "ref": "concept",
+      "question": "Na czym polega efekt domyślności?",
+      "options": [
+        "Ludzie zawsze wybierają najtańszą opcję",
+        "Ludzie wybierają to, co widzieli ostatnio",
+        "Ludzie unikają decyzji podejmowanych w grupie",
+        "Ludzie zwykle zostają przy opcji ustawionej z góry"
+      ],
+      "answer": 3,
+      "explanation": "Domyślna opcja wygrywa, bo zmiana wymaga wysiłku i decyzji. Dlatego automatyczny zapis do PPK czy automatyczne przedłużenie 800 plus tak mocno zmieniają zachowania."
+    },
+    {
+      "id": "2026-10-21-q7",
+      "ref": "book",
+      "question": "Jakie są cztery prawa budowania dobrych nawyków według Jamesa Cleara?",
+      "options": [
+        "Oczywiste, atrakcyjne, łatwe, satysfakcjonujące",
+        "Ambitne, mierzalne, terminowe, publiczne",
+        "Codzienne, długie, trudne, nagradzane",
+        "Ciche, samotne, poranne, regularne"
+      ],
+      "answer": 0,
+      "explanation": "Cztery prawa wynikają z pętli nawyku: wskazówka, pragnienie, reakcja i nagroda. Żeby zerwać ze złym nawykiem, odwraca się je: niewidoczne, nieatrakcyjne, trudne, niesatysfakcjonujące."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-10-21-r1",
+      "question": "Do czego do 2019 r. służył punkt potrójny wody?",
+      "options": [
+        "Do definiowania kelwina",
+        "Do pomiaru ciśnienia atmosferycznego",
+        "Do wyznaczania długości metra"
+      ],
+      "answer": 0,
+      "explanation": "1 kelwin był równy 1/273,16 temperatury punktu potrójnego wody. Od 2019 r. kelwin opiera się na stałej Boltzmanna."
+    },
+    {
+      "id": "2026-10-21-r2",
+      "question": "Kto zaprojektował Operę w Sydney?",
+      "options": [
+        "Brytyjczyk Norman Foster",
+        "Duńczyk Jørn Utzon",
+        "Australijczyk Glenn Murcutt"
+      ],
+      "answer": 1,
+      "explanation": "Jørn Utzon odszedł z budowy w 1966 r. po sporach z władzami. Operę otwarto w 1973 r., a dziś jest na liście UNESCO."
+    },
+    {
+      "id": "2026-10-21-r3",
+      "question": "Która odpowiedź na papierosa pokazuje, według Jamesa Cleara, zmianę tożsamości?",
+      "options": [
+        "„Nie, dzięki, próbuję rzucić”",
+        "„Może później”",
+        "„Nie, dzięki, nie palę”"
+      ],
+      "answer": 2,
+      "explanation": "Osoba, która mówi „próbuję rzucić”, wciąż myśli o sobie jak o palaczu. Ta, która mówi „nie palę”, zmieniła już to, kim jest."
+    }
+  ],
+  "evening": {
+    "question": "Które z czterech praw najbardziej pomógłby Wam we wspólnym nawyku: oczywiste, atrakcyjne, łatwe czy satysfakcjonujące?",
+    "hint": "Np. wspólne gotowanie: przepis na lodówce (oczywiste), ulubiona muzyka w kuchni (atrakcyjne), zakupy zrobione dzień wcześniej (łatwe), zdjęcie dania na wspólnej liście (satysfakcjonujące)."
+  }
+}

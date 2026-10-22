@@ -248,6 +248,17 @@ button.pill-link { border: 0; cursor: pointer; font-family: inherit; }
 .banner.archive-banner .btn { width: auto; justify-self: start; margin: 0; }
 .backup-banner { display: grid; gap: 10px; }
 .banner.backup-banner .btn { width: auto; margin: 0; }
+.week-banner { display: grid; gap: 10px; }
+.banner.week-banner .btn { width: auto; justify-self: start; margin: 0; }
+
+/* Podsumowanie tygodnia */
+.week-days { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.week-days li { display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; background: var(--surface); border-radius: 12px; padding: 10px 12px; box-shadow: var(--shadow); }
+.week-days li .eyebrow { margin: 0 0 2px; }
+.week-days li a { color: var(--ink); font-weight: 600; }
+.week-days .dot { width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--line, #ccc); display: grid; place-items: center; margin-top: 2px; }
+.week-days li.on .dot { background: var(--nurt); border-color: var(--nurt); color: #fff; }
+.week-days .dot svg { width: 14px; height: 14px; }
 
 .progress {
   height: 6px;

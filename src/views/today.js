@@ -24,6 +24,8 @@ import { sectionLabel, firstSentence, buildChapters, buildWarmup, estimateMinute
 import { smoothScroll, updateReadProgress, restorePosition, watchScroll } from './reading.js';
 import { streakWidget } from './streak.js';
 import { backupBanner } from './backup.js';
+import { weekBanner } from './week.js';
+import { weekBannerDue } from '../week.js';
 
 const kindLabel = (id) => FACT_KINDS.find((k) => k.id === id)?.label || id;
 
@@ -196,6 +198,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         : streakWidget(s),
       edition.intro ? h('p', { class: 'read intro' }, edition.intro) : null,
       !isArchive && backupDue() ? backupBanner() : null,
+      !isArchive && weekBannerDue(today, getState().weeks) ? weekBanner() : null,
       challengeBanner(),
       date < today && !isArchive
         ? h(

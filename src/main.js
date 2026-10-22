@@ -9,6 +9,7 @@ import { renderFavorites } from './views/favorites.js';
 import { renderTimeline, leaveTimeline } from './views/timeline.js';
 import { renderProfile } from './views/profile.js';
 import { renderPrepare } from './views/prepare.js';
+import { renderWeek } from './views/week.js';
 import { applyLook, getLook } from './look.js';
 import { refreshReminders } from './notify.js';
 import { parseChallenge, receiveChallenge } from './challenge.js';
@@ -71,6 +72,9 @@ async function route() {
   } else if (hash === 'dni') {
     setTab('dzis');
     await renderTimeline(root);
+  } else if (hash === 'tydzien') {
+    setTab('dzis');
+    await renderWeek(root, common);
   } else if (hash === 'przygotuj') {
     setTab('dzis');
     await renderPrepare(root, common);

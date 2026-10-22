@@ -420,6 +420,7 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
           h('div', { class: 'stat' }, h('strong', null, totalActiveDays()), h('span', null, 'dni nauki łącznie')),
           h('div', { class: 'stat' }, h('strong', null, count), h('span', null, `${plural(count, 'wydanie', 'wydania', 'wydań')} za Tobą`)),
         ),
+        h('a', { class: 'btn secondary', href: '#tydzien', style: 'justify-self:start' }, 'Podsumowanie tygodnia', icon('arrow')),
       ),
 
       h(

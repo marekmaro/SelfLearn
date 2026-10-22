@@ -11,6 +11,7 @@ import { favoriteEntries, filterFavorites, groupByDate, countByType, favoriteTex
 import { grade } from '../src/srs.js';
 import { getState, update, resetAll, exportJSON, importJSON, saveLocalEdition, localEditions, setGithubSettings, backupDue, markBackedUp, snoozeBackup, backupFileName } from '../src/store.js';
 import { buildChapters, buildWarmup, firstSentence, estimateMinutes } from '../src/chapters.js';
+import { weekEnd, weekDates, weekBannerDue, weekSummary, weekQuiz } from '../src/week.js';
 import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
 import { safePath } from './serve.mjs';
 import { join } from 'node:path';
@@ -292,6 +293,34 @@ test('Rozdziały wydania: kolejność, wybrane działy, rozgrzewka i czas czytan
   assert(warmup.length === Math.min(3, base.quiz?.length || 0), 'rozgrzewka z poprzedniego quizu');
   assert(warmup.every((q) => q.options.length <= 3 && q.options[q.answer] !== undefined), 'pytania a/b/c');
   assert(firstSentence('Prezydent podpisał ustawę ok. 15 osób. Druga część zdania.') === 'Prezydent podpisał ustawę ok. 15 osób.', 'pierwsze zdanie ze skrótem');
+});
+
+test('Podsumowanie tygodnia: tydzień do niedzieli, przypomnienie, statystyki i dobór pytań', () => {
+  assert(weekEnd('2026-10-25') === '2026-10-25', 'niedziela kończy swój tydzień');
+  assert(weekEnd('2026-10-26') === '2026-10-25', 'poniedziałek pokazuje poprzedni tydzień');
+  assert(weekEnd('2026-10-22') === '2026-10-18', 'czwartek');
+  assert(weekDates('2026-10-25')[0] === '2026-10-19', 'tydzień zaczyna się w poniedziałek');
+  assert(weekBannerDue('2026-10-25', {}) && weekBannerDue('2026-10-26', {}), 'brak przypomnienia w niedzielę i poniedziałek');
+  assert(!weekBannerDue('2026-10-22', {}), 'przypomnienie w czwartek');
+  assert(!weekBannerDue('2026-10-26', { '2026-10-25': { doneOn: '2026-10-25' } }), 'przypomnienie po zrobionym quizie');
+
+  const q = (id, answer = 0) => ({ id, question: id, options: ['a', 'b', 'c'], answer });
+  const e1 = { date: '2026-10-20', news: [{ title: 'Nagłówek 20' }], quiz: [q('a1'), q('a2'), q('a3')] };
+  const e2 = { date: '2026-10-22', news: [{ title: 'Nagłówek 22' }], quiz: [q('b1'), q('b2')] };
+  const progress = { '2026-10-20': { quiz: { a1: 0, a2: 1 } }, '2026-10-22': { quiz: {}, completedOn: '2026-10-22' } };
+  const state = { progress, activity: { '2026-10-20': 'rozgrzewka' }, saved: { '2026-10-20:fact-1': {}, '2026-10-01:x': {} } };
+  const sum = weekSummary('2026-10-25', [e1, e2], state, { '2026-10-22': 'Z indeksu' });
+  assert(sum.activeDays === 2 && sum.editions === 2, `dni: ${sum.activeDays}, wydania: ${sum.editions}`);
+  assert(sum.quizTotal === 5 && sum.quizAnswered === 2 && sum.quizRight === 1, 'wynik quizów');
+  assert(sum.saved === 1, 'ulubione spoza tygodnia');
+  assert(sum.days.find((d) => d.date === '2026-10-22').headline === 'Z indeksu', 'nagłówek z indeksu');
+  assert(sum.days.find((d) => d.date === '2026-10-20').headline === 'Nagłówek 20', 'nagłówek z wydania');
+
+  const quiz = weekQuiz([e1, e2], progress, 4);
+  assert(quiz.length === 4 && quiz[0].id === 'a2', `najpierw błędna odpowiedź: ${quiz.map((x) => x.id)}`);
+  assert(!quiz.some((x) => x.id === 'a1'), 'dobrze rozwiązane przed nierozwiązanymi');
+  assert(quiz.every((x) => x.date), 'pytanie bez daty wydania');
+  assert(JSON.stringify(weekQuiz([e1, e2], progress, 4)) === JSON.stringify(quiz), 'zestaw zmienia się między otwarciami');
 });
 
 test('Tryb offline: service worker zna wszystkie pliki aplikacji', () => {

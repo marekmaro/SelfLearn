@@ -1,0 +1,644 @@
+{
+  "date": "2026-10-22",
+  "intro": "Dziś m.in. Domański zostaje w rządzie, wyrok za tragedię na A1, tajemniczy obiekt w Lubaczowie, Putin zgadza się na nowe rozmowy i piąty dzień z „Atomowymi nawykami”: zasada dwóch minut.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Domański zostaje w rządzie. Tusk chce, by został wicepremierem",
+      "summary": "Sejm odrzucił wniosek PiS o wotum nieufności wobec ministra finansów i gospodarki Andrzeja Domańskiego. Za odwołaniem głosowało 204 posłów, przeciw 234, a do przyjęcia wniosku potrzeba było co najmniej 231 głosów. W czasie debaty premier Donald Tusk zapowiedział, że poprosi prezydenta Karola Nawrockiego o powołanie Domańskiego na wicepremiera, a w środę złożył taki wniosek. Szef Kancelarii Prezydenta Paweł Szefernaker skrytykował ten pomysł. Decyzja należy do prezydenta i na razie jej nie ma.",
+      "why": "Wicepremier od gospodarki miałby mocniejszą pozycję w rządzie przy budżecie i podatkach. Odpowiedź prezydenta pokaże, jak dziś układa się współpraca obu ośrodków władzy.",
+      "sources": [
+        {
+          "name": "Polsat News",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-10-20/wotum-nieufnosci-wobec-domanskiego-sejm-zdecydowal/"
+        },
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/biznes/z-kraju/sejm-zdecydowal-w-sprawie-wniosku-o-wotum-nieufnosci-dla-ministra-andrzeja-domanskiego-st9296892"
+        },
+        {
+          "name": "RMF24",
+          "url": "https://rmf24.pl/fakty/polityka/news-premier-zlozyl-wniosek-ws-nowego-wicepremiera-nie-pytajcie-j,nIdn,1022798"
+        }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Wypadek na A1: Sebastian M. skazany na 8 lat więzienia",
+      "summary": "Sąd w Piotrkowie Trybunalskim skazał w środę Sebastiana M. na 8 lat więzienia za wypadek na autostradzie A1 z września 2023 r. To najwyższa kara, jaką przewiduje przepis o spowodowaniu śmiertelnego wypadku. Według biegłych jego BMW jechało z prędkością 315–329 km/h i uderzyło w samochód, w którym zginęło małżeństwo i ich 5-letni syn. Sąd orzekł też 15 lat zakazu prowadzenia pojazdów i łącznie 2,5 mln zł zadośćuczynienia dla bliskich ofiar. O przedterminowe zwolnienie skazany będzie mógł się starać dopiero po odbyciu trzech czwartych kary. Wyrok nie jest prawomocny, obrona zapowiada apelację.",
+      "why": "Sprawa poruszyła całą Polskę i stała się symbolem walki z piractwem drogowym. Na prawomocny wyrok trzeba jeszcze poczekać.",
+      "sources": [
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/lodz/piotrkow-trybunalski-wyrok-w-sprawie-sebastiana-m-po-tragedii-na-a1-st9297809"
+        },
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/regiony/lodz/news-sebastian-m-uslyszal-wyrok-sad-skazal-go-w-sprawie-tragedii-,nIdn,1022830"
+        },
+        {
+          "name": "Gazeta Prawna",
+          "url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/11334530,sebastian-m-skazany-na-8-lat-wiezienia-jest-wyrok-w-sprawie-tragedii.html"
+        }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Obiekt przypominający drona spadł w Lubaczowie",
+      "summary": "W środę po godz. 13 na niezamieszkanej posesji w Lubaczowie na Podkarpaciu znaleziono niewielki obiekt przypominający drona w kształcie samolotu. Przy upadku rozpadł się na kilka części. Nikt nie został ranny i nic nie zostało zniszczone. Na miejscu pracowały policja, ABW, Służba Kontrwywiadu Wojskowego i Żandarmeria Wojskowa, a mieszkańców w promieniu ok. 150 m ewakuowano. Wstępnie wykluczono zagrożenie chemiczne, biologiczne i radiologiczne. Śledztwo przejęła prokuratura wojskowa w Rzeszowie. Nieoficjalnie mówi się o dronie przemytniczym, ale pochodzenia obiektu jeszcze nie ustalono.",
+      "why": "Lubaczów leży niedaleko granicy z Ukrainą. Każdy taki obiekt trzeba sprawdzić, bo może być zarówno przemytem, jak i prowokacją.",
+      "sources": [
+        {
+          "name": "Interia",
+          "url": "https://wydarzenia.interia.pl/podkarpackie/news-niezidentyfikowany-obiekt-spadl-w-podkarpackiem-sluzby-na-mi,nId,23561854"
+        },
+        {
+          "name": "zLubaczowa.pl",
+          "url": "https://zlubaczowa.pl/news/wydarzenia/20622-dron-spadl-w-lubaczowie-prokuratura-ujawnia-nowe-informacje-video"
+        },
+        {
+          "name": "Lublin112",
+          "url": "https://www.lublin112.pl/tajemniczy-obiekt-przypominajacy-drona-znaleziony-w-lubaczowie-trwaja-dzialania-sluzb/"
+        }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Tusk w Indiach. Dziś rozmowy z Narendrą Modim",
+      "summary": "Premier Donald Tusk jest z oficjalną wizytą w Indiach od 21 do 23 października. W czwartek w New Delhi spotka się z premierem Narendrą Modim i weźmie udział w polsko-indyjskim forum biznesowym. Rozmowy mają dotyczyć handlu i inwestycji, obronności, nowych technologii, energii odnawialnej, edukacji i kultury. W piątek premier pojedzie do Bengaluru na spotkania z firmami z branży IT i kosmicznej. Towarzyszy mu m.in. minister finansów i gospodarki Andrzej Domański oraz delegacja biznesowa. To jego druga wizyta w Indiach jako premiera, pierwsza była w 2010 r.",
+      "why": "Indie to najludniejszy kraj świata i jedna z najszybciej rosnących gospodarek. Od 2024 r. Polska i Indie mają status partnerstwa strategicznego.",
+      "sources": [
+        {
+          "name": "Devdiscourse",
+          "url": "https://www.devdiscourse.com/article/international/3994674-polish-pm-donald-tusk-to-visit-india-from-october-21-23-hold-bilateral-talks-with-pm-modi"
+        },
+        {
+          "name": "Deccan Chronicle",
+          "url": "https://www.deccanchronicle.com/amp/nation/modi-polish-pm-tusk-to-hold-talks-on-thursday-1997331"
+        }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Protesty w rocznicę wyroku TK. Ustawy o aborcji czekają na Senat",
+      "summary": "W czwartek w ok. 25 miastach, m.in. w Warszawie, Gdańsku, Łodzi i Wrocławiu, odbędą się protesty za dostępem do legalnej aborcji. Organizują je m.in. Fundacja Widzialne, Aborcyjny Dream Team, Ogólnopolski Strajk Kobiet, FEDERA i Akcja Demokracja. Mija sześć lat od wyroku Trybunału Konstytucyjnego z 22 października 2020 r., który uznał przesłankę ciężkich wad płodu za niezgodną z konstytucją. We wtorek Sejm uchwalił dwie ustawy: częściowo dekryminalizującą aborcję i przywracającą tę przesłankę. Teraz zajmie się nimi Senat, a potem prezydent.",
+      "why": "O losie obu ustaw zdecyduje prezydent. Ma 21 dni na podpis albo weto, a odrzucenie weta wymaga 3/5 głosów w Sejmie.",
+      "sources": [
+        {
+          "name": "OKO.press",
+          "url": "https://oko.press/ilez-mozna-czekac-na-legalna-aborcje-lista-protestow"
+        },
+        {
+          "name": "TVP Info",
+          "url": "https://www.tvp.info/96055269/najwazniejsze-wydarzenia-2210-zapowiedz-dnia-czwartek"
+        }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Putin zgadza się na rozmowy w listopadzie. Rosja uwolniła Amerykanina",
+      "summary": "Wysłannik USA Steve Witkoff rozmawiał w środę z Władimirem Putinem w Pałacu Konstantynowskim pod Petersburgiem. Doradca Kremla Jurij Uszakow powiedział, że Rosja zgadza się „co do zasady” na wznowienie trójstronnych rozmów z USA i Ukrainą po 10 listopada. Rzecznik Kremla Dmitrij Pieskow zastrzegł, że Moskwa przeanalizuje propozycje, ale potrwa to długo. Rosja uwolniła 74-letniego Amerykanina Stephena Hubbarda, skazanego za walkę po stronie Ukrainy. Donald Trump podkreślił, że stało się to bez wymiany więźniów. Rosyjski wysłannik Kirill Dmitrijew zapowiedział, że amerykańsko-rosyjskie porozumienie w sprawie oleju napędowego wejdzie w życie mimo krytyki z Europy.",
+      "why": "Przełomu nie ma, ale wyznaczono termin kolejnej rundy rozmów. Dla Polski ważne jest, czy porozumienia USA z Rosją nie osłabią presji na Moskwę.",
+      "sources": [
+        {
+          "name": "CNN",
+          "url": "https://www.cnn.com/2026/10/21/europe/us-envoy-witkoff-putin-talks-russia-ukraine-intl"
+        },
+        {
+          "name": "PBS NewsHour",
+          "url": "https://www.pbs.org/newshour/world/putin-agrees-to-resume-trilateral-russia-ukraine-u-s-talks-next-month"
+        },
+        {
+          "name": "NPR",
+          "url": "https://www.npr.org/2026/10/21/nx-s1-6009380/russia-releases-imprisoned-us-citizen"
+        }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Tajfun Champi skręca przed Tajwanem. Odwołane loty, alarm na Okinawie",
+      "summary": "Tajwan ogłosił w czwartek ostrzeżenie lądowe przed tajfunem Champi i odwołał 125 lotów, głównie krajowych. Według tajwańskiej służby meteorologicznej burza skręci na północ wcześniej, niż przewidywano, w okolicy japońskiej wyspy Ishigaki. Tajwan uniknie bezpośredniego uderzenia, ale na północy wyspy i w Yilan w piątek i sobotę może bardzo mocno padać. Japońska agencja meteorologiczna spodziewa się, że Champi przejdzie w pobliżu wysp Sakishima w piątek i sobotę. W środę rano wiatr w tajfunie osiągał ok. 278 km/h. USA i Japonia ograniczyły z tego powodu ćwiczenia wojskowe Keen Sword.",
+      "why": "Prognozy trasy tajfunów wciąż się zmieniają. Kto ma w tych dniach lot do Japonii lub na Tajwan, powinien sprawdzać komunikaty przewoźnika.",
+      "sources": [
+        {
+          "name": "Focus Taiwan",
+          "url": "https://focustaiwan.tw/society/202610220006"
+        },
+        {
+          "name": "Taipei Times",
+          "url": "https://www.taipeitimes.com/News/front/archives/2026/10/22/2003866405"
+        },
+        {
+          "name": "SWI swissinfo.ch",
+          "url": "https://swissinfo.ch/spa/el-tif%C3%B3n-champi-avanza-hacia-el-sur-de-jap%C3%B3n-y-pone-en-alerta-a-las-islas-de-okinawa/92254836"
+        }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Brazylia: w niedzielę druga tura, sondaże wyrównane",
+      "summary": "W niedzielę 25 października Brazylijczycy wybiorą prezydenta w drugiej turze. W pierwszej Flávio Bolsonaro, syn byłego prezydenta, zdobył 47,03% ważnych głosów, a urzędujący prezydent Luiz Inácio Lula da Silva 45,16%. W sondażu PoderData/Aya z 5–7 października Bolsonaro miał 53%, a Lula 47%, przy błędzie pomiaru 1,8 pkt proc. Wcześniejsze sondaże pokazywały remis albo minimalną przewagę Luli, więc wynik pozostaje otwarty.",
+      "why": "Brazylia to największa gospodarka Ameryki Łacińskiej. Od wyniku zależy jej polityka wobec Amazonii, klimatu i handlu, także z Unią Europejską.",
+      "sources": [
+        {
+          "name": "Buenos Aires Times",
+          "url": "https://batimes.com.ar/news/amp/latin-america/flavio-bolsonaro-inches-ahead-of-president-lula-in-brazil-election-poll.phtml"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/25/brazils-lula-and-flavio-bolsonaro-still-essentially-tied-in-new-poll"
+        }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Izrael przed wyborami 27 października",
+      "summary": "We wtorek 27 października w Izraelu odbędą się wybory parlamentarne. Według sondaży wynik będzie wyrównany. Blok premiera Benjamina Netanjahu rywalizuje przede wszystkim z centrową koalicją Gadiego Eisenkota, byłego szefa sztabu armii. Netanjahu prowadzi kampanię pod hasłem bezpieczeństwa i przekonuje, że tylko jego partia może je zagwarantować. Jest pierwszym urzędującym premierem Izraela, który odpowiada przed sądem karnym. Chodzi o zarzuty korupcyjne, którym zaprzecza.",
+      "why": "Wybory zdecydują, kto pokieruje Izraelem w czasie konfliktów w regionie, które wpływają też na ceny ropy i bezpieczeństwo Europy.",
+      "sources": [
+        {
+          "name": "Arab News",
+          "url": "https://www.arabnews.pk/middle-east/netanyahu-kicks-off-election-campaign-with-security-focused-speech-3001567"
+        }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Australia: posłanka potrącona samochodem przed swoim biurem",
+      "summary": "W poniedziałek przed biurem poselskim w Wangaratcie w stanie Wiktoria samochód terenowy potrącił niezależną posłankę Helen Haines. Według relacji kierowca uderzył ją dwukrotnie. 65-letnia polityczka przeszła operację w szpitalu w Melbourne i jest w stanie krytycznym. Policja zatrzymała 43-letniego kierowcę, a w jego aucie znaleziono nóż. Do sprawy włączono jednostki antyterrorystyczne, ale motyw nie jest znany. Premier Anthony Albanese powiedział, że to nie był wypadek.",
+      "why": "Ataki na polityków powtarzają się w wielu krajach. Rośnie przez to presja, by lepiej chronić posłów w biurach i na spotkaniach z wyborcami.",
+      "sources": [
+        {
+          "name": "ITV News",
+          "url": "https://www.itv.com/news/2026-10-19/australian-prime-minister-says-lawmaker-was-apparently-deliberately-hit-by-car"
+        },
+        {
+          "name": "The New Daily",
+          "url": "https://www.thenewdaily.com.au/news/2026/10/20/haines-struck-twice-by-car"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Starlink zwalnia na froncie. Spór o to, kto wydał polecenie",
+      "summary": "Ukraina zarzuca SpaceX, że bez ostrzeżenia ograniczyło działanie terminali Starlink poruszających się szybciej niż ok. 160 km/h. Utrudniło to pracę dronów przechwytujących, które zestrzeliwują rosyjskie drony. Elon Musk twierdzi, że o takich ograniczeniach decyduje wojsko USA, a ostatecznie prezydent. Według „The Telegraph”, który powołuje się na cztery źródła, to Musk zaproponował Trumpowi spowolnienie usługi. Trump zaprzecza, że on lub Musk za tym stoją. Republikański senator Thom Tillis domaga się wyjaśnienia działań Pentagonu, a Wołodymyr Zełenski nazwał ograniczenie błędem.",
+      "why": "Łączność satelitarna stała się jednym z kluczowych narzędzi wojny. Ta sprawa pokazuje, jak bardzo armia może zależeć od decyzji prywatnej firmy.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/14/ukraine-accuses-elon-musks-spacex-of-throttling-starlink-terminals"
+        },
+        {
+          "name": "Ukraińska Prawda",
+          "url": "https://www.pravda.com.ua/eng/news/2026/10/16/8058435/"
+        }
+      ]
+    },
+    {
+      "id": "gospodarka-1",
+      "section": "gospodarka",
+      "rank": 1,
+      "title": "Europarlament głosuje nad darmowymi uprawnieniami do emisji CO2 dla przemysłu",
+      "summary": "W czwartek Parlament Europejski w Strasburgu ma przyjąć stanowisko w sprawie przepisów o darmowych uprawnieniach do emisji CO2 w unijnym systemie ETS. Komisja środowiska przegłosowała wcześniej poprawkę, która zwiększa ich pulę dla przemysłu o 33 mln. Osobno komisja zajmowała się raportem europosła Adama Jarubasa ze specjalnymi rozwiązaniami dla producentów płytek ceramicznych. Według nieoficjalnych informacji mogłoby to dać tej branży ok. 2–3 mln dodatkowych uprawnień. Po głosowaniu przepisy będą jeszcze uzgadniane z rządami państw UE.",
+      "why": "Każde uprawnienie to prawo do emisji tony CO2. Darmowe uprawnienia obniżają koszty energochłonnych fabryk, w tym wielu zakładów w Polsce.",
+      "sources": [
+        {
+          "name": "WNP.pl",
+          "url": "https://www.wnp.pl/energia/o-krok-blizej-do-zwiekszenia-liczby-darmowych-uprawnien-ets-dla-przemyslu,1110667.html"
+        },
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/polityka/news-byc-albo-nie-byc-polskiego-przemyslu-ceramicznego-maja-byc-s,nIdn,1022537"
+        }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Apple zaprasza na 28 października. Pierwszy MacBook z ekranem dotykowym?",
+      "summary": "Apple zapowiedziało wydarzenie „Pro and Tell” na 28 października w Los Angeles (start o 10:00 czasu pacyficznego, czyli o 18:00 w Polsce). Firma nie zdradza szczegółów, ale według Marka Gurmana z Bloomberga najważniejszą nowością ma być przeprojektowany MacBook Pro z dotykowym ekranem OLED, pierwszym takim w historii Maców. Spodziewane są też iPad mini z ekranem OLED i nowe iMaki. Według Gurmana nie będzie klasycznej transmisji z prezentacją, tylko pokazy dla prasy i twórców. Doniesienia różnią się co do procesorów (M5 albo M6).",
+      "why": "Apple przez lata odrzucało ekrany dotykowe w laptopach. Jeśli zmieni zdanie, inni producenci laptopów też mogą zmienić kierunek.",
+      "sources": [
+        {
+          "name": "Macworld",
+          "url": "https://macworld.com/article/3264015/apple-teases-pro-and-tell-event-on-october-28.html"
+        },
+        {
+          "name": "9to5Mac",
+          "url": "https://9to5mac.com/2026/10/19/apple-announces-special-event-for-october-28"
+        },
+        {
+          "name": "Tom's Guide",
+          "url": "https://tomsguide.com/computing/macbooks/pro-and-tell-we-just-got-apples-oct-28-event-invite-heres-what-to-expect"
+        }
+      ]
+    },
+    {
+      "id": "nauka-1",
+      "section": "nauka",
+      "rank": 1,
+      "title": "Nowy gatunek olbrzymiej lilii wodnej odkryty dzięki zdjęciom z Instagrama",
+      "summary": "Botanik Carlos Magdalena z Ogrodów Kew zauważył na zdjęciach z Instagrama olbrzymie lilie wodne znad rzeki Inírida w Kolumbii. Autor zdjęć uważał je za znaną wiktorię amazońską, ale ten gatunek nie powinien rosnąć w tym miejscu. Badacze sprawdzili zdjęcia satelitarne i pojechali na miejsce. Opisali nowy gatunek Victoria colombiana w czasopiśmie „Phytotaxa”. W naturze może rosnąć zaledwie 30–50 roślin, dlatego naukowcy chcą wpisać gatunek na Czerwoną listę IUCN jako krytycznie zagrożony.",
+      "why": "Nawet duże rośliny wciąż czekają na odkrycie, a zdjęcia amatorów stają się ważnym źródłem danych dla nauki.",
+      "sources": [
+        {
+          "name": "BBC Wildlife (Discover Wildlife)",
+          "url": "https://www.discoverwildlife.com/plant-facts/water-plants/victoria-colombiana-waterlily-discovery"
+        },
+        {
+          "name": "IFLScience",
+          "url": "https://www.iflscience.com/new-species-of-waterlily-discovered-by-scrolling-instagram-may-already-be-critically-endangered-84889"
+        }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Cukier z czerwonego mięsa a ryzyko cukrzycy. Wstępne wyniki",
+      "summary": "Francuscy badacze przeanalizowali dane prawie 90 tys. dorosłych z badania NutriNet-Santé, obserwowanych średnio przez ok. 7 lat. Osoby, które jadły najwięcej Neu5Gc, cukru obecnego głównie w wołowinie i jagnięcinie, częściej chorowały na cukrzycę typu 2. W grupie o najwyższym spożyciu ryzyko było o 63% wyższe niż w grupie o najniższym. Ludzki organizm sam nie wytwarza Neu5Gc, a układ odpornościowy może na niego reagować stanem zapalnym. Wyniki przedstawiono na kongresie EASD i nie przeszły jeszcze recenzji. Badanie jest obserwacyjne, więc nie dowodzi, że to Neu5Gc wywołuje chorobę.",
+      "why": "To kolejny sygnał, że warto ograniczać czerwone mięso, ale pojedyncze badanie obserwacyjne nie wystarczy, by wskazać winnego.",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/10/261017230031.htm"
+        },
+        {
+          "name": "Medical News Today",
+          "url": "https://www.medicalnewstoday.com/articles/sugar-red-meat-linked-higher-type-2-diabetes-risk-study"
+        }
+      ]
+    },
+    {
+      "id": "psychologia-1",
+      "section": "psychologia",
+      "rank": 1,
+      "title": "Mózg przewiduje przyszłość, a Freud miał podobny pomysł",
+      "summary": "Badacze z Uniwersytetu w Oslo w czasopiśmie „Entropy” zestawili teorię przetwarzania predykcyjnego z ideami psychoanalizy. Według tej teorii mózg nieustannie przewiduje, co się za chwilę wydarzy, i koryguje się, gdy coś go zaskoczy. Autorzy przekonują, że to przypomina pojęcia Freuda, takie jak projekcja, przeniesienie i nieświadomość: patrzymy na świat przez pryzmat wcześniejszych oczekiwań. Ich zdaniem może to wyjaśniać, dlaczego tak trudno zerwać ze szkodliwymi schematami myślenia. To praca teoretyczna, a nie nowe doświadczenie.",
+      "why": "Jeśli nasze reakcje to w dużej mierze stare przewidywania, terapia polega na ich cierpliwym aktualizowaniu. Podobnie działa zmiana nawyków z książki tygodnia.",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://sciencedaily.com/releases/2026/10/261018084028.htm"
+        },
+        {
+          "name": "The Debrief",
+          "url": "https://thedebrief.org/modern-neuroscience-is-starting-to-look-surprisingly-similar-to-freuds-theory-of-the-mind/"
+        }
+      ]
+    },
+    {
+      "id": "srodowisko-1",
+      "section": "srodowisko",
+      "rank": 1,
+      "title": "ONZ: przekroczenia progu 1,5°C nie da się już uniknąć",
+      "summary": "Program Środowiskowy ONZ (UNEP) opublikował w środę doroczny raport o luce emisyjnej. Według niego nie da się już uniknąć przekroczenia progu 1,5°C ocieplenia. Przy obecnej polityce świat zmierza do ok. 2,8°C ocieplenia do 2100 r., a jeśli państwa spełnią nowe deklaracje, do ok. 2,6°C. Żeby ograniczyć najgorsze skutki, emisje musiałyby spaść o 18% do 2030 r. i o 45% do 2035 r. w porównaniu z 2025 r. W 2025 r. światowe emisje utrzymały się blisko rekordu z 2024 r. Spośród dużych gospodarek wyraźnie wzrosły tylko w USA.",
+      "why": "Raport ukazał się przed listopadowym szczytem klimatycznym COP w Turcji. Każda dziesiąta część stopnia oznacza więcej upałów, susz i powodzi, także w Polsce.",
+      "sources": [
+        {
+          "name": "TIME",
+          "url": "https://time.com/article/2026/10/21/un-emissions-gap-report-what-to-know/"
+        },
+        {
+          "name": "UNRIC",
+          "url": "https://unric.org/en/unep-emissions-gap-report-2026-1-5-degree-overshoot/"
+        },
+        {
+          "name": "KRCU (NPR)",
+          "url": "https://www.krcu.org/2026-10-21/united-nations-report-highlights-significant-increase-in-u-s-climate-pollution"
+        }
+      ]
+    },
+    {
+      "id": "muzyka-1",
+      "section": "muzyka",
+      "rank": 1,
+      "title": "Dziś finał Konkursu Wieniawskiego. Gra trójka skrzypków",
+      "summary": "W czwartek wieczorem w Poznaniu odbędzie się finał 17. Międzynarodowego Konkursu Skrzypcowego im. Henryka Wieniawskiego. Zagra w nim troje skrzypków: 26-letnia SooBeen Lee z Korei Południowej, 19-letnia Jinzhu Li z Chin i 21-letni Bohdan Luts z Ukrainy, urodzony we Lwowie. Lee i Li wykonają I Koncert skrzypcowy fis-moll op. 14 Wieniawskiego, a Luts jego II Koncert d-moll op. 22. Zwycięzca dostanie 60 tys. euro i na dwa lata skrzypce Stradivariusa z 1727 r. Za drugie miejsce jest 30 tys. euro, za trzecie 15 tys. euro.",
+      "why": "Finał można obejrzeć za darmo w internecie, a wyniki poznamy jeszcze dziś wieczorem.",
+      "sources": [
+        {
+          "name": "Rzeczpospolita",
+          "url": "https://www.rp.pl/muzyka-klasyczna/art45376481-konkurs-wieniawskiego-zostala-tylko-trojka-a-na-zwyciezce-czeka-stradivarius"
+        },
+        {
+          "name": "Violinist.com",
+          "url": "https://www.violinist.com/blog/laurie/202610/30896/"
+        }
+      ]
+    },
+    {
+      "id": "sport-1",
+      "section": "sport",
+      "rank": 1,
+      "title": "Liga Mistrzów: Como rozbiło Manchester United. Dziś Lech i Jagiellonia",
+      "summary": "W środę zakończyła się trzecia kolejka fazy ligowej Ligi Mistrzów. Como pokonało Manchester United 4:1, a Real Madryt wygrał z RB Lipsk 4:1. Bayern Monachium zremisował z Arsenalem 2:2, Galatasaray wygrało w Lille 4:2, a Inter Mediolan pokonał Szachtar Donieck 1:0. LASK Linz wygrał w Lizbonie ze Sportingiem 3:2, a Aston Villa pokonała Vikinga 3:1. W czwartek w Lidze Europy o 18:45 Lech Poznań podejmie Sunderland, a o 21:00 Jagiellonia zagra w Białymstoku z Anderlechtem.",
+      "why": "Lech po dwóch porażkach zamyka tabelę Ligi Europy, więc mecz z Sunderlandem może zdecydować o jego dalszych szansach.",
+      "sources": [
+        {
+          "name": "Polsat Sport",
+          "url": "https://www.polsatsport.pl/wiadomosc/2026-10-21/liga-mistrzow-wyniki-meczow-21-pazdziernika-tabela/"
+        },
+        {
+          "name": "Eurosport",
+          "url": "https://eurosport.tvn24.pl/pilka-nozna/liga-mistrzow/2026-2027/como-pokonalo-manchester-united-a-galatasaray-wygralo-z-lille-w-3.-kolejce-ligi-mistrzow-20262027_sto23347924/story.shtml"
+        },
+        {
+          "name": "Flashscore",
+          "url": "https://www.flashscore.pl/wiadomosci/pi-ka-nozna-liga-europy-lech-poznan-w-lidze-europy-mecze-przeciwnicy-i-transmisje-w-polsce/z7ldPjzS/"
+        }
+      ]
+    },
+    {
+      "id": "podroze-1",
+      "section": "podroze",
+      "rank": 1,
+      "title": "W niedzielę zmiana czasu. Przez tydzień do Nowego Jorku tylko 5 godzin różnicy",
+      "summary": "W nocy z soboty na niedzielę, 25 października, o 3:00 cofamy zegarki na 2:00, więc śpimy godzinę dłużej. Telefony i komputery przestawią się same, ale zegary w piekarniku, samochodzie i tradycyjne budziki trzeba zmienić ręcznie. Stany Zjednoczone zmieniają czas dopiero tydzień później, 1 listopada. Do tego czasu różnica między Polską a Nowym Jorkiem wyniesie 5 godzin zamiast 6. Obecne rozporządzenie premiera wyznacza terminy zmian czasu na lata 2022–2026.",
+      "why": "Jeśli w najbliższych dniach masz lot albo rozmowę z kimś w USA, sprawdź godziny dwa razy. Po zmianie czasu rano będzie jaśniej, a wieczorem szybciej zrobi się ciemno.",
+      "sources": [
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/polska/news-kiedy-dokladnie-zmiana-czasu-na-zimowy-w-2026-roku-znana-jes,nIdn,1015180"
+        },
+        {
+          "name": "TVP Info",
+          "url": "https://www.tvp.info/95995455/kiedy-zmiana-czasu-na-zimowy-2026-wtedy-przestawiamy-zegarki"
+        }
+      ]
+    },
+    {
+      "id": "pokemon-1",
+      "section": "pokemon",
+      "rank": 1,
+      "title": "Pokémon TCG: Flowing Fists w lutym, Deck Crafter's Collection jutro",
+      "summary": "Pierwszym angielskim dodatkiem Pokémon TCG w 2027 r. będzie „Flowing Fists”, zapowiedziany na 5 lutego. To odpowiednik japońskiego dodatku „Aura Seeker”, który ukaże się 27 listopada. W piątek 23 października trafi do sprzedaży Deck Crafter's Collection, zestaw 40 kart z popularnymi kartami do budowy talii, m.in. Meowth ex. W Kalifornii policja potwierdziła kradzież kart o wartości ok. 963 tys. dolarów, w tym ocenionych przez PSA kart Pokémon, z ciężarówki zaparkowanej przy siedzibie tej firmy.",
+      "why": "Kto składa talie, w piątek dostanie gotowy zestaw popularnych kart. Kolekcjonerzy wysyłający karty do oceny powinni pamiętać o ubezpieczeniu przesyłki.",
+      "sources": [
+        {
+          "name": "Wargamer",
+          "url": "https://wargamer.com/pokemon-trading-card-game/flowing-fists"
+        },
+        {
+          "name": "CBR",
+          "url": "https://cbr.com/pokemon-tcg-30th-anniversary-release-october-23"
+        },
+        {
+          "name": "PC Gamer",
+          "url": "https://pcgamer.com/gaming-industry/nearly-usd1-million-worth-of-psa-graded-pokemon-and-other-tcg-have-been-stolen-right-outside-psas-headquarters"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "nauka",
+      "title": "Banany są lekko promieniotwórcze",
+      "body": "Banany zawierają dużo potasu, a niewielka część naturalnego potasu to promieniotwórczy izotop potas-40. Zjedzenie jednego banana to dawka rzędu 0,1 mikrosiwerta. Fizycy ukuli nawet żartobliwą jednostkę „dawka bananowa”, żeby obrazowo porównywać małe dawki promieniowania. Nie ma się czego bać: organizm utrzymuje stały poziom potasu, a nadmiar usuwa, więc promieniotwórczość z bananów się w nim nie kumuluje.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Banana_equivalent_dose"
+      }
+    },
+    {
+      "id": "fact-2",
+      "kind": "przyroda",
+      "title": "Wombaty robią kupę w kształcie kostek",
+      "body": "Australijskie wombaty jako jedyne znane zwierzęta wydalają odchody w kształcie sześcianów. Badacze ustalili, że kształt powstaje w końcowym odcinku jelita, którego ściany mają różną elastyczność i formują kanciaste brzegi. Wombaty układają takie kostki na kamieniach i kłodach, żeby oznaczać terytorium. Kanciaste prawdopodobnie nie staczają się tak łatwo. Za wyjaśnienie tej zagadki zespół naukowców dostał w 2019 r. satyryczną Nagrodę Ig Nobla z fizyki.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Wombat"
+      }
+    },
+    {
+      "id": "fact-3",
+      "kind": "historia",
+      "title": "Najkrótsza wojna w historii trwała ok. 40 minut",
+      "body": "27 sierpnia 1896 r. Wielka Brytania wypowiedziała wojnę sułtanatowi Zanzibaru, gdy władzę przejął tam sułtan Khalid ibn Barghasz bez zgody Brytyjczyków. Okręty Royal Navy ostrzelały pałac sułtana, a po 38–45 minutach wywieszono białą flagę. To najkrótsza znana wojna. Po stronie Zanzibaru zginęło lub zostało rannych ok. 500 osób, a po brytyjskiej ciężko ranny został jeden marynarz.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War"
+      }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1939,
+      "title": "Sowieckie „wybory” na okupowanych ziemiach II RP",
+      "body": "22 października 1939 r. na wschodnich ziemiach Polski zajętych przez Armię Czerwoną przeprowadzono wybory do Zgromadzeń Ludowych Zachodniej Ukrainy i Zachodniej Białorusi. Odbyły się w atmosferze terroru i pod kontrolą NKWD, a ich wynik był z góry ustalony. Wybrane zgromadzenia poprosiły o przyłączenie tych ziem do ZSRS, a Rada Najwyższa ZSRS zatwierdziła to dekretami z 1 i 2 listopada 1939 r. Tak Sowieci próbowali nadać aneksji pozór legalności. Rząd RP na uchodźstwie jej nie uznał.",
+      "source": {
+        "name": "Dzieje.pl: kalendarz historyczny",
+        "url": "https://dzieje.pl/kalendarz-historyczny/22/10"
+      }
+    },
+    {
+      "id": "otd-2",
+      "year": 1797,
+      "title": "Pierwszy skok ze spadochronem z balonu",
+      "body": "22 października 1797 r. Francuz André-Jacques Garnerin wzniósł się balonem nad paryskim parkiem Monceau. Na wysokości ok. 900 m odciął kosz od balonu i opadł na jedwabnym spadochronie bez sztywnej ramy. Kosz kołysał się podczas opadania tak mocno, że lądowanie było twarde, ale Garnerin wyszedł z niego bez szwanku. To pierwszy udokumentowany skok spadochronowy z dużej wysokości.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Andr%C3%A9-Jacques_Garnerin"
+      }
+    },
+    {
+      "id": "otd-3",
+      "year": 1962,
+      "title": "Kennedy ogłasza blokadę Kuby",
+      "body": "Wieczorem 22 października 1962 r. prezydent USA John F. Kennedy w orędziu telewizyjnym ujawnił, że ZSRS buduje na Kubie wyrzutnie rakiet zdolnych do ataku jądrowego. Ogłosił „kwarantannę”, czyli morską blokadę wyspy: statki z bronią ofensywną miały być zawracane. Ostrzegł, że atak rakietowy z Kuby zostanie uznany za atak ZSRS na USA. Kryzys, który przybliżył świat do wojny jądrowej, zakończył się kilka dni później wycofaniem rakiet.",
+      "source": {
+        "name": "JFK Library",
+        "url": "https://www.jfklibrary.org/learn/about-jfk/historic-speeches/address-during-the-cuban-missile-crisis"
+      }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Intencje implementacyjne",
+    "definition": "Plan w formie „kiedy X, zrobię Y”, który z góry określa, co, kiedy i gdzie zrobisz. Dzięki niemu łatwiej przejść od chęci do działania.",
+    "origin": "Pojęcie wprowadził psycholog Peter Gollwitzer w latach 90. W brytyjskim badaniu Milne, Orbell i Sheeran z 2002 r. 91% osób, które zapisały, kiedy i gdzie będą ćwiczyć, ćwiczyło co najmniej raz w tygodniu. W grupach bez takiego planu było to ok. 35–38%.",
+    "examples": [
+      "„W poniedziałek, środę i piątek o 7:15 w salonie robię 10 przysiadów” zamiast „będę więcej ćwiczyć”.",
+      "„Jeśli w łóżku sięgnę po telefon, odkładam go i biorę książkę”: plan na sytuację, w której zwykle się poddajesz.",
+      "Z dzisiejszych wiadomości: „W sobotę, kiedy idę spać, przestawiam zegar w piekarniku”, i zmiana czasu niczego nie zaskoczy.",
+      "Z książki tygodnia: łączenie nawyków to intencja implementacyjna, w której „kiedy” to nawyk, który już masz."
+    ],
+    "source": {
+      "name": "Wikipedia (ang.)",
+      "url": "https://en.wikipedia.org/wiki/Implementation_intention"
+    }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "atomowe-nawyki",
+    "title": "Atomowe nawyki",
+    "author": "James Clear",
+    "day": 5,
+    "days": 7,
+    "ideaTitle": "Zasada dwóch minut i łączenie nawyków",
+    "idea": "Zasada dwóch minut mówi, że nowy nawyk na początku ma zajmować mniej niż dwie minuty. „Czytaj przed snem” zamienia się w „przeczytaj jedną stronę”, a „biegaj trzy razy w tygodniu” w „zawiąż buty do biegania”. Chodzi o to, żeby opanować samo pojawianie się, bo nawyk trzeba najpierw ustanowić, a dopiero potem ulepszać. Łączenie nawyków (habit stacking) przyczepia nowe zachowanie do starego według wzoru: „Po [obecny nawyk] zrobię [nowy nawyk]”. Przykład z książki: „Po nalaniu porannej kawy będę medytować przez minutę”. Stary nawyk staje się wskazówką dla nowego.",
+    "moral": "Zaczynaj mniejszym krokiem, niż wydaje się sensowne, i przyczep go do czegoś, co już robisz każdego dnia.",
+    "action": "Napisz jedno zdanie: „Po ___ zrobię ___ przez dwie minuty”. Zrób to już jutro, nawet jeśli wyda się śmiesznie małe.",
+    "source": {
+      "name": "James Clear: Habit Stacking",
+      "url": "https://jamesclear.com/habit-stacking"
+    }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-22-q1",
+      "ref": "fact-1",
+      "question": "Dlaczego banany są lekko promieniotwórcze?",
+      "options": [
+        "Bo rosną w glebie wulkanicznej",
+        "Bo zawierają uran",
+        "Bo zawierają potas, a w nim izotop potas-40",
+        "Bo dojrzewają w promieniach UV"
+      ],
+      "answer": 2,
+      "explanation": "Niewielka część naturalnego potasu to potas-40. Jeden banan to dawka rzędu 0,1 mikrosiwerta, a organizm i tak utrzymuje stały poziom potasu."
+    },
+    {
+      "id": "2026-10-22-q2",
+      "ref": "fact-2",
+      "question": "Co jest niezwykłego w odchodach wombatów?",
+      "options": [
+        "Mają kształt sześcianów",
+        "Świecą w ciemności",
+        "Są całkowicie bezwonne",
+        "Wombaty wydalają je tylko raz w tygodniu"
+      ],
+      "answer": 0,
+      "explanation": "Kształt powstaje w końcowym odcinku jelita o różnej elastyczności ścian. Kanciaste kostki nie staczają się, więc dobrze znaczą terytorium."
+    },
+    {
+      "id": "2026-10-22-q3",
+      "ref": "fact-3",
+      "question": "Ile trwała wojna brytyjsko-zanzibarska z 1896 r.?",
+      "options": [
+        "Trzy dni",
+        "Tydzień",
+        "Dwanaście godzin",
+        "Ok. 40 minut"
+      ],
+      "answer": 3,
+      "explanation": "Po 38–45 minutach ostrzału pałacu sułtana wywieszono białą flagę. To najkrótsza znana wojna."
+    },
+    {
+      "id": "2026-10-22-q4",
+      "ref": "otd-1",
+      "question": "Po co Sowieci przeprowadzili „wybory” 22 października 1939 r. na zajętych ziemiach Polski?",
+      "options": [
+        "Żeby wybrać polski rząd emigracyjny",
+        "Żeby nadać aneksji tych ziem pozór legalności",
+        "Żeby przeprowadzić reformę rolną",
+        "Żeby wyłonić delegatów do Ligi Narodów"
+      ],
+      "answer": 1,
+      "explanation": "Wybrane pod kontrolą NKWD zgromadzenia poprosiły o włączenie ziem do ZSRS, co zatwierdzono dekretami z 1 i 2 listopada 1939 r."
+    },
+    {
+      "id": "2026-10-22-q5",
+      "ref": "otd-2",
+      "question": "Czego dokonał André-Jacques Garnerin 22 października 1797 r.?",
+      "options": [
+        "Pierwszego lotu balonem na ogrzane powietrze",
+        "Przelotu balonem nad kanałem La Manche",
+        "Wynalezienia sterowca",
+        "Pierwszego udokumentowanego skoku ze spadochronem z balonu"
+      ],
+      "answer": 3,
+      "explanation": "Na wysokości ok. 900 m nad parkiem Monceau odciął kosz od balonu i opadł na jedwabnym spadochronie."
+    },
+    {
+      "id": "2026-10-22-q6",
+      "ref": "concept",
+      "question": "Które postanowienie jest intencją implementacyjną?",
+      "options": [
+        "„W poniedziałki o 7:15 w salonie robię 10 przysiadów”",
+        "„Od jutra będę zdrowiej żyć”",
+        "„Chcę być w lepszej formie”",
+        "„Kiedyś zacznę biegać”"
+      ],
+      "answer": 0,
+      "explanation": "Intencja implementacyjna określa, co, kiedy i gdzie zrobisz. Takie plany wielokrotnie zwiększały szansę, że ludzie naprawdę zaczną ćwiczyć."
+    },
+    {
+      "id": "2026-10-22-q7",
+      "ref": "book",
+      "question": "Co mówi zasada dwóch minut Jamesa Cleara?",
+      "options": [
+        "Każdy nawyk trzeba ćwiczyć dokładnie dwie minuty dziennie",
+        "Przed nowym nawykiem trzeba odczekać dwie minuty",
+        "Nowy nawyk na początku ma zajmować mniej niż dwie minuty",
+        "Po dwóch minutach nawyk staje się automatyczny"
+      ],
+      "answer": 2,
+      "explanation": "„Czytaj przed snem” zamienia się w „przeczytaj jedną stronę”. Najpierw trzeba się nauczyć po prostu zaczynać, a dopiero potem ulepszać nawyk."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-10-22-r1",
+      "question": "Co by się stało z Saturnem w ogromnej wannie z wodą?",
+      "options": [
+        "Zatonąłby",
+        "Pływałby",
+        "Rozpuściłby się"
+      ],
+      "answer": 1,
+      "explanation": "Średnia gęstość Saturna to ok. 0,687 g/cm³, mniej niż gęstość wody. To jedyna taka planeta w Układzie Słonecznym."
+    },
+    {
+      "id": "2026-10-22-r2",
+      "question": "Kto zaprojektował nowojorskie Muzeum Guggenheima ze spiralną rampą?",
+      "options": [
+        "Frank Lloyd Wright",
+        "Le Corbusier",
+        "Ludwig Mies van der Rohe"
+      ],
+      "answer": 0,
+      "explanation": "Wright pracował nad projektem ponad 15 lat i zmarł pół roku przed otwarciem muzeum w październiku 1959 r."
+    },
+    {
+      "id": "2026-10-22-r3",
+      "question": "Który przykład najlepiej pokazuje efekt domyślności?",
+      "options": [
+        "Wybór najtańszego produktu w sklepie",
+        "Kupowanie tego, co poleca znajomy",
+        "Większość pracowników zostaje w PPK, do którego zapisano ich automatycznie"
+      ],
+      "answer": 2,
+      "explanation": "Ludzie zwykle zostają przy opcji ustawionej z góry. Dlatego automatyczny zapis do PPK tak mocno wpływa na liczbę oszczędzających."
+    }
+  ],
+  "evening": {
+    "question": "Ułóżcie razem jedno zdanie „Po … zrobimy …” dla wspólnego nawyku, który zajmie mniej niż dwie minuty. Od kiedy zaczynacie?",
+    "hint": "Np. „Po kolacji każde z nas mówi jedną rzecz, za którą jest dziś wdzięczne” albo „Po umyciu zębów czytamy po jednej stronie”."
+  }
+}

@@ -246,6 +246,8 @@ button.pill-link { border: 0; cursor: pointer; font-family: inherit; }
 .day-step.timeline-link .icon { color: var(--nurt); }
 .archive-banner { display: grid; gap: 10px; }
 .banner.archive-banner .btn { width: auto; justify-self: start; margin: 0; }
+.backup-banner { display: grid; gap: 10px; }
+.banner.backup-banner .btn { width: auto; margin: 0; }
 
 .progress {
   height: 6px;

@@ -12,7 +12,10 @@ import {
   importJSON,
   githubSettings,
   setGithubSettings,
+  markBackedUp,
 } from '../store.js';
+import { downloadBackup } from './backup.js';
+import { formatShort } from '../dates.js';
 import { loadIndex, forgetEdition } from '../data.js';
 import { icsFile, googleCalendarUrl } from '../calendar.js';
 import { checkAccess } from '../github.js';
@@ -295,6 +298,27 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
     );
   }
 
+  function restoreBackup(text) {
+    try {
+      const result = importJSON(text);
+      if (result.editions) forgetEdition('');
+      applyLook();
+      toast(
+        [
+          'Dane wczytane',
+          result.editions ? `w tym ${result.editions} ${plural(result.editions, 'wydanie', 'wydania', 'wydań')} z telefonu` : '',
+          result.needsToken ? 'token GitHuba wklej ponownie w „Publikowaniu”' : '',
+        ]
+          .filter(Boolean)
+          .join(', ') + '.',
+      );
+      onChange?.();
+      render();
+    } catch (err) {
+      toast(err.message || 'To nie jest poprawna kopia.');
+    }
+  }
+
   function render() {
     const profile = getState().profile;
     const count = completedCount();
@@ -428,9 +452,23 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
         { class: 'section', id: 'dane' },
         h('h2', null, 'Dane'),
         h('p', { class: 'muted', style: 'margin:0' }, 'Postępy są zapisane tylko na tym telefonie. Kopia pozwala przenieść je na nowy telefon: obejmuje profil, postępy, powtórki, ulubione i wydania przygotowane na tym telefonie. Token GitHuba nie trafia do kopii, więc na nowym telefonie trzeba go wkleić ponownie.'),
+        h('p', { class: 'small muted', style: 'margin:0' }, backupStatus(getState().settings || {})),
         h(
           'div',
           { class: 'inline-actions' },
+          h(
+            'button',
+            {
+              type: 'button',
+              class: 'btn',
+              onclick: () => {
+                downloadBackup();
+                toast('Kopia zapisana do pliku');
+                render();
+              },
+            },
+            'Zapisz kopię do pliku',
+          ),
           h('a', { class: 'btn secondary', href: '#ankieta' }, 'Wypełnij ankietę ponownie'),
           h(
             'button',
@@ -440,6 +478,7 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
               onclick: async () => {
                 try {
                   await navigator.clipboard.writeText(exportJSON());
+                  markBackedUp();
                   toast('Kopia skopiowana do schowka');
                 } catch {
                   toast('Nie udało się skopiować. Spróbuj w innej przeglądarce.');
@@ -456,34 +495,24 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
           h(
             'div',
             { class: 'field' },
-            h('label', { for: 'import-data', class: 'small muted' }, 'Wklej skopiowaną kopię'),
+            h('label', { for: 'import-file', class: 'small muted' }, 'Wybierz plik kopii'),
+            h('input', {
+              id: 'import-file',
+              type: 'file',
+              accept: '.json,application/json',
+              onchange: async (e) => {
+                const file = e.target.files?.[0];
+                if (file) restoreBackup(await file.text());
+              },
+            }),
+            h('label', { for: 'import-data', class: 'small muted' }, 'albo wklej skopiowaną kopię'),
             h('textarea', { id: 'import-data' }),
             h(
               'button',
               {
                 type: 'button',
                 class: 'btn secondary',
-                onclick: () => {
-                  const text = root.querySelector('#import-data').value;
-                  try {
-                    const result = importJSON(text);
-                    if (result.editions) forgetEdition('');
-                    applyLook();
-                    toast(
-                      [
-                        'Dane wczytane',
-                        result.editions ? `w tym ${result.editions} ${plural(result.editions, 'wydanie', 'wydania', 'wydań')} z telefonu` : '',
-                        result.needsToken ? 'token GitHuba wklej ponownie w „Publikowaniu”' : '',
-                      ]
-                        .filter(Boolean)
-                        .join(', ') + '.',
-                    );
-                    onChange?.();
-                    render();
-                  } catch (err) {
-                    toast(err.message || 'To nie jest poprawna kopia.');
-                  }
-                },
+                onclick: () => restoreBackup(root.querySelector('#import-data').value),
               },
               'Wczytaj',
             ),
@@ -510,4 +539,12 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
   const nav = root.querySelector('.page-nav');
   if (nav) document.documentElement.style.setProperty('--chapters-h', `${nav.offsetHeight}px`);
   if (focus) root.querySelector(`#${focus}`)?.scrollIntoView({ block: 'start' });
+}
+
+// Kiedy była ostatnia kopia i czy przeglądarka obiecała nie czyścić danych.
+function backupStatus(settings) {
+  const last = settings.lastBackup ? `Ostatnia kopia: ${formatShort(settings.lastBackup)}.` : 'Nie zapisano jeszcze kopii.';
+  if (settings.persisted === true) return `${last} Przeglądarka nie usunie tych danych sama.`;
+  if (settings.persisted === false) return `${last} Przeglądarka może kiedyś usunąć te dane, więc zapisuj kopię co tydzień.`;
+  return last;
 }

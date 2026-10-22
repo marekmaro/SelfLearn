@@ -1,5 +1,5 @@
 // Start aplikacji i prosty router oparty na #kotwicach.
-import { getState } from './store.js';
+import { getState, requestPersistence } from './store.js';
 import { dueCards } from './srs.js';
 import { todayISO, isISODate } from './dates.js';
 import { renderOnboarding } from './views/onboarding.js';
@@ -141,6 +141,9 @@ document.addEventListener('visibilitychange', () => {
 });
 
 route();
+
+// Prośba, żeby przeglądarka sama nie czyściła postępów (Chrome zgadza się zwykle po instalacji aplikacji).
+if (getState().profile) requestPersistence();
 
 // Tryb offline i instalacja na ekranie telefonu.
 try {

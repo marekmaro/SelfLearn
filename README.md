@@ -69,7 +69,7 @@ Aplikacja to zwykłe pliki statyczne, więc działa na Vercelu albo na GitHub Pa
 
 Plik `.nojekyll` wyłącza przetwarzanie Jekyll, więc pliki trafiają na stronę bez zmian.
 
-Postępy są zapisane osobno dla każdego adresu. Przy przenosinach z jednego adresu na drugi (albo na nowy telefon) użyj **Profil → Skopiuj kopię danych** i **Wczytaj kopię danych**. Kopia obejmuje profil, postępy, powtórki, ulubione i wydania przygotowane tylko na tym telefonie. Token GitHuba nie trafia do kopii: na nowym telefonie trzeba go wkleić ponownie, a wczytanie kopii nie kasuje tokenu, który już jest zapisany.
+Postępy są zapisane osobno dla każdego adresu i tylko na tym telefonie. Aplikacja prosi przeglądarkę o trwałą pamięć, a gdy od ostatniej kopii minie tydzień, na ekranie wydania pokazuje przypomnienie z przyciskiem **Zapisz kopię** (plik `selflearn-kopia-RRRR-MM-DD.json`). Przy przenosinach z jednego adresu na drugi (albo na nowy telefon) użyj **Profil → Zapisz kopię do pliku** (albo **Skopiuj kopię danych**) i **Wczytaj kopię danych**, z pliku albo wklejoną. Kopia obejmuje profil, postępy, powtórki, ulubione i wydania przygotowane tylko na tym telefonie. Token GitHuba nie trafia do kopii: na nowym telefonie trzeba go wkleić ponownie, a wczytanie kopii nie kasuje tokenu, który już jest zapisany.
 
 ### Instalacja na telefonie
 
@@ -126,6 +126,7 @@ Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesię
 |---|---|
 | `index.html`, `src/` | Aplikacja (czysty JavaScript, moduły ES, bez kroku budowania) |
 | `src/views/` | Widoki: ankieta, wydanie, oś czasu, powtórki, ulubione, profil, przygotowanie wydania |
+| `src/chapters.js` | Rozdziały wydania, rozgrzewka i czas czytania (bez DOM, testowane w `scripts/selftest.mjs`) |
 | `src/favorites.js` | Ulubione: filtry, wyszukiwanie i tekst do wysłania (bez DOM, testowane w `scripts/selftest.mjs`) |
 | `src/prompt.js`, `src/edition.js` | Polecenie dla czatu AI, wskazówki dla czatów, sprawdzanie i czyszczenie wydań (wspólne dla aplikacji i skryptów) |
 | `src/look.js`, `src/notify.js` | Wygląd (motywy, kolory, tekst) i przypomnienia (kalendarz, powiadomienia, liczba na ikonie) |

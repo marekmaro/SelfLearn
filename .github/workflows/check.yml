@@ -1,8 +1,8 @@
 name: Sprawdzenie wydań
 
 on:
+  # Także na main: rutyna wypycha tam wydania bez PR, więc błąd ma być widoczny w GitHubie.
   push:
-    branches-ignore: [main]
   pull_request:
 
 permissions:

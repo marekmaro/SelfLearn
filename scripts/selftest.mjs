@@ -9,7 +9,8 @@ import { recurrence } from '../src/calendar.js';
 import { neighborDates, editionHref } from '../src/data.js';
 import { favoriteEntries, filterFavorites, groupByDate, countByType, favoriteText } from '../src/favorites.js';
 import { grade } from '../src/srs.js';
-import { getState, update, resetAll, exportJSON, importJSON, saveLocalEdition, localEditions, setGithubSettings } from '../src/store.js';
+import { getState, update, resetAll, exportJSON, importJSON, saveLocalEdition, localEditions, setGithubSettings, backupDue, markBackedUp, snoozeBackup, backupFileName } from '../src/store.js';
+import { buildChapters, buildWarmup, firstSentence, estimateMinutes } from '../src/chapters.js';
 import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
 import { safePath } from './serve.mjs';
 import { join } from 'node:path';
@@ -255,6 +256,52 @@ test('Przypomnienia: wieczór przed porankiem nie blokuje porannego', () => {
   assert(morningWindowEnd({ morning: '07:30', evening: '06:00', eveningOn: false }) === 24 * 60, 'bez wieczoru');
   assert(remindersOverlap({ morning: '21:00', evening: '08:00', eveningOn: true }), 'brak ostrzeżenia');
   assert(!remindersOverlap({ morning: '07:30', evening: '20:30', eveningOn: true }), 'fałszywe ostrzeżenie');
+});
+
+test('Kopia danych: przypomnienie po tygodniu, „Później” odkłada je o tydzień', () => {
+  resetAll();
+  assert(!backupDue('2026-10-22'), 'przypomnienie bez żadnych postępów');
+  update((s) => {
+    s.activity = { '2026-10-20': 'warmup', '2026-10-21': 'warmup', '2026-10-22': 'warmup' };
+  });
+  assert(backupDue('2026-10-22'), 'brak przypomnienia przy 3 dniach bez kopii');
+  markBackedUp('2026-10-22');
+  assert(!backupDue('2026-10-28'), 'przypomnienie przed upływem tygodnia');
+  assert(backupDue('2026-10-29'), 'brak przypomnienia po tygodniu');
+  snoozeBackup('2026-10-29');
+  assert(!backupDue('2026-11-04'), '„Później” nie odłożyło przypomnienia');
+  assert(backupDue('2026-11-05'), 'odłożone przypomnienie nie wróciło');
+  const copy = exportJSON('2026-11-05');
+  assert(JSON.parse(copy).state.settings.lastBackup === '2026-11-05', 'kopia bez daty zrobienia');
+  importJSON(copy);
+  assert(!backupDue('2026-11-05'), 'przypomnienie wraca zaraz po wczytaniu kopii');
+  assert(backupFileName('2026-10-22') === 'selflearn-kopia-2026-10-22.json', 'nazwa pliku');
+  resetAll();
+});
+
+test('Rozdziały wydania: kolejność, wybrane działy, rozgrzewka i czas czytania', () => {
+  const chapters = buildChapters(base, { sections: ['polska', 'swiat', 'technologia'], minutes: 15 }, { prevDate: '2026-10-21' });
+  const ids = chapters.map((c) => c.id);
+  assert(ids[0] === 'rozgrzewka' && ids[1] === 'polska' && ids[2] === 'swiat', `kolejność: ${ids.join(', ')}`);
+  const topics = chapters.find((c) => c.id === 'tematy');
+  assert(!topics || topics.groups.every((g) => g.section === 'technologia'), 'dział spoza profilu');
+  if (base.quiz?.length) assert(ids.includes('quiz'), 'brak quizu');
+  const minutes = estimateMinutes(chapters, base, new Set());
+  assert(minutes >= 1 && minutes < 120, `czas czytania: ${minutes}`);
+  const warmup = buildWarmup({ date: '2026-10-23' }, base, null);
+  assert(warmup.length === Math.min(3, base.quiz?.length || 0), 'rozgrzewka z poprzedniego quizu');
+  assert(warmup.every((q) => q.options.length <= 3 && q.options[q.answer] !== undefined), 'pytania a/b/c');
+  assert(firstSentence('Prezydent podpisał ustawę ok. 15 osób. Druga część zdania.') === 'Prezydent podpisał ustawę ok. 15 osób.', 'pierwsze zdanie ze skrótem');
+});
+
+test('Tryb offline: service worker zna wszystkie pliki aplikacji', () => {
+  const sw = readFileSync('sw.js', 'utf8');
+  const files = [
+    ...readdirSync('src').filter((f) => /\.(js|css)$/.test(f)).map((f) => `./src/${f}`),
+    ...readdirSync('src/views').filter((f) => f.endsWith('.js')).map((f) => `./src/views/${f}`),
+  ];
+  const missing = files.filter((f) => !sw.includes(`'${f}'`));
+  assert(!missing.length, `brak w SHELL_FILES (sw.js): ${missing.join(', ')}`);
 });
 
 console.log(failed ? `\nNie przeszło: ${failed}.` : '\nWszystkie testy przeszły.');

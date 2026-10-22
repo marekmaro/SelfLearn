@@ -50,9 +50,12 @@ export function resetAll() {
 // Token GitHuba celowo zostaje poza kopią, więc przy wczytywaniu zachowujemy ten, który już jest.
 const BACKUP_FORMAT = 'selflearn-kopia';
 
-export function exportJSON() {
+// Kopia od razu zapisuje datę zrobienia, więc po jej wczytaniu przypomnienie nie wraca od razu.
+export function exportJSON(date = todayISO()) {
   const copy = structuredClone(state);
   if (copy.settings?.github) delete copy.settings.github.token;
+  copy.settings = { ...(copy.settings || {}), lastBackup: date };
+  delete copy.settings.backupSnooze;
   return JSON.stringify({ format: BACKUP_FORMAT, version: 2, exportedAt: new Date().toISOString(), state: copy, editions: localEditions() }, null, 2);
 }
 
@@ -99,6 +102,56 @@ export function importJSON(text) {
     }
   }
   return { editions: restored, tokenKept: Boolean(token), needsToken: !token && Boolean(incoming.settings?.github?.owner) };
+}
+
+// ---------- Bezpieczeństwo danych ----------
+// Przeglądarka może sama wyczyścić dane strony (Safari po kilku dniach bez otwierania).
+// Prośba o trwałą pamięć to ogranicza, a przypomnienie o kopii zabezpiecza resztę.
+const BACKUP_EVERY_DAYS = 7;
+const BACKUP_MIN_DAYS = 3;
+
+// Zwraca true/false (czy pamięć jest trwała) albo null, gdy przeglądarka tego nie obsługuje.
+export async function requestPersistence() {
+  try {
+    if (!globalThis.navigator?.storage?.persist) return null;
+    const persisted = (await navigator.storage.persisted()) || (await navigator.storage.persist());
+    if (state.settings?.persisted !== persisted) {
+      update((s) => {
+        s.settings ||= {};
+        s.settings.persisted = persisted;
+      });
+    }
+    return persisted;
+  } catch {
+    return null;
+  }
+}
+
+export function markBackedUp(date = todayISO()) {
+  update((s) => {
+    s.settings ||= {};
+    s.settings.lastBackup = date;
+    delete s.settings.backupSnooze;
+  });
+}
+
+export function snoozeBackup(date = todayISO()) {
+  update((s) => {
+    s.settings ||= {};
+    s.settings.backupSnooze = addDays(date, BACKUP_EVERY_DAYS);
+  });
+}
+
+// Przypomnienie o kopii: gdy jest co stracić (kilka aktywnych dni), a od ostatniej kopii minął tydzień.
+export function backupDue(today = todayISO()) {
+  const settings = state.settings || {};
+  if (totalActiveDays() < BACKUP_MIN_DAYS) return false;
+  if (settings.backupSnooze && settings.backupSnooze > today) return false;
+  return !settings.lastBackup || addDays(settings.lastBackup, BACKUP_EVERY_DAYS) <= today;
+}
+
+export function backupFileName(date = todayISO()) {
+  return `selflearn-kopia-${date}.json`;
 }
 
 // ---------- Postęp w wydaniach ----------

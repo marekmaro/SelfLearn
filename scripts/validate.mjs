@@ -1,7 +1,7 @@
 // Sprawdza poprawność wydań i indeksu. Uruchamiane w CI i przez codzienną rutynę.
 // Użycie: node scripts/validate.mjs [ścieżka-do-wydania.json ...]
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
+import { basename, join } from 'node:path';
 import { validateEdition } from '../src/edition.js';
 
 const dir = 'content/editions';
@@ -9,7 +9,7 @@ const errors = [];
 const warnings = [];
 
 function checkEdition(path) {
-  const file = path.split('/').pop();
+  const file = basename(path);
   let ed;
   try {
     ed = JSON.parse(readFileSync(path, 'utf8'));
@@ -41,7 +41,7 @@ if (!targets.length) {
     const index = JSON.parse(readFileSync(indexPath, 'utf8'));
     const listed = new Set((index.editions || []).map((e) => e.date));
     for (const f of files) {
-      const date = f.split('/').pop().replace('.json', '');
+      const date = basename(f, '.json');
       if (!listed.has(date)) errors.push(`content/index.json: brak wydania ${date} (uruchom node scripts/build-index.mjs)`);
     }
     for (const d of listed) {

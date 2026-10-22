@@ -13,11 +13,11 @@ import {
   githubSettings,
   setGithubSettings,
 } from '../store.js';
-import { loadIndex } from '../data.js';
+import { loadIndex, forgetEdition } from '../data.js';
 import { icsFile, googleCalendarUrl } from '../calendar.js';
 import { checkAccess } from '../github.js';
 import { appearancePanel, applyLook } from '../look.js';
-import { getNotify, setNotify, capabilities, enableSystem, disableSystem, testNotification, WEEK_DAYS } from '../notify.js';
+import { getNotify, setNotify, capabilities, enableSystem, disableSystem, testNotification, remindersOverlap, WEEK_DAYS } from '../notify.js';
 import { h, mount, icon, toast, plural } from '../ui.js';
 import { multiChoice, segmented } from './onboarding.js';
 
@@ -68,6 +68,7 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
           h('li', null, 'Na github.com: Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.'),
           h('li', null, `Repository access: Only select repositories → ${gh.repo}.`),
           h('li', null, 'Permissions → Repository permissions → Contents: Read and write. Reszta bez zmian.'),
+          h('li', null, 'Expiration: ustaw datę ważności, np. 90 dni. Po wygaśnięciu wygeneruj nowy token i wklej go tutaj.'),
           h('li', null, 'Wygeneruj token, skopiuj go i wklej poniżej.'),
         ),
         h(
@@ -186,6 +187,9 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
         timeField('reminder-time', 'Rano', n.morning, false, (e) => e.target.value && saveNotify({ morning: e.target.value })),
         timeField('evening-time', 'Wieczorem', n.evening, !n.eveningOn, (e) => e.target.value && saveNotify({ evening: e.target.value })),
       ),
+      remindersOverlap(n)
+        ? h('p', { class: 'banner', style: 'margin:0' }, 'Wieczorne przypomnienie jest ustawione wcześniej niż poranne. Ustaw wieczór na później, żeby przypomnienia przychodziły we właściwej kolejności.')
+        : null,
       h(
         'label',
         { class: 'check' },
@@ -423,7 +427,7 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
         'section',
         { class: 'section', id: 'dane' },
         h('h2', null, 'Dane'),
-        h('p', { class: 'muted', style: 'margin:0' }, 'Postępy są zapisane tylko na tym telefonie. Kopia pozwala przenieść je na nowy telefon.'),
+        h('p', { class: 'muted', style: 'margin:0' }, 'Postępy są zapisane tylko na tym telefonie. Kopia pozwala przenieść je na nowy telefon: obejmuje profil, postępy, powtórki, ulubione i wydania przygotowane na tym telefonie. Token GitHuba nie trafia do kopii, więc na nowym telefonie trzeba go wkleić ponownie.'),
         h(
           'div',
           { class: 'inline-actions' },
@@ -462,9 +466,18 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
                 onclick: () => {
                   const text = root.querySelector('#import-data').value;
                   try {
-                    importJSON(text);
+                    const result = importJSON(text);
+                    if (result.editions) forgetEdition('');
                     applyLook();
-                    toast('Dane wczytane');
+                    toast(
+                      [
+                        'Dane wczytane',
+                        result.editions ? `w tym ${result.editions} ${plural(result.editions, 'wydanie', 'wydania', 'wydań')} z telefonu` : '',
+                        result.needsToken ? 'token GitHuba wklej ponownie w „Publikowaniu”' : '',
+                      ]
+                        .filter(Boolean)
+                        .join(', ') + '.',
+                    );
                     onChange?.();
                     render();
                   } catch (err) {

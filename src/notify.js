@@ -45,6 +45,22 @@ export function setNotify(patch) {
   refreshReminders();
 }
 
+export function toMinutes(time) {
+  const [hh, mm] = String(time || '00:00').split(':').map(Number);
+  return hh * 60 + (mm || 0);
+}
+
+// Wieczorne przypomnienie powinno być później niż poranne.
+export function remindersOverlap(n) {
+  return Boolean(n.eveningOn) && toMinutes(n.evening) <= toMinutes(n.morning);
+}
+
+// Do której minuty dnia może przyjść poranne przypomnienie (ta sama zasada jest w sw.js).
+export function morningWindowEnd(n) {
+  const evening = n.eveningOn ? toMinutes(n.evening) : 24 * 60;
+  return evening > toMinutes(n.morning) ? evening : 24 * 60;
+}
+
 // Co potrafi ten telefon i ta przeglądarka.
 export function capabilities() {
   const hasSW = 'serviceWorker' in navigator;

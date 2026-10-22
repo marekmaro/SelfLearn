@@ -1,11 +1,12 @@
-// Powtórki w odstępach (pudełka Leitnera).
-// Nowe pytanie zaczyna w pudełku 1. Dobra odpowiedź przesuwa je wyżej,
-// błędna wraca do pudełka 1, czyli na jutro.
+// Powtórki w odstępach (pudełka Leitnera): 1, 3, 7, 16 i 35 dni.
+// Nowe pytanie zaczyna przed pierwszym pudełkiem, więc pierwsza powtórka zawsze wypada następnego dnia
+// (dobra odpowiedź tuż po czytaniu to jeszcze nie trwała pamięć). Każda kolejna dobra odpowiedź
+// przesuwa pytanie wyżej, a błędna cofa je do pudełka 1, czyli na jutro.
 import { LEITNER_DAYS, LEITNER_MAX } from './config.js';
 import { addDays } from './dates.js';
 
 export function grade(deck, question, correct, today, context = {}) {
-  const card = deck[question.id] || { box: 1, seen: 0, right: 0, added: today };
+  const card = deck[question.id] || { box: 0, seen: 0, right: 0, added: today };
   card.q = {
     id: question.id,
     question: question.question,
@@ -31,6 +32,6 @@ export function dueCards(deck, today) {
 
 export function boxCounts(deck) {
   const counts = new Array(LEITNER_MAX).fill(0);
-  for (const c of Object.values(deck)) counts[c.box - 1] += 1;
+  for (const c of Object.values(deck)) counts[Math.max(c.box, 1) - 1] += 1;
   return counts;
 }

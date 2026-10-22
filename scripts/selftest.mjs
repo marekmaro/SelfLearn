@@ -8,6 +8,19 @@ import { projectInstructions, dailyMessage, CHATS } from '../src/prompt.js';
 import { recurrence } from '../src/calendar.js';
 import { neighborDates, editionHref } from '../src/data.js';
 import { favoriteEntries, filterFavorites, groupByDate, countByType, favoriteText } from '../src/favorites.js';
+import { grade } from '../src/srs.js';
+import { getState, update, resetAll, exportJSON, importJSON, saveLocalEdition, localEditions, setGithubSettings } from '../src/store.js';
+import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
+import { safePath } from './serve.mjs';
+import { join } from 'node:path';
+
+// Pamięć przeglądarki na czas testów (store.js zapisuje do localStorage).
+const memory = new Map();
+globalThis.localStorage = {
+  getItem: (k) => (memory.has(k) ? memory.get(k) : null),
+  setItem: (k, v) => memory.set(k, String(v)),
+  removeItem: (k) => memory.delete(k),
+};
 
 const latest = readdirSync('content/editions').filter((f) => f.endsWith('.json')).sort().pop();
 const base = JSON.parse(readFileSync(`content/editions/${latest}`, 'utf8'));
@@ -150,6 +163,98 @@ test('Ulubione: wpisy, notatki z wieczorów, filtry i wyszukiwanie bez polskich 
   assert(groupByDate(all).length === 3, 'grupy dni');
   const text = favoriteText(all[0]);
   assert(text.includes('Sejm przyjął ustawę') && text.includes('https://tvn24.pl/x'), text);
+});
+
+test('Powtórki: pierwsza po 1 dniu, potem 3 dni, błąd wraca na jutro', () => {
+  const deck = {};
+  const q = { id: 'x-q1', question: 'P?', options: ['a', 'b'], answer: 0 };
+  let card = grade(deck, q, true, '2026-10-22');
+  assert(card.box === 1 && card.due === '2026-10-23', `po pierwszej dobrej: pudełko ${card.box}, termin ${card.due}`);
+  card = grade(deck, q, true, '2026-10-23');
+  assert(card.box === 2 && card.due === '2026-10-26', `po drugiej dobrej: pudełko ${card.box}, termin ${card.due}`);
+  card = grade(deck, q, false, '2026-10-26');
+  assert(card.box === 1 && card.due === '2026-10-27', `po błędzie: pudełko ${card.box}, termin ${card.due}`);
+  const fresh = grade({}, { ...q, id: 'x-q2' }, false, '2026-10-22');
+  assert(fresh.box === 1 && fresh.due === '2026-10-23', 'nowe pytanie z błędem też na jutro');
+});
+
+test('Kopia danych: wydania z telefonu w kopii, token zostaje, zła kopia odrzucona', () => {
+  resetAll();
+  memory.clear();
+  update((s) => {
+    s.profile = { name: 'Betti', sections: ['polska'] };
+    s.saved['2026-10-22:pl-1'] = { type: 'news', title: 'T', date: '2026-10-22' };
+  });
+  setGithubSettings({ owner: 'marekmaro', repo: 'SelfLearn', token: 'github_pat_STARY' });
+  saveLocalEdition(structuredClone(base));
+  const backup = exportJSON();
+  assert(!backup.includes('github_pat_STARY'), 'token trafił do kopii');
+  assert(JSON.parse(backup).editions[base.date], 'brak wydania z telefonu w kopii');
+
+  // Nowy telefon: inny token, brak wydań.
+  resetAll();
+  memory.clear();
+  setGithubSettings({ token: 'github_pat_NOWY' });
+  const result = importJSON(backup);
+  assert(getState().profile?.name === 'Betti' && getState().saved['2026-10-22:pl-1'], 'nie wczytano stanu');
+  assert(getState().settings.github.token === 'github_pat_NOWY', 'import skasował token');
+  assert(localEditions()[base.date] && result.editions === 1, 'nie wczytano wydania z telefonu');
+
+  // Uszkodzone wydanie w kopii jest pomijane.
+  const broken = JSON.parse(backup);
+  broken.editions = { '2026-01-01': { date: '2026-01-01', news: [null] } };
+  assert(importJSON(JSON.stringify(broken)).editions === 0 && !localEditions()['2026-01-01'], 'wczytano uszkodzone wydanie');
+
+  // Starsza kopia (sam stan) nadal działa.
+  importJSON(JSON.stringify({ profile: { name: 'Marek' }, progress: {} }));
+  assert(getState().profile.name === 'Marek', 'starsza kopia nie działa');
+
+  for (const bad of ['to nie json', '{"x":1}', '{"progress":[]}', '{"progress":{},"deck":[]}']) {
+    let threw = false;
+    try {
+      importJSON(bad);
+    } catch {
+      threw = true;
+    }
+    assert(threw, `przyjęto złą kopię: ${bad}`);
+  }
+  assert(getState().profile.name === 'Marek', 'zła kopia zmieniła dane');
+});
+
+test('Walidator: puste i dziwne wpisy dają błędy zamiast awarii', () => {
+  const ed = structuredClone(base);
+  ed.news.push(null);
+  ed.facts = [null, ...ed.facts];
+  ed.quiz.push(42);
+  ed.recap = [null];
+  ed.concept = 'pojęcie';
+  let r;
+  try {
+    r = check(fence(ed));
+  } catch (err) {
+    throw new Error(`awaria: ${err.message}`);
+  }
+  assert(r.errors.some((e) => e.startsWith('news[') && e.includes('nie jest obiekt')), 'brak błędu dla null w news');
+  assert(r.errors.some((e) => e.startsWith('concept')), 'brak błędu dla pojęcia');
+  const partial = validateEdition({ ...structuredClone(base), quiz: [], book: undefined });
+  assert(partial.missing.includes('quizu') && partial.missing.includes('książki tygodnia'), `missing: ${partial.missing}`);
+});
+
+test('Serwer podglądu: tylko pliki aplikacji, bez wychodzenia poza projekt', () => {
+  const root = join('/tmp', 'SelfLearn');
+  assert(safePath(root, '/') === join(root, 'index.html'), 'strona główna');
+  assert(safePath(root, '/src/main.js') === join(root, 'src', 'main.js'), 'plik aplikacji');
+  for (const url of ['/..%2fSelfLearn-sekret/plik.txt', '/.git/config', '/%2e%2e/etc/passwd', '/scripts/serve.mjs', '/package.json', '/%E0%A4%A', '/content/../.git/HEAD']) {
+    assert(safePath(root, url) === null, `wydano: ${url}`);
+  }
+});
+
+test('Przypomnienia: wieczór przed porankiem nie blokuje porannego', () => {
+  assert(morningWindowEnd({ morning: '07:30', evening: '20:30', eveningOn: true }) === 20 * 60 + 30, 'zwykły układ');
+  assert(morningWindowEnd({ morning: '21:00', evening: '08:00', eveningOn: true }) === 24 * 60, 'odwrócone godziny');
+  assert(morningWindowEnd({ morning: '07:30', evening: '06:00', eveningOn: false }) === 24 * 60, 'bez wieczoru');
+  assert(remindersOverlap({ morning: '21:00', evening: '08:00', eveningOn: true }), 'brak ostrzeżenia');
+  assert(!remindersOverlap({ morning: '07:30', evening: '20:30', eveningOn: true }), 'fałszywe ostrzeżenie');
 });
 
 console.log(failed ? `\nNie przeszło: ${failed}.` : '\nWszystkie testy przeszły.');

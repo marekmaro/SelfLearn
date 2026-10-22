@@ -2,6 +2,7 @@
 // Każda osoba ma własny telefon, więc ma też własny profil, postępy i powtórki.
 import { todayISO, addDays } from './dates.js';
 import { STREAK_MILESTONES, DEFAULT_REPO } from './config.js';
+import { validateEdition } from './edition.js';
 
 const KEY = 'selflearn:v1';
 const EDITIONS_KEY = 'selflearn:editions';
@@ -45,20 +46,59 @@ export function resetAll() {
   save();
 }
 
-// Kopia bez tokenu GitHuba: token zostaje tylko na tym telefonie.
+// Kopia danych: stan aplikacji i wydania zapisane tylko na tym telefonie.
+// Token GitHuba celowo zostaje poza kopią, więc przy wczytywaniu zachowujemy ten, który już jest.
+const BACKUP_FORMAT = 'selflearn-kopia';
+
 export function exportJSON() {
   const copy = structuredClone(state);
   if (copy.settings?.github) delete copy.settings.github.token;
-  return JSON.stringify(copy, null, 2);
+  return JSON.stringify({ format: BACKUP_FORMAT, version: 2, exportedAt: new Date().toISOString(), state: copy, editions: localEditions() }, null, 2);
 }
 
+const isPlainObject = (v) => Boolean(v) && typeof v === 'object' && !Array.isArray(v);
+
+// Wczytuje kopię (także starszą, bez wydań). Zwraca, ile wydań przybyło i czy trzeba wkleić token.
 export function importJSON(text) {
-  const data = JSON.parse(text);
-  if (!data || typeof data !== 'object' || !('progress' in data)) {
-    throw new Error('To nie jest plik kopii SelfLearn.');
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    throw new Error('To nie jest kopia SelfLearn: tekst nie jest poprawnym JSON-em.');
   }
-  state = { ...blank(), ...data };
+  const incoming = data?.format === BACKUP_FORMAT ? data.state : data;
+  const editions = data?.format === BACKUP_FORMAT && isPlainObject(data.editions) ? data.editions : {};
+  if (!isPlainObject(incoming) || !isPlainObject(incoming.progress)) {
+    throw new Error('To nie jest kopia SelfLearn.');
+  }
+  for (const key of ['deck', 'saved', 'activity', 'settings']) {
+    if (incoming[key] !== undefined && !isPlainObject(incoming[key])) throw new Error(`Kopia jest uszkodzona (pole „${key}”).`);
+  }
+  if (incoming.profile !== undefined && incoming.profile !== null && !isPlainObject(incoming.profile)) {
+    throw new Error('Kopia jest uszkodzona (pole „profile”).');
+  }
+
+  const token = state.settings?.github?.token || '';
+  const next = { ...blank(), ...structuredClone(incoming) };
+  if (token) {
+    next.settings ||= {};
+    next.settings.github = { ...(next.settings.github || {}), token };
+  }
+  state = next;
   save();
+
+  let restored = 0;
+  for (const ed of Object.values(editions)) {
+    // Wczytujemy tylko wydania, które przechodzą tę samą kontrolę co przy przygotowaniu.
+    if (!isPlainObject(ed) || validateEdition(ed).errors.length) continue;
+    try {
+      saveLocalEdition(ed);
+      restored += 1;
+    } catch {
+      break; // Brak miejsca w pamięci telefonu – reszta wydań zostaje w kopii.
+    }
+  }
+  return { editions: restored, tokenKept: Boolean(token), needsToken: !token && Boolean(incoming.settings?.github?.owner) };
 }
 
 // ---------- Postęp w wydaniach ----------

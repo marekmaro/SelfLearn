@@ -1,5 +1,5 @@
 // Service worker: aplikacja działa offline, a wydania odświeżają się z sieci.
-const VERSION = 'v6';
+const VERSION = 'v7';
 const SHELL = `selflearn-shell-${VERSION}`;
 const CONTENT = 'selflearn-content';
 const FONTS = 'selflearn-fonts';
@@ -67,27 +67,30 @@ self.addEventListener('fetch', (event) => {
 
   // Wydania: najpierw sieć (świeże treści), w razie braku sieci – ostatnia kopia.
   if (url.origin === location.origin && url.pathname.includes('/content/')) {
-    event.respondWith(networkFirst(request, CONTENT));
+    event.respondWith(networkFirst(event, request, CONTENT));
     return;
   }
 
   // Czcionki Google: raz pobrane, trzymane na stałe.
   if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
-    event.respondWith(cacheFirst(request, FONTS));
+    event.respondWith(cacheFirst(event, request, FONTS));
     return;
   }
 
   // Pliki aplikacji: od razu z pamięci, w tle aktualizacja na następne uruchomienie.
+  // waitUntil pilnuje, żeby przeglądarka nie przerwała zapisu nowej wersji, gdy odpowiedź już poszła.
   if (url.origin === location.origin) {
-    event.respondWith(staleWhileRevalidate(request, SHELL));
+    const update = fetchAndCache(request, SHELL);
+    event.respondWith(cachedOr(request, SHELL, update));
+    event.waitUntil(update.catch(() => {}));
   }
 });
 
-async function networkFirst(request, cacheName) {
+async function networkFirst(event, request, cacheName) {
   const cache = await caches.open(cacheName);
   try {
     const fresh = await fetch(request, { cache: 'no-cache' });
-    if (fresh.ok) cache.put(request, fresh.clone());
+    if (fresh.ok) event.waitUntil(cache.put(request, fresh.clone()).catch(() => {}));
     return fresh;
   } catch (err) {
     const cached = await cache.match(request, { ignoreSearch: true });
@@ -96,25 +99,25 @@ async function networkFirst(request, cacheName) {
   }
 }
 
-async function cacheFirst(request, cacheName) {
+async function cacheFirst(event, request, cacheName) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request);
   if (cached) return cached;
   const fresh = await fetch(request);
-  if (fresh.ok || fresh.type === 'opaque') cache.put(request, fresh.clone());
+  if (fresh.ok || fresh.type === 'opaque') event.waitUntil(cache.put(request, fresh.clone()).catch(() => {}));
   return fresh;
 }
 
-async function staleWhileRevalidate(request, cacheName) {
+async function fetchAndCache(request, cacheName) {
+  const res = await fetch(request);
+  if (res.ok) await (await caches.open(cacheName)).put(request, res.clone());
+  return res;
+}
+
+async function cachedOr(request, cacheName, update) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request, { ignoreSearch: true });
-  const network = fetch(request)
-    .then((res) => {
-      if (res.ok) cache.put(request, res.clone());
-      return res;
-    })
-    .catch(() => cached);
-  return cached || network;
+  return cached || update;
 }
 
 // ---------- Przypomnienia w tle ----------
@@ -192,8 +195,12 @@ async function dailyCheck() {
       data: { url: './#dzis' },
     });
 
+  // Wieczór ustawiony wcześniej niż poranek nie może zablokować porannego przypomnienia
+  // (ta sama zasada co morningWindowEnd w src/notify.js).
+  const morningAt = toMinutes(n.morning);
   const eveningAt = n.eveningOn ? toMinutes(n.evening) : 24 * 60;
-  if (sent.morning !== today && minutes >= toMinutes(n.morning) && minutes < eveningAt) {
+  const morningUntil = eveningAt > morningAt ? eveningAt : 24 * 60;
+  if (sent.morning !== today && minutes >= morningAt && minutes < morningUntil) {
     const headline = await todaysHeadline(today);
     if (headline) {
       const tail = streak > 0 ? `Seria: ${streak} ${daysWord(streak)}. Nie przerywaj jej.` : '10–20 minut i dzień zaliczony.';

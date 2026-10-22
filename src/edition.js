@@ -7,6 +7,8 @@ const KIND_IDS = FACT_KINDS.map((k) => k.id);
 
 const isText = (v) => typeof v === 'string' && v.trim().length > 0;
 const isUrl = (v) => typeof v === 'string' && /^https:\/\/[^\s]+$/.test(v);
+const isObj = (v) => Boolean(v) && typeof v === 'object' && !Array.isArray(v);
+const list = (v) => (Array.isArray(v) ? v : []);
 
 // Zwraca { errors, warnings } z komunikatami po polsku.
 export function validateEdition(ed) {
@@ -41,6 +43,10 @@ export function validateEdition(ed) {
   const perSection = {};
   for (const [i, n] of (Array.isArray(ed.news) ? ed.news : []).entries()) {
     const where = `news[${i}]`;
+    if (!isObj(n)) {
+      err(`${where}: to nie jest obiekt wiadomości`);
+      continue;
+    }
     addId(n.id, where);
     if (!SECTION_IDS.includes(n.section)) err(`${where}: nieznany dział "${n.section}"`);
     perSection[n.section] = (perSection[n.section] || 0) + 1;
@@ -56,6 +62,10 @@ export function validateEdition(ed) {
 
   for (const [i, f] of (Array.isArray(ed.facts) ? ed.facts : []).entries()) {
     const where = `facts[${i}]`;
+    if (!isObj(f)) {
+      err(`${where}: to nie jest obiekt ciekawostki`);
+      continue;
+    }
     addId(f.id, where);
     if (!KIND_IDS.includes(f.kind)) err(`${where}: nieznany rodzaj "${f.kind}"`);
     for (const key of ['title', 'body']) if (!isText(f[key])) err(`${where}: brak "${key}"`);
@@ -64,13 +74,18 @@ export function validateEdition(ed) {
 
   for (const [i, o] of (Array.isArray(ed.onThisDay) ? ed.onThisDay : []).entries()) {
     const where = `onThisDay[${i}]`;
+    if (!isObj(o)) {
+      err(`${where}: to nie jest obiekt wydarzenia`);
+      continue;
+    }
     addId(o.id, where);
     if (!Number.isInteger(o.year)) err(`${where}: "year" musi być liczbą`);
     for (const key of ['title', 'body']) if (!isText(o[key])) err(`${where}: brak "${key}"`);
     checkSource(where, o.source);
   }
 
-  if (ed.concept) {
+  if (ed.concept && !isObj(ed.concept)) err('concept: to nie jest obiekt pojęcia');
+  else if (ed.concept) {
     const c = ed.concept;
     addId(c.id, 'concept');
     for (const key of ['term', 'definition']) if (!isText(c[key])) err(`concept: brak "${key}"`);
@@ -78,7 +93,8 @@ export function validateEdition(ed) {
     checkSource('concept', c.source);
   }
 
-  if (ed.book) {
+  if (ed.book && !isObj(ed.book)) err('book: to nie jest obiekt książki');
+  else if (ed.book) {
     const b = ed.book;
     addId(b.id, 'book');
     for (const key of ['bookId', 'title', 'author', 'ideaTitle', 'idea', 'moral', 'action']) if (!isText(b[key])) err(`book: brak "${key}"`);
@@ -89,6 +105,10 @@ export function validateEdition(ed) {
   const quizIds = new Set();
   for (const [i, q] of (Array.isArray(ed.quiz) ? ed.quiz : []).entries()) {
     const where = `quiz[${i}]`;
+    if (!isObj(q)) {
+      err(`${where}: to nie jest obiekt pytania`);
+      continue;
+    }
     if (!isText(q.id)) err(`${where}: brak "id"`);
     else if (quizIds.has(q.id)) err(`${where}: powtórzone id "${q.id}"`);
     else if (isText(ed.date) && !q.id.startsWith(ed.date)) err(`${where}: id pytania musi zaczynać się od daty wydania`);
@@ -101,7 +121,7 @@ export function validateEdition(ed) {
     if (!isText(q.explanation)) warn(`${where}: brak wyjaśnienia`);
     if (q.ref) {
       if (!ids.has(q.ref)) err(`${where}: "ref" wskazuje nieistniejące "${q.ref}"`);
-      if ((Array.isArray(ed.news) ? ed.news : []).some((n) => n.id === q.ref)) {
+      if (list(ed.news).some((n) => n?.id === q.ref)) {
         err(`${where}: quiz nie może dotyczyć wiadomości (tylko ciekawostki, historia, pojęcie, książka)`);
       }
     } else {
@@ -114,6 +134,10 @@ export function validateEdition(ed) {
     if (!Array.isArray(ed.recap)) err('"recap" musi być listą');
     for (const [i, q] of (Array.isArray(ed.recap) ? ed.recap : []).entries()) {
       const where = `recap[${i}]`;
+      if (!isObj(q)) {
+        err(`${where}: to nie jest obiekt pytania`);
+        continue;
+      }
       if (!isText(q.id) || (isText(ed.date) && !q.id.startsWith(ed.date))) err(`${where}: id musi zaczynać się od daty wydania`);
       else if (quizIds.has(q.id)) err(`${where}: powtórzone id "${q.id}"`);
       quizIds.add(q.id);
@@ -123,7 +147,7 @@ export function validateEdition(ed) {
     }
   }
 
-  if (ed.evening && !isText(ed.evening.question)) err('evening: brak "question"');
+  if (ed.evening && (!isObj(ed.evening) || !isText(ed.evening.question))) err('evening: brak "question"');
 
   // Brakujące części wydania (np. gdy wklejono tylko pierwszą z dwóch odpowiedzi czatu).
   const missing = [
@@ -136,7 +160,7 @@ export function validateEdition(ed) {
   ].filter(([key]) => !ed[key] || (Array.isArray(ed[key]) && !ed[key].length));
   if (missing.length) warn(`brak: ${missing.map(([, label]) => label).join(', ')}`);
 
-  return { errors, warnings };
+  return { errors, warnings, missing: missing.map(([, label]) => label) };
 }
 
 // Linki, które czaty podają zamiast adresu artykułu (np. Gemini: vertexaisearch…). Szybko wygasają.
@@ -166,7 +190,7 @@ function isHomepage(url) {
 // Wpis do content/index.json.
 export function indexEntry(ed) {
   const news = Array.isArray(ed.news) ? ed.news : [];
-  const top = news.find((n) => n.section === 'polska' && n.rank === 1) || news[0];
+  const top = news.find((n) => n?.section === 'polska' && n.rank === 1) || news.find(isObj);
   return { date: ed.date, headline: top?.title || '' };
 }
 
@@ -254,6 +278,7 @@ function mergeParts(parts) {
 // parametry śledzące w linkach (?utm_source=chatgpt.com), http zamiast https, liczby zapisane jako tekst
 // i odpowiedzi w quizie podane literą. Zwraca poprawione wydanie i listę tego, co zmieniono.
 export function cleanEdition(input) {
+  if (!isObj(input)) return { edition: input, fixes: [] };
   const ed = structuredClone(input);
   delete ed.__truncated;
   const counts = { cite: 0, utm: 0, https: 0, numbers: 0, letters: 0 };
@@ -312,13 +337,13 @@ export function cleanEdition(input) {
       counts.numbers++;
     }
   };
-  for (const n of ed.news || []) toInt(n, 'rank');
-  for (const o of ed.onThisDay || []) toInt(o, 'year');
-  if (ed.book) {
+  for (const n of list(ed.news)) toInt(n, 'rank');
+  for (const o of list(ed.onThisDay)) toInt(o, 'year');
+  if (isObj(ed.book)) {
     toInt(ed.book, 'day');
     toInt(ed.book, 'days');
   }
-  for (const q of [...(ed.quiz || []), ...(ed.recap || [])]) {
+  for (const q of [...list(ed.quiz), ...list(ed.recap)]) {
     if (typeof q?.answer === 'string' && /^[a-dA-D]$/.test(q.answer.trim())) {
       q.answer = 'abcd'.indexOf(q.answer.trim().toLowerCase());
       counts.letters++;
@@ -336,14 +361,14 @@ export function cleanEdition(input) {
 
 // Krótki opis zawartości, np. do podglądu po wklejeniu.
 export function describeEdition(ed) {
-  const count = (section) => (ed.news || []).filter((n) => n.section === section).length;
-  const topics = (ed.news || []).filter((n) => !['polska', 'swiat'].includes(n.section)).length;
+  const count = (section) => list(ed.news).filter((n) => n?.section === section).length;
+  const topics = list(ed.news).filter((n) => isObj(n) && !['polska', 'swiat'].includes(n.section)).length;
   return [
     `Polska: ${count('polska')}`,
     `Świat: ${count('swiat')}`,
     `Twoje tematy: ${topics}`,
-    `Ciekawostki: ${(ed.facts || []).length}`,
-    `Historia: ${(ed.onThisDay || []).length}`,
-    `Quiz: ${(ed.quiz || []).length}`,
+    `Ciekawostki: ${list(ed.facts).length}`,
+    `Historia: ${list(ed.onThisDay).length}`,
+    `Quiz: ${list(ed.quiz).length}`,
   ].join(' · ');
 }

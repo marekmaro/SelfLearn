@@ -89,6 +89,7 @@ export async function renderPrepare(root, { onChange }) {
   let check = null;
   let fixes = [];
   let publishState = null;
+  let acceptMissing = false;
 
   async function refreshContext() {
     if (!sections) {
@@ -299,7 +300,10 @@ export async function renderPrepare(root, { onChange }) {
             'section',
             { class: 'section step' },
             h('h2', null, h('span', { class: 'step-num' }, '3'), 'Opublikuj'),
-            gh.token
+            missingNotice(),
+            !canPublish()
+              ? null
+              : gh.token
               ? h(
                   'div',
                   { class: 'inline-actions' },
@@ -331,7 +335,7 @@ export async function renderPrepare(root, { onChange }) {
                 ),
             h(
               'div',
-              { class: 'inline-actions' },
+              { class: 'inline-actions', hidden: !canPublish() },
               h('button', { type: 'button', class: 'btn secondary', onclick: saveLocal }, 'Tylko na tym telefonie'),
               publishState === 'done' || publishState === 'local' ? h('a', { class: 'btn ghost', href: `#wydanie-${date}` }, 'Otwórz wydanie', icon('arrow')) : null,
             ),
@@ -341,6 +345,33 @@ export async function renderPrepare(root, { onChange }) {
             publishState === 'local' ? h('p', { class: 'banner' }, 'Zapisane na tym telefonie. Druga osoba go nie zobaczy, dopóki nie opublikujesz.') : null,
           )
         : null,
+    );
+  }
+
+  // Brak części wydania (np. quizu albo książki) nie blokuje publikacji, ale wymaga świadomej zgody.
+  function canPublish() {
+    return !check?.missing?.length || acceptMissing;
+  }
+
+  function missingNotice() {
+    if (!check?.missing?.length) return null;
+    return h(
+      'div',
+      { class: 'banner' },
+      h('p', { style: 'margin:0' }, `W wydaniu brakuje: ${check.missing.join(', ')}. Najlepiej poproś czat o uzupełnienie. Możesz też opublikować wydanie bez tych części.`),
+      h(
+        'label',
+        { class: 'check', style: 'margin-top:8px' },
+        h('input', {
+          type: 'checkbox',
+          checked: acceptMissing,
+          onchange: (e) => {
+            acceptMissing = e.target.checked;
+            render();
+          },
+        }),
+        'Wiem, publikuję mimo braków',
+      ),
     );
   }
 
@@ -373,10 +404,19 @@ export async function renderPrepare(root, { onChange }) {
       render();
       return;
     }
-    const truncated = Boolean(parsed.__truncated);
-    ({ edition: parsed, fixes } = cleanEdition(parsed));
-    if (!parsed.date) parsed.date = date;
-    check = validateEdition(parsed);
+    acceptMissing = false;
+    const truncated = Boolean(parsed?.__truncated);
+    try {
+      ({ edition: parsed, fixes } = cleanEdition(parsed));
+      if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw new Error('To nie jest wydanie. Odpowiedź czatu powinna zawierać obiekt JSON z polami „date” i „news”.');
+      if (!parsed.date) parsed.date = date;
+      check = validateEdition(parsed);
+    } catch (err) {
+      parsed = null;
+      check = { fatal: `Nie udało się sprawdzić odpowiedzi: ${err.message}`, errors: [], warnings: [] };
+      render();
+      return;
+    }
     if (parsed.date !== date) {
       check.errors.unshift(`Data w odpowiedzi (${parsed.date}) różni się od wybranej (${date}). Zmień datę wyżej albo poproś czat o poprawkę.`);
     }

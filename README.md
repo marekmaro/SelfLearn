@@ -9,7 +9,7 @@ Codzienne wydanie do nauki i poszerzania horyzontów, w formie aplikacji na tele
 - **Ten dzień w historii**,
 - **Pojęcie dnia**: model myślowy albo błąd poznawczy,
 - **Książka tygodnia**: jedna idea dziennie, morał i „zastosuj dziś”,
-- **Quiz** z ciekawostek, pojęcia i książki (bez pytań z wiadomości), a potem **powtórki** w odstępach 1, 3, 7, 16 i 35 dni,
+- **Quiz** z ciekawostek, pojęcia i książki (bez pytań z wiadomości), a potem **powtórki** w odstępach 1, 3, 7, 16 i 35 dni (pierwsza zawsze następnego dnia, błędna odpowiedź wraca na jutro),
 - **Pytanie na wieczór** do rozmowy we dwoje,
 - **Seria dni** jak w Duolingo: dzień się liczy po rozgrzewce albo całym wydaniu, z paskiem ostatnich 7 dni i kamieniami milowymi,
 - **Ulubione**: serce przy wiadomości, ciekawostce, historii, pojęciu albo książce zapisuje ją w osobnej zakładce. Są tam też filtry, wyszukiwanie (także bez polskich znaków), własne notatki przy wpisach, otwieranie wpisu w jego wydaniu i wysyłanie drugiej osobie. Trafiają tam również notatki z pytań na wieczór,
@@ -44,7 +44,9 @@ npm start            # http://localhost:8080
 npm run check        # odbudowuje content/index.json i sprawdza wszystkie wydania
 ```
 
-Wystarczy Node.js 18 lub nowszy, bez instalowania zależności.
+Wystarczy Node.js 18 lub nowszy, bez instalowania zależności. Działa na Linuksie, macOS i Windowsie.
+
+Serwer podglądu słucha tylko na tym komputerze i wydaje wyłącznie pliki aplikacji (te same, które trafiają na stronę), więc `.git` i skrypty zostają niedostępne. Żeby otworzyć podgląd na telefonie w tej samej sieci Wi-Fi, uruchom go z `HOST=0.0.0.0 npm start` i wejdź na adres komputera, np. `http://192.168.1.20:8080`.
 
 ## Publikacja (jednorazowo)
 
@@ -67,7 +69,7 @@ Aplikacja to zwykłe pliki statyczne, więc działa na Vercelu albo na GitHub Pa
 
 Plik `.nojekyll` wyłącza przetwarzanie Jekyll, więc pliki trafiają na stronę bez zmian.
 
-Postępy są zapisane osobno dla każdego adresu. Przy przenosinach z jednego adresu na drugi użyj **Profil → Skopiuj kopię danych** i **Wczytaj kopię danych**.
+Postępy są zapisane osobno dla każdego adresu. Przy przenosinach z jednego adresu na drugi (albo na nowy telefon) użyj **Profil → Skopiuj kopię danych** i **Wczytaj kopię danych**. Kopia obejmuje profil, postępy, powtórki, ulubione i wydania przygotowane tylko na tym telefonie. Token GitHuba nie trafia do kopii: na nowym telefonie trzeba go wkleić ponownie, a wczytanie kopii nie kasuje tokenu, który już jest zapisany.
 
 ### Instalacja na telefonie
 
@@ -97,9 +99,11 @@ W aplikacji: **Dziś → Przygotuj dzisiejsze wydanie** (albo **Profil → Publi
    - Czat musi mieć **włączone wyszukiwanie w internecie**. Bez niego odpowie `BRAK_WYSZUKIWANIA`, a aplikacja to wychwyci.
 2. **Wklej odpowiedź** (blok JSON albo oba bloki, jeden pod drugim) i naciśnij **Sprawdź**. Aplikacja sama usuwa typowe naleciałości czatów (znaczniki cytowań ChatGPT, przypisy [1] z Perplexity, `utm_source` w linkach, liczby zapisane jako tekst), wykrywa linki przekierowujące (np. z Gemini) i ucięte odpowiedzi, a resztę wypisze jako gotową listę poprawek do odesłania czatowi.
 3. **Opublikuj:**
-   - **Opublikuj dla obojga**: jednym przyciskiem przez API GitHuba. Wymaga tokenu (Profil → Publikowanie wydań): fine-grained token tylko do tego repozytorium, z uprawnieniem *Contents: Read and write*. Token zostaje na telefonie.
+   - **Opublikuj dla obojga**: jednym przyciskiem przez API GitHuba. Wymaga tokenu (Profil → Publikowanie wydań): fine-grained token tylko do tego repozytorium, z uprawnieniem *Contents: Read and write* i z datą ważności (np. 90 dni). Token zostaje w przeglądarce na tym telefonie, więc nie dawaj mu szerszych uprawnień.
    - **Skopiuj plik i otwórz GitHub**: bez tokenu. Wklejasz plik na stronie GitHuba i klikasz *Commit changes*.
    - **Tylko na tym telefonie**: od razu, ale druga osoba go nie zobaczy.
+
+   Jeśli w wydaniu brakuje jakiejś części (np. quizu albo książki), aplikacja to pokaże i opublikuje je dopiero po zaznaczeniu „Wiem, publikuję mimo braków”.
 
 Wydanie możesz przygotować też wieczorem na następny dzień (pole „Na dzień”). To samo polecenie wypisze `node scripts/prompt.mjs RRRR-MM-DD` (z `--dwie-czesci` w wersji na dwie części). `npm test` sprawdza, czy aplikacja radzi sobie z odpowiedziami różnych czatów.
 

@@ -112,11 +112,13 @@ export function dailyMessage(ctx) {
 
 // Czaty, które dobrze piszą wydanie, i wskazówki do każdego z nich.
 // parts: domyślna liczba części odpowiedzi (2 dla czatów, które często ucinają długie odpowiedzi).
+// ask: adres, który otwiera nowy czat z gotowym pytaniem (przycisk „Pogłęb”), tam gdzie czat to obsługuje.
 export const CHATS = [
   {
     id: 'claude',
     label: 'Claude',
     url: 'https://claude.ai/new',
+    ask: 'https://claude.ai/new?q=',
     parts: 1,
     tips: [
       'Utwórz projekt „SelfLearn” i wklej do jego instrukcji stałe zasady. Codziennie zaczynaj w nim nowy czat.',
@@ -127,6 +129,7 @@ export const CHATS = [
     id: 'chatgpt',
     label: 'ChatGPT',
     url: 'https://chatgpt.com/',
+    ask: 'https://chatgpt.com/?q=',
     parts: 2,
     tips: [
       'Stałe zasady wklej do instrukcji projektu w ChatGPT albo wybierz niżej „Całość”.',
@@ -148,6 +151,7 @@ export const CHATS = [
     id: 'perplexity',
     label: 'Perplexity',
     url: 'https://www.perplexity.ai/',
+    ask: 'https://www.perplexity.ai/search?q=',
     parts: 2,
     tips: [
       'Stałe zasady zapisz w instrukcjach Space albo wybierz niżej „Całość”.',

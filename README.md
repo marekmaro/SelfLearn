@@ -10,6 +10,7 @@ Codzienne wydanie do nauki i poszerzania horyzontów, w formie aplikacji na tele
 - **Pojęcie dnia**: model myślowy albo błąd poznawczy,
 - **Książka tygodnia**: jedna idea dziennie, morał i „zastosuj dziś”,
 - **Quiz** z ciekawostek, pojęcia i książki (bez pytań z wiadomości), a potem **powtórki** w odstępach 1, 3, 7, 16 i 35 dni (pierwsza zawsze następnego dnia, błędna odpowiedź wraca na jutro),
+- **Pogłęb**: przycisk ✦ przy wiadomości, ciekawostce, historii, pojęciu i książce otwiera pytanie do czatu AI (Claude, ChatGPT, Gemini, Perplexity, Copilot): „prościej”, „więcej kontekstu” albo własne pytanie. Bez API i bez kosztów: Claude, ChatGPT i Perplexity otwierają się od razu z pytaniem, w pozostałych wystarczy je wkleić ze schowka,
 - **Pytanie na wieczór** do rozmowy we dwoje,
 - **Podsumowanie tygodnia**: w niedzielę i poniedziałek wydanie zaprasza do przeglądu 7 dni (dni nauki, nagłówki, wyniki quizów) i quizu z pytań z całego tygodnia, najpierw tych, które poszły gorzej. Quiz zalicza dzień serii, a błędne odpowiedzi wracają jutro w powtórkach. Zwykłe wydanie w niedzielę zostaje bez zmian,
 - **Seria dni** jak w Duolingo: dzień się liczy po rozgrzewce albo całym wydaniu, z paskiem ostatnich 7 dni i kamieniami milowymi,
@@ -143,5 +144,4 @@ Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesię
 
 - Powiadomienia push dokładnie o wybranej godzinie, także na iPhonie (wymaga małego serwera, np. darmowy Cloudflare Worker z Web Push).
 - Wspólne statystyki pary i wspólna seria.
-- Przycisk „pogłęb” przy karcie: prostsze wyjaśnienie, więcej kontekstu, pytanie do AI.
 - Wątki: śledzenie długich tematów z osią czasu.

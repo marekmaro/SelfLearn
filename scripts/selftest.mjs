@@ -12,6 +12,7 @@ import { grade } from '../src/srs.js';
 import { getState, update, resetAll, exportJSON, importJSON, saveLocalEdition, localEditions, setGithubSettings, backupDue, markBackedUp, snoozeBackup, backupFileName } from '../src/store.js';
 import { buildChapters, buildWarmup, firstSentence, estimateMinutes } from '../src/chapters.js';
 import { weekEnd, weekDates, weekBannerDue, weekSummary, weekQuiz } from '../src/week.js';
+import { deepenPrompt, deepenUrl, DEEPEN_MODES } from '../src/deepen.js';
 import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
 import { safePath } from './serve.mjs';
 import { join } from 'node:path';
@@ -321,6 +322,27 @@ test('Podsumowanie tygodnia: tydzień do niedzieli, przypomnienie, statystyki i 
   assert(!quiz.some((x) => x.id === 'a1'), 'dobrze rozwiązane przed nierozwiązanymi');
   assert(quiz.every((x) => x.date), 'pytanie bez daty wydania');
   assert(JSON.stringify(weekQuiz([e1, e2], progress, 4)) === JSON.stringify(quiz), 'zestaw zmienia się między otwarciami');
+});
+
+test('Pogłęb: polecenie dla każdego trybu i adres czatu z gotowym pytaniem', () => {
+  const news = { type: 'news', title: 'Sejm przyjął ustawę', text: 'Streszczenie wiadomości.', sources: [{ name: 'PAP', url: 'https://www.pap.pl/a' }] };
+  const simple = deepenPrompt(news, 'prosciej', { date: '2026-10-22' });
+  assert(simple.includes('„Sejm przyjął ustawę”') && simple.includes('https://www.pap.pl/a') && simple.includes('prościej'), 'tryb „prościej”');
+  assert(deepenPrompt(news, 'kontekst').includes('Sprawdź w internecie'), 'kontekst wiadomości bez wyszukiwania');
+  const fact = { type: 'fact', title: 'Banany', text: 'Potas-40.', sources: { name: 'NASA', url: 'https://nasa.gov/x' } };
+  assert(!deepenPrompt(fact, 'kontekst').includes('Sprawdź w internecie') && deepenPrompt(fact, 'kontekst').includes('https://nasa.gov/x'), 'kontekst ciekawostki');
+  assert(deepenPrompt(fact, 'pytanie', { question: '  Ile to sievertów? ' }).includes('Moje pytanie: Ile to sievertów?'), 'własne pytanie');
+  assert(deepenPrompt({ ...fact, text: 'słowo '.repeat(1000) }, 'prosciej').length < 1700, 'długi tekst nie jest skracany');
+  assert(DEEPEN_MODES.length === 3, 'tryby');
+
+  const claude = CHATS.find((c) => c.id === 'claude');
+  const gemini = CHATS.find((c) => c.id === 'gemini');
+  const a = deepenUrl(claude, simple);
+  assert(a.prefilled && a.url.startsWith('https://claude.ai/new?q=') && decodeURIComponent(a.url.split('q=')[1]) === simple, 'Claude z pytaniem w adresie');
+  const b = deepenUrl(gemini, simple);
+  assert(!b.prefilled && b.url === gemini.url, 'Gemini bez pytania w adresie');
+  assert(!deepenUrl(claude, 'x'.repeat(7000)).prefilled, 'za długi adres');
+  assert(deepenUrl({ id: 'inny', url: null }, simple).url === null, 'czat bez adresu');
 });
 
 test('Tryb offline: service worker zna wszystkie pliki aplikacji', () => {

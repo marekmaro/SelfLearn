@@ -885,6 +885,9 @@ dialog.sheet[open] { animation: sheet-up 0.22s ease-out; }
 .sheet-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; position: sticky; top: -8px; background: var(--bg); padding-block: 10px 6px; z-index: 1; }
 .sheet-head::before { content: ""; position: absolute; top: 2px; left: 50%; width: 40px; height: 4px; margin-left: -20px; border-radius: 2px; background: var(--line); }
 .sheet-head h2 { font-size: var(--step-1); }
+.deepen { display: grid; gap: 14px; padding-bottom: 8px; }
+.deepen > .btn { justify-self: start; }
+.card-actions { display: inline-flex; align-items: center; gap: 2px; margin-left: auto; }
 
 /* Przypomnienia */
 .time-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }

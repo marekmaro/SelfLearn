@@ -25,6 +25,7 @@ import { smoothScroll, updateReadProgress, restorePosition, watchScroll } from '
 import { streakWidget } from './streak.js';
 import { backupBanner } from './backup.js';
 import { weekBanner } from './week.js';
+import { deepenButton } from './deepen.js';
 import { weekBannerDue } from '../week.js';
 
 const kindLabel = (id) => FACT_KINDS.find((k) => k.id === id)?.label || id;
@@ -370,6 +371,11 @@ export async function renderToday(root, { date: requested, focus = null, onChang
     );
   }
 
+  // Przyciski pod kartą: „Pogłęb” (pytanie do czatu AI) i serce (Ulubione).
+  function cardActions(id, entry, extra = '') {
+    return h('span', { class: 'card-actions' }, deepenButton(date, extra ? { ...entry, text: `${entry.text}\n${extra}` } : entry), saveButton(id, entry));
+  }
+
   function saveButton(id, entry) {
     const pressed = isSaved(date, id);
     const label = (on) => (on ? 'Usuń z ulubionych' : 'Dodaj do ulubionych');
@@ -408,7 +414,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
       'div',
       { class: 'card-foot' },
       sourceLinks(item.sources),
-      saveButton(item.id, { type: 'news', section: item.section, title: item.title, text: item.summary, sources: item.sources }),
+      cardActions(item.id, { type: 'news', section: item.section, title: item.title, text: item.summary, sources: item.sources }, item.why ? `Dlaczego to ważne: ${item.why}` : ''),
     );
 
     // Widok „Nagłówki”: tytuł i pierwsze zdanie, reszta po dotknięciu.
@@ -449,7 +455,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         'div',
         { class: 'card-foot' },
         sourceLinks(item.source),
-        saveButton(item.id, { type: 'fact', title: item.title, text: item.body, sources: item.source }),
+        cardActions(item.id, { type: 'fact', title: item.title, text: item.body, sources: item.source }),
       ),
     );
   }
@@ -465,7 +471,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         'div',
         { class: 'card-foot' },
         sourceLinks(item.source),
-        saveButton(item.id, { type: 'history', title: `${item.year}: ${item.title}`, text: item.body, sources: item.source }),
+        cardActions(item.id, { type: 'history', title: `${item.year}: ${item.title}`, text: item.body, sources: item.source }),
       ),
     );
   }
@@ -489,7 +495,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         'div',
         { class: 'card-foot' },
         sourceLinks(c.source),
-        saveButton(c.id, { type: 'concept', title: c.term, text: c.definition, sources: c.source }),
+        cardActions(c.id, { type: 'concept', title: c.term, text: c.definition, sources: c.source }, c.origin || ''),
       ),
     );
   }
@@ -541,7 +547,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         'div',
         { class: 'card-foot' },
         sourceLinks(b.source),
-        saveButton(b.id, { type: 'book', title: `${b.title}: ${b.ideaTitle}`, text: b.moral, sources: b.source }),
+        cardActions(b.id, { type: 'book', title: `${b.title}: ${b.ideaTitle}`, text: b.moral, sources: b.source }, `Idea: ${b.idea}`),
       ),
     );
   }

@@ -16,6 +16,7 @@ Codzienne wydanie do nauki i poszerzania horyzontów, w formie aplikacji na tele
 - **Seria dni** jak w Duolingo: dzień się liczy po rozgrzewce albo całym wydaniu, z paskiem ostatnich 7 dni i kamieniami milowymi,
 - **Ulubione**: serce przy wiadomości, ciekawostce, historii, pojęciu albo książce zapisuje ją w osobnej zakładce. Są tam też filtry, wyszukiwanie (także bez polskich znaków), własne notatki przy wpisach, otwieranie wpisu w jego wydaniu i wysyłanie drugiej osobie. Trafiają tam również notatki z pytań na wieczór,
 - **Oś czasu**: strzałki „poprzedni / następny dzień” nad wydaniem i widok wszystkich dni od dziś wstecz, ze skrótem każdego dnia do szybkiego przypomnienia. Podczas przewijania linia wypełnia się nurtem, karp płynie razem z Tobą, a dzień na środku ekranu jest podświetlony,
+- **Wątki**: wiadomości o sprawie, która ciągnie się dniami (ustawa, wojna, wybory), mają pod tytułem odnośnik do wątku. Wątek to własna oś czasu: wszystkie odcinki od najnowszego, ze streszczeniem i przejściem do wydania. Lista wątków jest na Osi czasu. Czat i rutyna oznaczają wiadomości polem `thread`, a polecenie dnia podaje nazwy trwających wątków, żeby się nie rozjeżdżały,
 - **Poziomy** od ikry do smoka (legenda o karpiu i Smoczej Bramie),
 - **Posłuchaj**: telefon czyta wydanie na głos (offline, bez kosztów), przewija za lektorem i podświetla czytaną kartę; tempo 0,9–1,5×,
 - **Wyzwanie we dwoje**: po quizie wysyłasz link z wynikiem, druga osoba rozwiązuje ten sam quiz i widzicie porównanie,
@@ -144,4 +145,3 @@ Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesię
 
 - Powiadomienia push dokładnie o wybranej godzinie, także na iPhonie (wymaga małego serwera, np. darmowy Cloudflare Worker z Web Push).
 - Wspólne statystyki pary i wspólna seria.
-- Wątki: śledzenie długich tematów z osią czasu.

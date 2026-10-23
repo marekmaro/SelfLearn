@@ -260,6 +260,17 @@ button.pill-link { border: 0; cursor: pointer; font-family: inherit; }
 .week-days li.on .dot { background: var(--nurt); border-color: var(--nurt); color: #fff; }
 .week-days .dot svg { width: 14px; height: 14px; }
 
+/* Wątki */
+.thread-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 4px; font-size: var(--step--1); font-weight: 700; color: var(--nurt); text-decoration: none; }
+.thread-link .icon svg { width: 14px; height: 14px; }
+.thread-link .muted { font-weight: 500; }
+.thread-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.thread-card { display: grid; gap: 4px; color: var(--ink); text-decoration: none; }
+.thread-items { list-style: none; margin: 0; padding: 0 0 0 18px; display: grid; gap: 14px; border-left: 2px solid var(--line); }
+.thread-items li { position: relative; }
+.thread-items .thread-node { position: absolute; left: -26px; top: 18px; width: 12px; height: 12px; border-radius: 50%; background: var(--nurt); }
+.thread-items .btn { justify-self: start; width: auto; }
+
 .progress {
   height: 6px;
   border-radius: 999px;

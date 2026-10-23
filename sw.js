@@ -1,5 +1,5 @@
 // Service worker: aplikacja działa offline, a wydania odświeżają się z sieci.
-const VERSION = 'v10';
+const VERSION = 'v11';
 const SHELL = `selflearn-shell-${VERSION}`;
 const CONTENT = 'selflearn-content';
 const FONTS = 'selflearn-fonts';
@@ -31,6 +31,7 @@ const SHELL_FILES = [
   './src/views/backup.js',
   './src/views/week.js',
   './src/views/deepen.js',
+  './src/views/threads.js',
   './src/views/review.js',
   './src/views/favorites.js',
   './src/views/timeline.js',
@@ -44,6 +45,7 @@ const SHELL_FILES = [
   './src/chapters.js',
   './src/week.js',
   './src/deepen.js',
+  './src/threads.js',
   './assets/logo.svg',
   './assets/logo-192.png',
   './assets/logo-512.png',

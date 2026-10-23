@@ -4,6 +4,7 @@
 import { SECTIONS, MAIN_SECTIONS } from './config.js';
 import { formatLong, addDays } from './dates.js';
 import { dayRole } from './books.js';
+import { recentThreadNames } from './threads.js';
 
 const dayMonthFmt = new Intl.DateTimeFormat('pl-PL', { day: 'numeric', month: 'long' });
 
@@ -23,6 +24,7 @@ export function projectInstructions() {
 
 ## Zawartość
 - news, dział "polska": dokładnie 5 wiadomości; "swiat": dokładnie 5. rank 1 = najważniejsza.
+- thread (opcjonalnie, w wiadomości): gdy wiadomość to kolejny odcinek sprawy ciągnącej się dniami albo tygodniami (ustawa w parlamencie, wojna, wybory, proces, negocjacje), dodaj "thread" z krótką nazwą wątku, 2–5 słów, np. "Wojna w Ukrainie". Jeśli polecenie dnia podaje trwające wątki, użyj dokładnie tej samej nazwy. Przy jednorazowych wiadomościach pomiń to pole.
 - news w pozostałych działach podanych w poleceniu dnia: po 1–2 wiadomości. Jeśli w dziale nie ma nic wartościowego z ostatnich 36 godzin, pomiń go: lepiej jedna dobra wiadomość niż dwie słabe.
 - Każda wiadomość: title (informacyjny, bez klikbajtu), summary (3–4 zdania, do 90 słów: co, kto, kiedy, kluczowe liczby), why (1–2 zdania: dlaczego to ważne), sources (1–2 linki, najlepiej polski i zagraniczny).
 - facts: 3 ciekawostki różnych rodzajów; kind to jedno z: nauka, przyroda, historia, kosmos, psychologia. 3–5 zdań z jednym zapadającym w pamięć szczegółem. Czasem forma „mit kontra fakt”.
@@ -82,6 +84,11 @@ export function dailyMessage(ctx) {
   }
   if (avoid.length) {
     lines.push(`- Nie powtarzaj tematów z ostatnich wydań (chyba że jest ważna nowa informacja): ${avoid.slice(0, 40).join(' | ')}.`);
+  }
+
+  const threads = recentThreadNames(recent);
+  if (threads.length) {
+    lines.push(`- Trwające wątki (gdy wiadomość któryś kontynuuje, wpisz w "thread" dokładnie tę nazwę): ${threads.join(' | ')}.`);
   }
 
   if (previous) {

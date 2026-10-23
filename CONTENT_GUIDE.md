@@ -95,6 +95,7 @@ Każda pozycja:
 - `id`: `pl-1…pl-5`, `sw-1…sw-5`, `tech-N`, `ai-N`, `nauka-N`, `zdrowie-N`, `kultura-N`, `pokemon-N`.
 - `rank`: 1 = najważniejsza w dziale.
 - `sources`: 1–2 linki, najlepiej jeden polski i jeden zagraniczny albo dwa niezależne.
+- `thread` (opcjonalnie): nazwa wątku, 2–5 słów, gdy wiadomość to kolejny odcinek sprawy ciągnącej się dniami lub tygodniami (np. `"thread": "Wojna w Ukrainie"`). Polecenie dnia podaje trwające wątki z ostatnich wydań: kontynuację oznacz **dokładnie tą samą nazwą**, bo po niej aplikacja łączy wiadomości w wątek z osią czasu. Jednorazowe wiadomości zostają bez tego pola.
 
 ### Ciekawostki (`facts`)
 

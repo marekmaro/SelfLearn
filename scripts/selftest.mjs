@@ -13,6 +13,8 @@ import { getState, update, resetAll, exportJSON, importJSON, saveLocalEdition, l
 import { buildChapters, buildWarmup, firstSentence, estimateMinutes } from '../src/chapters.js';
 import { weekEnd, weekDates, weekBannerDue, weekSummary, weekQuiz } from '../src/week.js';
 import { deepenPrompt, deepenUrl, DEEPEN_MODES } from '../src/deepen.js';
+import { threadSlug, editionThreads, threadsFromIndex, recentThreadNames } from '../src/threads.js';
+import { indexEntry } from '../src/edition.js';
 import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
 import { safePath } from './serve.mjs';
 import { join } from 'node:path';
@@ -343,6 +345,37 @@ test('Pogłęb: polecenie dla każdego trybu i adres czatu z gotowym pytaniem', 
   assert(!b.prefilled && b.url === gemini.url, 'Gemini bez pytania w adresie');
   assert(!deepenUrl(claude, 'x'.repeat(7000)).prefilled, 'za długi adres');
   assert(deepenUrl({ id: 'inny', url: null }, simple).url === null, 'czat bez adresu');
+});
+
+test('Wątki: nazwa w adresie, wpisy w indeksie, oś czasu, polecenie dnia i walidator', () => {
+  assert(threadSlug('Ustawy o aborcji') === 'ustawy-o-aborcji', 'slug');
+  assert(threadSlug('  Wojna w Ukrainie!  ') === 'wojna-w-ukrainie', 'slug ze znakami');
+  assert(threadSlug('Łódź – żółć') === 'lodz-zolc', 'polskie znaki');
+  const day = (date, threads) => ({
+    ...base,
+    date,
+    news: base.news.map((n, i) => (threads[i] ? { ...n, thread: threads[i] } : n)),
+  });
+  const d1 = day('2026-10-20', ['Wojna w Ukrainie', 'Budżet 2027']);
+  const d2 = day('2026-10-21', ['Wojna w ukrainie']);
+  const d3 = day('2026-10-22', [null, 'Budżet 2027', 'Wojna w Ukrainie']);
+  assert(editionThreads(d1).length === 2 && editionThreads(d1)[0].item === base.news[0].id, 'wątki wydania');
+  assert(!('threads' in indexEntry(base)) || base.news.some((n) => n.thread), 'pusty wpis wątków w indeksie');
+  const index = { editions: [d3, d2, d1].map(indexEntry) };
+  const threads = threadsFromIndex(index);
+  const war = threads.find((t) => t.slug === 'wojna-w-ukrainie');
+  assert(threads.length === 2, `liczba wątków: ${threads.length}`);
+  assert(war.days === 3 && war.first === '2026-10-20' && war.last === '2026-10-22', 'oś czasu wątku');
+  assert(war.items[0].date === '2026-10-22', 'najnowsze pierwsze');
+  assert(war.name === 'Wojna w Ukrainie', 'nazwa z najnowszego wydania');
+  assert(JSON.stringify(recentThreadNames([d3, d2])) === JSON.stringify(['Budżet 2027', 'Wojna w Ukrainie']), 'nazwy do polecenia');
+  const msg = dailyMessage({ date: '2026-10-23', sections: ['polska', 'swiat'], recent: [d3, d2] });
+  assert(msg.includes('Trwające wątki') && msg.includes('Budżet 2027 | Wojna w Ukrainie'), 'polecenie dnia bez wątków');
+  assert(projectInstructions().includes('"thread"'), 'zasady bez pola thread');
+  const bad = validateEdition({ ...base, news: base.news.map((n, i) => (i === 0 ? { ...n, thread: 42 } : i === 1 ? { ...n, thread: 'x'.repeat(70) } : n)) });
+  assert(bad.errors.some((e) => e.includes('"thread"')), 'zła nazwa wątku przechodzi');
+  assert(bad.warnings.some((w) => w.includes('dłuższa niż')), 'brak uwagi o długiej nazwie');
+  assert(!validateEdition({ ...d1, date: base.date }).errors.length, 'poprawny wątek daje błąd');
 });
 
 test('Tryb offline: service worker zna wszystkie pliki aplikacji', () => {

@@ -129,6 +129,7 @@ function header(total, read) {
           { class: 'meta-row' },
           h('span', { class: 'pill' }, icon('calendar'), `${total} ${plural(total, 'wydanie', 'wydania', 'wydań')}`),
           h('span', { class: 'pill nurt' }, icon('check'), `${read} ${plural(read, 'przeczytane', 'przeczytane', 'przeczytanych')}`),
+          h('a', { class: 'pill pill-link', href: '#watki' }, icon('timeline'), 'Wątki'),
         )
       : null,
   );

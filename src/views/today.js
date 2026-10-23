@@ -27,6 +27,8 @@ import { backupBanner } from './backup.js';
 import { weekBanner } from './week.js';
 import { deepenButton } from './deepen.js';
 import { weekBannerDue } from '../week.js';
+import { threadLink } from './threads.js';
+import { threadsFromIndex } from '../threads.js';
 
 const kindLabel = (id) => FACT_KINDS.find((k) => k.id === id)?.label || id;
 
@@ -46,6 +48,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
     mount(root, errorState(err, () => renderToday(root, { date: requested, focus, onChange })));
     return;
   }
+  const threads = threadsFromIndex(index);
 
   // Rozgrzewka: 3 pytania z poprzedniego wydania.
   const prevDate = previousDate(index, date);
@@ -406,7 +409,12 @@ export async function renderToday(root, { date: requested, focus = null, onChang
   }
 
   function newsCard(item, rank) {
-    const head = h('div', { class: 'news-head' }, h('span', { class: 'rank', 'aria-label': `Miejsce ${rank}` }, rank), h('h3', null, item.title));
+    const head = h(
+      'div',
+      { class: 'news-head' },
+      h('span', { class: 'rank', 'aria-label': `Miejsce ${rank}` }, rank),
+      h('div', null, h('h3', null, item.title), item.thread ? threadLink(item.thread, threads) : null),
+    );
     const why = item.why
       ? h('div', { class: 'why' }, h('p', { class: 'eyebrow' }, 'Dlaczego to ważne'), h('p', null, item.why))
       : null;

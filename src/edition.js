@@ -1,6 +1,7 @@
 // Wspólne dla aplikacji i skryptów: sprawdzanie wydania, wpis do indeksu,
 // wyciąganie JSON-a z odpowiedzi czatu. Bez zależności od przeglądarki.
 import { SECTIONS, FACT_KINDS } from './config.js';
+import { threadSlug, editionThreads, MAX_THREAD_NAME } from './threads.js';
 
 const SECTION_IDS = SECTIONS.map((s) => s.id);
 const KIND_IDS = FACT_KINDS.map((k) => k.id);
@@ -55,6 +56,10 @@ export function validateEdition(ed) {
     if (!Array.isArray(n.sources) || n.sources.length === 0) err(`${where}: potrzebne co najmniej jedno źródło`);
     for (const [j, s] of (Array.isArray(n.sources) ? n.sources : []).entries()) checkSource(`${where}.sources[${j}]`, s);
     if (isText(n.summary) && n.summary.split(/\s+/).length > 110) warn(`${where}: streszczenie dłuższe niż 110 słów`);
+    if (n.thread !== undefined && n.thread !== null) {
+      if (!isText(n.thread) || !threadSlug(n.thread)) err(`${where}: "thread" musi być krótką nazwą wątku`);
+      else if (n.thread.length > MAX_THREAD_NAME) warn(`${where}: nazwa wątku dłuższa niż ${MAX_THREAD_NAME} znaków`);
+    }
   }
   for (const main of ['polska', 'swiat']) {
     if ((perSection[main] || 0) < 5) warn(`dział "${main}" ma ${perSection[main] || 0} z 5 wiadomości`);
@@ -191,7 +196,8 @@ function isHomepage(url) {
 export function indexEntry(ed) {
   const news = Array.isArray(ed.news) ? ed.news : [];
   const top = news.find((n) => n?.section === 'polska' && n.rank === 1) || news.find(isObj);
-  return { date: ed.date, headline: top?.title || '' };
+  const threads = editionThreads(ed);
+  return threads.length ? { date: ed.date, headline: top?.title || '', threads } : { date: ed.date, headline: top?.title || '' };
 }
 
 // Wyciąga wydanie z odpowiedzi czatu: z bloku ```json albo z gołego tekstu.

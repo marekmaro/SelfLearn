@@ -1,0 +1,449 @@
+{
+  "date": "2026-10-23",
+  "intro": "Dziś m.in. Katarzyna Pełczyńska-Nałęcz odchodzi z rządu, Sejm likwiduje ulgę na internet, w cieśninie Ormuz trafiono siedem statków, a Nagrodę Sacharowa dostał Międzynarodowy Trybunał Karny. Do tego szósty dzień z „Atomowymi nawykami”: jeden nawyk, jeden system.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Pełczyńska-Nałęcz odchodzi z rządu. Sejm utrzymał dwukadencyjność w samorządach",
+      "summary": "W czwartek Sejm odrzucił projekt PSL, który miał znieść limit dwóch kadencji dla wójtów, burmistrzów i prezydentów miast. Za było 213 posłów, przeciw 215, a 9 wstrzymało się od głosu. Przeciw zagłosowało też 15 posłów z KO, Lewicy, Centrum i Polski 2050. Minister funduszy i polityki regionalnej Katarzyna Pełczyńska-Nałęcz uznała wynik za swoją wygraną, ale skrytykowała część koalicjantów, w tym posłów własnej partii, i zapowiedziała odejście z rządu. Szymon Hołownia przekazał, że klub Polski 2050 zostaje w koalicji.",
+      "why": "Rząd traci ministrę odpowiedzialną za fundusze unijne, a według Hołowni o nowym przywództwie Polski 2050 zdecydują teraz członkowie partii. Formalnego odwołania jeszcze nie ma.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-10-22/pelczynska-zapowiada-ze-odchodzi-z-rzadu-tuska/" },
+        { "name": "Interia", "url": "https://wydarzenia.interia.pl/kraj/news-pelczynska-nalecz-odchodzi-z-rzadu-wartosci-wazniejsze-niz-s,nId,23562621" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Sejm likwiduje ulgę na internet. Ulga na robotyzację zostaje do 2036 r.",
+      "summary": "Sejm przyjął w czwartek zmiany w ustawach o PIT, CIT i ryczałcie. Od 1 stycznia 2027 r. znika ulga na internet oraz ulga na ekspansję dla firm płacących CIT. Ulga na robotyzację zostaje przedłużona o 10 lat, do końca 2036 r., z odliczeniem nadal w wysokości 50%. Wzrośnie ulga dla honorowych krwiodawców. Kto pierwszy raz odliczy internet w zeznaniu za 2026 r., zachowa to prawo także w rozliczeniu za 2027 r. Posłowie odrzucili poprawki PiS. Ustawa trafi teraz do Senatu.",
+      "why": "Z ulgi na internet korzystały miliony podatników, więc zmiana dotknie wielu domowych rozliczeń PIT. Zanim wejdzie w życie, musi ją jeszcze rozpatrzyć Senat i podpisać prezydent.",
+      "sources": [
+        { "name": "RMF24", "url": "https://www.rmf24.pl/fakty/polska/news-sejm-przyjal-zmiany-zniknie-ulga-na-internet,nIdn,1023068" },
+        { "name": "PIT.pl", "url": "https://www.pit.pl/aktualnosci/popularna-ulga-podatkowa-do-likwidacji-inne-czekaja-zmiany-komisja-sejmowa-poparla-zmiany-w-pit" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Polska ma być zwolniona z relokacji migrantów także w 2027 r.",
+      "summary": "Według nieoficjalnych informacji RMF FM i źródeł PAP w Brukseli Komisja Europejska znów uzna, że Polska jest pod szczególną presją migracyjną. To oznaczałoby zwolnienie z obowiązkowego mechanizmu solidarności z unijnego paktu migracyjnego na 2027 r. Komisja ma brać pod uwagę dużą liczbę uchodźców z Ukrainy i presję na granicy z Białorusią. Raport ma zostać opublikowany 4 listopada, a formalną decyzję podejmie Rada UE.",
+      "why": "Mechanizm solidarności zobowiązuje państwa UE do pomocy krajom, do których trafia najwięcej migrantów, m.in. przez relokację. Na razie to przecieki, a nie ostateczna decyzja.",
+      "sources": [
+        { "name": "RMF24", "url": "https://www.rmf24.pl/fakty/polska/news-nieoficjalnie-polska-w-2027-r-ponownie-zwolniona-z-obowiazku,nIdn,1023047" },
+        { "name": "Interia", "url": "https://wydarzenia.interia.pl/kraj/news-obowiazek-przyjmowania-migrantow-media-ke-zdecydowala-ws-pol,nId,23562532" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Wojciech Olszański „Jaszczur” zatrzymany i doprowadzony do więzienia",
+      "summary": "Policja zatrzymała w czwartek Wojciecha Olszańskiego, znanego jako „Jaszczur”. Szef MSWiA Marcin Kierwiński poinformował, że chodziło o doprowadzenie go do zakładu karnego na podstawie postanowienia Sądu Rejonowego dla Warszawy-Śródmieścia. Olszański był wcześniej prawomocnie skazany m.in. na trzy miesiące bezwzględnego więzienia za wypowiedzi z 2022 r. uznane za nawoływanie do nienawiści i znieważenie osób narodowości żydowskiej. W komunikatach nie sprecyzowano, którego wyroku dotyczy zatrzymanie.",
+      "why": "To wykonanie prawomocnego wyroku, a nie nowe zarzuty. Rządzący przedstawiają zatrzymanie jako sygnał „zero tolerancji” dla mowy nienawiści.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-10-22/ruch-sluzb-ws-jaszczura-wojciech-olszanski-zatrzymany-przez-policje/" },
+        { "name": "TVP Info", "url": "https://www.tvp.info/96068694/wojciech-olszanski-jaszczur-zatrzymany-i-doprowadzony-do-zakladu-karnego" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "„Tydzień strachu” w szkołach: 192 zatrzymanych. MSWiA mówi o stabilizacji",
+      "summary": "MSWiA podsumowało akcję policji w szkołach po fali gróźb i fałszywych alarmów. Policja odnotowała 482 zdarzenia, w których podejrzewano przestępstwo, zatrzymała 192 osoby i zabezpieczyła 155 niebezpiecznych przedmiotów. Do sądów rodzinnych trafiło 68 spraw nieletnich, wszczęto 106 postępowań karnych. Według szefa MSWiA Marcina Kierwińskiego nic nie wskazuje, by zdarzenia były skoordynowane, a służby nie potwierdziły internetowego „challenge’u”. Policja zostaje w szkołach, ale ma się skupić na profilaktyce i rozmowach z uczniami.",
+      "why": "Fałszywe alarmy dezorganizują lekcje i niepokoją rodziców. Przejście na profilaktykę pokazuje, że służby uważają falę za opanowaną.",
+      "sources": [
+        { "name": "Kronika Tygodnia", "url": "https://www.kronikatygodnia.pl/artykul/56125,tydzien-strachu-w-polskich-szkolach-policja-zatrzymala-ponad-190-osob-155-niebezpiecznych-przedmiotow" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Iran: siedem statków trafionych w cieśninie Ormuz w ciągu doby",
+      "summary": "Iran podał, że w cieśninie Ormuz trafiono siedem tankowców. To najwięcej w ciągu jednego dnia od początku wojny 28 lutego. Według Gwardii Rewolucyjnej cztery z nich przeładowywały ropę i w nocy stanęły w ogniu. Teheran tłumaczy, że zaostrza ataki w odpowiedzi na amerykańską blokadę irańskich portów i nowe sankcje, i ostrzega USA przed szerszą odpowiedzią. Amerykanie odrzucają te twierdzenia jako próbę podbicia cen ropy przed wyborami. Danych żadnej ze stron nie da się niezależnie potwierdzić.",
+      "why": "Przez cieśninę Ormuz płynie duża część światowej ropy. Każda eskalacja szybko odbija się na cenach paliw, także w Polsce.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/10/22/iran-says-seven-ships-hit-in-hormuz-strait-warns-us-of-wider-response" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Rosja uderzyła w Kijów kilka godzin po zgodzie na rozmowy",
+      "summary": "W nocy na czwartek Rosja przeprowadziła duży atak rakietowo-dronowy na Ukrainę, wymierzony głównie w Kijów. Według ukraińskich sił powietrznych użyła m.in. rakiet Iskander-M, Cyrkon i Oniks oraz 210 dronów typu Shahed, z których obrona zneutralizowała 181. Wystrzeliła co najmniej 21 rakiet balistycznych w trzech falach. W Kijowie zginęła jedna osoba, a 22 zostały ranne. Atak nastąpił kilka godzin po tym, jak Kreml zgodził się wznowić rozmowy pokojowe z udziałem USA.",
+      "why": "Zapowiedź rozmów nie zmniejszyła siły ataków. To pokazuje, jak trudne mogą być negocjacje, które mają ruszyć w listopadzie.",
+      "sources": [
+        { "name": "The New Voice of Ukraine", "url": "https://english.nv.ua/nation/russia-attacks-ukraine-with-zircon-onyx-and-iskander-missiles-and-210-drones-overnight-50652357.html" },
+        { "name": "CBC", "url": "https://www.cbc.ca/news/world/ukraine-russia-missile-attack-9.7391250" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Nagroda Sacharowa dla Międzynarodowego Trybunału Karnego",
+      "summary": "Parlament Europejski przyznał w czwartek tegoroczną Nagrodę im. Sacharowa za wolność myśli Międzynarodowemu Trybunałowi Karnemu i jego pracownikom. Ogłosiła to w Strasburgu przewodnicząca PE Roberta Metsola. W finale byli też tanzański opozycjonista Tundu Lissu oraz irańskie siostry Taraneh i Romina Rahimi. Nagroda przychodzi niecałe dwa tygodnie po tym, jak prezydent USA Donald Trump ogłosił sankcje wobec trybunału. Wręczenie zaplanowano na grudzień.",
+      "why": "To polityczny gest poparcia dla trybunału, który ściga zbrodnie wojenne. Po tym, jak MTK wydał nakaz aresztowania premiera Izraela Benjamina Netanjahu, USA objęły sankcjami jego sędziów.",
+      "sources": [
+        { "name": "Human Rights Watch", "url": "https://www.hrw.org/news/2026/10/22/icc-wins-eu-parliaments-sakharov-prize" },
+        { "name": "Eunews", "url": "https://www.eunews.it/en/2026/10/22/the-sakharov-prize-for-freedom-of-thought-awarded-to-the-international-criminal-court/" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Bukele wysyła wojsko na Haiti. Gangi porwały czterech Salwadorczyków",
+      "summary": "Prezydent Salwadoru Nayib Bukele ogłosił w środę operację wojskową na Haiti, której celem jest uwolnienie czterech salwadorskich techników lotniczych. Służą oni w popieranych przez ONZ Siłach do Walki z Gangami (GSF). Gangi zaatakowały ich opancerzony pojazd w Croix-des-Bouquets i wzięły ich jako zakładników. Bukele ostrzegł przywódców gangów, że jeśli zakładnicy nie wrócą żywi, odpowiedź będzie znacznie mocniejsza. Rząd Haiti uznał ich uwolnienie za „absolutny priorytet”.",
+      "why": "Haiti od lat zmaga się z przemocą gangów, a międzynarodowa misja ma trudności z jej opanowaniem. Operacja jednego państwa na terytorium innego to nietypowy krok.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/10/22/el-salvadors-bukele-threatens-haitian-gangs-over-abducted-soldiers" },
+        { "name": "NPR Illinois", "url": "https://www.nprillinois.org/2026-10-22/bukele-says-military-operation-launched-to-rescue-salvadorans-held-by-gangs-in-haiti" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Bułgaria w niedzielę wybiera prezydenta",
+      "summary": "W niedzielę 25 października Bułgarzy wybiorą prezydenta. Główni kandydaci to urzędująca prezydent Ilijana Jotowa, popierana przez partię premiera Rumena Radewa, oraz Andriej Gjurow, były szef rządu tymczasowego, wspierany przez Demokratyczną Bułgarię i Kontynuujemy Zmianę. Radew nie może kandydować po raz trzeci. Jeśli nikt nie zdobędzie wymaganej większości, 1 listopada odbędzie się druga tura.",
+      "why": "Według AP to pierwszy ogólnokrajowy test dla Radewa od kwietniowych wyborów, które zakończyły lata politycznego impasu. Część komentatorów przedstawia Gjurowa jako kandydata bardziej proukraińskiego.",
+      "sources": [
+        { "name": "BTA", "url": "https://www.bta.bg/en/Bulgaria-votes-for-President-and-Vice-President-2026/1210582" },
+        { "name": "Jewropejska Prawda", "url": "https://www.eurointegration.com.ua/eng/news/2026/10/14/7247686/" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Budżet obronny na 2027 r. przeszedł przez sejmową komisję",
+      "summary": "Sejmowa Komisja Obrony Narodowej poparła obronną część projektu budżetu na 2027 r. Jej opinia trafi teraz do Komisji Finansów Publicznych. Wydatki na obronność z samego budżetu państwa mają przekroczyć 131 mld zł, w tym ponad 41 mld zł na modernizację wojska. Razem z Funduszem Wsparcia Sił Zbrojnych rząd planuje 198,1 mld zł, czyli 4,51% PKB. Były szef MON Mariusz Błaszczak zwraca uwagę, że to nominalnie mniej niż 200,1 mld zł zaplanowane na 2026 r.",
+      "why": "Polska należy do krajów NATO, które wydają na wojsko najwięcej w relacji do PKB. Spór dotyczy tego, czy tempo zbrojeń zostanie utrzymane.",
+      "sources": [
+        { "name": "WNP.pl", "url": "https://www.wnp.pl/bezpieczenstwo/polska-wyda-miliardy-na-wojsko-sejmowa-komisja-ocenila-budzet-obronny-na-2027-rok,1111933.html" },
+        { "name": "Defence24", "url": "https://defence24.pl/sily-zbrojne/blaszczak-projekt-budzetu-mon-pokazuje-spadek-wydatkow-obronnych" }
+      ]
+    },
+    {
+      "id": "gospodarka-1",
+      "section": "gospodarka",
+      "rank": 1,
+      "title": "Złoty słabnie, a inflacja jest najwyższa od ponad roku",
+      "summary": "W czwartek po południu euro kosztowało ok. 4,37 zł, a dolar przekroczył 3,90 zł. Złoty tracił, bo kurs euro do dolara spadł do 1,12, a inwestorzy obawiają się sytuacji geopolitycznej i finansów Francji. GUS podniósł wrześniowy odczyt inflacji z 4,0 do 4,1%, najwyżej od czerwca 2025 r. Głównym powodem są paliwa, które po zakończeniu programu CPN podrożały we wrześniu o 9,2%. Inflacja przewyższyła stopę referencyjną NBP.",
+      "why": "Gdy inflacja jest wyższa od stóp procentowych, pieniądze na lokatach realnie tracą na wartości. Słabszy złoty podraża też import, w tym paliwa.",
+      "sources": [
+        { "name": "Forsal", "url": "https://forsal.pl/finanse/waluty/artykuly/11335272,ile-kosztuje-euro-dolar-i-frank-kursy-walut-22102026.html" },
+        { "name": "Bankier.pl", "url": "https://www.bankier.pl/wiadomosc/Inflacja-przyspiesza-ale-zloty-sie-trzyma-Kurs-euro-ponizej-linii-oporu-9212397.html" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Strajk w tajwańskiej fabryce Microna. Spór o premie z zysków",
+      "summary": "Związek zawodowy pracowników Micron Technology w Taoyuan na Tajwanie rozpoczął strajk. Ma on wesprzeć związkowców z zakładu w Taichung, którzy w czwartek prowadzili mediacje z firmą. Związki chcą, by Micron przeznaczał 15% zysku operacyjnego na kwartalne premie. W głosowaniu strajk poparło 1994 z 2258 członków związku z Taoyuan. Micron zapewnia, że chce konstruktywnych rozmów z obiema organizacjami.",
+      "why": "Pamięci komputerowe są dziś towarem deficytowym przez boom na AI, a fabryki pracują na pełnych obrotach. Każdy przestój może podbić ceny elektroniki.",
+      "sources": [
+        { "name": "Taipei Times", "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866321" },
+        { "name": "The Next Web", "url": "https://thenextweb.com/news/micron-taiwan-union-strike-profit-sharing" }
+      ]
+    },
+    {
+      "id": "nauka-1",
+      "section": "nauka",
+      "rank": 1,
+      "title": "Komórki krwi 80-latka zamienione w „młode” komórki macierzyste mózgu",
+      "summary": "Badacze z Uniwersytetu w Bonn przekształcili komórki prekursorowe krwi pobrane od 80-letniego dawcy w nerwowe komórki macierzyste, z których powstają neurony. Pominęli przy tym zwykły etap komórek pluripotencjalnych. Zegary epigenetyczne, czyli pomiar zmian w DNA narastających z wiekiem, pokazały, że nowe komórki mają wiek molekularny poniżej 20 lat. Odmładzanie zachodziło stopniowo, więc zespół śledził je przez 100 dni. Wyniki opublikowano na początku października w „Aging Cell”.",
+      "why": "To badanie w laboratorium, a nie terapia dla ludzi. Daje jednak nowy model do badania starzenia się komórek i chorób mózgu z prostej próbki krwi.",
+      "sources": [
+        { "name": "News-Medical", "url": "https://news-medical.net/news/20261009/Bonn-researchers-successfully-rejuvenate-human-cells-in-a-test-tube.aspx" },
+        { "name": "Newswise", "url": "https://www.newswise.com/articles/researchers-transform-old-blood-cells-into-young-brain-cells" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Duże badanie: żywność ultraprzetworzona jako całość nie podnosi ryzyka raka jelita",
+      "summary": "Naukowcy z amerykańskiego Narodowego Instytutu Raka przeanalizowali dane 461 682 uczestników badania NIH-AARP. Osoby jedzące najwięcej żywności ultraprzetworzonej nie miały wyższego ryzyka raka jelita grubego niż jedzące najmniej. Liczyło się jednak, co dokładnie jedzą: ultraprzetworzone produkty z pełnym ziarnem, błonnikiem i nabiałem wiązały się z mniejszym ryzykiem, a mięso z takich produktów z większym. Wyniki opublikowano w „PLOS Medicine”.",
+      "why": "To badanie obserwacyjne, więc nie dowodzi przyczyny i skutku. Uczestnicy to głównie starsi biali Amerykanie, a dietę zmierzono tylko raz. Badanie nie wyjaśnia też wzrostu zachorowań wśród młodszych.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/10/261020085014.htm" },
+        { "name": "ecancer", "url": "https://ecancer.org/en/news/29049-total-ultra-processed-food-intake-not-linked-to-colorectal-cancer-in-large-us-cohort-study" }
+      ]
+    },
+    {
+      "id": "psychologia-1",
+      "section": "psychologia",
+      "rank": 1,
+      "title": "„Niewidzialna praca” w związku. Kobiety są szczęśliwsze, gdy partner ją dzieli",
+      "summary": "Dwuczęściowe badanie, opisane na początku października przez PsyPost, dotyczyło obciążenia mentalnego, czyli pamiętania, planowania i pilnowania spraw domu i związku. Kobiety w związkach z mężczyznami były bardziej zadowolone z relacji i życia seksualnego, gdy partner brał na siebie większą część tej pracy. Związki były niewielkie: korelacje wyniosły 0,24 i 0,15. U mężczyzn wzór był odwrotny: byli bardziej zadowoleni, gdy więcej spraw ogarniała partnerka.",
+      "why": "Podział obowiązków to nie tylko to, kto zmywa, ale też kto o tym pamięta. Badanie pokazuje, że ta mniej widoczna część może wpływać na zadowolenie ze związku.",
+      "sources": [
+        { "name": "PsyPost", "url": "https://www.psypost.org/the-invisible-chore-that-may-matter-more-for-womens-relationship-happiness-than-housework/" }
+      ]
+    },
+    {
+      "id": "srodowisko-1",
+      "section": "srodowisko",
+      "rank": 1,
+      "title": "WMO: El Niño może podgrzać Pacyfik do rekordowego poziomu",
+      "summary": "Światowa Organizacja Meteorologiczna ostrzega, że El Niño szybko się wzmacnia. Według jej prognozy temperatura powierzchni wody w kluczowym rejonie Pacyfiku może w październiku–grudniu przekraczać normę o ok. 3,7°C, ze szczytem około grudnia. Dotychczasowy rekord to +2,6°C z przełomu 2015 i 2016 r. Zjawisko niemal na pewno utrzyma się do lutego 2027 r. i może być jednym z najsilniejszych od 1950 r. Prognoza opiera się na zgodnych wynikach 13 ośrodków meteorologicznych.",
+      "why": "El Niño podnosi średnią temperaturę na świecie i zmienia rozkład opadów, co zwiększa ryzyko susz i powodzi w wielu regionach.",
+      "sources": [
+        { "name": "WMO", "url": "https://wmo.int/node/39068" },
+        { "name": "Khaosod English", "url": "https://www.khaosodenglish.com/news/2026/10/09/wmo-warns-el-nino-may-intensify-through-february-2027/" }
+      ]
+    },
+    {
+      "id": "muzyka-1",
+      "section": "muzyka",
+      "rank": 1,
+      "title": "Michael Kiwanuka wydaje „FUDGE”, pierwszy album po udarze",
+      "summary": "W piątek ukazuje się piąta płyta brytyjskiego wokalisty Michaela Kiwanuki, „FUDGE”. Premierę przesunięto o blisko rok z powodu jego zdrowia: muzyk przeszedł udar wywołany krwawieniem do mózgu na tle wysokiego ciśnienia. Pierwszy raz od debiutu „Home Again” z 2012 r. sam prowadził produkcję, a nagrania dokończył z producentem Domem Monksem i aranżerką smyczków Rosie Danvers. Na płycie jest 12 utworów, m.in. „Summer Clothes” i „California”.",
+      "why": "To powrót artysty po poważnej chorobie. Kiwanuka przyznaje, że nie wie jeszcze, kiedy wróci na koncerty.",
+      "sources": [
+        { "name": "mxdwn Music", "url": "https://music.mxdwn.com/2026/09/24/news/michael-kiwanuka-announces-new-album-fudge-for-october-2026-release-amid-ongoing-health-battle/" },
+        { "name": "Spin", "url": "https://www.spinmagazine.com/2026/09/michael-kiwanuka-stroke-album/" }
+      ]
+    },
+    {
+      "id": "muzyka-2",
+      "section": "muzyka",
+      "rank": 2,
+      "title": "Tony Iommi z Black Sabbath wydaje pierwszą solową płytę od 21 lat",
+      "summary": "W piątek ukazuje się „From the Dark”, trzeci solowy album gitarzysty Black Sabbath Tony’ego Iommiego i pierwszy od „Fused” z 2005 r. Śpiewa Jørn Lande, na basie gra Becky Baldwin, a na perkusji Karl Brazil. W utworze „Death Wake” gościnnie solo zagrał Brian May z Queen. Płytę zapowiadał singiel „World Alone”.",
+      "why": "Iommi współtworzył brzmienie heavy metalu. Po latach wraca z własnym materiałem i zespołem.",
+      "sources": [
+        { "name": "Loudwire", "url": "https://loudwire.com/tony-iommi-from-the-dark-album-world-alone-song/" },
+        { "name": "Kerrang!", "url": "https://www.kerrang.com/tony-iommi-announces-first-solo-album-in-over-two-decades-from-the-dark-lead-single-world-alone-black-sabbath-birmingham-press-conference" }
+      ]
+    },
+    {
+      "id": "sport-1",
+      "section": "sport",
+      "rank": 1,
+      "title": "Liga Europy: Lech zdobył pierwszy punkt, Jagiellonia przegrała 0:3",
+      "summary": "W 3. kolejce fazy ligowej Ligi Europy Lech Poznań zremisował u siebie z Sunderlandem 1:1. Goście prowadzili do przerwy, a w 70. minucie wyrównał Bengtsson. To pierwszy punkt mistrzów Polski w tej edycji rozgrywek. Jagiellonia Białystok przegrała na własnym stadionie z Anderlechtem 0:3.",
+      "why": "Punkty polskich klubów w pucharach liczą się do rankingu UEFA, od którego zależy, ile drużyn z Polski zagra w Europie w kolejnych sezonach.",
+      "sources": [
+        { "name": "Polsat Sport", "url": "https://www.polsatsport.pl/wiadomosc/2026-10-22/liga-europy-wyniki-i-skroty-meczow-czwartek-22-pazdziernika/" },
+        { "name": "Polsat Sport", "url": "https://www.polsatsport.pl/wiadomosc/2026-10-22/wazna-zdobycz-lecha-tak-wyglada-ranking-uefa-po-meczach-polskich-klubow/" }
+      ]
+    },
+    {
+      "id": "podroze-1",
+      "section": "podroze",
+      "rank": 1,
+      "title": "W niedzielę rusza zimowy rozkład lotów. Nowe trasy z Katowic i Poznania",
+      "summary": "Wraz ze zmianą czasu w niedzielę 25 października linie lotnicze przechodzą na zimowy rozkład. Ryanair uruchamia z Katowic trzy nowe trasy, do Malagi, Neapolu i Turynu, i obsłuży stamtąd łącznie 13 kierunków. Wizz Air zapowiadał nowe połączenia m.in. do Hurghady od 25 października, Bilbao od 19 grudnia i Turynu od 16 stycznia 2027 r. Część tras na zimę przewoźnicy jednak zawieszają.",
+      "why": "Zimowy rozkład to dobry moment, żeby sprawdzić, czy ulubione połączenie nadal lata. Przed zakupem biletu warto zajrzeć na stronę przewoźnika.",
+      "sources": [
+        { "name": "Interia", "url": "https://geekweek.interia.pl/podroze/news-nowe-trasy-z-polski-na-zime-ryanair-i-wizz-air-szaleja,nId,23514145" },
+        { "name": "Śląsk Zagłębie", "url": "https://www.slazag.pl/ryanair-stawia-na-katowice-trzy-nowe-kierunki-i-trzy-samoloty-na-zime-2026" }
+      ]
+    },
+    {
+      "id": "pokemon-1",
+      "section": "pokemon",
+      "rank": 1,
+      "title": "Delta Reign: od soboty prerelease i Build & Battle Boxy",
+      "summary": "Od soboty 24 października w wybranych sklepach Play! Pokémon można kupić Build & Battle Boxy z dodatku Mega Evolution: Delta Reign i zagrać w turniejach prerelease. Każde pudełko zawiera 4 boostery Delta Reign, gotową talię 40 kart i jedną z czterech foliowych kart promo: Masquerain, Magmortar, Enamorus albo Kommo-o. Według PokeBeach prerelease potrwa do 1 listopada. Pełna premiera dodatku jest zaplanowana na 6 listopada.",
+      "why": "Prerelease to najprostszy sposób, żeby zagrać nowymi kartami przed premierą. Produkt trafia do lokalnych sklepów, więc warto wcześniej zadzwonić i zapytać o miejsca.",
+      "sources": [
+        { "name": "ICv2", "url": "https://icv2.com/articles/news/view/63514" }
+      ]
+    },
+    {
+      "id": "pokemon-2",
+      "section": "pokemon",
+      "rank": 2,
+      "title": "TCG Pocket: dodatek Dual Fusion 28 października",
+      "summary": "Następny dodatek do Pokémon TCG Pocket, Dual Fusion, ukaże się 28 października. Wprowadzi Pokémony dwutypowe, a wśród nowych kart są Mega Mewtwo X ex i Mega Greninja ex. Kosmetyczne okładki i tła pojawią się 31 października. Twórcy zapowiadają też, że nowe paczki będą wychodzić co ok. sześć tygodni zamiast co cztery.",
+      "why": "Rzadszy rytm dodatków daje więcej czasu na zbieranie kart i budowanie talii z jednego zestawu.",
+      "sources": [
+        { "name": "Pokémon", "url": "https://www.pokemon.com/uk/news/pokemon-tcg-pocket-dual-fusion-expansion-coming-soon" },
+        { "name": "PocketMonsters.net", "url": "https://pocketmonsters.net/news/9631" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "kosmos",
+      "title": "Olympus Mons: wulkan wielkości Polski",
+      "body": "Na Marsie wznosi się Olympus Mons, największy znany wulkan w Układzie Słonecznym. Ma ok. 22 km wysokości, czyli prawie dwa i pół raza więcej niż Mount Everest. Jego podstawa ma ok. 600 km średnicy, więc zajmuje obszar porównywalny z Polską. Zbocza są tak łagodne, że stojąc na nich, nie zobaczylibyśmy szczytu: zasłaniałaby go krzywizna planety.",
+      "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Olympus_Mons" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "psychologia",
+      "title": "Mit: używamy tylko 10% mózgu",
+      "body": "To jeden z najpopularniejszych mitów o mózgu. Badania obrazowe pokazują, że w ciągu doby pracują praktycznie wszystkie jego obszary, choć nie wszystkie naraz. Mózg waży ok. 2% masy ciała, a zużywa ok. 20% energii organizmu: ewolucja nie utrzymywałaby tak kosztownego narządu, gdyby w 90% był bezużyteczny. Uszkodzenie niemal każdej części mózgu ma jakieś skutki.",
+      "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "przyroda",
+      "title": "Rekiny są starsze niż drzewa",
+      "body": "Najstarsze znane rekiny pojawiły się ponad 400 mln lat temu. Pierwsze drzewa wyrosły później, ok. 385 mln lat temu. Rekiny przetrwały m.in. wielkie wymieranie permskie i to, które 66 mln lat temu zakończyło erę dinozaurów. Ich szkielet nie jest zbudowany z kości, tylko z lżejszej i bardziej giętkiej chrząstki.",
+      "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Shark" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1956,
+      "title": "Wiec pod pomnikiem Bema rozpoczyna powstanie węgierskie",
+      "body": "23 października 1956 r. studenci w Budapeszcie zebrali się pod pomnikiem gen. Józefa Bema, by okazać poparcie dla przemian w Polsce po Październiku ’56. Wiec przerodził się w wielką demonstrację pod parlamentem, a wieczorem tłum obalił pomnik Stalina. Gdy funkcjonariusze bezpieki ÁVH otworzyli ogień pod gmachem radia, wybuchło powstanie. 4 listopada zaczęła je tłumić armia sowiecka, a w walkach zginęło ponad 2,5 tys. osób.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Powstanie_w%C4%99gierskie_1956" }
+    },
+    {
+      "id": "otd-2",
+      "year": 2005,
+      "title": "Lech Kaczyński wygrywa wybory prezydenckie",
+      "body": "W drugiej turze wyborów prezydenckich 23 października 2005 r. Lech Kaczyński pokonał Donalda Tuska, zdobywając 54,04% głosów wobec 45,96%. W pierwszej turze prowadził Tusk. Kaczyński objął urząd 23 grudnia 2005 r. i sprawował go do śmierci w katastrofie smoleńskiej 10 kwietnia 2010 r.",
+      "source": { "name": "Dzieje.pl: kalendarz historyczny", "url": "https://dzieje.pl/kalendarz-historyczny/23/10" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1942,
+      "title": "Początek drugiej bitwy pod El Alamein",
+      "body": "Wieczorem 23 października 1942 r. brytyjska 8. Armia gen. Bernarda Montgomery’ego rozpoczęła w Egipcie ofensywę przeciw wojskom niemiecko-włoskim Erwina Rommla, od potężnego ostrzału artyleryjskiego. Po kilkunastu dniach walk Rommel zaczął się wycofywać. Zwycięstwo oddaliło groźbę zajęcia Kanału Sueskiego i było punktem zwrotnym walk w Afryce Północnej.",
+      "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Błąd planowania",
+    "definition": "Skłonność do zaniżania czasu, kosztów i ryzyka własnych planów, nawet gdy wiemy, że podobne zadania wcześniej trwały dłużej.",
+    "origin": "Pojęcie wprowadzili w 1979 r. psychologowie Daniel Kahneman i Amos Tversky. W badaniu Rogera Buehlera i współpracowników z 1994 r. studenci szacowali, że pracę dyplomową skończą średnio w 33,9 dnia, a zajęło im to 55,5 dnia. Pomaga spojrzenie „z zewnątrz”: sprawdzenie, ile podobne zadania trwały naprawdę.",
+    "examples": [
+      "Opera w Sydney miała być gotowa w 1963 r. i kosztować 7 mln dolarów australijskich. Otwarto ją w 1973 r., a kosztowała 102 mln.",
+      "Remont łazienki „na dwa tygodnie”, który trwa dwa miesiące, choć u znajomych było tak samo.",
+      "Z książki tygodnia: postanowienie „od jutra codziennie godzina ćwiczeń” to klasyczny błąd planowania. Jeden mały nawyk ma większą szansę przetrwać."
+    ],
+    "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Planning_fallacy" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "atomowe-nawyki",
+    "title": "Atomowe nawyki",
+    "author": "James Clear",
+    "day": 6,
+    "days": 7,
+    "ideaTitle": "Morał i plan: jeden nawyk, jeden system",
+    "idea": "Szósty dzień to czas, żeby z całej książki zrobić jeden konkretny plan. Clear radzi nie zmieniać wszystkiego naraz, tylko wybrać jeden nawyk i zbudować wokół niego system. Na początek pomaga karta nawyków: wypisz swoje codzienne czynności i przy każdej zaznacz, czy przybliża cię do osoby, którą chcesz być. Potem śledź postęp, np. stawiając krzyżyk w kalendarzu za każdy dzień, bo widoczny łańcuch sam zachęca, żeby go nie przerywać. Gdy zdarzy się przerwa, obowiązuje zasada „nigdy nie opuszczaj dwa razy”: jeden pominięty dzień to przypadek, drugi z rzędu to początek nowego nawyku. Książka opiera się na badaniach nad nawykami, ale wiele przykładów to anegdoty, a nie wyniki eksperymentów.",
+    "moral": "Nie potrzebujesz rewolucji, tylko jednego nawyku powtarzanego tak długo, aż stanie się częścią tego, kim jesteś. Liczy się ciągłość, nie perfekcja.",
+    "action": "Wybierz jeden nawyk z tego tygodnia, narysuj na kartce siedem kratek i postaw dziś pierwszy krzyżyk.",
+    "source": { "name": "O książce", "url": "https://jamesclear.com/atomic-habits" }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-23-q1",
+      "ref": "fact-1",
+      "question": "Dlaczego stojąc na zboczu Olympus Mons, nie zobaczylibyśmy jego szczytu?",
+      "options": [
+        "Bo szczyt zawsze otaczają chmury pyłu",
+        "Bo zbocza są łagodne, a szczyt zasłania krzywizna planety",
+        "Bo w rzadkiej atmosferze Marsa światło słabo się rozprasza",
+        "Bo szczyt zapadł się w głąb krateru"
+      ],
+      "answer": 1,
+      "explanation": "Olympus Mons ma ok. 600 km średnicy i bardzo łagodne zbocza, więc jego szczyt chowa się za horyzontem, choć wznosi się na ok. 22 km."
+    },
+    {
+      "id": "2026-10-23-q2",
+      "ref": "fact-2",
+      "question": "Ile energii organizmu zużywa mózg, który waży ok. 2% masy ciała?",
+      "options": ["Ok. 2%", "Ok. 5%", "Ok. 10%", "Ok. 20%"],
+      "answer": 3,
+      "explanation": "Mózg zużywa ok. 20% energii, czyli dziesięć razy więcej, niż wynikałoby z jego masy. To jeden z argumentów przeciw mitowi o 10% mózgu."
+    },
+    {
+      "id": "2026-10-23-q3",
+      "ref": "fact-3",
+      "question": "Co pojawiło się na Ziemi najwcześniej?",
+      "options": ["Rekiny", "Drzewa", "Dinozaury", "Ssaki"],
+      "answer": 0,
+      "explanation": "Najstarsze rekiny żyły ponad 400 mln lat temu, a pierwsze drzewa wyrosły ok. 385 mln lat temu. Dinozaury i ssaki pojawiły się znacznie później."
+    },
+    {
+      "id": "2026-10-23-q4",
+      "ref": "otd-1",
+      "question": "Pod czyim pomnikiem w Budapeszcie zebrali się 23 października 1956 r. studenci solidarni z Polską?",
+      "options": ["Józefa Stalina", "Józefa Bema", "Adama Mickiewicza", "Lajosa Kossutha"],
+      "answer": 1,
+      "explanation": "Gen. Józef Bem walczył za Węgry w Wiośnie Ludów 1848–1849, dlatego jego pomnik stał się symbolem polsko-węgierskiej przyjaźni. Pomnik Stalina tłum obalił tego samego wieczoru."
+    },
+    {
+      "id": "2026-10-23-q5",
+      "ref": "otd-2",
+      "question": "Kogo pokonał Lech Kaczyński w drugiej turze wyborów prezydenckich w 2005 r.?",
+      "options": ["Aleksandra Kwaśniewskiego", "Andrzeja Leppera", "Donalda Tuska", "Jarosława Kalinowskiego"],
+      "answer": 2,
+      "explanation": "Kaczyński wygrał z Donaldem Tuskiem, zdobywając 54,04% głosów, choć w pierwszej turze prowadził Tusk."
+    },
+    {
+      "id": "2026-10-23-q6",
+      "ref": "concept",
+      "question": "Co pokazało badanie Buehlera z 1994 r. o błędzie planowania?",
+      "options": [
+        "Studenci kończyli prace szybciej, niż zakładali",
+        "Studenci trafnie przewidywali czas, gdy pracowali w grupach",
+        "Studenci szacowali ok. 34 dni pracy, a potrzebowali ok. 55",
+        "Studenci celowo zawyżali czas, żeby mieć zapas"
+      ],
+      "answer": 2,
+      "explanation": "Średnia prognoza wyniosła 33,9 dnia, a rzeczywisty czas 55,5 dnia. Nawet wiedza o własnych wcześniejszych spóźnieniach nie chroni przed optymizmem."
+    },
+    {
+      "id": "2026-10-23-q7",
+      "ref": "book",
+      "question": "Co mówi zasada „nigdy nie opuszczaj dwa razy” z „Atomowych nawyków”?",
+      "options": [
+        "Nawyk trzeba wykonywać dwa razy dziennie",
+        "Nie wolno pominąć ani jednego dnia",
+        "Po dwóch pominiętych dniach trzeba zacząć od zera",
+        "Jeden pominięty dzień to przypadek, drugi z rzędu to początek nowego nawyku"
+      ],
+      "answer": 3,
+      "explanation": "Clear nie wymaga perfekcji. Ważne, żeby po jednej przerwie szybko wrócić, zanim przerwa sama stanie się nawykiem."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-10-23-r1",
+      "question": "Jak fizycy żartobliwie nazwali jednostkę, którą obrazowo porównują małe dawki promieniowania?",
+      "options": ["Dawka bananowa", "Siwert ziemniaczany", "Jednostka potasowa"],
+      "answer": 0,
+      "explanation": "„Dawka bananowa” to ok. 0,1 mikrosiwerta, czyli tyle, ile przyjmujemy, jedząc jednego banana."
+    },
+    {
+      "id": "2026-10-23-r2",
+      "question": "Do czego wombaty używają swoich kanciastych odchodów?",
+      "options": ["Do budowy nor", "Do oznaczania terytorium", "Do odstraszania drapieżników"],
+      "answer": 1,
+      "explanation": "Wombaty układają kostki na kamieniach i kłodach, żeby oznaczyć terytorium. Kanciaste prawdopodobnie nie staczają się tak łatwo."
+    },
+    {
+      "id": "2026-10-23-r3",
+      "question": "Jak Kennedy nazwał w orędziu z 22 października 1962 r. morską blokadę Kuby?",
+      "options": ["Embargo", "Operacja Mangusta", "Kwarantanna"],
+      "answer": 2,
+      "explanation": "Kennedy mówił o „kwarantannie”: statki z bronią ofensywną miały być zawracane."
+    }
+  ],
+  "evening": {
+    "question": "Który jeden nawyk z tego tygodnia chcecie naprawdę utrzymać i jak będziecie razem śledzić postęp?",
+    "hint": "Np. kartka na lodówce z siedmioma kratkami i umowa, że jeśli jedno z was opuści dzień, drugie przypomni o zasadzie „nigdy dwa razy”."
+  }
+}

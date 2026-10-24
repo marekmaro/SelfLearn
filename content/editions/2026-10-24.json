@@ -1,0 +1,535 @@
+{
+  "date": "2026-10-24",
+  "intro": "Dziś m.in. rozejm w Ołeszkach, Tusk o odejściu Pełczyńskiej-Nałęcz, Sejm znów za opłatą cukrową, Paryż przed protestami i jutrzejsza druga tura w Brazylii. Do tego siódmy dzień z „Atomowymi nawykami”: podsumowanie tygodnia.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Tusk o odejściu Pełczyńskiej-Nałęcz: „Myślałem, że chociaż zadzwoni”",
+      "summary": "Premier Donald Tusk skomentował w Bengaluru decyzję przewodniczącej Polski 2050 o odejściu z rządu. Powiedział, że spodziewał się chociaż telefonu, a współpraca od dawna była trudna. Ocenił, że koalicja na tym nie ucierpi. Na stanowisko ministra funduszy i polityki regionalnej ma dwie kandydatki, a nazwisko poda po powrocie do kraju. Szymon Hołownia przekonuje, że według umowy koalicyjnej resort powinien zostać przy Polsce 2050. Z rządu odszedł też wiceminister Jan Szyszko, bliski współpracownik byłej minister.",
+      "why": "To pierwsze odejście lidera partii koalicyjnej z rządu. Wybór następczyni pokaże, czy Polska 2050 zachowa swoje miejsce w rządzie.",
+      "sources": [
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/swiat/donald-tusk-o-decyzji-katarzyny-pelczynskiej-nalecz-szefowa-polski-2050-odeszla-z-rzadu-st9301747"
+        },
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/polityka/news-tusk-komentuje-odejscie-pelczynskiej-nalecz-myslalem-ze-zadz,nIdn,1023114"
+        },
+        {
+          "name": "WNP.pl",
+          "url": "https://www.wnp.pl/polityka-i-sondaze/kto-zastapi-katarzyne-pelczynska-nalecz-tusk-mam-dwie-kandydatury,1112139.html"
+        }
+      ],
+      "thread": "Zmiany w rządzie Tuska"
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Sejm znów za wyższą opłatą cukrową i akcyzą na alkohol",
+      "summary": "Sejm ponownie uchwalił podwyżki, które prezydent Karol Nawrocki zawetował w grudniu. Stała część opłaty cukrowej ma wzrosnąć z 0,50 do 0,70 zł za litr napoju, a zmienna z 0,05 do 0,10 zł. Rząd liczy na ok. 1,5 mld zł rocznie dla NFZ od 2027 r. Akcyza na alkohol etylowy wzrośnie z 8811 do 10 109 zł za hektolitr czystego spirytusu. Za ustawą akcyzową głosowało 377 posłów, przeciw 59. Teraz zajmie się nimi Senat, a potem prezydent.",
+      "why": "Słodzone napoje i alkohol mogą podrożeć od 2027 r., a pieniądze mają trafić do NFZ. Prezydent już raz takie przepisy zawetował.",
+      "sources": [
+        {
+          "name": "Money.pl",
+          "url": "https://www.money.pl/podatki/podwyzka-akcyzy-i-oplaty-cukrowej-sejm-zdecydowal-prezydent-juz-raz-zawetowal-7342846452480032a.html"
+        },
+        {
+          "name": "Portal Spożywczy",
+          "url": "https://www.portalspozywczy.pl/technologie/wiadomosci/sejm-zajmie-sie-oplata-cukrowa-i-akcyza-na-alkohol-rzad-chce-wyzszych-stawek-od-2027-r,293832.html"
+        }
+      ],
+      "thread": "Opłata cukrowa i akcyza"
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Polska i Indie chcą podwoić handel do 2030 r. Teraz Tusk jedzie do Wietnamu",
+      "summary": "Po rozmowach w New Delhi Donald Tusk i Narendra Modi zapowiedzieli podwojenie wzajemnego handlu do 2030 r. i dialog przemysłów obronnych. Współpraca ma objąć m.in. surowce krytyczne, cyberbezpieczeństwo, górnictwo i przemysł stoczniowy. 30 marca, w rocznicę nawiązania stosunków dyplomatycznych, ma być obchodzony Dzień Partnerstwa Polsko-Indyjskiego. Premierowi towarzyszyło blisko 100 przedsiębiorców. W sobotę Tusk rozpoczyna wizytę w Wietnamie, główne rozmowy zaplanowano na poniedziałek w Hanoi.",
+      "why": "Polska szuka rynków poza Europą. Indie i Wietnam to szybko rosnące gospodarki, ważne dla eksportu i dostaw surowców.",
+      "sources": [
+        {
+          "name": "Rzeczpospolita",
+          "url": "https://www.rp.pl/dyplomacja/art45379181-polska-i-indie-umacniaja-partnerstwo-tusk-o-dronach-i-sektorze-kosmicznym"
+        },
+        {
+          "name": "Wprost",
+          "url": "https://www.wprost.pl/kraj/12478585/donald-tusk-w-indiach-polska-i-indie-chca-podwoic-handel-do-2030-roku.html"
+        },
+        {
+          "name": "TVP Info",
+          "url": "https://www.tvp.info/96096667/24-pazdziernika-2026-najwazniejsze-wydarzenia-dnia"
+        }
+      ],
+      "thread": "Wizyta Tuska w Azji"
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Waloryzacja w marcu 2027 r. może być wyższa niż w założeniach",
+      "summary": "W założeniach budżetu rząd przyjął, że emerytury i renty wzrosną od 1 marca 2027 r. o co najmniej 3,48%. Wskaźnik zależy jednak od inflacji i realnego wzrostu płac w 2026 r., a inflacja ostatnio przyspieszyła. Według wyliczeń opartych na prognozie NBP waloryzacja mogłaby sięgnąć ok. 4,5%. Przy 3,48% minimalna emerytura wzrosłaby o ok. 69 zł brutto, do ok. 2047 zł. Ostateczny wskaźnik będzie znany na początku 2027 r. Podwyżka i tak będzie niższa niż w 2026 r.",
+      "why": "Waloryzacja dotyczy blisko 10 mln emerytów i rencistów, więc każdy punkt procentowy to dla budżetu miliardy złotych.",
+      "sources": [
+        {
+          "name": "Gazeta Prawna",
+          "url": "https://www.gazetaprawna.pl/praca/emerytury-i-renty/artykuly/11262153,waloryzacja-emerytur-2027-ile-wyniosa-nowe-swiadczenia.html"
+        },
+        {
+          "name": "Infor",
+          "url": "https://www.infor.pl/twoje-pieniadze/swiadczenia/7628499,waloryzacja-emerytur-2027-pojawily-sie-pierwsze-prognozy-i-stawki-dla-seniorow.html"
+        },
+        {
+          "name": "Super Biznes",
+          "url": "https://superbiz.se.pl/wiadomosci/nowa-podwyzka-dla-emerytow-kwoty-wyzsze-niz-chce-dac-tusk-aa-oAK2-sS9j-WSL2.html"
+        }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Tej nocy zmiana czasu: śpimy godzinę dłużej",
+      "summary": "W nocy z soboty na niedzielę, o 3:00, cofamy zegarki na 2:00. Telefony i komputery zrobią to same, ale zegary w samochodzie, piekarniku i tradycyjne budziki trzeba przestawić ręcznie. Od niedzieli rano będzie jaśniej, a wieczorem szybciej zrobi się ciemno. Stany Zjednoczone zmienią czas dopiero 1 listopada, więc przez tydzień różnica z Nowym Jorkiem wyniesie 5 godzin. Zmianę czasu na lata 2022–2026 wyznacza rozporządzenie premiera.",
+      "why": "Po zmianie czasu szybciej robi się ciemno. Poza terenem zabudowanym pieszy po zmroku musi mieć odblask.",
+      "sources": [
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/polska/news-kiedy-dokladnie-zmiana-czasu-na-zimowy-w-2026-roku-znana-jes,nIdn,1015180"
+        },
+        {
+          "name": "TVP Info",
+          "url": "https://www.tvp.info/95995455/kiedy-zmiana-czasu-na-zimowy-2026-wtedy-przestawiamy-zegarki"
+        }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Rozejm w Ołeszkach. Biały Dom: doprowadziła do niego Melania Trump",
+      "summary": "Biały Dom ogłosił, że Rosja i Ukraina zgodziły się na czasowe wstrzymanie walk w Ołeszkach, mieście w okupowanej części obwodu chersońskiego. Rozejm ma obowiązywać od 29 października i pozwolić na dostarczenie pomocy oraz ewakuację cywilów korytarzem humanitarnym. Według Melanii Trump w mieście jest 1700–2000 mieszkańców, w tym ok. 50 dzieci, którym brakuje leków, żywności i wody. Donald Trump pochwalił inicjatywę żony. Nie wiadomo, jak długo potrwa rozejm i kto będzie go nadzorował. Gen. Stanisław Koziej nazwał go polityczną pokazówką.",
+      "why": "Choć to porozumienie lokalne, pokazuje, że w konkretnej sprawie obie strony mogą się dogadać. Trójstronne rozmowy pokojowe mają ruszyć w listopadzie.",
+      "sources": [
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/swiat/news-zawieszenie-broni-w-oleszkach-miedzy-rosja-i-ukraina-melania,nIdn,1023190"
+        },
+        {
+          "name": "Rzeczpospolita",
+          "url": "https://rp.pl/dyplomacja/art45387381-zawieszenie-broni-w-oleszkach-melania-trump-oglosila-porozumienie"
+        },
+        {
+          "name": "Rzeczpospolita: komentarz gen. Kozieja",
+          "url": "https://www.rp.pl/wojsko/art45388611-pokazowka-i-prezent-dla-trumpa-gen-koziej-mowi-o-zawieszeniu-broni-w-oleszkach"
+        }
+      ],
+      "thread": "Wojna w Ukrainie"
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Paryż przed sobotnimi protestami: zamknięty Luwr i 28 stacji metra",
+      "summary": "W sobotę we Francji odbywają się kolejne protesty przeciw drożyźnie, po zamieszkach i grabieżach z 17 października. Na prośbę prefektury paryskie metro od 9:00 zamyka 28 stacji, od placu Étoile po Dzielnicę Łacińską. Zamknięte są Luwr, Muzeum Picassa i Fundacja Louis Vuitton, a Luwr zwraca pieniądze za bilety. Wokół placu Republiki i Les Halles do nocy z 25 na 26 października obowiązuje zakaz zgromadzeń między 23:00 a 6:00. Policja przygotowuje się także na protesty we Włoszech.",
+      "why": "Francja od tygodni zmaga się z gniewem z powodu kosztów życia. Kto ma w weekend plany w Paryżu, powinien sprawdzić zamknięcia.",
+      "sources": [
+        {
+          "name": "Journal du Geek",
+          "url": "https://www.journaldugeek.com/2026/10/23/manifestation-du-24-octobre-a-paris-voici-la-liste-des-stations-de-metro-fermees-et-les-lieux-a-eviter/"
+        },
+        {
+          "name": "Sortiraparis",
+          "url": "https://www.sortiraparis.com/en/news/in-paris/articles/355569-the-louvre-will-be-closed-on-saturday-october-24-and-tickets-will-be-automatically-refunded"
+        },
+        {
+          "name": "TVP Info",
+          "url": "https://www.tvp.info/96102359/strach-przed-demonstracjami-we-wloszech-i-francji-protesty-moga-przerodzic-sie-w-grabieze-i-napady-w-pogotowiu-policja-drony-oraz-smiglowce"
+        }
+      ],
+      "thread": "Protesty we Francji"
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Brazylia jutro wybiera prezydenta. Sondaże: remis",
+      "summary": "W niedzielę w drugiej turze zmierzą się urzędujący prezydent Luiz Inácio Lula da Silva i senator Flávio Bolsonaro. Ostatnie sondaże pokazują remis w granicach błędu: w Quaest Bolsonaro ma 45%, a Lula 44%, a według Datafolha każdy ma po 50% ważnych głosów. Sondaże już raz się pomyliły: przed pierwszą turą Datafolha dawała prowadzenie Luli, a wygrał Bolsonaro, 47,03% do 45,16%. W niedzielę wybiera też prezydenta Bułgaria.",
+      "why": "Brazylia to największa gospodarka Ameryki Łacińskiej. Wynik zdecyduje o jej polityce wobec Amazonii, klimatu i handlu z UE.",
+      "sources": [
+        {
+          "name": "U.S. News (Reuters)",
+          "url": "https://www.usnews.com/news/world/articles/2026-10-21/bolsonaros-lead-over-lula-narrows-ahead-brazil-runoff-quaest-poll-shows"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/23/what-to-know-as-brazil-prepares-for-tense-presidential-run-off"
+        },
+        {
+          "name": "The Rio Times",
+          "url": "https://www.riotimesonline.com/brazil-runoff-october-25-2026-flavio-bolsonaro-lula/"
+        }
+      ],
+      "thread": "Wybory w Brazylii"
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Izrael przed wtorkowymi wyborami: Eisenkot prowadzi, nikt nie ma większości",
+      "summary": "We wtorek 27 października Izrael wybiera parlament. W ostatnich sondażach telewizji Kan i Channel 12 partia Jaszar byłego szefa sztabu Gadiego Eisenkota wyprzedza Likud Benjamina Netanjahu, 22–23 do 20–21 mandatów. Według Channel 12 opozycja miałaby 56 mandatów, koalicja Netanjahu 50, a partie arabskie 14. Do większości potrzeba 61 ze 120. Wyjątkiem jest Channel 14, który daje Likudowi 30 mandatów, a blokowi Netanjahu 62.",
+      "why": "Nawet zwycięska partia będzie musiała szukać koalicjantów, a od nowego rządu zależy kurs Izraela w wojnach w regionie.",
+      "sources": [
+        {
+          "name": "The Jerusalem Post",
+          "url": "https://www.jpost.com/israel-election-2026/article-912482"
+        },
+        {
+          "name": "The Times of Israel",
+          "url": "https://www.timesofisrael.com/toi-poll-eisenkot-opens-up-big-lead-on-netanyahu-but-both-blocs-short-of-majority/"
+        },
+        {
+          "name": "Israel National News",
+          "url": "https://www.israelnationalnews.com/news/435074"
+        }
+      ],
+      "thread": "Wybory w Izraelu"
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Wenezuela: opozycja na ulicach, żąda daty wyborów",
+      "summary": "W czwartek partia Vente Venezuela Maríi Coriny Machado zwołała demonstracje w całym kraju. Opozycja ma trzy żądania: powrót Machado do kraju, wyznaczenie daty wyborów prezydenckich i uwolnienie więźniów politycznych. Jako termin wyborów proponuje 24 lipca 2027 r. Tego samego dnia Diosdado Cabello, jeden z najważniejszych polityków obozu władzy, zwołał w Caracas własny marsz. Szerszych relacji z przebiegu protestów na razie brakuje.",
+      "why": "Wenezuela ma ogromne złoża ropy, a jej kryzys polityczny od lat wypycha z kraju miliony ludzi.",
+      "sources": [
+        {
+          "name": "Demócrata",
+          "url": "https://www.democrata.es/internacional/la-oposicion-venezolana-llama-a-protestas-el-22-de-octubre-para-exigir-el-retorno-de-maria-corina-machado/"
+        },
+        {
+          "name": "Caretas",
+          "url": "https://caretas.pe/mundo/venezuela-oposicion-convoca-marchas-por-el-regreso-de-machado/"
+        },
+        {
+          "name": "Noticias RCN",
+          "url": "https://www.noticiasrcn.com/internacional/diosdado-cabello-marcha-venezuela-elecciones-oposicion-1073527"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "WSJ: to Musk zdecydował o ograniczeniu Starlinka dla ukraińskiej armii",
+      "summary": "Według „Wall Street Journal” Elon Musk osobiście polecił ograniczyć działanie Starshield, wojskowej wersji Starlinka, z której korzysta Ukraina. Dwa źródła dziennika mówią, że rozmawiał o tym z Donaldem Trumpem tuż po ujawnieniu ograniczeń, a jedno, że także przed decyzją. Trump zaprzecza, że on lub Musk za tym stoją. Przez spowolnienie część ukraińskich dronów uderzeniowych i przechwytujących straciła skuteczność. Ukraińskie MON mówiło 15 października o przywróceniu usługi, ale Zełenski dzień później, że prędkości nie wróciły do dawnego poziomu.",
+      "why": "Sprawa pokazuje, jak bardzo armia może zależeć od decyzji jednego właściciela prywatnej firmy. To lekcja także dla Polski.",
+      "sources": [
+        {
+          "name": "Meduza (WSJ)",
+          "url": "https://meduza.io/en/news/2026/10/21/did-trump-know-musk-was-about-to-restrict-ukraine-s-military-starlink-service-wsj-reports-they-discussed-the-decision-afterward-some-sources-say-they-also-spoke-beforehand"
+        },
+        {
+          "name": "Honolulu Star-Advertiser",
+          "url": "https://www.staradvertiser.com/2026/10/20/breaking-news/musk-reportedly-ordered-starlink-slowdown-that-hurt-ukraines-drone-missions/"
+        },
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/news/2026/10/15/starlink-service-for-ukraine-s-military-fully-resumes"
+        }
+      ],
+      "thread": "Starlink na Ukrainie"
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "AI znalazła groźne luki w PHP. Rządowe strony na chwilę wyłączone",
+      "summary": "Sztuczna inteligencja pomogła wykryć poważne luki w PHP, języku, w którym działa ok. 70% stron o znanym zapleczu. Według FBI pozwalały one zdalnie uruchomić kod na serwerze. W środę część stron rządowych w Europie i USA, m.in. w Finlandii, wyłączono na czas aktualizacji, a PHP Foundation wydała poprawki. OpenAI napisało, że od dwóch miesięcy kierowało koalicją badaczy i firm bezpieczeństwa, m.in. Wiz i Cloudflare. Według firmy AI znalazła błędy, zanim zrobili to atakujący, i podobnych odkryć będzie wkrótce znacznie więcej.",
+      "why": "AI działa w obie strony: pomaga łatać luki, ale może też pomagać przestępcom je znajdować. Dlatego aktualizacje są ważniejsze niż kiedykolwiek.",
+      "sources": [
+        {
+          "name": "ClickOnDetroit (AP)",
+          "url": "https://www.clickondetroit.com/business/2026/10/21/some-websites-go-dark-as-operators-address-an-ai-detected-flaw-in-a-web-programming-language/"
+        },
+        {
+          "name": "The Boston Globe",
+          "url": "https://www.bostonglobe.com/2026/10/21/business/website-vulnerabilities-php-update-php2shell/"
+        }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Odkryto komórki odporności, które widzą „niewidzialnego” raka płuca",
+      "summary": "Naukowcy z australijskiego instytutu WEHI opisali w „Cancer Cell”, jak limfocyty T gamma delta rozpoznają i niszczą drobnokomórkowego raka płuca. Ten nowotwór ukrywa się przed zwykłymi komórkami odporności, na których opiera się immunoterapia, a mniej niż 7% chorych żyje pięć lat od diagnozy. Pacjenci z większą liczbą komórek gamma delta żyli dłużej. Badacze sądzą, że ich działanie mogłyby wzmacniać leki, które już istnieją. To wyniki laboratoryjne i obserwacje pacjentów, a nie badania kliniczne.",
+      "why": "Drobnokomórkowy rak płuca to jeden z najgroźniejszych nowotworów, prawie zawsze związany z paleniem. Nowa droga leczenia to ważny sygnał nadziei.",
+      "sources": [
+        {
+          "name": "News-Medical",
+          "url": "https://news-medical.net/news/20261016/Invisible-no-more-New-treatment-avenue-unlocked-for-deadliest-lung-cancer.aspx"
+        },
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/10/261021231232.htm"
+        },
+        {
+          "name": "New Atlas",
+          "url": "https://newatlas.com/cancer/overlooked-immune-cells-treat-lung-cancers/"
+        }
+      ]
+    },
+    {
+      "id": "muzyka-1",
+      "section": "muzyka",
+      "rank": 1,
+      "title": "Bohdan Luts wygrał Konkurs Wieniawskiego",
+      "summary": "Zwycięzcą 17. Międzynarodowego Konkursu Skrzypcowego im. Henryka Wieniawskiego w Poznaniu został Ukrainiec Bohdan Luts, urodzony w 2004 r. Dostał 60 tys. euro i zaproszenia na koncerty. Drugie miejsce i 30 tys. euro zdobyła Chinka Jinzhu Li, a trzecie i 15 tys. euro Koreanka SooBeen Lee. W czwartkowym finale skrzypkowie zagrali koncerty Wieniawskiego z Filharmonią Poznańską pod batutą Łukasza Borowicza. Luts urodził się we Lwowie i studiuje w Wiedniu u prof. Borisa Kuschnira. W 2023 r. wygrał też Konkurs im. Long-Thibaud w Paryżu.",
+      "why": "W niedzielę laureaci zagrają w Warszawie. To jeden z najstarszych konkursów skrzypcowych na świecie, odbywa się od 1935 r.",
+      "sources": [
+        {
+          "name": "The Violin Channel",
+          "url": "https://theviolinchannel.com/bohdan-luts-wins-2026-wieniawski-international-violin-competition/"
+        },
+        {
+          "name": "The Strad",
+          "url": "https://www.thestrad.com/news/winners-announced-at-the-wieniawski-international-violin-competition/21992.article"
+        }
+      ],
+      "thread": "Konkurs Wieniawskiego"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "nauka",
+      "title": "Czy gorąca woda zamarza szybciej niż zimna?",
+      "body": "To tzw. efekt Mpemby, nazwany od tanzańskiego ucznia Erasto Mpemby, który w 1963 r. zauważył, że gorąca mieszanka na lody zamarza mu szybciej niż chłodna. Podobne obserwacje opisywali już Arystoteles i Kartezjusz. Wynik zależy jednak od wielu szczegółów: parowania, rozpuszczonych gazów, kształtu naczynia. W starannych pomiarach z 2016 r. badacze nie znaleźli tego efektu. Dlatego dziś to raczej ciekawa zagadka niż prawo fizyki.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Mpemba_effect"
+      }
+    },
+    {
+      "id": "fact-2",
+      "kind": "przyroda",
+      "title": "Pszczoły tańcem pokazują drogę do kwiatów",
+      "body": "Pszczoła miodna, która znalazła dobre źródło nektaru, wraca do ula i wykonuje taniec wywijany: biegnie prosto, kręcąc odwłokiem, a potem zatacza półkola. Kąt tego biegu względem pionu na plastrze pokazuje kierunek lotu względem Słońca, a czas wywijania mówi o odległości. Kod rozszyfrował Austriak Karl von Frisch, który w 1973 r. dostał za badania nad zachowaniem zwierząt Nagrodę Nobla.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Waggle_dance"
+      }
+    },
+    {
+      "id": "fact-3",
+      "kind": "historia",
+      "title": "Big Ben to nie wieża, tylko dzwon",
+      "body": "Nazwa Big Ben należy do największego dzwonu w wieży zegarowej Pałacu Westminsterskiego, ważącego ok. 13,7 tony. Sama wieża przez lata nazywała się po prostu Wieżą Zegarową. W 2012 r., z okazji diamentowego jubileuszu królowej Elżbiety II, przemianowano ją na Wieżę Elżbiety. W potocznej mowie całą budowlę i tak wszyscy nazywają Big Benem.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Big_Ben"
+      }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1945,
+      "title": "Powstaje Organizacja Narodów Zjednoczonych",
+      "body": "24 października 1945 r. weszła w życie Karta Narodów Zjednoczonych, ratyfikowana przez pięciu stałych członków Rady Bezpieczeństwa i większość pozostałych sygnatariuszy. Członkami założycielami ONZ zostało 51 państw. Wśród nich jest Polska, choć nie było jej na konferencji w San Francisco: w dokumencie zostawiono miejsce na jej podpis, który złożono 15 października 1945 r. Od 1948 r. 24 października obchodzimy jako Dzień Narodów Zjednoczonych.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/United_Nations_Day"
+      }
+    },
+    {
+      "id": "otd-2",
+      "year": 1929,
+      "title": "Czarny czwartek na Wall Street",
+      "body": "24 października 1929 r. na nowojorskiej giełdzie wybuchła panika: inwestorzy masowo sprzedawali akcje, a ceny gwałtownie spadały. Wielkie banki próbowały uspokoić rynek, skupując akcje, i część strat odrobiono jeszcze tego dnia. Spadki wróciły jednak w kolejnych dniach, zwłaszcza w czarny wtorek 29 października. Krach zapoczątkował Wielki Kryzys, który objął cały świat, także Polskę.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Wall_Street_crash_of_1929"
+      }
+    },
+    {
+      "id": "otd-3",
+      "year": 1648,
+      "title": "Pokój westfalski kończy wojnę trzydziestoletnią",
+      "body": "24 października 1648 r. w Münsterze i Osnabrück podpisano traktaty kończące wojnę trzydziestoletnią, jeden z najkrwawszych konfliktów w dziejach Europy. Według szacunków zginęło w niej od 4,5 do 8 mln ludzi. Rokowania trwały kilka lat, a uczestniczyło w nich ponad sto delegacji. Pokój westfalski uchodzi za początek nowożytnego porządku, w którym suwerenne państwa same decydują o swoich sprawach wewnętrznych.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia"
+      }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Krzywa zapominania",
+    "definition": "Zapominamy najszybciej tuż po nauce, a potem coraz wolniej. Każde powtórzenie w odstępie spłaszcza tę krzywą, więc wiedza zostaje na dłużej.",
+    "origin": "Niemiecki psycholog Hermann Ebbinghaus opisał ją w 1885 r. Uczył się na pamięć ciągów bezsensownych sylab i sprawdzał, ile pamięta po minutach, godzinach i dniach. Najwięcej tracił w pierwszej dobie. W 2015 r. badacze powtórzyli jego eksperyment i uzyskali bardzo podobną krzywą.",
+    "examples": [
+      "Powtórki w tej aplikacji wracają po 1, 3, 7, 16 i 35 dniach, żeby trafiać tuż przed momentem zapomnienia.",
+      "Rozgrzewka z wczorajszego wydania to powtórka w pierwszej dobie, gdy zapominanie jest najszybsze.",
+      "Z książki tygodnia: tak jak nawyk, pamięć buduje się powtórzeniami rozłożonymi w czasie, a nie jednym wysiłkiem.",
+      "Nauka do egzaminu przez kilka krótkich sesji w różnych dniach daje więcej niż jedna długa noc przed testem."
+    ],
+    "source": {
+      "name": "Wikipedia (ang.)",
+      "url": "https://en.wikipedia.org/wiki/Forgetting_curve"
+    }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "atomowe-nawyki",
+    "title": "Atomowe nawyki",
+    "author": "James Clear",
+    "day": 7,
+    "days": 7,
+    "ideaTitle": "Podsumowanie tygodnia: małe zmiany, wielkie efekty",
+    "idea": "Przez tydzień przeszliśmy przez najważniejsze idee książki. Poprawa o 1% dziennie działa jak procent składany: z początku niewidoczna, po roku ogromna. Systemy są ważniejsze od celów, bo to codzienne działania przynoszą wyniki. Najtrwalsza zmiana zaczyna się od tożsamości: każde działanie to głos na osobę, którą chcesz być. Cztery prawa mówią, że dobry nawyk ma być oczywisty, atrakcyjny, łatwy i satysfakcjonujący. Zasada dwóch minut i łączenie nawyków ułatwiają start, a plan „jeden nawyk, jeden system” chroni przed porywaniem się na wszystko naraz.",
+    "moral": "Nie musisz zmieniać wszystkiego. Wystarczy małe działanie powtarzane codziennie, bo wyniki są skutkiem twoich nawyków.",
+    "action": "Zapisz jedno zdanie: jaki jeden nawyk z tego tygodnia zostaje z tobą i po jakim istniejącym nawyku go wykonasz. Od jutra nowa książka: „Sapiens” Yuvala Noaha Harariego.",
+    "source": {
+      "name": "O książce (jamesclear.com)",
+      "url": "https://jamesclear.com/atomic-habits"
+    }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-24-q1",
+      "ref": "fact-1",
+      "question": "Co wiadomo dziś o efekcie Mpemby, czyli szybszym zamarzaniu gorącej wody?",
+      "options": [
+        "To potwierdzone prawo fizyki",
+        "Dotyczy tylko wody morskiej",
+        "Odkrył go Isaac Newton",
+        "Wynik zależy od warunków, a staranne pomiary go nie potwierdziły"
+      ],
+      "answer": 3,
+      "explanation": "Na wynik wpływają parowanie, gazy w wodzie i kształt naczynia. W pomiarach z 2016 r. efektu nie znaleziono."
+    },
+    {
+      "id": "2026-10-24-q2",
+      "ref": "fact-2",
+      "question": "Co pokazuje kąt biegu w tańcu wywijanym pszczół?",
+      "options": [
+        "Ilość nektaru w kwiatach",
+        "Kierunek lotu do kwiatów względem Słońca",
+        "Wiek pszczoły",
+        "Porę dnia"
+      ],
+      "answer": 1,
+      "explanation": "Kąt względem pionu na plastrze odpowiada kierunkowi względem Słońca, a czas wywijania mówi o odległości. Kod rozszyfrował Karl von Frisch."
+    },
+    {
+      "id": "2026-10-24-q3",
+      "ref": "fact-3",
+      "question": "Czym właściwie jest Big Ben?",
+      "options": [
+        "Największym dzwonem w wieży Pałacu Westminsterskiego",
+        "Nazwą całego parlamentu",
+        "Mechanizmem zegara",
+        "Wieżą przy Tower Bridge"
+      ],
+      "answer": 0,
+      "explanation": "Big Ben to dzwon ważący ok. 13,7 tony. Wieża od 2012 r. nazywa się Wieżą Elżbiety."
+    },
+    {
+      "id": "2026-10-24-q4",
+      "ref": "otd-1",
+      "question": "Jak Polska została członkiem założycielem ONZ, choć nie było jej w San Francisco?",
+      "options": [
+        "Dołączyła dopiero w 1956 r.",
+        "Podpisał za nią Związek Radziecki",
+        "W Karcie zostawiono miejsce na jej podpis, złożony 15 października 1945 r.",
+        "Wysłała delegację po zakończeniu konferencji"
+      ],
+      "answer": 2,
+      "explanation": "Polska podpisała Kartę 15 października 1945 r. i jest jednym z 51 państw założycielskich ONZ."
+    },
+    {
+      "id": "2026-10-24-q5",
+      "ref": "otd-2",
+      "question": "Co zapoczątkował czarny czwartek 24 października 1929 r.?",
+      "options": [
+        "Powstanie Banku Światowego",
+        "Wielki Kryzys",
+        "Koniec I wojny światowej",
+        "Wprowadzenie dolara jako waluty światowej"
+      ],
+      "answer": 1,
+      "explanation": "Panika na giełdzie w Nowym Jorku i kolejne spadki, m.in. w czarny wtorek, zapoczątkowały światowy Wielki Kryzys."
+    },
+    {
+      "id": "2026-10-24-q6",
+      "ref": "concept",
+      "question": "Kiedy według Ebbinghausa zapominamy najszybciej?",
+      "options": [
+        "Po roku",
+        "Po tygodniu",
+        "Po miesiącu",
+        "Tuż po nauce, w pierwszej dobie"
+      ],
+      "answer": 3,
+      "explanation": "Krzywa zapominania opada najstromiej na początku. Powtórki w odstępach ją spłaszczają."
+    },
+    {
+      "id": "2026-10-24-q7",
+      "ref": "book",
+      "question": "Która z tych idei NIE pochodzi z „Atomowych nawyków”?",
+      "options": [
+        "Zmieniaj wszystkie nawyki naraz, żeby szybciej zobaczyć efekty",
+        "Systemy są ważniejsze od celów",
+        "Nowy nawyk na początku ma trwać mniej niż dwie minuty",
+        "Każde działanie to głos na osobę, którą chcesz być"
+      ],
+      "answer": 0,
+      "explanation": "Clear radzi coś przeciwnego: jeden nawyk, jeden system. Pozostałe odpowiedzi to idee z kolejnych dni tygodnia."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-10-24-r1",
+      "question": "Do czego porównano podstawę marsjańskiego wulkanu Olympus Mons?",
+      "options": [
+        "Do powierzchni Polski",
+        "Do wielkości Warszawy",
+        "Do całej Europy"
+      ],
+      "answer": 0,
+      "explanation": "Podstawa Olympus Mons ma ok. 600 km średnicy, a wulkan ok. 22 km wysokości."
+    },
+    {
+      "id": "2026-10-24-r2",
+      "question": "Pod którym pomnikiem w Budapeszcie zaczął się w 1956 r. wiec, od którego wybuchło powstanie węgierskie?",
+      "options": [
+        "Pod pomnikiem Stalina",
+        "Pod pomnikiem Lajosa Kossutha",
+        "Pod pomnikiem gen. Józefa Bema"
+      ],
+      "answer": 2,
+      "explanation": "Studenci zebrali się pod pomnikiem Bema, by poprzeć przemiany w Polsce. Wieczorem tłum obalił pomnik Stalina."
+    },
+    {
+      "id": "2026-10-24-r3",
+      "question": "Na czym polega błąd planowania?",
+      "options": [
+        "Na planowaniu zbyt wielu rzeczy naraz",
+        "Na zaniżaniu czasu i kosztów własnych planów",
+        "Na odkładaniu planowania na ostatnią chwilę"
+      ],
+      "answer": 1,
+      "explanation": "Opisali go Kahneman i Tversky: nawet znając wcześniejsze opóźnienia, zakładamy, że tym razem pójdzie szybciej."
+    }
+  ],
+  "evening": {
+    "question": "Która idea z „Atomowych nawyków” najbardziej przydała się Wam w tym tygodniu i co z niej zabieracie dalej?",
+    "hint": "Np. „Po kolacji idziemy na 10-minutowy spacer” albo krzyżyk w kalendarzu za każdy dzień czytania. Od jutra nowa książka: „Sapiens”."
+  }
+}

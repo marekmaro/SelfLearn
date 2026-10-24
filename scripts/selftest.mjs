@@ -351,10 +351,11 @@ test('Wątki: nazwa w adresie, wpisy w indeksie, oś czasu, polecenie dnia i wal
   assert(threadSlug('Ustawy o aborcji') === 'ustawy-o-aborcji', 'slug');
   assert(threadSlug('  Wojna w Ukrainie!  ') === 'wojna-w-ukrainie', 'slug ze znakami');
   assert(threadSlug('Łódź – żółć') === 'lodz-zolc', 'polskie znaki');
+  // Wątki z prawdziwego wydania są usuwane, żeby test nie zależał od treści najnowszego wydania.
   const day = (date, threads) => ({
     ...base,
     date,
-    news: base.news.map((n, i) => (threads[i] ? { ...n, thread: threads[i] } : n)),
+    news: base.news.map(({ thread, ...n }, i) => (threads[i] ? { ...n, thread: threads[i] } : n)),
   });
   const d1 = day('2026-10-20', ['Wojna w Ukrainie', 'Budżet 2027']);
   const d2 = day('2026-10-21', ['Wojna w ukrainie']);

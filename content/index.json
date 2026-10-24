@@ -1,6 +1,57 @@
 {
   "editions": [
     {
+      "date": "2026-10-24",
+      "headline": "Tusk o odejściu Pełczyńskiej-Nałęcz: „Myślałem, że chociaż zadzwoni”",
+      "threads": [
+        {
+          "name": "Zmiany w rządzie Tuska",
+          "item": "pl-1",
+          "title": "Tusk o odejściu Pełczyńskiej-Nałęcz: „Myślałem, że chociaż zadzwoni”"
+        },
+        {
+          "name": "Opłata cukrowa i akcyza",
+          "item": "pl-2",
+          "title": "Sejm znów za wyższą opłatą cukrową i akcyzą na alkohol"
+        },
+        {
+          "name": "Wizyta Tuska w Azji",
+          "item": "pl-3",
+          "title": "Polska i Indie chcą podwoić handel do 2030 r. Teraz Tusk jedzie do Wietnamu"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Rozejm w Ołeszkach. Biały Dom: doprowadziła do niego Melania Trump"
+        },
+        {
+          "name": "Protesty we Francji",
+          "item": "sw-2",
+          "title": "Paryż przed sobotnimi protestami: zamknięty Luwr i 28 stacji metra"
+        },
+        {
+          "name": "Wybory w Brazylii",
+          "item": "sw-3",
+          "title": "Brazylia jutro wybiera prezydenta. Sondaże: remis"
+        },
+        {
+          "name": "Wybory w Izraelu",
+          "item": "sw-4",
+          "title": "Izrael przed wtorkowymi wyborami: Eisenkot prowadzi, nikt nie ma większości"
+        },
+        {
+          "name": "Starlink na Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "WSJ: to Musk zdecydował o ograniczeniu Starlinka dla ukraińskiej armii"
+        },
+        {
+          "name": "Konkurs Wieniawskiego",
+          "item": "muzyka-1",
+          "title": "Bohdan Luts wygrał Konkurs Wieniawskiego"
+        }
+      ]
+    },
+    {
       "date": "2026-10-23",
       "headline": "Pełczyńska-Nałęcz odchodzi z rządu. Sejm utrzymał dwukadencyjność w samorządach"
     },

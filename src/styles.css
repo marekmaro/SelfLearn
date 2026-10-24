@@ -590,6 +590,8 @@ button.pill-link { border: 0; cursor: pointer; font-family: inherit; }
 .verdict.ok { color: var(--ok); }
 .verdict.bad { color: var(--bad); }
 .from { font-size: var(--step--1); color: var(--muted); margin: 0; }
+.guess-toggle { justify-self: start; min-height: 32px; padding-block: 4px; }
+.chip.guess-toggle[aria-pressed="true"] { background: var(--koi-soft); border-color: var(--koi); color: var(--koi); }
 
 /* Wieczór */
 .evening-q { font-family: var(--font-read); font-size: var(--step-2); line-height: 1.3; margin: 0; text-wrap: balance; }
@@ -1030,6 +1032,7 @@ dialog.sheet[open] { animation: sheet-up 0.22s ease-out; }
   transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .tl-day.is-read .tl-node { border-color: var(--nurt); }
+.tl-day.is-unavailable .tl-card { opacity: 0.62; }
 .tl-day.is-latest .tl-node { border-color: var(--koi); }
 .tl-day.is-passed .tl-node { background: var(--nurt); border-color: var(--nurt); }
 .tl-day.is-focus .tl-node { transform: scale(1.4); box-shadow: 0 0 0 6px color-mix(in srgb, var(--nurt) 22%, transparent); }

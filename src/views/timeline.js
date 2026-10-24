@@ -5,6 +5,7 @@ import { loadIndex, loadEdition, pickDate, editionHref } from '../data.js';
 import { todayISO, formatShort, formatMonth, formatWeekday, diffDays } from '../dates.js';
 import { editionProgress, savedCountFor } from '../store.js';
 import { h, mount, icon, koiMark, plural } from '../ui.js';
+import { cachedEditionDates } from '../offline.js';
 
 let cleanup = null;
 
@@ -25,13 +26,19 @@ export async function renderTimeline(root) {
     .sort()
     .reverse();
   const headlines = Object.fromEntries((index.editions || []).map((e) => [e.date, e.headline]));
+  // Bez internetu otworzą się tylko wydania zapisane na telefonie (i przygotowane na nim).
+  const local = new Set((index.editions || []).filter((e) => e.local).map((e) => e.date));
+  const cached = await cachedEditionDates().catch(() => new Set());
+  const offline = navigator.onLine === false;
+  const available = (d) => local.has(d) || cached.has(d);
 
   if (!dates.length) {
-    mount(root, header(0, 0), h('div', { class: 'empty' }, h('p', { style: 'margin:0' }, 'Tu pojawią się Wasze wydania, dzień po dniu.')));
+    mount(root, header(0, 0, 0), h('div', { class: 'empty' }, h('p', { style: 'margin:0' }, 'Tu pojawią się Wasze wydania, dzień po dniu.')));
     return;
   }
 
   const read = dates.filter((d) => editionProgress(d).completedOn).length;
+  const onPhone = cached.size ? dates.filter(available).length : 0;
 
   // Miesiące, a w nich dni (od najnowszych). Między dniami bez wydań – znacznik przerwy.
   const months = [];
@@ -82,7 +89,7 @@ export async function renderTimeline(root) {
 
     return h(
       'li',
-      { class: `tl-day${date === latest ? ' is-latest' : ''}${p.completedOn ? ' is-read' : ''}`, dataset: { date } },
+      { class: `tl-day${date === latest ? ' is-latest' : ''}${p.completedOn ? ' is-read' : ''}${offline && !available(date) ? ' is-unavailable' : ''}`, dataset: { date } },
       h('span', { class: 'tl-node', 'aria-hidden': 'true' }),
       h(
         'article',
@@ -96,6 +103,7 @@ export async function renderTimeline(root) {
           { class: 'tl-meta' },
           status,
           saved ? h('span', { class: 'pill', title: 'W ulubionych', 'aria-label': `${saved} w ulubionych` }, icon('heart'), saved) : null,
+          offline && !available(date) ? h('span', { class: 'pill', title: 'To wydanie nie jest zapisane na telefonie' }, 'Wymaga internetu') : null,
           h('span', { class: 'tl-quiz' }),
         ),
         h('a', { class: 'btn secondary', href: editionHref(date, latest) }, date === latest ? 'Otwórz wydanie' : 'Wróć do tego dnia', icon('arrow')),
@@ -112,11 +120,11 @@ export async function renderTimeline(root) {
     );
   }
 
-  mount(root, header(dates.length, read), timeline);
+  mount(root, header(dates.length, read, onPhone), timeline);
   cleanup = animate(timeline, today);
 }
 
-function header(total, read) {
+function header(total, read, onPhone) {
   return h(
     'header',
     { class: 'masthead' },
@@ -129,6 +137,7 @@ function header(total, read) {
           { class: 'meta-row' },
           h('span', { class: 'pill' }, icon('calendar'), `${total} ${plural(total, 'wydanie', 'wydania', 'wydań')}`),
           h('span', { class: 'pill nurt' }, icon('check'), `${read} ${plural(read, 'przeczytane', 'przeczytane', 'przeczytanych')}`),
+          onPhone ? h('a', { class: 'pill pill-link', href: '#offline', title: 'Zapisane do czytania bez internetu' }, icon('download'), `${onPhone} offline`) : null,
           h('a', { class: 'pill pill-link', href: '#watki' }, icon('timeline'), 'Wątki'),
         )
       : null,

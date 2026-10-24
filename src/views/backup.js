@@ -2,16 +2,12 @@
 import { todayISO } from '../dates.js';
 import { exportJSON, markBackedUp, snoozeBackup, backupFileName } from '../store.js';
 import { h, icon, toast } from '../ui.js';
+import { downloadFile } from '../exporters.js';
 
 // Zapisuje kopię jako plik .json (Android: Pobrane, iPhone: aplikacja Pliki).
 export function downloadBackup() {
   const date = todayISO();
-  const url = URL.createObjectURL(new Blob([exportJSON(date)], { type: 'application/json' }));
-  const a = h('a', { href: url, download: backupFileName(date) });
-  document.body.append(a);
-  a.click();
-  a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 2000);
+  downloadFile(backupFileName(date), exportJSON(date), 'application/json');
   markBackedUp(date);
 }
 

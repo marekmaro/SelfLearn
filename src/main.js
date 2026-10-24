@@ -14,6 +14,9 @@ import { renderThreads } from './views/threads.js';
 import { applyLook, getLook } from './look.js';
 import { refreshReminders } from './notify.js';
 import { parseChallenge, receiveChallenge } from './challenge.js';
+import { loadIndex } from './data.js';
+import { autoPrefetch } from './offline.js';
+import { toast } from './ui.js';
 
 const root = document.getElementById('app');
 applyLook();
@@ -82,7 +85,7 @@ async function route() {
   } else if (hash === 'przygotuj') {
     setTab('dzis');
     await renderPrepare(root, common);
-  } else if (['profil', 'ustawienia', 'wyglad', 'przypomnienia', 'publikowanie'].includes(hash)) {
+  } else if (['profil', 'ustawienia', 'wyglad', 'przypomnienia', 'publikowanie', 'offline'].includes(hash)) {
     setTab('profil');
     await renderProfile(root, {
       ...common,
@@ -152,6 +155,22 @@ route();
 
 // Prośba, żeby przeglądarka sama nie czyściła postępów (Chrome zgadza się zwykle po instalacji aplikacji).
 if (getState().profile) requestPersistence();
+
+// Ostatnie wydania na zapas, żeby dało się czytać bez internetu (np. w samolocie). Po chwili od startu,
+// żeby nie spowalniać otwarcia dzisiejszego wydania.
+function prefetchLater() {
+  if (!getState().profile) return;
+  const run = () => autoPrefetch(loadIndex).catch(() => {});
+  if ('requestIdleCallback' in window) requestIdleCallback(run, { timeout: 8000 });
+  else setTimeout(run, 3000);
+}
+prefetchLater();
+
+window.addEventListener('offline', () => toast('Brak internetu. Zapisane wydania nadal działają.'));
+window.addEventListener('online', () => {
+  toast('Znowu online');
+  prefetchLater();
+});
 
 // Tryb offline i instalacja na ekranie telefonu.
 try {

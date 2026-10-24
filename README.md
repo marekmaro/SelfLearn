@@ -10,6 +10,7 @@ Codzienne wydanie do nauki i poszerzania horyzontów, w formie aplikacji na tele
 - **Pojęcie dnia**: model myślowy albo błąd poznawczy,
 - **Książka tygodnia**: jedna idea dziennie, morał i „zastosuj dziś”,
 - **Quiz** z ciekawostek, pojęcia i książki (bez pytań z wiadomości), a potem **powtórki** w odstępach 1, 3, 7, 16 i 35 dni (pierwsza zawsze następnego dnia, błędna odpowiedź wraca na jutro),
+- **Zgaduję**: przed odpowiedzią w quizie, rozgrzewce, powtórkach i quizie tygodnia można zaznaczyć, że to strzał. Zgadnięta dobra odpowiedź nie przesuwa pytania dalej w powtórkach (wraca po tym samym odstępie), a podsumowanie powtórek porównuje pewne odpowiedzi ze zgadywanymi,
 - **Pogłęb**: przycisk ✦ przy wiadomości, ciekawostce, historii, pojęciu i książce otwiera pytanie do czatu AI (Claude, ChatGPT, Gemini, Perplexity, Copilot): „prościej”, „więcej kontekstu” albo własne pytanie. Bez API i bez kosztów: Claude, ChatGPT i Perplexity otwierają się od razu z pytaniem, w pozostałych wystarczy je wkleić ze schowka,
 - **Pytanie na wieczór** do rozmowy we dwoje,
 - **Podsumowanie tygodnia**: w niedzielę i poniedziałek wydanie zaprasza do przeglądu 7 dni (dni nauki, nagłówki, wyniki quizów) i quizu z pytań z całego tygodnia, najpierw tych, które poszły gorzej. Quiz zalicza dzień serii, a błędne odpowiedzi wracają jutro w powtórkach. Zwykłe wydanie w niedzielę zostaje bez zmian,
@@ -21,7 +22,9 @@ Codzienne wydanie do nauki i poszerzania horyzontów, w formie aplikacji na tele
 - **Posłuchaj**: telefon czyta wydanie na głos (offline, bez kosztów), przewija za lektorem i podświetla czytaną kartę; tempo 0,9–1,5×,
 - **Wyzwanie we dwoje**: po quizie wysyłasz link z wynikiem, druga osoba rozwiązuje ten sam quiz i widzicie porównanie,
 - **Wygląd**: motyw jasny, sepia, ciemny albo jak w telefonie, 5 kolorów, 4 wielkości tekstu, krój gazetowy lub prosty, widok pełny albo same nagłówki,
-- **Przypomnienia**: rano o wydaniu, wieczorem o serii (tylko gdy dzień jeszcze nie zaliczony), w wybrane dni tygodnia; kalendarz, powiadomienia z aplikacji i liczba na ikonie.
+- **Przypomnienia**: rano o wydaniu, wieczorem o serii (tylko gdy dzień jeszcze nie zaliczony), w wybrane dni tygodnia; kalendarz, powiadomienia z aplikacji i liczba na ikonie,
+- **Bez internetu**: otwarte wydania zostają na telefonie, a 7 ostatnich pobiera się samo na zapas (można wyłączyć). W **Profil → Bez internetu** widać, ile wydań jest na telefonie, jest też „Pobierz wszystkie wydania” (np. przed podróżą) i „Usuń zapisane”. Bez sieci Oś czasu przygasza dni, których nie ma na telefonie,
+- **Eksport**: **Profil → Dane** zapisuje powtórki jako talię Anki (plik tekstowy; w Anki: *Plik → Importuj*) i ulubione jako Markdown (Obsidian, Notion, notatki). Markdown da się też zapisać z zakładki Ulubione, razem z bieżącym filtrem.
 
 Każda osoba ma własny profil, postępy i powtórki na swoim telefonie. Wydania są wspólne.
 
@@ -131,6 +134,7 @@ Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesię
 | `src/views/` | Widoki: ankieta, wydanie, oś czasu, powtórki, ulubione, profil, przygotowanie wydania |
 | `src/chapters.js` | Rozdziały wydania, rozgrzewka i czas czytania (bez DOM, testowane w `scripts/selftest.mjs`) |
 | `src/favorites.js` | Ulubione: filtry, wyszukiwanie i tekst do wysłania (bez DOM, testowane w `scripts/selftest.mjs`) |
+| `src/confidence.js`, `src/offline.js`, `src/exporters.js` | „Zgaduję” w quizach, wydania na zapas do czytania bez internetu, eksport do Anki i Markdowna |
 | `src/prompt.js`, `src/edition.js` | Polecenie dla czatu AI, wskazówki dla czatów, sprawdzanie i czyszczenie wydań (wspólne dla aplikacji i skryptów) |
 | `src/look.js`, `src/notify.js` | Wygląd (motywy, kolory, tekst) i przypomnienia (kalendarz, powiadomienia, liczba na ikonie) |
 | `src/listen.js`, `src/challenge.js` | Wydanie czytane na głos i wyzwanie quizowe we dwoje |

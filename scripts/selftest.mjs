@@ -17,6 +17,9 @@ import { threadSlug, editionThreads, threadsFromIndex, recentThreadNames } from 
 import { indexEntry } from '../src/edition.js';
 import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
 import { safePath } from './serve.mjs';
+import { verdictText, calibration } from '../src/confidence.js';
+import { datesToPrefetch, formatBytes } from '../src/offline.js';
+import { ankiTSV, favoritesMarkdown } from '../src/exporters.js';
 import { join } from 'node:path';
 
 // Pamięć przeglądarki na czas testów (store.js zapisuje do localStorage).
@@ -181,6 +184,78 @@ test('Powtórki: pierwsza po 1 dniu, potem 3 dni, błąd wraca na jutro', () => 
   assert(card.box === 1 && card.due === '2026-10-27', `po błędzie: pudełko ${card.box}, termin ${card.due}`);
   const fresh = grade({}, { ...q, id: 'x-q2' }, false, '2026-10-22');
   assert(fresh.box === 1 && fresh.due === '2026-10-23', 'nowe pytanie z błędem też na jutro');
+});
+
+test('Zgaduję: zgadnięta dobra odpowiedź nie awansuje i nie odsuwa terminu', () => {
+  const deck = {};
+  const q = { id: 'g-q1', question: 'P?', options: ['a', 'b'], answer: 0 };
+  let card = grade(deck, q, true, '2026-10-24', { guessed: true });
+  assert(card.box === 1 && card.due === '2026-10-25' && card.guesses === 1, `nowe zgadnięte: pudełko ${card.box}, termin ${card.due}`);
+  card = grade(deck, q, true, '2026-10-25');
+  assert(card.box === 2 && card.due === '2026-10-28' && !card.lastGuess, `pewne po zgadnięciu: pudełko ${card.box}, termin ${card.due}`);
+  card = grade(deck, q, true, '2026-10-28', { guessed: true });
+  assert(card.box === 2 && card.due === '2026-10-31', `zgadnięte w terminie: pudełko ${card.box}, termin ${card.due}`);
+  // Quiz tygodnia przed terminem: zgadnięcie może termin przybliżyć, ale nie odsunąć.
+  card = grade(deck, q, true, '2026-10-29', { guessed: true });
+  assert(card.due === '2026-10-31', `termin odsunięty na ${card.due}`);
+  card = grade(deck, q, false, '2026-10-29', { guessed: true });
+  assert(card.box === 1 && card.due === '2026-10-30', 'zgadnięta zła wraca na jutro');
+  assert(verdictText(true, true).startsWith('Dobrze, choć') && verdictText(true, false) === 'Dobrze!', 'werdykt');
+  assert(calibration([{ ok: true }, { ok: true }]) === null, 'bez zgadywania nie ma porównania');
+  const cal = calibration([{ ok: true }, { ok: false }, { ok: true, guessed: true }, { ok: false, guessed: true }]);
+  assert(cal === 'Pewne: 1 z 2 dobrze · na wyczucie: 1 z 2', cal);
+});
+
+test('Offline: które wydania pobrać na zapas', () => {
+  const index = {
+    editions: [
+      { date: '2026-10-26' },
+      { date: '2026-10-24' },
+      { date: '2026-10-23', local: true },
+      { date: '2026-10-22' },
+      { date: '2026-10-21' },
+      { date: '2026-10-20' },
+    ],
+  };
+  const today = '2026-10-24';
+  assert(datesToPrefetch(index, [], { count: 3, today }).join() === '2026-10-24,2026-10-22,2026-10-21', 'najnowsze do dziś, bez wydań z telefonu');
+  assert(datesToPrefetch(index, new Set(['2026-10-22']), { count: 3, today }).join() === '2026-10-24,2026-10-21', 'bez już zapisanych');
+  assert(datesToPrefetch(index, [], { count: Infinity, today }).length === 4, 'wszystkie');
+  assert(datesToPrefetch(null, []).length === 0, 'bez indeksu');
+  assert(formatBytes(512) === '512 B' && formatBytes(30 * 1024) === '30 KB' && formatBytes(1.5 * 1024 * 1024) === '1,5 MB', 'rozmiar');
+});
+
+test('Eksport: talia Anki i ulubione w Markdownie', () => {
+  const deck = {
+    'a-q1': { added: '2026-10-23', q: { id: 'a-q1', question: 'Ile <nóg> ma pająk?', options: ['6', '8', '10'], answer: 1, explanation: 'Osiem.\tZawsze.' }, from: { date: '2026-10-23', title: 'Pająki' } },
+    'a-q0': { added: '2026-10-22', q: { id: 'a-q0', question: 'Stolica?', options: ['Kraków', 'Warszawa'], answer: 1, explanation: '' } },
+    broken: { added: '2026-10-22' },
+  };
+  const tsv = ankiTSV(deck);
+  const lines = tsv.trimEnd().split('\n');
+  assert(lines.slice(0, 3).join('|') === '#separator:tab|#html:true|#tags column:3', 'nagłówki Anki');
+  assert(lines.length === 5, `wierszy: ${lines.length}`);
+  assert(lines[3].startsWith('Stolica?'), 'kolejność od najstarszych');
+  const cols = lines[4].split('\t');
+  assert(cols.length === 3, `kolumn: ${cols.length}`);
+  assert(cols[0].includes('Ile &lt;nóg&gt; ma pająk?') && cols[0].includes('B. 8'), cols[0]);
+  assert(cols[1].startsWith('<b>B. 8</b>') && cols[1].includes('Osiem. Zawsze.') && cols[1].includes('Pająki'), cols[1]);
+  assert(cols[2] === 'SelfLearn SelfLearn::2026-10', cols[2]);
+
+  const entries = favoriteEntries({
+    saved: {
+      '2026-10-21:pl-1': { type: 'news', title: 'Sejm *przyjął* ustawę', text: '1. punkt', date: '2026-10-21', savedAt: 'x', note: 'Dwa\nwiersze', sources: [{ name: 'TVN24', url: 'https://tvn24.pl/a(b) c' }] },
+    },
+    progress: { '2026-10-20': { note: 'Obejrzeć', noteQuestion: 'Co Was zaskoczyło?' } },
+  });
+  const mdText = favoritesMarkdown(entries, { today: '2026-10-24' });
+  assert(mdText.startsWith('# SelfLearn: ulubione'), 'tytuł');
+  assert(mdText.indexOf('## ') < mdText.indexOf('21 października') && mdText.indexOf('21 października') < mdText.indexOf('20 października'), 'dni od najnowszych');
+  assert(mdText.includes('### Sejm \\*przyjął\\* ustawę'), 'gwiazdki w tytule zabezpieczone');
+  assert(mdText.includes('1\\. punkt'), 'numer na początku wiersza zabezpieczony');
+  assert(mdText.includes('> **Moja notatka:** Dwa\n> wiersze'), 'notatka jako cytat');
+  assert(mdText.includes('[TVN24](https://tvn24.pl/a%28b%29%20c)'), 'link');
+  assert(mdText.includes('### Co Was zaskoczyło?') && mdText.endsWith('\n') && !mdText.includes('\n\n\n'), 'wieczór i odstępy');
 });
 
 test('Kopia danych: wydania z telefonu w kopii, token zostaje, zła kopia odrzucona', () => {

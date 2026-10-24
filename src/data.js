@@ -3,12 +3,20 @@
 import { todayISO } from './dates.js';
 import { localEditions } from './store.js';
 import { indexEntry } from './edition.js';
+import { cachedResponse } from './offline.js';
 
 const editions = new Map();
 let indexPromise = null;
 
 async function getJSON(url) {
-  const res = await fetch(url, { cache: 'no-cache' });
+  let res;
+  try {
+    res = await fetch(url, { cache: 'no-cache' });
+  } catch (err) {
+    // Bez sieci zwykle odpowiada service worker. Gdy jeszcze nie działa, sięgamy do zapisanej kopii sami.
+    res = await cachedResponse(url);
+    if (!res) throw err;
+  }
   if (!res.ok) throw new Error(`Nie udało się pobrać ${url} (${res.status})`);
   return res.json();
 }

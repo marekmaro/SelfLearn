@@ -15,7 +15,7 @@ import {
   markBackedUp,
 } from '../store.js';
 import { downloadBackup } from './backup.js';
-import { formatShort } from '../dates.js';
+import { formatShort, todayISO } from '../dates.js';
 import { loadIndex, forgetEdition } from '../data.js';
 import { icsFile, googleCalendarUrl } from '../calendar.js';
 import { checkAccess } from '../github.js';
@@ -23,6 +23,9 @@ import { appearancePanel, applyLook } from '../look.js';
 import { getNotify, setNotify, capabilities, enableSystem, disableSystem, testNotification, remindersOverlap, WEEK_DAYS } from '../notify.js';
 import { h, mount, icon, toast, plural } from '../ui.js';
 import { multiChoice, segmented } from './onboarding.js';
+import { offlineSettings, setOfflineSettings, offlineStats, cachedEditionDates, datesToPrefetch, prefetchEditions, clearOfflineEditions, autoPrefetch, formatBytes } from '../offline.js';
+import { ankiTSV, favoritesMarkdown, downloadFile } from '../exporters.js';
+import { favoriteEntries } from '../favorites.js';
 
 const PAGE_SECTIONS = [
   { id: 'ustawienia', label: 'Wydanie' },
@@ -31,6 +34,7 @@ const PAGE_SECTIONS = [
   { id: 'publikowanie', label: 'Publikowanie' },
   { id: 'postepy', label: 'Postępy' },
   { id: 'archiwum', label: 'Archiwum' },
+  { id: 'offline', label: 'Offline' },
   { id: 'dane', label: 'Dane' },
 ];
 
@@ -319,6 +323,134 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
     }
   }
 
+  // Czytanie bez internetu: ile wydań jest na telefonie, pobieranie na zapas i sprzątanie.
+  function offlineSection() {
+    const settings = offlineSettings();
+    const remote = (index?.editions || []).filter((e) => !e.local);
+    const status = h('p', { class: 'small muted', style: 'margin:0', 'aria-live': 'polite' }, 'Sprawdzam, co jest na telefonie…');
+    const refresh = async () => {
+      const st = await offlineStats().catch(() => ({ supported: false }));
+      if (!status.isConnected) return;
+      status.textContent = st.supported
+        ? `Na telefonie: ${st.count} z ${remote.length} ${plural(remote.length, 'wydania', 'wydań', 'wydań')} (${formatBytes(st.bytes)}).`
+        : 'Ta przeglądarka nie pozwala zapisywać wydań na później. Otwarte wydania mogą działać offline po instalacji aplikacji.';
+    };
+    const getAll = h(
+      'button',
+      {
+        type: 'button',
+        class: 'btn secondary',
+        onclick: async () => {
+          if (navigator.onLine === false) {
+            toast('Brak internetu. Spróbuj, gdy wróci sieć.');
+            return;
+          }
+          const dates = datesToPrefetch(index, await cachedEditionDates(), { count: Infinity });
+          if (!dates.length) {
+            toast('Wszystkie wydania są już na telefonie');
+            return;
+          }
+          getAll.disabled = true;
+          const saved = await prefetchEditions(dates, { onProgress: (n, total) => (status.textContent = `Pobieram: ${n} z ${total}…`) });
+          getAll.disabled = false;
+          toast(saved === dates.length ? `Pobrano ${saved} ${plural(saved, 'wydanie', 'wydania', 'wydań')}` : `Pobrano ${saved} z ${dates.length}. Reszta, gdy wróci sieć.`);
+          refresh();
+        },
+      },
+      icon('download'),
+      'Pobierz wszystkie wydania',
+    );
+    const section = h(
+      'section',
+      { class: 'section', id: 'offline' },
+      h('h2', null, 'Bez internetu'),
+      h('p', { class: 'muted', style: 'margin:0' }, 'Otwarte wydania zostają na telefonie i działają bez internetu, razem z quizem i powtórkami. Ostatnie wydania mogą też pobierać się same, na zapas, np. przed podróżą.'),
+      status,
+      h(
+        'label',
+        { class: 'check' },
+        h('input', {
+          type: 'checkbox',
+          checked: settings.auto,
+          onchange: (e) => {
+            setOfflineSettings({ auto: e.target.checked });
+            toast(e.target.checked ? `Ostatnie ${settings.count} wydań będzie zawsze na telefonie` : 'Pobieranie na zapas wyłączone');
+            if (e.target.checked) autoPrefetch(loadIndex).then(refresh, () => {});
+          },
+        }),
+        `Trzymaj na telefonie ${settings.count} ostatnich wydań`,
+      ),
+      h(
+        'div',
+        { class: 'inline-actions' },
+        getAll,
+        h(
+          'button',
+          {
+            type: 'button',
+            class: 'btn ghost',
+            onclick: async () => {
+              const removed = await clearOfflineEditions();
+              const back = offlineSettings().auto ? ' Ostatnie pobiorą się znowu przy następnym uruchomieniu.' : '';
+              toast(removed ? `Usunięto ${removed} ${plural(removed, 'wydanie', 'wydania', 'wydań')} z pamięci telefonu.${back}` : 'Nie ma zapisanych wydań');
+              refresh();
+            },
+          },
+          icon('trash'),
+          'Usuń zapisane wydania',
+        ),
+      ),
+    );
+    refresh();
+    return section;
+  }
+
+  // Powtórki do Anki i ulubione do Markdowna (Obsidian, Notion, notatki).
+  function exportCard() {
+    const state = getState();
+    const cards = Object.keys(state.deck || {}).length;
+    const favorites = favoriteEntries(state).length;
+    const stamp = todayISO();
+    return h(
+      'div',
+      { class: 'card export-card' },
+      h('p', { class: 'eyebrow' }, 'Eksport do innych aplikacji'),
+      h(
+        'div',
+        { class: 'inline-actions' },
+        h(
+          'button',
+          {
+            type: 'button',
+            class: 'btn secondary',
+            disabled: !cards,
+            onclick: () => {
+              downloadFile(`selflearn-anki-${stamp}.txt`, ankiTSV(getState().deck));
+              toast('Talia zapisana. W Anki: Plik → Importuj.');
+            },
+          },
+          icon('download'),
+          `Powtórki do Anki (${cards})`,
+        ),
+        h(
+          'button',
+          {
+            type: 'button',
+            class: 'btn secondary',
+            disabled: !favorites,
+            onclick: () => {
+              downloadFile(`selflearn-ulubione-${stamp}.md`, favoritesMarkdown(favoriteEntries(getState())), 'text/markdown');
+              toast('Ulubione zapisane jako Markdown');
+            },
+          },
+          icon('download'),
+          `Ulubione do Markdowna (${favorites})`,
+        ),
+      ),
+      h('p', { class: 'small muted', style: 'margin:0' }, 'Anki: plik tekstowy importuje się przez Plik → Importuj (pytanie z odpowiedziami na przodzie, wyjaśnienie z tyłu). Markdown otworzysz w Obsidianie, Notion albo zwykłym edytorze. Eksport niczego nie usuwa z aplikacji.'),
+    );
+  }
+
   function render() {
     const profile = getState().profile;
     const count = completedCount();
@@ -448,6 +580,8 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
           : h('p', { class: 'muted' }, 'Archiwum pojawi się po wczytaniu wydań.'),
       ),
 
+      offlineSection(),
+
       h(
         'section',
         { class: 'section', id: 'dane' },
@@ -489,6 +623,7 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
             'Skopiuj kopię danych',
           ),
         ),
+        exportCard(),
         h(
           'details',
           null,

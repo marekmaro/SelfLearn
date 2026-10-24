@@ -7,6 +7,7 @@ import { grade } from '../srs.js';
 import { findRef } from '../chapters.js';
 import { weekEnd, weekDates, weekSummary, weekQuiz } from '../week.js';
 import { h, mount, icon, toast, plural } from '../ui.js';
+import { guessToggle, verdictText } from '../confidence.js';
 
 export async function renderWeek(root, { onChange }) {
   const today = todayISO();
@@ -32,6 +33,7 @@ export async function renderWeek(root, { onChange }) {
     });
   }
   const byDate = new Map(editions.map((e) => [e.date, e]));
+  const guessing = new Set();
 
   function render() {
     const summary = weekSummary(end, editions, getState(), headlines);
@@ -102,11 +104,11 @@ export async function renderWeek(root, { onChange }) {
           ? `Wynik: ${right} z ${questions.length}. ${right === questions.length ? 'Cały tydzień w pamięci!' : 'Błędne odpowiedzi wrócą jutro w powtórkach.'}`
           : `${questions.length} ${plural(questions.length, 'pytanie', 'pytania', 'pytań')} z całego tygodnia, najpierw te, które poszły gorzej. Quiz zalicza dzień serii.`,
       ),
-      questions.map((q, i) => questionCard(q, i, answers[q.id])),
+      questions.map((q, i) => questionCard(q, i, answers[q.id], getState().weeks?.[end]?.guess?.[q.id])),
     );
   }
 
-  function questionCard(q, i, chosen) {
+  function questionCard(q, i, chosen, guessed) {
     const done = chosen !== undefined;
     const ref = byDate.get(q.date) ? findRef(byDate.get(q.date), q.ref) : null;
     return h(
@@ -114,6 +116,7 @@ export async function renderWeek(root, { onChange }) {
       { class: 'card q' },
       h('p', { class: 'from' }, `Pytanie ${i + 1} · z wydania ${formatShort(q.date)}${ref?.title ? ` · ${ref.title}` : ''}`),
       h('p', { class: 'q-text' }, q.question),
+      done ? null : guessToggle(guessing.has(q.id), (on) => (on ? guessing.add(q.id) : guessing.delete(q.id))),
       h(
         'div',
         { class: 'options' },
@@ -124,22 +127,25 @@ export async function renderWeek(root, { onChange }) {
           return h('button', { type: 'button', class: cls, disabled: done, onclick: () => answer(q, oi, ref) }, opt);
         }),
       ),
-      done ? h('p', { class: `verdict ${chosen === q.answer ? 'ok' : 'bad'}` }, chosen === q.answer ? 'Dobrze!' : 'Tym razem nie.') : null,
+      done ? h('p', { class: `verdict ${chosen === q.answer ? 'ok' : 'bad'}` }, verdictText(chosen === q.answer, guessed)) : null,
       done && q.explanation ? h('p', { class: 'read' }, q.explanation) : null,
     );
   }
 
   function answer(q, chosen, ref) {
     const correct = chosen === q.answer;
+    const guessed = guessing.has(q.id);
     let allDone = false;
     update((s) => {
       s.weeks ||= {};
       const week = (s.weeks[end] ||= { questions: questions.map((x) => x.id), quiz: {} });
       week.quiz[q.id] = chosen;
+      if (guessed) (week.guess ||= {})[q.id] = true;
       allDone = questions.every((x) => week.quiz[x.id] !== undefined);
       if (allDone) week.doneOn = today;
-      // Dobra odpowiedź nie przesuwa powtórek (to nie jest ich termin), a błędna wraca na jutro.
-      if (!correct) grade(s.deck, q, false, today, { from: { date: q.date, title: ref?.title || null } });
+      // Pewna dobra odpowiedź nie przesuwa powtórek (to nie jest ich termin), błędna wraca na jutro,
+      // a zgadnięta najpóźniej po odstępie swojego pudełka.
+      if (!correct || guessed) grade(s.deck, q, correct, today, { from: { date: q.date, title: ref?.title || null }, guessed });
     });
     if (allDone) {
       const milestone = markActive('tydzien');

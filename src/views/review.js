@@ -4,6 +4,7 @@ import { grade, dueCards, boxCounts } from '../srs.js';
 import { todayISO, formatShort, addDays } from '../dates.js';
 import { LEITNER_DAYS } from '../config.js';
 import { h, mount, icon, plural } from '../ui.js';
+import { guessToggle, verdictText, calibration } from '../confidence.js';
 
 export function renderReview(root, { onChange }) {
   const today = todayISO();
@@ -11,6 +12,9 @@ export function renderReview(root, { onChange }) {
   let pos = 0;
   let chosen = null;
   let right = 0;
+  // „Zgaduję” zaznaczone przy bieżącym pytaniu i wyniki sesji (do porównania pewnych odpowiedzi ze zgadywanymi).
+  let guessing = false;
+  const results = [];
 
   function render() {
     const deck = getState().deck;
@@ -50,6 +54,7 @@ export function renderReview(root, { onChange }) {
       { class: 'card q' },
       card.from?.title ? h('p', { class: 'from' }, `Z wydania ${formatShort(card.from.date)} · ${card.from.title}`) : null,
       h('p', { class: 'q-text' }, q.question),
+      done ? null : guessToggle(guessing, (on) => (guessing = on)),
       h(
         'div',
         { class: 'options' },
@@ -65,8 +70,8 @@ export function renderReview(root, { onChange }) {
       const ok = chosen === q.answer;
       const updated = getState().deck[q.id];
       el.append(
-        h('p', { class: `verdict ${ok ? 'ok' : 'bad'}` }, ok ? 'Dobrze!' : 'Tym razem nie.'),
-        q.explanation ? h('p', { class: 'read' }, q.explanation) : null,
+        h('p', { class: `verdict ${ok ? 'ok' : 'bad'}` }, verdictText(ok, guessing)),
+        q.explanation ? h('p', { class: 'read' }, q.explanation) : '', // append() zamieniłby null na tekst
         h('p', { class: 'from' }, `Następna powtórka: ${formatShort(updated.due)}.`),
         h(
           'button',
@@ -76,6 +81,7 @@ export function renderReview(root, { onChange }) {
             onclick: () => {
               pos += 1;
               chosen = null;
+              guessing = false;
               render();
               window.scrollTo(0, 0);
             },
@@ -92,8 +98,9 @@ export function renderReview(root, { onChange }) {
     chosen = i;
     const ok = i === card.q.answer;
     if (ok) right += 1;
+    results.push({ ok, guessed: guessing });
     update((s) => {
-      grade(s.deck, card.q, ok, today, { from: card.from });
+      grade(s.deck, card.q, ok, today, { from: card.from, guessed: guessing });
     });
     render();
     onChange?.();
@@ -106,6 +113,7 @@ export function renderReview(root, { onChange }) {
       h('p', { class: 'eyebrow' }, 'Gotowe'),
       h('h2', null, `${right} z ${queue.length} dobrze`),
       h('p', { class: 'read' }, 'Pytania z błędną odpowiedzią wrócą jutro, pozostałe później. Tak działa pamięć: im później, tym trwalej.'),
+      calibration(results) ? h('p', { class: 'small muted', style: 'margin:0' }, `${calibration(results)}.`) : null,
       deckStats(deck),
       h('a', { class: 'btn secondary', href: '#dzis' }, 'Wróć do wydania'),
     );

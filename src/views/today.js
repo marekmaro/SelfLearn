@@ -29,6 +29,7 @@ import { deepenButton } from './deepen.js';
 import { weekBannerDue } from '../week.js';
 import { threadLink } from './threads.js';
 import { threadsFromIndex } from '../threads.js';
+import { guessToggle, verdictText } from '../confidence.js';
 
 const kindLabel = (id) => FACT_KINDS.find((k) => k.id === id)?.label || id;
 
@@ -68,6 +69,8 @@ export async function renderToday(root, { date: requested, focus = null, onChang
   const chapters = buildChapters(edition, profile, warmup.length ? { prevDate } : null);
   const expanded = new Set();
   const openCards = new Set();
+  // Pytania z zaznaczonym „Zgaduję”, zanim padnie odpowiedź (po odpowiedzi flaga trafia do postępów).
+  const guessing = new Set();
   let lastChapter = null;
 
   function currentChapterId() {
@@ -123,11 +126,8 @@ export async function renderToday(root, { date: requested, focus = null, onChang
       'aria-live': 'polite',
       dataset: { date, chapter: chapterKey },
     });
-    if (showEnd || !active) {
-      content.append(...endView());
-    } else {
-      content.append(...chapterView(active));
-    }
+    // Zwykłe append zamieniłby puste miejsca (null) na tekst „null”.
+    content.append(...(showEnd || !active ? endView() : chapterView(active)).filter(Boolean));
 
     const strip = chapterStrip(activeId);
     mount(root, masthead(), strip, content);
@@ -580,6 +580,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
   }
 
   function warmupCard(q, i, answers) {
+    const p = editionProgress(date);
     const chosen = answers[q.id];
     const done = chosen !== undefined;
     const card = h(
@@ -587,6 +588,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
       { class: 'card q' },
       h('p', { class: 'eyebrow' }, `Pytanie ${i + 1} z ${warmup.length}`),
       h('p', { class: 'q-text' }, q.question),
+      done ? null : guessSwitch(q),
       h(
         'div',
         { class: 'options' },
@@ -606,8 +608,8 @@ export async function renderToday(root, { date: requested, focus = null, onChang
     if (done) {
       const ok = chosen === q.answer;
       card.append(
-        h('p', { class: `verdict ${ok ? 'ok' : 'bad'}` }, ok ? 'Dobrze!' : `Poprawna odpowiedź: ${'abc'[q.answer]}.`),
-        q.explanation ? h('p', { class: 'read' }, q.explanation) : null,
+        h('p', { class: `verdict ${ok ? 'ok' : 'bad'}` }, ok ? verdictText(true, p.guess?.[q.id]) : `Poprawna odpowiedź: ${'abc'[q.answer]}.`),
+        q.explanation ? h('p', { class: 'read' }, q.explanation) : '', // append() zamieniłby null na tekst
       );
     }
     return card;
@@ -616,14 +618,16 @@ export async function renderToday(root, { date: requested, focus = null, onChang
   function answerWarmup(q, chosen) {
     const today = todayISO();
     const correct = chosen === q.answer;
+    const guessed = guessing.has(q.id);
     let allDone = false;
     updateEdition(date, (p) => {
       p.warmup ||= {};
       p.warmup[q.id] = chosen;
+      if (guessed) (p.guess ||= {})[q.id] = true;
       allDone = warmup.every((x) => p.warmup[x.id] !== undefined);
     });
     update((s) => {
-      grade(s.deck, q, correct, today, { from: { date: prevDate, title: q.fromTitle || null } });
+      grade(s.deck, q, correct, today, { from: { date: prevDate, title: q.fromTitle || null }, guessed });
     });
     if (allDone) {
       const milestone = markActive('rozgrzewka');
@@ -644,7 +648,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         'p',
         { class: 'muted' },
         !done
-          ? 'Pytania z dzisiejszych ciekawostek, pojęcia i książki. Każda odpowiedź trafia do powtórek, więc wiedza zostanie na dłużej.'
+          ? 'Pytania z dzisiejszych ciekawostek, pojęcia i książki. Każda odpowiedź trafia do powtórek, więc wiedza zostanie na dłużej. Nie wiesz na pewno? Zaznacz „Zgaduję”, zanim odpowiesz.'
           : `Wynik: ${right} z ${edition.quiz.length}. Pytania wrócą w powtórkach w odpowiednim momencie.`,
       ),
       challenge && !done
@@ -756,6 +760,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
     card.append(
       h('p', { class: 'eyebrow' }, `Pytanie ${i + 1}`),
       h('p', { class: 'q-text' }, q.question),
+      done ? null : guessSwitch(q),
       h(
         'div',
         { class: 'options' },
@@ -779,22 +784,28 @@ export async function renderToday(root, { date: requested, focus = null, onChang
     if (done) {
       const ok = chosen === q.answer;
       card.append(
-        h('p', { class: `verdict ${ok ? 'ok' : 'bad'}` }, ok ? 'Dobrze!' : 'Tym razem nie.'),
-        q.explanation ? h('p', { class: 'read' }, q.explanation) : null,
+        h('p', { class: `verdict ${ok ? 'ok' : 'bad'}` }, verdictText(ok, p.guess?.[q.id])),
+        q.explanation ? h('p', { class: 'read' }, q.explanation) : '', // append() zamieniłby null na tekst
       );
     }
     return card;
+  }
+
+  function guessSwitch(q) {
+    return guessToggle(guessing.has(q.id), (on) => (on ? guessing.add(q.id) : guessing.delete(q.id)));
   }
 
   function answer(q, chosen) {
     const today = todayISO();
     const correct = chosen === q.answer;
     const ref = findRef(edition, q.ref);
+    const guessed = guessing.has(q.id);
     updateEdition(date, (p) => {
       p.quiz[q.id] = chosen;
+      if (guessed) (p.guess ||= {})[q.id] = true;
     });
     update((s) => {
-      grade(s.deck, q, correct, today, { from: { date, title: ref?.title || null } });
+      grade(s.deck, q, correct, today, { from: { date, title: ref?.title || null }, guessed });
     });
     render();
     onChange?.();

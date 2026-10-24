@@ -1,11 +1,12 @@
 // Ulubione: wiadomości, ciekawostki i pojęcia oznaczone sercem oraz notatki z wieczorów.
 // Można je przeszukać, przefiltrować, dopisać własną notatkę, otworzyć w wydaniu i wysłać drugiej osobie.
 import { getState, setSavedNote, removeSaved, restoreSaved, updateEdition } from '../store.js';
-import { formatLong } from '../dates.js';
+import { formatLong, todayISO } from '../dates.js';
 import { SECTIONS } from '../config.js';
 import { editionHref } from '../data.js';
 import { FAVORITE_TYPES, TYPE_LABELS, favoriteEntries, filterFavorites, countByType, groupByDate, favoriteText, favoritesText } from '../favorites.js';
 import { h, mount, icon, sourceLinks, toast, shareOrCopy, plural } from '../ui.js';
+import { favoritesMarkdown, downloadFile } from '../exporters.js';
 
 const LONG_TEXT = 320;
 
@@ -87,7 +88,21 @@ export function renderFavorites(root) {
       icon('share'),
       query || type !== 'all' ? 'Wyślij te wpisy' : 'Wyślij wszystkie ulubione',
     );
-    footEl.replaceChildren(...(entries.length ? [sendAll] : []));
+    const toMarkdown = h(
+      'button',
+      {
+        type: 'button',
+        class: 'btn ghost',
+        title: 'Plik do Obsidiana, Notion albo zwykłego edytora',
+        onclick: () => {
+          downloadFile(`selflearn-ulubione-${todayISO()}.md`, favoritesMarkdown(shown.length ? shown : entries), 'text/markdown');
+          toast('Zapisano plik Markdown');
+        },
+      },
+      icon('download'),
+      'Zapisz jako Markdown',
+    );
+    footEl.replaceChildren(...(entries.length ? [h('div', { class: 'inline-actions' }, sendAll, toMarkdown)] : []));
   }
 
   function dayGroup(group) {

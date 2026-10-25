@@ -1,6 +1,47 @@
 {
   "editions": [
     {
+      "date": "2026-10-25",
+      "headline": "Pełczyńska-Nałęcz usunięta z Polski 2050",
+      "threads": [
+        {
+          "name": "Zmiany w rządzie Tuska",
+          "item": "pl-1",
+          "title": "Pełczyńska-Nałęcz usunięta z Polski 2050"
+        },
+        {
+          "name": "Wizyta Tuska w Azji",
+          "item": "pl-3",
+          "title": "Tusk w Wietnamie. W Hoi An uczcił polskiego architekta"
+        },
+        {
+          "name": "Wybory w Brazylii",
+          "item": "sw-1",
+          "title": "Brazylia wybiera dziś prezydenta: Lula czy Flávio Bolsonaro"
+        },
+        {
+          "name": "Protesty we Francji",
+          "item": "sw-2",
+          "title": "Francja: ponad 400 tys. na ulicach, prawie tysiąc zatrzymanych"
+        },
+        {
+          "name": "Wybory w Izraelu",
+          "item": "sw-3",
+          "title": "Ostatnie sondaże przed wyborami w Izraelu: pat"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Ukraińskie drony uderzyły w zakład chemiczny w Togliatti"
+        },
+        {
+          "name": "Starlink na Ukrainie",
+          "item": "bezpieczenstwo-2",
+          "title": "Senatorowie USA grożą blokadą nominacji z powodu Starlinka"
+        }
+      ]
+    },
+    {
       "date": "2026-10-24",
       "headline": "Tusk o odejściu Pełczyńskiej-Nałęcz: „Myślałem, że chociaż zadzwoni”",
       "threads": [

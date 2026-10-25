@@ -67,7 +67,7 @@ export function renderOnboarding(root, { onDone }) {
     {
       render: () => [
         h('h1', null, 'Jakie ciekawostki lubisz?'),
-        h('p', { class: 'lead' }, 'Te pokażę w pierwszej kolejności. Z ciekawostek, książek i pojęć powstaje też codzienny quiz.'),
+        h('p', { class: 'lead' }, 'Te pokażę w pierwszej kolejności. Quiz zapyta tylko o ciekawostki z tych rodzajów, a do tego o historię dnia, pojęcie i książkę.'),
         multiChoice(FACT_KINDS, draft.factKinds, (ids) => {
           draft.factKinds = ids;
         }),

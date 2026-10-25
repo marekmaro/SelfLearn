@@ -20,7 +20,7 @@ import { h, mount, icon, koiMark, sourceLinks, toast, plural } from '../ui.js';
 import { getLook, openAppearanceSheet } from '../look.js';
 import { speechSupported, startListening, stopListening, isListening } from '../listen.js';
 import { challengeFor, shareChallenge, verdict } from '../challenge.js';
-import { sectionLabel, firstSentence, buildChapters, buildWarmup, estimateMinutes, findRef } from '../chapters.js';
+import { sectionLabel, firstSentence, buildChapters, buildWarmup, estimateMinutes, findRef, withPersonalQuiz } from '../chapters.js';
 import { smoothScroll, updateReadProgress, restorePosition, watchScroll } from './reading.js';
 import { streakWidget } from './streak.js';
 import { backupBanner } from './backup.js';
@@ -44,7 +44,8 @@ export async function renderToday(root, { date: requested, focus = null, onChang
       mount(root, emptyState());
       return;
     }
-    edition = await loadEdition(date);
+    // Quiz tylko z tematów wybranych w profilu.
+    edition = withPersonalQuiz(await loadEdition(date), getState().profile);
   } catch (err) {
     mount(root, errorState(err, () => renderToday(root, { date: requested, focus, onChange })));
     return;
@@ -58,7 +59,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
   let prevEdition = null;
   if (prevDate) {
     try {
-      prevEdition = await loadEdition(prevDate);
+      prevEdition = withPersonalQuiz(await loadEdition(prevDate), getState().profile);
     } catch {
       prevEdition = null;
     }
@@ -86,17 +87,20 @@ export async function renderToday(root, { date: requested, focus = null, onChang
     render({ scroll });
   }
 
-  function finishChapter(id) {
+  // Zalicza rozdział; gdy był ostatnim brakującym, całe wydanie jest ukończone. move: przejdź do następnego.
+  function markDone(id, { move = false } = {}) {
     const idx = chapters.findIndex((c) => c.id === id);
     let justCompleted = false;
     updateEdition(date, (p) => {
       if (!p.done.includes(id)) p.done.push(id);
       const notDone = (c) => !p.done.includes(c.id);
       const allDone = chapters.every((c) => !notDone(c));
-      // Po ukończeniu całości „Dalej” idzie po kolei; wcześniej prowadzi do pominiętych rozdziałów.
-      const next = allDone ? chapters[idx + 1] : chapters.slice(idx + 1).find(notDone) || chapters.find(notDone);
-      p.chapter = next ? next.id : 'koniec';
-      if (chapters.every((c) => p.done.includes(c.id)) && !p.completedOn) {
+      if (move) {
+        // Po ukończeniu całości „Dalej” idzie po kolei; wcześniej prowadzi do pominiętych rozdziałów.
+        const next = allDone ? chapters[idx + 1] : chapters.slice(idx + 1).find(notDone) || chapters.find(notDone);
+        p.chapter = next ? next.id : 'koniec';
+      }
+      if (allDone && !p.completedOn) {
         p.completedOn = todayISO();
         p.completedAt = new Date().toISOString();
         justCompleted = true;
@@ -106,6 +110,11 @@ export async function renderToday(root, { date: requested, focus = null, onChang
       const milestone = markActive('wydanie');
       toast(milestone ? `Seria: ${milestone} dni z rzędu!` : 'Wydanie ukończone');
     }
+    return justCompleted;
+  }
+
+  function finishChapter(id) {
+    markDone(id, { move: true });
     render({ scroll: true });
     onChange?.();
   }
@@ -289,7 +298,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         'div',
         { class: 'chapter-head' },
         h('p', { class: 'eyebrow' }, `Rozdział ${idx + 1} z ${chapters.length}`),
-        h('h2', null, ch.title || ch.label),
+        h('div', { class: 'chapter-title' }, h('h2', null, ch.title || ch.label), listenButton(ch)),
         ch.type === 'topics' ? topicNav(ch.groups) : ch.lead ? h('p', { class: 'muted' }, ch.lead) : null,
       ),
     );
@@ -349,7 +358,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
     return h(
       'div',
       { class: 'group', id: showTitle ? `dzial-${group.section}` : null },
-      showTitle ? h('h3', { class: 'group-title' }, sectionLabel(group.section)) : null,
+      showTitle ? h('div', { class: 'group-head' }, h('h3', { class: 'group-title' }, sectionLabel(group.section)), listenButton(chapters.find((c) => c.groups?.includes(group)), group)) : null,
       items.slice(0, limit).map((item, i) => newsCard(item, i + 1)),
       hidden > 0
         ? h(
@@ -639,7 +648,8 @@ export async function renderToday(root, { date: requested, focus = null, onChang
 
   function quizView() {
     const p = editionProgress(date);
-    const answered = Object.keys(p.quiz).length;
+    // Liczą się tylko pytania z Twoich tematów (stare odpowiedzi na odfiltrowane pytania pomijamy).
+    const answered = edition.quiz.filter((q) => p.quiz[q.id] !== undefined).length;
     const right = edition.quiz.filter((q) => p.quiz[q.id] === q.answer).length;
     const done = answered >= edition.quiz.length;
     const challenge = challengeFor(date);
@@ -648,7 +658,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         'p',
         { class: 'muted' },
         !done
-          ? 'Pytania z dzisiejszych ciekawostek, pojęcia i książki. Każda odpowiedź trafia do powtórek, więc wiedza zostanie na dłużej. Nie wiesz na pewno? Zaznacz „Zgaduję”, zanim odpowiesz.'
+          ? 'Pytania z Twoich tematów w dzisiejszych ciekawostkach, historii, pojęciu i książce. Każda odpowiedź trafia do powtórek, więc wiedza zostanie na dłużej. Nie wiesz na pewno? Zaznacz „Zgaduję”, zanim odpowiesz.'
           : `Wynik: ${right} z ${edition.quiz.length}. Pytania wrócą w powtórkach w odpowiednim momencie.`,
       ),
       challenge && !done
@@ -686,7 +696,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
   function challengeBanner() {
     const challenge = challengeFor(date);
     const p = editionProgress(date);
-    if (!challenge || !edition.quiz?.length || Object.keys(p.quiz).length >= edition.quiz.length) return null;
+    if (!challenge || !edition.quiz?.length || edition.quiz.every((q) => p.quiz[q.id] !== undefined)) return null;
     return h(
       'div',
       { class: 'challenge' },
@@ -704,40 +714,82 @@ export async function renderToday(root, { date: requested, focus = null, onChang
 
   // Kolejka dla lektora: to samo, co widać w wydaniu (bez rozgrzewki i quizu, które wymagają dotknięć).
   function listenItems() {
+    const items = [{ id: 'intro', chapter: chapters.find((c) => c.type !== 'warmup')?.id, label: 'Wstęp', text: `${formatLong(date)}. ${edition.intro || ''}` }];
+    for (const ch of chapters) items.push(...chapterItems(ch));
+    return items.filter((it) => it.text.trim());
+  }
+
+  // Fragmenty jednego rozdziału (albo jednego działu w „Twoich tematach”), tak jak widać je na ekranie.
+  function chapterItems(ch, onlyGroup = null) {
     const items = [];
     const add = (id, chapter, label, text) => items.push({ id, chapter, label, text });
-    add('intro', chapters.find((c) => c.type !== 'warmup')?.id, 'Wstęp', `${formatLong(date)}. ${edition.intro || ''}`);
-    for (const ch of chapters) {
-      if (ch.groups) {
-        for (const g of ch.groups) {
-          const n = expanded.has(`news:${g.section}`) ? g.items.length : g.limit;
-          g.items.slice(0, n).forEach((it, i) => {
-            const lead = i === 0 ? `${sectionLabel(g.section)}. ` : '';
-            add(it.id, ch.id, it.title, `${lead}${it.title}. ${it.summary} ${it.why ? `Dlaczego to ważne: ${it.why}` : ''}`);
-          });
-        }
-      } else if (ch.type === 'facts' || ch.type === 'otd') {
-        const n = expanded.has(ch.id) ? ch.items.length : ch.limit;
-        ch.items.slice(0, n).forEach((it, i) => {
-          const lead = i === 0 ? `${ch.label}. ` : '';
-          const head = ch.type === 'otd' ? `Rok ${it.year}. ${it.title}.` : `${kindLabel(it.kind)}: ${it.title}.`;
-          add(it.id, ch.id, ch.type === 'otd' ? `${it.year}: ${it.title}` : it.title, `${lead}${head} ${it.body}`);
+    if (ch.groups) {
+      for (const g of ch.groups) {
+        if (onlyGroup && g !== onlyGroup) continue;
+        const n = expanded.has(`news:${g.section}`) ? g.items.length : g.limit;
+        g.items.slice(0, n).forEach((it, i) => {
+          const lead = i === 0 ? `${sectionLabel(g.section)}. ` : '';
+          add(it.id, ch.id, it.title, `${lead}${it.title}. ${it.summary} ${it.why ? `Dlaczego to ważne: ${it.why}` : ''}`);
         });
-      } else if (ch.type === 'concept') {
-        const c = edition.concept;
-        add('concept', ch.id, `Pojęcie: ${c.term}`, `Pojęcie dnia: ${c.term}. ${c.definition} ${c.origin || ''} ${(c.examples || []).join(' ')}`);
-      } else if (ch.type === 'book') {
-        const b = edition.book;
-        add('book', ch.id, `${b.title}: ${b.ideaTitle}`, `Książka tygodnia: „${b.title}”, ${b.author}. Dzień ${b.day} z ${b.days}: ${b.ideaTitle}. ${b.idea} Morał: ${b.moral} Zastosuj dziś: ${b.action}`);
-      } else if (ch.type === 'evening') {
-        add('evening', ch.id, 'Na wieczór', `Na wieczór we dwoje: ${edition.evening.question} ${edition.evening.hint || ''}`);
       }
+    } else if (ch.type === 'facts' || ch.type === 'otd') {
+      const n = expanded.has(ch.id) ? ch.items.length : ch.limit;
+      ch.items.slice(0, n).forEach((it, i) => {
+        const lead = i === 0 ? `${ch.label}. ` : '';
+        const head = ch.type === 'otd' ? `Rok ${it.year}. ${it.title}.` : `${kindLabel(it.kind)}: ${it.title}.`;
+        add(it.id, ch.id, ch.type === 'otd' ? `${it.year}: ${it.title}` : it.title, `${lead}${head} ${it.body}`);
+      });
+    } else if (ch.type === 'concept') {
+      const c = edition.concept;
+      add('concept', ch.id, `Pojęcie: ${c.term}`, `Pojęcie dnia: ${c.term}. ${c.definition} ${c.origin || ''} ${(c.examples || []).join(' ')}`);
+    } else if (ch.type === 'book') {
+      const b = edition.book;
+      add('book', ch.id, `${b.title}: ${b.ideaTitle}`, `Książka tygodnia: „${b.title}”, ${b.author}. Dzień ${b.day} z ${b.days}: ${b.ideaTitle}. ${b.idea} Morał: ${b.moral} Zastosuj dziś: ${b.action}`);
+    } else if (ch.type === 'evening') {
+      add('evening', ch.id, 'Na wieczór', `Na wieczór we dwoje: ${edition.evening.question} ${edition.evening.hint || ''}`);
     }
     return items.filter((it) => it.text.trim());
   }
 
-  function listen() {
-    startListening(listenItems(), {
+  // Przesłuchany do końca fragment trafia do postępów; gdy cały rozdział jest przesłuchany, rozdział jest zaliczony.
+  function heard(item) {
+    const ch = chapters.find((c) => c.id === item.chapter);
+    if (!ch || item.id === 'intro') return;
+    let complete = false;
+    updateEdition(date, (p) => {
+      p.heard ||= [];
+      if (!p.heard.includes(item.id)) p.heard.push(item.id);
+      complete = !p.done.includes(ch.id) && chapterItems(ch).every((it) => p.heard.includes(it.id));
+    });
+    if (!complete) return;
+    if (!markDone(ch.id)) toast(`Przesłuchane: rozdział „${ch.label}” zaliczony`);
+    const shown = document.getElementById('rozdzial');
+    if (shown?.dataset.date === date) render();
+    onChange?.();
+  }
+
+  // Słuchawki przy rozdziale albo dziale: lektor czyta tylko ten fragment wydania.
+  function listenButton(ch, group = null) {
+    if (!ch || !speechSupported() || ['warmup', 'quiz'].includes(ch.type)) return null;
+    const label = group ? `Posłuchaj: ${sectionLabel(group.section)}` : `Posłuchaj rozdziału: ${ch.label}`;
+    return h(
+      'button',
+      {
+        type: 'button',
+        class: group ? 'icon-btn listen-btn' : 'pill pill-link nurt listen-btn',
+        'aria-label': label,
+        title: `${label}. Po przesłuchaniu całego rozdziału zostanie zaliczony.`,
+        onclick: () => listen(chapterItems(ch, group), { title: group ? sectionLabel(group.section) : ch.label, endText: null }),
+      },
+      icon('headphones'),
+      group ? null : 'Posłuchaj',
+    );
+  }
+
+  function listen(items = listenItems(), options = {}) {
+    startListening(items, {
+      ...options,
+      onItemEnd: heard,
       onItem: (item) => {
         // Lektor prowadzi przez wydanie, ale tylko gdy to wydanie jest nadal na ekranie.
         const shown = document.getElementById('rozdzial');
@@ -863,7 +915,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
           h('div', { class: 'stat' }, h('strong', null, `${right}/${edition.quiz?.length ?? 0}`), h('span', null, 'w quizie')),
           h('div', { class: 'stat' }, h('strong', null, count), h('span', null, plural(count, 'wydanie', 'wydania', 'wydań'))),
         ),
-        edition.quiz?.length && Object.keys(p.quiz).length >= edition.quiz.length ? challengeResult(right) : null,
+        edition.quiz?.length && edition.quiz.every((q) => p.quiz[q.id] !== undefined) ? challengeResult(right) : null,
         h(
           'p',
           { class: 'read' },

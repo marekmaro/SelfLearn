@@ -66,8 +66,10 @@ export function stopListening() {
   current?.stop();
 }
 
-// items: [{ id, chapter, label, text }]; onItem(item) – wywoływane, gdy lektor zaczyna nowy fragment.
-export async function startListening(items, { onItem, onEnd } = {}) {
+// items: [{ id, chapter, label, text }]; onItem(item) – wywoływane, gdy lektor zaczyna nowy fragment,
+// onItemEnd(item) – gdy fragment został przeczytany do końca (bez przeskakiwania).
+// title – podpis odtwarzacza, endText – komunikat po przeczytaniu wszystkiego.
+export async function startListening(items, { onItem, onItemEnd, onEnd, title = 'Posłuchaj', endText = 'To wszystko na dziś. Quiz czeka w wydaniu.' } = {}) {
   if (!speechSupported()) {
     toast('Ta przeglądarka nie umie czytać na głos.');
     return;
@@ -120,6 +122,7 @@ export async function startListening(items, { onItem, onEnd } = {}) {
     u.rate = rate;
     u.onend = () => {
       if (my !== token || !playing) return;
+      if (queue[pos + 1]?.itemIndex !== chunk.itemIndex) onItemEnd?.(items[chunk.itemIndex]);
       if (pos < queue.length - 1) {
         pos += 1;
         speak();
@@ -169,7 +172,7 @@ export async function startListening(items, { onItem, onEnd } = {}) {
 
   function finish() {
     stop();
-    toast('To wszystko na dziś. Quiz czeka w wydaniu.');
+    if (endText) toast(endText);
     onEnd?.();
   }
 
@@ -202,7 +205,7 @@ export async function startListening(items, { onItem, onEnd } = {}) {
       h(
         'div',
         { class: 'player-info' },
-        h('p', { class: 'eyebrow' }, `Posłuchaj · ${queue[pos].itemIndex + 1} z ${items.length}`),
+        h('p', { class: 'eyebrow' }, `${title} · ${queue[pos].itemIndex + 1} z ${items.length}`),
         h('p', { class: 'player-title' }, item.label),
       ),
       h('button', { type: 'button', class: 'icon-btn player-close', 'aria-label': 'Zamknij odtwarzacz', onclick: stop }, icon('close')),

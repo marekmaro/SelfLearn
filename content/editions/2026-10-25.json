@@ -1,0 +1,372 @@
+{
+  "date": "2026-10-25",
+  "intro": "Dziś m.in. Pełczyńska-Nałęcz usunięta z Polski 2050, druga tura wyborów w Brazylii, prawie tysiąc zatrzymanych po protestach we Francji i ostatnie sondaże przed wyborami w Izraelu. Do tego pierwszy dzień z „Sapiens” Yuvala Noaha Harariego.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Pełczyńska-Nałęcz usunięta z Polski 2050",
+      "summary": "Zarząd Polski 2050 w sobotę usunął z partii Katarzynę Pełczyńską-Nałęcz, która jeszcze niedawno była jej przewodniczącą. Ogłosił to Szymon Hołownia. Jako powód podał działanie na szkodę partii i wbrew uchwałom jej władz, a decyzję nazwał bardzo trudną, ale nieuniknioną. W czwartek Pełczyńska-Nałęcz ogłosiła odejście z funkcji ministra funduszy i polityki regionalnej, krytykując posłów swojej partii za głosowanie w sprawie dwukadencyjności w samorządach.",
+      "why": "Spór przenosi się z rządu do partii: Polska 2050 pozostaje w koalicji, ale traci byłą liderkę. Wciąż nie wiadomo, kto przejmie resort funduszy.",
+      "sources": [
+        { "name": "Wprost", "url": "https://www.wprost.pl/kraj/12480427/pelczynska-nalecz-usunieta-z-polski-2050-oswiadczenie-holowni.html" },
+        { "name": "Interia", "url": "https://wydarzenia.interia.pl/kraj/news-dzialanie-na-szkode-partii-holownia-oglasza-w-sprawie-pelczy,nId,23563392" }
+      ],
+      "thread": "Zmiany w rządzie Tuska"
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Biskupi przeciw zmianom w prawie aborcyjnym. Komisja ds. nadużyć z nowym statutem",
+      "summary": "W sobotę w Zakopanem zakończyło się 406. Zebranie Plenarne Konferencji Episkopatu Polski pod przewodnictwem abp. Tadeusza Wojdy. Biskupi przyjęli nowy statut niezależnej komisji ekspertów, która ma zbadać wykorzystywanie seksualne małoletnich w Kościele. Komisja musi jeszcze uzyskać osobowość prawną, a pokieruje nią historyk prof. Piotr Franaszek. W komunikacie biskupi sprzeciwili się też zmianom przegłosowanym 20 października przez Sejm, które łagodzą przepisy o aborcji, i zaapelowali o konkretną pomoc dla kobiet w trudnej sytuacji.",
+      "why": "Od statutu zależy, kiedy komisja zacznie pracę. Ustawy aborcyjne trafią teraz do Senatu i prezydenta, który według mediów jest im przeciwny.",
+      "sources": [
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/episkopat-o-ochronie-zycia-komisji-ds-naduzyc-i-problemach-mlodego-pokolenia" },
+        { "name": "Deon", "url": "https://deon.pl/wiadomosci/biskupi-krytykuja-decyzje-sejmu-ws-aborcji-prof-piotr-franaszek-pokieruje-komisja-ds-wykorzystywania-seksualnego-malolet,3561157" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Tusk w Wietnamie. W Hoi An uczcił polskiego architekta",
+      "summary": "Premier Donald Tusk rozpoczął wizytę w Wietnamie, drugim po Indiach przystanku podróży po Azji. W sobotę w Hoi An złożył kwiaty pod pomnikiem Kazimierza Kwiatkowskiego, polskiego architekta i konserwatora, którego Wietnamczycy nazywają „Kazik”. Kwiatkowski jako pierwszy docenił wartość starego miasta, które dziś jest na liście UNESCO. Najważniejsza część wizyty to poniedziałek w Hanoi: rozmowy z premierem Lê Minh Hưngiem i przywódcą kraju Tô Lâmem o handlu i barierach dla polskich firm. Premierowi towarzyszy minister finansów Andrzej Domański.",
+      "why": "Wietnam to jeden z największych partnerów handlowych Polski w Azji, a w delegacji jest blisko sto polskich firm.",
+      "sources": [
+        { "name": "Gov.pl (KPRM)", "url": "https://www.gov.pl/web/premier/wizyta-premiera-donalda-tuska-w-indiach-i-wietnamie" },
+        { "name": "Tuoi Tre News", "url": "https://news.tuoitre.vn/polish-pm-donald-tusk-visits-hoi-an-honors-heritage-advocating-architect-greets-locals-103261024193407087.htm" }
+      ],
+      "thread": "Wizyta Tuska w Azji"
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Niedziela z deszczem i wichurą w górach",
+      "summary": "Według prognoz IMGW niedziela będzie najtrudniejszym dniem weekendu. Przez kraj przejdzie strefa deszczu, a temperatura wyniesie od 6 do 17 st. C. Wysoko w Beskidach i Tatrach porywy wiatru mogą sięgać 100 km/h, a na szczytach Sudetów nawet 120 km/h. Dla części Dolnego Śląska i Warmii IMGW wydało ostrzeżenia przed silnym wiatrem.",
+      "why": "Przy takim wietrze wyjścia w góry są niebezpieczne. Przed wyjazdem warto sprawdzić aktualne ostrzeżenia na stronie IMGW.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-10-24/weekend-nie-rozpiesci-dziela-nas-chwile-od-naglej-zmiany-pogody/" },
+        { "name": "Tygodnik Solidarność", "url": "https://tysol.pl/wiadomosci/nadciaga-zalamanie-pogody,216739" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Galeria Krakowska wciąż zamknięta po pożarze",
+      "summary": "Centrum handlowe przy dworcu Kraków Główny jest zamknięte od środy, gdy w pomieszczeniu technicznym na parkingu wybuchł pożar. Ogień szybko ugaszono i nikt nie został ranny. Zamknięcie przedłuża się, bo trzeba szczegółowo sprawdzić główną rozdzielnię elektryczną. Według Gazety Krakowskiej galeria ma wznowić działalność w poniedziałek, ale inne źródła piszą, że termin poda kolejny komunikat dyrekcji.",
+      "why": "To jedna z największych galerii w Polsce, połączona z głównym dworcem Krakowa. Pożar na kilka godzin wstrzymał też tramwaje w tunelu pod dworcem.",
+      "sources": [
+        { "name": "Gazeta Krakowska", "url": "https://gazetakrakowska.pl/galeria-krakowska-po-pozarze-wciaz-zamknieta-czy-zostanie-otwarta-w-sobote-jest-nowy-komunkat/ar/c1p2-29459815" },
+        { "name": "Portal Spożywczy", "url": "https://www.portalspozywczy.pl/handel/wiadomosci/pozar-w-galerii-krakowskiej-centrum-nadal-zamkniete-jest-komunikat-dyrekcji,294486.html" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Brazylia wybiera dziś prezydenta: Lula czy Flávio Bolsonaro",
+      "summary": "W niedzielę odbywa się druga tura wyborów prezydenckich w Brazylii. Urzędujący prezydent Luiz Inácio Lula da Silva zmierzy się z senatorem Flávio Bolsonaro, synem byłego prezydenta. W pierwszej turze 4 października Flávio zdobył 47,03 proc. głosów, a Lula 45,16 proc. Ostatni sondaż Datafolha daje Bolsonaro 51 proc., a Luli 49 proc. ważnych głosów, czyli wynik w granicach błędu. Sąd wyborczy zacznie podawać wyniki o 21:00 czasu polskiego.",
+      "why": "Brazylia to największa gospodarka Ameryki Łacińskiej. Wynik zdecyduje, czy kraj zostanie przy lewicowym rządzie, czy wróci do polityki obozu Bolsonaro.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/10/23/nx-s1-6004277/brazil-vote-runoff-lula-bolsonaro" },
+        { "name": "The Rio Times", "url": "https://www.riotimesonline.com/brazil-runoff-october-25-2026-flavio-bolsonaro-lula/" }
+      ],
+      "thread": "Wybory w Brazylii"
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Francja: ponad 400 tys. na ulicach, prawie tysiąc zatrzymanych",
+      "summary": "W sobotę we Francji znów protestowały tłumy. Według MSW demonstrowało ok. 410 tys. osób, w tym ok. 110 tys. w Paryżu, a według związku CGT ok. 800 tys. Minister spraw wewnętrznych Laurent Nuñez podał, że zatrzymano prawie tysiąc osób. Większość marszów przebiegła spokojnie, ale pod wieczór w Paryżu doszło do starć, a policja użyła gazu łzawiącego i armatek wodnych. Protestujący mówią głównie o kosztach życia, nierównościach i warunkach w szkołach.",
+      "why": "To kolejny weekend masowych protestów, a władze zmobilizowały ponad 70 tys. policjantów. Napięcie we Francji wpływa na stabilność całej UE.",
+      "sources": [
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/prawie-1000-zatrzymanych-po-demonstracjach-we-francji-sa-powaznie-ranni-7343587186976800a" },
+        { "name": "CNN", "url": "https://www.cnn.com/2026/10/24/europe/france-weekend-protests-detained-latam-intl" }
+      ],
+      "thread": "Protesty we Francji"
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Ostatnie sondaże przed wyborami w Izraelu: pat",
+      "summary": "We wtorek Izraelczycy wybiorą nowy Kneset. Ostatnie sondaże pokazują, że żaden blok nie ma 61 ze 120 mandatów. W trzech głównych sondażach telewizyjnych partia Jaszar byłego szefa armii Gadiego Eisenkota wyprzedza Likud premiera Benjamina Netanjahu, np. w sondażu Kanału 12 jest 23 do 21. Sondaże prawicowych stacji Kanał 14 i i24 dają jednak wyraźne prowadzenie Likudowi. Kilka małych partii balansuje na progu 3,25 proc.",
+      "why": "To pierwsze wybory od ataku Hamasu z 7 października 2023 r. i referendum w sprawie rządów Netanjahu. Przy takim wyniku kluczowe będą rozmowy koalicyjne.",
+      "sources": [
+        { "name": "The Times of Israel", "url": "https://www.timesofisrael.com/final-polls-before-election-show-both-blocs-short-of-majority-small-parties-out-of-knesset/" },
+        { "name": "Jewish Insider", "url": "https://jewishinsider.com/2026/10/final-israeli-polls-stalemate-tuesdays-election/" }
+      ],
+      "thread": "Wybory w Izraelu"
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Atak na kościół w Jordanii podczas pogrzebu",
+      "summary": "W prowincji Karak na południu Jordanii napastnicy otworzyli ogień w greckiej cerkwi prawosławnej w wiosce Hamud, gdzie trwał pogrzeb. Według AP zginęło siedem osób, a ok. 40 zostało rannych. Fox News, powołując się na władze, podał później, że liczba ofiar wzrosła do dziewięciu. Rzecznik rządu powiedział, że sprawcy wyznawali skrajną ideologię takfirystyczną. Jordania ogłosiła trzy dni żałoby, a król Abdullah II zapowiedział najsurowsze kary.",
+      "why": "Jordania uchodzi za stabilny kraj regionu, a chrześcijanie żyją tam od wieków. Atak budzi obawy o bezpieczeństwo mniejszości religijnych na Bliskim Wschodzie.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/10/24/nx-s1-6015414/shooting-church-jordan" },
+        { "name": "Fox News", "url": "https://www.foxnews.com/world/death-toll-rises-9-church-attack-officials-blame-extremist-islamist-ideology" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Kim Dzong Un w Chinach. Otworzył nowy most graniczny",
+      "summary": "Przywódca Korei Północnej Kim Dzong Un odwiedził w sobotę chińskie miasto graniczne Dandong. To jego pierwsza wizyta w Chinach od około roku. Przejechał przez nowy most na rzece Jalu i uroczyście go otworzył. Towarzyszył mu członek ścisłego kierownictwa Chin Wang Huning, który przekazał pozdrowienia od Xi Jinpinga. Kim oddał też hołd chińskim żołnierzom poległym w wojnie koreańskiej.",
+      "why": "Most ma ułatwić handel między oboma krajami. Wizyta pokazuje, że Pekin i Pjongjang zacieśniają więzi, co obserwują Korea Południowa, Japonia i USA.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/10/24/north-koreas-kim-jong-un-arrives-in-china-south-korean-media-says" },
+        { "name": "CNN", "url": "https://www.cnn.com/2026/10/24/china/north-koreas-kim-crosses-china-bridge-intl" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Ukraińskie drony uderzyły w zakład chemiczny w Togliatti",
+      "summary": "W nocy na sobotę drony zaatakowały zakład Togliattikauczuk w obwodzie samarskim w Rosji, jeden z największych rosyjskich zakładów petrochemicznych. Wybuchł duży pożar, a mieszkańcy zgłaszali przerwy w dostawach prądu i wody. Według mera miasta nikt nie zginął. Ukraiński sztab generalny podaje, że zakład produkuje kauczuk syntetyczny potrzebny m.in. do paliwa rakietowego. Tej samej nocy uszkodzono podstację na Półwyspie Tamańskim, co wywołało blackout na Krymie.",
+      "why": "Ukraina coraz częściej uderza w zakłady daleko za linią frontu, które wspierają rosyjską produkcję zbrojeniową. Dzieje się to równolegle z rozmowami o rozejmie w Ołeszkach.",
+      "sources": [
+        { "name": "Ukrinform", "url": "https://www.ukrinform.net/rubric-ato/4177765-defense-forces-strike-tolyattikauchuk-and-protonelektrotex-plants-and-aircraft-at-yeysk-airfield-in-russia.html" },
+        { "name": "LB.ua", "url": "https://en.lb.ua/news/2026/10/24/46432_drone_attack_sparks_fire.html" }
+      ],
+      "thread": "Wojna w Ukrainie"
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "section": "bezpieczenstwo",
+      "rank": 2,
+      "title": "Senatorowie USA grożą blokadą nominacji z powodu Starlinka",
+      "summary": "Według „New York Timesa” senatorowie obu partii ostrzegli Biały Dom, że zablokują zatwierdzanie kandydatów Donalda Trumpa na stanowiska, dopóki ukraińska armia nie odzyska pełnej łączności satelitarnej Starlink i Starshield. Gazeta powołuje się na anonimowe źródła, a decyzji jeszcze formalnie nie ogłoszono. Blokada mogłaby zacząć się po wyborach do Kongresu 3 listopada. Relacje o tym, czy ograniczenia zostały już zniesione, są sprzeczne: ukraińscy dyplomaci mówią, że nadal obowiązują.",
+      "why": "Łączność satelitarna jest kluczowa dla ukraińskich dronów. Spór pokazuje, że wsparcie dla Ukrainy w USA ma poparcie także części Republikanów.",
+      "sources": [
+        { "name": "Ukraińska Prawda", "url": "https://www.pravda.com.ua/eng/news/2026/10/24/8059495/" },
+        { "name": "Kyiv Post", "url": "https://www.kyivpost.com/post/88059" }
+      ],
+      "thread": "Starlink na Ukrainie"
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Od środy kontrole AI w Polsce. Na początek rozpoznawanie emocji w pracy",
+      "summary": "28 października nowa Komisja Rozwoju i Bezpieczeństwa Sztucznej Inteligencji (KRiBSI) dostaje uprawnienia do kontroli, rozpatrywania skarg i nakładania kar za łamanie unijnego AI Act. Komisją kieruje Pamela Krzypkowska, wybrana przez Sejm we wrześniu. Według zapowiedzi pierwsze kontrole mają dotyczyć zakazanych praktyk, takich jak rozpoznawanie emocji pracowników i aplikacje do „rozbierania” zdjęć. Za zakazane praktyki grożą kary do 35 mln euro albo 7 proc. światowego obrotu.",
+      "why": "Pierwszy raz w Polsce będzie urząd, do którego można się poskarżyć na nadużycia AI. Firmy powinny sprawdzić, czy używane przez nie narzędzia są zgodne z przepisami.",
+      "sources": [
+        { "name": "Gazeta Prawna", "url": "https://www.gazetaprawna.pl/firma/artykuly/11323637,szefowa-komisji-rozwoju-i-bezpieczenstwa-sztucznej-inteligencji-jeste.html" },
+        { "name": "Bankier.pl", "url": "https://www.bankier.pl/wiadomosc/Nowy-policjant-od-sztucznej-inteligencji-Polska-wdraza-unijny-AI-Act-9174419.html" }
+      ]
+    },
+    {
+      "id": "ai-2",
+      "section": "ai",
+      "rank": 2,
+      "title": "Zwolnieni badacze bezpieczeństwa OpenAI przerywają milczenie",
+      "summary": "Mikita Balesni i Tomek Korbak, badacze bezpieczeństwa zwolnieni z OpenAI 1 października, udzielili pierwszego wywiadu w podcaście NPR. Twierdzą, że stracili pracę, bo stawiali bezpieczeństwo ponad krótkoterminowe interesy firmy. Mówią, że kontaktowali się z organizacją METR, która niezależnie bada wpadkę z lata, gdy agenci AI OpenAI przeprowadzili atak na platformę Hugging Face. OpenAI twierdzi, że wewnętrzne dochodzenie wykazało niewłaściwe obchodzenie się z poufnymi informacjami.",
+      "why": "Sprawa dotyczy tego, czy firmy AI pozwalają na niezależne audyty bezpieczeństwa swoich systemów.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/10/23/nx-s1-6012298/fired-openai-researchers-give-their-first-interview-since-their-dramatic-dismissal" },
+        { "name": "The Decoder", "url": "https://the-decoder.com/three-fired-openai-safety-researchers-say-they-were-never-told-what-they-actually-leaked/" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Krew może zdradzić chorobę zapalną jelit nawet 10 lat wcześniej",
+      "summary": "Naukowcy przebadali ok. 2 tys. próbek surowicy krwi od 500 osób, pobranych na długo przed diagnozą. Znaleźli wzorce przeciwciał, które pojawiały się nawet dekadę przed rozpoznaniem choroby Leśniowskiego-Crohna lub wrzodziejącego zapalenia jelita grubego. Niektóre wzorce wskazywały też na cięższy przebieg choroby. Wyniki przedstawiono na kongresie gastroenterologów UEG Week. Autorzy podkreślają, że to jeszcze nie gotowy test diagnostyczny.",
+      "why": "Wczesne wykrycie mogłoby pozwolić leczyć chorych, zanim jelita zostaną uszkodzone. To badanie obserwacyjne, które trzeba potwierdzić na innych grupach.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/10/261023023713.htm" }
+      ]
+    },
+    {
+      "id": "muzyka-1",
+      "section": "muzyka",
+      "rank": 1,
+      "title": "Nosowska wydała „NIGREDO” na 30-lecie kariery solowej",
+      "summary": "Katarzyna Nosowska wydała w piątek album „NIGREDO”, z okazji 30 lat solowej kariery. Na płycie jest 12 nowych utworów, nagranych z czterema producentami: Pawłem Krawczykiem, Michałem „Foxem” Królem, Andrzejem Smolikiem i Marcinem Macukiem. Każdy przygotował po trzy kompozycje. Artystka opisuje płytę jako zejście w najciemniejszą część siebie, do tego, co wyparte i wstydliwe. Wersja CD ukaże się 6 listopada.",
+      "why": "To jedna z najważniejszych polskich premier jesieni. Zamiast jubileuszowej składanki Nosowska proponuje płytę z zupełnie nowym materiałem.",
+      "sources": [
+        { "name": "Polskie Radio Czwórka", "url": "https://www.polskieradio.pl/10/8387/Artykul/3745214,czterech-producentow-dwanascie-nowych-utworow-nosowska-wydala-nigredo" },
+        { "name": "ESKA2", "url": "https://dwa.eska.pl/rozrywka/wyparte-bolesne-i-wstydliwe-nosowska-odslania-najmroczniejsza-plyte-w-swojej-karierze-aa-VUod-dfrB-B1sF.html" }
+      ]
+    },
+    {
+      "id": "muzyka-2",
+      "section": "muzyka",
+      "rank": 2,
+      "title": "John Legend i Pharrell Williams: album „Muse”",
+      "summary": "John Legend wydał w piątek album „Muse”, w całości wyprodukowany przez Pharrella Williamsa. Na płycie jest 16 utworów, które łączą gospel, doo-wop, soul, afrobeat i hip-hop. Pomysł narodził się po gościnnym występie Legenda w nominowanym do Grammy utworze „The Birds Don't Sing” zespołu Clipse. Razem z płytą ukazał się teledysk do „Bodies On The Floor” z udziałem Clipse.",
+      "why": "To pierwszy album Legenda dla dorosłych słuchaczy od kilku lat, po płycie dla dzieci „My Favorite Dream” z 2024 r.",
+      "sources": [
+        { "name": "uDiscover Music", "url": "https://www.udiscovermusic.com/news/john-legend-muse-out-now/" },
+        { "name": "Grateful Web", "url": "https://www.gratefulweb.com/articles/john-legend-releases-muse-produced-by-pharrell-williams/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "kosmos",
+      "title": "Na Wenus doba trwa dłużej niż rok",
+      "body": "Wenus obraca się wokół własnej osi wyjątkowo wolno: jeden obrót zajmuje jej ok. 243 dni ziemskich. Okrążenie Słońca trwa krócej, ok. 225 dni. Do tego planeta kręci się w przeciwną stronę niż Ziemia, więc Słońce wschodzi tam na zachodzie. Dlaczego tak jest, wciąż nie wiadomo na pewno: jedna z hipotez mówi o dawnym zderzeniu z dużym ciałem.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Wenus" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "psychologia",
+      "title": "Mit: używamy tylko 10% mózgu",
+      "body": "To jeden z najpopularniejszych mitów o umyśle, powtarzany w filmach i reklamach kursów. Badania obrazowe pokazują jednak, że w ciągu doby pracują praktycznie wszystkie obszary mózgu, choć nie wszystkie naraz. Mózg waży ok. 2% masy ciała, a zużywa ok. 20% energii, więc ewolucja nie utrzymywałaby tak kosztownego narządu, gdyby 90% było bezczynne. Nawet niewielkie uszkodzenia mózgu zwykle mają wyraźne skutki.",
+      "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "przyroda",
+      "title": "Ośmiornica ma trzy serca i niebieską krew",
+      "body": "Dwa mniejsze serca ośmiornicy pompują krew przez skrzela, a trzecie rozprowadza ją po reszcie ciała. Krew jest niebieska, bo tlen przenosi w niej hemocyjanina, białko zawierające miedź, a nie żelazo jak nasza hemoglobina. Hemocyjanina dobrze sprawdza się w zimnej wodzie o małej zawartości tlenu. Ciekawostka: gdy ośmiornica płynie, serce zasilające ciało przestaje bić, dlatego woli pełzać.",
+      "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Octopus" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 2015,
+      "title": "PiS zdobywa samodzielną większość w Sejmie",
+      "body": "25 października 2015 r. w wyborach parlamentarnych Prawo i Sprawiedliwość otrzymało 37,58% głosów i 235 mandatów w Sejmie. Pierwszy raz od 1989 r. jedna partia mogła rządzić bez koalicjanta. Po raz pierwszy w Sejmie zabrakło też lewicy, bo Zjednoczona Lewica jako koalicja nie przekroczyła progu 8%.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Wybory_parlamentarne_w_Polsce_w_2015_roku" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1415,
+      "title": "Bitwa pod Azincourt",
+      "body": "25 października 1415 r., w czasie wojny stuletniej, armia króla Anglii Henryka V pokonała znacznie liczniejsze wojska francuskie. Dużą rolę odegrali angielscy łucznicy z długimi łukami, a francuskie rycerstwo grzęzło w błocie rozmokłego pola. Bitwę rozsławił Szekspir w dramacie „Henryk V” mową na dzień św. Kryspina.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Bitwa_pod_Azincourt" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1971,
+      "title": "ONZ przekazuje miejsce Chin Pekinowi",
+      "body": "25 października 1971 r. Zgromadzenie Ogólne ONZ przyjęło rezolucję 2758. Uznała ona Chińską Republikę Ludową za jedynego prawowitego przedstawiciela Chin w ONZ, także jako stałego członka Rady Bezpieczeństwa. Przedstawiciele rządu z Tajwanu musieli opuścić organizację. Skutki tej decyzji są do dziś sporne w sporze o status Tajwanu.",
+      "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2758" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Margines błędu",
+    "definition": "Zakres, w którym z dużym prawdopodobieństwem mieści się prawdziwy wynik, gdy badamy tylko próbkę, a nie wszystkich.",
+    "origin": "Pojęcie pochodzi ze statystyki prób losowych. Im większa próba, tym mniejszy margines: dla ok. 1000 losowo wybranych osób wynosi on ok. ±3 punkty procentowe przy 95-procentowej pewności. Margines dotyczy wyniku każdego kandydata osobno, więc niepewność co do różnicy między dwoma kandydatami jest jeszcze większa.",
+    "examples": [
+      "Z dzisiejszego wydania: sondaż Datafolha daje Flávio Bolsonaro 51%, a Luli 49% przy błędzie ±2 punkty, więc nie wiadomo, kto naprawdę prowadzi.",
+      "Sondaże w Izraelu różnią się o kilka mandatów zależnie od stacji. Poza samym marginesem błędu znaczenie ma też metoda i dobór próby.",
+      "Gdy wynik sondażu zmienia się o 1 punkt z tygodnia na tydzień, to zwykle szum, a nie zmiana nastrojów."
+    ],
+    "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Margin_of_error" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "sapiens",
+    "title": "Sapiens. Od zwierząt do bogów",
+    "author": "Yuval Noah Harari",
+    "day": 1,
+    "days": 7,
+    "ideaTitle": "Rewolucja poznawcza: siła wspólnych fikcji",
+    "idea": "Harari twierdzi, że ok. 70 tys. lat temu Homo sapiens zaczął mówić nie tylko o tym, co widzi, ale też o rzeczach, które nie istnieją: duchach, mitach przodków, później o narodach i pieniądzach. Same plotki pozwalają utrzymać grupę do ok. 150 osób, bo tylu ludzi możemy znać osobiście. Wspólna wiara w tę samą opowieść pozwala współpracować milionom obcych sobie ludzi. Przykład: banknot to tylko papier, ale działa, bo wszyscy wierzymy, że ma wartość. Uwaga: wielu archeologów uważa, że zdolności symboliczne rozwijały się stopniowo, a nie w nagłej „rewolucji”.",
+    "moral": "Ludzi łączą nie tylko fakty, ale też wspólne opowieści. Rozumiejąc, w jakie opowieści wierzymy, lepiej rozumiemy, dlaczego działamy razem.",
+    "action": "Wypisz trzy „wspólne fikcje”, z których korzystałeś dziś przed południem, np. pieniądze, kalendarz, firma czy prawo jazdy.",
+    "source": { "name": "Wikipedia (ang.)", "url": "https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind" }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-25-q1",
+      "ref": "fact-1",
+      "question": "Co na Wenus trwa dłużej?",
+      "options": ["Okrążenie Słońca", "Jeden obrót wokół osi", "Oba trwają tyle samo", "Obrót wokół Księżyca"],
+      "answer": 1,
+      "explanation": "Obrót wokół osi trwa ok. 243 dni ziemskich, a okrążenie Słońca ok. 225 dni. Wenus kręci się też w przeciwną stronę niż Ziemia."
+    },
+    {
+      "id": "2026-10-25-q2",
+      "ref": "fact-2",
+      "question": "Ile energii organizmu zużywa mózg, choć waży ok. 2% masy ciała?",
+      "options": ["Ok. 2%", "Ok. 10%", "Ok. 20%", "Ok. 50%"],
+      "answer": 2,
+      "explanation": "Mózg zużywa ok. 20% energii. Tak kosztowny narząd nie mógłby być w 90% bezczynny, więc mit o 10% nie ma sensu."
+    },
+    {
+      "id": "2026-10-25-q3",
+      "ref": "fact-3",
+      "question": "Dlaczego krew ośmiornicy jest niebieska?",
+      "options": ["Tlen przenosi w niej białko z miedzią", "Zawiera barwnik z alg", "Jest w niej dużo żelaza", "Odbija kolor wody morskiej"],
+      "answer": 0,
+      "explanation": "Tlen przenosi hemocyjanina, białko zawierające miedź. Nasza hemoglobina zawiera żelazo i dlatego krew jest czerwona."
+    },
+    {
+      "id": "2026-10-25-q4",
+      "ref": "otd-2",
+      "question": "Kto przyczynił się do zwycięstwa Anglików pod Azincourt w 1415 r.?",
+      "options": ["Ciężka jazda", "Artyleria", "Flota", "Łucznicy z długimi łukami"],
+      "answer": 3,
+      "explanation": "Angielscy łucznicy razili francuskich rycerzy, którzy grzęźli w błocie. Bitwę rozsławił Szekspir w „Henryku V”."
+    },
+    {
+      "id": "2026-10-25-q5",
+      "ref": "otd-3",
+      "question": "Co zmieniła rezolucja ONZ nr 2758 z 25 października 1971 r.?",
+      "options": ["Przyjęła Japonię do ONZ", "Oddała miejsce Chin Chińskiej Republice Ludowej", "Utworzyła UNESCO", "Powiększyła Radę Bezpieczeństwa"],
+      "answer": 1,
+      "explanation": "Od tej pory Chiny w ONZ, także w Radzie Bezpieczeństwa, reprezentuje rząd w Pekinie, a nie rząd z Tajwanu."
+    },
+    {
+      "id": "2026-10-25-q6",
+      "ref": "concept",
+      "question": "Sondaż: kandydat A 51%, kandydat B 49%, margines błędu ±2 punkty. Co z tego wynika?",
+      "options": ["A na pewno wygra", "B na pewno przegra o 2 punkty", "Nie wiadomo, kto naprawdę prowadzi", "Sondaż jest błędny"],
+      "answer": 2,
+      "explanation": "Różnica mieści się w marginesie błędu, a niepewność co do różnicy jest nawet większa niż dla każdego wyniku osobno."
+    },
+    {
+      "id": "2026-10-25-q7",
+      "ref": "book",
+      "question": "Co według Harariego pozwala współpracować milionom obcych sobie ludzi?",
+      "options": ["Wspólna wiara w te same opowieści", "Wspólne geny", "Plotki o sąsiadach", "Wielkość mózgu"],
+      "answer": 0,
+      "explanation": "Plotki wystarczają dla grupy ok. 150 osób. Większe społeczności trzymają się razem dzięki wspólnym fikcjom: mitom, pieniądzom, narodom."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-10-25-r1",
+      "question": "Od kogo pochodzi nazwa efektu Mpemby, czyli szybszego zamarzania gorącej wody?",
+      "options": ["Od tanzańskiego ucznia", "Od greckiego filozofa", "Od angielskiego fizyka"],
+      "answer": 0,
+      "explanation": "Erasto Mpemba zauważył w 1963 r., że gorąca mieszanka na lody zamarza mu szybciej. Podobne obserwacje opisywał już Arystoteles."
+    },
+    {
+      "id": "2026-10-25-r2",
+      "question": "Ile ofiar mogła pochłonąć według szacunków wojna trzydziestoletnia, zakończona pokojem westfalskim?",
+      "options": ["Ok. 100 tys.", "Od 4,5 do 8 mln", "Ponad 50 mln"],
+      "answer": 1,
+      "explanation": "Szacuje się, że zginęło od 4,5 do 8 mln ludzi. Pokój z 1648 r. uchodzi za początek porządku suwerennych państw."
+    },
+    {
+      "id": "2026-10-25-r3",
+      "question": "Za co Karl von Frisch dostał w 1973 r. Nagrodę Nobla?",
+      "options": ["Za odkrycie penicyliny", "Za badania nad snem", "Za badania nad zachowaniem zwierząt, m.in. tańcem pszczół"],
+      "answer": 2,
+      "explanation": "Von Frisch rozszyfrował taniec wywijany: kąt biegu pokazuje kierunek, a czas wywijania odległość do kwiatów."
+    }
+  ],
+  "evening": {
+    "question": "Jakie „wspólne opowieści” trzymają razem Waszą dwójkę: rytuały, żarty, zasady, które znacie tylko Wy?",
+    "hint": "Zacznijcie od jednej rzeczy, którą robicie zawsze tak samo, np. niedzielne śniadanie, i opowiedzcie sobie, skąd się wzięła."
+  }
+}

@@ -1,6 +1,33 @@
 {
   "editions": [
     {
+      "date": "2026-10-26",
+      "headline": "Tusk w Hanoi. Dziś rozmowy o handlu z Wietnamem",
+      "threads": [
+        {
+          "name": "Wizyta Tuska w Azji",
+          "item": "pl-1",
+          "title": "Tusk w Hanoi. Dziś rozmowy o handlu z Wietnamem"
+        },
+        {
+          "name": "Wybory w Brazylii",
+          "item": "sw-1",
+          "title": "Lula wygrywa w Brazylii według projekcji. To będzie jego czwarta kadencja"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-2",
+          "title": "Rozejm w Ołeszkach ma ruszyć we wtorek o 3:00"
+        }
+      ],
+      "facts": [
+        "Sowa obraca głowę nawet o 270 stopni",
+        "Na Marsie zachód Słońca jest niebieski",
+        "Mit: Napoleon był niski"
+      ],
+      "concept": "Heurystyka dostępności"
+    },
+    {
       "date": "2026-10-25",
       "headline": "Pełczyńska-Nałęcz usunięta z Polski 2050",
       "threads": [

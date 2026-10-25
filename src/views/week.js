@@ -4,7 +4,7 @@ import { loadIndex, loadEdition, editionHref } from '../data.js';
 import { todayISO, formatShort, formatWeekday } from '../dates.js';
 import { getState, update, markActive } from '../store.js';
 import { grade } from '../srs.js';
-import { findRef } from '../chapters.js';
+import { findRef, withPersonalQuiz } from '../chapters.js';
 import { weekEnd, weekDates, weekSummary, weekQuiz } from '../week.js';
 import { h, mount, icon, toast, plural } from '../ui.js';
 import { guessToggle, verdictText } from '../confidence.js';
@@ -20,7 +20,9 @@ export async function renderWeek(root, { onChange }) {
   }
   const dates = new Set(weekDates(end));
   const headlines = Object.fromEntries(index.editions.filter((e) => dates.has(e.date)).map((e) => [e.date, e.headline]));
-  const editions = (await Promise.all(Object.keys(headlines).map((d) => loadEdition(d).catch(() => null)))).filter(Boolean);
+  const editions = (await Promise.all(Object.keys(headlines).map((d) => loadEdition(d).catch(() => null))))
+    .filter(Boolean)
+    .map((e) => withPersonalQuiz(e, getState().profile));
   // Pytania ustalone przy pierwszym otwarciu, żeby odpowiedzi nie zmieniały zestawu w trakcie.
   const saved = getState().weeks?.[end];
   const questions = saved?.questions

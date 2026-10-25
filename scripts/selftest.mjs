@@ -10,7 +10,7 @@ import { neighborDates, editionHref } from '../src/data.js';
 import { favoriteEntries, filterFavorites, groupByDate, countByType, favoriteText } from '../src/favorites.js';
 import { grade } from '../src/srs.js';
 import { getState, update, resetAll, exportJSON, importJSON, saveLocalEdition, localEditions, setGithubSettings, backupDue, markBackedUp, snoozeBackup, backupFileName } from '../src/store.js';
-import { buildChapters, buildWarmup, firstSentence, estimateMinutes } from '../src/chapters.js';
+import { buildChapters, buildWarmup, firstSentence, estimateMinutes, personalQuiz, withPersonalQuiz } from '../src/chapters.js';
 import { weekEnd, weekDates, weekBannerDue, weekSummary, weekQuiz } from '../src/week.js';
 import { deepenPrompt, deepenUrl, DEEPEN_MODES } from '../src/deepen.js';
 import { threadSlug, editionThreads, threadsFromIndex, recentThreadNames } from '../src/threads.js';
@@ -371,6 +371,22 @@ test('Rozdziały wydania: kolejność, wybrane działy, rozgrzewka i czas czytan
   assert(warmup.length === Math.min(3, base.quiz?.length || 0), 'rozgrzewka z poprzedniego quizu');
   assert(warmup.every((q) => q.options.length <= 3 && q.options[q.answer] !== undefined), 'pytania a/b/c');
   assert(firstSentence('Prezydent podpisał ustawę ok. 15 osób. Druga część zdania.') === 'Prezydent podpisał ustawę ok. 15 osób.', 'pierwsze zdanie ze skrótem');
+});
+
+test('Quiz z Twoich tematów: pytania o ciekawostki tylko z wybranych rodzajów', () => {
+  const ed = {
+    date: '2026-10-25',
+    facts: [{ id: 'fact-1', kind: 'kosmos' }, { id: 'fact-2', kind: 'psychologia' }, { id: 'fact-3', kind: 'przyroda' }],
+    quiz: ['fact-1', 'fact-2', 'fact-3', 'otd-1', 'concept', 'book'].map((ref, i) => ({ id: `2026-10-25-q${i + 1}`, ref })),
+  };
+  const refs = (quiz) => quiz.map((q) => q.ref).join(',');
+  assert(refs(personalQuiz(ed, { factKinds: ['przyroda'], sections: ['polska'] })) === 'fact-3,otd-1,concept,book', 'pytanie spoza wybranych rodzajów');
+  assert(refs(personalQuiz(ed, { factKinds: [], sections: ['kosmos'] })) === 'fact-1,otd-1,concept,book', 'dział „Kosmos” nie liczy się jako zainteresowanie');
+  assert(personalQuiz(ed, null).length === 6, 'bez profilu quiz ma być pełny');
+  const copy = withPersonalQuiz(ed, { factKinds: ['nauka'], sections: [] });
+  assert(copy.quiz.length === 3 && ed.quiz.length === 6, 'oryginalne wydanie zmienione');
+  const chapters = buildChapters({ ...ed, news: [], quiz: [] }, { sections: ['polska'] });
+  assert(!chapters.some((c) => c.id === 'quiz'), 'pusty quiz jako rozdział');
 });
 
 test('Podsumowanie tygodnia: tydzień do niedzieli, przypomnienie, statystyki i dobór pytań', () => {

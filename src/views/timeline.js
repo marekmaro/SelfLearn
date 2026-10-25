@@ -3,7 +3,8 @@
 // a dzień na środku ekranu jest podświetlony. Skrót dnia doczytuje się, gdy karta pojawia się na ekranie.
 import { loadIndex, loadEdition, pickDate, editionHref } from '../data.js';
 import { todayISO, formatShort, formatMonth, formatWeekday, diffDays } from '../dates.js';
-import { editionProgress, savedCountFor } from '../store.js';
+import { getState, editionProgress, savedCountFor } from '../store.js';
+import { personalQuiz } from '../chapters.js';
 import { h, mount, icon, koiMark, plural } from '../ui.js';
 import { cachedEditionDates } from '../offline.js';
 
@@ -158,10 +159,11 @@ function fillRecap(li, edition) {
   recap.append(...rows.map(([label, text]) => h('li', null, h('span', { class: 'eyebrow' }, label), h('span', null, text))));
 
   const p = editionProgress(edition.date);
-  const answered = (edition.quiz || []).filter((q) => q.id in (p.quiz || {}));
+  const quiz = personalQuiz(edition, getState().profile);
+  const answered = quiz.filter((q) => q.id in (p.quiz || {}));
   if (answered.length) {
     const right = answered.filter((q) => p.quiz[q.id] === q.answer).length;
-    li.querySelector('.tl-quiz')?.replaceWith(h('span', { class: 'pill' }, icon('trophy'), `Quiz ${right}/${edition.quiz.length}`));
+    li.querySelector('.tl-quiz')?.replaceWith(h('span', { class: 'pill' }, icon('trophy'), `Quiz ${right}/${quiz.length}`));
   }
 }
 

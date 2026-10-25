@@ -21,6 +21,31 @@ export function firstSentence(text = '') {
   return text.length > 220 ? `${text.slice(0, 200).replace(/\s+\S*$/, '')}…` : text;
 }
 
+// ---------- Quiz z Twoich tematów ----------
+
+// Rodzaj ciekawostki → dział o tym samym temacie (wybór działu też liczy się jako zainteresowanie).
+const KIND_SECTIONS = { nauka: ['nauka'], przyroda: ['zwierzeta', 'srodowisko'], historia: ['historia'], kosmos: ['kosmos'], psychologia: ['psychologia'] };
+
+// Pytania o ciekawostki zostają tylko z rodzajów wybranych w profilu (lub z odpowiadających im działów).
+// Historia dnia, pojęcie i książka to stałe części wydania, więc ich pytania zostają zawsze.
+export function personalQuiz(edition, profile) {
+  const quiz = Array.isArray(edition?.quiz) ? edition.quiz : [];
+  if (!profile) return quiz;
+  const kinds = new Set(profile.factKinds || []);
+  const sections = new Set(profile.sections || []);
+  const liked = (kind) => kinds.has(kind) || (KIND_SECTIONS[kind] || []).some((s) => sections.has(s));
+  return quiz.filter((q) => {
+    const fact = (edition.facts || []).find((f) => f.id === q.ref);
+    return !fact || liked(fact.kind);
+  });
+}
+
+// Kopia wydania z quizem dopasowanym do profilu (reszta bez zmian).
+export function withPersonalQuiz(edition, profile) {
+  if (!edition?.quiz) return edition;
+  return { ...edition, quiz: personalQuiz(edition, profile) };
+}
+
 // ---------- Budowa rozdziałów ----------
 
 export function buildChapters(edition, profile, warmup = null) {

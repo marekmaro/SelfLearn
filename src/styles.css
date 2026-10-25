@@ -1118,3 +1118,10 @@ body.has-player.bars-hidden .toast { bottom: calc(env(safe-area-inset-bottom, 0p
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* Słuchawki przy rozdziale i dziale: lektor czyta tylko ten fragment, a przesłuchany rozdział jest zaliczony. */
+.chapter-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.chapter-title h2 { margin: 0; }
+.chapter-title .listen-btn { flex: none; }
+.group-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.group-head .listen-btn { color: var(--muted); }

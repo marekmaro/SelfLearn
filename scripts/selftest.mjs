@@ -4,7 +4,7 @@
 // Użycie: node scripts/selftest.mjs
 import { readFileSync, readdirSync } from 'node:fs';
 import { extractJSON, cleanEdition, validateEdition } from '../src/edition.js';
-import { projectInstructions, dailyMessage, CHATS } from '../src/prompt.js';
+import { projectInstructions, dailyMessage, usedMaterial, CHATS } from '../src/prompt.js';
 import { recurrence } from '../src/calendar.js';
 import { neighborDates, editionHref } from '../src/data.js';
 import { favoriteEntries, filterFavorites, groupByDate, countByType, favoriteText } from '../src/favorites.js';
@@ -14,7 +14,7 @@ import { buildChapters, buildWarmup, firstSentence, estimateMinutes } from '../s
 import { weekEnd, weekDates, weekBannerDue, weekSummary, weekQuiz } from '../src/week.js';
 import { deepenPrompt, deepenUrl, DEEPEN_MODES } from '../src/deepen.js';
 import { threadSlug, editionThreads, threadsFromIndex, recentThreadNames } from '../src/threads.js';
-import { indexEntry } from '../src/edition.js';
+import { indexEntry, repeatedMaterial } from '../src/edition.js';
 import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
 import { safePath } from './serve.mjs';
 import { verdictText, calibration } from '../src/confidence.js';
@@ -452,6 +452,22 @@ test('Wątki: nazwa w adresie, wpisy w indeksie, oś czasu, polecenie dnia i wal
   assert(bad.errors.some((e) => e.includes('"thread"')), 'zła nazwa wątku przechodzi');
   assert(bad.warnings.some((w) => w.includes('dłuższa niż')), 'brak uwagi o długiej nazwie');
   assert(!validateEdition({ ...d1, date: base.date }).errors.length, 'poprawny wątek daje błąd');
+});
+
+test('Bez powtórek: ciekawostki z całej historii w poleceniu, walidator i limit polityki', () => {
+  const old = { ...base, date: '2026-10-19', facts: [{ ...base.facts[0], title: 'Na Wenus doba trwa dłużej niż rok' }], concept: { ...base.concept, term: 'Prawo Goodharta' } };
+  const entry = indexEntry(old);
+  assert(entry.facts[0] === 'Na Wenus doba trwa dłużej niż rok' && entry.concept === 'Prawo Goodharta', 'indeks bez ciekawostek i pojęcia');
+  const used = usedMaterial([entry, { ...entry, date: '2026-10-30', facts: ['Z przyszłości'] }], '2026-10-25');
+  assert(used.facts.length === 1 && used.concepts[0] === 'Prawo Goodharta', 'materiał z przyszłych wydań w liście');
+  const msg = dailyMessage({ date: '2026-10-25', sections: ['polska', 'swiat'], used });
+  assert(msg.includes('Ciekawostki, które już były') && msg.includes('Na Wenus doba trwa dłużej niż rok'), 'polecenie bez listy ciekawostek');
+  assert(msg.includes('najwyżej 2 wiadomości o polityce'), 'polecenie bez limitu polityki');
+  assert(projectInstructions().includes('najwyżej 2 wiadomości o polityce'), 'zasady bez limitu polityki');
+  const now = { ...base, date: '2026-10-25', facts: [{ ...base.facts[0], title: 'na wenus doba trwa dluzej niz rok!' }], concept: { ...base.concept, term: 'Inne' } };
+  const rep = repeatedMaterial(now, [entry]);
+  assert(rep.length === 1 && rep[0].kind === 'fact' && rep[0].date === '2026-10-19', 'powtórzona ciekawostka niewykryta');
+  assert(!repeatedMaterial({ ...now, date: '2026-10-18' }, [entry]).length, 'późniejsze wydanie liczone jako wcześniejsze');
 });
 
 test('Tryb offline: service worker zna wszystkie pliki aplikacji', () => {

@@ -2,7 +2,7 @@
 // Użycie: node scripts/validate.mjs [ścieżka-do-wydania.json ...]
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { basename, join } from 'node:path';
-import { validateEdition } from '../src/edition.js';
+import { validateEdition, indexEntry, repeatedMaterial } from '../src/edition.js';
 
 const dir = 'content/editions';
 const errors = [];
@@ -31,6 +31,31 @@ const files = targets.length
       .map((f) => join(dir, f));
 
 for (const f of files) checkEdition(f);
+
+// Ciekawostka nie może powtarzać się z wcześniejszego wydania (błąd), pojęcie dnia raczej nie (uwaga).
+const all = readdirSync(dir)
+  .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+  .map((f) => {
+    try {
+      return JSON.parse(readFileSync(join(dir, f), 'utf8'));
+    } catch {
+      return null;
+    }
+  })
+  .filter(Boolean);
+const entries = all.map(indexEntry);
+for (const f of files) {
+  let ed;
+  try {
+    ed = JSON.parse(readFileSync(f, 'utf8'));
+  } catch {
+    continue;
+  }
+  for (const r of repeatedMaterial(ed, entries)) {
+    if (r.kind === 'fact') errors.push(`${basename(f)}: ciekawostka „${r.title}” była już w wydaniu ${r.date}`);
+    else warnings.push(`${basename(f)}: pojęcie dnia „${r.title}” było już w wydaniu ${r.date}`);
+  }
+}
 
 // Indeks musi wskazywać istniejące pliki i zawierać wszystkie wydania.
 if (!targets.length) {

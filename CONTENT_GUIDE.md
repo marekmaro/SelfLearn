@@ -49,8 +49,8 @@ Wzór gotowego wydania: [`content/editions/2026-10-01.json`](content/editions/20
 
 | Dział (`section`) | Ile | Na co zwracać uwagę |
 |---|---|---|
-| `polska` | dokładnie 5 | Sprawy ważne dla kraju i codziennego życia: polityka, gospodarka, prawo, bezpieczeństwo, społeczeństwo. |
-| `swiat` | dokładnie 5 | Wydarzenia o największym znaczeniu globalnym, ze szczególnym uwzględnieniem tego, co dotyczy Polski i Europy. |
+| `polska` | dokładnie 5 | Sprawy ważne dla kraju i codziennego życia: społeczeństwo, gospodarka, prawo, bezpieczeństwo, nauka, kultura, sport i polityka. **Najwyżej 2 z 5 o polityce.** |
+| `swiat` | dokładnie 5 | Wydarzenia o największym znaczeniu globalnym, ze szczególnym uwzględnieniem tego, co dotyczy Polski i Europy. **Najwyżej 2 z 5 o polityce**, reszta np. katastrofy i pogoda, nauka, gospodarka, kultura. |
 | `bezpieczenstwo` | 2 | Wojsko, NATO, wojna w Ukrainie, zagrożenia hybrydowe. |
 | `gospodarka` | 2 | Ceny, paliwa, praca, podatki, rynki, kursy walut. |
 | `nieruchomosci` | 2 | Ceny mieszkań, kredyty, najem. |
@@ -76,7 +76,7 @@ Wzór gotowego wydania: [`content/editions/2026-10-01.json`](content/editions/20
 
 Jeśli w danym dziale nie ma wartej uwagi wiadomości z ostatnich dni, lepiej dać jedną dobrą niż dwie słabe.
 
-Polska i świat są zawsze. Pozostałe działy: te, które wymienia polecenie dnia (czyli te z ostatniego wydania; zmienia się je w aplikacji w „Przygotuj wydanie → Działy w wydaniu”).
+Polska i świat są zawsze, ale polityka (rząd, partie, parlament, wybory, dyplomacja) zajmuje w każdym z nich najwyżej 2 miejsca: czytelnicy nie wybrali jej jako swojego tematu. Pozostałe działy: te, które wymienia polecenie dnia (czyli te z ostatniego wydania; zmienia się je w aplikacji w „Przygotuj wydanie → Działy w wydaniu”).
 
 Każda pozycja:
 
@@ -103,6 +103,7 @@ Każda pozycja:
 
 - Tylko dobrze udokumentowane fakty, z linkiem do Wikipedii, instytucji naukowej lub publikacji.
 - Od czasu do czasu forma „mit kontra fakt”.
+- **Nigdy nie powtarzaj ciekawostki**, która już była, także pod innym tytułem. Polecenie dnia podaje listę wszystkich dotychczasowych ciekawostek, a `node scripts/validate.mjs` zgłasza powtórzony tytuł jako błąd.
 - 3–5 zdań, z jedną konkretną liczbą lub szczegółem, który zostaje w głowie.
 
 ```json
@@ -189,10 +190,10 @@ Jedno otwarte pytanie do rozmowy we dwoje, związane z książką albo pojęciem
 
 ## Lista kontrolna przed commitem
 
-- [ ] Polska i świat mają po 5 wiadomości, pozostałe działy z polecenia po 1–2 (dział bez wartościowej wiadomości pomijamy).
+- [ ] Polska i świat mają po 5 wiadomości, w każdym najwyżej 2 o polityce; pozostałe działy z polecenia po 1–2 (dział bez wartościowej wiadomości pomijamy).
 - [ ] Rozgrzewka ma 3 pytania a/b/c o poprzednie wydanie (jeśli było).
 - [ ] Każdy link pochodzi z wyników wyszukiwania lub pobranej strony.
 - [ ] Liczby, nazwiska i daty zgadzają się ze źródłami.
-- [ ] Brak powtórek z 3 poprzednich wydań.
+- [ ] Brak powtórek wiadomości z 3 poprzednich wydań i żadnej ciekawostki, która już kiedyś była.
 - [ ] Quiz dotyczy tylko materiałów spoza wiadomości, a `id` pytań zaczynają się od daty.
 - [ ] `node scripts/validate.mjs` kończy się bez błędów.

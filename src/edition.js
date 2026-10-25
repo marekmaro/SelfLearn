@@ -197,7 +197,42 @@ export function indexEntry(ed) {
   const news = Array.isArray(ed.news) ? ed.news : [];
   const top = news.find((n) => n?.section === 'polska' && n.rank === 1) || news.find(isObj);
   const threads = editionThreads(ed);
-  return threads.length ? { date: ed.date, headline: top?.title || '', threads } : { date: ed.date, headline: top?.title || '' };
+  const entry = { date: ed.date, headline: top?.title || '' };
+  if (threads.length) entry.threads = threads;
+  // Tytuły ciekawostek i pojęcie trafiają do indeksu, żeby polecenie dnia znało wszystko, co już było.
+  const facts = (Array.isArray(ed.facts) ? ed.facts : []).map((f) => f?.title).filter((t) => typeof t === 'string' && t.trim());
+  if (facts.length) entry.facts = facts;
+  if (typeof ed.concept?.term === 'string' && ed.concept.term.trim()) entry.concept = ed.concept.term;
+  return entry;
+}
+
+// Klucz do porównywania tytułów ciekawostek i pojęć: bez wielkich liter, polskich znaków i interpunkcji.
+export function sameTitleKey(text) {
+  return String(text || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ł/g, 'l')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+// Ciekawostki i pojęcia, które powtarzają materiał z wcześniejszych wydań (wpisy indeksu).
+export function repeatedMaterial(ed, entries) {
+  const seen = new Map();
+  for (const e of entries || []) {
+    if (!e || e.date >= ed.date) continue;
+    for (const t of e.facts || []) if (!seen.has(sameTitleKey(t))) seen.set(sameTitleKey(t), e.date);
+    if (e.concept && !seen.has(`pojecie ${sameTitleKey(e.concept)}`)) seen.set(`pojecie ${sameTitleKey(e.concept)}`, e.date);
+  }
+  const out = [];
+  for (const f of Array.isArray(ed.facts) ? ed.facts : []) {
+    const d = seen.get(sameTitleKey(f?.title));
+    if (d) out.push({ kind: 'fact', title: f.title, date: d });
+  }
+  const c = ed.concept?.term && seen.get(`pojecie ${sameTitleKey(ed.concept.term)}`);
+  if (c) out.push({ kind: 'concept', title: ed.concept.term, date: c });
+  return out;
 }
 
 // Wyciąga wydanie z odpowiedzi czatu: z bloku ```json albo z gołego tekstu.

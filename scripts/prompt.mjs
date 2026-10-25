@@ -3,7 +3,8 @@
 // --dwie-czesci: czat odpowie w dwóch blokach (dla czatów, które ucinają długie odpowiedzi).
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { fullPrompt } from '../src/prompt.js';
+import { fullPrompt, usedMaterial } from '../src/prompt.js';
+import { indexEntry } from '../src/edition.js';
 import { bookForDate } from '../src/books.js';
 import { addDays } from '../src/dates.js';
 import { MAIN_SECTIONS } from '../src/config.js';
@@ -37,4 +38,6 @@ if (bookInfo) {
 // Działy: Polska, Świat i te, które były w ostatnim wydaniu.
 const sections = [...new Set([...MAIN_SECTIONS, ...(previous?.news || []).map((n) => n.section)])];
 
-console.log(fullPrompt({ date, sections, bookInfo, recent, previous, bookHistory, parts }));
+const used = usedMaterial(before.map((d) => indexEntry(read(d))), date);
+
+console.log(fullPrompt({ date, sections, bookInfo, recent, previous, bookHistory, used, parts }));

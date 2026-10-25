@@ -24,10 +24,11 @@ export function projectInstructions() {
 
 ## Zawartość
 - news, dział "polska": dokładnie 5 wiadomości; "swiat": dokładnie 5. rank 1 = najważniejsza.
+- Polska i świat to nie tylko polityka: w każdym z tych działów najwyżej 2 wiadomości o polityce (rząd, partie, parlament, wybory, dyplomacja). Pozostałe 3 bierz z innych dziedzin: społeczeństwo i codzienne życie, gospodarka i ceny, nauka, zdrowie, technologia, kultura, sport, przyroda i pogoda, wypadki i katastrofy. Polityka jest w wydaniu, bo jest ważna, ale czytelnicy nie wybrali jej jako swojego tematu.
 - thread (opcjonalnie, w wiadomości): gdy wiadomość to kolejny odcinek sprawy ciągnącej się dniami albo tygodniami (ustawa w parlamencie, wojna, wybory, proces, negocjacje), dodaj "thread" z krótką nazwą wątku, 2–5 słów, np. "Wojna w Ukrainie". Jeśli polecenie dnia podaje trwające wątki, użyj dokładnie tej samej nazwy. Przy jednorazowych wiadomościach pomiń to pole.
 - news w pozostałych działach podanych w poleceniu dnia: po 1–2 wiadomości. Jeśli w dziale nie ma nic wartościowego z ostatnich 36 godzin, pomiń go: lepiej jedna dobra wiadomość niż dwie słabe.
 - Każda wiadomość: title (informacyjny, bez klikbajtu), summary (3–4 zdania, do 90 słów: co, kto, kiedy, kluczowe liczby), why (1–2 zdania: dlaczego to ważne), sources (1–2 linki, najlepiej polski i zagraniczny).
-- facts: 3 ciekawostki różnych rodzajów; kind to jedno z: nauka, przyroda, historia, kosmos, psychologia. 3–5 zdań z jednym zapadającym w pamięć szczegółem. Czasem forma „mit kontra fakt”.
+- facts: 3 ciekawostki różnych rodzajów; kind to jedno z: nauka, przyroda, historia, kosmos, psychologia. 3–5 zdań z jednym zapadającym w pamięć szczegółem. Czasem forma „mit kontra fakt”. Ciekawostka nigdy nie powtarza tej, która już była (polecenie dnia podaje ich listę), także pod innym tytułem.
 - onThisDay: 3 wydarzenia z tego samego dnia i miesiąca w historii, co najmniej jedno z historii Polski. 2–3 zdania z kontekstem.
 - concept: pojęcie dnia (model myślowy, błąd poznawczy, prawo z ekonomii, nauki albo filozofii): definition (1 zdanie), origin (2–3 zdania), examples (2–3 przykłady, najlepiej jeden z dzisiejszych wiadomości).
 - book: idea dnia z książki tygodnia według polecenia dnia. ideaTitle, idea (4–6 zdań z przykładem), moral (1–2 zdania), action (jedno działanie na dziś na kilka minut). Tezy kwestionowane przez naukowców oznacz wprost.
@@ -53,15 +54,28 @@ Identyfikatory wiadomości: pl-1…pl-5, sw-1…sw-5, a w pozostałych działach
 Sprawdź: każdy link prowadzi do konkretnego artykułu; Polska i świat mają po 5 wiadomości; quiz i rozgrzewka nie dotyczą wiadomości; JSON jest kompletny i domknięty.`;
 }
 
-// ctx: { date, sections, bookInfo, recent: [edycje], previous: edycja|null, bookHistory: [{day, ideaTitle}], parts: 1|2 }
+// Ciekawostki i pojęcia ze wszystkich wcześniejszych wydań (z wpisów indeksu), żeby się nie powtarzały.
+export function usedMaterial(entries, date) {
+  const facts = [];
+  const concepts = [];
+  for (const e of entries || []) {
+    if (!e || (date && e.date >= date)) continue;
+    for (const t of e.facts || []) if (!facts.includes(t)) facts.push(t);
+    if (e.concept && !concepts.includes(e.concept)) concepts.push(e.concept);
+  }
+  return { facts, concepts };
+}
+
+// ctx: { date, sections, bookInfo, recent: [edycje], previous: edycja|null, bookHistory: [{day, ideaTitle}], used: {facts, concepts}, parts: 1|2 }
 export function dailyMessage(ctx) {
-  const { date, sections, bookInfo, recent = [], previous = null, bookHistory = [], parts = 1 } = ctx;
+  const { date, sections, bookInfo, recent = [], previous = null, bookHistory = [], used = null, parts = 1 } = ctx;
   const lines = [];
   lines.push(`Przygotuj wydanie SelfLearn na dzień: ${formatLong(date)} (pole "date": "${date}").`);
   lines.push('');
 
   const extra = SECTIONS.filter((s) => sections.includes(s.id) && !MAIN_SECTIONS.includes(s.id));
   lines.push(`- Działy: Polska (5), Świat (5)${extra.length ? `, a także po 1–2 wiadomości w działach: ${extra.map((s) => `${s.label} ("${s.id}")`).join(', ')}` : ''}.`);
+  lines.push('- W Polsce i na świecie najwyżej 2 wiadomości o polityce w każdym dziale, pozostałe z innych dziedzin (społeczeństwo, gospodarka, nauka, zdrowie, kultura, sport, przyroda).');
   lines.push(`- „Ten dzień w historii”: wydarzenia z dnia ${dayMonthFmt.format(new Date(`${date}T12:00:00`))}.`);
 
   if (bookInfo) {
@@ -77,14 +91,15 @@ export function dailyMessage(ctx) {
   }
 
   const avoid = [];
-  for (const ed of recent) {
-    for (const n of ed.news || []) avoid.push(n.title);
-    for (const f of ed.facts || []) avoid.push(f.title);
-    if (ed.concept?.term) avoid.push(`pojęcie: ${ed.concept.term}`);
-  }
+  for (const ed of recent) for (const n of ed.news || []) avoid.push(n.title);
   if (avoid.length) {
-    lines.push(`- Nie powtarzaj tematów z ostatnich wydań (chyba że jest ważna nowa informacja): ${avoid.slice(0, 40).join(' | ')}.`);
+    lines.push(`- Nie powtarzaj wiadomości z ostatnich wydań (chyba że jest ważna nowa informacja): ${avoid.slice(0, 40).join(' | ')}.`);
   }
+  // Ciekawostki i pojęcia z całej historii, a gdy jej brak, z ostatnich wydań. Osobno od wiadomości, żeby limit ich nie ucinał.
+  const facts = used?.facts?.length ? used.facts : recent.flatMap((ed) => (ed.facts || []).map((f) => f.title));
+  const concepts = used?.concepts?.length ? used.concepts : recent.map((ed) => ed.concept?.term).filter(Boolean);
+  if (facts.length) lines.push(`- Ciekawostki, które już były (nie powtarzaj ich, także pod innym tytułem): ${facts.join(' | ')}.`);
+  if (concepts.length) lines.push(`- Pojęcia dnia, które już były: ${concepts.join(' | ')}.`);
 
   const threads = recentThreadNames(recent);
   if (threads.length) {

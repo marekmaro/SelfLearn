@@ -4,7 +4,7 @@ import { loadIndex, loadEdition, loadBooks, forgetEdition } from '../data.js';
 import { todayISO, addDays, isISODate, formatLong } from '../dates.js';
 import { getState, update, saveLocalEdition, githubSettings } from '../store.js';
 import { bookForDate, BOOK_DAYS } from '../books.js';
-import { projectInstructions, dailyMessage, fullPrompt, CHATS } from '../prompt.js';
+import { projectInstructions, dailyMessage, fullPrompt, usedMaterial, CHATS } from '../prompt.js';
 import { validateEdition, extractJSON, cleanEdition, describeEdition } from '../edition.js';
 import { publishEdition, newFileUrl } from '../github.js';
 import { h, mount, icon, toast } from '../ui.js';
@@ -67,7 +67,8 @@ async function buildContext(date, sections) {
       .map((ed) => ({ day: ed.book.day, ideaTitle: ed.book.ideaTitle }));
   }
 
-  return { date, sections, bookInfo, recent, previous, bookHistory, exists };
+  const used = usedMaterial(index.editions, date);
+  return { date, sections, bookInfo, recent, previous, bookHistory, used, exists };
 }
 
 function defaultSections(latest) {

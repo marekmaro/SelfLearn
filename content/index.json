@@ -10,11 +10,6 @@
           "title": "Pełczyńska-Nałęcz usunięta z Polski 2050"
         },
         {
-          "name": "Wizyta Tuska w Azji",
-          "item": "pl-3",
-          "title": "Tusk w Wietnamie. W Hoi An uczcił polskiego architekta"
-        },
-        {
           "name": "Wybory w Brazylii",
           "item": "sw-1",
           "title": "Brazylia wybiera dziś prezydenta: Lula czy Flávio Bolsonaro"
@@ -23,11 +18,6 @@
           "name": "Protesty we Francji",
           "item": "sw-2",
           "title": "Francja: ponad 400 tys. na ulicach, prawie tysiąc zatrzymanych"
-        },
-        {
-          "name": "Wybory w Izraelu",
-          "item": "sw-3",
-          "title": "Ostatnie sondaże przed wyborami w Izraelu: pat"
         },
         {
           "name": "Wojna w Ukrainie",
@@ -39,7 +29,13 @@
           "item": "bezpieczenstwo-2",
           "title": "Senatorowie USA grożą blokadą nominacji z powodu Starlinka"
         }
-      ]
+      ],
+      "facts": [
+        "Słońce widzimy takim, jakie było 8 minut temu",
+        "Prawdziwy uśmiech widać w oczach",
+        "Mit: złota rybka pamięta tylko 3 sekundy"
+      ],
+      "concept": "Margines błędu"
     },
     {
       "date": "2026-10-24",
@@ -90,31 +86,73 @@
           "item": "muzyka-1",
           "title": "Bohdan Luts wygrał Konkurs Wieniawskiego"
         }
-      ]
+      ],
+      "facts": [
+        "Czy gorąca woda zamarza szybciej niż zimna?",
+        "Pszczoły tańcem pokazują drogę do kwiatów",
+        "Big Ben to nie wieża, tylko dzwon"
+      ],
+      "concept": "Krzywa zapominania"
     },
     {
       "date": "2026-10-23",
-      "headline": "Pełczyńska-Nałęcz odchodzi z rządu. Sejm utrzymał dwukadencyjność w samorządach"
+      "headline": "Pełczyńska-Nałęcz odchodzi z rządu. Sejm utrzymał dwukadencyjność w samorządach",
+      "facts": [
+        "Olympus Mons: wulkan wielkości Polski",
+        "Mit: używamy tylko 10% mózgu",
+        "Rekiny są starsze niż drzewa"
+      ],
+      "concept": "Błąd planowania"
     },
     {
       "date": "2026-10-22",
-      "headline": "Domański zostaje w rządzie. Tusk chce, by został wicepremierem"
+      "headline": "Domański zostaje w rządzie. Tusk chce, by został wicepremierem",
+      "facts": [
+        "Banany są lekko promieniotwórcze",
+        "Wombaty robią kupę w kształcie kostek",
+        "Najkrótsza wojna w historii trwała ok. 40 minut"
+      ],
+      "concept": "Intencje implementacyjne"
     },
     {
       "date": "2026-10-21",
-      "headline": "Sejm przyjął dwie ustawy o aborcji. Teraz Senat i prezydent"
+      "headline": "Sejm przyjął dwie ustawy o aborcji. Teraz Senat i prezydent",
+      "facts": [
+        "Saturn pływałby w wannie",
+        "Niedokończone sprawy siedzą w głowie dłużej",
+        "Kolibry potrafią latać do tyłu"
+      ],
+      "concept": "Efekt domyślności"
     },
     {
       "date": "2026-10-20",
-      "headline": "Słuchacz Wojskowej Akademii Medycznej podejrzany o szpiegostwo"
+      "headline": "Słuchacz Wojskowej Akademii Medycznej podejrzany o szpiegostwo",
+      "facts": [
+        "Woda może jednocześnie wrzeć i zamarzać",
+        "Kleopatra żyła bliżej lądowania na Księżycu niż budowy piramidy Cheopsa",
+        "Grzyby są bliżej spokrewnione z nami niż z roślinami"
+      ],
+      "concept": "Prawo Goodharta"
     },
     {
       "date": "2026-10-19",
-      "headline": "Myśliwce w powietrzu i alert RCB dla Lubelskiego i Podkarpackiego"
+      "headline": "Myśliwce w powietrzu i alert RCB dla Lubelskiego i Podkarpackiego",
+      "facts": [
+        "Na Wenus doba trwa dłużej niż rok",
+        "Sprawdzanie się uczy lepiej niż ponowne czytanie",
+        "Ośmiornica ma trzy serca i niebieską krew"
+      ],
+      "concept": "Błąd przeżywalności"
     },
     {
       "date": "2026-10-01",
-      "headline": "Sąd wydał list żelazny Marcinowi Romanowskiemu. Prokuratura zapowiada zażalenie"
+      "headline": "Sąd wydał list żelazny Marcinowi Romanowskiemu. Prokuratura zapowiada zażalenie",
+      "facts": [
+        "Niesporczaki przeżyły próżnię kosmosu",
+        "Bakterii w ciele mamy mniej więcej tyle, ile własnych komórek",
+        "Notatki Marii Skłodowskiej-Curie wciąż są radioaktywne"
+      ],
+      "concept": "Prawo Goodharta"
     }
   ]
 }

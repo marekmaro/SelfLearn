@@ -131,6 +131,8 @@ img { max-width: 100%; }
 a { color: var(--nurt); }
 
 button, input, select, textarea { font: inherit; color: inherit; }
+/* iPhone powiększa stronę przy wpisywaniu w pola z tekstem mniejszym niż 16 px. */
+input, select, textarea { font-size: max(16px, 1rem); }
 
 :focus-visible {
   outline: 3px solid var(--nurt);
@@ -332,6 +334,14 @@ button.pill-link { border: 0; cursor: pointer; font-family: inherit; }
 .start-card.is-done .btn { width: auto; }
 .start-title { display: flex; align-items: center; gap: 8px; margin: 0; font-weight: 700; color: var(--nurt); }
 .start-card.is-done .small { grid-column: 1 / -1; }
+.install-banner { display: grid; gap: 8px; }
+.install-title { display: flex; align-items: center; gap: 8px; margin: 0; font-weight: 700; }
+.install-banner .btn { width: auto; margin: 0; }
+.install-steps { margin: 0; padding-left: 22px; display: grid; gap: 6px; font-size: var(--step-0); }
+.install-steps .icon { display: inline-block; vertical-align: -3px; color: var(--nurt); }
+.install-steps .icon svg { width: 18px; height: 18px; }
+.install-card { display: grid; gap: 10px; }
+.install-card h3 { margin: 0; font-size: var(--step-1); }
 .guide-card { display: grid; gap: 10px; background: var(--nurt-soft); border-radius: var(--radius); padding: 14px 16px; }
 .guide-card .eyebrow { margin: 0; }
 .guide-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
@@ -667,7 +677,7 @@ textarea {
 
 /* ---------- Ankieta ---------- */
 
-.onb { display: grid; gap: 22px; min-height: calc(100vh - 80px); align-content: start; padding-top: 8px; }
+.onb { display: grid; gap: 22px; min-height: calc(100vh - 80px); min-height: calc(100dvh - 80px); align-content: start; padding-top: 8px; }
 .onb-steps { display: flex; gap: 6px; }
 .onb-steps span { flex: 1; height: 4px; border-radius: 2px; background: var(--surface-2); }
 .onb-steps span.on { background: var(--nurt); }

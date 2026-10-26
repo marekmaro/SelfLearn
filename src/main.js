@@ -17,9 +17,11 @@ import { parseChallenge, receiveChallenge } from './challenge.js';
 import { loadIndex } from './data.js';
 import { autoPrefetch } from './offline.js';
 import { toast } from './ui.js';
+import { watchInstall } from './install.js';
 
 const root = document.getElementById('app');
 applyLook();
+watchInstall();
 
 function updateBadge() {
   const badge = document.querySelector('[data-due-badge]');
@@ -85,7 +87,7 @@ async function route() {
   } else if (hash === 'przygotuj') {
     setTab('dzis');
     await renderPrepare(root, common);
-  } else if (['profil', 'ustawienia', 'wyglad', 'przypomnienia', 'publikowanie', 'offline'].includes(hash)) {
+  } else if (['profil', 'ustawienia', 'wyglad', 'przypomnienia', 'publikowanie', 'offline', 'instalacja'].includes(hash)) {
     setTab('profil');
     await renderProfile(root, {
       ...common,

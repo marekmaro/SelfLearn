@@ -1,5 +1,5 @@
 // Service worker: aplikacja działa offline, a wydania odświeżają się z sieci.
-const VERSION = 'v16';
+const VERSION = 'v17';
 const SHELL = `selflearn-shell-${VERSION}`;
 const CONTENT = 'selflearn-content';
 const FONTS = 'selflearn-fonts';
@@ -49,6 +49,7 @@ const SHELL_FILES = [
   './src/confidence.js',
   './src/offline.js',
   './src/exporters.js',
+  './src/install.js',
   './assets/logo.svg',
   './assets/logo-192.png',
   './assets/logo-512.png',
@@ -77,6 +78,10 @@ self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
+
+  // Nagrania lektora idą prosto do sieci: odtwarzacz pobiera je kawałkami (Range), a pamięć
+  // service workera oddałaby cały plik naraz i iPhone nie mógłby przewijać.
+  if (url.origin === location.origin && url.pathname.includes('/audio/')) return;
 
   // Wydania: najpierw sieć (świeże treści), w razie braku sieci – ostatnia kopia.
   if (url.origin === location.origin && url.pathname.includes('/content/')) {

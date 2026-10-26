@@ -17,7 +17,9 @@ import { threadSlug, editionThreads, threadsFromIndex, recentThreadNames } from 
 import { indexEntry, repeatedMaterial } from '../src/edition.js';
 import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
 import { safePath } from './serve.mjs';
-import { splitText, startIndex } from '../src/listen.js';
+import { splitText, startIndex, recordingSegments, segmentAt } from '../src/listen.js';
+import { speakable, joinClips, readWav, writeWav, narrationHash, loadNarration } from './make-audio.mjs';
+import { narrationChapters, editionNarration } from '../src/chapters.js';
 import { verdictText, calibration } from '../src/confidence.js';
 import { datesToPrefetch, formatBytes } from '../src/offline.js';
 import { ankiTSV, favoritesMarkdown } from '../src/exporters.js';
@@ -496,6 +498,31 @@ test('Słuchanie: zdania, wznowienie w zapamiętanym miejscu', () => {
   assert(startIndex(queue, items, { id: 'pl-1', chunk: 2 }) === 4, 'trzecie zdanie drugiego fragmentu');
   assert(startIndex(queue, items, { id: 'pl-1', chunk: 9 }) === 2, 'zbyt daleko: początek fragmentu');
   assert(startIndex(queue, items, { id: 'znikl' }) === 0, 'nieznany fragment: od początku');
+});
+
+test('Lektor z nagrania: tekst do nagrania, sklejanie, wybór fragmentów', () => {
+  assert(speakable('W 2025 r. ok. 7 mld zł, 31% i 2:1, o 3:00 i 21:30, 135–140 mandatów.') === 'W 2025 roku około 7 miliardów złotych, 31 procent i 2 do 1, o 3 i 21 30, 135 do 140 mandatów.', speakable('W 2025 r. ok. 7 mld zł, 31% i 2:1, o 3:00 i 21:30, 135–140 mandatów.'));
+  assert(speakable('„Sapiens” · m.in. tzw. rewolucja') === 'Sapiens, między innymi tak zwany rewolucja', speakable('„Sapiens” · m.in. tzw. rewolucja'));
+  const items = editionNarration(base, narrationChapters(base));
+  assert(items[0].id === 'intro' && new Set(items.map((i) => i.id)).size === items.length, 'fragmenty z unikalnymi id, od wstępu');
+  assert(items.every((i) => i.chapter && i.text.trim()), 'każdy fragment ma rozdział i tekst');
+  assert(base.news.every((n) => items.some((i) => i.id === n.id)), 'nagranie obejmuje wszystkie wiadomości, także spoza profilu');
+  const fmt = { channels: 1, sampleRate: 1000, bits: 16 };
+  const wav = (seconds) => readWav(writeWav(fmt, Buffer.alloc(seconds * 2000)));
+  assert(wav(2).data.length === 4000 && wav(2).sampleRate === 1000, 'WAV: zapis i odczyt');
+  const joined = joinClips([
+    { item: { id: 'a', chapter: 'x', label: 'A' }, wav: wav(2) },
+    { item: { id: 'b', chapter: 'x', label: 'B' }, wav: wav(1) },
+    { item: { id: 'c', chapter: 'y', label: 'C' }, wav: wav(1) },
+  ]);
+  const [a, b, c] = joined.items;
+  assert(a.start === 0.3 && a.end === 2.3 && b.start === 3 && c.start === 5.2 && joined.duration === 6.7, JSON.stringify(joined.items) + joined.duration);
+  assert(narrationHash(items, 'v1') !== narrationHash(items, 'v2'), 'zmiana głosu = nowe nagranie');
+  assert(loadNarration(latest.slice(0, 10)).length === items.length, 'tekst nagrania z pliku wydania');
+  const info = { items: [{ id: 'intro', start: 0.3, end: 5 }, { id: 'pl-1', start: 6, end: 20 }, { id: 'muzyka-1', start: 21, end: 30 }, { id: 'evening', start: 31, end: 40 }] };
+  const segs = recordingSegments(info, [{ id: 'evening' }, { id: 'intro' }, { id: 'pl-1' }]);
+  assert(segs.map((x) => x.id).join() === 'intro,pl-1,evening', 'kolejność nagrania, bez działów spoza listy');
+  assert(segmentAt(info.items, 0) === -1 && segmentAt(info.items, 6) === 1 && segmentAt(info.items, 20.5) === 1 && segmentAt(info.items, 25) === 2, 'fragment w danej chwili');
 });
 
 test('Tryb offline: service worker zna wszystkie pliki aplikacji', () => {

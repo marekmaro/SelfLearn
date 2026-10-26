@@ -26,6 +26,7 @@ import { multiChoice, segmented } from './onboarding.js';
 import { offlineSettings, setOfflineSettings, offlineStats, cachedEditionDates, datesToPrefetch, prefetchEditions, clearOfflineEditions, autoPrefetch, formatBytes } from '../offline.js';
 import { ankiTSV, favoritesMarkdown, downloadFile } from '../exporters.js';
 import { favoriteEntries } from '../favorites.js';
+import { installSection } from '../install.js';
 
 const PAGE_SECTIONS = [
   { id: 'ustawienia', label: 'Wydanie' },
@@ -34,6 +35,7 @@ const PAGE_SECTIONS = [
   { id: 'publikowanie', label: 'Publikowanie' },
   { id: 'postepy', label: 'Postępy' },
   { id: 'archiwum', label: 'Archiwum' },
+  { id: 'instalacja', label: 'Instalacja' },
   { id: 'offline', label: 'Offline' },
   { id: 'dane', label: 'Dane' },
 ];
@@ -159,7 +161,7 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
     let status;
     if (!caps.notifications) {
       status = caps.ios
-        ? 'Na iPhonie aplikacja internetowa nie może sama przypominać bez serwera. Tu najlepiej działa kalendarz.'
+        ? 'Na iPhonie powiadomienia działają tylko w aplikacji dodanej do ekranu początkowego (sekcja „Na ekranie telefonu” niżej), a o stałej porze i tak najpewniej przypomni Kalendarz: przycisk „iPhone (.ics)” doda wydarzenia do aplikacji Kalendarz.'
         : 'Ta przeglądarka nie obsługuje powiadomień. Użyj kalendarza.';
     } else if (caps.permission === 'denied') {
       status = 'Powiadomienia są zablokowane dla tej strony. Odblokujesz je w ustawieniach przeglądarki (ikona kłódki przy adresie).';
@@ -172,7 +174,9 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
     } else if (n.system) {
       status = 'Włączone, ale ta przeglądarka nie sprawdza w tle. Próbne powiadomienie zadziała, a codzienne przypomnienia daje kalendarz.';
     } else {
-      status = 'Wyłączone. Najlepiej działają w Chrome na Androidzie, w aplikacji dodanej do ekranu głównego.';
+      status = caps.ios
+        ? 'Wyłączone. Na iPhonie powiadomienie przyjdzie tylko, gdy otworzysz aplikację, bo bez serwera nie da się ich zaplanować na godzinę. O stałej porze przypomni Kalendarz (przycisk „iPhone (.ics)” niżej).'
+        : 'Wyłączone. Najlepiej działają w Chrome na Androidzie, w aplikacji dodanej do ekranu głównego.';
     }
 
     const timeField = (id, label, value, disabled, onchange) =>
@@ -246,6 +250,12 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
               class: 'btn secondary',
               onclick: () => {
                 const url = URL.createObjectURL(icsFile(n));
+                // iPhone: otwarcie pliku od razu proponuje dodanie wydarzeń do Kalendarza (pobranie trafiłoby do Plików).
+                if (caps.ios) {
+                  location.href = url;
+                  setTimeout(() => URL.revokeObjectURL(url), 60000);
+                  return;
+                }
                 const a = h('a', { href: url, download: 'selflearn-przypomnienia.ics' });
                 document.body.append(a);
                 a.click();
@@ -579,6 +589,8 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
             )
           : h('p', { class: 'muted' }, 'Archiwum pojawi się po wczytaniu wydań.'),
       ),
+
+      installSection(),
 
       offlineSection(),
 

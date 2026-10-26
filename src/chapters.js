@@ -1,7 +1,7 @@
 // Budowa wydania do czytania: rozdziały, rozgrzewka, czas czytania i skróty streszczeń.
 // Bez DOM, więc da się to sprawdzić w scripts/selftest.mjs.
-import { SECTIONS, MAIN_SECTIONS, TIME_BUDGETS, WORDS_PER_MINUTE } from './config.js';
-import { formatShort, addDays } from './dates.js';
+import { SECTIONS, MAIN_SECTIONS, TIME_BUDGETS, WORDS_PER_MINUTE, FACT_KINDS } from './config.js';
+import { formatShort, formatLong, addDays } from './dates.js';
 
 export const sectionLabel = (id) => SECTIONS.find((s) => s.id === id)?.label || id;
 
@@ -101,6 +101,56 @@ export function buildChapters(edition, profile, warmup = null) {
   if (edition.quiz?.length) chapters.push({ id: 'quiz', label: 'Quiz', title: 'Sprawdź się', type: 'quiz' });
   if (edition.evening) chapters.push({ id: 'wieczor', label: 'Na wieczór', title: 'Na wieczór', type: 'evening' });
   return chapters;
+}
+
+// ---------- Tekst dla lektora ----------
+// Wspólny dla czytania głosem telefonu (views/today.js) i nagrań MP3 (scripts/make-audio.mjs),
+// więc identyfikatory fragmentów w nagraniu zgadzają się z kartami w wydaniu.
+
+const kindLabel = (id) => FACT_KINDS.find((k) => k.id === id)?.label || id;
+
+// Fragmenty jednego rozdziału (albo jednego działu w „Twoich tematach”). Lektor czyta wszystko,
+// także wpisy schowane pod „Pokaż więcej”; reveal to klucz listy, którą wtedy trzeba rozwinąć.
+export function chapterNarration(ch, edition, onlyGroup = null) {
+  const items = [];
+  const add = (id, label, text, reveal = null) => items.push({ id, chapter: ch.id, label, text, reveal });
+  if (ch.groups) {
+    for (const g of ch.groups) {
+      if (onlyGroup && g !== onlyGroup) continue;
+      g.items.forEach((it, i) => {
+        const lead = i === 0 ? `${sectionLabel(g.section)}. ` : '';
+        add(it.id, it.title, `${lead}${it.title}. ${it.summary} ${it.why ? `Dlaczego to ważne: ${it.why}` : ''}`, i >= g.limit ? `news:${g.section}` : null);
+      });
+    }
+  } else if (ch.type === 'facts' || ch.type === 'otd') {
+    ch.items.forEach((it, i) => {
+      const lead = i === 0 ? `${ch.label}. ` : '';
+      const head = ch.type === 'otd' ? `Rok ${it.year}. ${it.title}.` : `${kindLabel(it.kind)}: ${it.title}.`;
+      add(it.id, ch.type === 'otd' ? `${it.year}: ${it.title}` : it.title, `${lead}${head} ${it.body}`, i >= ch.limit ? ch.id : null);
+    });
+  } else if (ch.type === 'concept' && edition.concept) {
+    const c = edition.concept;
+    add('concept', `Pojęcie: ${c.term}`, `Pojęcie dnia: ${c.term}. ${c.definition} ${c.origin || ''} ${(c.examples || []).join(' ')}`);
+  } else if (ch.type === 'book' && edition.book) {
+    const b = edition.book;
+    add('book', `${b.title}: ${b.ideaTitle}`, `Książka tygodnia: „${b.title}”, ${b.author}. Dzień ${b.day} z ${b.days}: ${b.ideaTitle}. ${b.idea} Morał: ${b.moral} Zastosuj dziś: ${b.action}`);
+  } else if (ch.type === 'evening' && edition.evening) {
+    add('evening', 'Na wieczór', `Na wieczór we dwoje: ${edition.evening.question} ${edition.evening.hint || ''}`);
+  }
+  return items.filter((it) => it.text.trim());
+}
+
+// Całe wydanie dla lektora: wstęp i wszystkie rozdziały do czytania (bez rozgrzewki i quizu, które wymagają dotknięć).
+export function editionNarration(edition, chapters) {
+  const first = chapters.find((c) => !['warmup', 'quiz'].includes(c.type));
+  const intro = { id: 'intro', chapter: first?.id, label: 'Wstęp', text: `${formatLong(edition.date)}. ${edition.intro || ''}`, reveal: null };
+  return [intro, ...chapters.flatMap((ch) => chapterNarration(ch, edition))].filter((it) => it.text.trim());
+}
+
+// Profil „wszystko” dla nagrań: wszystkie działy z wydania, wszystkie rodzaje ciekawostek.
+export function narrationChapters(edition) {
+  const sections = [...new Set((edition.news || []).map((n) => n.section))];
+  return buildChapters(edition, { sections, factKinds: FACT_KINDS.map((k) => k.id), minutes: 20 });
 }
 
 // ---------- Rozgrzewka ----------

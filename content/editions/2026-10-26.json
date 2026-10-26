@@ -1,0 +1,546 @@
+{
+  "date": "2026-10-26",
+  "intro": "Dziś m.in. Lula wygrywa w Brazylii, przełom w Serbii, Tusk w Hanoi, Powiatowe Centra Zdrowia i ropa najdroższa od kwietnia. Do tego drugi dzień z „Sapiens”: rewolucja rolnicza.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Tusk w Hanoi. Dziś rozmowy o handlu z Wietnamem",
+      "summary": "Premier Donald Tusk przyleciał w niedzielę wieczorem do Hanoi, drugiego przystanku azjatyckiej podróży po Indiach. Na poniedziałek zaplanowano rozmowy z premierem Wietnamu i spotkania z najważniejszymi przywódcami kraju, podpisanie dokumentów i oświadczenia dla prasy. Głównym tematem jest handel: w 2025 r. deficyt Polski w wymianie z Wietnamem przekroczył 7 mld dolarów. Strony mają też rozmawiać o inwestycjach, nauce, edukacji i turystyce. Premierowi towarzyszą przedstawiciele polskich firm.",
+      "why": "Wietnam to jedna z najszybciej rosnących gospodarek Azji. Polska chce więcej tam sprzedawać, a nie tylko kupować.",
+      "sources": [
+        {
+          "name": "VietnamNet",
+          "url": "https://vietnamnet.vn/en/polish-prime-minister-donald-tusk-arrives-in-hanoi-for-official-visit-2568383.html"
+        },
+        {
+          "name": "Super Express",
+          "url": "https://polityka.se.pl/wiadomosci/tusk-w-wietnamie-chce-odwrocic-fatalny-bilans-handlowy-aa-MsNp-Qgu6-1RAo.html"
+        }
+      ],
+      "thread": "Wizyta Tuska w Azji"
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Rząd sprawdza, czy można zerwać umowę na płatną A2",
+      "summary": "Ministerstwo Infrastruktury poprosiło GDDKiA o zbadanie, czy da się wypowiedzieć umowę koncesyjną ze spółką Autostrada Wielkopolska. Chodzi o płatny odcinek A2 między Nowym Tomyślem a Koninem. Powodem są częste podwyżki: od września 2015 r. opłaty wzrosły o ok. 141–145%, zależnie od rodzaju pojazdu. Umowa z 1997 r. obowiązuje do marca 2037 r., a dopóki stawki mieszczą się w ustalonych limitach, rząd nie może ich zablokować. UOKiK nie dopatrzył się nieuczciwych cen. Decyzji jeszcze nie ma.",
+      "why": "To jedna z najdroższych autostrad w Polsce, a jeździ nią większość ruchu z Niemiec do Warszawy. Zerwanie umowy mogłoby oznaczać wysokie odszkodowanie.",
+      "sources": [
+        {
+          "name": "Interia",
+          "url": "https://motoryzacja.interia.pl/wiadomosci/news-rzad-ma-dosc-podwyzek-na-a2-chce-sprawdzic-czy-mozna-zerwac,nId,23563568"
+        },
+        {
+          "name": "Bankier.pl",
+          "url": "https://www.bankier.pl/wiadomosc/Autostrada-A2-coraz-drozsza-Ministerstwo-rozwaza-zerwanie-umowy-9217960.html"
+        }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Lech wygrał z Legią w Warszawie i jest liderem Ekstraklasy",
+      "summary": "W hicie 12. kolejki Lech Poznań pokonał na wyjeździe Legię Warszawa 2:1. Do przerwy było 0:0. W 56. minucie gola dla Lecha strzelił Yannick Agnero, Legia wyrównała po trafieniu Bohdana Wjunnyka, a zwycięską bramkę w 87. minucie zdobył Luis Palma. Dla Legii to pierwsza porażka w lidze w tym sezonie. Mistrz Polski Lech wrócił dzięki temu na pierwsze miejsce w tabeli.",
+      "why": "Mecze Legii z Lechem to największy klasyk polskiej ligi. Wynik zmienia układ czołówki przed listopadowymi kolejkami.",
+      "sources": [
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/news-pierwsza-porazka-legii-ligowy-klasyk-dla-lecha,nIdn,1023349"
+        },
+        {
+          "name": "Głos Wielkopolski",
+          "url": "https://gloswielkopolski.pl/legia-warszawa-lech-poznan-1-2-agnero-i-palma-zamkneli-usta-papszunowi-kolejorz-liderem-zobacz-oceny/ar/c2p2-29469469"
+        }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Wichura: alerty RCB, drzewo spadło na cztery auta",
+      "summary": "W niedzielę IMGW ostrzegał przed silnym wiatrem na północy i południu kraju, a dla Wybrzeża przed sztormem. Najmocniej wiało na południu Śląska i Dolnego Śląska: w porywach do 90–100 km/h, a w wyższych partiach Sudetów jeszcze mocniej. Rządowe Centrum Bezpieczeństwa wysłało SMS-y m.in. do mieszkańców Bielska-Białej i powiatów cieszyńskiego oraz żywieckiego. W Kłopotowie koło Kołobrzegu powalone drzewo spadło na cztery samochody. Nad morzem ostrzeżenia obowiązują do poniedziałkowego popołudnia.",
+      "why": "Przy silnym wietrze lepiej nie parkować pod drzewami i odłożyć wyjście w wyższe partie gór.",
+      "sources": [
+        {
+          "name": "Polsat News",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-10-25/niebezpieczna-pogoda-w-polsce-zachowaj-ostroznosc-i-zabezpiecz-rzeczy/"
+        },
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/regiony/trojmiasto/news-silny-wiatr-w-polnocnej-polsce-drzewo-spadlo-na-cztery-samoc,nIdn,1023351"
+        }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Referendum w Częstochowie: frekwencja tuż nad progiem",
+      "summary": "W niedzielę mieszkańcy Częstochowy głosowali, czy odwołać prezydenta Krzysztofa Matyjaszczyka i radę miasta. Referendum zorganizowano po tym, jak w lutym prezydenta zatrzymało CBA. Prokuratura zarzuca mu przyjęcie co najmniej 40 tys. zł w zamian za zmiany w budżecie miasta. Matyjaszczyk zaprzecza. Żeby głosowanie było ważne, musiało wziąć w nim udział co najmniej 29,47% uprawnionych w sprawie prezydenta i 30,81% w sprawie rady. Według danych z ponad 100 komisji frekwencja wyniosła ok. 31%. Oficjalne wyniki miały być znane w nocy lub rano.",
+      "why": "To kolejne po Krakowie referendum w dużym mieście. Ważne i rozstrzygające oznacza przedterminowe wybory władz miasta.",
+      "sources": [
+        {
+          "name": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art45394361-koniec-referendum-w-czestochowie-glosowano-nad-odwolaniem-wladz-miasta"
+        },
+        {
+          "name": "Dziennik Zachodni",
+          "url": "https://dziennikzachodni.pl/referendum-w-czestochowie-mieszkancy-zaglosowali-lokale-zostaly-zamkniete-zdecydowac-moze-kilka-tysiecy-glosow/ar/c1p2-29469483"
+        }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Lula wygrywa w Brazylii według projekcji. To będzie jego czwarta kadencja",
+      "summary": "Luiz Inácio Lula da Silva wygrał drugą turę wyborów prezydenckich z senatorem Flávio Bolsonaro, synem byłego prezydenta. Tak wynika z niedzielnej projekcji pracowni Datafolha. Liczenie było wyjątkowo wyrównane: Bolsonaro prowadził w pierwszej części, a po przeliczeniu ponad połowy głosów na prowadzenie wyszedł Lula. Przy ok. 83% policzonych głosów miał 51,4%. W pierwszej turze 4 października lepszy był Bolsonaro. Oficjalne wyniki ogłasza sąd wyborczy TSE.",
+      "why": "Lula obejmie urząd po raz czwarty, w wieku 81 lat. Tak mały margines może jednak prowadzić do sporów o wynik w podzielonym kraju.",
+      "sources": [
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/live-blog/2026-10-25/brazil-presidential-runoff-election-live-updates"
+        },
+        {
+          "name": "Bahia Notícias",
+          "url": "https://www.bahianoticias.com.br/noticia/322940-lula-vence-flavio-bolsonaro-e-conquista-quarto-mandato-presidencial-aponta-datafolha"
+        },
+        {
+          "name": "France 24",
+          "url": "https://www.france24.com/en/americas/20261025-live-voting-under-way-across-brazil-in-tight-presidential-run-off-between-lula-and-bolsonaro"
+        }
+      ],
+      "thread": "Wybory w Brazylii"
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Serbia: Vučić przyznał się do porażki. Wygrała Lista Studencka",
+      "summary": "W przedterminowych wyborach parlamentarnych w Serbii wygrała Lista Studencka, która wyrosła z protestów trwających od listopada 2024 r. Aleksandar Vučić, który we wrześniu zrezygnował z funkcji prezydenta, żeby jako lider rządzącej SNS ubiegać się o fotel premiera, w niedzielę wieczorem uznał przegraną. Według jego szacunków studenci mogą mieć 135–140 z 250 mandatów, a SNS ok. 105. Lista nie ma klasycznego lidera, a kandydatów wybierały studenckie zgromadzenia. Oficjalne wyniki jeszcze spływają.",
+      "why": "Partia Vučicia rządziła Serbią od 2012 r. Zmiana władzy może wpłynąć na drogę kraju do UE i relacje z Rosją.",
+      "sources": [
+        {
+          "name": "Euronews",
+          "url": "https://www.euronews.com/2026/10/25/vucic-concedes-defeat-in-pivotal-serbian-elections-says-student-movement-has-won"
+        },
+        {
+          "name": "CNN",
+          "url": "https://www.cnn.com/2026/10/25/europe/serbian-strongman-vucic-concedes-defeat-to-student-led-movement-intl-latam"
+        }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Ropa najdroższa od kwietnia po atakach Huti na Arabię Saudyjską",
+      "summary": "Baryłka ropy Brent kosztowała na zamknięciu piątkowych notowań 116,72 dolara, najwięcej od 29 kwietnia. W ciągu tygodnia podrożała o ok. 6%, a amerykańska WTI przekroczyła 103 dolary. Rynek obawia się przerw w dostawach z Bliskiego Wschodu po atakach jemeńskich Huti na Arabię Saudyjską i doniesieniach o atakach na tankowce w rejonie cieśniny Ormuz. W tym tygodniu inwestorzy czekają też na decyzję amerykańskiej Rezerwy Federalnej.",
+      "why": "Droższa ropa szybko przekłada się na ceny na stacjach, zwłaszcza oleju napędowego, a przez transport na ceny w sklepach.",
+      "sources": [
+        {
+          "name": "Yahoo Finance (Reuters)",
+          "url": "https://finance.yahoo.com/energy/articles/oil-prices-rise-supply-concerns-052617190.html"
+        },
+        {
+          "name": "Nikkei Asia",
+          "url": "https://asia.nikkei.com/business/markets/commodities/brent-crude-jumps-to-highest-since-april-on-houthi-attacks-uae-oil-spill"
+        }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Ebola: Uganda wprowadza 21-dniową kwarantannę dla wracających z Konga",
+      "summary": "Minister zdrowia Ugandy ogłosił w niedzielę, że obywatele wracający z Demokratycznej Republiki Konga muszą przejść 21-dniową kwarantannę, za którą sami zapłacą. Kraj zaostrzył też kontrole na lotnisku w Entebbe i na granicach. Uganda nie ma obecnie zakażeń, ale przez Entebbe przelecieli chorzy, u których ebolę wykryto później w Kenii i Nigerii. W Kongu według WHO potwierdzono do 20 października 9704 zakażenia i 4687 zgonów. To największa epidemia eboli w historii tego kraju.",
+      "why": "Na szczep Bundibugyo, który wywołał epidemię, nie ma zatwierdzonej szczepionki ani leku, więc kluczowe jest zatrzymanie go na granicach.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/25/uganda-orders-21-day-ebola-quarantine-for-citizens-returning-from-dr-congo"
+        },
+        {
+          "name": "ABC News (AP)",
+          "url": "https://abcnews.com/Health/wireStory/uganda-tightens-ebola-border-controls-requires-returnees-congo-137556309"
+        }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "F1: Antonelli wygrał w Austin. Tytuł może zdobyć za tydzień",
+      "summary": "Kimi Antonelli z Mercedesa wygrał Grand Prix USA w Austin, startując z pole position. Drugi Charles Leclerc z Ferrari stracił do niego ponad 13 sekund, trzeci był Max Verstappen. To dziewiąte zwycięstwo 20-letniego Włocha w tym sezonie. Ma 365 punktów i 123 przewagi nad George’em Russellem, który dojechał ósmy. Tytuł zapewniłby sobie już w Austin, gdyby Russell i Lewis Hamilton zajęli niższe miejsca, więc rozstrzygnięcie może przyjść w najbliższym wyścigu, w Meksyku.",
+      "why": "Antonelli może zostać najmłodszym mistrzem świata w historii Formuły 1. Dotąd rekord należy do Sebastiana Vettela, który zdobył tytuł w wieku 23 lat.",
+      "sources": [
+        {
+          "name": "Formula1.com",
+          "url": "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j"
+        },
+        {
+          "name": "The Race",
+          "url": "https://www.the-race.com/formula-1/f1-2026-united-states-grand-prix-race-result/"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Huti ostrzelali Arabię Saudyjską. Rijad: przechwyciliśmy 12 rakiet",
+      "summary": "Koalicja pod wodzą Arabii Saudyjskiej podała w niedzielę, że przechwyciła 12 rakiet i 2 drony wystrzelone przez jemeńskich Huti. Część leciała na Rijad, część na Chamis Muszajt i inne miasta na południu kraju. Według saudyjskiej obrony cywilnej dwie osoby zostały ranne od spadających odłamków. Huti przyznali się do ataków. Nowe walki zerwały rozejm, który od 2022 r. w dużej mierze utrzymywał się dzięki ONZ.",
+      "why": "Wojna między Huti a Arabią Saudyjską wróciła po latach względnego spokoju. Zagrożone są saudyjskie instalacje naftowe, a więc i światowe dostawy ropy.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/25/saudi-arabia-houthi-missile-drone-interceptions.html"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/25/saudi-air-defences-intercept-houthi-barrage-near-mecca"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "section": "bezpieczenstwo",
+      "rank": 2,
+      "title": "Rozejm w Ołeszkach ma ruszyć we wtorek o 3:00",
+      "summary": "Rosja i Ukraina uzgodniły harmonogram lokalnego rozejmu w okupowanych Ołeszkach w obwodzie chersońskim. Według Kyiv Post walki mają ustać we wtorek, 27 października, o 3:00 czasu kijowskiego. Najpierw mają być rozminowane drogi, potem dostarczona pomoc, a na końcu ewakuowani cywile, którzy zechcą wyjechać. Ukraiński rzecznik praw obywatelskich Dmytro Łubinec ostrzega, że to bardzo trudne do przeprowadzenia. Według Kremla ewakuacja potrwa co najmniej kilka dni. Wcześniej mówiono o starcie 29 października.",
+      "why": "Miasto od maja jest praktycznie odcięte od regularnych dostaw żywności. To test, czy obie strony dotrzymają nawet lokalnego porozumienia.",
+      "sources": [
+        {
+          "name": "Kyiv Post",
+          "url": "https://www.kyivpost.com/post/88088"
+        },
+        {
+          "name": "Kyiv Independent",
+          "url": "https://kyivindependent.com/news-from-occupied-ukraine-former-oleshky-resident-warns-people-wont-survive-this-winter/"
+        }
+      ],
+      "thread": "Wojna w Ukrainie"
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Google: dane z Gmaila i Zdjęć podpięte do AI mogą służyć reklamom",
+      "summary": "Google zmienił 16 października politykę prywatności, o czym media napisały pod koniec tygodnia. Firma od lat obiecywała, że nie personalizuje reklam na podstawie treści z Gmaila, Dysku i Zdjęć Google. Teraz jest wyjątek: jeśli użytkownik połączy te usługi z funkcją Personal Intelligence w wyszukiwarce albo w Gemini, dane mogą wpływać na reklamy. Google zapewnia, że reklamodawcy nie dostają samych treści, a tematy wrażliwe, jak zdrowie czy religia, są wyłączone. Funkcja na razie nie działa w Unii Europejskiej.",
+      "why": "Asystenci AI potrzebują dostępu do prywatnych danych, a to rodzi pytanie, kto jeszcze na nich zarabia. Ustawienia warto sprawdzić, zanim funkcja trafi do Polski.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html"
+        },
+        {
+          "name": "Dexerto",
+          "url": "https://www.dexerto.com/entertainment/google-quietly-changes-privacy-policy-so-your-gmail-and-photos-could-be-used-in-targeted-ads-3421462/"
+        }
+      ]
+    },
+    {
+      "id": "ai-2",
+      "section": "ai",
+      "rank": 2,
+      "title": "USA i Chiny budują bloki AI. Kraje muszą wybierać",
+      "summary": "Agencja AP opisuje, jak wokół sztucznej inteligencji powstają dwa obozy. Chiny w lipcu założyły w Szanghaju Światową Organizację Współpracy w dziedzinie AI (WAICO), do której przystąpiło już ok. 37–38 państw. Stany Zjednoczone tworzą grupę Pax Silica, skupioną na łańcuchach dostaw chipów i technologii. Departament Stanu ostrzega, że kraje mocno zaangażowane w konkurencyjne inicjatywy nie mogą być zaufanymi partnerami Pax Silica. Niektóre państwa, jak Kazachstan, należą do obu grup.",
+      "why": "Od tego, do którego bloku należy kraj, może zależeć dostęp do najnowszych chipów i modeli AI, także dla europejskich firm.",
+      "sources": [
+        {
+          "name": "AP (WNCT)",
+          "url": "https://www.wnct.com/news/business/ap-business/ap-as-the-us-and-china-form-ai-blocs-countries-are-increasingly-torn-between-them/amp/"
+        },
+        {
+          "name": "The Next Web",
+          "url": "https://thenextweb.com/news/china-digital-sovereignty-waico-38-members-pax-silica"
+        }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Ruszają Powiatowe Centra Zdrowia tam, gdzie nie ma SOR",
+      "summary": "Od niedzieli obowiązuje rozporządzenie ministra zdrowia o Powiatowych Centrach Zdrowia. Mają działać w powiatach, w których nie ma szpitalnego oddziału ratunkowego ani izby przyjęć, a do najbliższego jest ponad 30 km. Pacjent bez skierowania i przez całą dobę dostanie tam pilną konsultację, podstawowe badania, np. RTG i USG, czy zszycie rany. Na liście jest 35 powiatów, w których mieszka ok. 500 tys. osób. Wejście przepisów w życie nie oznacza, że wszystkie centra otworzą się od razu.",
+      "why": "Dla mieszkańców małych powiatów to szansa na pomoc bliżej domu, bez wielogodzinnej wyprawy na SOR do innego miasta.",
+      "sources": [
+        {
+          "name": "Rynek Zdrowia",
+          "url": "https://www.rynekzdrowia.pl/Prawo/Dzis-wchodza-przepisy-PCZ-tam-gdzie-nie-ma-SOR-ow-i-izb-przyjec-Na-liscie-35-lokalizacji,290231,2.html"
+        },
+        {
+          "name": "Gazeta Prawna",
+          "url": "https://www.gazetaprawna.pl/biznes/zdrowie/artykuly/11335741,powiatowe-centra-zdrowia-maja-zapewnic-pomoc-blizej-domu-od-25-pazdziernika.html"
+        }
+      ]
+    },
+    {
+      "id": "muzyka-1",
+      "section": "muzyka",
+      "rank": 1,
+      "title": "Właściciele praw do piosenek Elvisa pozywają Anthropic",
+      "summary": "Spółki, do których należą prawa do twórczości Elvisa Presleya, w tym firma z grupy Authentic Brands, złożyły w piątek pozew przeciw Anthropic, twórcy asystenta Claude. Zarzucają firmie, że bez zgody użyła 274 piosenek Presleya do trenowania modeli AI. Domagają się po 150 tys. dolarów za utwór, czyli łącznie ok. 41 mln dolarów. To na razie zarzuty, które rozstrzygnie sąd. Anthropic już wcześniej był pozwany przez wydawców muzycznych w sprawie tekstów piosenek.",
+      "why": "To jeden z pierwszych dużych pozwów, w których spadkobiercy konkretnego artysty idą do sądu z firmą AI. Wyrok może wpłynąć na to, jak AI uczy się na muzyce.",
+      "sources": [
+        {
+          "name": "Billboard",
+          "url": "https://www.billboard.com/pro/elvis-presley-estate-sues-suno-anthropic/"
+        },
+        {
+          "name": "The Hollywood Reporter",
+          "url": "https://www.hollywoodreporter.com/music/music-industry-news/anthropic-elvis-presley-lawsuit-ai-1236739617/"
+        }
+      ]
+    },
+    {
+      "id": "muzyka-2",
+      "section": "muzyka",
+      "rank": 2,
+      "title": "Jay-Z zakończył trasę z okazji 30 lat „Reasonable Doubt”",
+      "summary": "Jay-Z zagrał w sobotę ostatni koncert cyklu „Jay-Z 30” na stadionie SoFi pod Los Angeles. Na scenę zaprosił m.in. Snoop Dogga i Dr. Dre, z którymi wykonał składankę ich przebojów. Seria koncertów świętowała 30. rocznicę debiutanckiej płyty „Reasonable Doubt” z 1996 r. Wcześniej raper wystąpił m.in. na Yankee Stadium w Nowym Jorku, w Londynie i w Paryżu, a gośćmi były gwiazdy, takie jak Beyoncé, Rihanna i Eminem.",
+      "why": "„Reasonable Doubt” uchodzi za jeden z najważniejszych albumów w historii hip-hopu.",
+      "sources": [
+        {
+          "name": "Rolling Stone",
+          "url": "https://www.rollingstone.com/music/music-news/jay-z-snoop-dogg-dr-dre-medley-los-angeles-show-1235647696/"
+        },
+        {
+          "name": "Rolling Stone: zapowiedź koncertów",
+          "url": "https://www.rollingstone.com/music/music-news/jay-z-concerts-paris-los-angeles-2026-1235574628/"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Sowa obraca głowę nawet o 270 stopni",
+      "body": "Oczy sowy są wydłużone jak rurki i prawie nieruchome w oczodołach, więc sowa nie może rozglądać się samymi oczami. W zamian obraca głową, nawet o ok. 270 stopni. Pomaga jej w tym szyja z 14 kręgami, dwa razy więcej niż u człowieka. Badacze z Uniwersytetu Johnsa Hopkinsa opisali też specjalne naczynia krwionośne, dzięki którym przy takim skręcie mózg wciąż dostaje krew.",
+      "source": {
+        "name": "ScienceDaily",
+        "url": "https://www.sciencedaily.com/releases/2013/01/130131144102.htm"
+      }
+    },
+    {
+      "id": "fact-2",
+      "kind": "kosmos",
+      "title": "Na Marsie zachód Słońca jest niebieski",
+      "body": "Na Ziemi zachody są czerwone, a na Marsie wokół zachodzącego Słońca robi się niebieska poświata. Drobny pył w marsjańskiej atmosferze lepiej przepuszcza światło niebieskie, a to zostaje blisko kierunku, z którego świeci Słońce. Reszta nieba ma kolor żółto-pomarańczowy. Łazik Curiosity sfotografował taki zachód w kolorze 15 kwietnia 2015 r. w kraterze Gale.",
+      "source": {
+        "name": "NASA",
+        "url": "https://svs.gsfc.nasa.gov/11875"
+      }
+    },
+    {
+      "id": "fact-3",
+      "kind": "historia",
+      "title": "Mit: Napoleon był niski",
+      "body": "Napoleon mierzył ok. 169 cm, czyli tyle co przeciętny Francuz jego czasów albo trochę więcej. Mit wziął się m.in. z jednostek: w dokumentach zapisano „5 stóp i 2 cale” w miarach francuskich, a francuski cal był dłuższy od angielskiego. Anglikom wychodził więc ktoś znacznie niższy. Dołożyły się brytyjskie karykatury, które celowo rysowały go jako małego, i przydomek „mały kapral”, nadany z sympatii przez żołnierzy.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Napoleon_complex"
+      }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1939,
+      "title": "Powstaje Generalne Gubernatorstwo",
+      "body": "26 października 1939 r. weszło w życie zarządzenie Hitlera o utworzeniu Generalnego Gubernatorstwa z części okupowanych ziem polskich, których nie wcielono bezpośrednio do Rzeszy. Na jego czele stanął Hans Frank, a stolicą został Kraków, gdzie okupanci urzędowali na Wawelu. Niemcy traktowali GG jako zaplecze taniej siły roboczej, a jego mieszkańców poddali terrorowi.",
+      "source": {
+        "name": "Wikipedia",
+        "url": "https://pl.wikipedia.org/wiki/Generalne_Gubernatorstwo"
+      }
+    },
+    {
+      "id": "otd-2",
+      "year": 1863,
+      "title": "Rodzi się nowoczesna piłka nożna",
+      "body": "26 października 1863 r. w londyńskiej tawernie Freemasons’ Tavern przedstawiciele klubów założyli The Football Association, najstarszy związek piłkarski na świecie. W grudniu tego roku ogłosili wspólne przepisy gry. Zakazano m.in. biegania z piłką w rękach, co ostatecznie oddzieliło futbol od rugby.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/The_Football_Association"
+      }
+    },
+    {
+      "id": "otd-3",
+      "year": 1955,
+      "title": "Austria ogłasza wieczystą neutralność",
+      "body": "26 października 1955 r. austriacki parlament uchwalił ustawę konstytucyjną o wieczystej neutralności. Kilka miesięcy wcześniej układ państwowy zakończył okupację kraju przez ZSRR, USA, Wielką Brytanię i Francję, a ostatni obcy żołnierze wyjechali tuż przed głosowaniem. Od 1965 r. 26 października to w Austrii święto narodowe.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Declaration_of_Neutrality"
+      }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Heurystyka dostępności",
+    "definition": "Oceniamy, jak częste lub prawdopodobne jest zdarzenie, po tym, jak łatwo przychodzą nam do głowy jego przykłady.",
+    "origin": "Opisali ją w 1973 r. psychologowie Amos Tversky i Daniel Kahneman. W jednym z eksperymentów pytali, czy w angielskim więcej jest słów zaczynających się na literę K, czy takich, gdzie K jest trzecią literą. Większość wybierała pierwsze, bo łatwiej je sobie przypomnieć, choć tych drugich jest więcej.",
+    "examples": [
+      "Po głośnej katastrofie lotniczej ludzie częściej boją się latać, choć statystycznie dużo groźniejsza jest jazda samochodem.",
+      "Doniesienia o eboli w Afryce mogą sprawić, że wydaje się ona groźna także w Polsce, choć ryzyko jest tu znikome.",
+      "Kto zna kogoś, kto wygrał w lotto, łatwiej przecenia swoje szanse na wygraną."
+    ],
+    "source": {
+      "name": "Wikipedia (ang.)",
+      "url": "https://en.wikipedia.org/wiki/Availability_heuristic"
+    }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "sapiens",
+    "title": "Sapiens. Od zwierząt do bogów",
+    "author": "Yuval Noah Harari",
+    "day": 2,
+    "days": 7,
+    "ideaTitle": "Rewolucja rolnicza: największe oszustwo w historii?",
+    "idea": "Ok. 10–12 tys. lat temu ludzie zaczęli uprawiać zboża i hodować zwierzęta. Harari nazywa to prowokacyjnie największym oszustwem w historii. Jedzenia przybyło, więc ludzi mogło być dużo więcej, ale pojedynczy rolnik pracował ciężej niż łowca-zbieracz, jadł mniej urozmaicone posiłki i częściej chorował. Według Harariego to pszenica „udomowiła” człowieka, a nie odwrotnie. Do tego dochodzi pułapka luksusu: każde ułatwienie szybko staje się koniecznością, z której trudno zrezygnować. Uwaga: część historyków uważa ten obraz za przesadzony, bo rolnictwo dało też miasta, pismo i naukę.",
+    "moral": "Postęp dla całego gatunku nie zawsze znaczy lepsze życie dla pojedynczego człowieka. Warto pytać, czy coś naprawdę ułatwia nam życie, czy tylko dokłada obowiązków.",
+    "action": "Wybierz jedną rzecz, która miała Ci ułatwić życie (aplikację, sprzęt, subskrypcję), i zastanów się przez dwie minuty, czy dziś bardziej pomaga, czy wiąże.",
+    "source": {
+      "name": "Wikipedia (ang.)",
+      "url": "https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind"
+    }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-26-q1",
+      "ref": "fact-1",
+      "question": "Dlaczego sowa obraca głową zamiast rozglądać się oczami?",
+      "options": [
+        "Bo widzi tylko w ruchu",
+        "Bo jej oczy są prawie nieruchome w oczodołach",
+        "Bo ma jedno oko silniejsze",
+        "Bo słyszy tylko jednym uchem"
+      ],
+      "answer": 1,
+      "explanation": "Oczy sowy są wydłużone jak rurki i niemal nieruchome, więc rozgląda się, obracając głowę nawet o ok. 270 stopni."
+    },
+    {
+      "id": "2026-10-26-q2",
+      "ref": "fact-2",
+      "question": "Jakiego koloru jest poświata wokół zachodzącego Słońca na Marsie?",
+      "options": [
+        "Czerwonego",
+        "Zielonego",
+        "Fioletowego",
+        "Niebieskiego"
+      ],
+      "answer": 3,
+      "explanation": "Drobny pył w atmosferze Marsa lepiej przepuszcza światło niebieskie, które zostaje blisko kierunku Słońca."
+    },
+    {
+      "id": "2026-10-26-q3",
+      "ref": "fact-3",
+      "question": "Skąd wziął się mit o niskim Napoleonie?",
+      "options": [
+        "Z różnicy między francuskimi i angielskimi calami",
+        "Z jego portretów na koniu",
+        "Z pomiarów po ekshumacji",
+        "Z jego wspomnień"
+      ],
+      "answer": 0,
+      "explanation": "Francuski cal był dłuższy od angielskiego, więc zapisany wzrost brzmiał w Anglii na niższy. Dołożyły się karykatury."
+    },
+    {
+      "id": "2026-10-26-q4",
+      "ref": "otd-1",
+      "question": "Które miasto było stolicą Generalnego Gubernatorstwa?",
+      "options": [
+        "Warszawa",
+        "Lublin",
+        "Kraków",
+        "Radom"
+      ],
+      "answer": 2,
+      "explanation": "Hans Frank urzędował na Wawelu, a Kraków był stolicą GG od 1939 r."
+    },
+    {
+      "id": "2026-10-26-q5",
+      "ref": "otd-2",
+      "question": "Co oddzieliło futbol od rugby w przepisach The Football Association z 1863 r.?",
+      "options": [
+        "Zakaz bramkarza",
+        "Zakaz biegania z piłką w rękach",
+        "Wprowadzenie spalonego",
+        "Okrągła piłka"
+      ],
+      "answer": 1,
+      "explanation": "Wspólne przepisy FA zakazały m.in. noszenia piłki w rękach, co ostatecznie rozdzieliło obie gry."
+    },
+    {
+      "id": "2026-10-26-q6",
+      "ref": "concept",
+      "question": "Ktoś po obejrzeniu reportażu o rekinach boi się wejść do Bałtyku. Która to pułapka myślenia?",
+      "options": [
+        "Efekt potwierdzenia",
+        "Błąd przeżywalności",
+        "Prawo Goodharta",
+        "Heurystyka dostępności"
+      ],
+      "answer": 3,
+      "explanation": "Żywe przykłady łatwo przychodzą do głowy, więc przeceniamy ryzyko, choć w Bałtyku rekiny nie zagrażają ludziom."
+    },
+    {
+      "id": "2026-10-26-q7",
+      "ref": "book",
+      "question": "Co Harari nazywa pułapką luksusu?",
+      "options": [
+        "Ułatwienia, które szybko stają się koniecznością",
+        "Zbyt drogie jedzenie",
+        "Pracę tylko dla bogatych",
+        "Brak czasu wolnego u królów"
+      ],
+      "answer": 0,
+      "explanation": "Według Harariego każde ułatwienie szybko staje się czymś, bez czego już nie umiemy żyć."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-10-26-r1",
+      "question": "Jak długo, według szacunków, energia z jądra Słońca wędruje na jego powierzchnię?",
+      "options": [
+        "Kilka sekund",
+        "Ok. 8 minut",
+        "Nawet dziesiątki tysięcy lat"
+      ],
+      "answer": 2,
+      "explanation": "Fotony są ciągle pochłaniane i wysyłane od nowa, więc droga z jądra trwa bardzo długo. 8 minut to dopiero lot do Ziemi."
+    },
+    {
+      "id": "2026-10-26-r2",
+      "question": "Co było nowego po wyborach do Sejmu 25 października 2015 r.?",
+      "options": [
+        "Jedna partia pierwszy raz od 1989 r. mogła rządzić sama",
+        "Pierwszy raz głosowano przez internet",
+        "Do Sejmu weszło 10 partii"
+      ],
+      "answer": 0,
+      "explanation": "PiS zdobyło 235 mandatów, czyli samodzielną większość. W Sejmie zabrakło też lewicy."
+    },
+    {
+      "id": "2026-10-26-r3",
+      "question": "Do ilu osób, według Harariego, wystarczą same plotki, żeby grupa trzymała się razem?",
+      "options": [
+        "Ok. 15",
+        "Ok. 150",
+        "Ok. 15 000"
+      ],
+      "answer": 1,
+      "explanation": "Tylu ludzi możemy znać osobiście. Większe grupy łączą wspólne opowieści."
+    }
+  ],
+  "evening": {
+    "question": "Jakie ułatwienie, które miało Wam oszczędzić czas albo pracę, z czasem zaczęło Was bardziej wiązać niż cieszyć?",
+    "hint": "Np. telefon, przez który jesteście zawsze pod ręką, większe mieszkanie do sprzątania albo subskrypcje. Czy z czegoś dałoby się trochę zrezygnować?"
+  }
+}

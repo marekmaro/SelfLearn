@@ -171,20 +171,6 @@ export async function renderToday(root, { date: requested, focus = null, onChang
           'div',
           { class: 'meta-row' },
           h('span', { class: 'pill', title: 'Szacowany czas czytania' }, icon('clock'), `${minutes} min`),
-          speechSupported()
-            ? h(
-                'button',
-                {
-                  type: 'button',
-                  class: 'pill pill-link nurt',
-                  'aria-label': 'Posłuchaj wydania',
-                  title: 'Posłuchaj wydania: telefon przeczyta je na głos',
-                  onclick: () => (isListening() ? stopListening() : listen()),
-                },
-                icon('headphones'),
-                'Posłuchaj',
-              )
-            : null,
           h(
             'button',
             {
@@ -201,6 +187,8 @@ export async function renderToday(root, { date: requested, focus = null, onChang
       ),
       dayNav(),
       h('h1', { class: 'date' }, formatLong(date)),
+      startCard(),
+      !isArchive ? guideCard() : null,
       isArchive
         ? h(
             'div',
@@ -227,6 +215,92 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         h('span', { style: `width:${chapters.length ? (doneCount / chapters.length) * 100 : 0}%` }),
       ),
     );
+  }
+
+  // Jeden wyraźny początek: „Zacznij czytać” albo „Czytaj dalej”, obok słuchanie (z wznowieniem w tym samym miejscu).
+  function startCard() {
+    const p = editionProgress(date);
+    if (p.completedOn) {
+      const due = dueCards(getState().deck, todayISO()).length;
+      return h(
+        'div',
+        { class: 'start-card is-done' },
+        h('p', { class: 'start-title' }, icon('check'), 'Wydanie przeczytane'),
+        due
+          ? h('a', { class: 'btn secondary', href: '#powtorki' }, `Powtórki (${due})`, icon('arrow'))
+          : h('p', { class: 'small muted', style: 'margin:0' }, isArchive ? 'Możesz wrócić do dowolnego rozdziału poniżej.' : 'Nowe wydanie jutro rano.'),
+      );
+    }
+    const cur = chapters.find((c) => c.id === currentChapterId());
+    const left = chapters.filter((c) => !p.done.includes(c.id));
+    const started = left.length < chapters.length || Boolean(p.chapter);
+    const minutes = estimateMinutes(left, edition, expanded);
+    const resumeAt = listenResumeItem();
+    return h(
+      'div',
+      { class: 'start-card' },
+      h(
+        'button',
+        { type: 'button', class: 'btn block', onclick: () => document.getElementById('rozdzial')?.scrollIntoView({ block: 'start', behavior: smoothScroll() }) },
+        started && cur ? `Czytaj dalej: ${cur.label}` : 'Zacznij czytać',
+        icon('arrow'),
+      ),
+      h(
+        'p',
+        { class: 'small muted start-meta' },
+        started && cur
+          ? `Rozdział ${chapters.indexOf(cur) + 1} z ${chapters.length}, do końca ok. ${minutes} min`
+          : `${chapters.length} ${plural(chapters.length, 'rozdział', 'rozdziały', 'rozdziałów')}, ok. ${minutes} min`,
+      ),
+      speechSupported()
+        ? h(
+            'button',
+            {
+              type: 'button',
+              class: 'btn secondary block',
+              title: 'Telefon przeczyta wydanie na głos',
+              onclick: () => (isListening() ? stopListening() : listenEdition()),
+            },
+            icon('headphones'),
+            resumeAt ? 'Wznów słuchanie' : 'Posłuchaj wydania',
+          )
+        : null,
+      speechSupported() && resumeAt ? h('p', { class: 'small muted start-meta' }, `Od miejsca, w którym skończyło się czytanie: ${resumeAt.label}`) : null,
+    );
+  }
+
+  // Krótka instrukcja dla nowych osób: znika po „Rozumiem” albo po pierwszym ukończonym wydaniu.
+  function guideCard() {
+    if (getState().settings?.guideDone || completedCount() > 0) return null;
+    const card = h(
+      'div',
+      { class: 'guide-card' },
+      h('p', { class: 'eyebrow' }, 'Jak korzystać'),
+      h(
+        'ul',
+        { class: 'guide-list' },
+        h('li', null, icon('arrow'), h('span', null, 'Czytasz rozdziałami. Na końcu każdego naciśnij „Dalej”.')),
+        h('li', null, icon('heart'), h('span', null, '„Zapisz” przy karcie dodaje ją do Ulubionych.')),
+        h('li', null, icon('spark'), h('span', null, '„Dopytaj” otwiera czat AI z gotowym pytaniem o szczegóły.')),
+        h('li', null, icon('check'), h('span', null, 'Odpowiedzi z quizu wracają w Powtórkach. Liczba na dolnym pasku mówi, ile czeka.')),
+      ),
+      h(
+        'button',
+        {
+          type: 'button',
+          class: 'btn secondary',
+          onclick: () => {
+            update((st) => {
+              st.settings ||= {};
+              st.settings.guideDone = true;
+            });
+            card.remove();
+          },
+        },
+        'Rozumiem',
+      ),
+    );
+    return card;
   }
 
   // Strzałki „poprzedni / następny dzień” i wejście na oś czasu.
@@ -385,17 +459,18 @@ export async function renderToday(root, { date: requested, focus = null, onChang
 
   // Przyciski pod kartą: „Pogłęb” (pytanie do czatu AI) i serce (Ulubione).
   function cardActions(id, entry, extra = '') {
-    return h('span', { class: 'card-actions' }, deepenButton(date, extra ? { ...entry, text: `${entry.text}\n${extra}` } : entry), saveButton(id, entry));
+    return h('span', { class: 'card-actions' }, deepenButton(date, extra ? { ...entry, text: `${entry.text}\n${extra}` } : entry, { labelled: true }), saveButton(id, entry));
   }
 
   function saveButton(id, entry) {
     const pressed = isSaved(date, id);
-    const label = (on) => (on ? 'Usuń z ulubionych' : 'Dodaj do ulubionych');
+    const label = (on) => (on ? 'Zapisane. Usuń z ulubionych' : 'Zapisz w ulubionych');
+    const text = (on) => (on ? 'Zapisane' : 'Zapisz');
     return h(
       'button',
       {
         type: 'button',
-        class: 'icon-btn fav-btn',
+        class: 'act-btn fav-btn',
         'aria-pressed': pressed ? 'true' : 'false',
         'aria-label': label(pressed),
         title: label(pressed),
@@ -405,6 +480,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
           btn.setAttribute('aria-pressed', now ? 'true' : 'false');
           btn.setAttribute('aria-label', label(now));
           btn.setAttribute('title', label(now));
+          btn.querySelector('.act-label').textContent = text(now);
           if (now) {
             btn.classList.remove('pop');
             void btn.offsetWidth;
@@ -414,6 +490,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         },
       },
       icon('heart'),
+      h('span', { class: 'act-label' }, text(pressed)),
     );
   }
 
@@ -784,6 +861,28 @@ export async function renderToday(root, { date: requested, focus = null, onChang
       icon('headphones'),
       group ? null : 'Posłuchaj',
     );
+  }
+
+  // Fragment, od którego wznowi się słuchanie całego wydania (jeśli wcześniej przerwane).
+  function listenResumeItem() {
+    const saved = editionProgress(date).listenAt;
+    return saved ? listenItems().find((it) => it.id === saved.id) || null : null;
+  }
+
+  // Całe wydanie: miejsce (zdanie) zapisuje się na bieżąco, więc po zamknięciu aplikacji słuchanie wraca w to samo miejsce.
+  function listenEdition({ fromStart = false } = {}) {
+    const items = listenItems();
+    const resumeAt = fromStart ? null : listenResumeItem();
+    listen(items, {
+      startAt: resumeAt ? editionProgress(date).listenAt : null,
+      onPosition: (at) => updateEdition(date, (p) => {
+        p.listenAt = at;
+      }),
+      onEnd: () => updateEdition(date, (p) => {
+        delete p.listenAt;
+      }),
+    });
+    if (resumeAt) toast(`Wznawiam od: ${resumeAt.label}`, { action: { label: 'Od początku', onClick: () => listenEdition({ fromStart: true }) } });
   }
 
   function listen(items = listenItems(), options = {}) {

@@ -17,6 +17,7 @@ import { threadSlug, editionThreads, threadsFromIndex, recentThreadNames } from 
 import { indexEntry, repeatedMaterial } from '../src/edition.js';
 import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
 import { safePath } from './serve.mjs';
+import { splitText, startIndex } from '../src/listen.js';
 import { verdictText, calibration } from '../src/confidence.js';
 import { datesToPrefetch, formatBytes } from '../src/offline.js';
 import { ankiTSV, favoritesMarkdown } from '../src/exporters.js';
@@ -484,6 +485,17 @@ test('Bez powtórek: ciekawostki z całej historii w poleceniu, walidator i limi
   const rep = repeatedMaterial(now, [entry]);
   assert(rep.length === 1 && rep[0].kind === 'fact' && rep[0].date === '2026-10-19', 'powtórzona ciekawostka niewykryta');
   assert(!repeatedMaterial({ ...now, date: '2026-10-18' }, [entry]).length, 'późniejsze wydanie liczone jako wcześniejsze');
+});
+
+test('Słuchanie: zdania, wznowienie w zapamiętanym miejscu', () => {
+  const chunks = splitText('Pierwsze zdanie. Drugie zdanie! „Trzecie” zdanie?');
+  assert(chunks.length === 3 && chunks[2].startsWith('„Trzecie”'), JSON.stringify(chunks));
+  const items = [{ id: 'intro', text: 'A. B.' }, { id: 'pl-1', text: 'C. D. E.' }, { id: 'pl-2', text: 'F.' }];
+  const queue = items.flatMap((item, itemIndex) => splitText(item.text).map((text) => ({ itemIndex, text })));
+  assert(startIndex(queue, items, null) === 0, 'bez zapisu od początku');
+  assert(startIndex(queue, items, { id: 'pl-1', chunk: 2 }) === 4, 'trzecie zdanie drugiego fragmentu');
+  assert(startIndex(queue, items, { id: 'pl-1', chunk: 9 }) === 2, 'zbyt daleko: początek fragmentu');
+  assert(startIndex(queue, items, { id: 'znikl' }) === 0, 'nieznany fragment: od początku');
 });
 
 test('Tryb offline: service worker zna wszystkie pliki aplikacji', () => {

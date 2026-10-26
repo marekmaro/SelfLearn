@@ -261,7 +261,7 @@ button.pill-link { border: 0; cursor: pointer; font-family: inherit; }
 .week-days .dot svg { width: 14px; height: 14px; }
 
 /* Wątki */
-.thread-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 4px; font-size: var(--step--1); font-weight: 700; color: var(--nurt); text-decoration: none; }
+.thread-link { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; margin-top: 0; font-size: var(--step--1); font-weight: 700; color: var(--nurt); text-decoration: none; }
 .thread-link .icon svg { width: 14px; height: 14px; }
 .thread-link .muted { font-weight: 500; }
 .thread-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
@@ -320,6 +320,25 @@ button.pill-link { border: 0; cursor: pointer; font-family: inherit; }
 .streak-week li.on .dot { background: var(--koi); border-color: var(--koi); color: var(--surface); }
 .streak-week .dot .icon svg { width: 14px; height: 14px; stroke-width: 3; }
 .streak-status { grid-column: 2; grid-row: 1; margin: 0; font-size: var(--step--1); color: var(--muted); min-width: 0; }
+.streak.streak-compact { display: flex; gap: 10px; align-items: center; margin: 0; padding: 10px 14px; font-size: var(--step--1); color: var(--muted); }
+.streak-compact strong { color: var(--ink); }
+.streak-compact .streak-flame .icon svg { width: 22px; height: 22px; }
+
+/* Karta startu i przewodnik dla nowych osób */
+.start-card { display: grid; gap: 8px; background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px; }
+.start-card .btn { margin: 0; }
+.start-meta { margin: -2px 0 2px; text-align: center; }
+.start-card.is-done { grid-template-columns: 1fr auto; align-items: center; }
+.start-card.is-done .btn { width: auto; }
+.start-title { display: flex; align-items: center; gap: 8px; margin: 0; font-weight: 700; color: var(--nurt); }
+.start-card.is-done .small { grid-column: 1 / -1; }
+.guide-card { display: grid; gap: 10px; background: var(--nurt-soft); border-radius: var(--radius); padding: 14px 16px; }
+.guide-card .eyebrow { margin: 0; }
+.guide-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.guide-list li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: start; font-size: var(--step-0); }
+.guide-list .icon { color: var(--nurt); padding-top: 2px; }
+.guide-list .icon svg { width: 18px; height: 18px; }
+.guide-card .btn { justify-self: start; min-height: 40px; padding-block: 8px; }
 
 /* ---------- Pasek rozdziałów ---------- */
 
@@ -628,6 +647,7 @@ textarea {
 .btn.ghost { background: transparent; color: var(--nurt); }
 .btn.danger { background: var(--bad); color: var(--surface); }
 .btn.block { width: 100%; }
+.inline-actions > .btn { max-width: 100%; text-align: center; }
 .btn .icon svg { width: 18px; height: 18px; }
 
 .next-wrap { padding-block: 8px 4px; display: grid; gap: 8px; }
@@ -657,7 +677,8 @@ textarea {
 .onb-hero { display: grid; gap: 16px; }
 .onb-hero .koi-mark { width: 88px; height: 88px; }
 
-.field { display: grid; gap: 6px; }
+.field { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; }
+input[type="file"] { max-width: 100%; }
 .field label, .field .label { font-weight: 600; }
 .input {
   width: 100%;
@@ -900,7 +921,27 @@ dialog.sheet[open] { animation: sheet-up 0.22s ease-out; }
 .sheet-head h2 { font-size: var(--step-1); }
 .deepen { display: grid; gap: 14px; padding-bottom: 8px; }
 .deepen > .btn { justify-self: start; }
-.card-actions { display: inline-flex; align-items: center; gap: 2px; margin-left: auto; }
+.card-actions { display: inline-flex; align-items: center; gap: 4px; margin-left: auto; }
+/* Przyciski z ikoną i podpisem pod kartą („Dopytaj”, „Zapisz”) */
+.act-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 40px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: var(--step--1);
+  font-weight: 600;
+  cursor: pointer;
+}
+.act-btn:hover { background: var(--surface-2); }
+.act-btn[aria-pressed="true"] { color: var(--koi); }
+.act-btn[aria-pressed="true"] svg { fill: currentColor; }
+.act-btn .icon svg { width: 18px; height: 18px; }
 
 /* Przypomnienia */
 .time-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }

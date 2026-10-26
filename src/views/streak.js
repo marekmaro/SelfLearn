@@ -10,6 +10,15 @@ export function streakWidget(s) {
   const today = todayISO();
   const week = weekActivity(today);
   const activeToday = isActive(today);
+  // Na start (pusty tydzień) wystarczy jedna linijka zamiast siedmiu pustych kółek.
+  if (s === 0 && !week.some((d) => d.active)) {
+    return h(
+      'p',
+      { class: 'streak streak-compact' },
+      h('span', { class: 'streak-flame', 'aria-hidden': 'true' }, icon('flame')),
+      h('span', null, h('strong', null, 'Seria dni: '), 'zacznij ją dziś. Wystarczy rozgrzewka albo całe wydanie.'),
+    );
+  }
   let status;
   if (s === 0) status = 'Zacznij serię: zrób rozgrzewkę albo przeczytaj wydanie do końca.';
   else if (activeToday) status = 'Dzisiejszy dzień zaliczony. Wróć jutro, żeby seria rosła.';

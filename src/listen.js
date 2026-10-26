@@ -66,10 +66,23 @@ export function stopListening() {
   current?.stop();
 }
 
+// Miejsce w kolejce: pierwsze zdanie fragmentu startAt.id (+ startAt.chunk zdań dalej, jeśli jest).
+export function startIndex(queue, items, startAt) {
+  if (!startAt?.id) return 0;
+  const itemIndex = items.findIndex((it) => it.id === startAt.id);
+  const first = queue.findIndex((c) => c.itemIndex === itemIndex);
+  if (itemIndex < 0 || first < 0) return 0;
+  const chunk = Math.max(0, Number(startAt.chunk) || 0);
+  const next = first + chunk;
+  return next < queue.length && queue[next].itemIndex === itemIndex ? next : first;
+}
+
 // items: [{ id, chapter, label, text }]; onItem(item) – wywoływane, gdy lektor zaczyna nowy fragment,
 // onItemEnd(item) – gdy fragment został przeczytany do końca (bez przeskakiwania).
+// onPosition({ id, chunk }) – przy każdym zdaniu, żeby po zamknięciu aplikacji wrócić w to samo miejsce;
+// startAt – miejsce zapisane wcześniej przez onPosition.
 // title – podpis odtwarzacza, endText – komunikat po przeczytaniu wszystkiego.
-export async function startListening(items, { onItem, onItemEnd, onEnd, title = 'Posłuchaj', endText = 'To wszystko na dziś. Quiz czeka w wydaniu.' } = {}) {
+export async function startListening(items, { onItem, onItemEnd, onEnd, onPosition, startAt = null, title = 'Posłuchaj', endText = 'To wszystko na dziś. Quiz czeka w wydaniu.' } = {}) {
   if (!speechSupported()) {
     toast('Ta przeglądarka nie umie czytać na głos.');
     return;
@@ -85,7 +98,7 @@ export async function startListening(items, { onItem, onItemEnd, onEnd, title = 
   const queue = items.flatMap((item, itemIndex) => splitText(item.text).map((text) => ({ itemIndex, text })));
   if (!queue.length) return;
 
-  let pos = 0;
+  let pos = startIndex(queue, items, startAt);
   let playing = false;
   let token = 0;
   let rate = savedRate();
@@ -116,6 +129,7 @@ export async function startListening(items, { onItem, onItemEnd, onEnd, title = 
       lastItem = chunk.itemIndex;
       onItem?.(items[chunk.itemIndex]);
     }
+    onPosition?.({ id: items[chunk.itemIndex].id, chunk: pos - queue.findIndex((c) => c.itemIndex === chunk.itemIndex) });
     const u = new SpeechSynthesisUtterance(chunk.text);
     u.lang = 'pl-PL';
     if (voice) u.voice = voice;
@@ -181,6 +195,7 @@ export async function startListening(items, { onItem, onItemEnd, onEnd, title = 
     token += 1;
     speechSynthesis.cancel();
     keepAwake(false);
+    document.removeEventListener('visibilitychange', onVisible);
     bar.remove();
     document.body.classList.remove('has-player');
     document.querySelector('.is-speaking')?.classList.remove('is-speaking');
@@ -224,6 +239,15 @@ export async function startListening(items, { onItem, onItemEnd, onEnd, title = 
       ),
     );
   }
+
+  // Po zablokowaniu ekranu albo przejściu do innej aplikacji telefon zwykle ucisza syntezator.
+  // Po powrocie czytanie rusza od zdania, na którym się urwało (i ponownie blokuje wygaszanie ekranu).
+  function onVisible() {
+    if (document.visibilityState !== 'visible' || !playing) return;
+    if (!speechSynthesis.speaking && !speechSynthesis.pending) speak();
+    keepAwake(true);
+  }
+  document.addEventListener('visibilitychange', onVisible);
 
   const api = { stop };
   current = api;

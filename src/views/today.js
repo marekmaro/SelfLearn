@@ -797,24 +797,23 @@ export async function renderToday(root, { date: requested, focus = null, onChang
   }
 
   // Fragmenty jednego rozdziału (albo jednego działu w „Twoich tematach”), tak jak widać je na ekranie.
+  // Lektor czyta wszystko, także wpisy schowane pod „Pokaż więcej” (reveal: klucz listy, którą trzeba wtedy rozwinąć).
   function chapterItems(ch, onlyGroup = null) {
     const items = [];
-    const add = (id, chapter, label, text) => items.push({ id, chapter, label, text });
+    const add = (id, chapter, label, text, reveal = null) => items.push({ id, chapter, label, text, reveal });
     if (ch.groups) {
       for (const g of ch.groups) {
         if (onlyGroup && g !== onlyGroup) continue;
-        const n = expanded.has(`news:${g.section}`) ? g.items.length : g.limit;
-        g.items.slice(0, n).forEach((it, i) => {
+        g.items.forEach((it, i) => {
           const lead = i === 0 ? `${sectionLabel(g.section)}. ` : '';
-          add(it.id, ch.id, it.title, `${lead}${it.title}. ${it.summary} ${it.why ? `Dlaczego to ważne: ${it.why}` : ''}`);
+          add(it.id, ch.id, it.title, `${lead}${it.title}. ${it.summary} ${it.why ? `Dlaczego to ważne: ${it.why}` : ''}`, i >= g.limit ? `news:${g.section}` : null);
         });
       }
     } else if (ch.type === 'facts' || ch.type === 'otd') {
-      const n = expanded.has(ch.id) ? ch.items.length : ch.limit;
-      ch.items.slice(0, n).forEach((it, i) => {
+      ch.items.forEach((it, i) => {
         const lead = i === 0 ? `${ch.label}. ` : '';
         const head = ch.type === 'otd' ? `Rok ${it.year}. ${it.title}.` : `${kindLabel(it.kind)}: ${it.title}.`;
-        add(it.id, ch.id, ch.type === 'otd' ? `${it.year}: ${it.title}` : it.title, `${lead}${head} ${it.body}`);
+        add(it.id, ch.id, ch.type === 'otd' ? `${it.year}: ${it.title}` : it.title, `${lead}${head} ${it.body}`, i >= ch.limit ? ch.id : null);
       });
     } else if (ch.type === 'concept') {
       const c = edition.concept;
@@ -894,6 +893,11 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         const shown = document.getElementById('rozdzial');
         if (!shown || shown.dataset.date !== date) return;
         if (item.chapter && shown.dataset.chapter !== item.chapter) goTo(item.chapter, { scroll: false });
+        // Wpis schowany pod „Pokaż więcej”: rozwiń listę, żeby czytana karta była widoczna.
+        if (item.reveal && !expanded.has(item.reveal)) {
+          expanded.add(item.reveal);
+          render();
+        }
         document.querySelector('.is-speaking')?.classList.remove('is-speaking');
         const card = item.id === 'intro' ? root.querySelector('.masthead') : root.querySelector(`[data-item="${item.id}"]`);
         if (!card) return;

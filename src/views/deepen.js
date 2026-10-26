@@ -4,17 +4,19 @@ import { CHATS } from '../prompt.js';
 import { DEEPEN_MODES, deepenPrompt, deepenUrl } from '../deepen.js';
 import { h, icon, toast } from '../ui.js';
 
-export function deepenButton(date, entry) {
+// labelled: przycisk z podpisem „Dopytaj” (na kartach wydania), bez niego sama ikona.
+export function deepenButton(date, entry, { labelled = false } = {}) {
   return h(
     'button',
     {
       type: 'button',
-      class: 'icon-btn deepen-btn',
-      'aria-label': 'Pogłęb: zapytaj czat AI',
-      title: 'Pogłęb',
+      class: labelled ? 'act-btn deepen-btn' : 'icon-btn deepen-btn',
+      'aria-label': 'Dopytaj: zapytaj czat AI o szczegóły',
+      title: 'Dopytaj czat AI',
       onclick: () => openDeepenSheet(date, entry),
     },
     icon('spark'),
+    labelled ? h('span', { class: 'act-label' }, 'Dopytaj') : null,
   );
 }
 

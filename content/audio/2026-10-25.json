@@ -1,0 +1,200 @@
+{
+  "date": "2026-10-25",
+  "file": "2026-10-25.mp3",
+  "url": "audio/2026-10-25.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-25.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "hash": "85482a36e9bf2656",
+  "duration": 1152.68,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Wstęp",
+      "start": 0.3,
+      "end": 22.45
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Pełczyńska-Nałęcz usunięta z Polski 2050",
+      "start": 23.15,
+      "end": 71.35
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Biskupi przeciw zmianom w prawie aborcyjnym. Komisja ds. nadużyć z nowym statutem",
+      "start": 72.05,
+      "end": 126.11
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Przed Wszystkimi Świętymi: linie cmentarne i ceny zniczy",
+      "start": 126.81,
+      "end": 172.86
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Niedziela z deszczem i wichurą w górach",
+      "start": 173.56,
+      "end": 210.53
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Galeria Krakowska wciąż zamknięta po pożarze",
+      "start": 211.23,
+      "end": 252.01
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Brazylia wybiera dziś prezydenta: Lula czy Flávio Bolsonaro",
+      "start": 253.21,
+      "end": 304.02
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Francja: ponad 400 tys. na ulicach, prawie tysiąc zatrzymanych",
+      "start": 304.72,
+      "end": 353.96
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Atak na kościół w Jordanii podczas pogrzebu",
+      "start": 354.66,
+      "end": 400.18
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Pożar strawił Orle Gniazdo w Bawarii",
+      "start": 400.88,
+      "end": 443.27
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Tajfun Champi na Tajwanie: jedna ofiara, setki rannych",
+      "start": 443.97,
+      "end": 490.21
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Ukraińskie drony uderzyły w zakład chemiczny w Togliatti",
+      "start": 491.41,
+      "end": 540.06
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Senatorowie USA grożą blokadą nominacji z powodu Starlinka",
+      "start": 540.76,
+      "end": 588.29
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Od środy kontrole AI w Polsce. Na początek rozpoznawanie emocji w pracy",
+      "start": 588.99,
+      "end": 641.17
+    },
+    {
+      "id": "ai-2",
+      "chapter": "tematy",
+      "label": "Zwolnieni badacze bezpieczeństwa OpenAI przerywają milczenie",
+      "start": 641.87,
+      "end": 687.81
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Krew może zdradzić chorobę zapalną jelit nawet 10 lat wcześniej",
+      "start": 688.51,
+      "end": 735.12
+    },
+    {
+      "id": "muzyka-1",
+      "chapter": "tematy",
+      "label": "Nosowska wydała „NIGREDO” na 30-lecie kariery solowej",
+      "start": 735.82,
+      "end": 781.7
+    },
+    {
+      "id": "muzyka-2",
+      "chapter": "tematy",
+      "label": "John Legend i Pharrell Williams: album „Muse”",
+      "start": 782.4,
+      "end": 821.3
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Mit: złota rybka pamięta tylko 3 sekundy",
+      "start": 822.5,
+      "end": 845.32
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Słońce widzimy takim, jakie było 8 minut temu",
+      "start": 846.02,
+      "end": 872.74
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Prawdziwy uśmiech widać w oczach",
+      "start": 873.44,
+      "end": 904.98
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "2015: PiS zdobywa samodzielną większość w Sejmie",
+      "start": 906.18,
+      "end": 939.47
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1415: Bitwa pod Azincourt",
+      "start": 940.17,
+      "end": 967.28
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1971: ONZ przekazuje miejsce Chin Pekinowi",
+      "start": 967.98,
+      "end": 999.28
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Margines błędu",
+      "start": 1000.48,
+      "end": 1059.98
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Sapiens. Od zwierząt do bogów: Rewolucja poznawcza: siła wspólnych fikcji",
+      "start": 1061.18,
+      "end": 1132.6
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1133.8,
+      "end": 1152.18
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-27",
+  "file": "2026-10-27.mp3",
+  "url": "audio/2026-10-27.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-27.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "hash": "f97994c42847d9f1",
+  "duration": 1085.06,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Wstęp",
+      "start": 0.3,
+      "end": 20.02
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Częstochowa odwołała prezydenta i radę miasta",
+      "start": 20.72,
+      "end": 76.66
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Polska i Wietnam zawarły partnerstwo strategiczne",
+      "start": 77.36,
+      "end": 132.93
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Od niedzieli NFZ sprawdzi godziny pracy lekarzy w szpitalach",
+      "start": 133.63,
+      "end": 189.56
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Wszystkich Świętych w niedzielę. 2 listopada nie będzie dnia wolnego",
+      "start": 190.26,
+      "end": 235.21
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Najbogatsze Polki: Kulczyk znów pierwsza, miliarderek już 15",
+      "start": 235.91,
+      "end": 296.03
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Brazylia: oficjalnie wygrał Lula. Flávio Bolsonaro chce unieważnienia",
+      "start": 297.23,
+      "end": 364.76
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Izrael wybiera dziś Kneset. W sondażach Eisenkot przed Netanjahu",
+      "start": 365.46,
+      "end": 421.81
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Krach na giełdzie w Brazylii po zwycięstwie Luli",
+      "start": 422.51,
+      "end": 471.59
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Anthropic, twórca Claude’a, złożył wniosek o wejście na giełdę",
+      "start": 472.29,
+      "end": 529.37
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Złota Piłka dla Kane’a i Putellas. Ewa Pajor druga",
+      "start": 530.07,
+      "end": 584.29
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Rosja oskarża Ukrainę o ostrzał Ołeszek tuż przed rozejmem",
+      "start": 585.49,
+      "end": 644.61
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Meta sprzeda akcje za 95 mld dolarów, żeby budować AI",
+      "start": 645.31,
+      "end": 702.9
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Mit: szkło to bardzo gęsta ciecz",
+      "start": 704.1,
+      "end": 736.15
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Oksford jest starszy niż państwo Azteków",
+      "start": 736.85,
+      "end": 771.57
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Najsilniejsze wiatry wieją na Neptunie",
+      "start": 772.27,
+      "end": 807.1
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1939: Gestapo aresztuje prezydenta Warszawy",
+      "start": 808.3,
+      "end": 844.7
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1904: W Nowym Jorku rusza metro",
+      "start": 845.4,
+      "end": 875.25
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1962: Czarna sobota kryzysu kubańskiego",
+      "start": 875.95,
+      "end": 907.45
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt Lindy",
+      "start": 908.65,
+      "end": 974.2
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Sapiens. Od zwierząt do bogów: Pieniądz: najskuteczniejszy system wzajemnego zaufania",
+      "start": 975.4,
+      "end": 1064.7
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1065.9,
+      "end": 1084.56
+    }
+  ]
+}

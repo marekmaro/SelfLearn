@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-24",
+  "file": "2026-10-24.mp3",
+  "url": "audio/2026-10-24.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-24.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "hash": "70b22b1180d3baf3",
+  "duration": 1133.98,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Wstęp",
+      "start": 0.3,
+      "end": 20.12
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Tusk o odejściu Pełczyńskiej-Nałęcz: „Myślałem, że chociaż zadzwoni”",
+      "start": 20.82,
+      "end": 74.25
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Sejm znów za wyższą opłatą cukrową i akcyzą na alkohol",
+      "start": 74.95,
+      "end": 133.42
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Polska i Indie chcą podwoić handel do 2030 r. Teraz Tusk jedzie do Wietnamu",
+      "start": 134.12,
+      "end": 184.46
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Waloryzacja w marcu 2027 r. może być wyższa niż w założeniach",
+      "start": 185.16,
+      "end": 244.12
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Tej nocy zmiana czasu: śpimy godzinę dłużej",
+      "start": 244.82,
+      "end": 288.09
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Rozejm w Ołeszkach. Biały Dom: doprowadziła do niego Melania Trump",
+      "start": 289.29,
+      "end": 347.84
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Paryż przed sobotnimi protestami: zamknięty Luwr i 28 stacji metra",
+      "start": 348.54,
+      "end": 399.32
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Brazylia jutro wybiera prezydenta. Sondaże: remis",
+      "start": 400.02,
+      "end": 449.33
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Izrael przed wtorkowymi wyborami: Eisenkot prowadzi, nikt nie ma większości",
+      "start": 450.03,
+      "end": 501.03
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Wenezuela: opozycja na ulicach, żąda daty wyborów",
+      "start": 501.73,
+      "end": 544.07
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "WSJ: to Musk zdecydował o ograniczeniu Starlinka dla ukraińskiej armii",
+      "start": 545.27,
+      "end": 598.9
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "AI znalazła groźne luki w PHP. Rządowe strony na chwilę wyłączone",
+      "start": 599.6,
+      "end": 659.57
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Odkryto komórki odporności, które widzą „niewidzialnego” raka płuca",
+      "start": 660.27,
+      "end": 711.88
+    },
+    {
+      "id": "muzyka-1",
+      "chapter": "tematy",
+      "label": "Bohdan Luts wygrał Konkurs Wieniawskiego",
+      "start": 712.58,
+      "end": 767.54
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Czy gorąca woda zamarza szybciej niż zimna?",
+      "start": 768.74,
+      "end": 805.52
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Pszczoły tańcem pokazują drogę do kwiatów",
+      "start": 806.22,
+      "end": 837.9
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Big Ben to nie wieża, tylko dzwon",
+      "start": 838.6,
+      "end": 867.74
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1945: Powstaje Organizacja Narodów Zjednoczonych",
+      "start": 868.94,
+      "end": 909.82
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1929: Czarny czwartek na Wall Street",
+      "start": 910.52,
+      "end": 944.56
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1648: Pokój westfalski kończy wojnę trzydziestoletnią",
+      "start": 945.26,
+      "end": 981.42
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Krzywa zapominania",
+      "start": 982.62,
+      "end": 1044.87
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Atomowe nawyki: Podsumowanie tygodnia: małe zmiany, wielkie efekty",
+      "start": 1046.07,
+      "end": 1114.68
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1115.88,
+      "end": 1133.48
+    }
+  ]
+}

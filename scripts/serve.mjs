@@ -13,10 +13,11 @@ const TYPES = {
   '.webmanifest': 'application/manifest+json',
   '.svg': 'image/svg+xml',
   '.png': 'image/png',
+  '.mp3': 'audio/mpeg',
 };
 
-// To samo, co trafia na stronę (scripts/build-site.mjs). Reszta projektu, np. .git i skrypty, zostaje niedostępna.
-const PUBLIC = ['index.html', 'manifest.webmanifest', 'sw.js', 'src', 'assets', 'content'];
+// To samo, co trafia na stronę (scripts/build-site.mjs; audio/ to pobrane nagrania lektora). Reszta projektu, np. .git i skrypty, zostaje niedostępna.
+const PUBLIC = ['index.html', 'manifest.webmanifest', 'sw.js', 'src', 'assets', 'content', 'audio'];
 
 // Zamienia adres z przeglądarki na plik w projekcie albo null, gdy pliku nie wolno wydać.
 export function safePath(root, rawUrl) {
@@ -43,7 +44,21 @@ export function startServer({ root = process.cwd(), port = Number(process.env.PO
     }
     try {
       const body = await readFile(file);
-      res.writeHead(200, { 'Content-Type': TYPES[extname(file)] || 'application/octet-stream' });
+      const type = TYPES[extname(file)] || 'application/octet-stream';
+      // Nagrania lektora: odtwarzacz prosi o kawałki pliku (Range), jak na Vercelu.
+      const range = /^bytes=(\d*)-(\d*)$/.exec(req.headers.range || '');
+      if (range && (range[1] || range[2])) {
+        const start = range[1] ? Number(range[1]) : Math.max(0, body.length - Number(range[2]));
+        const end = range[1] && range[2] ? Math.min(Number(range[2]), body.length - 1) : body.length - 1;
+        if (start >= body.length || start > end) {
+          res.writeHead(416, { 'Content-Range': `bytes */${body.length}` }).end();
+          return;
+        }
+        res.writeHead(206, { 'Content-Type': type, 'Accept-Ranges': 'bytes', 'Content-Range': `bytes ${start}-${end}/${body.length}`, 'Content-Length': end - start + 1 });
+        res.end(body.subarray(start, end + 1));
+        return;
+      }
+      res.writeHead(200, { 'Content-Type': type, 'Accept-Ranges': 'bytes' });
       res.end(body);
     } catch {
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' }).end('Nie znaleziono');

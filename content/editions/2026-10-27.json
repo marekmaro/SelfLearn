@@ -1,0 +1,454 @@
+{
+  "date": "2026-10-27",
+  "intro": "Dziś m.in. oficjalny wynik w Brazylii i krach na tamtejszej giełdzie, wybory w Izraelu, odwołane władze Częstochowy, Ewa Pajor druga w Złotej Piłce i wniosek Anthropic o wejście na giełdę. W „Sapiens” dzień trzeci: pieniądz.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Częstochowa odwołała prezydenta i radę miasta",
+      "summary": "PKW podała w poniedziałek wyniki niedzielnego referendum w Częstochowie: prezydent Krzysztof Matyjaszczyk i rada miasta zostali odwołani. Frekwencja wyniosła 32,77%. Za odwołaniem prezydenta głosowało 49 952 osoby, a przeciw 1563. Za odwołaniem rady było 49 449 osób. Żeby referendum było ważne, potrzeba było 46 625 głosujących w sprawie prezydenta i 48 754 w sprawie rady. Matyjaszczyk, któremu prokuratura postawiła zarzuty korupcyjne, nie przyznaje się do winy.",
+      "why": "Do przedterminowych wyborów miastem pokieruje osoba wyznaczona przez premiera, a nie wybrana przez mieszkańców.",
+      "sources": [
+        {
+          "name": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art45394521-czestochowa-odwolala-prezydenta-i-rade-miasta-beda-wybory"
+        },
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/katowice/czestochowa-mieszkancy-odwolali-w-referendum-prezydenta-i-rade-miasta-st9305221"
+        }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Polska i Wietnam zawarły partnerstwo strategiczne",
+      "summary": "Premier Donald Tusk i premier Wietnamu Le Minh Hung ogłosili w poniedziałek w Hanoi podniesienie relacji obu krajów do rangi partnerstwa strategicznego. Podpisano też umowy o współpracy w edukacji, m.in. zwiększającą liczbę stypendiów z 20 do 50, i w turystyce. Wiceminister Konrad Gołota powiedział, że Polska rozmawia z Wietnamem o sprzedaży m.in. transporterów Rosomak, haubic Krab i amunicji, a konkretne kontrakty mają być pokazane w grudniu. LOT chce w I kwartale 2027 r. uruchomić bezpośrednie loty Warszawa–Hanoi.",
+      "why": "Partnerstwo strategiczne to regularne rozmowy na najwyższym szczeblu i łatwiejszy dostęp polskich firm do rynku liczącego ponad 100 mln ludzi. Polska liczy, że zmniejszy to deficyt w handlu z Wietnamem.",
+      "sources": [
+        {
+          "name": "Interia",
+          "url": "https://wydarzenia.interia.pl/zagranica/news-polska-bron-przyciaga-uwage-tusk-o-nowej-randze-stosunkow-z,nId,23563870"
+        },
+        {
+          "name": "Wirtualna Polska",
+          "url": "https://wiadomosci.wp.pl/wizyta-tuska-w-wietnamie-zapadly-wazne-decyzje-dla-polski-7344107815467104a"
+        }
+      ],
+      "thread": "Wizyta Tuska w Azji"
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Od niedzieli NFZ sprawdzi godziny pracy lekarzy w szpitalach",
+      "summary": "Od 1 listopada szpitale muszą co miesiąc przekazywać NFZ godzinowe zestawienia obecności personelu medycznego: dni oraz godziny rozpoczęcia i zakończenia pracy. Raport trzeba złożyć do 20. dnia kolejnego miesiąca, więc pierwszy, za listopad, do 20 grudnia. Dotąd szpitale wysyłały dane tygodniowe. Ministerstwo Zdrowia chce w ten sposób wykrywać przypadki, gdy ta sama osoba jest wykazywana w kilku miejscach naraz. Za spóźnienia grożą kary. Waldemar Malinowski z Ogólnopolskiego Związku Pracodawców Szpitali Powiatowych ostrzega, że część oddziałów zabiegowych może zniknąć.",
+      "why": "Przepisy mają uszczelnić kontrolę czasu pracy lekarzy zatrudnionych w kilku miejscach. Małe szpitale obawiają się jednak, że trudniej będzie im obsadzić dyżury.",
+      "sources": [
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/polska/news-szpitale-pod-lupa-nfz-nowy-obowiazek-juz-od-listopada,nIdn,1023455"
+        },
+        {
+          "name": "Rynek Zdrowia",
+          "url": "https://www.rynekzdrowia.pl/Prawo/1-listopada-wchodzi-nowy-obowiazek-dla-szpitali-w-calej-Polsce-Bez-taryfy-ulgowej,290016,2.html"
+        }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Wszystkich Świętych w niedzielę. 2 listopada nie będzie dnia wolnego",
+      "summary": "1 listopada wypada w tym roku w niedzielę, więc pracownikom nie należy się dodatkowy dzień wolny. Kodeks pracy obniża wymiar czasu pracy tylko za święto, które przypada w inny dzień niż niedziela, np. w sobotę. Poniedziałek 2 listopada, Dzień Zaduszny, będzie więc zwykłym dniem roboczym. Fundacja „Można Lepiej!” chciała to zmienić petycją, ale sejmowa Komisja do Spraw Petycji odrzuciła ją 13 maja, po negatywnej opinii ministerstwa pracy.",
+      "why": "Kto chce w poniedziałek odwiedzić groby bliskich w innym mieście, powinien wcześniej wziąć urlop albo zaplanować podróż na weekend.",
+      "sources": [
+        {
+          "name": "RMF24",
+          "url": "https://rmf24.pl/fakty/polska/news-czy-2-listopada-2026-r-jest-dniem-wolnym-od-pracy-i-szkoly,nIdn,1023413"
+        },
+        {
+          "name": "Gazeta Prawna",
+          "url": "https://www.gazetaprawna.pl/praca/prawo-pracy/artykuly/11297169,2-listopada-wolny-od-pracy-sejm-zadecydowal.html"
+        }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Najbogatsze Polki: Kulczyk znów pierwsza, miliarderek już 15",
+      "summary": "Tygodnik „Wprost” opublikował nowy ranking 50 najbogatszych Polek. Po raz 11. z rzędu prowadzi Dominika Kulczyk z majątkiem szacowanym na 5,65 mld zł, opartym głównie na udziałach w Polenergii. Druga jest Małgorzata Adamkiewicz z rodziną (3,95 mld zł), trzecia Anna Putyra (2,7 mld zł). Na liście jest 15 miliarderek, o jedną trzecią więcej niż rok wcześniej, i 12 nowych nazwisk. Łączny majątek oszacowano na 45,7 mld zł, a do wejścia trzeba było mieć co najmniej 182 mln zł. Na 27. miejscu jest Anna Lewandowska.",
+      "why": "Ranking pokazuje, że w polskim biznesie przybywa kobiet z dużymi majątkami. To jednak szacunki redakcji, a nie oficjalne dane.",
+      "sources": [
+        {
+          "name": "Interia Biznes",
+          "url": "https://biznes.interia.pl/gospodarka/news-ranking-najbogatszych-polek-wprost-grono-miliarderek-powieks,nId,23564123"
+        },
+        {
+          "name": "RMF24",
+          "url": "https://rmf24.pl/fakty/polska/news-rosna-fortuny-polek-powiekszylo-sie-grono-miliarderek-sprawd,nIdn,1023468"
+        }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Brazylia: oficjalnie wygrał Lula. Flávio Bolsonaro chce unieważnienia",
+      "summary": "Brazylijski sąd wyborczy TSE policzył wszystkie głosy z niedzielnej drugiej tury. Luiz Inácio Lula da Silva dostał 64 256 232 głosy (51,79%), a senator Flávio Bolsonaro 59 826 041 (48,21%). Różnica to 4 430 191 głosów. Bolsonaro nie uznał porażki i zapowiedział, że będzie się domagał unieważnienia wyniku. Jego stronnicy kwestionują m.in. decyzję sędziego Sądu Najwyższego, który przedłużył głosowanie o dwie godziny. Zaprzysiężenie na czwartą kadencję Luli zaplanowano na 5 stycznia 2027 r.",
+      "why": "Zwycięstwo Luli przerwało serię siedmiu wygranych kandydatów prawicy w wyborach prezydenckich w Ameryce Łacińskiej w ciągu 18 miesięcy. Spór o wynik może utrudnić przekazanie władzy.",
+      "sources": [
+        {
+          "name": "PBS (AP)",
+          "url": "https://www.pbs.org/newshour/world/lula-bucks-regional-shift-to-the-right-and-denies-trump-a-powerful-ally-in-brazil"
+        },
+        {
+          "name": "The Rio Times",
+          "url": "https://www.riotimesonline.com/brazil-election-results-2026/"
+        }
+      ],
+      "thread": "Wybory w Brazylii"
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Izrael wybiera dziś Kneset. W sondażach Eisenkot przed Netanjahu",
+      "summary": "We wtorek Izraelczycy wybierają 120 posłów do Knesetu. W ostatnich sondażach trzech głównych stacji telewizyjnych partia Jaszar Gadiego Eisenkota, byłego szefa sztabu armii, miała 22–23 mandaty, a Likud premiera Benjamina Netanjahu 19–21. Żaden blok nie zbliżał się do 61 mandatów potrzebnych do większości. Prorządowy Kanał 14 dawał jednak Likudowi 29–30 miejsc. Partie muszą przekroczyć próg 3,25%. Misję tworzenia rządu prezydent powierza temu, kto ma największe szanse zbudować koalicję, niekoniecznie zwycięzcy.",
+      "why": "To pierwsze wybory od ataku Hamasu z 7 października 2023 r. Od ich wyniku zależy polityka Izraela wobec Gazy i Zachodniego Brzegu.",
+      "sources": [
+        {
+          "name": "Anadolu",
+          "url": "https://www.aa.com.tr/en/middle-east/israel-votes-tuesday-in-closely-contested-election-as-netanyahu-faces-challenge-from-eisenkot/4101690"
+        },
+        {
+          "name": "CNN",
+          "url": "https://www.cnn.com/2026/10/25/middleeast/israel-election-2026-whats-at-stake-intl"
+        }
+      ],
+      "thread": "Wybory w Izraelu"
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Krach na giełdzie w Brazylii po zwycięstwie Luli",
+      "summary": "W poniedziałek, pierwszego dnia notowań po wyborach, brazylijskie akcje gwałtownie potaniały, a handel na giełdzie w São Paulo wstrzymał automatyczny bezpiecznik. Real stracił 10,5% wobec dolara i był najsłabszy od grudnia 2025 r. Fundusz iShares MSCI Brazil tracił przed sesją w Nowym Jorku 25%, a według Bloomberga kursy niektórych spółek spadły nawet o połowę. Inwestorzy liczyli na wygraną Bolsonaro, którą przez ostatnie dni pokazywała większość sondaży.",
+      "why": "Analitycy zwracają uwagę, że deficyt budżetowy Brazylii zbliża się do 10% PKB po wysokich wydatkach przed wyborami. Słabszy real oznacza droższy import i wyższą inflację.",
+      "sources": [
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-26/brazil-markets-brace-for-rout-on-lula-s-improbable-election-win"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/26/brazil-lula-win-presidential-election-runoff-vote.html"
+        }
+      ],
+      "thread": "Wybory w Brazylii"
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Anthropic, twórca Claude’a, złożył wniosek o wejście na giełdę",
+      "summary": "Firma Anthropic, która rozwija asystenta AI Claude, złożyła w poniedziałek w amerykańskiej komisji SEC wniosek S-1 o pierwszą ofertę publiczną. Akcje mają trafić na Nasdaq pod symbolem ANT, a handel może ruszyć już 16 listopada. Wniosek nie podaje liczby akcji ani ceny. Media piszą o wycenie 1,5–2 bln dolarów, co oznaczałoby jeden z największych debiutów w historii. Ofertę prowadzą Goldman Sachs i Morgan Stanley. W dokumencie firma ostrzega, że spory z administracją Trumpa i Pentagonem mogą przynieść jej istotne straty przychodów.",
+      "why": "Po czerwcowym debiucie SpaceX to kolejna spółka technologiczna wyceniana na ponad bilion dolarów. Prospekt pokaże też, ile naprawdę kosztuje rozwój najnowszych modeli AI.",
+      "sources": [
+        {
+          "name": "CNN",
+          "url": "https://www.cnn.com/2026/10/26/tech/anthropic-files-ipo"
+        },
+        {
+          "name": "NPR",
+          "url": "https://www.npr.org/2026/10/26/nx-s1-6014772/anthropic-ai-ipo-could-break-records"
+        }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Złota Piłka dla Kane’a i Putellas. Ewa Pajor druga",
+      "summary": "Harry Kane i Alexia Putellas zostali najlepszymi piłkarzami sezonu w plebiscycie „France Football”. Gala, po raz pierwszy poza Francją, odbyła się w poniedziałek w londyńskim Palladium. Kane wyprzedził Lamine’a Yamala i Kyliana Mbappé i jest pierwszym Anglikiem ze Złotą Piłką od 2001 r. Putellas wygrała po raz trzeci, po latach 2021 i 2022. Polka Ewa Pajor zajęła drugie miejsce, najwyższe w karierze, a trzecia była Melchie Dumornay. Trenerem roku został Luis de la Fuente, który z Hiszpanią wygrał mundial.",
+      "why": "To najważniejsze indywidualne wyróżnienie w piłce nożnej. Pajor wyrównała najlepszy wynik Polaka w tym plebiscycie: w 2021 r. drugi był Robert Lewandowski.",
+      "sources": [
+        {
+          "name": "Eurosport",
+          "url": "https://eurosport.tvn24.pl/pilka-nozna/dla-kogo-zlota-pilka-2026-wyniki-plebiscytu-na-zywo-i-relacja-live-z-gali-w-londynie_sto23349454/story.shtml"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/story/_/id/50259091/2026-ballon-dor-live-updates-winners-results-reaction"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Rosja oskarża Ukrainę o ostrzał Ołeszek tuż przed rozejmem",
+      "summary": "Rosyjskie ministerstwo obrony oskarżyło w poniedziałek Ukrainę, że od 19 października 18 razy ostrzelała okupowane Ołeszki z artylerii i przeprowadziła ponad 120 ataków dronami na miasto i drogi dojazdowe. Według Moskwy utrudniło to dostawy pomocy i ewakuację. Agencja Reuters nie mogła tego sprawdzić, a Kijów nie odniósł się do zarzutów. Lokalny rozejm ma według ukraińskiego rzecznika praw obywatelskich ruszyć we wtorek o 3:00, Biały Dom podaje 29 października. W mieście zostało 1700–2000 cywilów, przed wojną mieszkało ok. 24 tys.",
+      "why": "Wzajemne oskarżenia pokazują, jak kruche jest nawet lokalne porozumienie. W pierwszej połowie listopada mają się odbyć rozmowy pokojowe na poziomie technicznym, możliwe że w Abu Zabi.",
+      "sources": [
+        {
+          "name": "The Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/26/russia-accuses-ukraine-of-launching-strikes-against-oleshky-ahead-of-ceasefire-a94086"
+        },
+        {
+          "name": "ThePrint (Reuters)",
+          "url": "https://theprint.in/world/russia-says-ukraine-has-repeatedly-struck-oleshky-with-artillery-and-drones-ahead-of-local-ceasefire/3081888/"
+        }
+      ],
+      "thread": "Wojna w Ukrainie"
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Meta sprzeda akcje za 95 mld dolarów, żeby budować AI",
+      "summary": "Meta, właściciel Facebooka i Instagrama, ogłosiła w poniedziałek plan pozyskania ok. 95 mld dolarów ze sprzedaży nowych akcji. Pieniądze mają pójść na infrastrukturę AI i prace nad tzw. superinteligencją. To pierwsza emisja nowych akcji Mety od 2013 r. Według części mediów najpierw ma to być 35 mld dolarów z ofert publicznych, a potem 60 mld w programie stopniowej sprzedaży. Zakup akcji za maksymalnie 5 mld dolarów rozważają Nvidia, AMD i Broadcom. Kurs Mety spadł rano o ok. 1,6%.",
+      "why": "Firmy technologiczne wydają na centra danych tak dużo, że nie wystarczają im bieżące zyski. Krytycy widzą w tym oznakę bańki na rynku AI.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html"
+        },
+        {
+          "name": "The Irish Times",
+          "url": "https://www.irishtimes.com/business/2026/10/26/meta-plans-95bn-stock-offering-to-bankroll-ai-expansion/"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "nauka",
+      "title": "Mit: szkło to bardzo gęsta ciecz",
+      "body": "Popularny mit mówi, że stare szyby w kościołach są grubsze u dołu, bo szkło przez stulecia powoli spływa. W rzeczywistości szkło to ciało stałe o nieuporządkowanej, bezpostaciowej budowie. W temperaturze pokojowej płynęłoby tak wolno, że na zauważalną zmianę trzeba by czekać miliony lat. Grubsze dolne krawędzie wynikają z dawnej produkcji: szyby wychodziły nierówne, a szklarze zwykle wstawiali je cięższą stroną w dół.",
+      "source": {
+        "name": "Scientific American",
+        "url": "https://www.scientificamerican.com/article/fact-fiction-glass-liquid/"
+      }
+    },
+    {
+      "id": "fact-2",
+      "kind": "kosmos",
+      "title": "Najsilniejsze wiatry wieją na Neptunie",
+      "body": "Neptun jest najdalszą od Słońca planetą i dociera do niego ok. 900 razy mniej światła niż do Ziemi. Mimo to wieją tam najsilniejsze wiatry w Układzie Słonecznym: nawet trzy razy silniejsze niż na Jowiszu i dziewięć razy silniejsze niż najsilniejsze na Ziemi. Sonda Voyager 2 odkryła tam w 1989 r. ogromną burzę, nazwaną Wielką Ciemną Plamą. Gdy w 1994 r. na Neptuna spojrzał Kosmiczny Teleskop Hubble’a, plamy już nie było.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Exploration_of_Neptune"
+      }
+    },
+    {
+      "id": "fact-3",
+      "kind": "historia",
+      "title": "Oksford jest starszy niż państwo Azteków",
+      "body": "Na Oksfordzie nauczano już w 1096 r., choć uczelnia nie ma jednej daty założenia. Szybko rozwinęła się od 1167 r., gdy angielskim studentom zabroniono studiować w Paryżu. Tenochtitlan, stolicę Azteków, założono dopiero ok. 1325 r., czyli 229 lat później, a imperium powstało w 1428 r. Aztekowie kojarzą się z zamierzchłą przeszłością, a byli rówieśnikami późnego średniowiecza w Europie.",
+      "source": {
+        "name": "Smithsonian Magazine",
+        "url": "https://www.smithsonianmag.com/smart-news/oxford-university-is-older-than-the-aztecs-1529607/"
+      }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1939,
+      "title": "Gestapo aresztuje prezydenta Warszawy",
+      "body": "27 października 1939 r. gestapo aresztowało w ratuszu prezydenta Warszawy Stefana Starzyńskiego. We wrześniu kierował on obroną cywilną oblężonej stolicy i podtrzymywał mieszkańców na duchu przemówieniami radiowymi. Przetrzymywano go m.in. na Pawiaku. Śledztwo IPN zakończone w 2014 r. wykazało, że Niemcy zastrzelili go między 21 a 23 grudnia 1939 r.",
+      "source": {
+        "name": "dzieje.pl",
+        "url": "https://dzieje.pl/kalendarz-historyczny/27/10"
+      }
+    },
+    {
+      "id": "otd-2",
+      "year": 1904,
+      "title": "W Nowym Jorku rusza metro",
+      "body": "27 października 1904 r. otwarto pierwszą linię nowojorskiego metra, prowadzoną przez spółkę IRT. Pierwszy pociąg poprowadził burmistrz George McClellan, a wieczorem metro udostępniono mieszkańcom. Linia miała ok. 14,6 km i 28 stacji, od ratusza (City Hall) do 145. Ulicy, a przejazd kosztował 5 centów.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/History_of_the_New_York_City_Subway"
+      }
+    },
+    {
+      "id": "otd-3",
+      "year": 1962,
+      "title": "Czarna sobota kryzysu kubańskiego",
+      "body": "27 października 1962 r., w najgroźniejszym dniu kryzysu kubańskiego, radziecka rakieta zestrzeliła nad Kubą amerykański samolot zwiadowczy U-2. Zginął pilot, major Rudolf Anderson, jedyny Amerykanin, który podczas kryzysu poległ od ognia przeciwnika. Kennedy nie zgodził się na natychmiastowy odwet, a następnego dnia Chruszczow ogłosił wycofanie rakiet z Kuby.",
+      "source": {
+        "name": "Biblioteka Johna F. Kennedy’ego",
+        "url": "https://microsites.jfklibrary.org/cmc/oct27/"
+      }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Efekt Lindy",
+    "definition": "Im dłużej coś, co się nie zużywa (książka, idea, technologia, zwyczaj), już przetrwało, tym dłużej prawdopodobnie przetrwa w przyszłości.",
+    "origin": "Nazwa pochodzi od nowojorskich delikatesów Lindy’s, w których spotykali się komicy. W 1964 r. Albert Goldman opisał w „The New Republic” żartobliwą obserwację o długości ich karier. Matematyk Benoît Mandelbrot nadał idei ściślejszą formę, a spopularyzował ją Nassim Taleb w książce „Antykruchość” z 2012 r. To reguła kciuka, nie prawo natury: nie dotyczy rzeczy, które się starzeją, jak ludzie czy sprzęt.",
+    "examples": [
+      "Uniwersytet Oksfordzki działa od ponad 900 lat, więc rozsądniej zakładać, że przetrwa dłużej niż uczelnia założona w zeszłym roku.",
+      "Książka czytana od 50 lat ma większą szansę, że będzie czytana za kolejne 50 lat, niż tegoroczny bestseller.",
+      "Odwiedzanie grobów bliskich na Wszystkich Świętych trwa od pokoleń, więc pewnie przetrwa dłużej niż wiele modnych nowych świąt."
+    ],
+    "source": {
+      "name": "Wikipedia (ang.)",
+      "url": "https://en.wikipedia.org/wiki/Lindy_effect"
+    }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "sapiens",
+    "title": "Sapiens. Od zwierząt do bogów",
+    "author": "Yuval Noah Harari",
+    "day": 3,
+    "days": 7,
+    "ideaTitle": "Pieniądz: najskuteczniejszy system wzajemnego zaufania",
+    "idea": "Według Harariego pieniądz to kolejna wspólna fikcja, ale wyjątkowo skuteczna: najbardziej uniwersalny i najwydajniejszy system wzajemnego zaufania, jaki wymyślili ludzie. Pierwszym znanym pieniądzem był jęczmień w Sumerze ok. 3000 r. p.n.e. Miał wartość sam w sobie, bo dało się go zjeść. Przełomem był srebrny szekel, czyli po prostu 8,33 g srebra, cenny dlatego, że wszyscy w niego wierzyli. Chrześcijanie i muzułmanie, którzy nie mogli się dogadać co do wiary, przyjmowali te same złote monety, a dziś ponad 90% pieniędzy istnieje tylko jako zapisy na serwerach. Uwaga: część antropologów, np. David Graeber, podkreśla, że przed pieniądzem ludzie rozliczali się głównie długami i zaufaniem w społeczności, a nie barterem, jak sugerują popularne opisy.",
+    "moral": "Pieniądz działa tylko dlatego, że ufamy, że inni też w niego wierzą. Łączy obcych ludzi, ale łatwo sprawia, że wszystko zaczynamy mierzyć ceną.",
+    "action": "Przejrzyj wydatki z ostatniego tygodnia i znajdź jedną płatność kartą lub telefonem, która prawie umknęła Twojej uwadze. Zastanów się, czy płacąc gotówką, wydał(a)byś tyle samo.",
+    "source": {
+      "name": "Wikipedia (ang.)",
+      "url": "https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind"
+    }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-27-q1",
+      "ref": "fact-1",
+      "question": "Dlaczego stare szyby w kościołach bywają grubsze u dołu?",
+      "options": [
+        "Bo szkło przez stulecia spływa w dół",
+        "Bo były nierówne i wstawiano je cięższą stroną w dół",
+        "Bo osiada na nich kurz i sadza",
+        "Bo mróz rozszerza ich dolną część"
+      ],
+      "answer": 1,
+      "explanation": "Szkło jest ciałem stałym i w temperaturze pokojowej praktycznie nie płynie. Nierówne szyby szklarze wstawiali grubszą krawędzią w dół."
+    },
+    {
+      "id": "2026-10-27-q2",
+      "ref": "fact-2",
+      "question": "Co sonda Voyager 2 odkryła na Neptunie w 1989 r.?",
+      "options": [
+        "Ocean ciekłej wody",
+        "Wielką Czerwoną Plamę",
+        "Stałą, skalistą powierzchnię",
+        "Wielką Ciemną Plamę"
+      ],
+      "answer": 3,
+      "explanation": "Wielka Ciemna Plama była ogromną burzą. Gdy w 1994 r. Neptuna obserwował Teleskop Hubble’a, już jej nie było."
+    },
+    {
+      "id": "2026-10-27-q3",
+      "ref": "fact-3",
+      "question": "Co z tych rzeczy pojawiło się najwcześniej?",
+      "options": [
+        "Tenochtitlan, stolica Azteków",
+        "Imperium Azteków",
+        "Hiszpański podbój Meksyku",
+        "Nauczanie na Oksfordzie"
+      ],
+      "answer": 3,
+      "explanation": "Na Oksfordzie uczono już w 1096 r., a Tenochtitlan założono ok. 1325 r., 229 lat później."
+    },
+    {
+      "id": "2026-10-27-q4",
+      "ref": "otd-1",
+      "question": "Kogo gestapo aresztowało 27 października 1939 r. w warszawskim ratuszu?",
+      "options": [
+        "Stefana Starzyńskiego",
+        "Stefana Roweckiego",
+        "Ignacego Mościckiego",
+        "Juliusza Rómmla"
+      ],
+      "answer": 0,
+      "explanation": "Prezydent Warszawy Stefan Starzyński kierował obroną cywilną stolicy we wrześniu 1939 r. Niemcy zamordowali go w grudniu tego roku."
+    },
+    {
+      "id": "2026-10-27-q5",
+      "ref": "otd-2",
+      "question": "Ile kosztował przejazd pierwszą linią nowojorskiego metra w 1904 r.?",
+      "options": [
+        "1 dolara",
+        "25 centów",
+        "5 centów",
+        "50 centów"
+      ],
+      "answer": 2,
+      "explanation": "Bilet kosztował 5 centów, czyli popularnego „nickela”."
+    },
+    {
+      "id": "2026-10-27-q6",
+      "ref": "concept",
+      "question": "Która rzecz według efektu Lindy ma największą szansę, że będzie czytana za 100 lat?",
+      "options": [
+        "Bestseller sprzed miesiąca",
+        "Książka czytana od 200 lat",
+        "Najnowsza aplikacja do czytania",
+        "Dzisiejsza gazeta"
+      ],
+      "answer": 1,
+      "explanation": "Im dłużej coś nieprzemijającego już przetrwało, tym dłużej prawdopodobnie przetrwa. Książka czytana od 200 lat przeszła najdłuższą próbę czasu."
+    },
+    {
+      "id": "2026-10-27-q7",
+      "ref": "book",
+      "question": "Co według Harariego było pierwszym znanym pieniądzem?",
+      "options": [
+        "Złote monety",
+        "Muszle kauri",
+        "Jęczmień w Sumerze",
+        "Srebrny szekel"
+      ],
+      "answer": 2,
+      "explanation": "Jęczmień pojawił się jako pieniądz w Sumerze ok. 3000 r. p.n.e. Srebrny szekel przyszedł później i był cenny tylko dzięki wspólnej wierze."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-10-27-r1",
+      "question": "Ile kręgów szyjnych ma sowa?",
+      "options": [
+        "7, tyle co człowiek",
+        "14, dwa razy więcej niż człowiek",
+        "28, cztery razy więcej niż człowiek"
+      ],
+      "answer": 1,
+      "explanation": "Sowa ma 14 kręgów szyjnych. To jeden z powodów, dla których może obrócić głowę nawet o ok. 270 stopni."
+    },
+    {
+      "id": "2026-10-27-r2",
+      "question": "Który łazik sfotografował w kolorze niebieski zachód Słońca na Marsie w 2015 r.?",
+      "options": [
+        "Curiosity",
+        "Spirit",
+        "Perseverance"
+      ],
+      "answer": 0,
+      "explanation": "Curiosity zrobił to zdjęcie 15 kwietnia 2015 r. w kraterze Gale."
+    },
+    {
+      "id": "2026-10-27-r3",
+      "question": "Kto kogo według Harariego „udomowił” w czasie rewolucji rolniczej?",
+      "options": [
+        "Człowiek psa",
+        "Owca pasterza",
+        "Pszenica człowieka"
+      ],
+      "answer": 2,
+      "explanation": "Harari przekornie twierdzi, że to pszenica zmusiła ludzi do ciężkiej pracy na polu i osiadłego życia."
+    }
+  ],
+  "evening": {
+    "question": "Który zwyczaj z Waszych rodzinnych domów chcielibyście zachować na lata, a który stworzyliście już wspólnie?",
+    "hint": "Np. sposób obchodzenia świąt, niedzielny obiad albo wspólny spacer na cmentarz 1 listopada. Pomyślcie, dlaczego te zwyczaje przetrwały tak długo."
+  }
+}

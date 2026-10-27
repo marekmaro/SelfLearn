@@ -18,9 +18,9 @@ import {
 import { grade, dueCards } from '../srs.js';
 import { h, mount, icon, koiMark, sourceLinks, toast, plural } from '../ui.js';
 import { getLook, openAppearanceSheet } from '../look.js';
-import { speechSupported, startListening, stopListening, isListening } from '../listen.js';
+import { speechSupported, startListening, stopListening, isListening, loadRecording, playRecording } from '../listen.js';
 import { challengeFor, shareChallenge, verdict } from '../challenge.js';
-import { sectionLabel, firstSentence, buildChapters, buildWarmup, estimateMinutes, findRef, withPersonalQuiz } from '../chapters.js';
+import { sectionLabel, firstSentence, buildChapters, buildWarmup, estimateMinutes, findRef, withPersonalQuiz, chapterNarration, editionNarration } from '../chapters.js';
 import { smoothScroll, updateReadProgress, restorePosition, watchScroll } from './reading.js';
 import { streakWidget } from './streak.js';
 import { backupBanner } from './backup.js';
@@ -29,6 +29,7 @@ import { deepenButton } from './deepen.js';
 import { weekBannerDue } from '../week.js';
 import { threadLink } from './threads.js';
 import { threadsFromIndex } from '../threads.js';
+import { installBanner, installBannerDue } from '../install.js';
 import { guessToggle, verdictText } from '../confidence.js';
 
 const kindLabel = (id) => FACT_KINDS.find((k) => k.id === id)?.label || id;
@@ -67,6 +68,9 @@ export async function renderToday(root, { date: requested, focus = null, onChang
   const warmup = buildWarmup(edition, prevEdition, editionProgress(prevDate || ''));
 
   const profile = getState().profile;
+  // Nagranie lektora (MP3), jeśli jest: wczytane zawczasu, bo na iPhonie dźwięk musi ruszyć od razu po dotknięciu.
+  const recording = await Promise.race([loadRecording(date), new Promise((resolve) => setTimeout(() => resolve(null), 1500))]);
+  const canListen = () => Boolean(recording) || speechSupported();
   const chapters = buildChapters(edition, profile, warmup.length ? { prevDate } : null);
   const expanded = new Set();
   const openCards = new Set();
@@ -189,6 +193,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
       h('h1', { class: 'date' }, formatLong(date)),
       startCard(),
       !isArchive ? guideCard() : null,
+      !isArchive && installBannerDue() ? installBanner() : null,
       isArchive
         ? h(
             'div',
@@ -252,20 +257,21 @@ export async function renderToday(root, { date: requested, focus = null, onChang
           ? `Rozdział ${chapters.indexOf(cur) + 1} z ${chapters.length}, do końca ok. ${minutes} min`
           : `${chapters.length} ${plural(chapters.length, 'rozdział', 'rozdziały', 'rozdziałów')}, ok. ${minutes} min`,
       ),
-      speechSupported()
+      canListen()
         ? h(
             'button',
             {
               type: 'button',
               class: 'btn secondary block',
-              title: 'Telefon przeczyta wydanie na głos',
+              title: recording ? 'Nagranie lektora: gra też przy zgaszonym ekranie' : 'Telefon przeczyta wydanie na głos',
               onclick: () => (isListening() ? stopListening() : listenEdition()),
             },
             icon('headphones'),
             resumeAt ? 'Wznów słuchanie' : 'Posłuchaj wydania',
           )
         : null,
-      speechSupported() && resumeAt ? h('p', { class: 'small muted start-meta' }, `Od miejsca, w którym skończyło się czytanie: ${resumeAt.label}`) : null,
+      canListen() && resumeAt ? h('p', { class: 'small muted start-meta' }, `Od miejsca, w którym skończyło się czytanie: ${resumeAt.label}`) : null,
+      recording && !resumeAt ? h('p', { class: 'small muted start-meta' }, `Nagranie lektora, ok. ${Math.max(1, Math.round(recording.duration / 60))} min. Gra też przy zgaszonym ekranie.`) : null,
     );
   }
 
@@ -791,40 +797,11 @@ export async function renderToday(root, { date: requested, focus = null, onChang
 
   // Kolejka dla lektora: to samo, co widać w wydaniu (bez rozgrzewki i quizu, które wymagają dotknięć).
   function listenItems() {
-    const items = [{ id: 'intro', chapter: chapters.find((c) => c.type !== 'warmup')?.id, label: 'Wstęp', text: `${formatLong(date)}. ${edition.intro || ''}` }];
-    for (const ch of chapters) items.push(...chapterItems(ch));
-    return items.filter((it) => it.text.trim());
+    return editionNarration(edition, chapters);
   }
 
-  // Fragmenty jednego rozdziału (albo jednego działu w „Twoich tematach”), tak jak widać je na ekranie.
-  // Lektor czyta wszystko, także wpisy schowane pod „Pokaż więcej” (reveal: klucz listy, którą trzeba wtedy rozwinąć).
   function chapterItems(ch, onlyGroup = null) {
-    const items = [];
-    const add = (id, chapter, label, text, reveal = null) => items.push({ id, chapter, label, text, reveal });
-    if (ch.groups) {
-      for (const g of ch.groups) {
-        if (onlyGroup && g !== onlyGroup) continue;
-        g.items.forEach((it, i) => {
-          const lead = i === 0 ? `${sectionLabel(g.section)}. ` : '';
-          add(it.id, ch.id, it.title, `${lead}${it.title}. ${it.summary} ${it.why ? `Dlaczego to ważne: ${it.why}` : ''}`, i >= g.limit ? `news:${g.section}` : null);
-        });
-      }
-    } else if (ch.type === 'facts' || ch.type === 'otd') {
-      ch.items.forEach((it, i) => {
-        const lead = i === 0 ? `${ch.label}. ` : '';
-        const head = ch.type === 'otd' ? `Rok ${it.year}. ${it.title}.` : `${kindLabel(it.kind)}: ${it.title}.`;
-        add(it.id, ch.id, ch.type === 'otd' ? `${it.year}: ${it.title}` : it.title, `${lead}${head} ${it.body}`, i >= ch.limit ? ch.id : null);
-      });
-    } else if (ch.type === 'concept') {
-      const c = edition.concept;
-      add('concept', ch.id, `Pojęcie: ${c.term}`, `Pojęcie dnia: ${c.term}. ${c.definition} ${c.origin || ''} ${(c.examples || []).join(' ')}`);
-    } else if (ch.type === 'book') {
-      const b = edition.book;
-      add('book', ch.id, `${b.title}: ${b.ideaTitle}`, `Książka tygodnia: „${b.title}”, ${b.author}. Dzień ${b.day} z ${b.days}: ${b.ideaTitle}. ${b.idea} Morał: ${b.moral} Zastosuj dziś: ${b.action}`);
-    } else if (ch.type === 'evening') {
-      add('evening', ch.id, 'Na wieczór', `Na wieczór we dwoje: ${edition.evening.question} ${edition.evening.hint || ''}`);
-    }
-    return items.filter((it) => it.text.trim());
+    return chapterNarration(ch, edition, onlyGroup);
   }
 
   // Przesłuchany do końca fragment trafia do postępów; gdy cały rozdział jest przesłuchany, rozdział jest zaliczony.
@@ -846,7 +823,7 @@ export async function renderToday(root, { date: requested, focus = null, onChang
 
   // Słuchawki przy rozdziale albo dziale: lektor czyta tylko ten fragment wydania.
   function listenButton(ch, group = null) {
-    if (!ch || !speechSupported() || ['warmup', 'quiz'].includes(ch.type)) return null;
+    if (!ch || !canListen() || ['warmup', 'quiz'].includes(ch.type)) return null;
     const label = group ? `Posłuchaj: ${sectionLabel(group.section)}` : `Posłuchaj rozdziału: ${ch.label}`;
     return h(
       'button',
@@ -884,8 +861,9 @@ export async function renderToday(root, { date: requested, focus = null, onChang
     if (resumeAt) toast(`Wznawiam od: ${resumeAt.label}`, { action: { label: 'Od początku', onClick: () => listenEdition({ fromStart: true }) } });
   }
 
+  // Z nagraniem gra plik MP3 (także przy zgaszonym ekranie), bez niego czyta syntezator telefonu.
   function listen(items = listenItems(), options = {}) {
-    startListening(items, {
+    const callbacks = {
       ...options,
       onItemEnd: heard,
       onItem: (item) => {
@@ -903,6 +881,19 @@ export async function renderToday(root, { date: requested, focus = null, onChang
         if (!card) return;
         card.classList.add('is-speaking');
         card.scrollIntoView({ block: item.id === 'intro' ? 'start' : 'center', behavior: smoothScroll() });
+      },
+    };
+    if (!recording) {
+      startListening(items, callbacks);
+      return;
+    }
+    playRecording(recording, items, {
+      ...callbacks,
+      album: `SelfLearn · ${formatShort(date)}`,
+      title: options.title || 'Lektor',
+      onFail: () => {
+        toast('Nagranie niedostępne. Czyta głos telefonu.');
+        startListening(items, callbacks);
       },
     });
   }

@@ -21,6 +21,8 @@ Codzienne wydanie do nauki i poszerzania horyzontów, w formie aplikacji na tele
 - **Wątki**: wiadomości o sprawie, która ciągnie się dniami (ustawa, wojna, wybory), mają pod tytułem odnośnik do wątku. Wątek to własna oś czasu: wszystkie odcinki od najnowszego, ze streszczeniem i przejściem do wydania. Lista wątków jest na Osi czasu. Czat i rutyna oznaczają wiadomości polem `thread`, a polecenie dnia podaje nazwy trwających wątków, żeby się nie rozjeżdżały,
 - **Poziomy** od ikry do smoka (legenda o karpiu i Smoczej Bramie),
 - **Posłuchaj**: telefon czyta wydanie na głos (offline, bez kosztów), przewija za lektorem i podświetla czytaną kartę, a wpisy schowane pod „Pokaż więcej” też czyta (lista sama się rozwija); tempo 0,9–1,5×. Słuchawki przy rozdziale (i przy każdym dziale w „Twoich tematach”) czytają tylko ten fragment. Rozdział przesłuchany do końca jest zaliczony, tak jak po „Dalej”. Miejsce (zdanie) zapisuje się na bieżąco: po zamknięciu aplikacji przycisk „Wznów słuchanie” wraca tam, gdzie lektor skończył, a po powrocie z innej aplikacji albo odblokowaniu ekranu czytanie rusza samo od przerwanego zdania,
+- **Lektor jak podcast**: każde wydanie ma nagranie MP3 (darmowy polski głos Piper), które gra także przy zgaszonym ekranie, z tytułem i przyciskami na ekranie blokady (pauza, następny fragment, przewijanie). Działy spoza Twojego profilu są pomijane, a miejsce zapisuje się co kilka sekund. Gdy nagrania jeszcze nie ma, czyta głos telefonu (jak wyżej),
+- **iPhone**: instrukcja „Dodaj do ekranu początkowego” (na wydaniu i w Profil → Instalacja), przypomnienia przez aplikację Kalendarz, pola bez powiększania ekranu i lektor, który rusza od pierwszego dotknięcia. Na Androidzie przycisk „Zainstaluj”,
 - **Quiz z Twoich tematów**: pytania o ciekawostki są tylko z rodzajów wybranych w profilu (albo z odpowiadających im działów, np. „Kosmos”); pytania o historię dnia, pojęcie i książkę zostają zawsze,
 - **Wyzwanie we dwoje**: po quizie wysyłasz link z wynikiem, druga osoba rozwiązuje ten sam quiz i widzicie porównanie,
 - **Wygląd**: motyw jasny, sepia, ciemny albo jak w telefonie, 5 kolorów, 4 wielkości tekstu, krój gazetowy lub prosty, widok pełny albo same nagłówki,
@@ -127,6 +129,10 @@ Wydanie przygotowuje **rutyna Claude Code** (claude.ai/code/routines), która dz
   > Przygotuj dzisiejsze wydanie SelfLearn zgodnie z instrukcją w pliku CONTENT_GUIDE.md w tym repozytorium. Zapisz plik wydania, uruchom `node scripts/build-index.mjs && node scripts/validate.mjs`, popraw ewentualne błędy, zrób commit „Wydanie RRRR-MM-DD” i wypchnij go bezpośrednio na gałąź main.
 
 Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesięcznie zależnie od modelu).
+
+## Nagrania lektora
+
+`.github/workflows/audio.yml` po każdym nowym albo zmienionym wydaniu na `main` nagrywa je głosem Piper (`pl_PL-gosia-medium`) przez `scripts/make-audio.mjs`. MP3 trafia do wydania (release) „lektor” na GitHubie, czyli poza historię repozytorium, a czasy fragmentów do `content/audio/RRRR-MM-DD.json`. Ten commit uruchamia wdrożenie na Vercelu, a `scripts/build-site.mjs` pobiera wtedy MP3 z ostatnich 10 dni do `public/audio/`, więc aplikacja serwuje nagrania z własnego adresu (iPhone potrzebuje właściwego typu pliku i przewijania). Nagranie dowolnego dnia od nowa: Actions → „Lektor (nagrania MP3)” → Run workflow → data. Lepszy głos (np. Google lub Azure) wymaga tylko zmiany polecenia `--tts` w workflow.
 
 ## Struktura
 

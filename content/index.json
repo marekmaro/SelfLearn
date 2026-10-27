@@ -1,6 +1,43 @@
 {
   "editions": [
     {
+      "date": "2026-10-27",
+      "headline": "Częstochowa odwołała prezydenta i radę miasta",
+      "threads": [
+        {
+          "name": "Wizyta Tuska w Azji",
+          "item": "pl-2",
+          "title": "Polska i Wietnam zawarły partnerstwo strategiczne"
+        },
+        {
+          "name": "Wybory w Brazylii",
+          "item": "sw-1",
+          "title": "Brazylia: oficjalnie wygrał Lula. Flávio Bolsonaro chce unieważnienia"
+        },
+        {
+          "name": "Wybory w Izraelu",
+          "item": "sw-2",
+          "title": "Izrael wybiera dziś Kneset. W sondażach Eisenkot przed Netanjahu"
+        },
+        {
+          "name": "Wybory w Brazylii",
+          "item": "sw-3",
+          "title": "Krach na giełdzie w Brazylii po zwycięstwie Luli"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Rosja oskarża Ukrainę o ostrzał Ołeszek tuż przed rozejmem"
+        }
+      ],
+      "facts": [
+        "Mit: szkło to bardzo gęsta ciecz",
+        "Najsilniejsze wiatry wieją na Neptunie",
+        "Oksford jest starszy niż państwo Azteków"
+      ],
+      "concept": "Efekt Lindy"
+    },
+    {
       "date": "2026-10-26",
       "headline": "Tusk w Hanoi. Dziś rozmowy o handlu z Wietnamem",
       "threads": [

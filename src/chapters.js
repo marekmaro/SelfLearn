@@ -2,6 +2,7 @@
 // Bez DOM, więc da się to sprawdzić w scripts/selftest.mjs.
 import { SECTIONS, MAIN_SECTIONS, TIME_BUDGETS, WORDS_PER_MINUTE, FACT_KINDS } from './config.js';
 import { formatShort, formatLong, addDays } from './dates.js';
+import { plural } from './ui.js';
 
 export const sectionLabel = (id) => SECTIONS.find((s) => s.id === id)?.label || id;
 
@@ -113,7 +114,7 @@ const kindLabel = (id) => FACT_KINDS.find((k) => k.id === id)?.label || id;
 // także wpisy schowane pod „Pokaż więcej”; reveal to klucz listy, którą wtedy trzeba rozwinąć.
 export function chapterNarration(ch, edition, onlyGroup = null) {
   const items = [];
-  const add = (id, label, text, reveal = null) => items.push({ id, chapter: ch.id, label, text, reveal });
+  const add = (id, label, text, reveal = null) => items.push({ id, chapter: ch.id, chapterLabel: ch.label, label, text, reveal });
   if (ch.groups) {
     for (const g of ch.groups) {
       if (onlyGroup && g !== onlyGroup) continue;
@@ -143,7 +144,7 @@ export function chapterNarration(ch, edition, onlyGroup = null) {
 // Całe wydanie dla lektora: wstęp i wszystkie rozdziały do czytania (bez rozgrzewki i quizu, które wymagają dotknięć).
 export function editionNarration(edition, chapters) {
   const first = chapters.find((c) => !['warmup', 'quiz'].includes(c.type));
-  const intro = { id: 'intro', chapter: first?.id, label: 'Wstęp', text: `${formatLong(edition.date)}. ${edition.intro || ''}`, reveal: null };
+  const intro = { id: 'intro', chapter: first?.id, chapterLabel: 'Wstęp', label: 'Co dziś w wydaniu', text: `${formatLong(edition.date)}. ${edition.intro || ''}`, reveal: null };
   return [intro, ...chapters.flatMap((ch) => chapterNarration(ch, edition))].filter((it) => it.text.trim());
 }
 
@@ -230,6 +231,49 @@ export function estimateMinutes(chapters, edition, expanded) {
     }
   }
   return Math.max(1, Math.round(total / WORDS_PER_MINUTE));
+}
+
+// Wiersz spisu treści: zapowiedź (pierwszy nagłówek, pojęcie, pytanie…) i krótki opis rozdziału.
+export function chapterPreview(ch, edition, progress = {}, warmup = []) {
+  const n = (count, one, few, many) => `${count} ${plural(count, one, few, many)}`;
+  const first = (list) => list?.[0];
+  switch (ch.type) {
+    case 'warmup': {
+      const answers = progress.warmup || {};
+      const answered = warmup.filter((q) => answers[q.id] !== undefined).length;
+      const right = warmup.filter((q) => answers[q.id] === q.answer).length;
+      return {
+        teaser: ch.title || 'Test z wczoraj',
+        meta: answered >= warmup.length && warmup.length ? `Wynik: ${right} z ${warmup.length}` : `${n(warmup.length || 3, 'pytanie', 'pytania', 'pytań')} z poprzedniego wydania`,
+      };
+    }
+    case 'news':
+      return { teaser: first(ch.groups[0].items)?.title || '', meta: n(ch.groups[0].items.length, 'wiadomość', 'wiadomości', 'wiadomości') };
+    case 'topics':
+      return { teaser: first(ch.groups[0].items)?.title || '', meta: ch.groups.map((g) => sectionLabel(g.section)).join(' · ') };
+    case 'facts':
+      return { teaser: first(ch.items)?.title || '', meta: n(ch.items.length, 'ciekawostka', 'ciekawostki', 'ciekawostek') };
+    case 'otd': {
+      const it = first(ch.items);
+      return { teaser: it ? `${it.year}: ${it.title}` : '', meta: n(ch.items.length, 'wydarzenie', 'wydarzenia', 'wydarzeń') };
+    }
+    case 'concept':
+      return { teaser: edition.concept?.term || '', meta: 'Model myślowy na dziś' };
+    case 'book': {
+      const b = edition.book || {};
+      return { teaser: b.ideaTitle || b.title || '', meta: `„${b.title}”, dzień ${b.day} z ${b.days}` };
+    }
+    case 'quiz': {
+      const quiz = edition.quiz || [];
+      const answered = quiz.filter((q) => progress.quiz?.[q.id] !== undefined).length;
+      const right = quiz.filter((q) => progress.quiz?.[q.id] === q.answer).length;
+      return { teaser: 'Sprawdź, co zostało w głowie', meta: answered >= quiz.length && quiz.length ? `Wynik: ${right} z ${quiz.length}` : n(quiz.length, 'pytanie', 'pytania', 'pytań') };
+    }
+    case 'evening':
+      return { teaser: edition.evening?.question || '', meta: 'Pytanie do rozmowy we dwoje' };
+    default:
+      return { teaser: '', meta: '' };
+  }
 }
 
 export function findRef(edition, ref) {

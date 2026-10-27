@@ -116,3 +116,20 @@ export function editionHref(date, latest, item = null) {
   if (item) return `#wydanie-${date}/${item}`;
   return date === latest ? '#dzis' : `#wydanie-${date}`;
 }
+
+// Adres czytania rozdziału: #czytaj/polska (najnowsze wydanie) albo #czytaj-2026-10-20/polska.
+export function readerHref(date, latest, chapter = null) {
+  const base = date === latest ? '#czytaj' : `#czytaj-${date}`;
+  return chapter ? `${base}/${chapter}` : base;
+}
+
+// Co pokazać pod danym adresem: okładkę wydania (spis treści) albo czytanie rozdziału.
+// Zwraca null dla adresów innych zakładek.
+export function parseEditionHash(hash) {
+  if (hash === '' || hash === 'dzis') return { mode: 'cover', date: null, chapter: null, focus: null };
+  let m = hash.match(/^wydanie-(\d{4}-\d{2}-\d{2})(?:\/(.+))?$/);
+  if (m) return m[2] ? { mode: 'reader', date: m[1], chapter: null, focus: m[2] } : { mode: 'cover', date: m[1], chapter: null, focus: null };
+  m = hash.match(/^czytaj(?:-(\d{4}-\d{2}-\d{2}))?(?:\/([a-z-]+))?$/);
+  if (m) return { mode: 'reader', date: m[1] || null, chapter: m[2] || null, focus: null };
+  return null;
+}

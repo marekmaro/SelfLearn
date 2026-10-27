@@ -17,7 +17,10 @@ import { threadSlug, editionThreads, threadsFromIndex, recentThreadNames } from 
 import { indexEntry, repeatedMaterial } from '../src/edition.js';
 import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
 import { safePath } from './serve.mjs';
-import { splitText, startIndex, recordingSegments, segmentAt } from '../src/listen.js';
+import { splitText, startIndex, recordingSegments, segmentAt, selectionLength, toSelection, fromSelection, pickEngine, clock } from '../src/listen.js';
+import { yearOrdinal } from '../src/speech-text.js';
+import { parseEditionHash, readerHref } from '../src/data.js';
+import { chapterPreview } from '../src/chapters.js';
 import { speakable, joinClips, readWav, writeWav, narrationHash, loadNarration } from './make-audio.mjs';
 import { narrationChapters, editionNarration } from '../src/chapters.js';
 import { verdictText, calibration } from '../src/confidence.js';
@@ -501,8 +504,14 @@ test('Słuchanie: zdania, wznowienie w zapamiętanym miejscu', () => {
 });
 
 test('Lektor z nagrania: tekst do nagrania, sklejanie, wybór fragmentów', () => {
-  assert(speakable('W 2025 r. ok. 7 mld zł, 31% i 2:1, o 3:00 i 21:30, 135–140 mandatów.') === 'W 2025 roku około 7 miliardów złotych, 31 procent i 2 do 1, o 3 i 21 30, 135 do 140 mandatów.', speakable('W 2025 r. ok. 7 mld zł, 31% i 2:1, o 3:00 i 21:30, 135–140 mandatów.'));
-  assert(speakable('„Sapiens” · m.in. tzw. rewolucja') === 'Sapiens, między innymi tak zwany rewolucja', speakable('„Sapiens” · m.in. tzw. rewolucja'));
+  const say = (input, expected) => assert(speakable(input) === expected, `${input} → ${speakable(input)}`);
+  say('W 2025 r. ok. 7 mld zł, 31% i 2:1, o 3:00 i 21:30, 135–140 mandatów.', 'W dwa tysiące dwudziestym piątym roku około 7 miliardów złotych, 31 procent i 2 do 1, o trzeciej i 21 30, 135 do 140 mandatów.');
+  say('„Sapiens” · m.in. tzw. rewolucja', 'Sapiens, między innymi tak zwany rewolucja');
+  say('27 października 1939 r. gestapo', 'dwudziestego siódmego października tysiąc dziewięćset trzydziestego dziewiątego roku gestapo');
+  say('Dostał 64 256 232 głosy, umowa z 1997 r.', 'Dostał 64256232 głosy, umowa z tysiąc dziewięćset dziewięćdziesiątego siódmego roku');
+  say('W I kwartale, w XX wieku, po II wojnie światowej, do 21:47.', 'W pierwszym kwartale, w dwudziestym wieku, po drugiej wojnie światowej, do dwudziestej pierwszej 47.');
+  say('NFZ i PKW, USA i UE, NATO i PiS, 1,5 bln, ok. 3000 r. p.n.e.', 'en ef zet i pe ka wu, u es a i u e, NATO i PiS, 1,5 bilionów, około 3000 roku przed naszą erą');
+  assert(yearOrdinal(2000) === 'dwutysięcznego' && yearOrdinal(1904, 'loc') === 'tysiąc dziewięćset czwartym' && yearOrdinal(2011) === 'dwa tysiące jedenastego', 'lata jako liczebniki porządkowe');
   const items = editionNarration(base, narrationChapters(base));
   assert(items[0].id === 'intro' && new Set(items.map((i) => i.id)).size === items.length, 'fragmenty z unikalnymi id, od wstępu');
   assert(items.every((i) => i.chapter && i.text.trim()), 'każdy fragment ma rozdział i tekst');
@@ -523,6 +532,39 @@ test('Lektor z nagrania: tekst do nagrania, sklejanie, wybór fragmentów', () =
   const segs = recordingSegments(info, [{ id: 'evening' }, { id: 'intro' }, { id: 'pl-1' }]);
   assert(segs.map((x) => x.id).join() === 'intro,pl-1,evening', 'kolejność nagrania, bez działów spoza listy');
   assert(segmentAt(info.items, 0) === -1 && segmentAt(info.items, 6) === 1 && segmentAt(info.items, 20.5) === 1 && segmentAt(info.items, 25) === 2, 'fragment w danej chwili');
+  // Suwak odtwarzacza: tylko słuchane fragmenty, bez pominiętych działów i przerw.
+  assert(Math.abs(selectionLength(segs) - (4.7 + 14 + 9)) < 1e-9, 'długość słuchanej części');
+  assert(toSelection(segs, 0) === 0 && Math.abs(toSelection(segs, 10) - 8.7) < 1e-9 && Math.abs(toSelection(segs, 25) - 18.7) < 1e-9 && Math.abs(toSelection(segs, 35) - 22.7) < 1e-9, 'czas nagrania → suwak');
+  assert(Math.abs(fromSelection(segs, 8.7) - 10) < 1e-9 && fromSelection(segs, 18.7) === 31 && fromSelection(segs, 999) === 40, 'suwak → czas nagrania');
+  assert(clock(65) === '1:05' && clock(-3) === '0:00', 'zegar');
+  // Wybór głosu: wybrany, jeśli jest; inaczej ten, który działa.
+  assert(pickEngine('nagranie', { hasRecording: true, hasSpeech: true }) === 'nagranie', 'nagranie');
+  assert(pickEngine('telefon', { hasRecording: true, hasSpeech: true }) === 'telefon', 'telefon');
+  assert(pickEngine('nagranie', { hasRecording: false, hasSpeech: true }) === 'telefon', 'bez nagrania: telefon');
+  assert(pickEngine('telefon', { hasRecording: true, hasSpeech: false }) === 'nagranie', 'bez mowy: nagranie');
+  assert(pickEngine('telefon', { hasRecording: false, hasSpeech: false }) === null, 'nic nie działa');
+  assert(items.every((i) => i.chapterLabel), 'każdy fragment ma nazwę rozdziału (do odtwarzacza)');
+});
+
+test('Czytanie: adresy okładki i rozdziałów, spis treści', () => {
+  const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+  assert(eq(parseEditionHash(''), { mode: 'cover', date: null, chapter: null, focus: null }) && eq(parseEditionHash('dzis'), parseEditionHash('')), 'okładka dzisiejszego wydania');
+  assert(eq(parseEditionHash('wydanie-2026-10-24'), { mode: 'cover', date: '2026-10-24', chapter: null, focus: null }), 'okładka z archiwum');
+  assert(eq(parseEditionHash('wydanie-2026-10-24/sw-5'), { mode: 'reader', date: '2026-10-24', chapter: null, focus: 'sw-5' }), 'karta z Ulubionych otwiera czytanie');
+  assert(eq(parseEditionHash('czytaj/polska'), { mode: 'reader', date: null, chapter: 'polska', focus: null }), 'rozdział dzisiejszego wydania');
+  assert(eq(parseEditionHash('czytaj-2026-10-24/koniec'), { mode: 'reader', date: '2026-10-24', chapter: 'koniec', focus: null }), 'podsumowanie wydania z archiwum');
+  assert(parseEditionHash('powtorki') === null && parseEditionHash('czytaj/../x') === null, 'inne zakładki i dziwne adresy');
+  assert(readerHref('2026-10-27', '2026-10-27', 'swiat') === '#czytaj/swiat' && readerHref('2026-10-24', '2026-10-27') === '#czytaj-2026-10-24', 'adres czytania');
+  const chapters = buildChapters(base, { sections: ['polska', 'swiat', ...new Set(base.news.map((n) => n.section))], factKinds: ['nauka', 'historia', 'kosmos', 'przyroda'], minutes: 20 }, null);
+  for (const ch of chapters) {
+    const p = chapterPreview(ch, base, { done: [], quiz: {} }, []);
+    assert(typeof p.teaser === 'string' && p.meta, `zapowiedź rozdziału ${ch.id}`);
+  }
+  const quiz = chapters.find((c) => c.type === 'quiz');
+  const answers = Object.fromEntries(base.quiz.map((q) => [q.id, q.answer]));
+  assert(chapterPreview(quiz, base, { done: [], quiz: answers }).meta === `Wynik: ${base.quiz.length} z ${base.quiz.length}`, 'wynik quizu w spisie');
+  const news = chapters.find((c) => c.id === 'polska');
+  assert(chapterPreview(news, base).teaser === news.groups[0].items[0].title, 'pierwszy nagłówek jako zapowiedź');
 });
 
 test('Tryb offline: service worker zna wszystkie pliki aplikacji', () => {

@@ -26,11 +26,13 @@ import { multiChoice, segmented } from './onboarding.js';
 import { offlineSettings, setOfflineSettings, offlineStats, cachedEditionDates, datesToPrefetch, prefetchEditions, clearOfflineEditions, autoPrefetch, formatBytes } from '../offline.js';
 import { ankiTSV, favoritesMarkdown, downloadFile } from '../exporters.js';
 import { favoriteEntries } from '../favorites.js';
-import { installSection } from '../install.js';
+import { installSection, isIOS } from '../install.js';
+import { VOICES, RATES, savedVoice, saveVoice, savedRate, phoneVoiceSample, speechSupported } from '../listen.js';
 
 const PAGE_SECTIONS = [
   { id: 'ustawienia', label: 'Wydanie' },
   { id: 'wyglad', label: 'Wygląd' },
+  { id: 'lektor', label: 'Lektor' },
   { id: 'przypomnienia', label: 'Przypomnienia' },
   { id: 'publikowanie', label: 'Publikowanie' },
   { id: 'postepy', label: 'Postępy' },
@@ -123,6 +125,80 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
             : null,
         ),
       ),
+    );
+  }
+
+  // Lektor: który głos czyta wydanie i w jakim tempie (to samo ustawia się w odtwarzaczu).
+  function listenSection() {
+    const rates = h(
+      'div',
+      { class: 'ps-rates', role: 'radiogroup', 'aria-label': 'Tempo lektora' },
+      RATES.map((r) =>
+        h(
+          'button',
+          {
+            type: 'button',
+            class: 'chip',
+            role: 'radio',
+            'aria-checked': r === savedRate() ? 'true' : 'false',
+            onclick: (e) => {
+              for (const b of rates.children) b.setAttribute('aria-checked', 'false');
+              e.currentTarget.setAttribute('aria-checked', 'true');
+              update((st) => {
+                st.settings ||= {};
+                st.settings.listen = { ...(st.settings.listen || {}), rate: r };
+              });
+            },
+          },
+          `${String(r).replace('.', ',')}×`,
+        ),
+      ),
+    );
+    const voiceName = h('p', { class: 'small muted', style: 'margin:0' });
+    return h(
+      'section',
+      { class: 'section', id: 'lektor' },
+      h('h2', null, 'Lektor'),
+      h('p', { class: 'muted', style: 'margin:0' }, 'Każde wydanie ma nagranie lektora, które gra też przy zgaszonym ekranie, jak podcast. Głos telefonu zwykle brzmi naturalniej, ale cichnie po zablokowaniu ekranu. Głos zmienisz też w odtwarzaczu podczas słuchania.'),
+      (() => {
+        const voices = segmented(VOICES, savedVoice(), (v) => {
+          saveVoice(v);
+          toast('Zapisano');
+        });
+        voices.classList.add('two', 'voices');
+        return voices;
+      })(),
+      h('p', { class: 'eyebrow' }, 'Tempo'),
+      rates,
+      speechSupported()
+        ? h(
+            'div',
+            { class: 'card', style: 'gap:8px' },
+            h('h3', { style: 'margin:0;font-size:var(--step-0);font-family:var(--font-ui)' }, 'Głos telefonu'),
+            h(
+              'p',
+              { class: 'small', style: 'margin:0' },
+              isIOS()
+                ? 'Lepszy polski głos pobierzesz w Ustawieniach iPhone’a: Dostępność → Treść mówiona → Głosy → Polski → Zosia, w wersji do pobrania (lepszej jakości). SelfLearn sam wybierze ten lepszy.'
+                : 'Lepszy polski głos zainstalujesz w ustawieniach telefonu: Zamiana tekstu na mowę → silnik Google → Zainstaluj dane głosowe → polski. SelfLearn sam wybierze najlepszy dostępny.',
+            ),
+            h(
+              'button',
+              {
+                type: 'button',
+                class: 'btn secondary',
+                style: 'justify-self:start',
+                onclick: async () => {
+                  const name = await phoneVoiceSample();
+                  voiceName.textContent = name ? `Teraz czyta: ${name}.` : 'Telefon nie podał nazwy głosu.';
+                },
+              },
+              icon('headphones'),
+              'Posłuchaj głosu telefonu',
+            ),
+            voiceName,
+          )
+        : null,
     );
   }
 
@@ -532,6 +608,8 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
       ),
 
       h('section', { class: 'section', id: 'wyglad' }, h('h2', null, 'Wygląd'), h('p', { class: 'muted', style: 'margin:0' }, 'Zmiany widać od razu. Każde z Was może mieć inny wygląd na swoim telefonie.'), appearancePanel()),
+
+      listenSection(),
 
       remindersSection(),
 

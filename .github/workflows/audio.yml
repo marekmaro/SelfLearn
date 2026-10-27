@@ -13,10 +13,12 @@ on:
       - 'content/editions/**'
       - 'scripts/make-audio.mjs'
       - 'src/chapters.js'
+      - 'src/speech-text.js'
       - '.github/workflows/audio.yml'
   pull_request:
     paths:
       - 'scripts/make-audio.mjs'
+      - 'src/speech-text.js'
       - '.github/workflows/audio.yml'
   workflow_dispatch:
     inputs:

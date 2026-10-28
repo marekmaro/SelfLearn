@@ -1,6 +1,33 @@
 {
   "editions": [
     {
+      "date": "2026-10-28",
+      "headline": "Agnieszka Bartol ma zastąpić Pełczyńską-Nałęcz w resorcie funduszy",
+      "threads": [
+        {
+          "name": "Zmiany w rządzie Tuska",
+          "item": "pl-1",
+          "title": "Agnieszka Bartol ma zastąpić Pełczyńską-Nałęcz w resorcie funduszy"
+        },
+        {
+          "name": "Wybory w Izraelu",
+          "item": "sw-1",
+          "title": "Izrael po wyborach: Likud prowadzi, żaden blok bez większości"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Rozejm w Ołeszkach obowiązuje. Ma objąć konwoje z pomocą"
+        }
+      ],
+      "facts": [
+        "Rekin grenlandzki może żyć ponad 270 lat",
+        "Mit: piorun nie uderza dwa razy w to samo miejsce",
+        "Łyżeczka gwiazdy neutronowej ważyłaby miliard ton"
+      ],
+      "concept": "Efekt zakotwiczenia"
+    },
+    {
       "date": "2026-10-27",
       "headline": "Częstochowa odwołała prezydenta i radę miasta",
       "threads": [

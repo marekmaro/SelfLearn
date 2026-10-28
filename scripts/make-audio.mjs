@@ -17,6 +17,7 @@ import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { narrationChapters, editionNarration } from '../src/chapters.js';
 import { todayISO, addDays, isISODate } from '../src/dates.js';
+import { speakable } from '../src/speech-text.js';
 
 const AUDIO_DIR = 'content/audio';
 const RELEASE = 'lektor';
@@ -24,45 +25,8 @@ const RECENT_DAYS = 3;
 const PAUSE_ITEM = 0.7;
 const PAUSE_CHAPTER = 1.2;
 
-// Skróty i zapisy, które syntezator czyta źle albo dosłownie. Granice słów liczone z polskimi literami
-// (zwykłe \b w JavaScripcie nie uznaje „ł” czy „ś” za litery).
-const word = (src) => new RegExp(`(?<![\\p{L}\\d])${src}(?![\\p{L}])`, 'gu');
-const WORDS = [
-  [word('m\\.in\\.'), 'między innymi'],
-  [word('tzw\\.'), 'tak zwany'],
-  [word('np\\.'), 'na przykład'],
-  [word('itd\\.'), 'i tak dalej'],
-  [word('ok\\.'), 'około'],
-  [word('ds\\.'), 'do spraw'],
-  [word('gen\\.'), 'generał'],
-  [word('prof\\.'), 'profesor'],
-  [word('dr\\.?'), 'doktor'],
-  [word('św\\.'), 'święty'],
-  [word('ul\\.'), 'ulica'],
-  [word('nr'), 'numer'],
-  [word('tys\\.'), 'tysięcy'],
-  [word('mln'), 'milionów'],
-  [word('mld'), 'miliardów'],
-  [word('zł'), 'złotych'],
-  [word('km/h'), 'kilometrów na godzinę'],
-];
-
-export function speakable(text) {
-  let t = String(text || '');
-  t = t.replace(/(\d)\s*r\.(?=[\s,;:)]|$)/g, '$1 roku');
-  for (const [re, word] of WORDS) t = t.replace(re, word);
-  return t
-    .replace(/(\d)\s*%/g, '$1 procent')
-    .replace(/(\d)\s*°C?/g, '$1 stopni')
-    .replace(/\b(\d{1,2}):(\d)(?!\d)/g, '$1 do $2') // wynik meczu 2:1
-    .replace(/\b(\d{1,2}):00\b/g, '$1') // godzina 3:00
-    .replace(/\b(\d{1,2}):(\d{2})\b/g, '$1 $2') // godzina 21:30
-    .replace(/(\d)\s*[–-]\s*(\d)/g, '$1 do $2')
-    .replace(/[„”"«»]/g, '')
-    .replace(/\s*·\s*/g, ', ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
+// Tekst do czytania (skróty, daty, godziny, liczby) – wspólny z głosem telefonu.
+export { speakable } from '../src/speech-text.js';
 
 // Odcisk tekstu i głosu: gdy wydanie się zmieni, nagranie trzeba zrobić od nowa.
 export function narrationHash(items, voice) {

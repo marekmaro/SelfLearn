@@ -1,13 +1,42 @@
-// „Posłuchaj”: wydanie czytane na głos przez syntezator mowy telefonu.
-// Działa bez internetu i bez kosztów. Odtwarzacz przewija wydanie za lektorem i podświetla czytaną kartę.
+// Lektor wydania. Dwa głosy:
+// – nagranie MP3 (scripts/make-audio.mjs): gra jak odtwarzacz muzyki, także przy zgaszonym ekranie,
+//   z przyciskami na ekranie blokady (Media Session);
+// – głos telefonu (syntezator mowy): brzmi zwykle naturalniej, działa bez internetu, ale cichnie po zgaszeniu ekranu.
+// Oba korzystają z tego samego odtwarzacza: mały pasek na dole i pełny panel po jego dotknięciu.
 import { getState, update } from './store.js';
 import { h, icon, toast } from './ui.js';
+import { speakable } from './speech-text.js';
 
-const RATES = [0.9, 1, 1.15, 1.3, 1.5];
+export const RATES = [0.9, 1, 1.15, 1.3, 1.5];
 const MAX_CHUNK = 220;
 const IOS = typeof navigator !== 'undefined' && (/iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
 
+export const VOICES = [
+  { value: 'nagranie', label: 'Nagranie lektora', sub: 'gra też przy zgaszonym ekranie' },
+  { value: 'telefon', label: 'Głos telefonu', sub: 'brzmi naturalniej, cichnie po zgaszeniu ekranu' },
+];
+
 let current = null;
+
+// ---------- Co teraz gra (dla spisu treści i podświetlania kart) ----------
+
+let now = null;
+const nowSubs = new Set();
+
+function setNow(next) {
+  now = next;
+  for (const fn of nowSubs) fn(now);
+}
+
+// { date, id, chapter, playing, engine } albo null, gdy lektor milczy.
+export function nowPlaying() {
+  return now;
+}
+
+export function onNowPlaying(fn) {
+  nowSubs.add(fn);
+  return () => nowSubs.delete(fn);
+}
 
 export function speechSupported() {
   return typeof window !== 'undefined' && 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
@@ -17,15 +46,46 @@ export function isListening() {
   return Boolean(current);
 }
 
-function savedRate() {
+// Sesja lektora dla danego wydania (żeby „Słuchaj” w innym rozdziale przeskoczyło, a nie zaczynało od nowa).
+export function listeningTo(date) {
+  return current && current.date === date ? current : null;
+}
+
+export function savedRate() {
   const r = getState().settings?.listen?.rate;
   return RATES.includes(r) ? r : 1;
 }
 
+function saveRate(rate) {
+  update((s) => {
+    s.settings ||= {};
+    s.settings.listen = { ...(s.settings.listen || {}), rate };
+  });
+}
+
+// Wybrany głos: nagranie (domyślnie) albo telefon.
+export function savedVoice() {
+  return getState().settings?.listen?.voice === 'telefon' ? 'telefon' : 'nagranie';
+}
+
+export function saveVoice(voice) {
+  update((s) => {
+    s.settings ||= {};
+    s.settings.listen = { ...(s.settings.listen || {}), voice };
+  });
+}
+
+// Którym głosem grać: wybrany, jeśli jest dostępny, a jeśli nie – ten drugi.
+export function pickEngine(preferred, { hasRecording, hasSpeech }) {
+  if (preferred === 'telefon' && hasSpeech) return 'telefon';
+  if (hasRecording) return 'nagranie';
+  return hasSpeech ? 'telefon' : null;
+}
+
 // Głosy ładują się asynchronicznie (zwłaszcza w Chrome), więc chwilę na nie czekamy.
 function loadVoices(timeout = 1500) {
-  const now = speechSynthesis.getVoices();
-  if (now.length) return Promise.resolve(now);
+  const voices = speechSynthesis.getVoices();
+  if (voices.length) return Promise.resolve(voices);
   return new Promise((resolve) => {
     const done = () => resolve(speechSynthesis.getVoices());
     speechSynthesis.addEventListener('voiceschanged', done, { once: true });
@@ -33,9 +93,25 @@ function loadVoices(timeout = 1500) {
   });
 }
 
+// Najlepszy polski głos: najpierw ulepszone (iPhone: „Enhanced”/„Premium”, Android/Edge: „Neural”, „Natural”), potem lokalne.
 function pickPolish(voices) {
   const pl = voices.filter((v) => /^pl([-_]|$)/i.test(v.lang));
-  return pl.find((v) => v.localService) || pl[0] || null;
+  const better = pl.find((v) => /premium|enhanced|ulepsz|rozszerz|neural|natural|wavenet/i.test(`${v.name} ${v.voiceURI || ''}`));
+  return better || pl.find((v) => v.localService) || pl[0] || null;
+}
+
+// Próbka głosu telefonu (w Profilu): jak brzmi i jak się nazywa wybrany głos.
+export async function phoneVoiceSample() {
+  if (!speechSupported()) return null;
+  speechSynthesis.cancel();
+  if (IOS) speechSynthesis.speak(new SpeechSynthesisUtterance(' '));
+  const voice = pickPolish(await loadVoices());
+  const u = new SpeechSynthesisUtterance(speakable('Dzień dobry. Tak brzmi głos telefonu. Dziś jest 27 października, a lektor przeczyta o 7:30 najważniejsze wiadomości.'));
+  u.lang = 'pl-PL';
+  if (voice) u.voice = voice;
+  u.rate = savedRate();
+  speechSynthesis.speak(u);
+  return voice?.name || null;
 }
 
 // Chrome urywa bardzo długie wypowiedzi, więc tekst idzie zdanie po zdaniu (najwyżej ~220 znaków).
@@ -78,12 +154,18 @@ export function startIndex(queue, items, startAt) {
   return next < queue.length && queue[next].itemIndex === itemIndex ? next : first;
 }
 
-// items: [{ id, chapter, label, text }]; onItem(item) – wywoływane, gdy lektor zaczyna nowy fragment,
-// onItemEnd(item) – gdy fragment został przeczytany do końca (bez przeskakiwania).
-// onPosition({ id, chunk }) – przy każdym zdaniu, żeby po zamknięciu aplikacji wrócić w to samo miejsce;
-// startAt – miejsce zapisane wcześniej przez onPosition.
-// title – podpis odtwarzacza, endText – komunikat po przeczytaniu wszystkiego.
-export async function startListening(items, { onItem, onItemEnd, onEnd, onPosition, startAt = null, title = 'Posłuchaj', endText = 'To wszystko na dziś. Quiz czeka w wydaniu.' } = {}) {
+// Wspólne opcje obu głosów:
+// items: [{ id, chapter, chapterLabel, label, text }];
+// onItem(item) – lektor zaczyna nowy fragment; onItemEnd(item) – fragment przeczytany do końca (bez przeskakiwania);
+// onPosition(miejsce) – na bieżąco, żeby po zamknięciu aplikacji wrócić w to samo miejsce; startAt – to miejsce;
+// onEnd – koniec kolejki; date – wydanie (do „co teraz gra”); title – podpis odtwarzacza;
+// voice: { value, available: { nagranie, telefon }, onChange(v, item) } – przełącznik głosu w panelu;
+// onShowText(item) – przycisk „Pokaż w tekście”.
+
+// ---------- Głos telefonu ----------
+
+export async function startListening(items, opts = {}) {
+  const { onItem, onItemEnd, onEnd, onPosition, startAt = null, date = null, title = 'Lektor', endText = 'To wszystko na dziś. Quiz czeka w wydaniu.' } = opts;
   if (!speechSupported()) {
     toast('Ta przeglądarka nie umie czytać na głos.');
     return;
@@ -106,7 +188,7 @@ export async function startListening(items, { onItem, onItemEnd, onEnd, onPositi
     return;
   }
 
-  const queue = items.flatMap((item, itemIndex) => splitText(item.text).map((text) => ({ itemIndex, text })));
+  const queue = items.flatMap((item, itemIndex) => splitText(speakable(item.text)).map((text) => ({ itemIndex, text })));
   if (!queue.length) return;
 
   let pos = startIndex(queue, items, startAt);
@@ -115,10 +197,20 @@ export async function startListening(items, { onItem, onItemEnd, onEnd, onPositi
   let rate = savedRate();
   let wakeLock = null;
   let lastItem = -1;
+  let closed = false;
 
-  const bar = h('div', { class: 'player', role: 'region', 'aria-label': 'Odtwarzacz wydania' });
-  document.body.append(bar);
-  document.body.classList.add('has-player');
+  const ui = playerUI(items, {
+    title,
+    voice: opts.voice,
+    onShowText: opts.onShowText,
+    onToggle: () => (playing ? pause() : play()),
+    onPrev: () => jumpItem(-1),
+    onNext: () => jumpItem(1),
+    onJump: (i) => jumpTo(i),
+    onRate: (r) => setRate(r),
+    onClose: () => stop(),
+    current: () => items[queue[pos].itemIndex],
+  });
 
   async function keepAwake(on) {
     try {
@@ -130,6 +222,11 @@ export async function startListening(items, { onItem, onItemEnd, onEnd, onPositi
     } catch {
       wakeLock = null;
     }
+  }
+
+  function announce() {
+    const item = items[queue[pos].itemIndex];
+    setNow({ date, id: item.id, chapter: item.chapter, playing, engine: 'telefon' });
   }
 
   function speak() {
@@ -158,14 +255,14 @@ export async function startListening(items, { onItem, onItemEnd, onEnd, onPositi
     u.onerror = (e) => {
       if (my !== token || e.error === 'interrupted' || e.error === 'canceled') return;
       playing = false;
-      renderBar();
+      render();
       toast('Czytanie przerwane. Spróbuj jeszcze raz.');
     };
     // Krótka pauza po cancel(): bez niej niektóre telefony gubią nową wypowiedź.
     setTimeout(() => {
       if (my === token && playing) speechSynthesis.speak(u);
     }, 30);
-    renderBar();
+    render();
   }
 
   function play() {
@@ -180,19 +277,23 @@ export async function startListening(items, { onItem, onItemEnd, onEnd, onPositi
     token += 1;
     speechSynthesis.cancel();
     keepAwake(false);
-    renderBar();
+    render();
   }
 
-  function jumpItem(delta) {
-    const target = Math.min(items.length - 1, Math.max(0, queue[pos].itemIndex + delta));
+  function jumpTo(itemIndex) {
+    const target = Math.min(items.length - 1, Math.max(0, itemIndex));
     pos = queue.findIndex((c) => c.itemIndex === target);
     lastItem = -1;
     if (playing) speak();
     else {
       lastItem = target;
       onItem?.(items[target]);
-      renderBar();
+      render();
     }
+  }
+
+  function jumpItem(delta) {
+    jumpTo(queue[pos].itemIndex + delta);
   }
 
   function finish() {
@@ -202,53 +303,33 @@ export async function startListening(items, { onItem, onItemEnd, onEnd, onPositi
   }
 
   function stop() {
+    if (closed) return;
+    closed = true;
     playing = false;
     token += 1;
     speechSynthesis.cancel();
     keepAwake(false);
     document.removeEventListener('visibilitychange', onVisible);
-    bar.remove();
-    document.body.classList.remove('has-player');
+    ui.remove();
     document.querySelector('.is-speaking')?.classList.remove('is-speaking');
-    if (current === api) current = null;
+    if (current === api) {
+      current = null;
+      setNow(null);
+    }
   }
 
-  function cycleRate() {
-    rate = RATES[(RATES.indexOf(rate) + 1) % RATES.length];
-    update((s) => {
-      s.settings ||= {};
-      s.settings.listen = { ...(s.settings.listen || {}), rate };
-    });
+  function setRate(r) {
+    rate = r;
+    saveRate(rate);
     if (playing) speak();
-    else renderBar();
+    else render();
   }
 
-  function renderBar() {
-    const item = items[queue[pos].itemIndex];
-    const progress = ((queue[pos].itemIndex + 1) / items.length) * 100;
-    bar.replaceChildren(
-      h('span', { class: 'player-progress', 'aria-hidden': 'true' }, h('span', { style: `width:${progress}%` })),
-      h(
-        'div',
-        { class: 'player-info' },
-        h('p', { class: 'eyebrow' }, `${title} · ${queue[pos].itemIndex + 1} z ${items.length}`),
-        h('p', { class: 'player-title' }, item.label),
-      ),
-      h('button', { type: 'button', class: 'icon-btn player-close', 'aria-label': 'Zamknij odtwarzacz', onclick: stop }, icon('close')),
-      h(
-        'div',
-        { class: 'player-controls' },
-        h('button', { type: 'button', class: 'rate', 'aria-label': `Tempo czytania: ${rate}×`, onclick: cycleRate }, `${String(rate).replace('.', ',')}×`),
-        h('button', { type: 'button', class: 'icon-btn', 'aria-label': 'Poprzedni fragment', onclick: () => jumpItem(-1) }, icon('prev')),
-        h(
-          'button',
-          { type: 'button', class: 'icon-btn play', 'aria-label': playing ? 'Pauza' : 'Czytaj', onclick: () => (playing ? pause() : play()) },
-          icon(playing ? 'pause' : 'play'),
-        ),
-        h('button', { type: 'button', class: 'icon-btn', 'aria-label': 'Następny fragment', onclick: () => jumpItem(1) }, icon('next')),
-        h('span', { class: 'rate-spacer', 'aria-hidden': 'true' }),
-      ),
-    );
+  function render() {
+    if (closed) return;
+    const i = queue[pos].itemIndex;
+    ui.update({ index: i, playing, rate, progress: ((pos + 1) / queue.length) * 100 });
+    announce();
   }
 
   // Po zablokowaniu ekranu albo przejściu do innej aplikacji telefon zwykle ucisza syntezator.
@@ -260,24 +341,42 @@ export async function startListening(items, { onItem, onItemEnd, onEnd, onPositi
   }
   document.addEventListener('visibilitychange', onVisible);
 
-  const api = { stop };
+  const api = {
+    date,
+    engine: 'telefon',
+    stop,
+    toggle: () => (playing ? pause() : play()),
+    jumpToId: (id) => {
+      const i = items.findIndex((it) => it.id === id);
+      if (i >= 0) {
+        jumpTo(i);
+        if (!playing) play();
+      }
+    },
+  };
   current = api;
   play();
 }
 
 // ---------- Nagranie lektora (MP3) ----------
-// Gdy wydanie ma nagranie (scripts/make-audio.mjs), gra ono jak odtwarzacz muzyki: także przy zgaszonym
-// ekranie i z przyciskami na ekranie blokady (Media Session). Bez nagrania zostaje głos telefonu.
 
-export async function loadRecording(date) {
-  try {
-    const res = await fetch(`content/audio/${date}.json`, { cache: 'no-cache' });
-    if (!res.ok) return null;
-    const info = await res.json();
-    return info?.url && Array.isArray(info.items) && info.items.length ? info : null;
-  } catch {
-    return null;
+// Opis nagrania wczytany raz na wydanie (przy przechodzeniu między rozdziałami nie pytamy serwera od nowa).
+const recordings = new Map();
+
+export function loadRecording(date) {
+  if (!recordings.has(date)) {
+    recordings.set(
+      date,
+      fetch(`content/audio/${date}.json`, { cache: 'no-cache' })
+        .then((res) => (res.ok ? res.json() : null))
+        .then((info) => (info?.url && Array.isArray(info.items) && info.items.length ? info : null))
+        .catch(() => {
+          recordings.delete(date);
+          return null;
+        }),
+    );
   }
+  return recordings.get(date);
 }
 
 // Fragmenty nagrania do zagrania: tylko te z listy items (np. działy z profilu albo jeden rozdział), w kolejności nagrania.
@@ -293,9 +392,35 @@ export function segmentAt(list, t) {
   return found;
 }
 
+// Oś czasu słuchanej części: same wybrane fragmenty, bez pominiętych działów i przerw między nimi.
+export function selectionLength(segs) {
+  return segs.reduce((sum, s) => sum + (s.end - s.start), 0);
+}
+
+export function toSelection(segs, t) {
+  let acc = 0;
+  for (const s of segs) {
+    if (t < s.start) return acc;
+    if (t <= s.end) return acc + (t - s.start);
+    acc += s.end - s.start;
+  }
+  return acc;
+}
+
+export function fromSelection(segs, v) {
+  let acc = 0;
+  for (const s of segs) {
+    const len = s.end - s.start;
+    if (v < acc + len) return s.start + Math.max(0, v - acc);
+    acc += len;
+  }
+  return segs.length ? segs[segs.length - 1].end : 0;
+}
+
 // Wywołuj bezpośrednio w obsłudze dotknięcia: iPhone pozwala włączyć dźwięk tylko wtedy.
 // startAt: { id, t } – miejsce zapisane wcześniej przez onPosition; onFail – gdy nagrania nie da się zagrać.
-export function playRecording(info, items, { onItem, onItemEnd, onEnd, onPosition, onFail, startAt = null, title = 'Lektor', album = 'SelfLearn', endText = 'To wszystko na dziś. Quiz czeka w wydaniu.' } = {}) {
+export function playRecording(info, items, opts = {}) {
+  const { onItem, onItemEnd, onEnd, onPosition, onFail, startAt = null, date = null, title = 'Lektor', album = 'SelfLearn', endText = 'To wszystko na dziś. Quiz czeka w wydaniu.' } = opts;
   const segs = recordingSegments(info, items);
   if (!segs.length) {
     onFail?.();
@@ -315,18 +440,28 @@ export function playRecording(info, items, { onItem, onItemEnd, onEnd, onPositio
   const from = segs.find((s) => s.id === startAt?.id);
   let startTime = from ? Math.min(Math.max(Number(startAt.t) || from.start, from.start), from.end - 1) : segs[0].start;
   const pos = () => (ready ? audio.currentTime : startTime);
+  const total = selectionLength(segs);
+  const segItems = segs.map((s) => s.item);
 
   const audio = new Audio();
   audio.preload = 'auto';
   audio.src = `${info.url}#t=${Math.max(0, startTime).toFixed(1)}`;
   audio.playbackRate = rate;
 
-  const bar = playerBar({
-    onClose: () => stop(),
-    onRate: () => cycleRate(),
+  const ui = playerUI(segItems, {
+    title,
+    voice: opts.voice,
+    onShowText: opts.onShowText,
+    onToggle: () => (audio.paused ? resume() : audio.pause()),
     onPrev: () => jump(-1),
     onNext: () => jump(1),
-    onToggle: () => (audio.paused ? resume() : audio.pause()),
+    onJump: (i) => seek(segs[i].start),
+    onSkip: (d) => seek(fromSelection(segs, Math.max(0, toSelection(segs, pos()) + d))),
+    onSeek: (v) => seek(fromSelection(segs, v)),
+    onRate: (r) => setRate(r),
+    onClose: () => stop(),
+    current: () => segs[Math.max(0, index)].item,
+    total,
   });
 
   function resume() {
@@ -352,13 +487,10 @@ export function playRecording(info, items, { onItem, onItemEnd, onEnd, onPositio
     seek(segs[target].start);
   }
 
-  function cycleRate() {
-    rate = RATES[(RATES.indexOf(rate) + 1) % RATES.length];
+  function setRate(r) {
+    rate = r;
     audio.playbackRate = rate;
-    update((s) => {
-      s.settings ||= {};
-      s.settings.listen = { ...(s.settings.listen || {}), rate };
-    });
+    saveRate(rate);
     render();
   }
 
@@ -371,8 +503,8 @@ export function playRecording(info, items, { onItem, onItemEnd, onEnd, onPositio
     if (closed) return;
     const t = pos();
     const all = info.items;
-    const now = all[segmentAt(all, t)];
-    if (now && !segs.some((s) => s.id === now.id)) {
+    const nowSeg = all[segmentAt(all, t)];
+    if (nowSeg && !segs.some((s) => s.id === nowSeg.id)) {
       // Ten fragment nie należy do słuchanej części (np. dział spoza profilu albo następny rozdział).
       const next = segs.find((s) => s.start > t);
       return next ? seek(next.start) : finish();
@@ -399,22 +531,18 @@ export function playRecording(info, items, { onItem, onItemEnd, onEnd, onPositio
   }
 
   function render() {
+    if (closed) return;
     const i = Math.max(0, index);
-    const total = Number.isFinite(audio.duration) ? audio.duration : info.duration;
-    const left = segs.slice(i).reduce((sum, s) => sum + (s.end - Math.max(s.start, Math.min(s.end, pos()))), 0) / (audio.playbackRate || 1);
-    bar.update({
-      eyebrow: `${title} · ${i + 1} z ${segs.length} · ${clock(left)}`,
-      label: segs[i].label,
-      playing: !audio.paused,
-      rate,
-      progress: total ? (pos() / total) * 100 : 0,
-    });
+    const done = toSelection(segs, pos());
+    ui.update({ index: i, playing: !audio.paused, rate, progress: total ? (done / total) * 100 : 0, elapsed: done, total });
+    setNow({ date, id: segs[i].id, chapter: segs[i].item.chapter, playing: !audio.paused, engine: 'nagranie' });
   }
 
   function setMetadata() {
     if (!('mediaSession' in navigator) || typeof MediaMetadata === 'undefined') return;
     const art = (size) => ({ src: new URL(`assets/logo-${size}.png`, document.baseURI).href, sizes: `${size}x${size}`, type: 'image/png' });
-    navigator.mediaSession.metadata = new MediaMetadata({ title: segs[Math.max(0, index)].label, artist: 'SelfLearn', album, artwork: [art(192), art(512)] });
+    const seg = segs[Math.max(0, index)];
+    navigator.mediaSession.metadata = new MediaMetadata({ title: seg.item.label || seg.label, artist: seg.item.chapterLabel ? `SelfLearn · ${seg.item.chapterLabel}` : 'SelfLearn', album, artwork: [art(192), art(512)] });
   }
 
   function setPositionState() {
@@ -500,12 +628,26 @@ export function playRecording(info, items, { onItem, onItemEnd, onEnd, onPositio
     audio.load();
     window.removeEventListener('pagehide', save);
     mediaHandlers(false);
-    bar.remove();
+    ui.remove();
     document.querySelector('.is-speaking')?.classList.remove('is-speaking');
-    if (current === api) current = null;
+    if (current === api) {
+      current = null;
+      setNow(null);
+    }
   }
 
-  const api = { stop };
+  const api = {
+    date,
+    engine: 'nagranie',
+    stop,
+    toggle: () => (audio.paused ? resume() : audio.pause()),
+    jumpToId: (id) => {
+      const seg = segs.find((s) => s.id === id);
+      if (!seg) return;
+      seek(seg.start);
+      if (audio.paused) resume();
+    },
+  };
   current = api;
   mediaHandlers(true);
   index = -1;
@@ -513,56 +655,235 @@ export function playRecording(info, items, { onItem, onItemEnd, onEnd, onPositio
   resume();
 }
 
-function clock(seconds) {
-  const s = Math.round(seconds);
+// ---------- Odtwarzacz: pasek na dole i panel ----------
+
+export function clock(seconds) {
+  const s = Math.max(0, Math.round(seconds));
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
 }
 
-// Pasek odtwarzacza nagrania: elementy zmieniają się w miejscu, żeby częste odświeżanie nie gubiło dotknięć.
-function playerBar({ onClose, onRate, onPrev, onNext, onToggle }) {
+const rateLabel = (r) => `${String(r).replace('.', ',')}×`;
+
+// Elementy zmieniają się w miejscu, żeby częste odświeżanie (kilka razy na sekundę) nie gubiło dotknięć.
+function playerUI(items, o) {
+  let state = { index: 0, playing: false, rate: savedRate(), progress: 0, elapsed: null, total: o.total ?? null };
+  let sheet = null;
+
   const fill = h('span');
-  const eyebrow = h('p', { class: 'eyebrow' });
-  const title = h('p', { class: 'player-title' });
-  const rateBtn = h('button', { type: 'button', class: 'rate', onclick: onRate });
-  const playBtn = h('button', { type: 'button', class: 'icon-btn play', onclick: onToggle });
+  const eyebrow = h('span', { class: 'eyebrow' });
+  const title = h('span', { class: 'player-title' });
+  const playBtn = h('button', { type: 'button', class: 'icon-btn play', onclick: () => o.onToggle() });
   const el = h(
     'div',
-    { class: 'player', role: 'region', 'aria-label': 'Odtwarzacz wydania' },
+    { class: 'player', role: 'region', 'aria-label': 'Lektor' },
     h('span', { class: 'player-progress', 'aria-hidden': 'true' }, fill),
-    h('div', { class: 'player-info' }, eyebrow, title),
-    h('button', { type: 'button', class: 'icon-btn player-close', 'aria-label': 'Zamknij odtwarzacz', onclick: onClose }, icon('close')),
     h(
-      'div',
-      { class: 'player-controls' },
-      rateBtn,
-      h('button', { type: 'button', class: 'icon-btn', 'aria-label': 'Poprzedni fragment', onclick: onPrev }, icon('prev')),
-      playBtn,
-      h('button', { type: 'button', class: 'icon-btn', 'aria-label': 'Następny fragment', onclick: onNext }, icon('next')),
-      h('span', { class: 'rate-spacer', 'aria-hidden': 'true' }),
+      'button',
+      { type: 'button', class: 'player-info', 'aria-label': 'Otwórz odtwarzacz: tempo, głos i lista fragmentów', onclick: () => openSheet() },
+      eyebrow,
+      title,
     ),
+    playBtn,
+    h('button', { type: 'button', class: 'icon-btn', 'aria-label': 'Następny fragment', onclick: () => o.onNext() }, icon('next')),
+    h('button', { type: 'button', class: 'icon-btn player-close', 'aria-label': 'Zakończ słuchanie', onclick: () => o.onClose() }, icon('close')),
   );
   document.body.append(el);
   document.body.classList.add('has-player');
+
   let shownPlaying = null;
+  function setPlayIcon(btn, playing) {
+    btn.replaceChildren(icon(playing ? 'pause' : 'play'));
+    btn.setAttribute('aria-label', playing ? 'Pauza' : 'Słuchaj');
+  }
+
+  function texts() {
+    const item = items[state.index] || items[0];
+    const left = state.total != null && state.elapsed != null ? ` · ${clock((state.total - state.elapsed) / (state.rate || 1))}` : ` · ${state.index + 1} z ${items.length}`;
+    return { item, eyebrow: `${item.chapterLabel || o.title}${left}`, label: item.label };
+  }
+
+  function update(patch) {
+    state = { ...state, ...patch };
+    const t = texts();
+    fill.style.width = `${Math.min(100, state.progress)}%`;
+    if (eyebrow.textContent !== t.eyebrow) eyebrow.textContent = t.eyebrow;
+    if (title.textContent !== t.label) title.textContent = t.label;
+    if (shownPlaying !== state.playing) {
+      shownPlaying = state.playing;
+      setPlayIcon(playBtn, state.playing);
+    }
+    sheet?.update(t);
+  }
+
+  function openSheet() {
+    document.querySelector('dialog.sheet')?.remove();
+    const sTitle = h('h2', { class: 'ps-title' });
+    const sChapter = h('p', { class: 'eyebrow ps-chapter' });
+    const sPlay = h('button', { type: 'button', class: 'icon-btn play big', onclick: () => o.onToggle() });
+    const seekable = Boolean(o.onSeek) && state.total;
+    const range = seekable
+      ? h('input', {
+          type: 'range',
+          class: 'ps-range',
+          min: 0,
+          max: Math.round(state.total),
+          step: 1,
+          value: Math.round(state.elapsed || 0),
+          'aria-label': 'Miejsce w nagraniu',
+          oninput: (e) => {
+            seeking = true;
+            elapsedEl.textContent = clock(Number(e.target.value));
+          },
+          onchange: (e) => {
+            seeking = false;
+            o.onSeek(Number(e.target.value));
+          },
+        })
+      : null;
+    let seeking = false;
+    const elapsedEl = h('span', { class: 'num' });
+    const leftEl = h('span', { class: 'num' });
+    const rates = h(
+      'div',
+      { class: 'ps-rates', role: 'radiogroup', 'aria-label': 'Tempo' },
+      RATES.map((r) =>
+        h('button', {
+          type: 'button',
+          class: 'chip',
+          role: 'radio',
+          'aria-checked': r === state.rate ? 'true' : 'false',
+          onclick: (e) => {
+            for (const b of rates.children) b.setAttribute('aria-checked', 'false');
+            e.currentTarget.setAttribute('aria-checked', 'true');
+            o.onRate(r);
+          },
+        }, rateLabel(r)),
+      ),
+    );
+    const list = h('ol', { class: 'ps-queue' });
+    let lastChapter = null;
+    items.forEach((it, i) => {
+      if (it.chapterLabel && it.chapterLabel !== lastChapter) {
+        lastChapter = it.chapterLabel;
+        list.append(h('li', { class: 'ps-group', 'aria-hidden': 'true' }, it.chapterLabel));
+      }
+      list.append(h('li', null, h('button', { type: 'button', class: 'ps-item', dataset: { index: i }, onclick: () => o.onJump(i) }, h('span', { class: 'ps-bullet', 'aria-hidden': 'true' }), h('span', null, it.label))));
+    });
+
+    const voice = o.voice;
+    const voices = voice
+      ? h(
+          'div',
+          { class: 'ps-voices', role: 'radiogroup', 'aria-label': 'Głos lektora' },
+          VOICES.map((v) =>
+            h(
+              'button',
+              {
+                type: 'button',
+                class: 'voice-option',
+                role: 'radio',
+                'aria-checked': v.value === voice.value ? 'true' : 'false',
+                disabled: !voice.available?.[v.value],
+                onclick: () => {
+                  if (v.value === voice.value) return;
+                  dialog.close();
+                  voice.onChange(v.value, texts().item);
+                },
+              },
+              h('strong', null, v.label),
+              h('small', null, voice.available?.[v.value] ? v.sub : v.value === 'nagranie' ? 'brak nagrania tego wydania' : 'ta przeglądarka nie czyta na głos'),
+            ),
+          ),
+        )
+      : null;
+
+    const dialog = h(
+      'dialog',
+      { class: 'sheet player-sheet', 'aria-label': 'Odtwarzacz' },
+      h('div', { class: 'sheet-head' }, h('h2', null, 'Lektor'), h('button', { type: 'button', class: 'btn ghost', onclick: () => dialog.close() }, 'Gotowe')),
+      h(
+        'div',
+        { class: 'ps-now' },
+        sChapter,
+        sTitle,
+        range,
+        range ? h('div', { class: 'ps-times small muted' }, elapsedEl, leftEl) : h('p', { class: 'ps-times small muted' }, leftEl),
+        h(
+          'div',
+          { class: 'ps-controls' },
+          o.onSkip ? h('button', { type: 'button', class: 'icon-btn skip', 'aria-label': 'Cofnij 15 sekund', onclick: () => o.onSkip(-15) }, h('span', { class: 'skip-num' }, '−15')) : h('span'),
+          h('button', { type: 'button', class: 'icon-btn', 'aria-label': 'Poprzedni fragment', onclick: () => o.onPrev() }, icon('prev')),
+          sPlay,
+          h('button', { type: 'button', class: 'icon-btn', 'aria-label': 'Następny fragment', onclick: () => o.onNext() }, icon('next')),
+          o.onSkip ? h('button', { type: 'button', class: 'icon-btn skip', 'aria-label': 'Do przodu 30 sekund', onclick: () => o.onSkip(30) }, h('span', { class: 'skip-num' }, '+30')) : h('span'),
+        ),
+      ),
+      h('p', { class: 'eyebrow' }, 'Tempo'),
+      rates,
+      voices ? h('p', { class: 'eyebrow' }, 'Głos') : null,
+      voices,
+      h(
+        'div',
+        { class: 'inline-actions ps-actions' },
+        o.onShowText
+          ? h('button', { type: 'button', class: 'btn secondary', onclick: () => { dialog.close(); o.onShowText(texts().item); } }, icon('note'), 'Pokaż w tekście')
+          : null,
+        h('button', { type: 'button', class: 'btn ghost', onclick: () => { dialog.close(); o.onClose(); } }, icon('close'), 'Zakończ słuchanie'),
+      ),
+      h('p', { class: 'eyebrow' }, 'Fragmenty'),
+      list,
+    );
+    let shownIndex = -1;
+    let sheetPlaying = null;
+    sheet = {
+      update(t) {
+        if (sTitle.textContent !== t.label) sTitle.textContent = t.label;
+        const ch = t.item.chapterLabel || o.title;
+        if (sChapter.textContent !== ch) sChapter.textContent = ch;
+        if (sheetPlaying !== state.playing) {
+          sheetPlaying = state.playing;
+          setPlayIcon(sPlay, state.playing);
+        }
+        if (range && !seeking) {
+          range.value = String(Math.round(state.elapsed || 0));
+          elapsedEl.textContent = clock(state.elapsed || 0);
+        }
+        leftEl.textContent = range ? `−${clock((state.total - (state.elapsed || 0)) / (state.rate || 1))}` : `Fragment ${state.index + 1} z ${items.length}`;
+        if (shownIndex !== state.index) {
+          shownIndex = state.index;
+          for (const b of list.querySelectorAll('.ps-item')) b.toggleAttribute('aria-current', Number(b.dataset.index) === state.index);
+        }
+      },
+    };
+    dialog.addEventListener('close', () => {
+      sheet = null;
+      dialog.remove();
+    });
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+    document.body.append(dialog);
+    if (typeof dialog.showModal === 'function') dialog.showModal();
+    else dialog.setAttribute('open', '');
+    sheet.update(texts());
+    // Lista fragmentów przewija się sama do czytanego (w swoim polu, panel zostaje na górze).
+    const currentItem = list.querySelector('[aria-current]');
+    if (currentItem) list.scrollTop = currentItem.offsetTop - list.offsetTop - list.clientHeight / 2;
+  }
+
+  update({});
   return {
-    update({ eyebrow: e, label, playing, rate, progress }) {
-      fill.style.width = `${Math.min(100, progress)}%`;
-      if (eyebrow.textContent !== e) eyebrow.textContent = e;
-      if (title.textContent !== label) title.textContent = label;
-      const r = `${String(rate).replace('.', ',')}×`;
-      if (rateBtn.textContent !== r) {
-        rateBtn.textContent = r;
-        rateBtn.setAttribute('aria-label', `Tempo czytania: ${rate}×`);
-      }
-      if (shownPlaying !== playing) {
-        shownPlaying = playing;
-        playBtn.replaceChildren(icon(playing ? 'pause' : 'play'));
-        playBtn.setAttribute('aria-label', playing ? 'Pauza' : 'Słuchaj');
-      }
-    },
+    update,
+    open: openSheet,
     remove() {
       el.remove();
+      document.querySelector('dialog.player-sheet')?.close();
       document.body.classList.remove('has-player');
     },
   };
+}
+
+// Otwiera panel odtwarzacza, jeśli lektor gra (np. z przycisku przy rozdziale).
+export function openPlayer() {
+  document.querySelector('.player .player-info')?.click();
 }

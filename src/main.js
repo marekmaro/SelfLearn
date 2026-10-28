@@ -14,10 +14,11 @@ import { renderThreads } from './views/threads.js';
 import { applyLook, getLook } from './look.js';
 import { refreshReminders } from './notify.js';
 import { parseChallenge, receiveChallenge } from './challenge.js';
-import { loadIndex } from './data.js';
+import { loadIndex, parseEditionHash } from './data.js';
 import { autoPrefetch } from './offline.js';
 import { toast } from './ui.js';
 import { watchInstall } from './install.js';
+import { isListening } from './listen.js';
 
 const root = document.getElementById('app');
 applyLook();
@@ -67,6 +68,7 @@ async function route() {
 
   updateBadge();
   leaveTimeline();
+  document.body.classList.remove('is-reader');
   const common = { onChange: updateBadge };
 
   if (hash === 'powtorki') {
@@ -87,7 +89,7 @@ async function route() {
   } else if (hash === 'przygotuj') {
     setTab('dzis');
     await renderPrepare(root, common);
-  } else if (['profil', 'ustawienia', 'wyglad', 'przypomnienia', 'publikowanie', 'offline', 'instalacja'].includes(hash)) {
+  } else if (['profil', 'ustawienia', 'wyglad', 'lektor', 'przypomnienia', 'publikowanie', 'offline', 'instalacja'].includes(hash)) {
     setTab('profil');
     await renderProfile(root, {
       ...common,
@@ -100,10 +102,11 @@ async function route() {
     });
   } else {
     setTab('dzis');
-    // #wydanie-2026-10-20 albo #wydanie-2026-10-20/pl-1 (otwiera wydanie na tej karcie, np. z Ulubionych).
-    const m = hash.match(/^wydanie-(\d{4}-\d{2}-\d{2})(?:\/(.+))?$/);
-    const requested = m && isISODate(m[1]) ? m[1] : null;
-    await renderToday(root, { ...common, date: requested, focus: m?.[2] || null });
+    // Okładka (#dzis, #wydanie-2026-10-20) albo czytanie (#czytaj/polska, #czytaj-2026-10-20/polska).
+    // #wydanie-2026-10-20/pl-1 otwiera czytanie na tej karcie (np. z Ulubionych).
+    const view = parseEditionHash(hash) || { mode: 'cover', date: null, chapter: null, focus: null };
+    const requested = view.date && isISODate(view.date) ? view.date : null;
+    await renderToday(root, { ...common, mode: view.mode, date: requested, chapter: view.chapter, focus: view.focus });
   }
 }
 
@@ -144,10 +147,11 @@ window.addEventListener(
 );
 
 // Po powrocie do aplikacji następnego dnia odśwież widok, żeby pokazać nowe wydanie.
+// Nie w trakcie słuchania: przeładowanie ucięłoby lektora (np. słuchanego przed snem po północy).
 let lastDay = todayISO();
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'hidden') refreshReminders();
-  if (document.visibilityState === 'visible' && todayISO() !== lastDay) {
+  if (document.visibilityState === 'visible' && todayISO() !== lastDay && !isListening()) {
     lastDay = todayISO();
     location.reload();
   }

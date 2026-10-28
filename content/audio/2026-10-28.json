@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-28",
+  "file": "2026-10-28.mp3",
+  "url": "audio/2026-10-28.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-28.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "hash": "83ddbea0c99262ff",
+  "duration": 957.43,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 23.38
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Agnieszka Bartol ma zastąpić Pełczyńską-Nałęcz w resorcie funduszy",
+      "start": 24.08,
+      "end": 81.03
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Prezydent Nawrocki zezna w sądzie w procesie przeciw Onetowi",
+      "start": 81.73,
+      "end": 129.8
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Diesel znów droższy. Maksymalna cena to 8,28 zł za litr",
+      "start": 130.5,
+      "end": 188.12
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Chłodno i mokro do końca miesiąca. W górach śnieg",
+      "start": 188.82,
+      "end": 227.96
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Hurkacz odwrócił mecz w Bazylei. Teraz zagra z Rune",
+      "start": 228.66,
+      "end": 269.52
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Izrael po wyborach: Likud prowadzi, żaden blok bez większości",
+      "start": 270.72,
+      "end": 324.83
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "OpenAI: AI udowodniła słynne hipotezy matematyki. Naukowcy sprawdzają",
+      "start": 325.53,
+      "end": 379.9
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "USA: tydzień do wyborów. Teksas może przesądzić o Senacie",
+      "start": 380.6,
+      "end": 429.86
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Microsoft proponuje odejścia 60 tys. pracowników, co czwartemu",
+      "start": 430.56,
+      "end": 488.41
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Fed decyduje dziś o stopach. Złoto znów powyżej 4000 dolarów",
+      "start": 489.11,
+      "end": 536.34
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Rozejm w Ołeszkach obowiązuje. Ma objąć konwoje z pomocą",
+      "start": 537.54,
+      "end": 594.54
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Mit: piorun nie uderza dwa razy w to samo miejsce",
+      "start": 595.74,
+      "end": 629.78
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Rekin grenlandzki może żyć ponad 270 lat",
+      "start": 630.48,
+      "end": 670.05
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Łyżeczka gwiazdy neutronowej ważyłaby miliard ton",
+      "start": 670.75,
+      "end": 697.48
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Powstaje Polska Komisja Likwidacyjna",
+      "start": 698.68,
+      "end": 728.9
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1886: Odsłonięcie Statuy Wolności",
+      "start": 729.6,
+      "end": 758.77
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1940: Grecja mówi „nie” Mussoliniemu",
+      "start": 759.47,
+      "end": 792.36
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt zakotwiczenia",
+      "start": 793.56,
+      "end": 858.19
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Sapiens. Od zwierząt do bogów: Rewolucja naukowa zaczęła się od przyznania się do niewiedzy",
+      "start": 859.39,
+      "end": 936.07
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 937.27,
+      "end": 956.93
+    }
+  ]
+}

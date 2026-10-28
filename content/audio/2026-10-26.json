@@ -4,197 +4,197 @@
   "url": "audio/2026-10-26.mp3",
   "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-26.mp3",
   "voice": "pl_PL-gosia-medium",
-  "hash": "b9f7845cc4352df9",
-  "duration": 1210.17,
+  "hash": "e7c87f04e007ab20",
+  "duration": 1221.09,
   "items": [
     {
       "id": "intro",
       "chapter": "polska",
-      "label": "Wstęp",
+      "label": "Co dziś w wydaniu",
       "start": 0.3,
-      "end": 17.54
+      "end": 17.96
     },
     {
       "id": "pl-1",
       "chapter": "polska",
       "label": "Tusk w Hanoi. Dziś rozmowy o handlu z Wietnamem",
-      "start": 18.24,
-      "end": 66.67
+      "start": 18.66,
+      "end": 66.9
     },
     {
       "id": "pl-2",
       "chapter": "polska",
       "label": "Rząd sprawdza, czy można zerwać umowę na płatną A2",
-      "start": 67.37,
-      "end": 122.91
+      "start": 67.6,
+      "end": 122.69
     },
     {
       "id": "pl-3",
       "chapter": "polska",
       "label": "Lech wygrał z Legią w Warszawie i jest liderem Ekstraklasy",
-      "start": 123.61,
-      "end": 163.3
+      "start": 123.39,
+      "end": 163.13
     },
     {
       "id": "pl-4",
       "chapter": "polska",
       "label": "Wichura: alerty RCB, drzewo spadło na cztery auta",
-      "start": 164,
-      "end": 210.54
+      "start": 163.83,
+      "end": 210.41
     },
     {
       "id": "pl-5",
       "chapter": "polska",
       "label": "Referendum w Częstochowie: frekwencja tuż nad progiem",
-      "start": 211.24,
-      "end": 267.05
+      "start": 211.11,
+      "end": 267.38
     },
     {
       "id": "sw-1",
       "chapter": "swiat",
       "label": "Lula wygrywa w Brazylii według projekcji. To będzie jego czwarta kadencja",
-      "start": 268.25,
-      "end": 319.45
+      "start": 268.58,
+      "end": 320.42
     },
     {
       "id": "sw-2",
       "chapter": "swiat",
       "label": "Serbia: Vučić przyznał się do porażki. Wygrała Lista Studencka",
-      "start": 320.15,
-      "end": 370.39
+      "start": 321.12,
+      "end": 372.4
     },
     {
       "id": "sw-3",
       "chapter": "swiat",
       "label": "Ropa najdroższa od kwietnia po atakach Huti na Arabię Saudyjską",
-      "start": 371.09,
-      "end": 416.04
+      "start": 373.1,
+      "end": 418.27
     },
     {
       "id": "sw-4",
       "chapter": "swiat",
       "label": "Ebola: Uganda wprowadza 21-dniową kwarantannę dla wracających z Konga",
-      "start": 416.74,
-      "end": 467.65
+      "start": 418.97,
+      "end": 470.19
     },
     {
       "id": "sw-5",
       "chapter": "swiat",
       "label": "F1: Antonelli wygrał w Austin. Tytuł może zdobyć za tydzień",
-      "start": 468.35,
-      "end": 518.71
+      "start": 470.89,
+      "end": 521.71
     },
     {
       "id": "bezpieczenstwo-1",
       "chapter": "tematy",
       "label": "Huti ostrzelali Arabię Saudyjską. Rijad: przechwyciliśmy 12 rakiet",
-      "start": 519.91,
-      "end": 569.64
+      "start": 522.91,
+      "end": 572.76
     },
     {
       "id": "bezpieczenstwo-2",
       "chapter": "tematy",
       "label": "Rozejm w Ołeszkach ma ruszyć we wtorek o 3:00",
-      "start": 570.34,
-      "end": 619.84
+      "start": 573.46,
+      "end": 624.2
     },
     {
       "id": "ai-1",
       "chapter": "tematy",
       "label": "Google: dane z Gmaila i Zdjęć podpięte do AI mogą służyć reklamom",
-      "start": 620.54,
-      "end": 675.55
+      "start": 624.9,
+      "end": 680.08
     },
     {
       "id": "ai-2",
       "chapter": "tematy",
       "label": "USA i Chiny budują bloki AI. Kraje muszą wybierać",
-      "start": 676.25,
-      "end": 725.58
+      "start": 680.78,
+      "end": 730.87
     },
     {
       "id": "zdrowie-1",
       "chapter": "tematy",
       "label": "Ruszają Powiatowe Centra Zdrowia tam, gdzie nie ma SOR",
-      "start": 726.28,
-      "end": 775.25
+      "start": 731.57,
+      "end": 780.93
     },
     {
       "id": "muzyka-1",
       "chapter": "tematy",
       "label": "Właściciele praw do piosenek Elvisa pozywają Anthropic",
-      "start": 775.95,
-      "end": 827.98
+      "start": 781.63,
+      "end": 834.31
     },
     {
       "id": "muzyka-2",
       "chapter": "tematy",
       "label": "Jay-Z zakończył trasę z okazji 30 lat „Reasonable Doubt”",
-      "start": 828.68,
-      "end": 870.46
+      "start": 835.01,
+      "end": 877.03
     },
     {
       "id": "fact-1",
       "chapter": "ciekawostki",
       "label": "Sowa obraca głowę nawet o 270 stopni",
-      "start": 871.66,
-      "end": 904.08
+      "start": 878.23,
+      "end": 910.77
     },
     {
       "id": "fact-3",
       "chapter": "ciekawostki",
       "label": "Mit: Napoleon był niski",
-      "start": 904.78,
-      "end": 936.7
+      "start": 911.47,
+      "end": 943.79
     },
     {
       "id": "fact-2",
       "chapter": "ciekawostki",
       "label": "Na Marsie zachód Słońca jest niebieski",
-      "start": 937.4,
-      "end": 965.69
+      "start": 944.49,
+      "end": 973.41
     },
     {
       "id": "otd-1",
       "chapter": "historia",
       "label": "1939: Powstaje Generalne Gubernatorstwo",
-      "start": 966.89,
-      "end": 999.12
+      "start": 974.61,
+      "end": 1007.1
     },
     {
       "id": "otd-2",
       "chapter": "historia",
       "label": "1863: Rodzi się nowoczesna piłka nożna",
-      "start": 999.82,
-      "end": 1026.9
+      "start": 1007.8,
+      "end": 1034.89
     },
     {
       "id": "otd-3",
       "chapter": "historia",
       "label": "1955: Austria ogłasza wieczystą neutralność",
-      "start": 1027.6,
-      "end": 1058.43
+      "start": 1035.59,
+      "end": 1067.89
     },
     {
       "id": "concept",
       "chapter": "pojecie",
       "label": "Pojęcie: Heurystyka dostępności",
-      "start": 1059.63,
-      "end": 1112.57
+      "start": 1069.09,
+      "end": 1123.09
     },
     {
       "id": "book",
       "chapter": "ksiazka",
       "label": "Sapiens. Od zwierząt do bogów: Rewolucja rolnicza: największe oszustwo w historii?",
-      "start": 1113.77,
-      "end": 1189.22
+      "start": 1124.29,
+      "end": 1200.12
     },
     {
       "id": "evening",
       "chapter": "wieczor",
       "label": "Na wieczór",
-      "start": 1190.42,
-      "end": 1209.67
+      "start": 1201.32,
+      "end": 1220.59
     }
   ]
 }

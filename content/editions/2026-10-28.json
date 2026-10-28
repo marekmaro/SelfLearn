@@ -1,0 +1,434 @@
+{
+  "date": "2026-10-28",
+  "intro": "Dziś m.in. wyniki wyborów w Izraelu, nowa ministra funduszy, prezydent Nawrocki wezwany do sądu, droższy diesel i chłodny koniec miesiąca, Hurkacz w Bazylei oraz zapowiedź przełomu w matematyce od OpenAI. W „Sapiens” dzień czwarty: nauka zaczęła się od słów „nie wiem”.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Agnieszka Bartol ma zastąpić Pełczyńską-Nałęcz w resorcie funduszy",
+      "summary": "Premier Donald Tusk ogłosił na wtorkowym posiedzeniu rządu, że nową ministrą funduszy i polityki regionalnej ma zostać Agnieszka Bartol, obecnie stała przedstawicielka Polski przy Unii Europejskiej. Zastąpi Katarzynę Pełczyńską-Nałęcz, która odeszła z rządu po konflikcie w Polsce 2050. Tusk nazwał Bartol jedną z najlepszych specjalistek od spraw europejskich, także unijnych funduszy. Decyzja zapadła po rozmowie z marszałkiem Szymonem Hołownią, a resort ma pozostać w ramach uzgodnień z Polską 2050. Nową ministrę musi jeszcze powołać prezydent.",
+      "why": "Resort odpowiada m.in. za rozliczenie pieniędzy z Krajowego Planu Odbudowy, które według premiera jest blisko mety. Opóźnienia mogą oznaczać utratę części unijnych pieniędzy.",
+      "sources": [
+        {
+          "name": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art45402661-donald-tusk-wskazal-nastepczynie-pelczynskiej-nalecz-to-agnieszka-bartol"
+        },
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/polska/agnieszka-bartol-kim-jest-to-ona-ma-byc-nowa-ministra-funduszy-i-polityki-regionalnej-st9307348"
+        }
+      ],
+      "thread": "Zmiany w rządzie Tuska"
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Prezydent Nawrocki zezna w sądzie w procesie przeciw Onetowi",
+      "summary": "Sąd Okręgowy w Warszawie wyznaczył na 18 stycznia 2027 r. przesłuchanie prezydenta Karola Nawrockiego w procesie, który wytoczył wydawcy Onetu. Chodzi o artykuł „Karol Nawrocki i tajemnice Grand Hotelu” z maja 2025 r., opublikowany w czasie kampanii prezydenckiej. Nawrocki domaga się przeprosin. Wtorkowa rozprawa była pierwszą jawną w tej sprawie, choć nie można jej transmitować. Sędzia zobowiązała prezydenta do osobistego stawiennictwa; gdyby nie przyszedł bez usprawiedliwienia, sąd może pominąć jego zeznania.",
+      "why": "To proces o granice krytyki polityka w czasie kampanii, a stroną jest urzędujący prezydent.",
+      "sources": [
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/polityka/news-prezydent-nawrocki-musi-stawic-sie-w-sadzie-jest-termin-prze,nIdn,1023603"
+        },
+        {
+          "name": "Polsat News",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-10-27/karol-nawrocki-i-sprawa-grand-hotelu-pierwsza-jawna-rozprawa/"
+        }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Diesel znów droższy. Maksymalna cena to 8,28 zł za litr",
+      "summary": "Ministerstwo Energii ogłosiło maksymalne ceny paliw na środę. Olej napędowy podrożał o 10 groszy, do 8,28 zł za litr, a benzyna 95 potaniała o 3 grosze, do 6,55 zł. Za benzynę 98 można zapłacić najwyżej 7,24 zł. Limity obowiązują w ramach programu „Ceny Paliwa Niżej”, który ma działać do końca 2026 r. Stacje mogą sprzedawać taniej, ale za przekroczenie limitu grozi kara do 1 mln zł. Zatankowanie 50 litrów diesla kosztuje więc najwyżej 414 zł.",
+      "why": "Drogi diesel podnosi koszty transportu, a więc i ceny w sklepach. We wrześniu paliwa były głównym powodem wzrostu inflacji do ok. 4%.",
+      "sources": [
+        {
+          "name": "Interia",
+          "url": "https://motoryzacja.interia.pl/wiadomosci/news-benzyna-tanieje-diesel-znow-mocno-w-gore-nowe-ceny-od-28-paz,nId,23564827"
+        },
+        {
+          "name": "Forsal",
+          "url": "https://forsal.pl/kraj/aktualnosci/artykuly/11336928,ceny-maksymalne-paliw-w-srode-28102026-benzyna-tansza-diesel-ostro-w-gore.html"
+        }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Chłodno i mokro do końca miesiąca. W górach śnieg",
+      "summary": "Od środy pogoda się psuje: według prognoz będzie pochmurno i deszczowo, a temperatura spadnie do 8–12 stopni. Na Wszystkich Świętych w większości kraju ma być 6–10 stopni. Na południu i na terenach podgórskich możliwy jest śnieg, a w Tatrach leży już ok. 25 cm świeżego śniegu. Według IMGW pochmurna i deszczowa aura utrzyma się także na początku listopada.",
+      "why": "Kto jedzie w weekend na groby, zwłaszcza na południe kraju, powinien przygotować się na deszcz, chłód i śliskie drogi.",
+      "sources": [
+        {
+          "name": "Polsat News",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-10-27/z-gor-w-doliny-splynie-zimowa-pogoda-szykujmy-sie-na-snieg/"
+        },
+        {
+          "name": "Polsat News: prognoza na 1 listopada",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-10-26/to-nie-jest-dobra-prognoza-na-wszystkich-swietych-szykuje-sie-masa-zmian/"
+        }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Hurkacz odwrócił mecz w Bazylei. Teraz zagra z Rune",
+      "summary": "Hubert Hurkacz awansował do drugiej rundy turnieju ATP 500 w Bazylei. We wtorek przegrał pierwszego seta z Belgiem Zizou Bergsem 3:6, ale wygrał dwa kolejne: 6:3 i 6:4. Bergs to tenisista, który w tym sezonie pokonał Carlosa Alcaraza. Następnym rywalem Polaka będzie Duńczyk Holger Rune, który wrócił do gry po blisko rocznej przerwie spowodowanej kontuzją.",
+      "why": "W tym sezonie Hurkacza często zatrzymywały urazy. Jesienne turnieje w hali to szansa, żeby odbudować pozycję w rankingu przed końcem roku.",
+      "sources": [
+        {
+          "name": "Eurosport",
+          "url": "https://eurosport.tvn24.pl/tenis/atp-bazylea/2026/hubert-hurkacz-doprowadzil-zizou-bergsa-do-furii.-wygral-mecz-i-awansowal-do-drugiej-rundy-turnieju-atp-500-w-bazylei_sto23349690/story.shtml"
+        },
+        {
+          "name": "Interia",
+          "url": "https://sport.interia.pl/tenis/hubert-hurkacz/news-hurkacz-wracal-po-3-6-w-meczu-z-pogromca-alcaraza-trzysetowy,nId,23564694"
+        }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Izrael po wyborach: Likud prowadzi, żaden blok bez większości",
+      "summary": "Według sondaży exit poll po wtorkowych wyborach do Knesetu żaden blok nie ma 61 mandatów potrzebnych do większości. Likud premiera Benjamina Netanjahu ma być największą partią (24–30 mandatów, zależnie od stacji), przed partią Jaszar Gadiego Eisenkota (19–22). Bloki szacowano na 49–55 mandatów każdy, a partie arabskie mogą mieć 16–18, prawie dwa razy więcej niż dotąd. Eisenkot niemal wykluczył rząd z ich udziałem. Oficjalne liczenie trwa, a głosy m.in. żołnierzy i dyplomatów policzone będą później.",
+      "why": "Najbardziej prawdopodobny jest pat i długie rozmowy koalicyjne. Od wyniku zależy polityka Izraela wobec Gazy i Iranu.",
+      "sources": [
+        {
+          "name": "Axios",
+          "url": "https://www.axios.com/2026/10/27/netanyahu-eisenkot-israel-election-exit-polls"
+        },
+        {
+          "name": "CNN",
+          "url": "https://www.cnn.com/2026/10/27/world/live-news/israel-elections-live-results-latest-votes-intl"
+        }
+      ],
+      "thread": "Wybory w Izraelu"
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "OpenAI: AI udowodniła słynne hipotezy matematyki. Naukowcy sprawdzają",
+      "summary": "OpenAI ogłosiło w poniedziałek trzy wyniki, które według firmy uzyskały jej modele AI. W matematyce to dowód hipotezy lokalnego wygładzania we wszystkich wymiarach, z którego wynikają też dowody słynnych hipotez Kakeyi i Steina. W informatyce model miał obalić hipotezę czasu wykładniczego (ETH); Ryan Williams z MIT powiedział, że potwierdzone obalenie byłoby dużym wydarzeniem. Trzeci wynik dotyczy fizyki kwantowej i czeka na recenzję. Dowody z matematyki i informatyki opublikowano i sprawdzono komputerowo w języku Lean.",
+      "why": "Jeśli wyniki się potwierdzą, AI rozwiąże problemy, nad którymi matematycy pracowali od dekad. Na razie to deklaracje firmy, które środowisko naukowe dopiero weryfikuje.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/10/27/ai-makes-discoveries-in-mathematics-computer-science-physics-openai-says"
+        },
+        {
+          "name": "Quartz",
+          "url": "https://qz.com/openai-ai-discoveries-math-computer-science-physics-102726"
+        }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "USA: tydzień do wyborów. Teksas może przesądzić o Senacie",
+      "summary": "3 listopada Amerykanie wybiorą całą Izbę Reprezentantów i część Senatu, w którym Republikanie mają dziś przewagę 53 do 47. Jednym z kluczowych wyścigów jest Teksas, gdzie Republikanin Ken Paxton walczy z Demokratą Jamesem Talarico. W sondażu Fox News obaj mają po 49%, a w pięciu z sześciu sondaży z ostatniego tygodnia nieznacznie prowadzi Talarico, w granicach błędu. Do poniedziałku przedterminowo głosowało ponad 4,5 mln Teksańczyków. We wtorek w stanie wiecował Donald Trump, popierając Paxtona.",
+      "why": "Jeśli Demokraci odbiją Senat, prezydentowi Trumpowi będzie trudniej przeprowadzać ustawy i nominacje w drugiej połowie kadencji.",
+      "sources": [
+        {
+          "name": "Newsweek",
+          "url": "https://www.newsweek.com/james-talarico-vs-ken-paxton-what-texas-polls-show-one-week-before-midterm-12621879"
+        },
+        {
+          "name": "Fox News",
+          "url": "https://www.foxnews.com/politics/fox-news-poll-texas-senate-race-galloping-toward-photo-finish"
+        }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Microsoft proponuje odejścia 60 tys. pracowników, co czwartemu",
+      "summary": "Microsoft zaproponował dobrowolne odejścia z odprawą ok. 60 tys. pracowników, czyli mniej więcej co czwartemu. Oferta dotyczy osób na stanowiskach do poziomu wiceprezesa w wybranych zespołach w USA, Kanadzie, Indiach i Wielkiej Brytanii. Chętni mają czas do początku grudnia. Według mediów odprawa to m.in. tydzień pensji za każde pół roku pracy, do tego część akcji i pomoc w szukaniu pracy. Firma tnie koszty, a jednocześnie wydaje bardzo dużo na centra danych dla AI. W lipcu zwolniła ok. 4800 osób.",
+      "why": "60 tys. to liczba osób, które mogą skorzystać z oferty, a nie planowanych odejść. To jednak kolejny sygnał, że wielkie firmy technologiczne przesuwają pieniądze z ludzi na sztuczną inteligencję.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html"
+        },
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-26/microsoft-to-offer-buyouts-to-60-000-workers-in-latest-cost-cut"
+        }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Fed decyduje dziś o stopach. Złoto znów powyżej 4000 dolarów",
+      "summary": "Amerykańska Rezerwa Federalna pod kierunkiem Kevina Warsha ogłosi w środę o 19:00 czasu polskiego decyzję w sprawie stóp procentowych. Rynki spodziewają się, że je utrzyma, a inwestorzy będą szukać w komunikacie wskazówek na grudzień. Przed decyzją złoto podrożało o ok. 1%, do ok. 4060 dolarów za uncję, po spadku w poprzednim tygodniu do najniższego poziomu od połowy lipca. Na Wall Street rosły akcje firm technologicznych, zwłaszcza producentów chipów.",
+      "why": "Decyzje Fed wpływają na kurs dolara i złotego, a pośrednio także na stopy procentowe i kredyty w Polsce.",
+      "sources": [
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-27/gold-holds-above-4-000-as-traders-look-to-fed-rate-decision"
+        },
+        {
+          "name": "TheStreet",
+          "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-27-2026"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Rozejm w Ołeszkach obowiązuje. Ma objąć konwoje z pomocą",
+      "summary": "We wtorek nad ranem zaczął obowiązywać lokalny rozejm w okupowanych Ołeszkach w obwodzie chersońskim: według Ukrainy od 3:00 czasu kijowskiego, według Rosji od 4:00 czasu moskiewskiego. Melania Trump, której przypisuje się wynegocjowanie porozumienia, napisała, że strefę rozejmu rozszerzono tak, by obejmowała konwoje z pomocą humanitarną. Mieszkańcy, którzy zechcą wyjechać, mają dostać transport do Rosji albo na Ukrainę. W mieście zostało 1700–2000 osób. Żadna ze stron nie podała, jak długo potrwa rozejm i kto będzie go nadzorował.",
+      "why": "To pierwszy taki lokalny rozejm w tej wojnie. Jeśli się utrzyma, może być wzorem dla innych miejsc przed rozmowami pokojowymi zapowiadanymi na listopad.",
+      "sources": [
+        {
+          "name": "CNN",
+          "url": "https://www.cnn.com/2026/10/27/europe/russia-ukraine-melania-trump-ceasefire-intl-hnk"
+        },
+        {
+          "name": "Anadolu",
+          "url": "https://aa.com.tr/en/eurasia/russia-ukraine-ceasefire-in-oleshky-brokered-by-us-first-lady-takes-effect/4101868"
+        }
+      ],
+      "thread": "Wojna w Ukrainie"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Rekin grenlandzki może żyć ponad 270 lat",
+      "body": "Rekiny grenlandzkie żyją w zimnych wodach Arktyki i Atlantyku Północnego. W 2016 r. badacze z Danii ustalili ich wiek, badając soczewki oczu, których środek powstaje jeszcze przed urodzeniem i potem się nie zmienia. Wśród 28 zbadanych samic najstarsze miały co najmniej 272 lata, a największa, o długości ponad 5 m, ok. 390 lat (z dużym marginesem błędu). Dojrzałość płciową osiągają około 150. roku życia. To najdłużej żyjący znany kręgowiec.",
+      "source": {
+        "name": "PubMed (Science, 2016)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27516602/"
+      }
+    },
+    {
+      "id": "fact-2",
+      "kind": "nauka",
+      "title": "Mit: piorun nie uderza dwa razy w to samo miejsce",
+      "body": "Pioruny chętnie trafiają w to samo miejsce, zwłaszcza w wysokie, wystające obiekty. W Empire State Building w Nowym Jorku uderzają średnio ok. 25 razy w roku, a podczas jednej burzy wieżowiec trafiło osiem razy w ciągu 24 minut. Wysoki budynek skraca drogę wyładowania między chmurą a ziemią, więc jest naturalnym celem. Dlatego na dachach montuje się piorunochrony, które bezpiecznie odprowadzają prąd do ziemi.",
+      "source": {
+        "name": "MPR News",
+        "url": "https://www.mprnews.org/story/2014/07/08/when-lightning-strikes-tall-buildings"
+      }
+    },
+    {
+      "id": "fact-3",
+      "kind": "kosmos",
+      "title": "Łyżeczka gwiazdy neutronowej ważyłaby miliard ton",
+      "body": "Gwiazda neutronowa to zapadnięte jądro masywnej gwiazdy, która wybuchła jako supernowa. Ma średnicę ok. 20 km, czyli wielkość miasta, a mieści więcej masy niż całe Słońce. Materia jest w niej ściśnięta tak mocno, że łyżeczka ważyłaby na Ziemi ok. miliarda ton, a według niektórych wyliczeń nawet kilka razy więcej.",
+      "source": {
+        "name": "University of Illinois Physics",
+        "url": "https://van.physics.illinois.edu/ask/listing/1091"
+      }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1918,
+      "title": "Powstaje Polska Komisja Likwidacyjna",
+      "body": "28 października 1918 r. polscy posłowie do parlamentu austriackiego powołali w Krakowie Polską Komisję Likwidacyjną. Miała utrzymać porządek i przejąć władzę w Galicji od rozpadającej się Austro-Węgier. Na czele obrad stanął Wincenty Witos. Po odzyskaniu niepodległości komisja podporządkowała się rządowi w Warszawie.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Polish_Liquidation_Committee"
+      }
+    },
+    {
+      "id": "otd-2",
+      "year": 1886,
+      "title": "Odsłonięcie Statuy Wolności",
+      "body": "28 października 1886 r. prezydent Grover Cleveland odsłonił w porcie nowojorskim Statuę Wolności, dar Francji dla Stanów Zjednoczonych. Rano ulicami Nowego Jorku przeszła pierwsza w historii miasta parada z deszczem papierowych tasiemek, którą w deszczu oglądało ponad milion osób. Statua prawie rok czekała w skrzyniach, aż skończono budowę cokołu.",
+      "source": {
+        "name": "History",
+        "url": "https://www.history.co.uk/this-day-in-history/28-october/statue-of-liberty-dedicated-in-new-york"
+      }
+    },
+    {
+      "id": "otd-3",
+      "year": 1940,
+      "title": "Grecja mówi „nie” Mussoliniemu",
+      "body": "28 października 1940 r. nad ranem włoski ambasador zażądał od greckiego premiera Ioannisa Metaxasa zgody na zajęcie przez wojska Osi strategicznych punktów w Grecji. Metaxas odmówił: według legendy jednym słowem „Ochi”, czyli „Nie”, a w rzeczywistości po francusku: „A więc wojna”. O 5:30 Włosi zaatakowali z Albanii. Dziś to w Grecji święto narodowe, Dzień „Ochi”.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Ohi_Day"
+      }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Efekt zakotwiczenia",
+    "definition": "Pierwsza liczba, którą usłyszymy, nawet zupełnie przypadkowa, mocno wpływa na nasze późniejsze oceny i decyzje.",
+    "origin": "Opisali go w 1974 r. Amos Tversky i Daniel Kahneman. W eksperymencie kręcili kołem fortuny ustawionym tak, by zatrzymywało się na 10 albo na 65, a potem pytali, jaki procent państw ONZ leży w Afryce. Typowa odpowiedź osób, którym wypadło 10, wynosiła 25%, a tych, którym wypadło 65 – aż 45%. Działa to nawet wtedy, gdy wiemy, że liczba jest przypadkowa.",
+    "examples": [
+      "Przekreślona „cena przed promocją” sprawia, że kwota obok wydaje się okazją.",
+      "Ogłaszana codziennie maksymalna cena paliwa łatwo staje się w głowie kierowcy „normalną” ceną, niezależnie od tego, ile paliwo kosztuje w hurcie.",
+      "W rozmowie o pensji pierwsza kwota, która padnie, wyznacza pole dalszych negocjacji."
+    ],
+    "source": {
+      "name": "Wikipedia (ang.)",
+      "url": "https://en.wikipedia.org/wiki/Anchoring_effect"
+    }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "sapiens",
+    "title": "Sapiens. Od zwierząt do bogów",
+    "author": "Yuval Noah Harari",
+    "day": 4,
+    "days": 7,
+    "ideaTitle": "Rewolucja naukowa zaczęła się od przyznania się do niewiedzy",
+    "idea": "Według Harariego rewolucja naukowa była przede wszystkim rewolucją niewiedzy. Wcześniejsze tradycje zakładały, że wszystko, co ważne, już wiadomo z pism i od mędrców. Nauka zaczęła od zdania „nie wiemy”. Widać to na mapach: w XV i XVI wieku Europejczycy zaczęli zostawiać na nich puste miejsca, zamiast wypełniać je potworami i zmyśleniami. Kolumb do końca twierdził, że dopłynął do Azji, a Amerigo Vespucci przyznał, że to nieznany ląd. Dlatego kartograf Martin Waldseemüller w 1507 r. nazwał kontynent Ameryką. Uwaga: historycy nauki zwracają uwagę, że ciekawość i badania znały też inne cywilizacje, np. świat islamu i Chiny, więc obraz Harariego jest uproszczony.",
+    "moral": "Przyznanie się do niewiedzy nie jest słabością, tylko początkiem nauki. Kto zakłada, że już wszystko wie, przestaje odkrywać.",
+    "action": "Zapisz jedno pytanie, na które dziś szczerze odpowiadasz „nie wiem”, i poświęć pięć minut, żeby poszukać odpowiedzi.",
+    "source": {
+      "name": "Wikipedia (ang.)",
+      "url": "https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind"
+    }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-28-q1",
+      "ref": "fact-1",
+      "question": "Jak naukowcy ustalili wiek rekinów grenlandzkich?",
+      "options": [
+        "Liczyli słoje na zębach",
+        "Badali soczewki ich oczu",
+        "Mierzyli długość płetw",
+        "Liczyli kręgi kręgosłupa"
+      ],
+      "answer": 1,
+      "explanation": "Środek soczewki oka powstaje przed urodzeniem i potem się nie zmienia, więc da się go datować metodą radiowęglową."
+    },
+    {
+      "id": "2026-10-28-q2",
+      "ref": "fact-2",
+      "question": "Ile razy w roku piorun uderza średnio w Empire State Building?",
+      "options": [
+        "Raz na kilka lat",
+        "Ok. 2 razy",
+        "Ok. 25 razy",
+        "Ok. 250 razy"
+      ],
+      "answer": 2,
+      "explanation": "Wysoki budynek skraca drogę wyładowania, więc pioruny trafiają w niego średnio ok. 25 razy w roku."
+    },
+    {
+      "id": "2026-10-28-q3",
+      "ref": "fact-3",
+      "question": "Jaką średnicę ma typowa gwiazda neutronowa?",
+      "options": [
+        "Ok. 20 km",
+        "Ok. 2000 km",
+        "Taką jak Ziemia",
+        "Taką jak Słońce"
+      ],
+      "answer": 0,
+      "explanation": "Mieści więcej masy niż Słońce w kuli wielkości miasta, dlatego jej materia jest tak gęsta."
+    },
+    {
+      "id": "2026-10-28-q4",
+      "ref": "otd-1",
+      "question": "Kto stanął na czele obrad Polskiej Komisji Likwidacyjnej w 1918 r.?",
+      "options": [
+        "Józef Piłsudski",
+        "Roman Dmowski",
+        "Ignacy Paderewski",
+        "Wincenty Witos"
+      ],
+      "answer": 3,
+      "explanation": "Komisję powołali w Krakowie polscy posłowie do parlamentu austriackiego, a obradom przewodniczył Wincenty Witos."
+    },
+    {
+      "id": "2026-10-28-q5",
+      "ref": "otd-3",
+      "question": "Co oznacza greckie „Ochi”, od którego nazwę wzięło święto 28 października?",
+      "options": [
+        "Wolność",
+        "Nie",
+        "Zwycięstwo",
+        "Ojczyzna"
+      ],
+      "answer": 1,
+      "explanation": "Legenda mówi, że premier Metaxas odpowiedział Mussoliniemu jednym słowem: „Nie”."
+    },
+    {
+      "id": "2026-10-28-q6",
+      "ref": "concept",
+      "question": "Sklep pokazuje przekreśloną cenę 999 zł obok ceny 599 zł. Na jaki mechanizm liczy?",
+      "options": [
+        "Efekt zakotwiczenia",
+        "Efekt Lindy",
+        "Heurystykę dostępności",
+        "Błąd przeżywalności"
+      ],
+      "answer": 0,
+      "explanation": "Pierwsza liczba, 999 zł, staje się kotwicą, więc 599 zł wydaje się okazją."
+    },
+    {
+      "id": "2026-10-28-q7",
+      "ref": "book",
+      "question": "Dlaczego, według Harariego, Ameryka nosi imię Ameriga Vespucciego, a nie Kolumba?",
+      "options": [
+        "Bo Vespucci dopłynął tam pierwszy",
+        "Bo Vespucci opłacił wyprawę Kolumba",
+        "Bo Vespucci przyznał, że to nieznany ląd",
+        "Bo tak nazywali swój ląd tamtejsi mieszkańcy"
+      ],
+      "answer": 2,
+      "explanation": "Kolumb twierdził, że dotarł do Azji. Vespucci uznał, że to nowy kontynent, i kartograf Waldseemüller nazwał go Ameryką."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-10-28-r1",
+      "question": "Ile mniej światła słonecznego dociera do Neptuna niż do Ziemi?",
+      "options": [
+        "Ok. 9 razy mniej",
+        "Ok. 90 razy mniej",
+        "Ok. 900 razy mniej"
+      ],
+      "answer": 2,
+      "explanation": "Neptun jest ok. 30 razy dalej od Słońca niż Ziemia, a światło słabnie z kwadratem odległości. Mimo to wieją tam najsilniejsze wiatry."
+    },
+    {
+      "id": "2026-10-28-r2",
+      "question": "Kto poprowadził pierwszy pociąg nowojorskiego metra w 1904 r.?",
+      "options": [
+        "Burmistrz George McClellan",
+        "Wynalazca Thomas Edison",
+        "Prezydent Theodore Roosevelt"
+      ],
+      "answer": 0,
+      "explanation": "Burmistrz George McClellan sam poprowadził pociąg, a wieczorem metro otwarto dla mieszkańców."
+    },
+    {
+      "id": "2026-10-28-r3",
+      "question": "Czym był srebrny szekel, o którym pisze Harari?",
+      "options": [
+        "Złotą monetą z podobizną króla",
+        "Po prostu 8,33 g srebra",
+        "Workiem jęczmienia"
+      ],
+      "answer": 1,
+      "explanation": "Szekel nie był monetą, tylko jednostką wagi srebra. Był cenny, bo wszyscy w niego wierzyli."
+    }
+  ],
+  "evening": {
+    "question": "Czego chcielibyście się razem dowiedzieć, bo szczerze przyznajecie, że tego nie wiecie?",
+    "hint": "Harari pisze, że nauka zaczęła się od słów „nie wiemy”. Wybierzcie jedno pytanie, np. jak działa coś w Waszym domu albo skąd pochodzi Wasza ulubiona potrawa, i poszukajcie odpowiedzi w tym tygodniu."
+  }
+}

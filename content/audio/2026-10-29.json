@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-29",
+  "file": "2026-10-29.mp3",
+  "url": "audio/2026-10-29.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-29.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "hash": "12888f6435c6fc60",
+  "duration": 1000.89,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 24.91
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Leki z Polski mają być tańsze. Rząd przyjął reformę refundacji",
+      "start": 25.61,
+      "end": 81.1
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Senat przywraca wyższy CIT dla największych firm. Ustawa wraca do Sejmu",
+      "start": 81.8,
+      "end": 141.07
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Wszystkich Świętych: darmowe autobusy, objazdy i chłodna niedziela",
+      "start": 141.77,
+      "end": 190.63
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Nowy właściciel TVN kończy z pracą hybrydową",
+      "start": 191.33,
+      "end": 244.08
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Hurkacz odpada w Bazylei po dramatycznym tie-breaku z Rune",
+      "start": 244.78,
+      "end": 286
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Zderzenie pociągów w Hiszpanii. Zginęło co najmniej 68 osób",
+      "start": 287.2,
+      "end": 340.55
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Izrael po przeliczeniu głosów: pat, Netanjahu bez większości",
+      "start": 341.25,
+      "end": 397.96
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Fed nie zmienia stóp. Dwoje członków chciało podwyżki",
+      "start": 398.66,
+      "end": 446.87
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "„Lodowiec zagłady” może podnieść morza dwa razy bardziej, niż sądzono",
+      "start": 447.57,
+      "end": 499.76
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Apple pokazał pierwszego Maca z ekranem dotykowym",
+      "start": 500.46,
+      "end": 551.25
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "W Polsce powstanie centrum serwisowe pocisków do Patriotów",
+      "start": 552.45,
+      "end": 609.38
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Wrony pamiętają twarze ludzi, którzy im zagrozili",
+      "start": 610.58,
+      "end": 647.53
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Na Księżycu leżą lustra, w które wciąż celujemy laserem",
+      "start": 648.23,
+      "end": 687.94
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Co drugi z nas nie zauważy, że rozmówca zamienił się w kogoś innego",
+      "start": 688.64,
+      "end": 726.06
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1944: Dywizja Maczka wyzwala Bredę",
+      "start": 727.26,
+      "end": 763.86
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1929: Czarny wtorek na Wall Street",
+      "start": 764.56,
+      "end": 805.6
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1969: Pierwsza wiadomość w sieci, z której wyrósł internet",
+      "start": 806.3,
+      "end": 837.66
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Błąd kosztów utopionych",
+      "start": 838.86,
+      "end": 900.76
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Sapiens. Od zwierząt do bogów: Kapitalizm stoi na wierze w lepszą przyszłość",
+      "start": 901.96,
+      "end": 977.79
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 978.99,
+      "end": 1000.39
+    }
+  ]
+}

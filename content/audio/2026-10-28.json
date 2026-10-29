@@ -4,155 +4,155 @@
   "url": "audio/2026-10-28.mp3",
   "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-28.mp3",
   "voice": "pl_PL-gosia-medium",
-  "hash": "83ddbea0c99262ff",
-  "duration": 957.43,
+  "hash": "6629cf2ebf6abf9f",
+  "duration": 956.11,
   "items": [
     {
       "id": "intro",
       "chapter": "polska",
       "label": "Co dziś w wydaniu",
       "start": 0.3,
-      "end": 23.38
+      "end": 23.46
     },
     {
       "id": "pl-1",
       "chapter": "polska",
       "label": "Agnieszka Bartol ma zastąpić Pełczyńską-Nałęcz w resorcie funduszy",
-      "start": 24.08,
-      "end": 81.03
+      "start": 24.16,
+      "end": 81.14
     },
     {
       "id": "pl-2",
       "chapter": "polska",
       "label": "Prezydent Nawrocki zezna w sądzie w procesie przeciw Onetowi",
-      "start": 81.73,
-      "end": 129.8
+      "start": 81.84,
+      "end": 129.99
     },
     {
       "id": "pl-3",
       "chapter": "polska",
       "label": "Diesel znów droższy. Maksymalna cena to 8,28 zł za litr",
-      "start": 130.5,
-      "end": 188.12
+      "start": 130.69,
+      "end": 187.96
     },
     {
       "id": "pl-4",
       "chapter": "polska",
       "label": "Chłodno i mokro do końca miesiąca. W górach śnieg",
-      "start": 188.82,
-      "end": 227.96
+      "start": 188.66,
+      "end": 227.39
     },
     {
       "id": "pl-5",
       "chapter": "polska",
       "label": "Hurkacz odwrócił mecz w Bazylei. Teraz zagra z Rune",
-      "start": 228.66,
-      "end": 269.52
+      "start": 228.09,
+      "end": 268.82
     },
     {
       "id": "sw-1",
       "chapter": "swiat",
       "label": "Izrael po wyborach: Likud prowadzi, żaden blok bez większości",
-      "start": 270.72,
-      "end": 324.83
+      "start": 270.02,
+      "end": 324.04
     },
     {
       "id": "sw-2",
       "chapter": "swiat",
       "label": "OpenAI: AI udowodniła słynne hipotezy matematyki. Naukowcy sprawdzają",
-      "start": 325.53,
-      "end": 379.9
+      "start": 324.74,
+      "end": 379.3
     },
     {
       "id": "sw-3",
       "chapter": "swiat",
       "label": "USA: tydzień do wyborów. Teksas może przesądzić o Senacie",
-      "start": 380.6,
-      "end": 429.86
+      "start": 380,
+      "end": 430.06
     },
     {
       "id": "sw-4",
       "chapter": "swiat",
       "label": "Microsoft proponuje odejścia 60 tys. pracowników, co czwartemu",
-      "start": 430.56,
-      "end": 488.41
+      "start": 430.76,
+      "end": 488.29
     },
     {
       "id": "sw-5",
       "chapter": "swiat",
       "label": "Fed decyduje dziś o stopach. Złoto znów powyżej 4000 dolarów",
-      "start": 489.11,
-      "end": 536.34
+      "start": 488.99,
+      "end": 536
     },
     {
       "id": "bezpieczenstwo-1",
       "chapter": "tematy",
       "label": "Rozejm w Ołeszkach obowiązuje. Ma objąć konwoje z pomocą",
-      "start": 537.54,
-      "end": 594.54
+      "start": 537.2,
+      "end": 593.77
     },
     {
       "id": "fact-2",
       "chapter": "ciekawostki",
       "label": "Mit: piorun nie uderza dwa razy w to samo miejsce",
-      "start": 595.74,
-      "end": 629.78
+      "start": 594.97,
+      "end": 629.42
     },
     {
       "id": "fact-1",
       "chapter": "ciekawostki",
       "label": "Rekin grenlandzki może żyć ponad 270 lat",
-      "start": 630.48,
-      "end": 670.05
+      "start": 630.12,
+      "end": 669.48
     },
     {
       "id": "fact-3",
       "chapter": "ciekawostki",
       "label": "Łyżeczka gwiazdy neutronowej ważyłaby miliard ton",
-      "start": 670.75,
-      "end": 697.48
+      "start": 670.18,
+      "end": 696.81
     },
     {
       "id": "otd-1",
       "chapter": "historia",
       "label": "1918: Powstaje Polska Komisja Likwidacyjna",
-      "start": 698.68,
-      "end": 728.9
+      "start": 698.01,
+      "end": 728.23
     },
     {
       "id": "otd-2",
       "chapter": "historia",
       "label": "1886: Odsłonięcie Statuy Wolności",
-      "start": 729.6,
-      "end": 758.77
+      "start": 728.93,
+      "end": 757.7
     },
     {
       "id": "otd-3",
       "chapter": "historia",
       "label": "1940: Grecja mówi „nie” Mussoliniemu",
-      "start": 759.47,
-      "end": 792.36
+      "start": 758.4,
+      "end": 791.17
     },
     {
       "id": "concept",
       "chapter": "pojecie",
       "label": "Pojęcie: Efekt zakotwiczenia",
-      "start": 793.56,
-      "end": 858.19
+      "start": 792.37,
+      "end": 856.8
     },
     {
       "id": "book",
       "chapter": "ksiazka",
       "label": "Sapiens. Od zwierząt do bogów: Rewolucja naukowa zaczęła się od przyznania się do niewiedzy",
-      "start": 859.39,
-      "end": 936.07
+      "start": 858,
+      "end": 934.68
     },
     {
       "id": "evening",
       "chapter": "wieczor",
       "label": "Na wieczór",
-      "start": 937.27,
-      "end": 956.93
+      "start": 935.88,
+      "end": 955.61
     }
   ]
 }

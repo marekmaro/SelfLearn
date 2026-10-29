@@ -1,0 +1,432 @@
+{
+  "date": "2026-10-29",
+  "intro": "Dziś m.in. katastrofa kolejowa w Hiszpanii, pat po wyborach w Izraelu i decyzja Fed, tańsze leki z Polski, Senat o podatkach, darmowe autobusy na Wszystkich Świętych, centrum serwisowe Patriotów i porażka Hurkacza z Rune. W „Sapiens” dzień piąty: gospodarka napędzana wiarą w przyszłość.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Leki z Polski mają być tańsze. Rząd przyjął reformę refundacji",
+      "summary": "Rada Ministrów przyjęła we wtorek projekt dużej nowelizacji ustawy refundacyjnej. Najważniejsza zmiana dla pacjentów: przy lekach wytwarzanych w Polsce z polskiej substancji czynnej dopłata pacjenta ma być niższa o 30 proc., a nie jak dziś o 15 proc. Według resortu zdrowia dotyczy to 656 leków i wyrobów medycznych. Z refundacji mają za to wypaść leki bez recepty. Przedstawiciele pacjentów dostaną prawo udziału w negocjacjach cenowych. Większość zmian ma obowiązywać od 1 stycznia 2027 r., ale projekt musi jeszcze przejść przez Sejm i Senat.",
+      "why": "Zmiany dotkną milionów osób, które co miesiąc wykupują leki. Obniżka nie obejmie jednak automatycznie wszystkich leków produkowanych w kraju.",
+      "sources": [
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/zdrowie/rzad-przyjal-projekt-zmian-w-refundacji-lekow-co-sie-zmieni-st9308625"
+        },
+        {
+          "name": "Rzeczpospolita",
+          "url": "https://www.rp.pl/prawo-dla-ciebie/art45404791-leki-nie-beda-juz-musialy-byc-rowno-dzielone-rzad-przyjal-projekt"
+        }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Senat przywraca wyższy CIT dla największych firm. Ustawa wraca do Sejmu",
+      "summary": "Senat przyjął we wtorek ustawę podatkową z poprawkami: 62 senatorów było za, nikt przeciw, 23 wstrzymało się od głosu. Senatorowie przywrócili podwyżkę CIT z 19 do 22 proc. dla firm z przychodami powyżej 50 mln euro, którą Sejm wcześniej wykreślił. Usunęli też dopisaną przez posłów coroczną waloryzację progów PIT. Rdzeń reformy zostaje: pierwszy próg PIT rośnie ze 120 do 130 tys. zł, a dochody od 130 do 150 tys. zł obejmie nowa stawka 24 proc. Teraz poprawkami zajmie się Sejm.",
+      "why": "Zmiany mają działać od 1 stycznia 2027 r., więc Sejmowi i prezydentowi zostało niewiele czasu. Od ostatecznego kształtu zależy, ile zapłacą lepiej zarabiający i największe firmy.",
+      "sources": [
+        {
+          "name": "Prawo.pl",
+          "url": "https://www.prawo.pl/podatki/senat-przyjal-poprawki-do-nowelizacji-pit-i-cit,1555821.html"
+        },
+        {
+          "name": "Bankier.pl",
+          "url": "https://www.bankier.pl/wiadomosc/Nowa-stawka-PIT-i-zmiany-w-progach-podatkowych-Senat-wprowadza-kluczowe-poprawki-9219293.html"
+        }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Wszystkich Świętych: darmowe autobusy, objazdy i chłodna niedziela",
+      "summary": "W wielu miastach już od piątku zaczynają się zmiany w ruchu przy cmentarzach. W niedzielę 1 listopada bezpłatnie pojedziemy m.in. komunikacją miejską w Poznaniu, Bydgoszczy i Płocku oraz autobusami i tramwajami ZTM na Śląsku i w Zagłębiu. Miasta uruchamiają też specjalne linie cmentarne. Większość ograniczeń potrwa od soboty do nocy z niedzieli na poniedziałek. Według prognoz IMGW w święto będzie chłodno, zwykle 6–11 stopni, z deszczem na południu, wschodzie i w centrum kraju.",
+      "why": "W tych dniach na cmentarze jadą miliony osób. Warto sprawdzić lokalne objazdy i rozważyć komunikację miejską zamiast auta.",
+      "sources": [
+        {
+          "name": "Super Express",
+          "url": "https://www.se.pl/slask/darmowa-komunikacja-we-wszystkich-swietych-2026-na-slasku-ztm-uruchamia-linie-cmentarne-aa-avrs-vvwy-vQ4U.html"
+        },
+        {
+          "name": "Wprost",
+          "url": "https://www.wprost.pl/kraj/12484690/pogoda-na-wszystkich-swietych-2026-imgw-ostrzega-przed-deszczem-i-ochlodzeniem.html"
+        }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Nowy właściciel TVN kończy z pracą hybrydową",
+      "summary": "Skydance, nowy właściciel TVN, zapowiedział, że w całej grupie praca będzie się odbywać w biurze pięć dni w tygodniu. List do pracowników na całym świecie wysłali prezesi David Ellison i Ynon Kreiz. Uzasadniają to budowaniem wspólnej kultury firmy i lepszą współpracą zespołów. Wielu pracowników TVN pracowało dotąd trzy dni w biurze i dwa z domu. Zmiany mają wchodzić etapami, a daty dla Polski jeszcze nie podano. Program dobrowolnych odejść z odprawami, który ruszył w innych krajach, według Press.pl na razie nie obejmuje TVN.",
+      "why": "TVN to jedna z największych firm medialnych w Polsce. Spór o powrót do biur toczy się w wielu dużych firmach, a decyzje takich koncernów wpływają na rynek pracy.",
+      "sources": [
+        {
+          "name": "Wirtualnemedia.pl",
+          "url": "https://www.wirtualnemedia.pl/tvn-skydance-koniec-pracy-zdalnej-program-dobrowolnych-odejsc-zwolnienia,7344299251001376a"
+        },
+        {
+          "name": "Press.pl",
+          "url": "https://www.press.pl/tresc/95647,skydance-rozpoczyna-program-dobrowolnych-odejsc_-ale-nie-w-tvn_-koniec-pracy-zdalnej"
+        }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Hurkacz odpada w Bazylei po dramatycznym tie-breaku z Rune",
+      "summary": "Hubert Hurkacz przegrał w środę z Duńczykiem Holgerem Rune w drugiej rundzie turnieju ATP 500 w Bazylei 6:3, 3:6, 6:7 (7:9). Polak wygrał pierwszego seta, a w tie-breaku trzeciego miał piłkę meczową, ale rywal ją obronił. Hurkacz posłał 18 asów, Rune pięć. Duńczyk wrócił niedawno do gry po blisko rocznej przerwie spowodowanej zerwaniem ścięgna Achillesa.",
+      "why": "Do końca sezonu zostało niewiele turniejów, a każdy wygrany mecz liczy się w walce o ranking i rozstawienie w styczniowym Australian Open.",
+      "sources": [
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/sport/news-hubert-hurkacz-odpadl-z-turnieju-w-bazylei,nIdn,1023842"
+        },
+        {
+          "name": "WP SportoweFakty",
+          "url": "https://sportowefakty.wp.pl/tenis/1281499/dramatyczny-tie-break-w-meczu-hurkacza-byla-pilka-meczowa"
+        }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Zderzenie pociągów w Hiszpanii. Zginęło co najmniej 68 osób",
+      "summary": "W środę rano pod Urdą w prowincji Toledo zderzyły się dwa szybkie pociągi: AVE przewoźnika Renfe i skład firmy Iryo. Według władz Kastylii-La Manchy zginęło co najmniej 68 osób, a bilans może wzrosnąć. Rannych są dziesiątki, choć media podają różne liczby. Dwa ostatnie wagony Iryo wypadły z torów i spadły ze skarpy. Minister transportu Óscar Puente powiedział, że jeden z pociągów dostał zgodę na jazdę mimo czerwonego sygnału. Premier Pedro Sánchez ogłosił trzydniową żałobę narodową.",
+      "why": "To jedna z najtragiczniejszych katastrof kolejowych w Europie od lat i kolejna poważna w Hiszpanii w tym roku. Według MSZ nie ma informacji o poszkodowanych Polakach.",
+      "sources": [
+        {
+          "name": "WNP.pl",
+          "url": "https://www.wnp.pl/logistyka/rosnie-liczba-ofiar-smiertelnych-wypadku-pociagow-w-hiszpanii-przyczyna-mogl-byc-blad-ludzki,1113791.html"
+        },
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/swiat/wypadek-kolejowy-w-hiszpanii-w-prowincji-toledo-jak-doszlo-do-katastrofy-st9309704"
+        }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Izrael po przeliczeniu głosów: pat, Netanjahu bez większości",
+      "summary": "Po przeliczeniu ok. 86% głosów blok premiera Benjamina Netanjahu ma 53 mandaty w 120-osobowym Knesecie, blok Gadiego Eisenkota 48, a partie arabskie 19. Do większości potrzeba 61. Likud pozostaje największą partią z 26 mandatami, przed partią Jaszar! Eisenkota z 21. Eisenkot wcześniej ogłosił zwycięstwo i chce pierwszy tworzyć rząd, ale bez partii arabskich i lewicy trudno mu o większość. Wynik mogą jeszcze zmienić głosy liczone osobno, m.in. żołnierzy. Szekel i izraelskie obligacje potaniały.",
+      "why": "Kraj czekają długie rozmowy koalicyjne, a do czasu powstania nowego rządu rządzi gabinet tymczasowy. Od wyniku zależy polityka wobec Gazy i Iranu.",
+      "sources": [
+        {
+          "name": "Ynet",
+          "url": "https://www.ynetnews.com/article/hjnatbkaml"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/28/israel-election-netanyahu-trump-gaza-.html"
+        }
+      ],
+      "thread": "Wybory w Izraelu"
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Fed nie zmienia stóp. Dwoje członków chciało podwyżki",
+      "summary": "Amerykańska Rezerwa Federalna pozostawiła w środę stopy procentowe w przedziale 3,75–4%, po wrześniowej podwyżce o ćwierć punktu. Decyzja zapadła stosunkiem głosów 10 do 2: członkini zarządu Lisa Cook i szefowa Fed z Cleveland Beth Hammack chciały kolejnej podwyżki. Fed uznał, że inflacja „pozostaje podwyższona”, a gospodarka rośnie w mocnym tempie. Prezes Kevin Warsh zapewnił, że zbliżające się wybory w USA nie miały wpływu na decyzję. Rynki spodziewają się podwyżki w grudniu.",
+      "why": "Stopy w USA wpływają na kurs dolara, ceny surowców i koszt kredytów na całym świecie, a pośrednio także na decyzje NBP.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html"
+        },
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/economy/policy/live/fed-meeting-live-updates-interest-rates-held-steady-in-split-vote-warsh-says-politics-played-no-role-ahead-of-midterm-elections-191946928.html"
+        }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "„Lodowiec zagłady” może podnieść morza dwa razy bardziej, niż sądzono",
+      "summary": "Naukowcy z Uniwersytetu Kalifornijskiego w Irvine i laboratorium JPL NASA opisali w „Nature Communications” nowy model lodowca Thwaitesa na Antarktydzie Zachodniej. Uwzględnia on, że ciepła woda morska, pchana m.in. przez pływy, wnika pod lód nawet kilka kilometrów w głąb. Według modelu sam Thwaites może do 2100 r. podnieść poziom mórz o 30 mm, dwa razy więcej niż w dotychczasowych szacunkach, i to nawet bez dalszego ocieplenia. Badacze zastrzegają, że potrzeba więcej pomiarów pod lodowcem.",
+      "why": "Thwaites nazywany jest „lodowcem zagłady”, bo jego rozpad mógłby pociągnąć za sobą inne lody Antarktydy. Dokładniejsze prognozy pomagają nadmorskim miastom planować ochronę.",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/10/261027063701.htm"
+        },
+        {
+          "name": "Phys.org",
+          "url": "https://phys.org/news/2026-10-thwaites-glacier-contribute-sea-previously.html"
+        }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Apple pokazał pierwszego Maca z ekranem dotykowym",
+      "summary": "Apple zaprezentował w środę nowe MacBooki Pro 14 i 16 cali z ekranami OLED. To pierwsze komputery Mac z ekranem dotykowym. Ekran ma jasność do 2000 nitów i odświeżanie od 10 do 120 Hz, a u góry pojawia się znana z iPhone'ów Dynamic Island. Laptopy mają procesory M5 Pro i M5 Max. Ceny w USA zaczynają się od 2899 dolarów, o 900 więcej niż za najtańszy MacBook Pro z nowszym M6. Zamówienia ruszyły w środę, a pierwsze egzemplarze trafią do klientów 6 listopada.",
+      "why": "Apple długo unikał dotyku w laptopach. Zmiana kursu może przyspieszyć zacieranie się granicy między komputerem a tabletem.",
+      "sources": [
+        {
+          "name": "TechRepublic",
+          "url": "https://www.techrepublic.com/article/news-apple-touchscreen-oled-macbook-pro/"
+        },
+        {
+          "name": "Gizmodo",
+          "url": "https://gizmodo.com/macbook-pro-with-proled-xdr-display-2000831724"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "W Polsce powstanie centrum serwisowe pocisków do Patriotów",
+      "summary": "Wiceministra obrony Magdalena Sobkowiak-Czarnecka ogłosiła, że w Polsce powstanie europejskie centrum serwisowania pocisków PAC-3 MSE do systemów Patriot. Według niej będzie to jedyne takie miejsce poza USA, a inwestycja prowadzona z firmą Lockheed Martin ma kosztować ok. 1 mld zł. Polska wygrała m.in. z Niemcami i Holandią. Przez najbliższe 60 dni trwać będą szczegółowe rozmowy z producentem. Prezydent Karol Nawrocki zwołał zaś na 3 listopada Radę Bezpieczeństwa Narodowego, która ma omówić m.in. plany stałej bazy wojsk USA w Polsce.",
+      "why": "Pociski Patriot to podstawa polskiej obrony przed rakietami. Serwis na miejscu ma skrócić przeglądy i zwiększyć gotowość obrony powietrznej Polski i sojuszników.",
+      "sources": [
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/polska/w-polsce-powstanie-centrum-serwisowe-dla-patriotow-informacje-wiceszefowej-mon-st9308732"
+        },
+        {
+          "name": "Biuro Bezpieczeństwa Narodowego",
+          "url": "https://www.bbn.gov.pl/pl/wydarzenia"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Wrony pamiętają twarze ludzi, którzy im zagrozili",
+      "body": "W 2006 r. biolog John Marzluff z Uniwersytetu Waszyngtońskiego w Seattle łapał i obrączkował wrony w gumowej masce jaskiniowca. Potem badacze chodzili po kampusie w tej masce albo w neutralnej masce z twarzą Dicka Cheneya. Wrony krzyczały i nurkowały głównie na „jaskiniowca”, nawet gdy maska była odwrócona do góry nogami albo przykryta kapeluszem. Liczyła się sama twarz, nie ubranie ani to, kto ją nosił. Reakcja utrzymywała się jeszcze po dwóch latach.",
+      "source": {
+        "name": "National Wildlife Federation",
+        "url": "https://nwf.org/Magazines/National-Wildlife/2013/DecJan/Animals/Crows-Recognizing-Faces"
+      }
+    },
+    {
+      "id": "fact-2",
+      "kind": "kosmos",
+      "title": "Na Księżycu leżą lustra, w które wciąż celujemy laserem",
+      "body": "W lipcu 1969 r. astronauci Apollo 11 zostawili na Księżycu panel ze stu odbłyśnikami. Kolejne ustawiły misje Apollo 14 i 15 oraz radzieckie łaziki Łunochod. Obserwatoria na Ziemi wysyłają w nie impulsy lasera i mierzą, ile trwa powrót światła. Tak wiadomo, że Księżyc co roku oddala się od nas o ok. 3,8 cm, mniej więcej tyle, ile w tym czasie urosną nam paznokcie. Odpowiadają za to pływy, które przy okazji powoli wydłużają ziemską dobę.",
+      "source": {
+        "name": "NASA JPL",
+        "url": "https://www.jpl.nasa.gov/news/the-apollo-experiment-that-keeps-on-giving/"
+      }
+    },
+    {
+      "id": "fact-3",
+      "kind": "psychologia",
+      "title": "Co drugi z nas nie zauważy, że rozmówca zamienił się w kogoś innego",
+      "body": "W 1998 r. psychologowie Daniel Simons i Daniel Levin przeprowadzili eksperyment na kampusie Uniwersytetu Cornella. Badacz udający turystę pytał przechodniów o drogę. Po kilkunastu sekundach rozmowy między nimi przechodziło dwóch „robotników” z drzwiami, a za nimi badacz zamieniał się z kimś innym. Mniej więcej połowa pytanych nie zauważyła, że rozmawia z inną osobą. To ślepota na zmiany: mózg nie zapisuje szczegółów, na których akurat się nie skupia.",
+      "source": {
+        "name": "American Psychological Association",
+        "url": "https://www.apa.org/monitor/oct06/eyes"
+      }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1944,
+      "title": "Dywizja Maczka wyzwala Bredę",
+      "body": "29 października 1944 r. 1. Dywizja Pancerna gen. Stanisława Maczka wyzwoliła holenderskie miasto Breda. Polacy prowadzili natarcie tak, by oszczędzić zabytkowe centrum, i miasto przetrwało bez większych zniszczeń. Mieszkańcy Bredy co roku świętują rocznicę wyzwolenia, a gen. Maczek, zmarły w 1994 r., spoczywa wśród swoich żołnierzy na polskim cmentarzu wojennym w Bredzie.",
+      "source": {
+        "name": "British Poles",
+        "url": "https://www.britishpoles.uk/?p=38448"
+      }
+    },
+    {
+      "id": "otd-2",
+      "year": 1929,
+      "title": "Czarny wtorek na Wall Street",
+      "body": "29 października 1929 r. indeks Dow Jones spadł o prawie 12%, a na giełdzie w Nowym Jorku sprzedano rekordowe 16,4 mln akcji. Dzień wcześniej, w „czarny poniedziałek”, indeks stracił ok. 13%. Spadki trwały do lipca 1932 r., gdy Dow był o 89% niżej niż w szczycie z września 1929 r. Do tamtego poziomu wrócił dopiero w 1954 r. Krach uznaje się za początek Wielkiego Kryzysu.",
+      "source": {
+        "name": "Wikipedia (ang.)",
+        "url": "https://en.wikipedia.org/wiki/Wall_Street_crash_of_1929"
+      }
+    },
+    {
+      "id": "otd-3",
+      "year": 1969,
+      "title": "Pierwsza wiadomość w sieci, z której wyrósł internet",
+      "body": "29 października 1969 r. około 22:30 student Charley Kline z Uniwersytetu Kalifornijskiego w Los Angeles wysłał przez sieć ARPANET wiadomość do komputera w Stanford Research Institute. Miał wpisać „login”, ale system zawiesił się po dwóch literach, więc pierwszą wiadomością w historii sieci było „lo”. Godzinę później logowanie się udało.",
+      "source": {
+        "name": "Centre for Computing History",
+        "url": "https://www.computinghistory.org.uk/det/5613/"
+      }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Błąd kosztów utopionych",
+    "definition": "Brniemy dalej w coś tylko dlatego, że już włożyliśmy w to czas, pieniądze albo wysiłek, choć decyzję powinny wyznaczać wyłącznie przyszłe koszty i korzyści.",
+    "origin": "Pojęcie „kosztów utopionych” pochodzi z ekonomii: to wydatki, których nie da się już odzyskać. Psychologowie Hal Arkes i Catherine Blumer pokazali w 1985 r., jak mocno na nas działają: osoby, które kupiły karnet do teatru po pełnej cenie, przez kolejne pół roku chodziły na więcej spektakli niż te, które losowo dostały zniżkę. Zjawisko nazywa się też błędem Concorde, od naddźwiękowego samolotu, który Wielka Brytania i Francja finansowały latami, choć szanse na zysk były małe.",
+    "examples": [
+      "Siedzisz do końca na nudnym filmie, bo „bilet był drogi”.",
+      "Naprawiasz kolejny raz stare auto, bo „już tyle w nie włożyłem”, choć nowe wyszłoby taniej.",
+      "Firma ciągnie nieudany projekt, bo szkoda dotychczasowych nakładów."
+    ],
+    "source": {
+      "name": "The Behavioral Scientist",
+      "url": "https://www.thebehavioralscientist.com/glossary/sunk-cost-fallacy"
+    }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "sapiens",
+    "title": "Sapiens. Od zwierząt do bogów",
+    "author": "Yuval Noah Harari",
+    "day": 5,
+    "days": 7,
+    "ideaTitle": "Kapitalizm stoi na wierze w lepszą przyszłość",
+    "idea": "Harari zauważa, że przez większość historii gospodarka prawie nie rosła. Ludzie niechętnie pożyczali na nowe przedsięwzięcia, bo nie wierzyli, że przyszłość będzie lepsza od teraźniejszości. Rewolucja naukowa przyniosła ideę postępu: skoro odkrycia mogą zwiększać produkcję, warto dziś pożyczyć na jutrzejszy zysk. Na tym opiera się kredyt. Według Harariego ok. 90% pieniędzy na kontach na świecie nie ma pokrycia w monetach i banknotach. Gdy zaufanie pęka, jak przy bańce Missisipi we Francji w 1720 r., kredyt wysycha i przychodzi kryzys. Uwaga: historycy gospodarki przypominają, że kredyt znały też dawne społeczeństwa, więc nowością była raczej jego skala.",
+    "moral": "Wzrost gospodarczy to w dużej mierze zbiorowe zaufanie do jutra. Gdy ludzie wierzą w przyszłość, inwestują; gdy przestają wierzyć, wszystko staje.",
+    "action": "Wybierz jedną rzecz, w którą dziś inwestujesz czas albo pieniądze z myślą o przyszłości, i zapisz, czego po niej oczekujesz za rok.",
+    "source": {
+      "name": "LitCharts",
+      "url": "https://www.litcharts.com/lit/sapiens/chapter-16-the-capitalist-creed"
+    }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-29-q1",
+      "ref": "fact-1",
+      "question": "W jakiej masce badacze łapali wrony w Seattle?",
+      "options": [
+        "Dicka Cheneya",
+        "Jaskiniowca",
+        "Kosmity",
+        "Klauna"
+      ],
+      "answer": 1,
+      "explanation": "Maska jaskiniowca była „groźna”, a maska Cheneya neutralna. Wrony krzyczały głównie na jaskiniowca, nawet po dwóch latach."
+    },
+    {
+      "id": "2026-10-29-q2",
+      "ref": "fact-2",
+      "question": "O ile co roku oddala się od nas Księżyc?",
+      "options": [
+        "Ok. 3,8 m",
+        "Ok. 38 cm",
+        "Ok. 3,8 cm",
+        "Ok. 3,8 mm"
+      ],
+      "answer": 2,
+      "explanation": "Pomiary laserem odbijanym od luster z misji Apollo pokazują ok. 3,8 cm rocznie, mniej więcej tyle, ile rosną paznokcie."
+    },
+    {
+      "id": "2026-10-29-q3",
+      "ref": "fact-3",
+      "question": "Co przechodziło między rozmówcami w słynnym eksperymencie o ślepocie na zmiany?",
+      "options": [
+        "Grupa turystów",
+        "Rowerzysta",
+        "Pies na smyczy",
+        "Dwóch mężczyzn niosących drzwi"
+      ],
+      "answer": 3,
+      "explanation": "Drzwi na chwilę zasłaniały badacza, który w tym czasie zamieniał się z inną osobą. Około połowa pytanych tego nie zauważyła."
+    },
+    {
+      "id": "2026-10-29-q4",
+      "ref": "otd-1",
+      "question": "Kto dowodził polską dywizją, która w 1944 r. wyzwoliła Bredę?",
+      "options": [
+        "Gen. Stanisław Maczek",
+        "Gen. Władysław Anders",
+        "Gen. Stanisław Sosabowski",
+        "Gen. Józef Haller"
+      ],
+      "answer": 0,
+      "explanation": "1. Dywizja Pancerna gen. Maczka wyzwoliła Bredę 29 października 1944 r., a generał spoczywa dziś na tamtejszym cmentarzu wojennym."
+    },
+    {
+      "id": "2026-10-29-q5",
+      "ref": "otd-3",
+      "question": "Jakie słowo miało być pierwszą wiadomością przesłaną przez ARPANET?",
+      "options": [
+        "hello",
+        "test",
+        "login",
+        "start"
+      ],
+      "answer": 2,
+      "explanation": "System zawiesił się po dwóch literach, więc dotarło tylko „lo”."
+    },
+    {
+      "id": "2026-10-29-q6",
+      "ref": "concept",
+      "question": "Nie wychodzisz z nudnego filmu tylko dlatego, że bilet był drogi. Jak nazywa się ten mechanizm?",
+      "options": [
+        "Efekt zakotwiczenia",
+        "Błąd kosztów utopionych",
+        "Prawo Goodharta",
+        "Efekt Lindy"
+      ],
+      "answer": 1,
+      "explanation": "Pieniędzy za bilet i tak nie odzyskasz. Liczyć powinno się tylko to, czy kolejna godzina jest warta Twojego czasu."
+    },
+    {
+      "id": "2026-10-29-q7",
+      "ref": "book",
+      "question": "Na czym, według Harariego, opiera się kredyt?",
+      "options": [
+        "Na zaufaniu, że przyszłość będzie lepsza",
+        "Na zapasach złota w bankach",
+        "Na sile armii państwa",
+        "Na stałych cenach towarów"
+      ],
+      "answer": 0,
+      "explanation": "Pożyczamy dziś na jutrzejsze zyski, bo wierzymy, że przyszłość przyniesie więcej niż teraźniejszość."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-10-29-r1",
+      "question": "W jakim wieku rekiny grenlandzkie osiągają dojrzałość płciową?",
+      "options": [
+        "Ok. 15 lat",
+        "Ok. 150 lat",
+        "Ok. 400 lat"
+      ],
+      "answer": 1,
+      "explanation": "Dojrzewają dopiero około 150. roku życia, a najstarsze żyją ponad 270 lat."
+    },
+    {
+      "id": "2026-10-29-r2",
+      "question": "Dlaczego Statua Wolności prawie rok czekała w skrzyniach?",
+      "options": [
+        "Brakowało statku do przewozu",
+        "Czekano na zgodę Kongresu",
+        "Nie był gotowy cokół"
+      ],
+      "answer": 2,
+      "explanation": "Posąg przypłynął z Francji wcześniej, ale cokół w porcie nowojorskim skończono dopiero w 1886 r."
+    },
+    {
+      "id": "2026-10-29-r3",
+      "question": "Co według Harariego zmieniło się na europejskich mapach w XV i XVI wieku?",
+      "options": [
+        "Pojawiły się na nich puste miejsca",
+        "Zaczęto rysować na nich potwory",
+        "Zniknęły z nich oceany"
+      ],
+      "answer": 0,
+      "explanation": "Kartografowie zaczęli przyznawać się do niewiedzy i zostawiać nieznane obszary puste, zamiast wypełniać je zmyśleniami."
+    }
+  ],
+  "evening": {
+    "question": "W jaką wspólną rzecz chcielibyście dziś „zainwestować”, żeby za rok było Wam lepiej?",
+    "hint": "Harari pisze, że gospodarka rośnie, bo ludzie wierzą w lepszą przyszłość. Wybierzcie jedną małą rzecz, np. naukę języka, wspólne oszczędzanie albo cotygodniowy spacer, i umówcie się, od czego zaczniecie."
+  }
+}

@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-10-29",
+      "headline": "Leki z Polski mają być tańsze. Rząd przyjął reformę refundacji",
+      "threads": [
+        {
+          "name": "Wybory w Izraelu",
+          "item": "sw-2",
+          "title": "Izrael po przeliczeniu głosów: pat, Netanjahu bez większości"
+        }
+      ],
+      "facts": [
+        "Wrony pamiętają twarze ludzi, którzy im zagrozili",
+        "Na Księżycu leżą lustra, w które wciąż celujemy laserem",
+        "Co drugi z nas nie zauważy, że rozmówca zamienił się w kogoś innego"
+      ],
+      "concept": "Błąd kosztów utopionych"
+    },
+    {
       "date": "2026-10-28",
       "headline": "Agnieszka Bartol ma zastąpić Pełczyńską-Nałęcz w resorcie funduszy",
       "threads": [

@@ -112,6 +112,23 @@ export function romanToInt(text) {
   return total;
 }
 
+// Formy: jeden, dwa–cztery, pięć i więcej, ułamek.
+const BIG = {
+  'tys.': ['tysiąc', 'tysiące', 'tysięcy', 'tysiąca'],
+  mln: ['milion', 'miliony', 'milionów', 'miliona'],
+  mld: ['miliard', 'miliardy', 'miliardów', 'miliarda'],
+  bln: ['bilion', 'biliony', 'bilionów', 'biliona'],
+};
+
+function bigNumber(int, frac, forms) {
+  if (frac) return forms[3];
+  const n = Number(int);
+  if (n === 1) return forms[0];
+  const last = n % 10;
+  const lastTwo = n % 100;
+  return last >= 2 && last <= 4 && (lastTwo < 12 || lastTwo > 14) ? forms[1] : forms[2];
+}
+
 const MONTHS = 'stycznia|lutego|marca|kwietnia|maja|czerwca|lipca|sierpnia|września|października|listopada|grudnia';
 
 export function speakable(text) {
@@ -142,6 +159,9 @@ export function speakable(text) {
     const hour = Number(hh) === 0 ? 'północy' : ordinalSmall(Number(hh), 'fem');
     return `${prep} ${hour}${mm === '00' ? '' : ` ${Number(mm)}`}`;
   });
+
+  // Tysiące, miliony i miliardy odmienione przez liczbę: „1 mld” → „1 miliard”, „22 mln” → „22 miliony”, „2,5 mln” → „2,5 miliona”.
+  t = t.replace(/(?<![\d,])(\d+)(,\d+)?\s*(tys\.|mln|mld|bln)(?![\p{L}])/gu, (m, int, frac, unit) => `${int}${frac || ''} ${bigNumber(int, frac, BIG[unit])}`);
 
   for (const [re, w] of WORDS) t = t.replace(re, w);
   t = t.replace(/(?<![\p{L}])([A-ZĄĆĘŁŃÓŚŹŻ][A-Za-ząćęłńóśźż]{1,4})(?![\p{L}])/gu, (m) => {

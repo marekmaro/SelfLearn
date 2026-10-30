@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-30",
+  "file": "2026-10-30.mp3",
+  "url": "audio/2026-10-30.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-30.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "hash": "9fbf8ca2de6e805d",
+  "duration": 1046.27,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 23.19
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Tusk: wybory w 2027 r. będą wstępem do referendum o Unii",
+      "start": 23.89,
+      "end": 73.9
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Biskup tarnowski skazany za niezawiadomienie o pedofilii księży",
+      "start": 74.6,
+      "end": 126.01
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "12 państw UE poparło polski apel o ochronę rafinerii",
+      "start": 126.71,
+      "end": 181.05
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Od piątku akcja „Znicz”. Policja sprawdzi trzeźwość, prędkość i foteliki",
+      "start": 181.75,
+      "end": 229.58
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Jagiellonia rozbiła Lechię 6:0 w Pucharze Polski",
+      "start": 230.28,
+      "end": 269.86
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Lagarde odejdzie z EBC przed końcem kadencji. Stopy bez zmian",
+      "start": 271.06,
+      "end": 326.84
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Izrael: oficjalne wyniki potwierdzają pat. Teraz ruch prezydenta",
+      "start": 327.54,
+      "end": 385.85
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Najgorszy dzień w historii akcji Alphabetu. W tle AI w wyszukiwarce",
+      "start": 386.55,
+      "end": 442.47
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Mózg przed narodzinami i tuż po nich pozbywa się wadliwych neuronów",
+      "start": 443.17,
+      "end": 496.64
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Pancerny płaz sprzed 237 mln lat żył w morzu",
+      "start": 497.34,
+      "end": 550.14
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Polska przekaże Ukrainie dwa MiG-i 29",
+      "start": 551.34,
+      "end": 607.22
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Rosyjski dron uderzył w dworzec w Dnieprze. Zginęło 14 osób",
+      "start": 607.92,
+      "end": 657.83
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Ludzie świecą, tylko za słabo, żeby to zobaczyć",
+      "start": 659.03,
+      "end": 694.99
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Mamuty żyły jeszcze, gdy stały już piramidy",
+      "start": 695.69,
+      "end": 732.54
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Wielka Czerwona Plama na Jowiszu się kurczy",
+      "start": 733.24,
+      "end": 773.12
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Śląsk Cieszyński ogłasza przynależność do Polski",
+      "start": 774.32,
+      "end": 814.51
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1938: „Wojna światów” w radiu i panika, której prawie nie było",
+      "start": 815.21,
+      "end": 855.35
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1961: Car-bomba: największy wybuch w historii",
+      "start": 856.05,
+      "end": 890.36
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Prawo Parkinsona",
+      "start": 891.56,
+      "end": 947.64
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Sapiens. Od zwierząt do bogów: Mamy moc bogów, ale nie wiemy, czego chcemy",
+      "start": 948.84,
+      "end": 1025.41
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1026.61,
+      "end": 1045.77
+    }
+  ]
+}

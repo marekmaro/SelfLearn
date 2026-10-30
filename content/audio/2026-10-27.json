@@ -4,162 +4,162 @@
   "url": "audio/2026-10-27.mp3",
   "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-27.mp3",
   "voice": "pl_PL-gosia-medium",
-  "hash": "a6107788cb126444",
-  "duration": 1095.14,
+  "hash": "6e1c70ba86896386",
+  "duration": 1097.57,
   "items": [
     {
       "id": "intro",
       "chapter": "polska",
       "label": "Co dziś w wydaniu",
       "start": 0.3,
-      "end": 20.68
+      "end": 20.31
     },
     {
       "id": "pl-1",
       "chapter": "polska",
       "label": "Częstochowa odwołała prezydenta i radę miasta",
-      "start": 21.38,
-      "end": 76.92
+      "start": 21.01,
+      "end": 76.69
     },
     {
       "id": "pl-2",
       "chapter": "polska",
       "label": "Polska i Wietnam zawarły partnerstwo strategiczne",
-      "start": 77.62,
-      "end": 133.86
+      "start": 77.39,
+      "end": 133.11
     },
     {
       "id": "pl-3",
       "chapter": "polska",
       "label": "Od niedzieli NFZ sprawdzi godziny pracy lekarzy w szpitalach",
-      "start": 134.56,
-      "end": 191.84
+      "start": 133.81,
+      "end": 191.35
     },
     {
       "id": "pl-4",
       "chapter": "polska",
       "label": "Wszystkich Świętych w niedzielę. 2 listopada nie będzie dnia wolnego",
-      "start": 192.54,
-      "end": 236.26
+      "start": 192.05,
+      "end": 235.63
     },
     {
       "id": "pl-5",
       "chapter": "polska",
       "label": "Najbogatsze Polki: Kulczyk znów pierwsza, miliarderek już 15",
-      "start": 236.96,
-      "end": 296.05
+      "start": 236.33,
+      "end": 295.31
     },
     {
       "id": "sw-1",
       "chapter": "swiat",
       "label": "Brazylia: oficjalnie wygrał Lula. Flávio Bolsonaro chce unieważnienia",
-      "start": 297.25,
-      "end": 365.38
+      "start": 296.51,
+      "end": 364.51
     },
     {
       "id": "sw-2",
       "chapter": "swiat",
       "label": "Izrael wybiera dziś Kneset. W sondażach Eisenkot przed Netanjahu",
-      "start": 366.08,
-      "end": 423.05
+      "start": 365.21,
+      "end": 422.24
     },
     {
       "id": "sw-3",
       "chapter": "swiat",
       "label": "Krach na giełdzie w Brazylii po zwycięstwie Luli",
-      "start": 423.75,
-      "end": 474.24
+      "start": 422.94,
+      "end": 473.72
     },
     {
       "id": "sw-4",
       "chapter": "swiat",
       "label": "Anthropic, twórca Claude’a, złożył wniosek o wejście na giełdę",
-      "start": 474.94,
-      "end": 532.97
+      "start": 474.42,
+      "end": 532.8
     },
     {
       "id": "sw-5",
       "chapter": "swiat",
       "label": "Złota Piłka dla Kane’a i Putellas. Ewa Pajor druga",
-      "start": 533.67,
-      "end": 588.88
+      "start": 533.5,
+      "end": 588.45
     },
     {
       "id": "bezpieczenstwo-1",
       "chapter": "tematy",
       "label": "Rosja oskarża Ukrainę o ostrzał Ołeszek tuż przed rozejmem",
-      "start": 590.08,
-      "end": 649.07
+      "start": 589.65,
+      "end": 648.72
     },
     {
       "id": "ai-1",
       "chapter": "tematy",
       "label": "Meta sprzeda akcje za 95 mld dolarów, żeby budować AI",
-      "start": 649.77,
-      "end": 708.44
+      "start": 649.42,
+      "end": 708.48
     },
     {
       "id": "fact-1",
       "chapter": "ciekawostki",
       "label": "Mit: szkło to bardzo gęsta ciecz",
-      "start": 709.64,
-      "end": 741.94
+      "start": 709.68,
+      "end": 741.62
     },
     {
       "id": "fact-3",
       "chapter": "ciekawostki",
       "label": "Oksford jest starszy niż państwo Azteków",
-      "start": 742.64,
-      "end": 778.83
+      "start": 742.32,
+      "end": 779.65
     },
     {
       "id": "fact-2",
       "chapter": "ciekawostki",
       "label": "Najsilniejsze wiatry wieją na Neptunie",
-      "start": 779.53,
-      "end": 815.04
+      "start": 780.35,
+      "end": 815.76
     },
     {
       "id": "otd-1",
       "chapter": "historia",
       "label": "1939: Gestapo aresztuje prezydenta Warszawy",
-      "start": 816.24,
-      "end": 854.17
+      "start": 816.96,
+      "end": 854.95
     },
     {
       "id": "otd-2",
       "chapter": "historia",
       "label": "1904: W Nowym Jorku rusza metro",
-      "start": 854.87,
-      "end": 885.22
+      "start": 855.65,
+      "end": 886.27
     },
     {
       "id": "otd-3",
       "chapter": "historia",
       "label": "1962: Czarna sobota kryzysu kubańskiego",
-      "start": 885.92,
-      "end": 917.48
+      "start": 886.97,
+      "end": 918.45
     },
     {
       "id": "concept",
       "chapter": "pojecie",
       "label": "Pojęcie: Efekt Lindy",
-      "start": 918.68,
-      "end": 984.94
+      "start": 919.65,
+      "end": 986.76
     },
     {
       "id": "book",
       "chapter": "ksiazka",
       "label": "Sapiens. Od zwierząt do bogów: Pieniądz: najskuteczniejszy system wzajemnego zaufania",
-      "start": 986.14,
-      "end": 1074.77
+      "start": 987.96,
+      "end": 1076.84
     },
     {
       "id": "evening",
       "chapter": "wieczor",
       "label": "Na wieczór",
-      "start": 1075.97,
-      "end": 1094.64
+      "start": 1078.04,
+      "end": 1097.07
     }
   ]
 }

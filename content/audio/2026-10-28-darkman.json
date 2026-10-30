@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-28",
+  "file": "2026-10-28-darkman.mp3",
+  "url": "audio/2026-10-28-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-28-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "d157dfdeaa35aa7c",
+  "duration": 945.18,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 23.5
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Agnieszka Bartol ma zastąpić Pełczyńską-Nałęcz w resorcie funduszy",
+      "start": 24.2,
+      "end": 80.26
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Prezydent Nawrocki zezna w sądzie w procesie przeciw Onetowi",
+      "start": 80.96,
+      "end": 129.68
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Diesel znów droższy. Maksymalna cena to 8,28 zł za litr",
+      "start": 130.38,
+      "end": 188.23
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Chłodno i mokro do końca miesiąca. W górach śnieg",
+      "start": 188.93,
+      "end": 228.38
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Hurkacz odwrócił mecz w Bazylei. Teraz zagra z Rune",
+      "start": 229.08,
+      "end": 267.76
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Izrael po wyborach: Likud prowadzi, żaden blok bez większości",
+      "start": 268.96,
+      "end": 322.54
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "OpenAI: AI udowodniła słynne hipotezy matematyki. Naukowcy sprawdzają",
+      "start": 323.24,
+      "end": 377.89
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "USA: tydzień do wyborów. Teksas może przesądzić o Senacie",
+      "start": 378.59,
+      "end": 428.69
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Microsoft proponuje odejścia 60 tys. pracowników, co czwartemu",
+      "start": 429.39,
+      "end": 486.52
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Fed decyduje dziś o stopach. Złoto znów powyżej 4000 dolarów",
+      "start": 487.22,
+      "end": 531.25
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Rozejm w Ołeszkach obowiązuje. Ma objąć konwoje z pomocą",
+      "start": 532.45,
+      "end": 588.59
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Mit: piorun nie uderza dwa razy w to samo miejsce",
+      "start": 589.79,
+      "end": 622.84
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Rekin grenlandzki może żyć ponad 270 lat",
+      "start": 623.54,
+      "end": 661.92
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Łyżeczka gwiazdy neutronowej ważyłaby miliard ton",
+      "start": 662.62,
+      "end": 689.18
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Powstaje Polska Komisja Likwidacyjna",
+      "start": 690.38,
+      "end": 720.13
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1886: Odsłonięcie Statuy Wolności",
+      "start": 720.83,
+      "end": 751.09
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1940: Grecja mówi „nie” Mussoliniemu",
+      "start": 751.79,
+      "end": 785.81
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt zakotwiczenia",
+      "start": 787.01,
+      "end": 848.64
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Sapiens. Od zwierząt do bogów: Rewolucja naukowa zaczęła się od przyznania się do niewiedzy",
+      "start": 849.84,
+      "end": 924.24
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 925.44,
+      "end": 944.68
+    }
+  ]
+}

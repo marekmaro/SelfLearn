@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-29",
+  "file": "2026-10-29-darkman.mp3",
+  "url": "audio/2026-10-29-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-29-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "2a69461b6ae8efd8",
+  "duration": 993.73,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 24.69
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Leki z Polski mają być tańsze. Rząd przyjął reformę refundacji",
+      "start": 25.39,
+      "end": 80.4
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Senat przywraca wyższy CIT dla największych firm. Ustawa wraca do Sejmu",
+      "start": 81.1,
+      "end": 141.69
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Wszystkich Świętych: darmowe autobusy, objazdy i chłodna niedziela",
+      "start": 142.39,
+      "end": 189.91
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Nowy właściciel TVN kończy z pracą hybrydową",
+      "start": 190.61,
+      "end": 241.52
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Hurkacz odpada w Bazylei po dramatycznym tie-breaku z Rune",
+      "start": 242.22,
+      "end": 281.82
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Zderzenie pociągów w Hiszpanii. Zginęło co najmniej 68 osób",
+      "start": 283.02,
+      "end": 334.75
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Izrael po przeliczeniu głosów: pat, Netanjahu bez większości",
+      "start": 335.45,
+      "end": 394.04
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Fed nie zmienia stóp. Dwoje członków chciało podwyżki",
+      "start": 394.74,
+      "end": 442.21
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "„Lodowiec zagłady” może podnieść morza dwa razy bardziej, niż sądzono",
+      "start": 442.91,
+      "end": 495
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Apple pokazał pierwszego Maca z ekranem dotykowym",
+      "start": 495.7,
+      "end": 545.76
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "W Polsce powstanie centrum serwisowe pocisków do Patriotów",
+      "start": 546.96,
+      "end": 603.4
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Wrony pamiętają twarze ludzi, którzy im zagrozili",
+      "start": 604.6,
+      "end": 640.79
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Na Księżycu leżą lustra, w które wciąż celujemy laserem",
+      "start": 641.49,
+      "end": 680.16
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Co drugi z nas nie zauważy, że rozmówca zamienił się w kogoś innego",
+      "start": 680.86,
+      "end": 717.35
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1944: Dywizja Maczka wyzwala Bredę",
+      "start": 718.55,
+      "end": 754.58
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1929: Czarny wtorek na Wall Street",
+      "start": 755.28,
+      "end": 797
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1969: Pierwsza wiadomość w sieci, z której wyrósł internet",
+      "start": 797.7,
+      "end": 830.98
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Błąd kosztów utopionych",
+      "start": 832.18,
+      "end": 893.27
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Sapiens. Od zwierząt do bogów: Kapitalizm stoi na wierze w lepszą przyszłość",
+      "start": 894.47,
+      "end": 970.35
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 971.55,
+      "end": 993.23
+    }
+  ]
+}

@@ -512,6 +512,7 @@ test('Lektor z nagrania: tekst do nagrania, sklejanie, wybór fragmentów', () =
   say('W I kwartale, w XX wieku, po II wojnie światowej, do 21:47.', 'W pierwszym kwartale, w dwudziestym wieku, po drugiej wojnie światowej, do dwudziestej pierwszej 47.');
   say('NFZ i PKW, USA i UE, NATO i PiS, 1,5 bln, ok. 3000 r. p.n.e.', 'en ef zet i pe ka wu, u es a i u e, NATO i PiS, 1,5 biliona, około 3000 roku przed naszą erą');
   say('1 mld zł, 22 mln osób, 13 mln, 4 tys. zł i 60 tys. pracowników', '1 miliard złotych, 22 miliony osób, 13 milionów, 4 tysiące złotych i 60 tysięcy pracowników');
+  say('Spadek był największy od wejścia na giełdę w 2004 r. Wartość spadła. Od 2024 r. Polska rośnie.', 'Spadek był największy od wejścia na giełdę w dwa tysiące czwartym roku. Wartość spadła. Od dwa tysiące dwudziestego czwartego roku Polska rośnie.');
   assert(yearOrdinal(2000) === 'dwutysięcznego' && yearOrdinal(1904, 'loc') === 'tysiąc dziewięćset czwartym' && yearOrdinal(2011) === 'dwa tysiące jedenastego', 'lata jako liczebniki porządkowe');
   const items = editionNarration(base, narrationChapters(base));
   assert(items[0].id === 'intro' && new Set(items.map((i) => i.id)).size === items.length, 'fragmenty z unikalnymi id, od wstępu');

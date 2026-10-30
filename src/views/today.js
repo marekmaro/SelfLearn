@@ -25,15 +25,18 @@ import { getLook, openAppearanceSheet } from '../look.js';
 import {
   speechSupported,
   startListening,
-  loadRecording,
+  loadRecordings,
+  pickRecording,
   playRecording,
   listeningTo,
   nowPlaying,
   onNowPlaying,
   savedVoice,
-  saveVoice,
+  saveLector,
+  savePhoneVoice,
   pickEngine,
   openPlayer,
+  LECTORS,
 } from '../listen.js';
 import { challengeFor, shareChallenge, verdict } from '../challenge.js';
 import { sectionLabel, firstSentence, buildChapters, buildWarmup, estimateMinutes, findRef, withPersonalQuiz, chapterNarration, editionNarration, chapterPreview } from '../chapters.js';
@@ -57,6 +60,12 @@ let viewCount = 0;
 let enteredFromCover = null;
 // Karta do pokazania po otwarciu czytania z odtwarzacza („Pokaż w tekście”).
 let pendingShow = null;
+
+// Krótka wersja tytułu do komunikatów (cały tytuł widać w odtwarzaczu).
+function shorten(text, max) {
+  const t = String(text || '');
+  return t.length > max ? `${t.slice(0, max - 1).trimEnd()}…` : t;
+}
 
 export async function renderToday(root, { date: requested, mode = 'cover', chapter: wantChapter = null, focus = null, onChange }) {
   let index;
@@ -93,9 +102,11 @@ export async function renderToday(root, { date: requested, mode = 'cover', chapt
   const warmup = buildWarmup(edition, prevEdition, editionProgress(prevDate || ''));
 
   const profile = getState().profile;
-  // Nagranie lektora (MP3), jeśli jest: wczytane zawczasu, bo na iPhonie dźwięk musi ruszyć od razu po dotknięciu.
-  const recording = await Promise.race([loadRecording(date), new Promise((resolve) => setTimeout(() => resolve(null), 1500))]);
-  const canListen = () => Boolean(recording) || speechSupported();
+  // Nagrania lektorów (MP3), jeśli są: wczytane zawczasu, bo na iPhonie dźwięk musi ruszyć od razu po dotknięciu.
+  const recordings = await loadRecordings(date);
+  // Nagranie wybranego lektora, a gdy go brak – innego (null, gdy wydanie nie ma żadnego nagrania).
+  const recording = () => pickRecording(recordings)?.info || null;
+  const canListen = () => Boolean(recording()) || speechSupported();
   const chapters = buildChapters(edition, profile, warmup.length ? { prevDate } : null);
   const expanded = new Set();
   const openCards = new Set();
@@ -281,7 +292,7 @@ export async function renderToday(root, { date: requested, mode = 'cover', chapt
     const minutes = estimateMinutes(p.completedOn ? chapters : left, edition, expanded);
     const listening = listeningTo(date);
     const resumeAt = listenResumeItem();
-    const engine = pickEngine(savedVoice(), { hasRecording: Boolean(recording), hasSpeech: speechSupported() });
+    const engine = pickEngine(savedVoice(), { hasRecording: Boolean(recording()), hasSpeech: speechSupported() });
 
     const segments = h(
       'div',
@@ -340,7 +351,7 @@ export async function renderToday(root, { date: requested, mode = 'cover', chapt
             { class: 'small muted hero-note' },
             started && cur ? `Czytanie: dalej od rozdziału „${cur.label}”. ` : '',
             engine === 'nagranie'
-              ? `Słuchanie: ok. ${Math.max(1, Math.round(recording.duration / 60))} min, gra też przy zgaszonym ekranie.`
+              ? `Słuchanie: ok. ${Math.max(1, Math.round(recording().duration / 60))} min, gra też przy zgaszonym ekranie.`
               : 'Słuchanie: głos telefonu, przy zgaszonym ekranie zamilknie.',
           )
         : null,
@@ -1254,7 +1265,7 @@ export async function renderToday(root, { date: requested, mode = 'cover', chapt
   function listenEdition({ fromStart = false } = {}) {
     const resumeAt = fromStart ? null : listenResumeItem();
     listen(listenItems(), { ...keepPlace, startAt: resumeAt ? editionProgress(date).listenAt : null });
-    if (resumeAt) toast(`Wznawiam od: ${resumeAt.label}`, { action: { label: 'Od początku', onClick: () => listenEdition({ fromStart: true }) } });
+    if (resumeAt) toast(`Wznawiam: ${[resumeAt.chapterLabel, shorten(resumeAt.label, 38)].filter(Boolean).join(' · ')}`, { action: { label: 'Od początku', onClick: () => listenEdition({ fromStart: true }) } });
   }
 
   function listenFromChapter(ch) {
@@ -1266,21 +1277,29 @@ export async function renderToday(root, { date: requested, mode = 'cover', chapt
     else listen(listenItems(), { ...keepPlace, startAt: { id: first.id } });
   }
 
-  // Przełącznik głosu w odtwarzaczu: zapamiętuje wybór i gra dalej od tego samego fragmentu.
-  function voiceOption(engine) {
+  // Wybór lektora w odtwarzaczu: zapamiętuje wybór i gra dalej od tego samego fragmentu.
+  function voiceOption(value) {
+    const available = Object.fromEntries(LECTORS.map((l) => [l.value, l.engine === 'telefon' ? speechSupported() : Boolean(recordings[l.recorded])]));
+    const restart = (item) => listen(listenItems(), { ...keepPlace, startAt: { id: item.id } });
     return {
-      value: engine,
-      available: { nagranie: Boolean(recording), telefon: speechSupported() },
-      onChange: (voice, item) => {
-        saveVoice(voice);
-        listen(listenItems(), { ...keepPlace, startAt: { id: item.id } });
-        toast(voice === 'telefon' ? 'Głos telefonu. Przy zgaszonym ekranie zamilknie.' : 'Nagranie lektora. Gra też przy zgaszonym ekranie.');
+      value,
+      available,
+      onChange: (next, item) => {
+        saveLector(next);
+        restart(item);
+        const lector = LECTORS.find((l) => l.value === next);
+        toast(lector.engine === 'telefon' ? 'Głos telefonu. Przy zgaszonym ekranie zamilknie.' : `${lector.label}. Gra też przy zgaszonym ekranie.`);
+      },
+      onPhoneVoice: (uri, item) => {
+        savePhoneVoice(uri);
+        restart(item);
       },
     };
   }
 
   function listen(items, options = {}) {
-    const engine = pickEngine(savedVoice(), { hasRecording: Boolean(recording), hasSpeech: speechSupported() });
+    const rec = pickRecording(recordings);
+    const engine = pickEngine(savedVoice(), { hasRecording: Boolean(rec), hasSpeech: speechSupported() });
     if (!engine) {
       toast('Ta przeglądarka nie umie czytać na głos.');
       return;
@@ -1294,13 +1313,13 @@ export async function renderToday(root, { date: requested, mode = 'cover', chapt
         if (live?.date === date && live.mounted()) live.follow(item);
       },
       onShowText: (item) => showText(item),
-      voice: voiceOption(engine),
+      voice: voiceOption(engine === 'telefon' ? 'telefon' : `nagranie:${rec.id}`),
     };
     if (engine === 'telefon') {
       startListening(items, common);
       return;
     }
-    playRecording(recording, items, {
+    playRecording(rec.info, items, {
       ...common,
       album: `SelfLearn · ${formatShort(date)}`,
       onFail: () => {

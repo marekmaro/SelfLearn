@@ -824,24 +824,30 @@ input[type="file"] { max-width: 100%; }
 
 .inline-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 
+/* Wyśrodkowany przez left/right + margin: auto (a nie left: 50%), żeby dłuższy tekst miał całą szerokość
+   ekranu i nie zawijał się w wąską kolumnę, która z zaokrągleniem wyglądała jak koło. */
 .toast {
   position: fixed;
   transition: bottom 0.25s ease;
-  left: 50%;
+  left: 16px;
+  right: 16px;
+  margin-inline: auto;
+  width: fit-content;
+  max-width: 560px;
   bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom, 0px) + 16px);
-  transform: translateX(-50%);
   background: var(--ink);
   color: var(--bg);
   padding: 10px 16px;
-  border-radius: 999px;
+  border-radius: 20px;
   font-weight: 600;
   font-size: var(--step--1);
+  line-height: 1.35;
   z-index: 20;
-  max-width: calc(100% - 32px);
   display: flex;
   align-items: center;
   gap: 14px;
 }
+.toast > span { min-width: 0; }
 .toast-action {
   border: 0;
   background: transparent;
@@ -959,6 +965,19 @@ body.is-reader.has-player #app { padding-bottom: calc(env(safe-area-inset-bottom
 .voice-option small { color: var(--muted); font-size: var(--step--1); }
 .voice-option[aria-checked="true"] { border-color: var(--nurt); box-shadow: 0 0 0 1px var(--nurt); background: var(--nurt-soft); }
 .voice-option:disabled { opacity: 0.55; cursor: default; }
+/* Lektor w Profilu: wybór i obok przycisk „Posłuchaj”. */
+.lector-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: center; }
+.lector-row .voice-option strong { overflow-wrap: anywhere; }
+.lector-row .icon-btn { width: 46px; height: 46px; border: 1px solid var(--line); color: var(--ink); }
+.ps-phone-voice { display: grid; gap: 6px; margin-top: 10px; }
+.ps-phone-voice select {
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+}
 .ps-actions { padding-top: 8px; }
 .ps-actions .btn { width: auto; }
 .player-sheet > .eyebrow { margin-top: 14px; margin-bottom: 8px; }
@@ -1337,8 +1356,6 @@ body.is-reader #app { padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 32
 .link-btn .icon svg { width: 16px; height: 16px; }
 .examples { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
 .check input { flex: none; }
-.segmented.voices .choice { padding: 12px 10px; }
-.segmented.voices .choice strong { font-family: var(--font-ui); font-size: var(--step-0); }
 /* Wąski ekran albo duży tekst: przy rozdziale same słuchawki, bez napisu. */
 .reader-row { container-type: inline-size; }
 .reader-where .eyebrow { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

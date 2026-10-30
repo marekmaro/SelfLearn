@@ -2,7 +2,8 @@ name: Lektor (nagrania MP3)
 
 # Po każdym nowym albo zmienionym wydaniu na main: nagranie lektora (Piper) do MP3.
 # MP3 trafia do wydania „lektor” na GitHubie (poza historią repozytorium), a czasy fragmentów
-# do content/audio/RRRR-MM-DD.json. Ten commit uruchamia nowe wdrożenie na Vercelu, które pobiera MP3
+# do content/audio/RRRR-MM-DD.json. Każdy głos z VOICES ma własne nagranie (pierwszy to głos domyślny,
+# pozostałe mają w nazwie pliku dopisek, np. RRRR-MM-DD-darkman.mp3), a w aplikacji wybiera się lektora. Ten commit uruchamia nowe wdrożenie na Vercelu, które pobiera MP3
 # (scripts/build-site.mjs), więc aplikacja serwuje je z własnego adresu.
 # W pull requestach, które zmieniają nagrywanie, robi się próbne nagranie najnowszego wydania (jako artefakt).
 
@@ -35,7 +36,7 @@ concurrency:
 
 env:
   TZ: Europe/Warsaw
-  VOICE: pl_PL-gosia-medium
+  VOICES: pl_PL-gosia-medium pl_PL-darkman-medium
   PIPER_VERSION: 2023.11.14-2
 
 jobs:
@@ -54,43 +55,67 @@ jobs:
           EVENT: ${{ github.event_name }}
           DATES_IN: ${{ github.event.inputs.dates }}
         run: |
-          if [ "$EVENT" = "pull_request" ]; then
-            DATES=$(ls content/editions | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}\.json$' | sort | tail -1 | cut -c1-10)
-            FORCE=--force
-          elif [ -n "$DATES_IN" ]; then
-            # Tylko daty w postaci RRRR-MM-DD (pole formularza jest wpisywane ręcznie).
-            DATES=$(echo "$DATES_IN" | tr ', ' '\n\n' | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' | tr '\n' ' ')
-            FORCE=--force
-          else
-            DATES=$(node scripts/make-audio.mjs --list --voice "$VOICE")
-            FORCE=
-          fi
+          # Dla każdego głosu osobno: GŁOS=data,data… (w pull requeście i przy ręcznym uruchomieniu – od nowa).
+          TODO=""
+          FORCE=
+          for V in $VOICES; do
+            if [ "$EVENT" = "pull_request" ]; then
+              D=$(ls content/editions | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}\.json$' | sort | tail -1 | cut -c1-10)
+              FORCE=--force
+            elif [ -n "$DATES_IN" ]; then
+              # Tylko daty w postaci RRRR-MM-DD (pole formularza jest wpisywane ręcznie).
+              D=$(echo "$DATES_IN" | tr ', ' '\n\n' | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' | tr '\n' ' ')
+              FORCE=--force
+            else
+              D=$(node scripts/make-audio.mjs --list --voice "$V")
+            fi
+            D=$(echo $D | tr ' ' ',')
+            [ -n "$D" ] && TODO="$TODO $V=$D"
+          done
+          DATES=$(for T in $TODO; do echo "${T#*=}" | tr ',' '\n'; done | sort -u | tr '\n' ' ' | sed 's/ $//')
+          echo "todo=$TODO" >> "$GITHUB_OUTPUT"
           echo "dates=$DATES" >> "$GITHUB_OUTPUT"
           echo "force=$FORCE" >> "$GITHUB_OUTPUT"
-          echo "Do nagrania: ${DATES:-nic}"
+          echo "Do nagrania:${TODO:- nic}"
 
       - name: Pamięć podręczna lektora
         if: steps.plan.outputs.dates != ''
         uses: actions/cache@v4
         with:
           path: tts
-          key: piper-${{ env.PIPER_VERSION }}-${{ env.VOICE }}
+          key: piper-${{ env.PIPER_VERSION }}-${{ hashFiles('.github/workflows/audio.yml') }}
 
-      - name: Pobierz Piper, głos i ffmpeg
+      - name: Pobierz Piper, głosy i ffmpeg
         if: steps.plan.outputs.dates != ''
+        env:
+          TODO: ${{ steps.plan.outputs.todo }}
         run: |
           mkdir -p tts
           if [ ! -x tts/piper/piper ]; then
             curl -fsSL "https://github.com/rhasspy/piper/releases/download/$PIPER_VERSION/piper_linux_x86_64.tar.gz" | tar xz -C tts
           fi
-          BASE="https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/pl/pl_PL/gosia/medium"
-          [ -f "tts/$VOICE.onnx" ] || curl -fsSL -o "tts/$VOICE.onnx" "$BASE/$VOICE.onnx"
-          [ -f "tts/$VOICE.onnx.json" ] || curl -fsSL -o "tts/$VOICE.onnx.json" "$BASE/$VOICE.onnx.json"
+          for T in $TODO; do
+            V="${T%%=*}"
+            # pl_PL-darkman-medium → pl/pl_PL/darkman/medium
+            LOCALE=$(echo "$V" | cut -d- -f1)
+            NAME=$(echo "$V" | cut -d- -f2)
+            QUALITY=$(echo "$V" | cut -d- -f3)
+            BASE="https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/${LOCALE%%_*}/$LOCALE/$NAME/$QUALITY"
+            [ -f "tts/$V.onnx" ] || curl -fsSL -o "tts/$V.onnx" "$BASE/$V.onnx"
+            [ -f "tts/$V.onnx.json" ] || curl -fsSL -o "tts/$V.onnx.json" "$BASE/$V.onnx.json"
+          done
           command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
 
       - name: Nagraj
         if: steps.plan.outputs.dates != ''
-        run: node scripts/make-audio.mjs --tts "tts/piper/piper --model tts/$VOICE.onnx --sentence_silence 0.3" --voice "$VOICE" --out audio-out ${{ steps.plan.outputs.force }} ${{ steps.plan.outputs.dates }}
+        env:
+          TODO: ${{ steps.plan.outputs.todo }}
+          FORCE: ${{ steps.plan.outputs.force }}
+        run: |
+          for T in $TODO; do
+            V="${T%%=*}"
+            node scripts/make-audio.mjs --tts "tts/piper/piper --model tts/$V.onnx --sentence_silence 0.3" --voice "$V" --out audio-out $FORCE $(echo "${T#*=}" | tr ',' ' ')
+          done
 
       - name: Próbne nagranie (pull request)
         if: github.event_name == 'pull_request'

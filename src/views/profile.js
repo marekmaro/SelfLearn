@@ -27,7 +27,7 @@ import { offlineSettings, setOfflineSettings, offlineStats, cachedEditionDates, 
 import { ankiTSV, favoritesMarkdown, downloadFile } from '../exporters.js';
 import { favoriteEntries } from '../favorites.js';
 import { installSection, isIOS } from '../install.js';
-import { VOICES, RATES, savedVoice, saveVoice, savedRate, phoneVoiceSample, speechSupported } from '../listen.js';
+import { LECTORS, RATES, savedLector, saveLector, savedRate, savedPhoneVoice, savePhoneVoice, phoneVoices, phoneVoiceSample, recordedSample, loadRecording, speechSupported } from '../listen.js';
 
 const PAGE_SECTIONS = [
   { id: 'ustawienia', label: 'Wydanie' },
@@ -154,51 +154,112 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
         ),
       ),
     );
-    const voiceName = h('p', { class: 'small muted', style: 'margin:0' });
-    return h(
-      'section',
-      { class: 'section', id: 'lektor' },
-      h('h2', null, 'Lektor'),
-      h('p', { class: 'muted', style: 'margin:0' }, 'Każde wydanie ma nagranie lektora, które gra też przy zgaszonym ekranie, jak podcast. Głos telefonu zwykle brzmi naturalniej, ale cichnie po zablokowaniu ekranu. Głos zmienisz też w odtwarzaczu podczas słuchania.'),
-      (() => {
-        const voices = segmented(VOICES, savedVoice(), (v) => {
-          saveVoice(v);
-          toast('Zapisano');
-        });
-        voices.classList.add('two', 'voices');
-        return voices;
-      })(),
-      h('p', { class: 'eyebrow' }, 'Tempo'),
-      rates,
-      speechSupported()
-        ? h(
+    // Kto czyta: lektorka albo lektor z nagrania, albo głos telefonu. Przy każdym próbka głosu.
+    const lectors = h('div', { class: 'ps-voices lectors', role: 'radiogroup', 'aria-label': 'Lektor' });
+    const drawLectors = () =>
+      lectors.replaceChildren(
+        ...LECTORS.filter((l) => l.engine !== 'telefon' || speechSupported()).map((l) =>
+          h(
             'div',
-            { class: 'card', style: 'gap:8px' },
-            h('h3', { style: 'margin:0;font-size:var(--step-0);font-family:var(--font-ui)' }, 'Głos telefonu'),
-            h(
-              'p',
-              { class: 'small', style: 'margin:0' },
-              isIOS()
-                ? 'Lepszy polski głos pobierzesz w Ustawieniach iPhone’a: Dostępność → Treść mówiona → Głosy → Polski → Zosia, w wersji do pobrania (lepszej jakości). SelfLearn sam wybierze ten lepszy.'
-                : 'Lepszy polski głos zainstalujesz w ustawieniach telefonu: Zamiana tekstu na mowę → silnik Google → Zainstaluj dane głosowe → polski. SelfLearn sam wybierze najlepszy dostępny.',
-            ),
+            { class: 'lector-row' },
             h(
               'button',
               {
                 type: 'button',
-                class: 'btn secondary',
-                style: 'justify-self:start',
-                onclick: async () => {
-                  const name = await phoneVoiceSample();
-                  voiceName.textContent = name ? `Teraz czyta: ${name}.` : 'Telefon nie podał nazwy głosu.';
+                class: 'voice-option',
+                role: 'radio',
+                'aria-checked': l.value === savedLector() ? 'true' : 'false',
+                onclick: () => {
+                  saveLector(l.value);
+                  drawLectors();
+                  phoneCard.hidden = l.engine !== 'telefon';
+                  toast(`Lektor: ${l.label.toLowerCase()}`);
                 },
               },
-              icon('headphones'),
-              'Posłuchaj głosu telefonu',
+              h('strong', null, l.label),
+              h('small', null, l.sub),
             ),
-            voiceName,
-          )
-        : null,
+            h('button', { type: 'button', class: 'icon-btn', 'aria-label': `Posłuchaj: ${l.label}`, onclick: () => (l.engine === 'telefon' ? phoneVoiceSample() : sampleRecorded(l)) }, icon('headphones')),
+          ),
+        ),
+      );
+
+    // Próbka nagrania: pierwsze sekundy najnowszego wydania, które ma nagranie tego lektora.
+    async function sampleRecorded(l) {
+      try {
+        const { editions } = await loadIndex();
+        for (const e of editions.filter((x) => x.date <= todayISO()).slice(0, 4)) {
+          const info = await loadRecording(e.date, l.recorded);
+          if (info) {
+            recordedSample(info);
+            return;
+          }
+        }
+      } catch {
+        // Bez listy wydań nie ma czego odtworzyć.
+      }
+      toast('Nagranie tego lektora pojawi się z najbliższym wydaniem.');
+    }
+
+    // Głos telefonu: który z polskich głosów zainstalowanych w telefonie.
+    const phoneList = h('div', { class: 'ps-voices phone-voices', role: 'radiogroup', 'aria-label': 'Głos telefonu' });
+    const phoneCard = h(
+      'div',
+      { class: 'card', style: 'gap:10px', hidden: savedLector() !== 'telefon' },
+      h('h3', { style: 'margin:0;font-size:var(--step-0);font-family:var(--font-ui)' }, 'Głos telefonu'),
+      phoneList,
+      h(
+        'p',
+        { class: 'small', style: 'margin:0' },
+        isIOS()
+          ? 'Więcej głosów pobierzesz w Ustawieniach iPhone’a: Dostępność → Treść mówiona → Głosy → Polski (np. Zosia w wersji lepszej jakości). Potem wróć tutaj.'
+          : 'Więcej głosów zainstalujesz w ustawieniach telefonu: Zamiana tekstu na mowę → silnik Google → Zainstaluj dane głosowe → polski. Potem wróć tutaj.',
+      ),
+    );
+    async function drawPhoneVoices() {
+      const list = await phoneVoices();
+      if (!list.length) {
+        phoneList.replaceChildren(h('p', { class: 'small muted', style: 'margin:0' }, 'Telefon nie ma polskiego głosu. Dodaj go w ustawieniach (wskazówka niżej).'));
+        return;
+      }
+      const saved = savedPhoneVoice();
+      const chosen = list.some((v) => v.uri === saved) ? saved : '';
+      const option = (uri, title, sub) =>
+        h(
+          'div',
+          { class: 'lector-row' },
+          h(
+            'button',
+            {
+              type: 'button',
+              class: 'voice-option',
+              role: 'radio',
+              'aria-checked': uri === chosen ? 'true' : 'false',
+              onclick: () => {
+                savePhoneVoice(uri);
+                drawPhoneVoices();
+                phoneVoiceSample(uri || undefined);
+              },
+            },
+            h('strong', null, title),
+            sub ? h('small', null, sub) : null,
+          ),
+          h('button', { type: 'button', class: 'icon-btn', 'aria-label': `Posłuchaj: ${title}`, onclick: () => phoneVoiceSample(uri || '') }, icon('headphones')),
+        );
+      phoneList.replaceChildren(option('', 'Automatycznie', `najlepszy dostępny: ${list[0].name}`), ...list.map((v) => option(v.uri, v.name)));
+    }
+    drawLectors();
+    if (speechSupported()) drawPhoneVoices();
+
+    return h(
+      'section',
+      { class: 'section', id: 'lektor' },
+      h('h2', null, 'Lektor'),
+      h('p', { class: 'muted', style: 'margin:0' }, 'Wybierz, kto czyta wydanie. Nagrania grają też przy zgaszonym ekranie, jak podcast. Głos telefonu zwykle brzmi naturalniej, ale cichnie po zablokowaniu ekranu. Lektora zmienisz też w odtwarzaczu podczas słuchania.'),
+      lectors,
+      speechSupported() ? phoneCard : null,
+      h('p', { class: 'eyebrow' }, 'Tempo'),
+      rates,
     );
   }
 

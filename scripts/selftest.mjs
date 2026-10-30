@@ -17,11 +17,11 @@ import { threadSlug, editionThreads, threadsFromIndex, recentThreadNames } from 
 import { indexEntry, repeatedMaterial } from '../src/edition.js';
 import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
 import { safePath } from './serve.mjs';
-import { splitText, startIndex, recordingSegments, segmentAt, selectionLength, toSelection, fromSelection, pickEngine, clock } from '../src/listen.js';
+import { splitText, startIndex, recordingSegments, segmentAt, selectionLength, toSelection, fromSelection, pickEngine, clock, LECTORS, savedLector, saveLector, savedVoice, savedRecorded, pickRecording, pickPolish, savePhoneVoice } from '../src/listen.js';
 import { yearOrdinal } from '../src/speech-text.js';
 import { parseEditionHash, readerHref } from '../src/data.js';
 import { chapterPreview } from '../src/chapters.js';
-import { speakable, joinClips, readWav, writeWav, narrationHash, loadNarration } from './make-audio.mjs';
+import { speakable, joinClips, readWav, writeWav, narrationHash, loadNarration, voiceId, audioBase } from './make-audio.mjs';
 import { narrationChapters, editionNarration } from '../src/chapters.js';
 import { verdictText, calibration } from '../src/confidence.js';
 import { datesToPrefetch, formatBytes } from '../src/offline.js';
@@ -546,6 +546,36 @@ test('Lektor z nagrania: tekst do nagrania, sklejanie, wybór fragmentów', () =
   assert(pickEngine('telefon', { hasRecording: true, hasSpeech: false }) === 'nagranie', 'bez mowy: nagranie');
   assert(pickEngine('telefon', { hasRecording: false, hasSpeech: false }) === null, 'nic nie działa');
   assert(items.every((i) => i.chapterLabel), 'każdy fragment ma nazwę rozdziału (do odtwarzacza)');
+});
+
+test('Wybór lektora: nagrania kilku głosów i głos telefonu', () => {
+  // Pliki nagrań: głos domyślny bez dopisku (jak dotąd), pozostałe z nazwą głosu.
+  assert(voiceId('pl_PL-gosia-medium') === 'gosia' && voiceId('pl_PL-darkman-medium') === 'darkman' && voiceId('v1') === 'gosia', 'nazwa głosu z modelu Piper');
+  assert(audioBase('2026-10-30') === '2026-10-30' && audioBase('2026-10-30', 'darkman') === '2026-10-30-darkman', 'nazwy plików nagrań');
+  // Ten sam lektor w aplikacji i w nagraniach.
+  assert(LECTORS.map((l) => l.value).join() === 'nagranie:gosia,nagranie:darkman,telefon', LECTORS.map((l) => l.value).join());
+  assert(savedLector() === 'nagranie:gosia', 'domyślnie lektorka z nagrania');
+  saveLector('nagranie:darkman');
+  assert(savedLector() === 'nagranie:darkman' && savedVoice() === 'nagranie' && savedRecorded() === 'darkman', 'wybrany lektor');
+  saveLector('telefon');
+  assert(savedLector() === 'telefon' && savedRecorded() === 'darkman', 'głos telefonu pamięta też ostatnie nagranie');
+  saveLector('nagranie:gosia');
+  // Nagranie wybranego lektora, a gdy go brak – innego.
+  const recs = { gosia: { url: 'g' }, darkman: null };
+  assert(pickRecording(recs, 'darkman').id === 'gosia' && pickRecording(recs, 'gosia').info.url === 'g' && pickRecording({}, 'gosia') === null, 'nagranie zastępcze');
+  // Głos telefonu: wybrany, a gdy go nie ma w tym telefonie – najlepszy polski.
+  const voices = [
+    { name: 'English', lang: 'en-US', voiceURI: 'en', localService: true },
+    { name: 'Polski', lang: 'pl-PL', voiceURI: 'pl-a', localService: false },
+    { name: 'Zosia', lang: 'pl-PL', voiceURI: 'pl-b', localService: true },
+    { name: 'Zosia (Enhanced)', lang: 'pl_PL', voiceURI: 'pl-c', localService: true },
+  ];
+  assert(pickPolish(voices, '').voiceURI === 'pl-c' && pickPolish(voices, 'pl-a').voiceURI === 'pl-a' && pickPolish(voices, 'brak').voiceURI === 'pl-c', 'wybór głosu telefonu');
+  assert(pickPolish(voices.slice(0, 1), '') === null, 'brak polskiego głosu');
+  savePhoneVoice('pl-b');
+  assert(pickPolish(voices).voiceURI === 'pl-b', 'zapamiętany głos telefonu');
+  savePhoneVoice('');
+  assert(pickPolish(voices).voiceURI === 'pl-c', 'znowu automatycznie');
 });
 
 test('Czytanie: adresy okładki i rozdziałów, spis treści', () => {

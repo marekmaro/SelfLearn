@@ -11,9 +11,17 @@ export const RATES = [0.9, 1, 1.15, 1.3, 1.5];
 const MAX_CHUNK = 220;
 const IOS = typeof navigator !== 'undefined' && (/iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
 
-export const VOICES = [
-  { value: 'nagranie', label: 'Nagranie lektora', sub: 'gra też przy zgaszonym ekranie' },
-  { value: 'telefon', label: 'Głos telefonu', sub: 'brzmi naturalniej, cichnie po zgaszeniu ekranu' },
+// Nagrania robi .github/workflows/audio.yml, osobno dla każdego głosu (pierwszy to domyślny).
+export const RECORDED = [
+  { id: 'gosia', label: 'Lektorka', sub: 'nagranie, głos kobiecy' },
+  { id: 'darkman', label: 'Lektor', sub: 'nagranie, głos męski' },
+];
+const DEFAULT_RECORDED = RECORDED[0].id;
+
+// Wybór lektora: jedno z nagrań albo głos telefonu.
+export const LECTORS = [
+  ...RECORDED.map((r) => ({ value: `nagranie:${r.id}`, engine: 'nagranie', recorded: r.id, label: r.label, sub: `${r.sub}, gra też przy zgaszonym ekranie` })),
+  { value: 'telefon', engine: 'telefon', label: 'Głos telefonu', sub: 'zwykle naturalniejszy, cichnie po zgaszeniu ekranu' },
 ];
 
 let current = null;
@@ -75,6 +83,40 @@ export function saveVoice(voice) {
   });
 }
 
+// Które nagranie: lektorka (domyślnie) albo lektor.
+export function savedRecorded() {
+  const id = getState().settings?.listen?.recorded;
+  return RECORDED.some((r) => r.id === id) ? id : DEFAULT_RECORDED;
+}
+
+export function savedLector() {
+  return savedVoice() === 'telefon' ? 'telefon' : `nagranie:${savedRecorded()}`;
+}
+
+export function saveLector(value) {
+  const lector = LECTORS.find((l) => l.value === value);
+  if (!lector) return;
+  update((s) => {
+    s.settings ||= {};
+    s.settings.listen = { ...(s.settings.listen || {}), voice: lector.engine, ...(lector.recorded ? { recorded: lector.recorded } : {}) };
+  });
+}
+
+// Wybrany głos telefonu (voiceURI); brak = najlepszy dostępny.
+export function savedPhoneVoice() {
+  return getState().settings?.listen?.phoneVoice || '';
+}
+
+export function savePhoneVoice(uri) {
+  update((s) => {
+    s.settings ||= {};
+    const listen = { ...(s.settings.listen || {}) };
+    if (uri) listen.phoneVoice = uri;
+    else delete listen.phoneVoice;
+    s.settings.listen = listen;
+  });
+}
+
 // Którym głosem grać: wybrany, jeśli jest dostępny, a jeśli nie – ten drugi.
 export function pickEngine(preferred, { hasRecording, hasSpeech }) {
   if (preferred === 'telefon' && hasSpeech) return 'telefon';
@@ -93,25 +135,70 @@ function loadVoices(timeout = 1500) {
   });
 }
 
-// Najlepszy polski głos: najpierw ulepszone (iPhone: „Enhanced”/„Premium”, Android/Edge: „Neural”, „Natural”), potem lokalne.
-function pickPolish(voices) {
-  const pl = voices.filter((v) => /^pl([-_]|$)/i.test(v.lang));
-  const better = pl.find((v) => /premium|enhanced|ulepsz|rozszerz|neural|natural|wavenet/i.test(`${v.name} ${v.voiceURI || ''}`));
-  return better || pl.find((v) => v.localService) || pl[0] || null;
+const BETTER_VOICE = /premium|enhanced|ulepsz|rozszerz|neural|natural|wavenet/i;
+const isPolish = (v) => /^pl([-_]|$)/i.test(v.lang);
+
+// Polskie głosy telefonu, od najlepszych: ulepszone (iPhone: „Enhanced”/„Premium”, Android/Edge: „Neural”,
+// „Natural”), potem działające bez internetu, potem reszta.
+export function rankPolish(voices) {
+  const score = (v) => (BETTER_VOICE.test(`${v.name} ${v.voiceURI || ''}`) ? 0 : v.localService ? 1 : 2);
+  return voices.filter(isPolish).sort((a, b) => score(a) - score(b));
 }
 
-// Próbka głosu telefonu (w Profilu): jak brzmi i jak się nazywa wybrany głos.
-export async function phoneVoiceSample() {
+// Wybrany w Profilu głos, a gdy go nie ma (np. inny telefon) – najlepszy dostępny.
+export function pickPolish(voices, preferred = savedPhoneVoice()) {
+  const pl = rankPolish(voices);
+  return (preferred && pl.find((v) => v.voiceURI === preferred)) || pl[0] || null;
+}
+
+// Lista polskich głosów telefonu do wyboru: { uri, name }.
+export async function phoneVoices() {
+  if (!speechSupported()) return [];
+  return rankPolish(await loadVoices()).map((v) => ({ uri: v.voiceURI, name: v.name.replace(/\s+/g, ' ').trim() }));
+}
+
+// Próbka głosu telefonu: jak brzmi i jak się nazywa wybrany (albo podany) głos.
+export async function phoneVoiceSample(uri) {
   if (!speechSupported()) return null;
+  current?.stop();
+  stopSample();
   speechSynthesis.cancel();
   if (IOS) speechSynthesis.speak(new SpeechSynthesisUtterance(' '));
-  const voice = pickPolish(await loadVoices());
-  const u = new SpeechSynthesisUtterance(speakable('Dzień dobry. Tak brzmi głos telefonu. Dziś jest 27 października, a lektor przeczyta o 7:30 najważniejsze wiadomości.'));
+  const voice = pickPolish(await loadVoices(), uri ?? savedPhoneVoice());
+  const u = new SpeechSynthesisUtterance(speakable('Dzień dobry. Tak brzmi ten głos. Dziś lektor przeczyta najważniejsze wiadomości, ciekawostki i ideę z książki tygodnia.'));
   u.lang = 'pl-PL';
   if (voice) u.voice = voice;
   u.rate = savedRate();
   speechSynthesis.speak(u);
   return voice?.name || null;
+}
+
+// Próbka nagranego lektora: pierwsze sekundy najnowszego nagrania.
+let sample = null;
+
+function stopSample() {
+  if (!sample) return;
+  sample.pause();
+  sample.removeAttribute('src');
+  sample = null;
+}
+
+export function recordedSample(info, seconds = 12) {
+  current?.stop();
+  stopSample();
+  if (speechSupported()) speechSynthesis.cancel();
+  if (!info?.url) return false;
+  const start = info.items?.[0]?.start || 0;
+  const audio = new Audio(`${info.url}#t=${start.toFixed(1)},${(start + seconds).toFixed(1)}`);
+  audio.playbackRate = savedRate();
+  sample = audio;
+  audio.addEventListener('pause', () => {
+    if (sample === audio) sample = null;
+  });
+  audio.play().catch(() => {
+    if (sample === audio) sample = null;
+  });
+  return true;
 }
 
 // Chrome urywa bardzo długie wypowiedzi, więc tekst idzie zdanie po zdaniu (najwyżej ~220 znaków).
@@ -171,6 +258,7 @@ export async function startListening(items, opts = {}) {
     return;
   }
   current?.stop();
+  stopSample();
   // iPhone pozwala mówić tylko w odpowiedzi na dotknięcie. Krótka pusta wypowiedź od razu „odblokowuje”
   // syntezator, zanim poczekamy na listę głosów.
   if (IOS) {
@@ -363,20 +451,36 @@ export async function startListening(items, opts = {}) {
 // Opis nagrania wczytany raz na wydanie (przy przechodzeniu między rozdziałami nie pytamy serwera od nowa).
 const recordings = new Map();
 
-export function loadRecording(date) {
-  if (!recordings.has(date)) {
+// Głos domyślny ma pliki RRRR-MM-DD.*, pozostałe RRRR-MM-DD-<głos>.* (jak w scripts/make-audio.mjs).
+export function loadRecording(date, id = DEFAULT_RECORDED) {
+  const base = id === DEFAULT_RECORDED ? date : `${date}-${id}`;
+  if (!recordings.has(base)) {
     recordings.set(
-      date,
-      fetch(`content/audio/${date}.json`, { cache: 'no-cache' })
+      base,
+      fetch(`content/audio/${base}.json`, { cache: 'no-cache' })
         .then((res) => (res.ok ? res.json() : null))
         .then((info) => (info?.url && Array.isArray(info.items) && info.items.length ? info : null))
         .catch(() => {
-          recordings.delete(date);
+          recordings.delete(base);
           return null;
         }),
     );
   }
-  return recordings.get(date);
+  return recordings.get(base);
+}
+
+// Nagrania wszystkich lektorów dla wydania: { gosia: info|null, darkman: info|null }.
+export async function loadRecordings(date, timeout = 1500) {
+  const late = new Promise((resolve) => setTimeout(() => resolve(null), timeout));
+  const list = await Promise.all(RECORDED.map((r) => Promise.race([loadRecording(date, r.id), late])));
+  return Object.fromEntries(RECORDED.map((r, i) => [r.id, list[i]]));
+}
+
+// Które nagranie zagrać: wybrane, a gdy go brak – pierwsze dostępne.
+export function pickRecording(recs, preferred = savedRecorded()) {
+  if (recs?.[preferred]) return { id: preferred, info: recs[preferred] };
+  const other = RECORDED.find((r) => recs?.[r.id]);
+  return other ? { id: other.id, info: recs[other.id] } : null;
 }
 
 // Fragmenty nagrania do zagrania: tylko te z listy items (np. działy z profilu albo jeden rozdział), w kolejności nagrania.
@@ -427,6 +531,7 @@ export function playRecording(info, items, opts = {}) {
     return;
   }
   current?.stop();
+  stopSample();
   speechSupported() && speechSynthesis.cancel();
 
   let rate = savedRate();
@@ -770,32 +875,49 @@ function playerUI(items, o) {
       list.append(h('li', null, h('button', { type: 'button', class: 'ps-item', dataset: { index: i }, onclick: () => o.onJump(i) }, h('span', { class: 'ps-bullet', 'aria-hidden': 'true' }), h('span', null, it.label))));
     });
 
+    // Wybór lektora: nagrania (lektorka, lektor) i głos telefonu; przy głosie telefonu – który głos.
     const voice = o.voice;
+    const unavailable = (l) => (l.engine === 'nagranie' ? 'brak tego nagrania dla wydania' : 'ta przeglądarka nie czyta na głos');
     const voices = voice
       ? h(
           'div',
-          { class: 'ps-voices', role: 'radiogroup', 'aria-label': 'Głos lektora' },
-          VOICES.map((v) =>
+          { class: 'ps-voices', role: 'radiogroup', 'aria-label': 'Lektor' },
+          LECTORS.map((l) =>
             h(
               'button',
               {
                 type: 'button',
                 class: 'voice-option',
                 role: 'radio',
-                'aria-checked': v.value === voice.value ? 'true' : 'false',
-                disabled: !voice.available?.[v.value],
+                'aria-checked': l.value === voice.value ? 'true' : 'false',
+                disabled: !voice.available?.[l.value],
                 onclick: () => {
-                  if (v.value === voice.value) return;
+                  if (l.value === voice.value) return;
                   dialog.close();
-                  voice.onChange(v.value, texts().item);
+                  voice.onChange(l.value, texts().item);
                 },
               },
-              h('strong', null, v.label),
-              h('small', null, voice.available?.[v.value] ? v.sub : v.value === 'nagranie' ? 'brak nagrania tego wydania' : 'ta przeglądarka nie czyta na głos'),
+              h('strong', null, l.label),
+              h('small', null, voice.available?.[l.value] ? l.sub : unavailable(l)),
             ),
           ),
         )
       : null;
+    const phonePick = voice?.value === 'telefon' && voice.onPhoneVoice ? h('label', { class: 'ps-phone-voice', hidden: true }, h('span', { class: 'small muted' }, 'Głos telefonu'), h('select', null)) : null;
+    if (phonePick) {
+      phoneVoices().then((list) => {
+        if (list.length < 2) return;
+        const select = phonePick.querySelector('select');
+        const saved = savedPhoneVoice();
+        const chosen = list.some((v) => v.uri === saved) ? saved : list[0].uri;
+        select.append(...list.map((v) => h('option', { value: v.uri, selected: v.uri === chosen }, v.name)));
+        select.onchange = () => {
+          dialog.close();
+          voice.onPhoneVoice(select.value, texts().item);
+        };
+        phonePick.hidden = false;
+      });
+    }
 
     const dialog = h(
       'dialog',
@@ -820,8 +942,9 @@ function playerUI(items, o) {
       ),
       h('p', { class: 'eyebrow' }, 'Tempo'),
       rates,
-      voices ? h('p', { class: 'eyebrow' }, 'Głos') : null,
+      voices ? h('p', { class: 'eyebrow' }, 'Lektor') : null,
       voices,
+      phonePick,
       h(
         'div',
         { class: 'inline-actions ps-actions' },

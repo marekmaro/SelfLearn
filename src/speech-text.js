@@ -131,6 +131,16 @@ function bigNumber(int, frac, forms) {
 
 const MONTHS = 'stycznia|lutego|marca|kwietnia|maja|czerwca|lipca|sierpnia|września|października|listopada|grudnia';
 
+// Kropka w „r.” bywa też końcem zdania: „…od wejścia na giełdę w 2004 r. Wartość spółki…”. Bez niej
+// lektor czytałby dwa zdania jednym tchem. Gdy przed datą stoi najwyżej kilka słów („Od 2024 r. Polska…”,
+// „27 sierpnia 1896 r. Wielka…”), to zwykle okolicznik czasu na początku zdania, więc kropki nie zostawiamy.
+function sentenceEnd(text, at, match, abbr, maxOpening) {
+  if (abbr !== 'r.' || !/^\s+[A-ZĄĆĘŁŃÓŚŹŻ]/.test(text.slice(at + match.length))) return '';
+  const before = text.slice(0, at);
+  const start = Math.max(before.lastIndexOf('. '), before.lastIndexOf('! '), before.lastIndexOf('? '));
+  return before.slice(start + 1).trim().split(/\s+/).filter(Boolean).length > maxOpening ? '.' : '';
+}
+
 export function speakable(text) {
   let t = String(text || '');
 
@@ -138,10 +148,10 @@ export function speakable(text) {
   t = t.replace(/(?<![\d,])(\d{1,3})((?:[   ]\d{3})+)(?![\d,]|[   ]\d)/g, (m) => m.replace(/[   ]/g, ''));
 
   // Lata z „r.”/„roku”: „w 2025 r.” → „w dwa tysiące dwudziestym piątym roku”, „z 1997 r.” → „…dziewięćdziesiątego siódmego roku”.
-  t = t.replace(/(?<![\p{L}\d])(w|we|W|We)\s+(\d{4})\s*(?:r\.|roku)(?![\p{L}])/gu, (m, prep, y) => `${prep} ${yearOrdinal(y, 'loc')} roku`);
-  t = t.replace(/(?<![\d,])(\d{4})\s*(?:r\.|roku)(?![\p{L}])/gu, (m, y) => `${yearOrdinal(y, 'gen')} roku`);
+  t = t.replace(/(?<![\p{L}\d])(w|we|W|We)\s+(\d{4})\s*(r\.|roku)(?![\p{L}])/gu, (m, prep, y, r, at, s) => `${prep} ${yearOrdinal(y, 'loc')} roku${sentenceEnd(s, at, m, r, 2)}`);
+  t = t.replace(/(?<![\d,])(\d{4})\s*(r\.|roku)(?![\p{L}])/gu, (m, y, r, at, s) => `${yearOrdinal(y, 'gen')} roku${sentenceEnd(s, at, m, r, 3)}`);
   // Pozostałe „r.” po liczbie.
-  t = t.replace(/(\d)\s*r\.(?=[\s,;:)]|$)/g, '$1 roku');
+  t = t.replace(/(\d)\s*r\.(?=[\s,;:)]|$)/g, (m, d, at, s) => `${d} roku${sentenceEnd(s, at, m, 'r.', 3)}`);
 
   // Liczby rzymskie przy wiekach, wojnach, turach i kwartałach. „w XX wieku” to miejscownik („dwudziestym”).
   t = t.replace(new RegExp(`(?<![\\p{L}])(?:(w|we|W|We)\\s+)?([IVXL]{1,6})\\s+(${Object.keys(ROMAN_NOUNS).join('|')})(?![\\p{L}])`, 'gu'), (m, prep, roman, noun) => {

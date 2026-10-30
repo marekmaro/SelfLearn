@@ -1,0 +1,451 @@
+{
+  "date": "2026-10-30",
+  "intro": "Dziś m.in. Lagarde odchodzi z EBC, oficjalny pat w Izraelu, rekordowy spadek akcji Alphabetu, Tusk o wyborach jako wstępie do referendum o Unii, wyrok dla biskupa tarnowskiego, akcja „Znicz” i dwa MiG-i dla Ukrainy. W „Sapiens” dzień szósty: czego chcemy chcieć?",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Tusk: wybory w 2027 r. będą wstępem do referendum o Unii",
+      "summary": "Premier Donald Tusk powiedział w czwartek w nagraniu w sieci, że wybory parlamentarne w 2027 r. będą wstępem do referendum o pozostaniu Polski w Unii Europejskiej. Odpowiadał na słowa Jarosława Kaczyńskiego o „rokowaniach” Polski z Unią. Tusk ostrzegł, że wyjście z UE byłoby katastrofą i jednym z największych prezentów dla Moskwy, i powołał się na sondaże, według których większość Polaków chce zostać w Unii. Kaczyński odpowiedział, że Tusk „jak zwykle kłamie”, a Unia jest potrzebna, ale wymaga daleko idących reform.",
+      "why": "Do wyborów zostało około roku, a spór o miejsce Polski w UE może stać się główną osią kampanii.",
+      "sources": [
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/polska/jaroslaw-kaczynski-o-rokowaniach-polski-z-unia-europejska-donald-tusk-komentuje-st9312632"
+        },
+        {
+          "name": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art45417621-donald-tusk-ostrzega-przed-polexitem-wybory-w-2027-r-zdecyduja-o-kursie-polski"
+        }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Biskup tarnowski skazany za niezawiadomienie o pedofilii księży",
+      "summary": "Sąd Rejonowy w Tarnowie skazał w czwartek biskupa tarnowskiego Andrzeja Jeża na dwa lata ograniczenia wolności, czyli potrącanie co miesiąc 25% wynagrodzenia. Według sądu biskup powinien był dużo wcześniej zawiadomić organy ścigania o wykorzystywaniu małoletnich przez dwóch księży z jego diecezji. To pierwszy taki wyrok wobec urzędującego biskupa diecezjalnego w Polsce. Biskup nie przyznał się do winy, a prokuratura chciała 10 miesięcy więzienia w zawieszeniu. Wyrok nie jest prawomocny, kuria zapowiedziała apelację.",
+      "why": "Polskie prawo nakazuje każdemu, kto ma wiarygodną wiedzę o wykorzystywaniu dziecka, zawiadomić organy ścigania. Wyrok pokazuje, że dotyczy to także hierarchów Kościoła.",
+      "sources": [
+        {
+          "name": "Polsat News",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-10-29/biskup-andrzej-jez-skazany-sad-oglosil-wyrok-w-tarnowie/"
+        },
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/regiony/krakow/news-biskup-tarnowski-andrzej-jez-skazany-zapadl-historyczny-wyro,nIdn,1023876"
+        }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "12 państw UE poparło polski apel o ochronę rafinerii",
+      "summary": "Ministrowie energii 12 państw Unii poparli w czwartek w Luksemburgu polską inicjatywę utrzymania mocy przerobowych europejskich rafinerii. Wezwali Komisję Europejską do przygotowania długoterminowej strategii dla tej branży. Wcześniej polski apel podpisały m.in. Bułgaria, Czechy, Węgry, Słowacja i Włochy, a na posiedzeniu poparły go także Niemcy i Francja. Wiceminister energii Wojciech Wrochna przekonywał, że chodzi też o obronność, bo armie potrzebują paliwa. Komisarz ds. energii Dan Jørgensen nazwał sytuację sygnałem ostrzegawczym.",
+      "why": "Gdy w Europie ubywa rafinerii, rośnie zależność od paliw z importu. W razie kryzysu albo wojny własne moce przerobowe są kwestią bezpieczeństwa.",
+      "sources": [
+        {
+          "name": "WNP.pl",
+          "url": "https://www.wnp.pl/energia/12-panstw-poparlo-polske-ws-rafinerii-dokument-zostal-podpisany-przez-niemcy,1114305.html"
+        },
+        {
+          "name": "Energetyka24",
+          "url": "https://energetyka24.com/surowce/ropa/polska-na-czele-inicjatywy-na-rzecz-rozwoju-mocy-rafineryjnych-w-ue-bruksela-zmienia-kurs-i-bije-na-alarm"
+        }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Od piątku akcja „Znicz”. Policja sprawdzi trzeźwość, prędkość i foteliki",
+      "summary": "Od piątku 30 października do poniedziałku 2 listopada policja prowadzi ogólnopolską akcję „Znicz”. Na głównych trasach i dojazdach do cmentarzy będzie więcej patroli, które skontrolują prędkość, trzeźwość, stan techniczny aut, zapięcie pasów i przewożenie dzieci. Policjanci prewencji będą pilnować okolic cmentarzy. Policja przypomina pieszym o odblaskach poza terenem zabudowanym, a wracającym z Niemiec o dowodzie lub paszporcie, bo na granicy możliwe są wyrywkowe kontrole.",
+      "why": "Weekend Wszystkich Świętych to jeden z najbardziej ruchliwych okresów na drogach. Po zmroku i we mgle łatwo o wypadek, zwłaszcza z pieszymi.",
+      "sources": [
+        {
+          "name": "Komenda Stołeczna Policji",
+          "url": "https://ksp.policja.gov.pl/pl/dzialania/aktualnosci/69965,Policyjne-dzialania-Znicz-2026.html"
+        },
+        {
+          "name": "Autoblog",
+          "url": "https://autoblog.spidersweb.pl/policja-akcja-znicz-wszystkich-swietych-2026"
+        }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Jagiellonia rozbiła Lechię 6:0 w Pucharze Polski",
+      "summary": "Jagiellonia Białystok wygrała w środę w Gdańsku z Lechią 6:0 w 1/16 finału Pucharu Polski. Do przerwy prowadziła 2:0, a trzy gole strzelił Ousmane Sow. Po jednym dołożyli Nik Prelec, Jesús Imaz i Dimitris Rallis. Mecz oglądało 6278 widzów, a dla Lechii była to najwyższa porażka na tym stadionie w historii.",
+      "why": "Jagiellonia, mistrz Polski z sezonu 2023/24, gra dalej o trofeum, które daje zwycięzcy miejsce w europejskich pucharach.",
+      "sources": [
+        {
+          "name": "WP SportoweFakty",
+          "url": "https://sportowefakty.wp.pl/pilka-nozna/1281392/tym-razem-bez-niespodzianki-w-pucharze-polski-ciezki-nokaut-w-gdansku"
+        },
+        {
+          "name": "Interia",
+          "url": "https://sport.interia.pl/pilka-nozna/puchar-polski/news-szalenstwo-jagiellonii-w-gdansku-hat-trick-gwiazdora-spadkow,nId,23565657"
+        }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Lagarde odejdzie z EBC przed końcem kadencji. Stopy bez zmian",
+      "summary": "Prezeska Europejskiego Banku Centralnego Christine Lagarde ogłosiła w czwartek, że odejdzie ze stanowiska 7 lutego 2027 r., około dziewięciu miesięcy przed końcem ośmioletniej kadencji. Tego samego dnia EBC pozostawił stopy procentowe na poziomie 2,5%, po dwóch podwyżkach w ostatnich pięciu miesiącach, którymi walczy z inflacją napędzaną cenami energii. Lagarde przyznała, że rozważano kolejną podwyżkę, a grudniowa jest bardzo możliwa. Za faworytów do jej schedy uchodzą Holender Klaas Knot i Hiszpan Pablo Hernández de Cos.",
+      "why": "EBC ustala stopy dla strefy euro, najważniejszego partnera handlowego Polski. Jego decyzje wpływają na kurs złotego i pośrednio na decyzje NBP.",
+      "sources": [
+        {
+          "name": "The Irish Times",
+          "url": "https://www.irishtimes.com/business/2026/10/29/ecb-holds-rates-steady-as-lagardes-departure-overshadows-decision/"
+        },
+        {
+          "name": "ING Think",
+          "url": "https://think.ing.com/snaps/ecb-keeps-rates-on-hold-as-christine-lagarde-announced-her-resignation"
+        }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Izrael: oficjalne wyniki potwierdzają pat. Teraz ruch prezydenta",
+      "summary": "Centralna Komisja Wyborcza opublikowała ostateczne wyniki wyborów do Knesetu: blok Benjamina Netanjahu ma 53 mandaty, blok Gadiego Eisenkota 48, a partie arabskie 19. Likud zdobył 27 mandatów, partia Jaszar! Eisenkota 21. Prezydent Izaak Herzog dostanie wyniki 4 listopada, potem przeprowadzi konsultacje i wskaże kandydata na premiera. Kneset zbierze się 10 listopada. Eisenkot odrzuca rząd pod wodzą Netanjahu, a obaj przed wyborami wykluczyli koalicję z partiami arabskimi. Herzog zaapelował, by zrobić wszystko, żeby uniknąć kolejnych wyborów.",
+      "why": "Bez porozumienia ponad podziałami Izraelowi grozi kolejne głosowanie, a do tego czasu rządzi gabinet tymczasowy.",
+      "sources": [
+        {
+          "name": "The Times of Israel",
+          "url": "https://www.timesofisrael.com/liveblog_entry/central-elections-committee-publishes-final-election-results-knesset-to-be-sworn-in-nov-10/"
+        },
+        {
+          "name": "NBC News",
+          "url": "https://www.nbcnews.com/world/israel/israels-final-election-results-show-neither-netanyahu-rival-can-immedi-rcna606290"
+        }
+      ],
+      "thread": "Wybory w Izraelu"
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Najgorszy dzień w historii akcji Alphabetu. W tle AI w wyszukiwarce",
+      "summary": "Akcje Alphabetu, właściciela Google'a, spadły w czwartek o prawie 13%, najmocniej od wejścia firmy na giełdę w 2004 r. Wartość spółki zmalała o ok. 500 mld dolarów. Przychody z reklam w wyszukiwarce wzrosły w trzecim kwartale o 12%, do 63,35 mld dolarów, ale mniej, niż oczekiwali analitycy. Szef ds. biznesu Philipp Schindler tłumaczył to tym, że coraz więcej osób korzysta z AI Mode, czatowej wersji wyszukiwarki, na której Google zarabia mniej. Inwestorów zaniepokoiły też ogromne wydatki na centra danych.",
+      "why": "To sygnał, że sztuczna inteligencja może podkopać jeden z najbardziej dochodowych biznesów internetu: reklamy przy wynikach wyszukiwania.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html"
+        },
+        {
+          "name": "The Next Web",
+          "url": "https://thenextweb.com/news/alphabet-shares-fall-google-ai-mode-search-ads"
+        }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Mózg przed narodzinami i tuż po nich pozbywa się wadliwych neuronów",
+      "summary": "Naukowcy z Harvard Medical School i Boston Children's Hospital opisali w „Nature”, że neurony z poważnymi zmianami w DNA są w rozwijającym się mózgu zaskakująco częste. W korze mózgowej płodu takie zmiany, czyli brakujące albo zdublowane fragmenty genomu, miało średnio 25,9% komórek, a po urodzeniu już tylko 6,2%. Badacze przeanalizowali ponad 2300 neuronów. Wnioskują, że przed narodzinami i tuż po nich działa naturalna kontrola jakości, która usuwa wadliwe komórki. W dorosłym życiu ten proces trwa, ale znacznie wolniej.",
+      "why": "To nowe spojrzenie na rozwój mózgu: wadliwe komórki są normalną częścią tego procesu, a organizm ma sposób, by je usuwać.",
+      "sources": [
+        {
+          "name": "Medical Xpress",
+          "url": "https://medicalxpress.com/news/2026-10-abnormal-neurons-common-brain.html"
+        },
+        {
+          "name": "Neuroscience News",
+          "url": "https://neurosciencenews.com/developing-brain-genetics-neurons-32352/"
+        }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Pancerny płaz sprzed 237 mln lat żył w morzu",
+      "summary": "Naukowcy z Uniwersytetu Kalifornijskiego w Davis, Uniwersytetu Pekińskiego i muzeum geologicznego prowincji Kuejczou opisali w „Nature Ecology & Evolution” gatunek Gerrothorax maritimus. To pierwszy znany płaz, który żył wyłącznie w morzu. Dwa niemal kompletne szkielety sprzed ok. 237 mln lat znaleziono w Kuejczou, w miejscu, które było wtedy oceanem setki kilometrów od dużych lądów. Na morskie życie wskazują też izotopy strontu w kościach. Pancerne zwierzę wielkości salamandry olbrzymiej żyło przy dnie.",
+      "why": "Spośród ponad 8000 współczesnych gatunków płazów żaden nie żyje w morzu, a sól toleruje mniej niż 2%. Znalezisko pokazuje, że kiedyś tę granicę udało się przekroczyć.",
+      "sources": [
+        {
+          "name": "Phys.org",
+          "url": "https://phys.org/news/2026-10-armored-amphibian-sea-million-years.html"
+        },
+        {
+          "name": "UC Davis",
+          "url": "https://www.ucdavis.edu/curiosity/news/researchers-unearth-fossil-evidence-first-fully-marine-amphibian"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Polska przekaże Ukrainie dwa MiG-i 29",
+      "summary": "Wiceminister obrony Paweł Zalewski potwierdził w TVP Info, że jest umowa o przekazaniu Ukrainie dwóch myśliwców MiG-29, a sprawa kolejnych jest w toku. Według „Rzeczpospolitej” jeden z samolotów ma już wyczerpany resurs, a drugi wciąż lata. Maszyny są częścią pakietu wartego ok. 50 mln euro, w którym są też amunicja artyleryjska i naboje do działek samolotów F-16. Zalewski dodał, że Ukraina jest mniej zainteresowana MiG-ami, bo bardziej potrzebuje F-16 i Mirage'ów. W polskim lotnictwie zostanie 14 MiG-ów 29.",
+      "why": "MiG-i 29 to ostatnie poradzieckie myśliwce w polskim lotnictwie, stopniowo zastępowane przez F-35 i koreańskie FA-50.",
+      "sources": [
+        {
+          "name": "Defence24",
+          "url": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/mon-potwierdza-dwa-samoloty-mig-29-trafia-do-ukrainy"
+        },
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/polska/news-kolejne-mig-29-z-polski-dla-ukrainy-mon-potwierdza-doniesien,nIdn,1023849"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "section": "bezpieczenstwo",
+      "rank": 2,
+      "title": "Rosyjski dron uderzył w dworzec w Dnieprze. Zginęło 14 osób",
+      "summary": "W czwartek rosyjski dron odrzutowy trafił w peron dworca kolejowego w Dnieprze, przy którym stały dwa pociągi pasażerskie. Zginęło co najmniej 14 osób, a 14 zostało rannych, w tym 11-letni chłopiec. Ukraińska obrona przechwyciła trzy z czterech dronów. W całym kraju rosyjskie ataki zabiły tego dnia co najmniej 19 osób. Wołodymyr Zełenski nazwał atak przerażającym i zarzucił Rosji, że uderza w cywilów w czasie trwającej misji humanitarnej w Ołeszkach. Zaapelował, by nie łagodzić sankcji wobec Moskwy.",
+      "why": "Lokalny rozejm w Ołeszkach nie oznacza przerwy w wojnie. Przed listopadowymi rozmowami pokojowymi ataki trwają.",
+      "sources": [
+        {
+          "name": "CNN",
+          "url": "https://www.cnn.com/2026/10/29/europe/russia-ukraine-strikes-dnipro-train-station-intl"
+        },
+        {
+          "name": "Polsat News",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-10-29/rosja-miala-zlamac-rozejm-w-oleszkach-zelenski-kreml-chce-wydluzyc-wojne/"
+        }
+      ],
+      "thread": "Wojna w Ukrainie"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "historia",
+      "title": "Mamuty żyły jeszcze, gdy stały już piramidy",
+      "body": "Ostatnia populacja mamutów włochatych przetrwała na Wyspie Wrangla na Oceanie Arktycznym. Według datowania radiowęglowego wymarły ok. 4000 lat temu, gdy Wielka Piramida w Gizie, zbudowana ok. 2560 r. p.n.e., stała już od kilku stuleci. Na lądzie stałym mamuty zniknęły tysiące lat wcześniej. Dlaczego wyginęły te ostatnie, nie wiadomo: badacze rozważają m.in. chów wsobny w małej populacji i nagłe zdarzenie, np. ekstremalną pogodę.",
+      "source": {
+        "name": "Business Insider",
+        "url": "https://www.businessinsider.in/science/news/a-new-study-reveals-how-the-last-woolly-mammoths-died-out-4000-years-ago-thats-after-the-egyptians-had-built-the-pyramids-/articleshow/71496355.cms"
+      }
+    },
+    {
+      "id": "fact-2",
+      "kind": "nauka",
+      "title": "Ludzie świecą, tylko za słabo, żeby to zobaczyć",
+      "body": "W 2009 r. japońscy badacze posadzili pięciu mężczyzn w całkowicie ciemnym pokoju przed bardzo czułą, chłodzoną kamerą. Okazało się, że ludzkie ciało emituje widzialne światło, ok. tysiąc razy słabsze, niż jest w stanie dostrzec oko. To nie ciepło w podczerwieni, tylko skutek przemian chemicznych w komórkach. Najmocniej świeciła twarz, a blask zmieniał się w ciągu dnia: był najsłabszy rano, a najsilniejszy około 16:00.",
+      "source": {
+        "name": "ScienceAlert",
+        "url": "https://sciencealert.com/you-can-t-see-it-but-humans-actually-glow-in-visible-light"
+      }
+    },
+    {
+      "id": "fact-3",
+      "kind": "kosmos",
+      "title": "Wielka Czerwona Plama na Jowiszu się kurczy",
+      "body": "Wielka Czerwona Plama to gigantyczny wir w atmosferze Jowisza. Pod koniec XIX wieku astronomowie szacowali jej długość na ok. 41 tys. km, sondy Voyager w 1979 r. zmierzyły ok. 23 tys. km, a Kosmiczny Teleskop Hubble'a w 2014 r. już tylko ok. 16,5 tys. km. Wciąż zmieściłaby Ziemię, która ma niecałe 13 tys. km średnicy. Dlaczego burza się kurczy, nie wiadomo; NASA podejrzewa m.in. małe wiry, które w nią wpadają.",
+      "source": {
+        "name": "NASA JPL",
+        "url": "https://jpl.nasa.gov/news/jupiters-great-red-spot-is-smaller-than-ever-measured"
+      }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1918,
+      "title": "Śląsk Cieszyński ogłasza przynależność do Polski",
+      "body": "30 października 1918 r. Rada Narodowa Księstwa Cieszyńskiego, powołana 19 października w Cieszynie, opublikowała odezwę, w której ogłosiła, że Księstwo należy do Polski. Ostateczną granicę z Czechami miało ustalić porozumienie obu rządów. W nocy z 31 października na 1 listopada polscy żołnierze z austriackiego garnizonu bez rozlewu krwi przejęli władzę w Cieszynie. Spór z Czechosłowacją o region przerodził się na początku 1919 r. w krótką wojnę.",
+      "source": {
+        "name": "dzieje.pl",
+        "url": "https://dzieje.pl/aktualnosci/100-lat-temu-powolano-rade-narodowa-ksiestwa-cieszynskiego"
+      }
+    },
+    {
+      "id": "otd-2",
+      "year": 1938,
+      "title": "„Wojna światów” w radiu i panika, której prawie nie było",
+      "body": "30 października 1938 r., w przeddzień Halloween, Orson Welles wyemitował w amerykańskim radiu CBS słuchowisko na podstawie powieści H.G. Wellsa „Wojna światów”. Udawało ono serwis informacyjny o lądowaniu Marsjan w New Jersey. Gazety pisały potem o masowej panice, ale historycy mediów uważają ją za mit: słuchowiska słuchała niewielka część Amerykanów, a naprawdę uwierzyli nieliczni. Według badaczy prasa chętnie przesadzała, bo radio odbierało jej słuchaczy i reklamy.",
+      "source": {
+        "name": "NPR",
+        "url": "https://www.npr.org/sections/thetwo-way/2013/10/30/241797346/75-years-ago-war-of-the-worlds-started-a-panic-or-did-it"
+      }
+    },
+    {
+      "id": "otd-3",
+      "year": 1961,
+      "title": "Car-bomba: największy wybuch w historii",
+      "body": "30 października 1961 r. Związek Radziecki zdetonował nad Nową Ziemią w Arktyce bombę wodorową o mocy ok. 50 megaton, nazwaną później Car-bombą. To najsilniejsza eksplozja wywołana przez człowieka, ponad trzy tysiące razy silniejsza niż bomba zrzucona na Hiroszimę. Konstruktorzy zmniejszyli jej moc o połowę, ze 100 megaton, żeby ograniczyć skażenie. Fala uderzeniowa wybijała szyby nawet w Finlandii.",
+      "source": {
+        "name": "Britannica",
+        "url": "https://www.britannica.com/topic/Tsar-Bomba"
+      }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Prawo Parkinsona",
+    "definition": "Praca rozrasta się tak, żeby wypełnić cały czas, jaki mamy na jej wykonanie.",
+    "origin": "Sformułował je brytyjski historyk Cyril Northcote Parkinson w satyrycznym eseju w tygodniku „The Economist” w listopadzie 1955 r. Opisywał brytyjską administrację, w której urzędników przybywało niezależnie od tego, ile było pracy. Esej rozwinął w książce „Prawo Parkinsona” z 1958 r. Dziś nazwa zwykle odnosi się do wersji osobistej: zadanie na tydzień zajmie tydzień, a to samo zadanie na dwa dni zmieści się w dwóch dniach.",
+    "examples": [
+      "Prezentację, na którą masz tydzień, i tak kończysz ostatniego wieczoru.",
+      "Gdy dasz sobie 25 minut na maile, zwykle się wyrobisz, a bez limitu zajmą całe przedpołudnie.",
+      "Urząd zatrudnia kolejnych ludzi, choć spraw do załatwienia nie przybywa."
+    ],
+    "source": {
+      "name": "Wikipedia (ang.)",
+      "url": "https://en.wikipedia.org/wiki/Parkinson%27s_law"
+    }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "sapiens",
+    "title": "Sapiens. Od zwierząt do bogów",
+    "author": "Yuval Noah Harari",
+    "day": 6,
+    "days": 7,
+    "ideaTitle": "Mamy moc bogów, ale nie wiemy, czego chcemy",
+    "idea": "Na koniec Harari zestawia całą historię: 70 tys. lat temu byliśmy mało znaczącym gatunkiem w Afryce, a dziś zmieniamy klimat, geny i krajobraz całej planety. Mimo to nie jest pewne, czy jesteśmy szczęśliwsi od łowców-zbieraczy, bo zadowolenie zależy bardziej od oczekiwań niż od warunków życia. Autor pyta, czy jest coś groźniejszego niż niezadowoleni i nieodpowiedzialni bogowie, którzy nie wiedzą, czego chcą. Skoro technika pozwoli wkrótce zmieniać nawet nasze pragnienia, najważniejsze pytanie brzmi nie „kim chcemy się stać?”, ale „czego chcemy chcieć?”. Uwaga: to esej filozoficzny, a nie wniosek naukowy.",
+    "moral": "Postęp i władza same nie dają szczęścia. Zanim zaczniemy gonić za czymś nowym, warto zapytać, czy naprawdę tego chcemy i dlaczego.",
+    "action": "Plan na tydzień: wypisz trzy ostatnie zakupy albo plany i przy każdym zapytaj, skąd się wzięły: z Twoich wartości, z reklamy czy z porównań z innymi. Jeden, który nie jest naprawdę Twój, odpuść.",
+    "source": {
+      "name": "LitCharts",
+      "url": "https://litcharts.com/lit/sapiens/afterword-the-animal-that-became-a-god"
+    }
+  },
+  "quiz": [
+    {
+      "id": "2026-10-30-q1",
+      "ref": "fact-1",
+      "question": "Gdzie przetrwały ostatnie mamuty włochate?",
+      "options": [
+        "Na Alasce",
+        "Na Wyspie Wrangla",
+        "Na Grenlandii",
+        "W Patagonii"
+      ],
+      "answer": 1,
+      "explanation": "Mała populacja na arktycznej Wyspie Wrangla przetrwała do ok. 4000 lat temu, długo po zniknięciu mamutów z lądu stałego."
+    },
+    {
+      "id": "2026-10-30-q2",
+      "ref": "fact-2",
+      "question": "Ile razy słabsze jest światło ludzkiego ciała od tego, co potrafi dostrzec oko?",
+      "options": [
+        "Ok. 10 razy",
+        "Ok. 100 razy",
+        "Ok. 1000 razy",
+        "Ok. miliona razy"
+      ],
+      "answer": 2,
+      "explanation": "Japońscy badacze zarejestrowali je bardzo czułą kamerą. Jest ok. tysiąc razy za słabe dla oka."
+    },
+    {
+      "id": "2026-10-30-q3",
+      "ref": "fact-3",
+      "question": "Co od lat dzieje się z Wielką Czerwoną Plamą na Jowiszu?",
+      "options": [
+        "Rośnie",
+        "Zmienia kolor na niebieski",
+        "Zniknęła w 2014 r.",
+        "Maleje"
+      ],
+      "answer": 3,
+      "explanation": "Pod koniec XIX wieku miała ok. 41 tys. km długości, w 2014 r. już ok. 16,5 tys. km, ale wciąż zmieściłaby Ziemię."
+    },
+    {
+      "id": "2026-10-30-q4",
+      "ref": "otd-1",
+      "question": "Gdzie powstała w 1918 r. Rada Narodowa Księstwa Cieszyńskiego?",
+      "options": [
+        "W Cieszynie",
+        "W Krakowie",
+        "W Opawie",
+        "W Katowicach"
+      ],
+      "answer": 0,
+      "explanation": "Rada powstała 19 października 1918 r. w Cieszynie, a 30 października ogłosiła, że Księstwo należy do Polski."
+    },
+    {
+      "id": "2026-10-30-q5",
+      "ref": "otd-2",
+      "question": "Na podstawie czyjej powieści powstało słuchowisko „Wojna światów”?",
+      "options": [
+        "Julesa Verne'a",
+        "H.G. Wellsa",
+        "Arthura C. Clarke'a",
+        "Isaaca Asimova"
+      ],
+      "answer": 1,
+      "explanation": "Orson Welles zaadaptował powieść H.G. Wellsa z 1898 r. jako udawany serwis informacyjny."
+    },
+    {
+      "id": "2026-10-30-q6",
+      "ref": "concept",
+      "question": "Masz tydzień na raport, a i tak kończysz go ostatniego wieczoru. Co to ilustruje?",
+      "options": [
+        "Błąd kosztów utopionych",
+        "Efekt Lindy",
+        "Prawo Parkinsona",
+        "Prawo Goodharta"
+      ],
+      "answer": 2,
+      "explanation": "Według prawa Parkinsona praca rozrasta się tak, żeby wypełnić cały dostępny czas."
+    },
+    {
+      "id": "2026-10-30-q7",
+      "ref": "book",
+      "question": "Jakie pytanie Harari uznaje na koniec „Sapiens” za najważniejsze?",
+      "options": [
+        "Kim chcemy się stać?",
+        "Ile jeszcze możemy wyprodukować?",
+        "Kto będzie rządził światem?",
+        "Czego chcemy chcieć?"
+      ],
+      "answer": 3,
+      "explanation": "Skoro technika może zmieniać nasze pragnienia, ważniejsze od tego, kim chcemy się stać, jest to, czego chcemy chcieć."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-10-30-r1",
+      "question": "Kto oprócz astronautów Apollo zostawił na Księżycu odbłyśniki do pomiarów laserem?",
+      "options": [
+        "Załoga Apollo 13",
+        "Europejski lądownik",
+        "Radzieckie łaziki Łunochod"
+      ],
+      "answer": 2,
+      "explanation": "Odbłyśniki ustawiły misje Apollo 11, 14 i 15 oraz radzieckie łaziki Łunochod."
+    },
+    {
+      "id": "2026-10-30-r2",
+      "question": "Kiedy indeks Dow Jones wrócił do poziomu sprzed krachu z 1929 r.?",
+      "options": [
+        "W 1954 r.",
+        "W 1933 r.",
+        "W 1945 r."
+      ],
+      "answer": 0,
+      "explanation": "Spadki trwały do 1932 r., a szczyt z września 1929 r. indeks odrobił dopiero w 1954 r."
+    },
+    {
+      "id": "2026-10-30-r3",
+      "question": "Jaki przykład utraty zaufania do kredytu podaje Harari?",
+      "options": [
+        "Tulipanową gorączkę w Holandii",
+        "Bańkę Missisipi we Francji",
+        "Krach na Wall Street"
+      ],
+      "answer": 1,
+      "explanation": "Gdy w 1720 r. pękła bańka Missisipi, kredyt wysechł, a Francja wpadła w kryzys."
+    }
+  ],
+  "evening": {
+    "question": "Czego naprawdę chcecie razem, a co jest tylko oczekiwaniem z zewnątrz?",
+    "hint": "Harari kończy „Sapiens” pytaniem „czego chcemy chcieć?”. Niech każde z Was wymieni jedną rzecz, do której dąży, i powie, skąd się wzięła ta potrzeba. Może któraś okaże się wcale niepotrzebna."
+  }
+}

@@ -9,6 +9,8 @@
 //   node scripts/make-audio.mjs --tts "<polecenie>" [--voice nazwa] [--out katalog] [--force] daty…
 //   node scripts/make-audio.mjs --old 30 plik.mp3…             pliki starsze niż 30 dni (do usunięcia z wydania)
 // Polecenie --tts dostaje tekst na wejściu i dopisany argument --output_file plik.wav (jak Piper).
+// Każdy głos (--voice pl_PL-gosia-medium, pl_PL-darkman-medium…) ma własne nagranie: głos domyślny
+// w plikach RRRR-MM-DD.mp3/.json, pozostałe z dopiskiem, np. RRRR-MM-DD-darkman.mp3/.json.
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
@@ -24,6 +26,18 @@ const RELEASE = 'lektor';
 const RECENT_DAYS = 3;
 const PAUSE_ITEM = 0.7;
 const PAUSE_CHAPTER = 1.2;
+export const DEFAULT_VOICE_ID = 'gosia';
+
+// Krótka nazwa głosu z nazwy modelu Piper: pl_PL-darkman-medium → darkman.
+export function voiceId(voice) {
+  const m = /^[a-z]{2,3}_[A-Z]{2}-([a-z0-9_]+)-[a-z_]+$/.exec(String(voice));
+  return m ? m[1] : DEFAULT_VOICE_ID;
+}
+
+// Nazwa plików nagrania: głos domyślny bez dopisku (jak dotąd), pozostałe z nazwą głosu.
+export function audioBase(date, id = DEFAULT_VOICE_ID) {
+  return id === DEFAULT_VOICE_ID ? date : `${date}-${id}`;
+}
 
 // Tekst do czytania (skróty, daty, godziny, liczby) – wspólny z głosem telefonu.
 export { speakable } from '../src/speech-text.js';
@@ -104,8 +118,8 @@ export function joinClips(clips) {
 
 const round = (x) => Math.round(x * 100) / 100;
 
-function audioMeta(date) {
-  const file = join(AUDIO_DIR, `${date}.json`);
+function audioMeta(date, id = DEFAULT_VOICE_ID) {
+  const file = join(AUDIO_DIR, `${audioBase(date, id)}.json`);
   try {
     return existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : null;
   } catch {
@@ -118,7 +132,7 @@ export function datesToRecord({ dates = [], voice, today = todayISO(), editionsD
   const all = readdirSync(editionsDir).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).map((f) => f.slice(0, 10));
   const wanted = dates.length ? dates.filter((d) => all.includes(d)) : all.filter((d) => d >= addDays(today, -RECENT_DAYS) && d <= addDays(today, 1));
   return wanted.sort().filter((d) => {
-    const m = meta(d);
+    const m = meta(d, voiceId(voice));
     return !m || m.hash !== narrationHash(loadNarration(d, editionsDir), voice);
   });
 }
@@ -139,25 +153,28 @@ function record(date, { tts, voice, out, repo }) {
   const allWav = join(work, 'all.wav');
   writeFileSync(allWav, writeWav(clips[0].wav, joined.data));
   mkdirSync(out, { recursive: true });
-  const mp3 = join(out, `${date}.mp3`);
+  const id = voiceId(voice);
+  const base = audioBase(date, id);
+  const mp3 = join(out, `${base}.mp3`);
   const ff = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', allWav, '-ac', '1', '-codec:a', 'libmp3lame', '-b:a', '32k', '-metadata', `title=SelfLearn ${date}`, '-metadata', 'artist=SelfLearn', mp3], { encoding: 'utf8' });
   if (ff.status !== 0) throw new Error(`ffmpeg: ${ff.stderr || ff.error}`);
   rmSync(work, { recursive: true, force: true });
 
   const meta = {
     date,
-    file: `${date}.mp3`,
-    url: `audio/${date}.mp3`,
-    source: `https://github.com/${repo}/releases/download/${RELEASE}/${date}.mp3`,
+    file: `${base}.mp3`,
+    url: `audio/${base}.mp3`,
+    source: `https://github.com/${repo}/releases/download/${RELEASE}/${base}.mp3`,
     voice,
+    voiceId: id,
     hash: narrationHash(items, voice),
     duration: joined.duration,
     items: joined.items,
   };
   mkdirSync(AUDIO_DIR, { recursive: true });
-  writeFileSync(join(AUDIO_DIR, `${date}.json`), `${JSON.stringify(meta, null, 2)}\n`);
+  writeFileSync(join(AUDIO_DIR, `${base}.json`), `${JSON.stringify(meta, null, 2)}\n`);
   const size = readFileSync(mp3).length;
-  console.log(`${date}: ${items.length} fragmentów, ${Math.round(joined.duration / 60)} min, ${(size / 1048576).toFixed(1)} MB`);
+  console.log(`${base}: ${items.length} fragmentów, ${Math.round(joined.duration / 60)} min, ${(size / 1048576).toFixed(1)} MB`);
 }
 
 function main(argv) {
@@ -175,7 +192,7 @@ function main(argv) {
 
   if (opt.old) {
     const limit = addDays(todayISO(), -opt.old);
-    for (const f of opt.rest) if (/^\d{4}-\d{2}-\d{2}\.mp3$/.test(f) && f.slice(0, 10) < limit) console.log(f);
+    for (const f of opt.rest) if (/^\d{4}-\d{2}-\d{2}(-[a-z0-9_]+)?\.mp3$/.test(f) && f.slice(0, 10) < limit) console.log(f);
     return;
   }
 

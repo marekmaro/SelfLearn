@@ -32,5 +32,4 @@
 {"id":"2026-10-31-r2","question":"O której porze dnia ludzki blask był najsilniejszy w badaniu z 2009 roku?","options":["O świcie","Około 16:00","O północy"],"answer":1,"explanation":"Badacze zaobserwowali, że emisja światła była najsilniejsza około godziny 16:00."},
 {"id":"2026-10-31-r3","question":"Jaką długość miała Wielka Czerwona Plama Jowisza według pomiarów z 2014 roku?","options":["Około 41 000 km","Około 23 000 km","Około 16 500 km"],"answer":2,"explanation":"Pomiary Hubble'a wskazywały około 16 500 km, choć wir nadal był większy od średnicy Ziemi."}
 ],
-"evening":{"question":"Która zmiana w Waszym wspólnym życiu przyniosła więcej korzyści, niż początkowo zakładaliście, a jakie nieoczekiwane koszty się z nią wiązały?","hint":"Możecie pomyśleć o przeprowadzce, zmianie pracy, nowym hobby albo technologii, z której korzystacie na co dzień."}
-}
+"evening":{"question":"Która zmiana w Waszym wspólnym życiu przyniosła więcej korzyści, niż początkowo zakładaliście, a jakie nieoczekiwane koszty się z nią wiązały?","hint":"Możecie pomyśleć o przeprowadzce, zmianie pracy, nowym hobby albo technologii, z której korzystacie na co dzień."} }

@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-31",
+  "file": "2026-10-31-darkman.mp3",
+  "url": "audio/2026-10-31-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-31-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "002b5d1426be5473",
+  "duration": 1034.48,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 29.63
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "W Gdańsku otwarto terminal dla morskich farm wiatrowych",
+      "start": 30.33,
+      "end": 68.89
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Inflacja w Polsce wyniosła w październiku 3,5 proc.",
+      "start": 69.59,
+      "end": 107.41
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Pierwszy dron MQ-9B SkyGuardian trafi do Polski w styczniu",
+      "start": 108.11,
+      "end": 154.91
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Atak nożem na 77-latkę w sklepie w Skarżysku-Kamiennej",
+      "start": 155.61,
+      "end": 195.82
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Lot z Hurghady do Poznania opóźniony o ponad dobę",
+      "start": 196.52,
+      "end": 234.54
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Katastrofa kolejowa w Hiszpanii: co najmniej 69 ofiar",
+      "start": 235.74,
+      "end": 281.12
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Niemiecka gospodarka wzrosła o 0,2 proc. w trzecim kwartale",
+      "start": 281.82,
+      "end": 325.75
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Wyprzedaż akcji technologicznych pogłębiła się pod koniec października",
+      "start": 326.45,
+      "end": 369.36
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Na szczycie COP17 pojawiły się nowe deklaracje dotyczące ochrony bioróżnorodności",
+      "start": 370.06,
+      "end": 412.18
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Susza związana z El Niño pogłębia kryzys na Papui-Nowej Gwinei",
+      "start": 412.88,
+      "end": 447.07
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "NATO rozwija współpracę w obronie przed dronami i pociskami manewrującymi",
+      "start": 448.27,
+      "end": 487.7
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Google uruchomił prototyp centrum danych na orbicie",
+      "start": 488.4,
+      "end": 527.36
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Sztuczna inteligencja coraz mocniej wpływa na operacje wojskowe USA",
+      "start": 528.06,
+      "end": 573.75
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "U ponad połowy młodych dorosłych z cukrzycą typu 2 uzyskano remisję w badaniu",
+      "start": 574.45,
+      "end": 616.9
+    },
+    {
+      "id": "zwierzeta-1",
+      "chapter": "tematy",
+      "label": "W Małopolsce znaleziono gniazdo szerszenia żółtonogiego z około tysiącem robotnic",
+      "start": 617.6,
+      "end": 657.79
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Na platformy trafiają nowe sezony i seriale na Halloweenowy weekend",
+      "start": 658.49,
+      "end": 696.96
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Krew ośmiornicy jest niebieska, ale nie z powodu barwnika",
+      "start": 698.16,
+      "end": 724.39
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Niektóre drzewa potrafią przeżyć tysiące lat",
+      "start": 725.09,
+      "end": 750.68
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Efekt aureoli: jedna zaleta potrafi zmienić ocenę całej osoby",
+      "start": 751.38,
+      "end": 781.88
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Polscy żołnierze przejęli władzę w Cieszynie",
+      "start": 783.08,
+      "end": 814.37
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1517: Marcin Luter ogłosił 95 tez",
+      "start": 815.07,
+      "end": 840.3
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1926: Zmarł Harry Houdini",
+      "start": 841,
+      "end": 870.14
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt sieciowy",
+      "start": 871.34,
+      "end": 925.69
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Sapiens. Od zwierząt do bogów: Historia ludzkości jako opowieść o zmianie i nieprzewidywalnych konsekwencjach",
+      "start": 926.89,
+      "end": 1014.54
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1015.74,
+      "end": 1033.98
+    }
+  ]
+}

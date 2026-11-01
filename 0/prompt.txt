@@ -1,0 +1,3 @@
+Pracuję na gałęzi fix/audit-findings. Sprawdź tylko pierwszy punkt poprzedniego raportu: czy istniejące wydanie 2026-10-31.json rzeczywiście pominięto w content/index.json.
+
+Najpierw sprawdź, jak projekt tworzy ten indeks i czy brak jest błędem. Jeśli potwierdzisz problem, napraw go zgodnie z istniejącym sposobem generowania danych. Nie zmieniaj innych rzeczy. Na razie nie uruchamiaj testów, nie rób commita i niczego nie wysyłaj. Na końcu pokaż, co zmieniłeś, i diff.

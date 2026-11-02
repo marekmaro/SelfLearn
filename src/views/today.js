@@ -120,7 +120,6 @@ export async function renderToday(root, { date: requested, mode = 'cover', chapt
 
   live = { date, mounted, follow: (item) => followItem(item), refresh: () => render(), key: (e) => onKey(e) };
   watchKeys();
-  document.body.classList.toggle('is-reader', mode === 'reader');
 
   function currentChapterId() {
     const p = editionProgress(date);

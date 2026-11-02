@@ -78,6 +78,8 @@ Potem wejdź na adres komputera, np. `http://192.168.1.20:8080`.
 
 ## Publikacja (jednorazowo)
 
+Na Windowsie aplikację lokalnie uruchomisz dwuklikiem pliku **Uruchom SelfLearn.bat**. Skrypt startuje lokalny serwer i otwiera `http://localhost:8080`; wymagany jest Node.js.
+
 Aplikacja to zwykłe pliki statyczne, więc działa na Vercelu albo na GitHub Pages. Wystarczy jedno z nich.
 
 ### Vercel (polecane)
@@ -147,6 +149,12 @@ Wydanie przygotowuje **rutyna Claude Code** (claude.ai/code/routines), która dz
   > Przygotuj dzisiejsze wydanie SelfLearn zgodnie z instrukcją w pliku CONTENT_GUIDE.md w tym repozytorium. Zapisz plik wydania, uruchom `node scripts/build-index.mjs && node scripts/validate.mjs`, popraw ewentualne błędy, zrób commit „Wydanie RRRR-MM-DD” i wypchnij go bezpośrednio na gałąź main.
 
 Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesięcznie zależnie od modelu).
+
+### Codzienna lista kandydatów z RSS
+
+Workflow **Poranny przegląd kandydatów na wiadomości** pobiera codziennie nagłówki z Google News RSS dla Polski, świata i działów występujących w najnowszym wydaniu. Otwiera pull request z plikiem `drafts/news-RRRR-MM-DD.json`, z osobną listą dla każdego działu. Można go też uruchomić ręcznie w GitHub → Actions → **Poranny przegląd kandydatów na wiadomości** → **Run workflow**. Lokalnie listę można pobrać poleceniem `npm run news:draft`.
+
+To jest punkt startowy dla redakcji: wpisy zawierają tytuł, źródło, datę i odnośnik RSS. Otwórz artykuł wydawcy, sprawdź informacje, wybierz wartościowe tematy i napisz streszczenia własnymi słowami. Sam workflow nie zapisuje wydania ani nie publikuje go na stronie. Żeby Actions mógł otwierać PR-y, w **Settings → Actions → General** włącz uprawnienia zapisu workflow oraz opcję **Allow GitHub Actions to create and approve pull requests**.
 
 ## Nagrania lektora
 

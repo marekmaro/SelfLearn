@@ -7,7 +7,15 @@ const SECTION_IDS = SECTIONS.map((s) => s.id);
 const KIND_IDS = FACT_KINDS.map((k) => k.id);
 
 const isText = (v) => typeof v === 'string' && v.trim().length > 0;
-const isUrl = (v) => typeof v === 'string' && /^https:\/\/[^\s]+$/.test(v);
+const isUrl = (v) => {
+  if (typeof v !== 'string' || /\s/.test(v)) return false;
+  try {
+    const url = new URL(v);
+    return url.protocol === 'https:' && Boolean(url.hostname) && !url.username && !url.password;
+  } catch {
+    return false;
+  }
+};
 const isObj = (v) => Boolean(v) && typeof v === 'object' && !Array.isArray(v);
 const list = (v) => (Array.isArray(v) ? v : []);
 

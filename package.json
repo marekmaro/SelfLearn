@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node scripts/serve.mjs",
     "index": "node scripts/build-index.mjs",
+    "news:draft": "node scripts/news-candidates.mjs",
     "check": "node scripts/build-index.mjs && node scripts/validate.mjs && node scripts/selftest.mjs",
     "build": "node scripts/validate.mjs && node scripts/build-site.mjs",
     "test": "node scripts/selftest.mjs"

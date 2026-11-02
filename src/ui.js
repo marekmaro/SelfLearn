@@ -91,7 +91,13 @@ export function sourceLinks(sources = []) {
     'div',
     { class: 'sources' },
     list
-      .filter((s) => s && s.url)
+      .filter((s) => {
+        try {
+          return s?.url && new URL(s.url).protocol === 'https:';
+        } catch {
+          return false;
+        }
+      })
       .map((s) =>
         h('a', { class: 'source-link', href: s.url, target: '_blank', rel: 'noopener noreferrer' }, s.name || 'Źródło', icon('external')),
       ),

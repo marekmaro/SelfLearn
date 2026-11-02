@@ -44,7 +44,11 @@ function client({ owner, repo, branch, token }) {
       headers,
       body: JSON.stringify({ message, content: toBase64(text), branch, ...(sha ? { sha } : {}) }),
     });
-    if (!res.ok) throw new Error(await explain(res));
+    if (!res.ok) {
+      const error = new Error(await explain(res));
+      error.status = res.status;
+      throw error;
+    }
   }
 
   return { read, write };
@@ -58,12 +62,27 @@ export async function publishEdition(settings, edition) {
   const existing = await gh.read(path);
   await gh.write(path, `${JSON.stringify(edition, null, 2)}\n`, `Wydanie ${edition.date}`, existing?.sha);
 
-  const index = await gh.read('content/index.json');
-  const data = index ? JSON.parse(index.text) : { editions: [] };
-  const entries = (data.editions || []).filter((e) => e.date !== edition.date);
-  entries.push(indexEntry(edition));
-  entries.sort((a, b) => b.date.localeCompare(a.date));
-  await gh.write('content/index.json', `${JSON.stringify({ editions: entries }, null, 2)}\n`, `Indeks: wydanie ${edition.date}`, index?.sha);
+  try {
+    let indexed = false;
+    for (let attempt = 0; attempt < 3 && !indexed; attempt += 1) {
+      const index = await gh.read('content/index.json');
+      const data = index ? JSON.parse(index.text) : { editions: [] };
+      const entries = (data.editions || []).filter((e) => e.date !== edition.date);
+      entries.push(indexEntry(edition));
+      entries.sort((a, b) => b.date.localeCompare(a.date));
+      try {
+        await gh.write('content/index.json', `${JSON.stringify({ editions: entries }, null, 2)}\n`, `Indeks: wydanie ${edition.date}`, index?.sha);
+        indexed = true;
+      } catch (error) {
+        if (error.status !== 409 || attempt === 2) {
+          if (error.status === 409) throw new Error('Indeks zmienił się równolegle po trzech próbach.');
+          throw error;
+        }
+      }
+    }
+  } catch (error) {
+    throw new Error(`Plik wydania ${edition.date} został zapisany, ale indeks nie został zaktualizowany: ${error.message} Ponów publikację, aby dokończyć.`);
+  }
   return { replaced: Boolean(existing) };
 }
 

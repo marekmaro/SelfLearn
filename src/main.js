@@ -21,6 +21,7 @@ import { watchInstall } from './install.js';
 import { isListening } from './listen.js';
 
 const root = document.getElementById('app');
+let routeVersion = 0;
 applyLook();
 watchInstall();
 
@@ -42,6 +43,15 @@ function setTab(tab) {
 }
 
 async function route() {
+  const version = ++routeVersion;
+  const viewRoot = document.createElement('div');
+  viewRoot.className = 'route-view';
+  const commitView = () => {
+    // Zachowaj ten sam węzeł, który przekazujemy widokom. Ich handlery i ponowne
+    // renderowanie domykają się nad viewRoot, więc przeniesienie dzieci poza niego
+    // odłączałoby późniejsze zmiany od widocznego DOM.
+    if (version === routeVersion) root.replaceChildren(viewRoot);
+  };
   let hash = location.hash.slice(1);
   try {
     hash = decodeURIComponent(hash);
@@ -62,12 +72,14 @@ async function route() {
   document.body.classList.toggle('is-onboarding', onboarding);
 
   if (onboarding) {
-    renderOnboarding(root, {
+    document.body.classList.remove('is-reader');
+    renderOnboarding(viewRoot, {
       onDone: () => {
         if (location.hash === '#dzis') route();
         else location.hash = '#dzis';
       },
     });
+    commitView();
     return;
   }
 
@@ -75,28 +87,29 @@ async function route() {
   leaveTimeline();
   document.body.classList.remove('is-reader');
   const common = { onChange: updateBadge };
+  let readerMode = false;
 
   if (hash === 'powtorki') {
     setTab('powtorki');
-    renderReview(root, common);
+    renderReview(viewRoot, common);
   } else if (hash === 'ulubione' || hash === 'zeszyt') {
     setTab('ulubione');
-    renderFavorites(root);
+    renderFavorites(viewRoot);
   } else if (hash === 'dni') {
     setTab('dzis');
-    await renderTimeline(root);
+    await renderTimeline(viewRoot);
   } else if (hash === 'watki' || hash.startsWith('watek-')) {
     setTab('dzis');
-    await renderThreads(root, { slug: hash.startsWith('watek-') ? hash.slice(6) : null });
+    await renderThreads(viewRoot, { slug: hash.startsWith('watek-') ? hash.slice(6) : null });
   } else if (hash === 'tydzien') {
     setTab('dzis');
-    await renderWeek(root, common);
+    await renderWeek(viewRoot, common);
   } else if (hash === 'przygotuj') {
     setTab('dzis');
-    await renderPrepare(root, common);
+    await renderPrepare(viewRoot, common);
   } else if (['profil', 'ustawienia', 'wyglad', 'lektor', 'przypomnienia', 'publikowanie', 'offline', 'instalacja'].includes(hash)) {
     setTab('profil');
-    await renderProfile(root, {
+    await renderProfile(viewRoot, {
       ...common,
       focus: hash === 'profil' ? null : hash,
       onReset: () => {
@@ -110,9 +123,12 @@ async function route() {
     // Okładka (#dzis, #wydanie-2026-10-20) albo czytanie (#czytaj/polska, #czytaj-2026-10-20/polska).
     // #wydanie-2026-10-20/pl-1 otwiera czytanie na tej karcie (np. z Ulubionych).
     const view = parseEditionHash(hash) || { mode: 'cover', date: null, chapter: null, focus: null };
+    readerMode = view.mode === 'reader';
     const requested = view.date && isISODate(view.date) ? view.date : null;
-    await renderToday(root, { ...common, mode: view.mode, date: requested, chapter: view.chapter, focus: view.focus });
+    await renderToday(viewRoot, { ...common, mode: view.mode, date: requested, chapter: view.chapter, focus: view.focus });
   }
+  commitView();
+  if (version === routeVersion) document.body.classList.toggle('is-reader', readerMode);
 }
 
 window.addEventListener('hashchange', () => {

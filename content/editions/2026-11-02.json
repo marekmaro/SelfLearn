@@ -1,0 +1,297 @@
+{
+  "date": "2026-11-02",
+  "intro": "Dziś m.in.: rusza projekt poszerzenia A4, pilotaż pokazuje pierwsze wnioski o krótszym czasie pracy, a ataki na cyfrowe systemy alarmowe przypominają, jak ważne są bezpieczne kanały komunikacji.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Przygotują projekt trzeciego pasa na A4 między Krakowem a Katowicami",
+      "summary": "GDDKiA podpisała umowę na przygotowanie dokumentacji poszerzenia 24-kilometrowego odcinka autostrady między Dulową a Balicami. Trasa obsługuje ponad 50 tys. pojazdów dziennie. Projekt obejmuje też przygotowanie likwidacji bramek w Balicach. Roboty budowlane zaplanowano od 2030 roku.",
+      "why": "To dopiero etap projektowania, więc kierowcy nie odczują poprawy od razu. Prace mogą jednak zmienić przepustowość jednej z najbardziej obciążonych tras w południowej Polsce.",
+      "sources": [{ "name": "RMF24", "url": "https://www.rmf24.pl/regiony/krakow/news-bedzie-trzeci-pas-na-autostradzie-a4-na-odcinku-krakow-katow,nIdn,1024382" }]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Pilotaż krótszego czasu pracy obejmuje już 78 pracodawców",
+      "summary": "Ministerstwo Rodziny, Pracy i Polityki Społecznej podało, że w rządowym pilotażu uczestniczy 38 firm prywatnych i 40 instytucji publicznych. Testowane rozwiązania dotyczą prawie 5 tys. osób. W pierwszym półroczu czas pracy ograniczono o co najmniej 10 proc., a w drugim redukcja ma wynieść 20 proc., przy zachowaniu dotychczasowych wynagrodzeń. Program potrwa do końca grudnia.",
+      "why": "Wyniki pokażą, czy krótszy czas pracy da się wprowadzać bez pogorszenia obsługi i ciągłości produkcji. Uczestnicy wskazują już na trudności z grafikami i zastępstwami.",
+      "sources": [{ "name": "RMF24 / PAP", "url": "https://www.rmf24.pl/fakty/polska/news-krotszy-czas-pracy-polski-pilotaz-przynosi-obiecujace-wniosk,nIdn,1024399" }]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "UOKiK ukarał dewelopera za obietnice dotyczące poddaszy",
+      "summary": "Prezes UOKiK nałożył na Groen Konstancin I karę 1 mln 176 tys. zł. Według urzędu firma reklamowała możliwość urządzenia na poddaszu dodatkowych pomieszczeń mieszkalnych, choć projekt nie przewidywał nawet schodów prowadzących na strych. Decyzja nie jest prawomocna, a spółka może odwołać się do sądu.",
+      "why": "Sprawa przypomina, że wizualizacje i opisy sprzedażowe mogą wpływać na decyzję o zakupie nieruchomości. Warto sprawdzać, co rzeczywiście wynika z projektu i dokumentów lokalu.",
+      "sources": [{ "name": "RMF24 / PAP", "url": "https://www.rmf24.pl/regiony/warszawa/news-obiecywal-uzytkowe-poddasze-a-nie-zbudowal-nawet-schodow-dew,nIdn,1024370" }]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Krakowianie wybrali 195 projektów budżetu obywatelskiego",
+      "summary": "W głosowaniu 13. edycji krakowskiego budżetu obywatelskiego wzięło udział ponad 49 tys. osób. Do realizacji wybrano 15 projektów ogólnomiejskich i 180 dzielnicowych. Najwięcej głosów wśród projektów miejskich zdobyła instalacja defibrylatorów AED w tramwajach.",
+      "why": "Głosowanie przełoży preferencje mieszkańców na konkretne wydatki i zmiany w przestrzeni miasta. Teraz kluczowe będzie sprawne wykonanie zwycięskich projektów.",
+      "sources": [{ "name": "RMF24", "url": "https://www.rmf24.pl/regiony/krakow/news-krakowianie-wybrali-poznaj-zwycieskie-projekty-budzetu-obywa,nIdn,1024343" }]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Euro kosztowało rano około 4,41 zł, najwięcej od trzech lat",
+      "summary": "Rzeczpospolita podała, że w poniedziałek złoty kontynuował osłabienie, a kurs euro sięgnął około 4,41 zł. Artykuł wiąże ruch na rynku z niepewnością polityczną wokół Trybunału Konstytucyjnego i wskazuje, że złoty osłabiał się również wobec funta i franka. Kursy walut zmieniają się w ciągu dnia.",
+      "why": "Słabszy złoty może podnosić koszt importu i zagranicznych wyjazdów, choć wpływ na ceny zależy też od wielu innych czynników. Podana wartość jest notowaniem z porannej części sesji, a nie stałym kursem dnia.",
+      "sources": [{ "name": "Rzeczpospolita", "url": "https://www.rp.pl/gielda/art45429961-euro-najdroższe-od-trzech-lat-w-reakcji-na-kryzys-polityczny-w-polsce" }]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Ukraina i Rosja zgłosiły fałszywe alarmy po cyberatakach na aplikacje",
+      "summary": "Władze Ukrainy i Rosji poinformowały, że ich państwowe aplikacje alarmowe wysłały mieszkańcom fałszywe ostrzeżenia po cyberatakach. W Ukrainie komunikaty mówiły m.in. o zagrożeniu nuklearnym, chemicznym i walkach ulicznych w Kijowie; rosyjska aplikacja rozesłała fałszywy alarm w wielu regionach. Nie ustalono, czy oba incydenty były ze sobą powiązane ani kto za nie odpowiada.",
+      "why": "Fałszywe powiadomienia mogą osłabić zaufanie do ostrzeżeń, od których zależy bezpieczeństwo cywilów. W czasie awarii warto potwierdzać alarmy w kilku niezależnych kanałach.",
+      "sources": [{ "name": "Associated Press", "url": "https://apnews.com/article/717372f7bbf4e8a805bc918f06f9730f" }]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Sklepy w co najmniej siedmiu krajach zgłosiły problemy z chłodniami",
+      "summary": "Sieci handlowe w Belgii, Estonii, Irlandii, Finlandii, Luksemburgu, Holandii i Szwecji poinformowały, że w nocy wzrosła temperatura w części lodówek i zamrażarek. Niektóre firmy potwierdziły cyberatak. Zdarzenie przypomina wcześniejszy incydent we Francji, gdzie zdalnie sterowane urządzenia chłodnicze w setkach sklepów zostały przejęte.",
+      "why": "Atak na systemy techniczne może prowadzić do strat żywności i przerw w działalności, nawet jeśli nie dotyczy bezpośrednio systemu płatności czy danych klientów. Śledczy ustalają, kto odpowiada za zdarzenia.",
+      "sources": [{ "name": "The Guardian", "url": "https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack" }]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Katastrofa kolejowa w Hiszpanii: zginęło 69 osób",
+      "summary": "Władze Hiszpanii potwierdziły, że w zderzeniu pociągów w miejscowości Urda zginęło 69 osób. Wśród ofiar są obywatele kilku państw, w tym USA, Kanady, Japonii, Argentyny i Czech. Służby identyfikacyjne ustaliły tożsamość większości ofiar, a postępowanie w sprawie przyczyn katastrofy trwa.",
+      "why": "Katastrofa należy do najtragiczniejszych wypadków kolejowych w Europie w tym stuleciu. Informacje o liczbie ofiar i identyfikacji są aktualizowane przez władze.",
+      "sources": [{ "name": "The Guardian / AFP", "url": "https://www.theguardian.com/world/2026/nov/02/spain-train-crash-us-citizens-japan-canada-dead" }]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Brytyjska marynarka śledziła rosyjski okręt przy wybrzeżach Szkocji",
+      "summary": "Brytyjskie ministerstwo obrony poinformowało, że rosyjski okręt rozpoznawczy Wiktor Leonow obserwował ćwiczenia NATO Strike Warrior w rejonie Hebrydów Zewnętrznych. Według resortu jednostka przebywała tam od 29 września do 8 października, a śmigłowce Merlin monitorowały jej ruch. W manewrach uczestniczyło około 2 tys. żołnierzy z sześciu państw.",
+      "why": "Incydent obrazuje wzajemne monitorowanie aktywności wojskowej na północnym Atlantyku. Szczegóły pochodzą z komunikatu brytyjskiego resortu obrony przekazanego przez RMF24.",
+      "sources": [{ "name": "RMF24", "url": "https://www.rmf24.pl/fakty/swiat/news-rosyjski-okret-wiktor-leonow-u-wybrzezy-szkocji-royal-navy-w,nIdn,1024445" }]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "W katastrofie odrzutowca na Florydzie zginęło dziewięć osób",
+      "summary": "Prywatny odrzutowiec Learjet 60 rozbił się w niedzielę w hrabstwie Palm Beach na Florydzie. Zginęło wszystkich dziewięć osób na pokładzie; według władz nie było bezpośrednich informacji o ofiarach na ziemi. Samolot leciał z Austin na Bahamy. Federalna Administracja Lotnictwa i Krajowa Rada Bezpieczeństwa Transportu prowadzą dochodzenie.",
+      "why": "Przyczyna wypadku nie została jeszcze ustalona. Dane kontroli lotów wskazywały na gwałtowne opadanie maszyny, a śledczy analizują warunki pogodowe i przebieg lotu.",
+      "sources": [{ "name": "The Guardian / AP", "url": "https://www.theguardian.com/us-news/2026/nov/01/business-jet-crash-florida" }]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Lokalny rozejm umożliwił ewakuację 180 osób z obwodu chersońskiego",
+      "summary": "Krótki rozejm humanitarny w obwodzie chersońskim zakończył się w niedzielę wieczorem. Według władz regionalnych podczas przerwy w walkach ewakuowano 180 osób z nadrzecznych miejscowości i miasta Chersoń, w tym 23 dzieci. Przerwa pozwoliła też wolontariuszom i ukraińskiemu Czerwonemu Krzyżowi dotrzeć z pomocą do cywilów odciętych od niej przez niemal dwa lata.",
+      "why": "Po zakończeniu rozejmu mieszkańcy ponownie są narażeni na ostrzał, drony i miny. To pokazuje, że nawet krótkie porozumienie może otworzyć drogę pomocy, ale nie zastępuje trwałego bezpieczeństwa.",
+      "sources": [{ "name": "Associated Press", "url": "https://apnews.com/article/ceasefire-ukraine-russia-war-oleshky-08b1c18befa0b3ff79e3992bd8dffb23" }]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "OpenAI zapowiada ograniczanie poboru prądu przez centra danych w sytuacjach kryzysowych",
+      "summary": "OpenAI zapowiedziało, że będzie ograniczać zużycie energii w rozwijanych przez siebie amerykańskich centrach danych, gdy ekstremalna pogoda lub inne sytuacje awaryjne obciążą sieć. W planowanym kampusie w Georgii firma deklaruje możliwość zmniejszenia poboru nawet o 1 gigawat — moc porównywalną z zapotrzebowaniem około 700 tys. domów. Konkretne zasady mają być uzgadniane osobno z operatorami sieci.",
+      "why": "Duże centra danych mogą zwiększać presję na lokalną infrastrukturę energetyczną. Zapowiedź stanie się miarodajna dopiero wtedy, gdy zostaną opublikowane i wdrożone konkretne zasady redukcji poboru.",
+      "sources": [{ "name": "Axios", "url": "https://www.axios.com/2026/11/02/openai-data-center-power-cuts" }]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Analiza 420 badań pokazuje, kiedy współpraca człowieka z AI pomaga",
+      "summary": "Opublikowany jako preprint przegląd połączył 1955 wyników z 420 badań nad pracą ludzi z systemami AI. Średnio zespoły człowiek–AI osiągały lepsze wyniki niż sami ludzie, ale w badaniach porównujących je także z samą AI zespół często wypadał gorzej od lepszego z tych dwóch samodzielnych uczestników. Autorzy zaznaczają, że rezultaty silnie zależą od rodzaju zadania i sposobu podziału pracy.",
+      "why": "Sama obecność człowieka przy narzędziu AI nie gwarantuje synergii ani lepszego wyniku. Badanie jest preprintem, więc jego metody i wnioski wymagają dalszej oceny naukowej.",
+      "sources": [{ "name": "arXiv", "url": "https://arxiv.org/abs/2610.42001" }]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "WHO ostrzega, że walki w północnej Etiopii ograniczają dostęp do leczenia",
+      "summary": "Szef Światowej Organizacji Zdrowia ostrzegł, że doniesienia o atakach i ofiarach cywilnych w regionach Amhara i Tigraj pogłębiają kryzys opieki zdrowotnej. Według jego relacji szpitalom brakuje personelu, leków i sprzętu, a zagrożenie utrudnia dostarczanie pomocy. W chwili publikacji nie podano pełnej liczby ofiar ani niezależnie potwierdzonej odpowiedzialności za ataki.",
+      "why": "Bezpieczny dostęp personelu i dostaw medycznych jest kluczowy dla cywilów w strefie konfliktu. Informacje o atakach pozostają wstępne, dlatego należy je odróżniać od niezależnie potwierdzonych danych.",
+      "sources": [{ "name": "Associated Press", "url": "https://apnews.com/article/ethiopia-tedros-tigray-amhara-drone-strikes-violence-70bee2b7fe23dd348c5ac8adf833332a" }]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "Dokument o Elizabeth Holmes minimalnie wyprzedził „Clayface’a” w amerykańskim box office",
+      "summary": "Według niedzielnych szacunków film dokumentalny „You Can See Everything” zarobił 10,6 mln dolarów w swój trzeci weekend i po raz pierwszy zajął pierwsze miejsce w Ameryce Północnej. „Clayface” był tuż za nim z wynikiem 10,4 mln dolarów. Halloween osłabiło frekwencję, a łączna sprzedaż biletów w weekend miała nie przekroczyć 56 mln dolarów.",
+      "why": "Wynik pokazuje, że także film dokumentalny może na krótko przebić wysokobudżetową premierę. To wstępne szacunki dla kin w USA i Kanadzie, a nie globalne wyniki obu tytułów.",
+      "sources": [{ "name": "Associated Press", "url": "https://apnews.com/article/box-office-89ac3be8852d4162962a85b80dcaa251" }]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "nauka",
+      "title": "Zapach ziemi po deszczu wytwarzają między innymi bakterie glebowe",
+      "body": "Charakterystyczny zapach po pierwszym deszczu po suszy nazywa się petrichor. Jednym z jego składników jest geosmina, związek wytwarzany przez bakterie z grupy promieniowców żyjące w glebie. Ludzki nos potrafi wyczuć geosminę już przy stężeniu poniżej 5 części na bilion.",
+      "source": { "name": "American Chemical Society", "url": "https://www.acs.org/content/dam/acsorg/education/students/highschool/chemistryclubs/infographics/petrichor-the-smell-of-rain.pdf" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "psychologia",
+      "title": "Automatyczne czytanie potrafi przeszkadzać w nazywaniu kolorów",
+      "body": "W klasycznym teście Stroopa badana osoba ma powiedzieć, jakim kolorem zapisano słowo, a nie odczytać jego treść. Jeśli słowo „niebieski” jest wydrukowane czerwonym tuszem, odpowiedź zwykle trwa dłużej niż wtedy, gdy nazwa i kolor pasują. Dzieje się tak, bo szybkie czytanie konkuruje z zadaniem skupienia się na barwie.",
+      "source": { "name": "American Psychological Association", "url": "https://www.apa.org/science/resources/stroop.aspx" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "historia",
+      "title": "Pierwsze europejskie banknoty wyemitowano w Szwecji w 1661 roku",
+      "body": "Stockholms Banco zaczął wydawać papierowe kwity kredytowe, których można było używać w handlu zamiast ciężkich miedzianych monet. Pomysł szybko zyskał popularność, ale bank udzielał pożyczek w postaci kwitów bez odpowiedniego pokrycia w kruszcu. Narastający problem doprowadził do kryzysu i upadku banku.",
+      "source": { "name": "Sveriges Riksbank", "url": "https://www.riksbank.se/en-gb/about-the-riksbank/history/historical-timeline/1600-1699/first-banknotes-in-europe" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1925,
+      "title": "W Warszawie złożono szczątki Nieznanego Żołnierza",
+      "body": "2 listopada 1925 roku pod kolumnadą Pałacu Saskiego w Warszawie złożono szczątki bezimiennego obrońcy Lwowa z 1918 roku. Ceremonia stworzyła miejsce pamięci poświęcone poległym żołnierzom, których nazwisk i grobów nie udało się ustalić.",
+      "source": { "name": "Instytut Pamięci Narodowej", "url": "https://ipn.gov.pl/pl/historia-z-ipn/231302%2CGrob-Nieznanego-Zolnierza-miejsce-pamieci-Polakow-walczacych-za-Ojczyzne.html" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1947,
+      "title": "„Spruce Goose” odbyła swój jedyny lot",
+      "body": "2 listopada 1947 roku wielka łódź latająca Hughes H-4 Hercules wzbiła się nad wybrzeżem Kalifornii. Za sterami siedział Howard Hughes; samolot wykonał tylko ten jeden lot i nigdy nie wszedł do regularnej służby.",
+      "source": { "name": "Smithsonian Institution Archives", "url": "https://siarchives.si.edu/collections/siris_sic_13656" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1917,
+      "title": "Arthur Balfour ogłosił deklarację dotyczącą Palestyny",
+      "body": "2 listopada 1917 roku brytyjski minister spraw zagranicznych Arthur Balfour wysłał do Lionela Waltera Rothschilda list przedstawiający poparcie rządu dla utworzenia w Palestynie „siedziby narodowej dla narodu żydowskiego”. Tekst deklaracji zastrzegał zarazem, że nie powinien naruszać praw obywatelskich i religijnych istniejących tam społeczności nieżydowskich.",
+      "source": { "name": "UK Parliament, House of Commons Library", "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7766/" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Regresja do średniej",
+    "definition": "Gdy wynik jest wyjątkowo wysoki lub niski, kolejny pomiar często bywa bliższy typowemu poziomowi, jeśli część skrajności wynikała z losowych wahań.",
+    "origin": "Zjawisko opisał w XIX wieku Francis Galton, badając podobieństwo wzrostu rodziców i ich dzieci. Nie oznacza ono, że każda skrajna wartość musi wrócić do normy ani że samo cofnięcie się wyniku dowodzi skuteczności jakiejś interwencji.",
+    "examples": [
+      "Po wyjątkowo wysokim wyniku ucznia kolejny test może wypaść bliżej jego zwykłej średniej, nawet bez zmiany sposobu nauki.",
+      "Pojedynczy odczyt kursu waluty nie wystarcza, by stwierdzić, czy trwały trend się odwrócił; trzeba obserwować serię danych i brać pod uwagę przyczyny zmian.",
+      "W pilotażu lub badaniu warto porównywać grupy i wiele pomiarów, bo skrajny wynik początkowy może sam z siebie stać się później mniej skrajny."
+    ],
+    "source": { "name": "PubMed, International Journal of Epidemiology", "url": "https://pubmed.ncbi.nlm.nih.gov/15333621/" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "pulapki-myslenia",
+    "title": "Pułapki myślenia. O myśleniu szybkim i wolnym",
+    "author": "Daniel Kahneman",
+    "day": 2,
+    "days": 7,
+    "ideaTitle": "Trudne pytanie zastępujemy łatwiejszym",
+    "idea": "Kiedy brakuje nam czasu lub danych, umysł często odpowiada na prostsze pytanie niż to, które naprawdę padło. Zamiast oceniać prawdopodobieństwo zdarzenia, możemy ocenić, jak łatwo przychodzi nam do głowy podobny przykład. Zamiast pytać, czy rozwiązanie zadziała, pytamy, czy brzmi przekonująco. Taki skrót bywa praktyczny w codziennych wyborach, ale może prowadzić do pewnej siebie odpowiedzi na niewłaściwe pytanie. Warto nazwać pierwotne pytanie i sprawdzić, czy odpowiedź rzeczywiście się do niego odnosi.",
+    "moral": "Intuicyjna odpowiedź często dotyczy łatwiejszej kwestii, a nie tej, którą chcemy rozstrzygnąć. Przy ważnej decyzji zatrzymaj się i nazwij pytanie jeszcze raz.",
+    "action": "Wybierzcie dziś jedną decyzję i zapiszcie osobno: jakie pytanie naprawdę chcecie rozstrzygnąć oraz na jakie łatwiejsze pytanie odpowiada wasza pierwsza intuicja.",
+    "source": { "name": "Penguin Random House", "url": "https://www.penguinrandomhouse.com/books/89308/thinking-fast-and-slow-by-daniel-kahneman/" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-02-q1",
+      "ref": "fact-1",
+      "question": "Co jest jednym ze składników zapachu ziemi po deszczu?",
+      "options": ["Geosmina wytwarzana przez bakterie glebowe", "Sól morska uwalniana z chmur", "Ozon produkowany przez korzenie"],
+      "answer": 0,
+      "explanation": "Geosmina jest wytwarzana przez bakterie glebowe, a krople deszczu pomagają uwolnić jej zapach do powietrza."
+    },
+    {
+      "id": "2026-11-02-q2",
+      "ref": "fact-2",
+      "question": "Co mierzy klasyczny test Stroopa?",
+      "options": ["Jak szybko rozpoznajemy twarze", "Trudność nazywania koloru, gdy nie zgadza się ze słowem", "Jak długo pamiętamy dźwięki"],
+      "answer": 1,
+      "explanation": "Czytanie słowa konkuruje z poleceniem, by skupić się na kolorze tuszu."
+    },
+    {
+      "id": "2026-11-02-q3",
+      "ref": "fact-3",
+      "question": "Gdzie w Europie pojawiły się pierwsze banknoty?",
+      "options": ["W Szwecji", "W Portugalii", "W Polsce"],
+      "answer": 0,
+      "explanation": "Stockholms Banco w Szwecji zaczął wydawać banknoty w 1661 roku."
+    },
+    {
+      "id": "2026-11-02-q4",
+      "ref": "otd-1",
+      "question": "Czyje szczątki złożono w warszawskim Grobie Nieznanego Żołnierza w 1925 roku?",
+      "options": ["Bezimiennego obrońcy Lwowa", "Nieznanego marynarza z Helu", "Nieznanego lotnika z Warszawy"],
+      "answer": 0,
+      "explanation": "Wybrano szczątki bezimiennego żołnierza poległego podczas obrony Lwowa."
+    },
+    {
+      "id": "2026-11-02-q5",
+      "ref": "otd-2",
+      "question": "Co wyróżniało lot Hughesa H-4 Hercules z 2 listopada 1947 roku?",
+      "options": ["Był jedynym lotem tego samolotu", "Był pierwszym lotem bezzałogowym", "Samolot przeleciał przez Atlantyk"],
+      "answer": 0,
+      "explanation": "„Spruce Goose” wzbiła się w powietrze tylko raz i nie weszła do regularnej służby."
+    },
+    {
+      "id": "2026-11-02-q6",
+      "ref": "concept",
+      "question": "Na czym polega regresja do średniej?",
+      "options": ["Skrajny wynik często staje się mniej skrajny przy kolejnym pomiarze", "Każdy wzrost ceny musi zakończyć się spadkiem", "Średnia zawsze rośnie po większej liczbie pomiarów"],
+      "answer": 0,
+      "explanation": "Losowe wahania sprawiają, że wyjątkowy pomiar często nie powtarza się w tej samej skali."
+    },
+    {
+      "id": "2026-11-02-q7",
+      "ref": "book",
+      "question": "Jaki skrót myślowy opisuje dzisiejsza idea z książki Kahnemana?",
+      "options": ["Zastępowanie trudnego pytania łatwiejszym", "Wybieranie zawsze najdłuższej drogi", "Odrzucanie pierwszej informacji w każdej sytuacji"],
+      "answer": 0,
+      "explanation": "Gdy prawdziwe pytanie jest trudne, intuicja może podsunąć odpowiedź na prostsze, podobne pytanie."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-02-r1",
+      "question": "Z czego zbudowany jest dodatkowy „kciuk” pandy rudej?",
+      "options": ["Z powiększonej kości nadgarstka", "Z osobnego pazura wyrastającego z łokcia", "Z chrząstki w ogonie"],
+      "answer": 0,
+      "explanation": "To zmodyfikowana kość nadgarstka, która pomaga chwytać bambus."
+    },
+    {
+      "id": "2026-11-02-r2",
+      "question": "Ile szybkich pobudzeń zwykle wyzwala zamknięcie pułapki muchołówki?",
+      "options": ["Jedno", "Dwa", "Pięć"],
+      "answer": 1,
+      "explanation": "Dwa szybkie impulsy z włosków czuciowych pomagają przekroczyć próg potrzebny do zatrzaśnięcia pułapki."
+    },
+    {
+      "id": "2026-11-02-r3",
+      "question": "Czy związki organiczne wykryte w materiale z Enceladusa są dowodem na życie?",
+      "options": ["Tak, potwierdzają istnienie organizmów", "Nie, są składnikami do badań chemii przedbiologicznej, ale nie dowodem życia", "Tak, ale tylko w połączeniu z wodą"],
+      "answer": 1,
+      "explanation": "Obecność związków organicznych jest interesująca, lecz sama nie potwierdza istnienia życia."
+    }
+  ],
+  "evening": {
+    "question": "Kiedy ostatnio odpowiedzieliście na łatwiejsze pytanie, niż to, które naprawdę chcieliście rozstrzygnąć?",
+    "hint": "Opowiedzcie o jednej decyzji i sprawdźcie, jaka informacja pomogłaby odpowiedzieć na właściwe pytanie."
+  }
+}

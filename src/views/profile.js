@@ -108,7 +108,8 @@ export async function renderProfile(root, { onReset, onChange, focus }) {
                 const token = root.querySelector('#gh-token').value.trim() || gh.token;
                 if (!owner || !repo) return toast('Wpisz repozytorium jako właściciel/nazwa.');
                 if (!token) return toast('Wklej token.');
-                setGithubSettings({ owner, repo, token });
+                const saved = setGithubSettings({ owner, repo, token });
+                if (!saved) return toast('Nie udało się zapisać ustawień. Pamięć telefonu jest niedostępna lub pełna.');
                 try {
                   await checkAccess(githubSettings());
                   toast('Token działa. Możesz publikować.');

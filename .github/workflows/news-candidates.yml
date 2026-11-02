@@ -1,0 +1,42 @@
+name: Poranny przegląd kandydatów na wiadomości
+
+on:
+  schedule:
+    - cron: '15 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: news-candidates
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Zbierz nagłówki z RSS
+        run: node scripts/news-candidates.mjs
+      - name: Otwórz PR do przeglądu
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          DATE=$(node -e "console.log(new Intl.DateTimeFormat('sv-SE', {timeZone:'Europe/Warsaw'}).format(new Date()))")
+          BRANCH="codex/news-candidates-$DATE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C "$BRANCH"
+          git add "drafts/news-$DATE.json"
+          git commit -m "Wiadomości do przeglądu $DATE" || exit 0
+          git push --force origin "HEAD:refs/heads/$BRANCH"
+          if ! gh pr list --head "$BRANCH" --state open --json number --jq 'length > 0' | grep -q true; then
+            gh pr create --head "$BRANCH" --base main \
+              --title "Kandydaci na wiadomości: $DATE" \
+              --body "Codzienna lista nagłówków z RSS. Każdy wpis wymaga otwarcia oryginalnego artykułu, weryfikacji faktów i redakcyjnego streszczenia. Ten PR nie publikuje wydania automatycznie."
+          fi

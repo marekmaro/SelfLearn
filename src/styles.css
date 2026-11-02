@@ -148,10 +148,16 @@ input, select, textarea { font-size: max(16px, 1rem); }
   outline: none;
 }
 
+/* Router utrzymuje stabilny element montażowy widoku; jego dzieci układają się jak dotąd bez wrappera. */
+.route-view { display: contents; }
+
 body.is-onboarding #app { padding-block-end: 32px; }
 body.is-onboarding .tabbar { display: none; }
 
 .boot { color: var(--muted); padding-block: 40vh 0; text-align: center; }
+.startup-help { display: grid; justify-items: center; gap: 16px; margin: 18vh auto 0; padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); text-align: center; }
+.startup-help p { margin: 0; color: var(--muted); }
+.startup-help code { padding: 10px 16px; border-radius: 8px; background: var(--surface-2); color: var(--ink); font-size: 1.15rem; }
 
 /* ---------- Typografia ---------- */
 

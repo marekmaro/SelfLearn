@@ -27,8 +27,9 @@ function load() {
 function save() {
   try {
     localStorage.setItem(KEY, JSON.stringify(state));
+    return true;
   } catch {
-    // jw.
+    return false;
   }
 }
 
@@ -38,7 +39,7 @@ export function getState() {
 
 export function update(fn) {
   fn(state);
-  save();
+  return save();
 }
 
 export function resetAll() {
@@ -250,7 +251,12 @@ export function saveLocalEdition(edition) {
   const all = { ...localEditions(), [edition.date]: edition };
   const dates = Object.keys(all).sort().reverse();
   for (const old of dates.slice(MAX_LOCAL_EDITIONS)) delete all[old];
-  localStorage.setItem(EDITIONS_KEY, JSON.stringify(all));
+  try {
+    localStorage.setItem(EDITIONS_KEY, JSON.stringify(all));
+    return true;
+  } catch {
+    throw new Error('Brak miejsca w pamięci telefonu. Usuń część zapisanych wydań albo zrób kopię danych.');
+  }
 }
 
 export function removeLocalEdition(date) {
@@ -270,7 +276,7 @@ export function githubSettings() {
 }
 
 export function setGithubSettings(patch) {
-  update((s) => {
+  return update((s) => {
     s.settings ||= {};
     s.settings.github = { ...(s.settings.github || {}), ...patch };
   });

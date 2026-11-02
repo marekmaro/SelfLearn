@@ -1,0 +1,15 @@
+Chcę dopracować aplikację SelfLearn. Pracuj na obecnej gałęzi fix/audit-findings, powiązanej z Entire Trail #2.
+
+1. Przygotuj wydanie wiadomości na dziś: 2026-11-01. Najpierw sprawdź format i zasady poprzednich wydań. Korzystaj z aktualnych, wiarygodnych źródeł; sprawdzaj daty i fakty oraz dodaj linki do źródeł zgodnie z istniejącym formatem. Pisz własnymi słowami. Jeśli nie masz dostępu do aktualnych źródeł, nie wymyślaj wiadomości — zgłoś ten problem.
+
+2. Sprawdź całą aplikację pod kątem błędów, bezpieczeństwa, działania offline, dostępności i wygody używania. Zweryfikuj też wcześniejsze uwagi z raportu: indeks wydań, obsługę błędów sieci, workflow audio, instrukcję dla Windows, plakietkę powiadomień i dostępność MP3 na GitHub Pages.
+
+3. Napraw potwierdzone błędy i wprowadź małe, oczywiste ulepszenia, które pasują do obecnego wyglądu aplikacji. Nie rób dużej przebudowy ani nie dodawaj zależności. Najciekawsze większe pomysły opisz osobno jako propozycje — jeszcze ich nie wdrażaj.
+
+4. Zaktualizuj indeks wydań zgodnie z projektem. Uruchom istniejący walidator i testy projektu. Nie uruchamiaj wdrożenia.
+
+Na końcu podaj po polsku: co zmieniłeś, jakie źródła wykorzystałeś do dzisiejszych wiadomości, wyniki walidacji i testów, oraz osobno propozycje dalszych ulepszeń. Nie rób jeszcze commita ani pushu. Pokaż diff wszystkich zmian.
+
+---
+
+Popraw rozbieżność w wiadomości o wyborach w Bułgarii: tekst podaje exit poll około 52%, ale podlinkowany Euronews jest zaktualizowany 2 listopada i obecnie opisuje wstępne wyniki liczenia 57,4–58,2%. Dopasuj tekst do źródła albo użyj źródła potwierdzającego exit poll. Sprawdź też ostrzeżenie walidatora o powtórzonym „Prawie Goodharta” między wydaniami z 1 i 20 października i usuń powtórkę zgodnie z zasadami treści. Potem ponownie uruchom dotychczasowe sprawdzenia, pokaż diff i status. Nadal bez commita i pushu.

@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-02",
+  "file": "2026-11-02-darkman.mp3",
+  "url": "audio/2026-11-02-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-02-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "bacacdcc30b20cf0",
+  "duration": 946.86,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 18.21
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Przygotują projekt trzeciego pasa na A4 między Krakowem a Katowicami",
+      "start": 18.91,
+      "end": 57.44
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Pilotaż krótszego czasu pracy obejmuje już 78 pracodawców",
+      "start": 58.14,
+      "end": 101.78
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "UOKiK ukarał dewelopera za obietnice dotyczące poddaszy",
+      "start": 102.48,
+      "end": 139.2
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Krakowianie wybrali 195 projektów budżetu obywatelskiego",
+      "start": 139.9,
+      "end": 174.14
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Euro kosztowało rano około 4,41 zł, najwięcej od trzech lat",
+      "start": 174.84,
+      "end": 217.18
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Ukraina i Rosja zgłosiły fałszywe alarmy po cyberatakach na aplikacje",
+      "start": 218.38,
+      "end": 261.21
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Sklepy w co najmniej siedmiu krajach zgłosiły problemy z chłodniami",
+      "start": 261.91,
+      "end": 302.7
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Katastrofa kolejowa w Hiszpanii: zginęło 69 osób",
+      "start": 303.4,
+      "end": 340.06
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Brytyjska marynarka śledziła rosyjski okręt przy wybrzeżach Szkocji",
+      "start": 340.76,
+      "end": 383.14
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "W katastrofie odrzutowca na Florydzie zginęło dziewięć osób",
+      "start": 383.84,
+      "end": 420.78
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Lokalny rozejm umożliwił ewakuację 180 osób z obwodu chersońskiego",
+      "start": 421.98,
+      "end": 467.24
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "OpenAI zapowiada ograniczanie poboru prądu przez centra danych w sytuacjach kryzysowych",
+      "start": 467.94,
+      "end": 514.93
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Analiza 420 badań pokazuje, kiedy współpraca człowieka z AI pomaga",
+      "start": 515.63,
+      "end": 564.58
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "WHO ostrzega, że walki w północnej Etiopii ograniczają dostęp do leczenia",
+      "start": 565.28,
+      "end": 607.7
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Dokument o Elizabeth Holmes minimalnie wyprzedził „Clayface’a” w amerykańskim box office",
+      "start": 608.4,
+      "end": 653.35
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Zapach ziemi po deszczu wytwarzają między innymi bakterie glebowe",
+      "start": 654.55,
+      "end": 678
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Pierwsze europejskie banknoty wyemitowano w Szwecji w 1661 roku",
+      "start": 678.7,
+      "end": 704.29
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Automatyczne czytanie potrafi przeszkadzać w nazywaniu kolorów",
+      "start": 704.99,
+      "end": 730.33
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1925: W Warszawie złożono szczątki Nieznanego Żołnierza",
+      "start": 731.53,
+      "end": 756.88
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1947: „Spruce Goose” odbyła swój jedyny lot",
+      "start": 757.58,
+      "end": 778.89
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1917: Arthur Balfour ogłosił deklarację dotyczącą Palestyny",
+      "start": 779.59,
+      "end": 809.41
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Regresja do średniej",
+      "start": 810.61,
+      "end": 865.88
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Pułapki myślenia. O myśleniu szybkim i wolnym: Trudne pytanie zastępujemy łatwiejszym",
+      "start": 867.08,
+      "end": 930.68
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 931.88,
+      "end": 946.36
+    }
+  ]
+}

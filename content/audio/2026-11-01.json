@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-01",
+  "file": "2026-11-01.mp3",
+  "url": "audio/2026-11-01.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-01.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "1b6506b9a3f2e8f1",
+  "duration": 927.64,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 15.89
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Nową firmę w CEIDG można założyć już tylko przez internet",
+      "start": 16.59,
+      "end": 57.13
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Wchodzi w życie 60-procentowy podatek od nadzwyczajnych zysków paliwowych",
+      "start": 57.83,
+      "end": 99.11
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "W całej Polsce zbierano datki na renowację zabytkowych grobów",
+      "start": 99.81,
+      "end": 138.65
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "DevelopRes Rzeszów wygrał piąty mecz z rzędu w Tauron Lidze",
+      "start": 139.35,
+      "end": 174.43
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Komisja Europejska zabrała głos w sporze o Trybunał Konstytucyjny",
+      "start": 175.13,
+      "end": 223.13
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Misja pokojowa ONZ na Saharze Zachodniej zakończyła działalność po 35 latach",
+      "start": 224.33,
+      "end": 268.92
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Exit poll wskazał na prowadzenie Jotowej w drugiej turze w Bułgarii",
+      "start": 269.62,
+      "end": 307.19
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "ONZ zażądała śledztwa po śmierci pracownika w jemeńskim areszcie Huti",
+      "start": 307.89,
+      "end": 347.97
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Erozja wybrzeży może kosztować Europę setki miliardów euro rocznie",
+      "start": 348.67,
+      "end": 392.52
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Sheila Chepkirui i Andreas Almgren wygrali maraton w Nowym Jorku",
+      "start": 393.22,
+      "end": 425.77
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Iran uznał brytyjskie siły powietrzne i marynarkę za organizacje terrorystyczne",
+      "start": 426.97,
+      "end": 465.72
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Binance wznowiło wypłaty dla części klientów po ataku hakerskim",
+      "start": 466.42,
+      "end": 504.44
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Ekspert ostrzega przed atakiem prompt injection na chatboty AI",
+      "start": 505.14,
+      "end": 545.15
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Szpitale zaczynają raportować NFZ godzinową obecność personelu medycznego",
+      "start": 545.85,
+      "end": 584.33
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Budapeszt uczcił setną rocznicę śmierci Harry’ego Houdiniego",
+      "start": 585.03,
+      "end": 625.06
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Muchołówka potrafi policzyć dotknięcia ofiary",
+      "start": 626.26,
+      "end": 655.87
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Panda ruda ma dodatkowy „kciuk” z kości nadgarstka",
+      "start": 656.57,
+      "end": 677.07
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "W świeżych gejzerach Enceladusa znaleziono złożone związki organiczne",
+      "start": 677.77,
+      "end": 704.74
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Rozpoczęły się walki o Lwów",
+      "start": 705.94,
+      "end": 735.8
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1512: Papież Juliusz II odprawił mszę pod nowym freskiem Michała Anioła",
+      "start": 736.5,
+      "end": 760.88
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1755: Trzęsienie ziemi zniszczyło Lizbonę",
+      "start": 761.58,
+      "end": 786.19
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Podstawowy błąd atrybucji",
+      "start": 787.39,
+      "end": 841.55
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Pułapki myślenia. O myśleniu szybkim i wolnym: Dwa tryby myślenia: szybki i wolny",
+      "start": 842.75,
+      "end": 909.36
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 910.56,
+      "end": 927.14
+    }
+  ]
+}

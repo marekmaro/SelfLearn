@@ -177,6 +177,21 @@ function daysWord(n) {
   return n === 1 ? 'dzień' : 'dni';
 }
 
+function badgeCountForDate(meta, today) {
+  if (meta.notify?.badge === false) return 0;
+  const dueByDate = meta.badgeDueByDate;
+  let due = 0;
+  if (dueByDate && typeof dueByDate === 'object' && !Array.isArray(dueByDate)) {
+    for (const [date, count] of Object.entries(dueByDate)) {
+      if (date <= today) due += Math.max(0, Number(count) || 0);
+    }
+  } else {
+    const oldDaily = meta.activeOn ? 0 : 1;
+    due = Math.max(0, (Number(meta.badgeCount) || 0) - oldDaily);
+  }
+  return (meta.activeOn === today ? 0 : 1) + due;
+}
+
 async function todaysHeadline(today) {
   try {
     const url = new URL(`./content/editions/${today}.json`, self.registration.scope).href;
@@ -232,7 +247,7 @@ async function dailyCheck() {
       sent.morning = today;
       if (n.badge !== false && self.navigator.setAppBadge) {
         try {
-          Promise.resolve(self.navigator.setAppBadge(Math.max(1, Number(meta.badgeCount) || 1))).catch(() => {});
+          Promise.resolve(self.navigator.setAppBadge(badgeCountForDate(meta, today))).catch(() => {});
         } catch {
           // Plakietka nie jest obsługiwana przez każdą przeglądarkę.
         }

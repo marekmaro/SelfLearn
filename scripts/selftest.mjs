@@ -3,6 +3,7 @@
 // wydanie w dwóch częściach, przecinki na końcu list i ucięta odpowiedź.
 // Użycie: node scripts/selftest.mjs
 import { readFileSync, readdirSync } from 'node:fs';
+import { runInNewContext } from 'node:vm';
 import { extractJSON, cleanEdition, validateEdition } from '../src/edition.js';
 import { projectInstructions, dailyMessage, usedMaterial, CHATS } from '../src/prompt.js';
 import { recurrence } from '../src/calendar.js';
@@ -15,7 +16,7 @@ import { weekEnd, weekDates, weekBannerDue, weekSummary, weekQuiz } from '../src
 import { deepenPrompt, deepenUrl, DEEPEN_MODES } from '../src/deepen.js';
 import { threadSlug, editionThreads, threadsFromIndex, recentThreadNames } from '../src/threads.js';
 import { indexEntry, repeatedMaterial } from '../src/edition.js';
-import { morningWindowEnd, remindersOverlap, pendingBadgeCount } from '../src/notify.js';
+import { morningWindowEnd, remindersOverlap, pendingBadgeCount, dueCountByDate } from '../src/notify.js';
 import { safePath } from './serve.mjs';
 import { splitText, startIndex, recordingSegments, segmentAt, selectionLength, toSelection, fromSelection, pickEngine, clock, LECTORS, savedLector, saveLector, savedVoice, savedRecorded, pickRecording, pickPolish, savePhoneVoice, recordingUrl } from '../src/listen.js';
 import { yearOrdinal } from '../src/speech-text.js';
@@ -348,6 +349,23 @@ test('Plakietka: stan bieżącej nauki i powtórki są liczone również w tle',
   assert(pendingBadgeCount({ active: true, due: 4 }) === 4, 'po zaliczeniu dnia zostają powtórki');
   assert(pendingBadgeCount({ active: true, due: 0 }) === 0, 'wyczyszczona plakietka');
   assert(pendingBadgeCount({ enabled: false, active: false, due: 4 }) === 0, 'wyłączona plakietka');
+  const dueByDate = dueCountByDate({
+    yesterday: { due: '2026-11-01' },
+    today1: { due: '2026-11-02' },
+    today2: { due: '2026-11-02' },
+    tomorrow: { due: '2026-11-03' },
+  });
+  const meta = {
+    notify: { badge: true },
+    activeOn: '2026-11-01',
+    badgeCount: pendingBadgeCount({ active: true, due: 1 }),
+    badgeDueByDate: dueByDate,
+  };
+  const worker = { self: { registration: { scope: 'https://selflearn.test/' }, addEventListener() {} }, URL };
+  runInNewContext(readFileSync('sw.js', 'utf8'), worker);
+  assert(Math.max(1, Number(meta.badgeCount) || 1) === 1, 'przypadek: wczorajsze badgeCount nie zawiera jutrzejszych powtórek');
+  assert(worker.badgeCountForDate(meta, '2026-11-02') === 4, 'nowy dzień + 3 powtórki należne do dziś');
+  assert(worker.badgeCountForDate({ notify: { badge: true }, activeOn: '2026-11-01', badgeCount: 1 }, '2026-11-02') === 2, 'zgodność ze starszymi metadanymi');
 });
 
 test('Kopia danych: przypomnienie po tygodniu, „Później” odkłada je o tydzień', () => {

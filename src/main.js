@@ -42,7 +42,12 @@ function setTab(tab) {
 }
 
 async function route() {
-  const hash = decodeURIComponent(location.hash.slice(1));
+  let hash = location.hash.slice(1);
+  try {
+    hash = decodeURIComponent(hash);
+  } catch {
+    // Wadliwy procent w ręcznie wklejonym adresie nie może zatrzymać całej aplikacji.
+  }
 
   // Link z wyzwaniem od drugiej osoby: zapisz wynik i otwórz to wydanie.
   const challenge = parseChallenge(hash);

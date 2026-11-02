@@ -9,7 +9,7 @@ Wzór gotowego wydania: [`content/editions/2026-10-01.json`](content/editions/20
 
 ## Kroki
 
-1. **Ustal datę** w strefie Europe/Warsaw: `TZ=Europe/Warsaw date +%F`. Plik wydania to `content/editions/RRRR-MM-DD.json`.
+1. **Ustal datę** w strefie Europe/Warsaw: macOS/Linux: `TZ=Europe/Warsaw date +%F`; Windows PowerShell: `node -e "console.log(new Intl.DateTimeFormat('sv-SE', {timeZone:'Europe/Warsaw'}).format(new Date()))"`. Plik wydania to `content/editions/RRRR-MM-DD.json`.
    Jeśli taki plik już istnieje, zakończ pracę bez zmian.
 2. **Wygeneruj polecenie dnia:** `node scripts/prompt.mjs RRRR-MM-DD`. Zawiera działy, książkę i dzień tygodnia książki, tematy do pominięcia i materiał do rozgrzewki. Trzymaj się go razem z zasadami poniżej.
 3. **Zbierz wiadomości** z ostatnich 24–36 godzin (źródła niżej). Używaj WebSearch, a gdy sieć na to pozwala, także WebFetch i kanałów RSS.

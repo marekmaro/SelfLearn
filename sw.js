@@ -109,7 +109,12 @@ async function networkFirst(event, request, cacheName) {
   const cache = await caches.open(cacheName);
   try {
     const fresh = await fetch(request, { cache: 'no-cache' });
-    if (fresh.ok) event.waitUntil(cache.put(request, fresh.clone()).catch(() => {}));
+    if (fresh.ok) {
+      event.waitUntil(cache.put(request, fresh.clone()).catch(() => {}));
+      return fresh;
+    }
+    const cached = await cache.match(request, { ignoreSearch: true });
+    if (cached) return cached;
     return fresh;
   } catch (err) {
     const cached = await cache.match(request, { ignoreSearch: true });
@@ -172,6 +177,21 @@ function daysWord(n) {
   return n === 1 ? 'dzień' : 'dni';
 }
 
+function badgeCountForDate(meta, today) {
+  if (meta.notify?.badge === false) return 0;
+  const dueByDate = meta.badgeDueByDate;
+  let due = 0;
+  if (dueByDate && typeof dueByDate === 'object' && !Array.isArray(dueByDate)) {
+    for (const [date, count] of Object.entries(dueByDate)) {
+      if (date <= today) due += Math.max(0, Number(count) || 0);
+    }
+  } else {
+    const oldDaily = meta.activeOn ? 0 : 1;
+    due = Math.max(0, (Number(meta.badgeCount) || 0) - oldDaily);
+  }
+  return (meta.activeOn === today ? 0 : 1) + due;
+}
+
 async function todaysHeadline(today) {
   try {
     const url = new URL(`./content/editions/${today}.json`, self.registration.scope).href;
@@ -225,7 +245,13 @@ async function dailyCheck() {
       const tail = streak > 0 ? `Seria: ${streak} ${daysWord(streak)}. Nie przerywaj jej.` : '10–20 minut i dzień zaliczony.';
       await show('Wydanie na dziś jest gotowe', `${headline}\n${tail}`, 'selflearn-rano');
       sent.morning = today;
-      if (n.badge !== false && self.navigator.setAppBadge) self.navigator.setAppBadge(1).catch(() => {});
+      if (n.badge !== false && self.navigator.setAppBadge) {
+        try {
+          Promise.resolve(self.navigator.setAppBadge(badgeCountForDate(meta, today))).catch(() => {});
+        } catch {
+          // Plakietka nie jest obsługiwana przez każdą przeglądarkę.
+        }
+      }
     }
   }
   if (n.eveningOn && sent.evening !== today && minutes >= eveningAt) {

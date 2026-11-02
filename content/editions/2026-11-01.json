@@ -1,0 +1,446 @@
+{
+  "date": "2026-11-01",
+  "intro": "Dziś: ruszają nowe zasady zakładania firm i podatek od nadzwyczajnych zysków paliwowych, a na świecie kończy się misja ONZ na Saharze Zachodniej i rośnie presja na europejskie wybrzeża.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Nową firmę w CEIDG można założyć już tylko przez internet",
+      "summary": "Od 1 listopada pełnoletni przedsiębiorcy składają wniosek o rozpoczęcie działalności w CEIDG wyłącznie online. Można to zrobić przez Biznes.gov.pl, mObywatel lub współpracujące banki i platformy dla firm. Wyjątek dotyczy osób niepełnoletnich. Pozostałe sprawy w CEIDG nie przechodzą jeszcze w całości na tryb internetowy.",
+      "why": "To zmienia pierwszy krok dla osób rozpoczynających działalność. Warto odróżnić tę zmianę od kolejnych etapów cyfryzacji, które mają wejść w życie w 2028 roku.",
+      "sources": [
+        {
+          "name": "Ministerstwo Rozwoju i Technologii",
+          "url": "https://www.gov.pl/web/rozwoj-technologia/od-1-listopada-2026-r-firme-zalozysz-wylacznie-online/"
+        }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Wchodzi w życie 60-procentowy podatek od nadzwyczajnych zysków paliwowych",
+      "summary": "Od 1 listopada obowiązuje ustawa wprowadzająca podatek od nadzwyczajnych zysków ze sprzedaży paliw ciekłych. Stawka wynosi 60 proc. nadwyżki ponad poziom wyliczany według ustawowego punktu odniesienia. Przepisy obejmują wskazanych producentów paliw i firmy sprowadzające je do Polski, a rozliczenie dotyczy okresu od marca 2026 do marca 2027 roku.",
+      "why": "To element finansowania działań państwa związanych z rynkiem paliw. Samo wejście podatku w życie nie oznacza automatycznej zmiany cen na stacjach.",
+      "sources": [
+        {
+          "name": "Dziennik Ustaw (ELI)",
+          "url": "https://eli.gov.pl/eli/DU/2026/1287/ogl"
+        },
+        {
+          "name": "Money.pl",
+          "url": "https://www.money.pl/podatki/nadzwyczajne-zyski-z-paliw-nowy-podatek-wlasnie-wszedl-w-zycie-7346280564468192a.html"
+        }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "W całej Polsce zbierano datki na renowację zabytkowych grobów",
+      "summary": "W dniu Wszystkich Świętych wolontariusze kwestowali na zabytkowych cmentarzach m.in. w Krakowie, Szczecinie, Rzeszowie, Toruniu i Opolu. Na krakowskim Cmentarzu Rakowickim odbyła się 46. kwesta Obywatelskiego Komitetu Ratowania Krakowa. W 2025 roku zebrano tam 74 tysiące złotych, a datki wspierają odnawianie nagrobków i miejsc pamięci.",
+      "why": "Zbiórki pomagają zachować lokalne dziedzictwo, którego utrzymanie często nie mieści się w zwykłych budżetach rodzin i organizacji.",
+      "sources": [
+        {
+          "name": "Polska Agencja Prasowa",
+          "url": "https://infopakiety.pap.pl/aktualnosci/news,676665,polacy-kwestuja-na-zabytkowych-nekropoliach-datki-na-groby-pomniki-i"
+        }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "DevelopRes Rzeszów wygrał piąty mecz z rzędu w Tauron Lidze",
+      "summary": "Siatkarki DevelopResu pokonały 1 listopada BKS ZGO Bielsko-Biała 3:1. Wygrały dwa pierwsze sety po 25:21, przegrały trzeci 23:25 i zamknęły mecz wynikiem 25:16. Po pięciu kolejkach rzeszowianki pozostawały niepokonane i prowadziły w tabeli.",
+      "why": "Wynik umacnia pozycję Rzeszowa na początku sezonu, a przebieg meczu pokazuje, że rywalki zdołały przedłużyć spotkanie o czwartego seta.",
+      "sources": [
+        {
+          "name": "TVP3 Rzeszów",
+          "url": "https://rzeszow.tvp.pl/96251857/rzeszowskie-siatkarki-z-piatym-zwyciestwem-w-piatym-meczu-sezonu-tauron-ligi"
+        },
+        {
+          "name": "BKS ZGO Bielsko-Biała",
+          "url": "https://bkssa.pl/wydarzenia/ks-developres-rzeszow-vs-bks-zgo-bielsko-biala/"
+        }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Komisja Europejska zabrała głos w sporze o Trybunał Konstytucyjny",
+      "summary": "Po konfrontacji przed siedzibą Trybunału Konstytucyjnego Komisja Europejska przypomniała, że wybór ośmiu nowych członków Trybunału należy do konstytucyjnych kompetencji Sejmu. Rzecznik Komisji wskazał też na środki tymczasowe Europejskiego Trybunału Praw Człowieka dotyczące wykonywania obowiązków przez sędziów wybranych w marcu. Sędziowie TK w stanie spoczynku wyrazili odmienną ocenę wydarzeń i stwierdzili, że doszło do naruszenia trójpodziału władzy.",
+      "why": "Spór dotyczy tego, kto może wykonywać funkcje sędziowskie i jak zapewnić działanie Trybunału zgodnie z prawem. Przy relacjonowaniu sprawy ważne jest oddzielenie stanowisk instytucji od rozstrzygnięć sądowych.",
+      "sources": [
+        {
+          "name": "Euronews",
+          "url": "https://www.euronews.com/2026/11/01/eu-commission-polish-parliament-has-right-to-appoint-judges-to-the-constitutional-court"
+        },
+        {
+          "name": "Polska Agencja Prasowa",
+          "url": "https://infopakiety.pap.pl/aktualnosci/news,676679,sedziowie-tk-w-stanie-spoczynku-wyrazamy-sprzeciw-wobec-wydarzen-pod-tk"
+        }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Misja pokojowa ONZ na Saharze Zachodniej zakończyła działalność po 35 latach",
+      "summary": "1 listopada zakończyła się działalność misji ONZ monitorującej zawieszenie broni na Saharze Zachodniej. Jej koniec nastąpił po sporze w Radzie Bezpieczeństwa, gdzie Rosja zawetowała projekt rezolucji USA dotyczący przyszłości terytorium. Maroko popiera swoją suwerenność nad obszarem, a Front Polisario zabiega o niepodległość. ONZ rozpoczyna teraz likwidację misji i rozliczenie jej wyposażenia.",
+      "why": "Po 35 latach znika międzynarodowa obecność, która nadzorowała rozejm i miała pomóc w rozwiązaniu sporu. Przyszły status terytorium pozostaje nierozstrzygnięty.",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/030e303c58207060265d8748c1db3778"
+        }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Exit poll wskazał na prowadzenie Jotowej w drugiej turze w Bułgarii",
+      "summary": "Wieczorem 1 listopada sondaże exit poll wskazywały na prowadzenie pary urzędującej prezydent Iliany Jotowej i kandydata na wiceprezydenta Kiriła Wałczewa. Myara szacowała ich łączny wynik na 51 proc., a Alpha Research na 52,5 proc. Rywalizowała z parą Andriej Gyurov–Georgi Kandev. To wyniki sondaży przy lokalach, nie oficjalne rezultaty liczenia głosów.",
+      "why": "Exit poll daje szybki szacunek wieczorem wyborczym, ale nie zastępuje liczenia głosów.",
+      "sources": [
+        {
+          "name": "Radio Bulgaria (BNR)",
+          "url": "https://www.bnrnews.bg/en/post/551552/exit-poll-iliana-iotova-is-bulgarias-new-president"
+        }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "ONZ zażądała śledztwa po śmierci pracownika w jemeńskim areszcie Huti",
+      "summary": "ONZ poinformowała 1 listopada, że Mohammad el Shami, pracownik jej biura praw człowieka w Jemenie, zmarł w areszcie władz Huti. Był zatrzymany od czerwca 2024 roku; rodzina dowiedziała się o jego śmierci dopiero niedawno, a jej przyczyna nie została podana. Wysoki Komisarz ONZ ds. Praw Człowieka wezwał do niezależnego dochodzenia i uwolnienia pozostałych zatrzymanych pracowników.",
+      "why": "Sprawa zwraca uwagę na ryzyko dla pracowników organizacji humanitarnych i praw człowieka działających w Jemenie.",
+      "sources": [
+        {
+          "name": "ONZ w Jemenie",
+          "url": "https://yemen.un.org/en/325563-statement-attributable-spokesperson-secretary-general-death-ohchr-staff-member-detention"
+        },
+        {
+          "name": "Euronews",
+          "url": "https://www.euronews.com/2026/11/01/un-demands-investigation-after-death-of-staff-member-held-in-houthi-custody-in-yemen"
+        }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Erozja wybrzeży może kosztować Europę setki miliardów euro rocznie",
+      "summary": "Raport Rady Europy szacuje, że straty gospodarcze związane z erozją wybrzeży w 28 krajach przekraczają dziś miliard euro rocznie. Bez skutecznych działań mogą wzrosnąć do 800 miliardów euro rocznie pod koniec stulecia. Autorzy zalecają m.in. aktualizowanie map ryzyka, ograniczanie nowej zabudowy w zagrożonych miejscach i przygotowanie planów przenoszenia części infrastruktury.",
+      "why": "Zagrożone są domy, drogi, kolej i dziedzictwo kulturowe. Raport podkreśla, że decyzje o ochronie lub relokacji wymagają długiego planowania i konsultacji z mieszkańcami.",
+      "sources": [
+        {
+          "name": "Euronews",
+          "url": "https://www.euronews.com/2026/11/01/europes-crumbling-coastlines-face-a-800-billion-crisis-is-it-time-to-move-inland"
+        }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Sheila Chepkirui i Andreas Almgren wygrali maraton w Nowym Jorku",
+      "summary": "Kenijka Sheila Chepkirui zwyciężyła w biegu kobiet podczas maratonu w Nowym Jorku, uzyskując czas 2:24:36. Szwed Andreas Almgren wygrał rywalizację mężczyzn w swoim debiucie na tym dystansie. W zawodach wzięło udział około 60 tysięcy biegaczy.",
+      "why": "Almgren zdobył zwycięstwo w maratońskim debiucie, a Chepkirui wróciła na najwyższy stopień podium w Nowym Jorku po triumfie sprzed dwóch lat.",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/d0cb13c06ec5c5e72c40ae62b1e96218"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Iran uznał brytyjskie siły powietrzne i marynarkę za organizacje terrorystyczne",
+      "summary": "Irańska państwowa agencja IRNA podała 1 listopada, że Teheran uznał brytyjską marynarkę wojenną i siły powietrzne za organizacje terrorystyczne. Iran określił również MI6 jako wrogą służbę. Informacja pojawiła się w czasie napięć między Iranem a państwami zachodnimi.",
+      "why": "To kolejny ostry krok w retorycznym sporze Teheranu z Londynem. Warto odróżniać deklarację irańskich władz od niezależnej oceny działań brytyjskich sił.",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/b918f44d8f212d7daf7f2f9a98c91a0b"
+        }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Binance wznowiło wypłaty dla części klientów po ataku hakerskim",
+      "summary": "Giełda Binance poinformowała, że część klientów może ponownie wypłacać środki po cyberataku i czasowym wstrzymaniu wypłat. Według relacji PAP sprawcy mieli wyprowadzić aktywa warte około 6,3 miliarda dolarów. Odblokowanie dotyczyło tylko części użytkowników; firma nie ogłosiła wznowienia wszystkich wypłat.",
+      "why": "Incydent pokazuje, jak awaria bezpieczeństwa może ograniczyć dostęp klientów do ich środków, nawet gdy samo konto pozostaje dostępne.",
+      "sources": [
+        {
+          "name": "Polska Agencja Prasowa",
+          "url": "https://infopakiety.pap.pl/aktualnosci/news,676629,gielda-kryptowalut-binance-rozpoczela-wyplaty-po-ataku-hakerskim.html"
+        }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Ekspert ostrzega przed atakiem prompt injection na chatboty AI",
+      "summary": "Ekspert cyberbezpieczeństwa Kacper Szurek opisał PAP atak typu prompt injection, w którym odpowiednio spreparowane polecenie może skłonić słabo zabezpieczony chatbot do działania na niekorzyść firmy. Wśród przykładów wymienił ujawnienie danych lub usunięcie plików. To ostrzeżenie o możliwym scenariuszu, a nie informacja o konkretnym incydencie.",
+      "why": "Systemy AI połączone z firmowymi danymi lub narzędziami wymagają ograniczania uprawnień i sprawdzania, co mogą wykonać po otrzymaniu tekstu od użytkownika.",
+      "sources": [
+        {
+          "name": "Polska Agencja Prasowa",
+          "url": "https://infopakiety.pap.pl/aktualnosci/news,676652,ekspert-atak-na-czatbot-ai-moze-doprowadzic-do-strat-finansowych-firmy.html"
+        }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Szpitale zaczynają raportować NFZ godzinową obecność personelu medycznego",
+      "summary": "Od listopada szpitale przekazują NFZ dane o dniach i godzinach udzielania świadczeń przez personel medyczny. Pierwsze zestawienie za listopad mają wysłać do 20 grudnia. Szpitale mogą przesłać dane automatycznie z własnych systemów, zaimportować plik lub wpisać je w portalu Funduszu. Za brak raportowania grozi kara do 2 proc. wartości kontraktu.",
+      "why": "Zmiana ma ułatwić sprawdzanie, czy personel nie jest wykazywany jako pracujący w kilku placówkach w tym samym czasie.",
+      "sources": [
+        {
+          "name": "TVP3 Rzeszów",
+          "url": "https://rzeszow.tvp.pl/96244944/od-listopada-szpitale-maja-raportowac-do-nfz-godzinowy-czas-pracy-medykow"
+        }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "Budapeszt uczcił setną rocznicę śmierci Harry’ego Houdiniego",
+      "summary": "W Budapeszcie rozpoczął się czterodniowy program upamiętniający iluzjonistę i artystę ucieczek Harry’ego Houdiniego, urodzonego w tym mieście jako Erik Weisz. Wydarzenia obejmują festiwal filmowy, występy cyrkowe i odsłonięcie pamiątkowej płaskorzeźby. W obchodach uczestniczy także George Hardeen, wnuk brata Houdiniego.",
+      "why": "Program łączy kino, widowiska i historię miasta, przypominając postać, której sceniczny wizerunek był związany z ucieczkami i demaskowaniem spirytystycznych oszustw.",
+      "sources": [
+        {
+          "name": "Euronews",
+          "url": "https://www.euronews.com/2026/11/01/hooray-for-houdini-budapest-celebrates-100th-anniversary-of-escape-artists-death"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Panda ruda ma dodatkowy „kciuk” z kości nadgarstka",
+      "body": "Panda ruda ma powiększoną kość nadgarstka, która działa jak dodatkowy kciuk. Pomaga jej chwytać pędy bambusa podczas jedzenia. Do rozpoznawania zapachów używa spodniej strony języka, która pomaga przenosić cząsteczki do specjalnego narządu w jamie ustnej.",
+      "source": {
+        "name": "Smithsonian National Zoo",
+        "url": "https://nationalzoo.si.edu/animals/red-panda"
+      }
+    },
+    {
+      "id": "fact-2",
+      "kind": "nauka",
+      "title": "Muchołówka potrafi policzyć dotknięcia ofiary",
+      "body": "Muchołówka amerykańska zwykle zamyka pułapkę po dwóch szybkich pobudzeniach włosków czuciowych, następujących w odstępie do około 30 sekund. Każde pobudzenie wywołuje impuls elektryczny w roślinie. Sygnały uruchamiają falę wapniową, a po przekroczeniu progu pułapka się zatrzaskuje. Dalsze pobudzenia pomagają roślinie ocenić, czy warto wytwarzać enzymy trawienne.",
+      "source": {
+        "name": "Uniwersytet w Würzburgu",
+        "url": "https://www.uni-wuerzburg.de/en/news-and-events/news/detail/news/how-the-venus-flytrap-counts/"
+      }
+    },
+    {
+      "id": "fact-3",
+      "kind": "kosmos",
+      "title": "W świeżych gejzerach Enceladusa znaleziono złożone związki organiczne",
+      "body": "Analiza danych sondy Cassini wykazała w ziarnach lodu wyrzuconych z gejzerów Enceladusa kilka rodzajów związków organicznych. Cząstki pochodziły z podpowierzchniowego oceanu i zostały zebrane podczas przelotu sondy w 2008 roku. Wynik wskazuje na składniki przydatne do badań chemii przedbiologicznej, ale nie jest dowodem istnienia życia.",
+      "source": {
+        "name": "NASA",
+        "url": "https://www.nasa.gov/missions/cassini/nasa-cassini-study-finds-organics-fresh-from-ocean-of-enceladus/"
+      }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1918,
+      "title": "Rozpoczęły się walki o Lwów",
+      "body": "1 listopada 1918 roku, po rozpadzie Austro-Węgier, ukraińscy żołnierze przejęli we Lwowie kluczowe gmachy i ogłosili władzę Ukraińskiej Rady Narodowej. Polskie organizacje wojskowe rozpoczęły opór, a walki stały się częścią polsko-ukraińskiego konfliktu o Galicję Wschodnią. W kolejnych tygodniach kontrola nad miastem kilkakrotnie się zmieniała.",
+      "source": {
+        "name": "Instytut Pamięci Narodowej",
+        "url": "https://ipn.gov.pl/pl/historia-z-ipn/231299%2CArtur-Ochal-Walki-o-Lwow-i-w-Galicji-Wschodniej.html"
+      }
+    },
+    {
+      "id": "otd-2",
+      "year": 1512,
+      "title": "Papież Juliusz II odprawił mszę pod nowym freskiem Michała Anioła",
+      "body": "1 listopada 1512 roku papież Juliusz II odprawił mszę w Kaplicy Sykstyńskiej po ukończeniu dekoracji jej sklepienia przez Michała Anioła. Malowidło zostało w ten sposób po raz pierwszy pokazane publicznie. Dziś należy do najbardziej rozpoznawalnych dzieł renesansu.",
+      "source": {
+        "name": "Muzea Watykańskie",
+        "url": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/cappella-sistina/volta.html"
+      }
+    },
+    {
+      "id": "otd-3",
+      "year": 1755,
+      "title": "Trzęsienie ziemi zniszczyło Lizbonę",
+      "body": "1 listopada 1755 roku silne trzęsienie ziemi nawiedziło Lizbonę. Po wstrząsach miasto uderzyło tsunami, a pożary przez wiele dni niszczyły zabudowę. Katastrofa zabiła dziesiątki tysięcy osób i wywołała debatę w całej Europie o przyczynach klęsk i sposobach odbudowy.",
+      "source": {
+        "name": "Gabinet Studiów Olisiponenses miasta Lizbona",
+        "url": "https://geo.lisboa.pt/atividades-e-difusao/investigacao/detalhe/o-terramoto-de-1-de-novembro-de-1755"
+      }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Podstawowy błąd atrybucji",
+    "definition": "To skłonność do wyjaśniania czyjegoś zachowania jego charakterem, a pomijania wpływu sytuacji i okoliczności.",
+    "origin": "Termin spopularyzował amerykański psycholog społeczny Lee Ross w 1977 roku. Badania nad atrybucją pokazują, że obserwatorzy mogą zbyt szybko przypisywać zachowanie trwałym cechom osoby, nawet gdy znają ograniczenia, w jakich działała.",
+    "examples": [
+      "Ktoś spóźnia się na spotkanie i od razu uznajemy go za nieodpowiedzialnego, choć mógł utknąć w korku.",
+      "Kasjer obsługuje kolejkę powoli, więc oceniamy go jako leniwego, nie sprawdzając, czy właśnie awaria systemu utrudnia pracę.",
+      "Gdy chatbot usuwa plik po niebezpiecznym poleceniu, warto sprawdzić jego uprawnienia i zabezpieczenia, zanim przypiszemy winę wyłącznie modelowi lub jednej osobie."
+    ],
+    "source": {
+      "name": "APA Dictionary of Psychology",
+      "url": "https://dictionary.apa.org/fundamental-attribution-error"
+    }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "pulapki-myslenia",
+    "title": "Pułapki myślenia. O myśleniu szybkim i wolnym",
+    "author": "Daniel Kahneman",
+    "day": 1,
+    "days": 7,
+    "ideaTitle": "Dwa tryby myślenia: szybki i wolny",
+    "idea": "Kahneman opisuje myślenie za pomocą dwóch systemów. System 1 działa szybko i automatycznie: rozpoznaje znajome twarze, odczytuje emocje i podsuwa pierwsze skojarzenia. System 2 wymaga uwagi i wysiłku, dlatego włączamy go przy obliczeniach, planowaniu i sprawdzaniu trudnych wniosków. To nazwy dwóch sposobów działania umysłu, a nie osobnych części mózgu. System 1 pomaga reagować bez zwłoki, ale jego odpowiedzi bywają obciążone skrótami myślowymi; System 2 może je sprawdzić, o ile zauważymy, że warto się zatrzymać.",
+    "moral": "Pierwsze wrażenie bywa użyteczne, lecz nie zawsze wystarcza. Przy ważnych decyzjach warto dać sobie chwilę na sprawdzenie intuicyjnej odpowiedzi.",
+    "action": "Dziś przy jednej ważnej decyzji zapiszcie pierwszą intuicyjną odpowiedź, a potem przez dwie minuty sprawdźcie, jakie założenia i dowody za nią stoją.",
+    "source": {
+      "name": "Penguin Random House",
+      "url": "https://www.penguinrandomhouse.com/books/89308/thinking-fast-and-slow-by-daniel-kahneman/"
+    }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-01-q1",
+      "ref": "fact-1",
+      "question": "Czym jest dodatkowy „kciuk” pandy rudej?",
+      "options": [
+        "Pazurem wyrastającym z przedniej łapy",
+        "Powiększoną kością nadgarstka",
+        "Dodatkowym palcem połączonym z ogonem",
+        "Zrogowaciałą poduszką na łapie"
+      ],
+      "answer": 1,
+      "explanation": "To zmodyfikowana kość nadgarstka, która pomaga pandzie chwytać bambus."
+    },
+    {
+      "id": "2026-11-01-q2",
+      "ref": "fact-2",
+      "question": "Co zwykle uruchamia zatrzaśnięcie pułapki muchołówki?",
+      "options": [
+        "Dwa szybkie pobudzenia włosków czuciowych",
+        "Jedno długie dotknięcie liścia od zewnątrz",
+        "Zmiana temperatury powietrza",
+        "Zapach owada unoszący się nad rośliną"
+      ],
+      "answer": 0,
+      "explanation": "Dwa szybkie impulsy elektryczne zwiększają poziom wapnia w pułapce do progu, który uruchamia jej zamknięcie."
+    },
+    {
+      "id": "2026-11-01-q3",
+      "ref": "fact-3",
+      "question": "Co Cassini wykryła w świeżo wyrzuconych ziarnach lodu Enceladusa?",
+      "options": [
+        "Ślady metali ziem rzadkich",
+        "Złożone związki organiczne",
+        "Skamieniałe komórki",
+        "Czysty tlen w stanie ciekłym"
+      ],
+      "answer": 1,
+      "explanation": "W ziarnach lodu z gejzerów znaleziono związki organiczne, ale nie jest to dowód na istnienie życia."
+    },
+    {
+      "id": "2026-11-01-q4",
+      "ref": "otd-2",
+      "question": "Co wydarzyło się w Kaplicy Sykstyńskiej 1 listopada 1512 roku?",
+      "options": [
+        "Michał Anioł rozpoczął malowanie sklepienia",
+        "Papież odprawił mszę pod ukończonym freskiem",
+        "Odbyło się pierwsze konklawe w kaplicy",
+        "Został odsłonięty fresk „Sąd Ostateczny”"
+      ],
+      "answer": 1,
+      "explanation": "Juliusz II odprawił mszę w kaplicy, pokazując ukończone malowidło sklepienia."
+    },
+    {
+      "id": "2026-11-01-q5",
+      "ref": "concept",
+      "question": "Na czym polega podstawowy błąd atrybucji?",
+      "options": [
+        "Przypisywaniu zachowania osobie bez uwzględnienia sytuacji",
+        "Zakładaniu, że inni zgadzają się z naszym zdaniem",
+        "Zapamiętywaniu tylko informacji potwierdzających przekonania",
+        "Przecenianiu prawdopodobieństwa głośnych zdarzeń"
+      ],
+      "answer": 0,
+      "explanation": "Obserwatorzy mogą przeceniać wpływ cech osoby i nie doceniać okoliczności, w których działała."
+    },
+    {
+      "id": "2026-11-01-q6",
+      "ref": "book",
+      "question": "Który system u Kahnemana odpowiada za wolniejsze, wymagające uwagi rozumowanie?",
+      "options": [
+        "System 1",
+        "System 2",
+        "System odruchów",
+        "System pamięci długiej"
+      ],
+      "answer": 1,
+      "explanation": "System 2 jest wolniejszy i wymaga wysiłku, dlatego pomaga analizować i sprawdzać intuicyjne odpowiedzi."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-01-r1",
+      "question": "Dlaczego hemocyjanina dobrze sprawdza się u ośmiornic w zimnej wodzie?",
+      "options": [
+        "Skutecznie transportuje tlen także przy jego małej dostępności",
+        "Utrzymuje stałą temperaturę ciała",
+        "Pozwala magazynować tlen w skórze"
+      ],
+      "answer": 0,
+      "explanation": "Hemocyjanina transportuje tlen i działa szczególnie dobrze w zimnej wodzie oraz przy niskiej dostępności tlenu."
+    },
+    {
+      "id": "2026-11-01-r2",
+      "question": "Jakie cechy pomagają sośnie długowiecznej przetrwać przez tysiąclecia?",
+      "options": [
+        "Szybki wzrost w tropikalnym klimacie",
+        "Powolny wzrost i przystosowanie do trudnych warunków",
+        "Coroczne zrzucanie kory"
+      ],
+      "answer": 1,
+      "explanation": "Długowieczne sosny rosną powoli i są przystosowane do surowych warunków."
+    },
+    {
+      "id": "2026-11-01-r3",
+      "question": "Co pomaga ograniczyć wpływ efektu aureoli przy ocenianiu ludzi?",
+      "options": [
+        "Opieranie się na pierwszym wrażeniu",
+        "Oddzielanie pierwszego wrażenia od konkretnych dowodów",
+        "Ocenianie wszystkich według jednej cechy"
+      ],
+      "answer": 1,
+      "explanation": "Jedna zauważalna zaleta nie powinna zastępować oceny pozostałych cech na podstawie dowodów."
+    }
+  ],
+  "evening": {
+    "question": "W jakiej sytuacji w ostatnim czasie pierwsze wrażenie okazało się niepełne, gdy poznaliście więcej szczegółów?",
+    "hint": "Możecie pomyśleć o krótkiej rozmowie, zachowaniu w pracy albo nagłówku, który zmienił znaczenie po przeczytaniu całego tekstu."
+  }
+}

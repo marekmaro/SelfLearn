@@ -128,6 +128,18 @@ export function eveningText({ streakDays }) {
     : { title: 'Minuta nauki przed snem?', body: 'Rozgrzewka z wczorajszej wiedzy zaczyna nową serię.' };
 }
 
+// Liczba zadań widoczna na ikonie aplikacji.
+export function pendingBadgeCount({ enabled = true, active = false, due = 0 } = {}) {
+  return enabled ? (active ? 0 : 1) + Math.max(0, Number(due) || 0) : 0;
+}
+
+export function dueCountByDate(deck) {
+  return Object.values(deck || {}).reduce((counts, card) => {
+    if (typeof card?.due === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(card.due)) counts[card.due] = (counts[card.due] || 0) + 1;
+    return counts;
+  }, {});
+}
+
 export async function testNotification() {
   const { title, body } = morningText({ headline: 'Tak będzie wyglądać poranne przypomnienie.', streakDays: streak() });
   const options = { body, icon: 'assets/logo-192.png', badge: 'assets/logo-badge-96.png', tag: 'selflearn-test', lang: 'pl', data: { url: './#dzis' } };
@@ -153,6 +165,8 @@ export async function syncMeta() {
       activeOn: isActive(today) ? today : null,
       streak: s,
       streakEnd,
+      badgeCount: pendingBadgeCount({ enabled: getNotify().badge, active: isActive(today), due: dueCards(getState().deck, today).length }),
+      badgeDueByDate: dueCountByDate(getState().deck),
       updatedAt: new Date().toISOString(),
     };
     await cache.put(META_URL, new Response(JSON.stringify(meta), { headers: { 'Content-Type': 'application/json' } }));
@@ -163,11 +177,15 @@ export async function syncMeta() {
 
 // Plakietka na ikonie aplikacji: dzisiejsza nauka (jeśli jeszcze nie było) + powtórki do zrobienia.
 export function updateAppBadge() {
-  if (!('setAppBadge' in navigator)) return;
+  if (typeof navigator.setAppBadge !== 'function') return;
   const n = getNotify();
-  const count = n.badge ? (isActive() ? 0 : 1) + dueCards(getState().deck, todayISO()).length : 0;
-  const op = count ? navigator.setAppBadge(count) : navigator.clearAppBadge();
-  op?.catch?.(() => {});
+  const count = pendingBadgeCount({ enabled: n.badge, active: isActive(), due: dueCards(getState().deck, todayISO()).length });
+  try {
+    const op = count ? navigator.setAppBadge(count) : navigator.clearAppBadge?.();
+    op?.catch?.(() => {});
+  } catch {
+    // Błąd plakietki nie może przerwać odświeżenia aplikacji.
+  }
 }
 
 export function refreshReminders() {

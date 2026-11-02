@@ -1,0 +1,43 @@
+{
+  "cli_version": "0.12.2",
+  "checkpoint_id": "01M6DYJ5YA3XVYM0MFRQBKF10Y",
+  "strategy": "manual-commit",
+  "branch": "fix/audit-findings",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "scripts/selftest.mjs",
+    "src/notify.js",
+    "sw.js"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 36936,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 1121408,
+    "output_tokens": 15535,
+    "api_call_count": 11,
+    "subagent_tokens_complete": true
+  },
+  "redaction": {
+    "replacements": 120,
+    "layers": {
+      "betterleaks": 1,
+      "connection_string": 0,
+      "credential_key": 0,
+      "credential_value": 0,
+      "credentialed_uri": 0,
+      "entropy": 158,
+      "key_context": 0,
+      "provider_token": 1,
+      "shell_stdin": 0
+    }
+  }
+}

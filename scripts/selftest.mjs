@@ -15,9 +15,9 @@ import { weekEnd, weekDates, weekBannerDue, weekSummary, weekQuiz } from '../src
 import { deepenPrompt, deepenUrl, DEEPEN_MODES } from '../src/deepen.js';
 import { threadSlug, editionThreads, threadsFromIndex, recentThreadNames } from '../src/threads.js';
 import { indexEntry, repeatedMaterial } from '../src/edition.js';
-import { morningWindowEnd, remindersOverlap } from '../src/notify.js';
+import { morningWindowEnd, remindersOverlap, pendingBadgeCount } from '../src/notify.js';
 import { safePath } from './serve.mjs';
-import { splitText, startIndex, recordingSegments, segmentAt, selectionLength, toSelection, fromSelection, pickEngine, clock, LECTORS, savedLector, saveLector, savedVoice, savedRecorded, pickRecording, pickPolish, savePhoneVoice } from '../src/listen.js';
+import { splitText, startIndex, recordingSegments, segmentAt, selectionLength, toSelection, fromSelection, pickEngine, clock, LECTORS, savedLector, saveLector, savedVoice, savedRecorded, pickRecording, pickPolish, savePhoneVoice, recordingUrl } from '../src/listen.js';
 import { yearOrdinal } from '../src/speech-text.js';
 import { parseEditionHash, readerHref } from '../src/data.js';
 import { chapterPreview } from '../src/chapters.js';
@@ -343,6 +343,13 @@ test('Przypomnienia: wieczór przed porankiem nie blokuje porannego', () => {
   assert(!remindersOverlap({ morning: '07:30', evening: '20:30', eveningOn: true }), 'fałszywe ostrzeżenie');
 });
 
+test('Plakietka: stan bieżącej nauki i powtórki są liczone również w tle', () => {
+  assert(pendingBadgeCount({ active: false, due: 4 }) === 5, 'nowy dzień i cztery powtórki');
+  assert(pendingBadgeCount({ active: true, due: 4 }) === 4, 'po zaliczeniu dnia zostają powtórki');
+  assert(pendingBadgeCount({ active: true, due: 0 }) === 0, 'wyczyszczona plakietka');
+  assert(pendingBadgeCount({ enabled: false, active: false, due: 4 }) === 0, 'wyłączona plakietka');
+});
+
 test('Kopia danych: przypomnienie po tygodniu, „Później” odkłada je o tydzień', () => {
   resetAll();
   assert(!backupDue('2026-10-22'), 'przypomnienie bez żadnych postępów');
@@ -552,6 +559,9 @@ test('Wybór lektora: nagrania kilku głosów i głos telefonu', () => {
   // Pliki nagrań: głos domyślny bez dopisku (jak dotąd), pozostałe z nazwą głosu.
   assert(voiceId('pl_PL-gosia-medium') === 'gosia' && voiceId('pl_PL-darkman-medium') === 'darkman' && voiceId('v1') === 'gosia', 'nazwa głosu z modelu Piper');
   assert(audioBase('2026-10-30') === '2026-10-30' && audioBase('2026-10-30', 'darkman') === '2026-10-30-darkman', 'nazwy plików nagrań');
+  const recording = { url: 'audio/2026-10-30.mp3', source: 'https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-10-30.mp3' };
+  assert(recordingUrl(recording, 'marekmaro.github.io') === recording.source, 'GitHub Pages używa MP3 z wydania');
+  assert(recordingUrl(recording, 'selflearn.example') === recording.url, 'pozostałe hostingi używają lokalnego MP3');
   // Ten sam lektor w aplikacji i w nagraniach.
   assert(LECTORS.map((l) => l.value).join() === 'nagranie:gosia,nagranie:darkman,telefon', LECTORS.map((l) => l.value).join());
   assert(savedLector() === 'nagranie:gosia', 'domyślnie lektorka z nagrania');

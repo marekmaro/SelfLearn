@@ -109,7 +109,12 @@ async function networkFirst(event, request, cacheName) {
   const cache = await caches.open(cacheName);
   try {
     const fresh = await fetch(request, { cache: 'no-cache' });
-    if (fresh.ok) event.waitUntil(cache.put(request, fresh.clone()).catch(() => {}));
+    if (fresh.ok) {
+      event.waitUntil(cache.put(request, fresh.clone()).catch(() => {}));
+      return fresh;
+    }
+    const cached = await cache.match(request, { ignoreSearch: true });
+    if (cached) return cached;
     return fresh;
   } catch (err) {
     const cached = await cache.match(request, { ignoreSearch: true });
@@ -225,7 +230,13 @@ async function dailyCheck() {
       const tail = streak > 0 ? `Seria: ${streak} ${daysWord(streak)}. Nie przerywaj jej.` : '10–20 minut i dzień zaliczony.';
       await show('Wydanie na dziś jest gotowe', `${headline}\n${tail}`, 'selflearn-rano');
       sent.morning = today;
-      if (n.badge !== false && self.navigator.setAppBadge) self.navigator.setAppBadge(1).catch(() => {});
+      if (n.badge !== false && self.navigator.setAppBadge) {
+        try {
+          Promise.resolve(self.navigator.setAppBadge(Math.max(1, Number(meta.badgeCount) || 1))).catch(() => {});
+        } catch {
+          // Plakietka nie jest obsługiwana przez każdą przeglądarkę.
+        }
+      }
     }
   }
   if (n.eveningOn && sent.evening !== today && minutes >= eveningAt) {

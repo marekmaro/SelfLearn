@@ -59,7 +59,22 @@ npm run check        # odbudowuje content/index.json i sprawdza wszystkie wydani
 
 Wystarczy Node.js 18 lub nowszy, bez instalowania zależności. Działa na Linuksie, macOS i Windowsie.
 
-Serwer podglądu słucha tylko na tym komputerze i wydaje wyłącznie pliki aplikacji (te same, które trafiają na stronę), więc `.git` i skrypty zostają niedostępne. Żeby otworzyć podgląd na telefonie w tej samej sieci Wi-Fi, uruchom go z `HOST=0.0.0.0 npm start` i wejdź na adres komputera, np. `http://192.168.1.20:8080`.
+W Windows PowerShell polecenia npm można uruchamiać przez `npm.cmd` (np. `npm.cmd start` i `npm.cmd run check`), gdy polityka wykonywania blokuje skrypt `npm.ps1`.
+
+Serwer podglądu słucha tylko na tym komputerze i wydaje wyłącznie pliki aplikacji (te same, które trafiają na stronę), więc `.git` i skrypty zostają niedostępne. Żeby otworzyć podgląd na telefonie w tej samej sieci Wi-Fi, ustaw `HOST` i uruchom serwer:
+
+```bash
+# macOS / Linux
+HOST=0.0.0.0 npm start
+```
+
+```powershell
+# Windows PowerShell
+$env:HOST = '0.0.0.0'
+npm.cmd start
+```
+
+Potem wejdź na adres komputera, np. `http://192.168.1.20:8080`.
 
 ## Publikacja (jednorazowo)
 
@@ -135,7 +150,7 @@ Alternatywa: GitHub Actions + API Claude (płatne osobno, kilka dolarów miesię
 
 ## Nagrania lektora
 
-`.github/workflows/audio.yml` po każdym nowym albo zmienionym wydaniu na `main` nagrywa je głosami Piper z listy `VOICES` (lektorka `pl_PL-gosia-medium` i lektor `pl_PL-darkman-medium`) przez `scripts/make-audio.mjs`. MP3 trafia do wydania (release) „lektor” na GitHubie, czyli poza historię repozytorium, a czasy fragmentów do `content/audio/RRRR-MM-DD.json` (głos domyślny) i `content/audio/RRRR-MM-DD-darkman.json` (pozostałe głosy, z nazwą w pliku). Ten commit uruchamia wdrożenie na Vercelu, a `scripts/build-site.mjs` pobiera wtedy MP3 z ostatnich 10 dni każdego lektora do `public/audio/`, więc aplikacja serwuje nagrania z własnego adresu (iPhone potrzebuje właściwego typu pliku i przewijania). Nagranie dowolnego dnia od nowa: Actions → „Lektor (nagrania MP3)” → Run workflow → data. Zmiana tekstu dla lektora (`src/speech-text.js`) nagrywa ostatnie wydania od nowa. Lepszy głos (np. Google lub Azure) wymaga tylko zmiany polecenia `--tts` w workflow.
+`.github/workflows/audio.yml` po każdym nowym albo zmienionym wydaniu na `main` nagrywa je głosami Piper z listy `VOICES` (lektorka `pl_PL-gosia-medium` i lektor `pl_PL-darkman-medium`) przez `scripts/make-audio.mjs`. MP3 trafia do wydania (release) „lektor” na GitHubie, czyli poza historię repozytorium, a czasy fragmentów do `content/audio/RRRR-MM-DD.json` (głos domyślny) i `content/audio/RRRR-MM-DD-darkman.json` (pozostałe głosy, z nazwą w pliku). Na GitHub Pages odtwarzacz korzysta bezpośrednio z publicznego pliku MP3 w tym wydaniu. Vercel pobiera nagrania z ostatnich 10 dni każdego lektora do `public/audio/`, więc serwuje je z własnego adresu (iPhone potrzebuje właściwego typu pliku i przewijania). Nagranie dowolnego dnia od nowa: Actions → „Lektor (nagrania MP3)” → Run workflow → data. Zmiana tekstu dla lektora (`src/speech-text.js`) nagrywa ostatnie wydania od nowa. Lepszy głos (np. Google lub Azure) wymaga tylko zmiany polecenia `--tts` w workflow.
 
 ## Struktura
 

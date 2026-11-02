@@ -17,7 +17,12 @@ async function getJSON(url) {
     res = await cachedResponse(url);
     if (!res) throw err;
   }
-  if (!res.ok) throw new Error(`Nie udało się pobrać ${url} (${res.status})`);
+  if (!res.ok) {
+    // Błąd HTTP (np. 503) też nie powinien zasłaniać wydania zapisanego offline.
+    const cached = await cachedResponse(url);
+    if (cached) res = cached;
+    else throw new Error(`Nie udało się pobrać ${url} (${res.status})`);
+  }
   return res.json();
 }
 

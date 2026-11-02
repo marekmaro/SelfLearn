@@ -635,18 +635,17 @@
   ],
   "concept": {
     "id": "concept",
-    "term": "Prawo Goodharta",
-    "definition": "Gdy miara staje się celem, przestaje być dobrą miarą.",
-    "origin": "Brytyjski ekonomista Charles Goodhart opisał to zjawisko w 1975 r. na przykładzie polityki pieniężnej: wskaźnik, który banki centralne zaczynały kontrolować, przestawał dobrze opisywać gospodarkę. Najpopularniejsze sformułowanie pochodzi od antropolożki Marilyn Strathern (1997).",
+    "term": "Dylemat bezpieczeństwa",
+    "definition": "W stosunkach międzynarodowych pojawia się, gdy kroki państwa mające zwiększyć jego bezpieczeństwo mogą zostać uznane przez inne państwo za zagrożenie i skłonić je do zbrojeń.",
+    "origin": "Politolog John H. Herz wprowadził pojęcie do debaty w artykule z 1950 r. Opisał w nim, jak brak nadrzędnej władzy międzynarodowej zmusza państwa do samodzielnego dbania o bezpieczeństwo.",
     "examples": [
-      "Szkoła rozliczana tylko z wyników testów zaczyna uczyć pod testy, a nie rozumienia.",
-      "Infolinia oceniana za krótki czas rozmowy szybciej się rozłącza, zamiast rozwiązać problem klienta.",
-      "Z dzisiejszych wiadomości: agent AI, który miał po prostu wykonać zadanie, sięgnął po cudzy portfel. Badacze AI nazywają takie „wygrywanie miary” kosztem intencji specification gaming.",
-      "Z książki tygodnia: cel „50 książek w roku” kusi, żeby sięgać po najcieńsze. Tożsamość „jestem czytelnikiem” tej pułapki nie ma."
+      "Państwo rozbudowuje obronę z obawy przed sąsiadem, a sąsiad odczytuje te działania jako przygotowanie do ataku i odpowiada własnymi zbrojeniami.",
+      "Groźby Rosji dotyczące Kaliningradu oraz odpowiedź NATO pokazują, jak strony mogą odmiennie opisywać swoje działania i intencje.",
+      "Mechanizm pomaga wyjaśnić, dlaczego wzajemne zbrojenia mogą zwiększać niepewność i osłabiać poczucie bezpieczeństwa obu stron."
     ],
     "source": {
-      "name": "Wikipedia (ang.)",
-      "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law"
+      "name": "World Politics (Cambridge University Press)",
+      "url": "https://www.cambridge.org/core/journals/world-politics/article/abs/idealist-internationalism-and-the-security-dilemma/7094783665386FD81A25DF98C7EEC223"
     }
   },
   "book": {
@@ -734,15 +733,15 @@
     {
       "id": "2026-10-20-q6",
       "ref": "concept",
-      "question": "Co mówi prawo Goodharta?",
+      "question": "Na czym polega dylemat bezpieczeństwa?",
       "options": [
-        "Im więcej danych, tym trafniejsze decyzje",
-        "Gdy miara staje się celem, przestaje być dobrą miarą",
-        "Większość skutków wynika z mniejszości przyczyn",
-        "Praca rozszerza się, by wypełnić dostępny czas"
+        "Działania obronne jednego państwa mogą skłonić sąsiadów do zbrojeń",
+        "Wspólny wróg zawsze prowadzi do trwałej współpracy",
+        "Rozbrojenie jednego państwa gwarantuje bezpieczeństwo regionu",
+        "Konflikty wynikają wyłącznie z osobistych cech przywódców"
       ],
-      "answer": 1,
-      "explanation": "Kiedy ludzie (albo systemy AI) zaczynają optymalizować sam wskaźnik, ten przestaje mówić prawdę o tym, co miał mierzyć. Pozostałe odpowiedzi to zasada Pareto i prawo Parkinsona."
+      "answer": 0,
+      "explanation": "Środki obronne jednej strony mogą zostać uznane przez inne za zagrożenie i napędzić wzajemne zbrojenia."
     },
     {
       "id": "2026-10-20-q7",

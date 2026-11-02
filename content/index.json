@@ -1,6 +1,16 @@
 {
   "editions": [
     {
+      "date": "2026-11-01",
+      "headline": "Nową firmę w CEIDG można założyć już tylko przez internet",
+      "facts": [
+        "Panda ruda ma dodatkowy „kciuk” z kości nadgarstka",
+        "Muchołówka potrafi policzyć dotknięcia ofiary",
+        "W świeżych gejzerach Enceladusa znaleziono złożone związki organiczne"
+      ],
+      "concept": "Podstawowy błąd atrybucji"
+    },
+    {
       "date": "2026-10-31",
       "headline": "W Gdańsku otwarto terminal dla morskich farm wiatrowych",
       "facts": [
@@ -272,7 +282,7 @@
         "Kleopatra żyła bliżej lądowania na Księżycu niż budowy piramidy Cheopsa",
         "Grzyby są bliżej spokrewnione z nami niż z roślinami"
       ],
-      "concept": "Prawo Goodharta"
+      "concept": "Dylemat bezpieczeństwa"
     },
     {
       "date": "2026-10-19",

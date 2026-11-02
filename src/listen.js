@@ -451,6 +451,11 @@ export async function startListening(items, opts = {}) {
 // Opis nagrania wczytany raz na wydanie (przy przechodzeniu między rozdziałami nie pytamy serwera od nowa).
 const recordings = new Map();
 
+// GitHub Pages nie zawiera katalogu audio/: nagrania są publicznymi zasobami wydania „lektor”.
+export function recordingUrl(info, hostname = globalThis.location?.hostname || '') {
+  return hostname.endsWith('.github.io') && info?.source ? info.source : info?.url;
+}
+
 // Głos domyślny ma pliki RRRR-MM-DD.*, pozostałe RRRR-MM-DD-<głos>.* (jak w scripts/make-audio.mjs).
 export function loadRecording(date, id = DEFAULT_RECORDED) {
   const base = id === DEFAULT_RECORDED ? date : `${date}-${id}`;
@@ -459,7 +464,10 @@ export function loadRecording(date, id = DEFAULT_RECORDED) {
       base,
       fetch(`content/audio/${base}.json`, { cache: 'no-cache' })
         .then((res) => (res.ok ? res.json() : null))
-        .then((info) => (info?.url && Array.isArray(info.items) && info.items.length ? info : null))
+        .then((info) => {
+          const url = recordingUrl(info);
+          return url && Array.isArray(info.items) && info.items.length ? { ...info, url } : null;
+        })
         .catch(() => {
           recordings.delete(base);
           return null;

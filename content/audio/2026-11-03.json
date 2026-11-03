@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-03",
+  "file": "2026-11-03.mp3",
+  "url": "audio/2026-11-03.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-03.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "a62740f38211cae0",
+  "duration": 984.67,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 16.21
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Policja wzmacnia ochronę granicy z obwodem kaliningradzkim",
+      "start": 16.91,
+      "end": 59
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Nowe zasady przeciwdziałania mobbingowi wejdą w życie 5 listopada",
+      "start": 59.7,
+      "end": 98.54
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Bilety kolejowe Opole–Nysa tanieją po powrocie pociągów",
+      "start": 99.24,
+      "end": 137.18
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Unijna opłata za zakupy spoza UE obowiązuje od 1 listopada",
+      "start": 137.88,
+      "end": 180.17
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Średnie zadłużenie w bazie ERIF wzrosło o prawie 1090 zł",
+      "start": 180.87,
+      "end": 224.2
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "USA potwierdziły ograniczone uderzenia w irańskie cele w cieśninie Ormuz",
+      "start": 225.4,
+      "end": 270.68
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Ulewy i powodzie na południowym zachodzie USA wymusiły ewakuacje",
+      "start": 271.38,
+      "end": 318.22
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Bułgaria: Iliana Yotova wygrała wybory prezydenckie",
+      "start": 318.92,
+      "end": 360.83
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Ryanair przewiduje możliwy wzrost cen biletów w Europie w 2027 roku",
+      "start": 361.53,
+      "end": 404.23
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Amerykańskie indeksy giełdowe zakończyły poniedziałek na różnych poziomach",
+      "start": 404.93,
+      "end": 448.14
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Brytyjski NCSC ostrzega przed atakami ransomware wspieranymi przez AI",
+      "start": 449.34,
+      "end": 499.59
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "29 trustów NHS kwestionuje wykazywane korzyści z platformy Palantira",
+      "start": 500.29,
+      "end": 550.23
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Anthropic ujawnił wysokie przychody i straty w nowym prospekcie IPO",
+      "start": 550.93,
+      "end": 603.17
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "W stanie Waszyngton zmarła osoba zakażona ptasią grypą H5N1",
+      "start": 603.87,
+      "end": 646.94
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "„The Debut” Jessego Eisenberga otworzy festiwal w Marrakeszu",
+      "start": 647.64,
+      "end": 691.28
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Przez ciało przechodzą biliony neutrin, ale niemal nie wchodzą w reakcje",
+      "start": 692.48,
+      "end": 717.12
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Różowe pióra flamingów barwią związki z pożywienia",
+      "start": 717.82,
+      "end": 742.29
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Na biegunie Saturna wiruje olbrzymi sześciokątny prąd atmosferyczny",
+      "start": 742.99,
+      "end": 771.45
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1943: Akcja „Erntefest” na Majdanku",
+      "start": 772.65,
+      "end": 796.94
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1957: Sputnik 2 poleciał w kosmos z Łajką na pokładzie",
+      "start": 797.64,
+      "end": 820.24
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1903: Panama ogłosiła niepodległość od Kolumbii",
+      "start": 820.94,
+      "end": 840.98
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Błąd koniunkcji",
+      "start": 842.18,
+      "end": 898.58
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Pułapki myślenia. O myśleniu szybkim i wolnym: Mała próba częściej daje skrajny wynik",
+      "start": 899.78,
+      "end": 966.51
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 967.71,
+      "end": 984.17
+    }
+  ]
+}

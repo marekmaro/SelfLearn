@@ -1,0 +1,454 @@
+{
+  "date": "2026-11-03",
+  "intro": "Dziś m.in.: nowe ostrzeżenia o sabotażu przy polskiej granicy, zmiany w przepisach o mobbingu, niższe ceny biletów na trasie Opole–Nysa i kolejne napięcia wokół cieśniny Ormuz.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Policja wzmacnia ochronę granicy z obwodem kaliningradzkim",
+      "summary": "Policja skierowała dodatkowe siły, w tym funkcjonariuszy oddziałów kontrterrorystycznych, do rejonu granicy z rosyjskim obwodem kaliningradzkim. Komendant główny potwierdził, że działania są odpowiedzią na informacje o możliwych aktach sabotażu; szczegółów ani źródła ostrzeżenia nie ujawniono. Policja współpracuje przy operacji z wojskiem, Strażą Graniczną i służbami.",
+      "why": "To informacja o działaniach zapobiegawczych, a nie o potwierdzonym ataku. Pokazuje, jak służby reagują na doniesienia o zagrożeniu infrastruktury.",
+      "sources": [
+        {
+          "name": "Notes from Poland",
+          "url": "https://notesfrompoland.com/2026/11/02/poland-launches-operation-along-russian-border-in-response-to-reports-of-planned-sabotage/"
+        }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Nowe zasady przeciwdziałania mobbingowi wejdą w życie 5 listopada",
+      "summary": "5 listopada zacznie obowiązywać nowelizacja Kodeksu pracy upraszczająca definicję mobbingu. Pracownik nie będzie musiał wykazywać długotrwałości zachowań, ale nadal istotna będzie ich uporczywość; pojedynczy incydent co do zasady nie wystarczy. Pracodawcy mają tworzyć środowisko wolne od nadużyć i wdrożyć skuteczne sposoby zapobiegania nieprawidłowościom.",
+      "why": "Zmiany mają znaczenie dla osób zgłaszających nękanie i dla procedur w firmach. Wewnętrzne regulacje pracodawcy trzeba dostosować do 5 maja 2027 r.",
+      "sources": [
+        {
+          "name": "RMF24",
+          "url": "https://www.rmf24.pl/fakty/polska/news-nowa-definicja-mobbingu-wyzsze-zadoscuczynienia-wchodza-rewo%2CnIdn%2C1024330"
+        },
+        {
+          "name": "Serwis Służby Cywilnej",
+          "url": "https://www.gov.pl/web/sluzbacywilna/nowe-przepisy-o-mobbingu"
+        }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Bilety kolejowe Opole–Nysa tanieją po powrocie pociągów",
+      "summary": "Od 2 listopada na trasie Opole–Nysa obowiązuje oferta „Bilet dobrych relacji”. Normalny bilet jednorazowy kosztuje maksymalnie 15 zł zamiast 20,50 zł, a miesięczny 319 zł zamiast 398 zł. Oferta ma obowiązywać do 12 grudnia; pasażerowie zachowują ustawowe ulgi.",
+      "why": "Zmiana obniża koszt regularnych podróży między Opolem a Nysą. Może być szczególnie odczuwalna dla osób dojeżdżających do pracy lub szkoły.",
+      "sources": [
+        {
+          "name": "Radio Doxa",
+          "url": "https://doxa.fm/aktualnosci/region/tansze-bilety-na-trasie-opole-nysa/"
+        },
+        {
+          "name": "NaKolei.pl",
+          "url": "https://www.nakolei.pl/bilet-dobrych-relacji-z-opola-do-nysy/"
+        }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Unijna opłata za zakupy spoza UE obowiązuje od 1 listopada",
+      "summary": "Od 1 listopada przy odprawie internetowych zakupów wysyłanych spoza Unii obowiązuje unijna opłata manipulacyjna w wysokości 2 euro za pozycję towarową. Opłatę wnosi podmiot składający zgłoszenie celne, który może przenieść jej koszt na kupującego. Kilka identycznych produktów może stanowić jedną pozycję, natomiast różne kategorie towarów mogą być liczone osobno.",
+      "why": "Końcowa cena zamówienia może zależeć od miejsca nadania i sposobu rozliczenia opłaty przez platformę. Opłata manipulacyjna jest odrębna od cła i VAT.",
+      "sources": [
+        {
+          "name": "Poczta Polska",
+          "url": "https://www.poczta-polska.pl/news/kupujesz-przez-internet-towary-spoza-unii-europejskiej-od-1-listopada-2026-r-pojawi-sie-nowa-oplata/"
+        },
+        {
+          "name": "Dutch Customs",
+          "url": "https://www.douane.nl/en/themes/online-shopping-and-parcels/order-online-outside-the-netherlands/extra-costs-online-orders/"
+        }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Średnie zadłużenie w bazie ERIF wzrosło o prawie 1090 zł",
+      "summary": "Według danych ERIF BIG opublikowanych 2 listopada przeciętne zadłużenie przypadające na osobę ujętą w bazie wzrosło w rok o prawie 1090 zł, do 23 557 zł. Najczęściej zgłaszane zaległości dotyczyły usług multimedialnych, takich jak telefon i internet, oraz zakupów ratalnych. Dane opisują zobowiązania zgłoszone do rejestru, a nie zadłużenie wszystkich mieszkańców Polski.",
+      "why": "Zestawienie pokazuje skalę zaległych zobowiązań widocznych w rejestrze. Warto pamiętać, że nie jest to miara sytuacji finansowej każdego gospodarstwa domowego.",
+      "sources": [
+        {
+          "name": "netTG.pl",
+          "url": "https://nettg.pl/w-ciagu-roku-sredni-dlug-polakow-wzrosl-o-prawie-1090-zl"
+        }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "USA potwierdziły ograniczone uderzenia w irańskie cele w cieśninie Ormuz",
+      "summary": "2 listopada amerykański urzędnik potwierdził, że USA przeprowadziły w rejonie cieśniny Ormuz ograniczone uderzenia określane jako obronne. Według strony amerykańskiej celem były irańskie wyrzutnie przeciwlotnicze użyte przeciw amerykańskim obiektom; irańska telewizja państwowa informowała o wybuchach na wyspie Keszm. Równolegle Iran przedstawił plan ponownego otwarcia cieśniny i wznowienia rozmów nuklearnych.",
+      "why": "Cieśnina Ormuz jest ważnym szlakiem przewozu ropy, więc eskalacja może oddziaływać na żeglugę i ceny energii. W sprawie trwają rozmowy dyplomatyczne, a sytuacja pozostaje zmienna.",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/b4519ef86bafe2672e0855d7a48ce309"
+        },
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/8722c8b5a9deb228e7a188d4760ea8ed"
+        }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Ulewy i powodzie na południowym zachodzie USA wymusiły ewakuacje",
+      "summary": "Po gwałtownych ulewach na południowym zachodzie USA służby nadal ostrzegały przed lokalnymi podtopieniami; jedna osoba zginęła, a setki mieszkańców musiały się ewakuować. AP podała, że w rejonie Four Corners i Nevady w ciągu dwóch tygodni spadło ponad 20 bilionów galonów wody. Eksperci łączą część wilgotnego wzorca z silnym El Niño, ale wskazują, że pojedynczej powodzi nie można przypisać wyłącznie temu zjawisku.",
+      "why": "Powodzie zagrażają ludziom i infrastrukturze także na obszarach zwykle suchych. Informacja o El Niño opisuje szersze warunki pogodowe, a nie samodzielną przyczynę każdego zdarzenia.",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/ee6777f8b21234d2243998b66294b92b"
+        },
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/88cf0ddc26d3ec7e40941fb437f9a4e8"
+        }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Bułgaria: Iliana Yotova wygrała wybory prezydenckie",
+      "summary": "Po przeliczeniu wszystkich głosów Centralna Komisja Wyborcza podała, że Iliana Yotova zdobyła 57,6 proc., a jej rywal Andrey Gyurov 39,5 proc. Yotova, dotychczas pełniąca obowiązki prezydenta, została pierwszą kobietą wybraną na ten urząd w Bułgarii. Po ogłoszeniu wyniku zapowiedziała, że będzie zabiegać o porozumienie ponad podziałami.",
+      "why": "Oficjalny wynik zamyka wybory, o których dzień wcześniej informowano na podstawie exit poll. Prezydentura w Bułgarii ma także znaczenie dla kierunku współpracy kraju z partnerami europejskimi.",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/4399cd35399fd796bbbc3a5c6611fbd1"
+        }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Ryanair przewiduje możliwy wzrost cen biletów w Europie w 2027 roku",
+      "summary": "Prezes Ryanaira Michael O’Leary ocenił, że europejskie ceny biletów mogą w przyszłym roku wzrosnąć nawet o 20 proc. z powodu drożejącego paliwa lotniczego. Przewoźnik nie zakłada pełnego przeniesienia wzrostu kosztów na pasażerów i przegląda wydatki, w tym rozważa czasowe zamrożenie płac oraz wykorzystanie AI w części zadań biurowych. To prognoza prezesa spółki, a nie ogłoszona taryfa dla wszystkich tras.",
+      "why": "Wypowiedź może pomóc w planowaniu przyszłorocznych podróży, ale rzeczywiste ceny będą zależeć od trasy i decyzji linii lotniczych.",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/be14c3d1df2bd403901ce8a83a76d859"
+        }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Amerykańskie indeksy giełdowe zakończyły poniedziałek na różnych poziomach",
+      "summary": "Po porannych wzrostach indeks S&P 500 zakończył poniedziałkową sesję spadkiem o 0,5 proc., Nasdaq stracił 1,1 proc., a Dow Jones wzrósł o 0,4 proc. Według AP większość spółek zyskała, lecz słabość firm technologicznych i związanych ze sztuczną inteligencją obciążała część indeksów. Cena ropy Brent spadła tego dnia o 7,6 proc.",
+      "why": "Różne wyniki indeksów pokazują, że wahania rynku nie dotyczą wszystkich sektorów w taki sam sposób. To dane o jednej sesji, które same nie przesądzają o dalszym kierunku notowań.",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/475bb37b4d95dd99e26c94e708c99f8f"
+        }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Brytyjski NCSC ostrzega przed atakami ransomware wspieranymi przez AI",
+      "summary": "Brytyjskie National Cyber Security Centre ocenia, że do 2028 r. infrastruktura krytyczna może stać się celem ataku ransomware wykorzystującego złośliwe oprogramowanie wspierane przez AI. Szef NCSC wskazał, że narzędzia AI coraz częściej wykorzystują przestępcy i podmioty państwowe. Centrum zaleca organizacjom inwestowanie w ochronę, ograniczanie niepotrzebnych połączeń z internetem i aktualizowanie przestarzałych systemów.",
+      "why": "To prognoza zagrożenia, nie informacja o konkretnym włamaniu. Dotyczy usług, od których zależą dostawy, łączność i działanie przedsiębiorstw.",
+      "sources": [
+        {
+          "name": "National Cyber Security Centre",
+          "url": "https://www.ncsc.gov.uk/news/cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-in-two-years"
+        },
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/4e61bf9b55c7d1d15cfd075859d2ba08"
+        }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "29 trustów NHS kwestionuje wykazywane korzyści z platformy Palantira",
+      "summary": "Według odpowiedzi na ponad 100 wniosków o informację 29 trustów NHS wymienionych jako odnoszące korzyści z platformy danych Palantira stwierdziło, że system nie działa lub nie korzysta z jego aplikacji. NHS England podaje, że 137 trustów jest już „live”, przy czym część wykorzystuje platformę do przesyłania danych lub analiz zaplecza, a nie do pracy przy pacjentach. Palantir wskazuje na dodatkowe operacje i krótsze opóźnienia wypisów, ale regulator statystyczny zaznaczył, że nie można z tych danych wywnioskować związku przyczynowego.",
+      "why": "Sprawa dotyczy przejrzystości raportowania wyników oraz tego, w jaki sposób szpitale korzystają z danych medycznych.",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/technology/2026/nov/02/palantir-unused-nhs-hospital-trusts"
+        }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Anthropic ujawnił wysokie przychody i straty w nowym prospekcie IPO",
+      "summary": "Zaktualizowany prospekt giełdowy Anthropic podał, że kwartalny przychód spółki wzrósł do 17 mld dolarów, ale odnotowała ona stratę netto w wysokości 23,3 mld dolarów. Za pierwsze dziewięć miesięcy 2026 r. przychody wyniosły 33,2 mld dolarów, a strata 104 mld dolarów, w tym 94 mld dolarów związane z korektą księgową umów finansowania. Dokument nie podaje oczekiwanej ceny akcji ani wielkości oferty.",
+      "why": "Prospekt pokazuje, że szybki wzrost sprzedaży AI nie oznacza jeszcze zysku. Duża korekta księgowa utrudnia porównywanie wyniku z bieżącymi kosztami działalności.",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/0cbd1a649a4cce904be59af8f6b30179"
+        }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "W stanie Waszyngton zmarła osoba zakażona ptasią grypą H5N1",
+      "summary": "Mieszkaniec hrabstwa Yakima w stanie Waszyngton zmarł w niedzielę z powodu powikłań po zakażeniu H5N1; wcześniej miał kontakt z zakażonym bydłem mlecznym i przebywał w szpitalu. Według władz miał też inne problemy zdrowotne. CDC nie znalazło zmian wirusa, które wskazywałyby na łatwiejsze przenoszenie między ludźmi lub cięższy przebieg, a ryzyko dla ogółu społeczeństwa ocenia jako niskie.",
+      "why": "Zdarzenie podkreśla znaczenie monitorowania kontaktów ludzi ze zwierzętami zakażonymi H5N1. Według CDC nie stwierdzono dotąd przenoszenia wirusa z człowieka na człowieka.",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/c170f95d65a5ffe966ec52d7dae56f3d"
+        }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "„The Debut” Jessego Eisenberga otworzy festiwal w Marrakeszu",
+      "summary": "Organizatorzy ogłosili, że 23. Międzynarodowy Festiwal Filmowy w Marrakeszu otworzy komedia „The Debut” w reżyserii Jessego Eisenberga. Festiwal odbędzie się w dniach 20–28 listopada i pokaże 76 filmów z 39 krajów, w tym 10 światowych premier. W konkursie głównym znalazło się 14 pierwszych lub drugich filmów pełnometrażowych.",
+      "why": "Ogłoszony program łączy rozpoznawalne nazwiska z debiutami i filmami z wielu krajów. Festiwal jest jednym z ważniejszych wydarzeń międzynarodowego kalendarza filmowego.",
+      "sources": [
+        {
+          "name": "Screen Daily",
+          "url": "https://www.screendaily.com/news/the-debut-to-open-marrakech-international-film-festival-as-2026-lineup-unveiled/5221941.article"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Różowe pióra flamingów barwią związki z pożywienia",
+      "body": "Flamingi zawdzięczają różową barwę karotenoidom obecnym w pożywieniu, między innymi w glonach i drobnych skorupiakach. Organizm przetwarza te związki, a barwniki odkładają się w piórach, nogach i dziobie. Młode flamingi są zwykle szare lub białawe; intensywniejszy kolor pojawia się wraz z dietą.",
+      "source": {
+        "name": "Smithsonian National Zoo",
+        "url": "https://nationalzoo.si.edu/animals/news/why-are-flamingos-pink-and-other-flamingo-facts"
+      }
+    },
+    {
+      "id": "fact-2",
+      "kind": "nauka",
+      "title": "Przez ciało przechodzą biliony neutrin, ale niemal nie wchodzą w reakcje",
+      "body": "Każdej sekundy przez ciało człowieka przelatują biliony neutrin pochodzących ze Słońca. Cząstki te bardzo rzadko oddziałują z materią, dlatego niemal zawsze przechodzą przez nas bez śladu. Według Fermilabu w całym życiu człowieka z materią może oddziałać zaledwie jedno lub dwa neutrina.",
+      "source": {
+        "name": "Fermilab",
+        "url": "https://neutrinos.fnal.gov/faqs/"
+      }
+    },
+    {
+      "id": "fact-3",
+      "kind": "kosmos",
+      "title": "Na biegunie Saturna wiruje olbrzymi sześciokątny prąd atmosferyczny",
+      "body": "Wokół północnego bieguna Saturna znajduje się trwały, sześciokątny układ chmur i wiatrów. NASA szacuje, że ma około 30 tysięcy kilometrów szerokości, a wiatr w jego obrębie osiąga około 322 km/h. Sonda Cassini obserwowała ten niezwykły wzór przez wiele lat, ale naukowcy nadal badają, jak powstał.",
+      "source": {
+        "name": "NASA",
+        "url": "https://science.nasa.gov/saturn/facts/"
+      }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1943,
+      "title": "Akcja „Erntefest” na Majdanku",
+      "body": "3 listopada 1943 r. niemieckie oddziały SS zamordowały na Majdanku około 18 tysięcy żydowskich więźniów. Była to część akcji „Erntefest” — masowych egzekucji przeprowadzonych 3 i 4 listopada także w Trawnikach i Poniatowej.",
+      "source": {
+        "name": "Instytut Pamięci Narodowej",
+        "url": "https://ipn.gov.pl/pl/historia-z-ipn/208872,Irena-Siwinska-Akcja-Erntefest-w-obozie-na-Majdanku.html"
+      }
+    },
+    {
+      "id": "otd-2",
+      "year": 1957,
+      "title": "Sputnik 2 poleciał w kosmos z Łajką na pokładzie",
+      "body": "3 listopada 1957 r. Związek Radziecki wystrzelił Sputnika 2, który zabrał na orbitę Łajkę, pierwsze zwierzę krążące wokół Ziemi. Misja dostarczyła danych o warunkach lotu, ale statek nie był przystosowany do powrotu na Ziemię.",
+      "source": {
+        "name": "NASA",
+        "url": "https://www.nasa.gov/history/60-years-ago-the-first-animal-in-orbit/"
+      }
+    },
+    {
+      "id": "otd-3",
+      "year": 1903,
+      "title": "Panama ogłosiła niepodległość od Kolumbii",
+      "body": "3 listopada 1903 r. Panamczycy zbuntowali się przeciw rządowi Kolumbii i ogłosili powstanie niepodległej republiki. Wkrótce potem Panama zawarła z USA porozumienie dotyczące budowy i kontroli Kanału Panamskiego.",
+      "source": {
+        "name": "U.S. Department of State, Office of the Historian",
+        "url": "https://history.state.gov/milestones/1899-1913/panama-canal"
+      }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Błąd koniunkcji",
+    "definition": "To skłonność do oceniania, że dwa zdarzenia występujące razem są bardziej prawdopodobne niż jedno z nich osobno, choć w rachunku prawdopodobieństwa suma warunków nie może zwiększyć szansy.",
+    "origin": "Amos Tversky i Daniel Kahneman opisywali ten błąd w badaniach nad intuicyjną oceną prawdopodobieństwa. Szczegółowa i spójna opowieść może wydawać się bardziej prawdopodobna, ale zdarzenie „A i B” jest częścią zbioru zdarzeń „A”, a więc nie może być częstsze od niego.",
+    "examples": [
+      "W prognozie ataku: „wystąpi atak” jest co najmniej tak prawdopodobne jak bardziej szczegółowe „wystąpi atak ransomware wspierany przez AI na infrastrukturę krytyczną”.",
+      "W codziennym planie: opóźnienie lotu jest co najmniej tak prawdopodobne jak opóźnienie spowodowane jednocześnie burzą i problemem technicznym.",
+      "Przed porównaniem dwóch prognoz warto sprawdzić, czy jedna nie dodaje warunków do drugiej."
+    ],
+    "source": {
+      "name": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12710220/"
+    }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "pulapki-myslenia",
+    "title": "Pułapki myślenia. O myśleniu szybkim i wolnym",
+    "author": "Daniel Kahneman",
+    "day": 3,
+    "days": 7,
+    "ideaTitle": "Mała próba częściej daje skrajny wynik",
+    "idea": "Niewielka grupa może mocno odbiegać od średniej przez przypadek, choć często traktujemy ją tak, jakby dokładnie odzwierciedlała całą populację. Kahneman opisuje przykład dwóch porodówek: mniejsza częściej odnotuje dzień, w którym ponad 60 proc. urodzonych dzieci to chłopcy, bo przy mniejszej liczbie porodów wyniki bardziej się wahają. Nie znaczy to, że w dużym szpitalu każde dobowe zestawienie jest idealnie równe. Dopiero uśrednienie wielu obserwacji zmniejsza wpływ przypadkowych skrajności. Zanim uwierzymy w procentową różnicę, warto sprawdzić, z ilu przypadków ją wyliczono.",
+    "moral": "Mała próba może być prawdziwa, ale jest mniej stabilnym obrazem całości. Im mniej obserwacji, tym ostrożniej należy uogólniać wynik.",
+    "action": "Przy najbliższej statystyce, którą dziś zobaczycie, sprawdźcie i zapiszcie, ilu osób lub zdarzeń dotyczy.",
+    "source": {
+      "name": "Penguin Random House",
+      "url": "https://www.penguinrandomhouse.com/books/89308/thinking-fast-and-slow-by-daniel-kahneman/"
+    }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-03-q1",
+      "ref": "fact-1",
+      "question": "Skąd flamingi czerpią związki nadające piórom różową barwę?",
+      "options": [
+        "Z karotenoidów w pożywieniu",
+        "Z soli morskiej gromadzonej w piórach",
+        "Z barwnika wytwarzanego wyłącznie przez skórę",
+        "Z odbicia koloru wody"
+      ],
+      "answer": 0,
+      "explanation": "Karotenoidy z glonów i drobnych zwierząt są przetwarzane i odkładają się między innymi w piórach."
+    },
+    {
+      "id": "2026-11-03-q2",
+      "ref": "fact-2",
+      "question": "Co dzieje się z większością neutrin przelatujących przez ciało?",
+      "options": [
+        "Zatrzymują się w skórze",
+        "Odbijają się od kości",
+        "Przechodzą bez reakcji z materią",
+        "Zamieniają się w światło"
+      ],
+      "answer": 2,
+      "explanation": "Neutrina bardzo rzadko oddziałują z materią, dlatego wykrywają je dopiero ogromne, czułe eksperymenty."
+    },
+    {
+      "id": "2026-11-03-q3",
+      "ref": "fact-3",
+      "question": "Jak szeroki jest sześciokątny układ atmosferyczny na Saturnie?",
+      "options": [
+        "Około 300 km",
+        "Około 3 tys. km",
+        "Około 30 tys. km",
+        "Około 300 tys. km"
+      ],
+      "answer": 2,
+      "explanation": "NASA szacuje, że układ ma około 30 tysięcy kilometrów szerokości."
+    },
+    {
+      "id": "2026-11-03-q4",
+      "ref": "otd-1",
+      "question": "Jak nazywała się niemiecka akcja masowych egzekucji, której częścią była zbrodnia na Majdanku 3 listopada 1943 r.?",
+      "options": [
+        "Akcja „Burza”",
+        "Akcja „Erntefest”",
+        "Akcja „Wisła”",
+        "Akcja „T4”"
+      ],
+      "answer": 1,
+      "explanation": "„Erntefest”, czyli „Dożynki”, objęła egzekucje żydowskich więźniów na Majdanku, w Trawnikach i Poniatowej."
+    },
+    {
+      "id": "2026-11-03-q5",
+      "ref": "concept",
+      "question": "Które zdanie najlepiej oddaje błąd koniunkcji?",
+      "options": [
+        "Dwa niezależne zdarzenia zawsze muszą nastąpić razem",
+        "Zdarzenie szczegółowe bywa bardziej prawdopodobne, bo łatwiej je sobie wyobrazić",
+        "Wynik średniej próby zawsze jest równy średniej populacji",
+        "Prawdopodobieństwo zdarzenia i dodatkowego warunku może być większe niż prawdopodobieństwo samego zdarzenia"
+      ],
+      "answer": 1,
+      "explanation": "Błąd koniunkcji polega na tym, że szczegółowy opis może intuicyjnie wydawać się bardziej prawdopodobny, choć dodanie warunków nie zwiększa prawdopodobieństwa."
+    },
+    {
+      "id": "2026-11-03-q6",
+      "ref": "book",
+      "question": "Dlaczego wyniki mniejszej porodówki częściej przekraczają granicę 60 proc. chłopców w danym dniu?",
+      "options": [
+        "Mniejsze próby bardziej wahają się przez przypadek",
+        "Małe szpitale zawsze mają więcej porodów chłopców",
+        "Duże szpitale nie rejestrują wszystkich urodzeń",
+        "Płeć dzieci zmienia się w zależności od liczby sal"
+      ],
+      "answer": 0,
+      "explanation": "Wyniki mniejszych prób są mniej stabilne, więc skrajne proporcje pojawiają się w nich częściej."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-03-r1",
+      "question": "Jak małe stężenie geosminy potrafi wyczuć ludzki nos?",
+      "options": [
+        "Poniżej 5 części na bilion",
+        "Dopiero przy 5 procentach",
+        "Tylko po połączeniu z ozonem"
+      ],
+      "answer": 0,
+      "explanation": "Wczorajsze wydanie podawało, że zapach geosminy jest wyczuwalny już w śladowej ilości."
+    },
+    {
+      "id": "2026-11-03-r2",
+      "question": "Dlaczego nazwanie koloru trwa dłużej w teście Stroopa, gdy słowo oznacza inną barwę?",
+      "options": [
+        "Kolor tuszu staje się trudniejszy do zobaczenia",
+        "Czytanie słowa konkuruje z nazwaniem koloru",
+        "Badana osoba musi przeczytać tekst na głos"
+      ],
+      "answer": 1,
+      "explanation": "Automatyczne czytanie odciąga uwagę od zadania polegającego na nazwaniu koloru tuszu."
+    },
+    {
+      "id": "2026-11-03-r3",
+      "question": "Co zastępowały pierwsze szwedzkie banknoty w handlu?",
+      "options": [
+        "Ciężkie miedziane monety",
+        "Złote monety królewskie",
+        "Kwity za zboże"
+      ],
+      "answer": 0,
+      "explanation": "Papierowe kwity Stockholms Banco były wygodniejszą alternatywą dla dużych, ciężkich miedzianych monet."
+    }
+  ],
+  "evening": {
+    "question": "Kiedy ostatnio kilka przykładów wystarczyło wam, by uznać coś za regułę — i co zmienilibyście po sprawdzeniu większej liczby przypadków?",
+    "hint": "Pomyślcie o zakupie, serialu, restauracji albo szybkim wniosku o codziennym nawyku."
+  }
+}

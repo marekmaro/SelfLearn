@@ -304,7 +304,7 @@
   "concept": {
     "id": "concept",
     "term": "Błąd koniunkcji",
-    "definition": "To skłonność do oceniania, że dwa zdarzenia występujące razem są bardziej prawdopodobne niż jedno z nich osobno, choć w rachunku prawdopodobieństwa suma warunków nie może zwiększyć szansy.",
+    "definition": "To skłonność do uznawania, że dwa zdarzenia zachodzące razem są bardziej prawdopodobne niż jedno z nich osobno, choć prawdopodobieństwo „A i B” nie może być większe niż prawdopodobieństwo samego „A” ani samego „B”.",
     "origin": "Amos Tversky i Daniel Kahneman opisywali ten błąd w badaniach nad intuicyjną oceną prawdopodobieństwa. Szczegółowa i spójna opowieść może wydawać się bardziej prawdopodobna, ale zdarzenie „A i B” jest częścią zbioru zdarzeń „A”, a więc nie może być częstsze od niego.",
     "examples": [
       "W prognozie ataku: „wystąpi atak” jest co najmniej tak prawdopodobne jak bardziej szczegółowe „wystąpi atak ransomware wspierany przez AI na infrastrukturę krytyczną”.",
@@ -391,12 +391,12 @@
       "question": "Które zdanie najlepiej oddaje błąd koniunkcji?",
       "options": [
         "Dwa niezależne zdarzenia zawsze muszą nastąpić razem",
-        "Zdarzenie szczegółowe bywa bardziej prawdopodobne, bo łatwiej je sobie wyobrazić",
+        "Zdarzenie „A i B” intuicyjnie oceniamy jako bardziej prawdopodobne niż samo „A”",
         "Wynik średniej próby zawsze jest równy średniej populacji",
         "Prawdopodobieństwo zdarzenia i dodatkowego warunku może być większe niż prawdopodobieństwo samego zdarzenia"
       ],
       "answer": 1,
-      "explanation": "Błąd koniunkcji polega na tym, że szczegółowy opis może intuicyjnie wydawać się bardziej prawdopodobny, choć dodanie warunków nie zwiększa prawdopodobieństwa."
+      "explanation": "Błąd polega na przecenieniu prawdopodobieństwa zdarzenia łączącego dwa warunki; takie zdarzenie nie może być częstsze niż samo „A”."
     },
     {
       "id": "2026-11-03-q6",

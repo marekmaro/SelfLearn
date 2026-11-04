@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-04",
+  "file": "2026-11-04-darkman.mp3",
+  "url": "audio/2026-11-04-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-04-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "ebd8452d228d152a",
+  "duration": 1111.05,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 17.54
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Spór o Trybunał Konstytucyjny: zgromadzenie sędziów i niejawna RBN",
+      "start": 18.24,
+      "end": 70.59
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Od 3 listopada używane auto za maks. 3000 zł kupisz bez PCC",
+      "start": 71.29,
+      "end": 116.21
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Nowe ceny maksymalne paliw: benzyna 95 po 6,45 zł",
+      "start": 116.91,
+      "end": 154.94
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Ostre kawałki metalu w cukierkach z Halloween. Policja szuka sprawcy",
+      "start": 155.64,
+      "end": 189.91
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Trzecia spadkowa sesja na warszawskiej giełdzie",
+      "start": 190.61,
+      "end": 231.58
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Wybory w USA: demokraci przejmują Izbę Reprezentantów",
+      "start": 232.78,
+      "end": 277.29
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Rosyjskie bomby trafiły w szkołę z punktem pomocy. Co najmniej 33 zabitych",
+      "start": 277.99,
+      "end": 323.4
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Ebola zabiła już ponad 5300 osób",
+      "start": 324.1,
+      "end": 367.35
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Ropa tanieje drugi dzień z nadzieją na rozmowy USA z Iranem",
+      "start": 368.05,
+      "end": 412.7
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Trump: pomoc wojskowa USA dla Izraela skończy się po tym roku",
+      "start": 413.4,
+      "end": 460.34
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Stała baza wojsk USA głównym tematem Rady Bezpieczeństwa Narodowego",
+      "start": 461.54,
+      "end": 504.46
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "AMD z wynikami powyżej oczekiwań dzięki chipom do AI",
+      "start": 505.16,
+      "end": 539.83
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "CrowdStrike pokazał „wyłącznik awaryjny” dla agentów AI",
+      "start": 540.53,
+      "end": 583.91
+    },
+    {
+      "id": "ai-2",
+      "chapter": "tematy",
+      "label": "Apple ostrzega inwestorów przed nieprzewidywalnymi agentami AI",
+      "start": 584.61,
+      "end": 626.95
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Popularny pestycyd powiązany z wyższym ryzykiem choroby Parkinsona",
+      "start": 627.65,
+      "end": 665.6
+    },
+    {
+      "id": "zdrowie-2",
+      "chapter": "tematy",
+      "label": "Nadwaga przez lata wiąże się z szybszym spadkiem sprawności umysłowej",
+      "start": 666.3,
+      "end": 705.41
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Kina Regal i Cinemark nie pokażą nowego filmu o Cliffie Boothie w IMAX",
+      "start": 706.11,
+      "end": 742.98
+    },
+    {
+      "id": "filmy-2",
+      "chapter": "tematy",
+      "label": "Dokument o Evereście i kryminał z Nowego Jorku wśród kinowych debiutów",
+      "start": 743.68,
+      "end": 780.03
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Pando: las osik, który jest jednym organizmem",
+      "start": 781.23,
+      "end": 811.67
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Mit: wikingowie nosili hełmy z rogami",
+      "start": 812.37,
+      "end": 843.15
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Liczba Dunbara: ok. 150 osób, z którymi utrzymujemy stałe relacje",
+      "start": 843.85,
+      "end": 879.6
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1794: Rzeź Pragi",
+      "start": 880.8,
+      "end": 912.12
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1922: Odnaleziono wejście do grobowca Tutanchamona",
+      "start": 912.82,
+      "end": 941.86
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1979: Zajęcie ambasady USA w Teheranie",
+      "start": 942.56,
+      "end": 971.39
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Zaniedbywanie stopy bazowej",
+      "start": 972.59,
+      "end": 1037.55
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Pułapki myślenia. O myśleniu szybkim i wolnym: Liczy się tylko to, co widać",
+      "start": 1038.75,
+      "end": 1094.03
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1095.23,
+      "end": 1110.55
+    }
+  ]
+}

@@ -1,6 +1,33 @@
 {
   "editions": [
     {
+      "date": "2026-11-04",
+      "headline": "Spór o Trybunał Konstytucyjny: zgromadzenie sędziów i niejawna RBN",
+      "threads": [
+        {
+          "name": "Spór o Trybunał Konstytucyjny",
+          "item": "pl-1",
+          "title": "Spór o Trybunał Konstytucyjny: zgromadzenie sędziów i niejawna RBN"
+        },
+        {
+          "name": "Wybory w USA",
+          "item": "sw-1",
+          "title": "Wybory w USA: demokraci przejmują Izbę Reprezentantów"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-2",
+          "title": "Rosyjskie bomby trafiły w szkołę z punktem pomocy. Co najmniej 33 zabitych"
+        }
+      ],
+      "facts": [
+        "Mit: wikingowie nosili hełmy z rogami",
+        "Liczba Dunbara: ok. 150 osób, z którymi utrzymujemy stałe relacje",
+        "Pando: las osik, który jest jednym organizmem"
+      ],
+      "concept": "Zaniedbywanie stopy bazowej"
+    },
+    {
       "date": "2026-11-03",
       "headline": "Policja wzmacnia ochronę granicy z obwodem kaliningradzkim",
       "facts": [

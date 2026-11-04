@@ -1,0 +1,373 @@
+{
+  "date": "2026-11-04",
+  "intro": "Dziś m.in.: demokraci przejmują Izbę Reprezentantów, rosyjskie bomby trafiły w szkołę z punktem pomocy w obwodzie zaporoskim, a tańsze używane auta od wtorku kupisz bez podatku PCC.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Spór o Trybunał Konstytucyjny: zgromadzenie sędziów i niejawna RBN",
+      "summary": "We wtorek zebrało się Zgromadzenie Ogólne Sędziów TK. Ośmioro sędziów wybranych przez obecny Sejm uznało, że ma kworum, co część prawników kwestionuje. Wylosowano też składy do spraw dyscyplinarnych prezesa TK Bogdana Święczkowskiego i wiceprezesa Bartłomieja Sochańskiego. Sędzia Anna Korwin-Piotrowska opublikowała listę 1171 zaległych spraw, z czego ponad 700 nie nadano biegu. Tego samego dnia prezydent Karol Nawrocki zwołał niejawne posiedzenie Rady Bezpieczeństwa Narodowego.",
+      "why": "Premier Donald Tusk wzywa prezydenta do przyjęcia ślubowania od sędziów wybranych przez Sejm, a prezydent obwinia rząd o eskalację. Od wyniku sporu zależy, czy Trybunał będzie rozpatrywał tysiące czekających spraw.",
+      "thread": "Spór o Trybunał Konstytucyjny",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/polityka/art45435671-zgromadzenia-ogolne-sedziow-tk-i-sn-posiedzenie-rbn-intensywny-polityczny-wtorek-w-polsce" },
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/02/an-unprecedented-situation-constitutional-crisis-wobbles-warsaw" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Od 3 listopada używane auto za maks. 3000 zł kupisz bez PCC",
+      "summary": "Od wtorku zakup samochodu od osoby prywatnej jest zwolniony z podatku od czynności cywilnoprawnych, jeśli wartość rynkowa auta nie przekracza 3000 zł. Wcześniej próg wynosił 1000 zł. Liczy się data zawarcia umowy i wartość rynkowa pojazdu, a nie kwota wpisana w umowie. Powyżej progu podatek wynosi 2 proc. całej wartości, a deklarację PCC-3 trzeba złożyć w ciągu 14 dni.",
+      "why": "To ulga głównie przy najtańszych autach. Większość używanych samochodów kosztuje więcej, więc ich kupujący nadal muszą pamiętać o deklaracji, żeby uniknąć kary.",
+      "sources": [
+        { "name": "Interia Motoryzacja", "url": "https://motoryzacja.interia.pl/wiadomosci/news-od-3-listopada-bez-podatku-przy-zakupie-auta-limit-rosnie-do,nId,23564774" },
+        { "name": "Otomoto", "url": "https://www.otomoto.pl/news/podatek-pcc-od-listopada-zmiany" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Nowe ceny maksymalne paliw: benzyna 95 po 6,45 zł",
+      "summary": "Minister energii ogłosił ceny maksymalne paliw obowiązujące od wtorku. Litr benzyny 95 może kosztować najwyżej 6,45 zł, benzyny 98 – 7,31 zł, a oleju napędowego – 8,14 zł. Stacje nie mogą sprzedawać drożej, ale mogą taniej.",
+      "why": "Ceny paliw wpływają na budżety domowe i koszty transportu. Wysoki diesel przekłada się na ceny przewozu towarów, a więc i zakupów.",
+      "sources": [
+        { "name": "Money.pl", "url": "https://www.money.pl/gospodarka/zmiana-na-stacjach-od-wtorku-minister-oglosil-nowe-ceny-paliw-7346672158796256a.html" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Ostre kawałki metalu w cukierkach z Halloween. Policja szuka sprawcy",
+      "summary": "Policja w okolicach Miastka na Pomorzu prowadzi śledztwo po tym, jak dzieci znalazły ostre kawałki metalu w słodyczach zebranych w Halloween. Pierwsze zgłoszenie wpłynęło 31 października od dwóch 10-letnich dziewczynek. Jedna z dziewczynek trafiła do szpitala z urazem języka.",
+      "why": "Sprawa przypomina, by przed zjedzeniem obejrzeć słodycze od nieznajomych, zwłaszcza rozpakowane. Policja prosi o zgłaszanie podobnych przypadków.",
+      "sources": [
+        { "name": "TVP World", "url": "https://tvpworld.com/96282749/poland-police-probe-halloween-sweets-stuffed-with-sharp-metal-objects" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Trzecia spadkowa sesja na warszawskiej giełdzie",
+      "summary": "WIG20 zakończył wtorek spadkiem o 0,34 proc., do 4138,60 pkt. To trzecia czerwona sesja z rzędu, choć spadek był mniejszy niż w poniedziałek. Wśród najmocniej tracących spółek były KGHM i LPP. Złoty przez część dnia słabł do ponad 4,425 zł za euro, ale po południu lekko się umocnił.",
+      "why": "Inwestorzy czekali na wyniki wyborów w USA i rozwój sytuacji wokół Iranu. Kurs euro wpływa na ceny importu i raty kredytów w tej walucie.",
+      "sources": [
+        { "name": "XYZ", "url": "https://xyz.pl/trzecia-czerwona-sesja-z-rzedu-na-gieldzie-kghm-i-lpp-wsrod-liderow-spadkow-w-wig20-notowania-gpw-z-3-listopada-2026-r/" },
+        { "name": "Strefa Inwestorów", "url": "https://strefainwestorow.pl/wiadomosci/20261103/skrot-wiadomosci-wtorek-3-listopada-2100" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Wybory w USA: demokraci przejmują Izbę Reprezentantów",
+      "summary": "Według projekcji NBC i CBS demokraci zdobędą większość w Izbie Reprezentantów, w której dotąd republikanie mieli przewagę 218 do 212. O Senacie (53 do 47 dla republikanów) jeszcze nie rozstrzygnięto. Demokraci wygrali m.in. w Teksasie, gdzie James Talarico pokonał Kena Paxtona, oraz w Karolinie Północnej i Ohio. Część wyścigów może być liczona jeszcze kilka dni.",
+      "why": "Izba kontrolowana przez opozycję może blokować ustawy i budżetowe plany Donalda Trumpa. Trump zapowiedział, że uzna wyniki.",
+      "thread": "Wybory w USA",
+      "sources": [
+        { "name": "CBS News", "url": "https://www.cbsnews.com/live-updates/election-day-2026-midterms/" },
+        { "name": "NBC News", "url": "https://www.nbcnews.com/politics/2026-elections/house-results" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Rosyjskie bomby trafiły w szkołę z punktem pomocy. Co najmniej 33 zabitych",
+      "summary": "Rosyjskie bomby lotnicze uderzyły w szkołę w Komyszuwasze w obwodzie zaporoskim. Budynek nie służył już do lekcji, w każdy poniedziałek wydawano tam pomoc humanitarną. Według Wołodymyra Zełenskiego zginęło co najmniej 33 osoby, a około 50 mogło zostać pod gruzami. Drugi atak dosięgnął ratowników: wśród zabitych jest dwóch strażaków i czterech policjantów. Rosja twierdzi, że celem były ukraińskie oddziały.",
+      "why": "Zełenski nazwał to jednym z najkrwawszych ataków tej wojny. Uderzenia w miejsca, gdzie gromadzą się cywile, wzmacniają apele Kijowa o obronę przeciwlotniczą.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/exceptionally-horrific-strike-russian-bombs-strike-school-used-as-humanitarian-aid-center-in-zaporizhzhia-oblast-killing-24/" },
+        { "name": "ABC News (Australia)", "url": "https://www.abc.net.au/news/2026-11-04/russian-strike-on-school-kills-dozens-n-ukraine/107343894" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Ebola zabiła już ponad 5300 osób",
+      "summary": "Według Afrykańskiego CDC epidemia eboli zabiła 5376 osób: 5372 w Demokratycznej Republice Konga oraz po dwie w Kenii i Ugandzie. Amerykańskie CDC podaje ponad 10,5 tys. potwierdzonych zachorowań. Wywołuje ją rzadki wirus Bundibugyo, na który nie ma zatwierdzonej szczepionki ani leku. Ruszyły badania kliniczne szczepionki Ervebo, skutecznej wobec szczepu Zair.",
+      "why": "To najszybciej rosnąca epidemia eboli w historii. W październiku pierwsze przypadki odnotowała Kenia, co pokazuje ryzyko rozprzestrzenienia w regionie.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/3/ebola-outbreak-kills-more-than-5300-people-in-dr-congo" },
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/02/ebola-kills-over-5300-in-fastest-growing-outbreak-on-record" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Ropa tanieje drugi dzień z nadzieją na rozmowy USA z Iranem",
+      "summary": "Baryłka ropy Brent kosztowała we wtorek około 103,60 dolara, o ok. 1 proc. mniej. W poniedziałek ceny spadły o ponad 7 proc., gdy Waszyngton i Teheran zasygnalizowały gotowość do rozmów. Rynek na chwilę zareagował na doniesienia o amerykańskich uderzeniach na wyspę Keszm, które USA nazywają obronnymi. Prezydent Iranu Masud Pezeszkian powiedział, że rząd dostał od najwyższego przywódcy uprawnienia do rozmów pokojowych.",
+      "why": "Cena ropy przekłada się na ceny paliw także w Polsce. Trwałe porozumienie mogłoby obniżyć koszty energii, ale sytuacja w cieśninie Ormuz wciąż jest napięta.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/03/oil-prices-climb-after-us-reportedly-strikes-irans-qeshm-island.html" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Trump: pomoc wojskowa USA dla Izraela skończy się po tym roku",
+      "summary": "Donald Trump powiedział w Fox News, że uzgodnił z Binjaminem Netanjahu zakończenie amerykańskiej pomocy wojskowej dla Izraela, wartej ok. 4 mld dolarów rocznie, z końcem 2026 roku. Kancelaria premiera Izraela tego nie potwierdziła. Obecne porozumienie przewiduje 3,8 mld dolarów rocznie do września 2028 roku, a pieniądze przyznaje Kongres, więc prezydent nie może sam ich wstrzymać.",
+      "why": "Część analityków spodziewa się raczej stopniowego wygaszania pomocy w 2027 roku. W Izraelu opozycja zażądała od Netanjahu wyjaśnień.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/3/trump-announces-that-us-will-stop-paying-israel-after-year-end" },
+        { "name": "The Times of Israel", "url": "https://www.timesofisrael.com/trump-says-us-to-end-4-billion-in-annual-military-aid-to-israel-by-end-of-2026/" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Stała baza wojsk USA głównym tematem Rady Bezpieczeństwa Narodowego",
+      "summary": "Prezydent Karol Nawrocki zwołał na wtorek niejawne posiedzenie RBN. Według szefa BBN Bartosza Grodeckiego głównym tematem była budowa stałej bazy wojsk amerykańskich w Polsce. Rząd przyjął wcześniej projekt uchwały w tej sprawie, a wicepremier Władysław Kosiniak-Kamysz mówi o kilku lokalizacjach omówionych ze stroną amerykańską. Ostateczna decyzja należy do Waszyngtonu.",
+      "why": "Stała baza oznaczałaby trwałą obecność wojsk USA zamiast rotacji. Eksperci zwracają uwagę, że to przede wszystkim sygnał polityczny dla Rosji.",
+      "sources": [
+        { "name": "Defence24", "url": "https://defence24.pl/polityka-obronna/stala-baza-usa-w-polsce-glownym-tematem-obrad-rbn" },
+        { "name": "Radio Kraków", "url": "https://www.radiokrakow.pl/audycje/stala-baza-wojsk-usa-w-polsce-militarnie-zmieni-niewiele/" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "AMD z wynikami powyżej oczekiwań dzięki chipom do AI",
+      "summary": "AMD podało, że w trzecim kwartale skorygowany zysk wyniósł 2,09 dolara na akcję, przy prognozach analityków 1,95 dolara. Przychody z segmentu centrów danych prawie się podwoiły dzięki popytowi na procesory do sztucznej inteligencji. Akcje firmy zyskały po publikacji około 7–8 proc.",
+      "why": "AMD to główny rywal Nvidii w chipach do AI. Wyniki pokazują, że wydatki na centra danych wciąż rosną.",
+      "sources": [
+        { "name": "CNBC", "url": "https://cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "CrowdStrike pokazał „wyłącznik awaryjny” dla agentów AI",
+      "summary": "CrowdStrike zaprezentował na konferencji Fal.Con Europe narzędzie AI Kill Switch, część pakietu Falcon Guardian. Pozwala zespołom bezpieczeństwa zatrzymać agenta AI, który działa nieprawidłowo, nie dopuścić do jego ponownego uruchomienia i odciąć mu dostęp do sieci. Narzędzie wykrywa podejrzaną aktywność, ale o odcięciu agenta decyduje człowiek. Szef firmy George Kurtz porównał je do poduszek powietrznych.",
+      "why": "Firmy coraz częściej dają agentom AI dostęp do swoich systemów. Możliwość szybkiego zatrzymania ich staje się podstawowym zabezpieczeniem.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/03/crowdstrike-ai-kill-switch-rogue-agents.html" }
+      ]
+    },
+    {
+      "id": "ai-2",
+      "section": "ai",
+      "rank": 2,
+      "title": "Apple ostrzega inwestorów przed nieprzewidywalnymi agentami AI",
+      "summary": "W rocznym raporcie dla amerykańskiej komisji giełdowej Apple dopisało nowe ryzyko: agenty AI mogą działać w „niezamierzony lub nieprzewidywalny” sposób. Firma pisze, że mogą przekraczać uprawnienia, wykonywać niezatwierdzone działania albo zostać zmanipulowane. Ich zachowanie trudno przewidzieć i przetestować, a błędy mogą się kumulować w wieloetapowych zadaniach. To może narazić firmę na pozwy i utratę reputacji.",
+      "why": "Gdy tak duża firma oficjalnie wpisuje to ryzyko do raportu, widać, że agenty AI przestają być ciekawostką i stają się problemem prawnym.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/03/apple-warns-of-ai-agents-behave-in-unintended-or-unpredictable-ways.html" },
+        { "name": "SEC (raport 10-K)", "url": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000026/aapl-20260926.htm" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Popularny pestycyd powiązany z wyższym ryzykiem choroby Parkinsona",
+      "summary": "Badacze z UCLA opisali w piśmie „Molecular Neurodegeneration” związek między długotrwałym narażeniem na chloropiryfos, środek owadobójczy, a chorobą Parkinsona. U osób narażonych ryzyko było około 2,5 raza wyższe. Wynik pokazuje związek statystyczny, a nie dowód, że sam pestycyd wywołuje chorobę.",
+      "why": "Choroba Parkinsona dotyka coraz więcej osób, a jej przyczyny środowiskowe wciąż są słabo poznane. Badanie wzmacnia argumenty za ograniczaniem kontaktu z pestycydami.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/10/261031013035.htm" }
+      ]
+    },
+    {
+      "id": "zdrowie-2",
+      "section": "zdrowie",
+      "rank": 2,
+      "title": "Nadwaga przez lata wiąże się z szybszym spadkiem sprawności umysłowej",
+      "summary": "Badanie obserwacyjne prowadzone przez 24 lata, opublikowane w „Journal of Neurology”, wiąże wyższą masę ciała w ciągu życia z szybszym pogarszaniem się pamięci i myślenia. Zależność była najsilniejsza u osób po 65. roku życia. Autorzy podkreślają, że badanie nie dowodzi, iż to nadwaga powoduje ten spadek.",
+      "why": "To kolejny argument, że dbanie o wagę może mieć znaczenie także dla mózgu. Przy badaniu obserwacyjnym inne czynniki, np. cukrzyca czy ruch, mogą częściowo tłumaczyć wynik.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261101010559.htm" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "Kina Regal i Cinemark nie pokażą nowego filmu o Cliffie Boothie w IMAX",
+      "summary": "Sieci Regal i Cinemark nie wyświetlą na ekranach IMAX netflixowego filmu „The Further Mis-Adventures of Cliff Booth” z Bradem Pittem, według scenariusza Quentina Tarantino. W formacie IMAX będzie go można zobaczyć tylko w kinach AMC i kilku mniejszych salach. Według doniesień sieci wolą zostawić te ekrany dla nowych „Igrzysk śmierci”.",
+      "why": "To kolejny przykład napięć między Netflixem a kinami, które nie chcą promować filmów szybko trafiających do streamingu.",
+      "sources": [
+        { "name": "TheWrap", "url": "https://www.thewrap.com/creative-content/movies/the-further-mis-adventures-of-cliff-booth-netflix-imax-not-playing-regal-cinemark/" },
+        { "name": "The A.V. Club", "url": "https://www.avclub.com/the-mis-adventures-of-cliff-booth-imax-cinemark-regal" }
+      ]
+    },
+    {
+      "id": "filmy-2",
+      "section": "filmy",
+      "rank": 2,
+      "title": "Dokument o Evereście i kryminał z Nowego Jorku wśród kinowych debiutów",
+      "summary": "Film „The Only Living Pickpocket in New York” wytwórni Sony Pictures Classics zarobił ponad 1,9 mln dolarów po rozszerzeniu dystrybucji z 6 do 1112 kin. Dokument National Geographic „Everest: The Other Side” zadebiutował z wynikiem 1 mln dolarów w 515 kinach, z czego 825 tys. przyniosły seanse IMAX.",
+      "why": "Wyniki pokazują, że widzowie chętnie płacą za duży ekran przy filmach przyrodniczych i dokumentalnych.",
+      "sources": [
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/indie-film-box-office-only-living-pickpocket-in-new-york-everest-1237210862/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "historia",
+      "title": "Mit: wikingowie nosili hełmy z rogami",
+      "body": "Na żadnym stanowisku archeologicznym z czasów wikingów nie znaleziono hełmu z rogami. Wyobrażenie spopularyzowały XIX-wieczne obrazy i scena: Carl Emil Doepler zaprojektował rogate hełmy do kostiumów „Pierścienia Nibelunga” Wagnera w Bayreuth w 1876 roku. Hełmy z rogami istniały wcześniej, w epoce brązu, ale były najpewniej obrzędowe i o setki lat starsze od wikingów.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Carl_Emil_Doepler" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "psychologia",
+      "title": "Liczba Dunbara: ok. 150 osób, z którymi utrzymujemy stałe relacje",
+      "body": "Antropolog Robin Dunbar zauważył w latach 90., że wielkość grup u naczelnych rośnie razem z rozmiarem kory nowej mózgu. Dla ludzi wyliczył ok. 148 osób, w zaokrągleniu 150, z którymi można utrzymywać stałe relacje. To warstwy: ok. 5 najbliższych, ok. 50 dobrych znajomych i ok. 1500 twarzy, które rozpoznajemy. Badacze ze Sztokholmu podważają tę liczbę, bo dane są obarczone dużą niepewnością.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Dunbar%27s_number" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "przyroda",
+      "title": "Pando: las osik, który jest jednym organizmem",
+      "body": "W stanie Utah rośnie Pando, kolonia ok. 47 tys. pni osiki, które mają identyczne geny i wspólny system korzeni. To jeden organizm, zajmujący ok. 43 ha i ważący szacunkowo 6 tys. ton. Wiek kolonii jest sporny: część szacunków mówi o kilkunastu tysiącach lat. Pando się kurczy, bo młode pędy zjadają jelenie.",
+      "source": { "name": "Guinness World Records", "url": "https://www.guinnessworldrecords.com/world-records/66415-most-massive-plant" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1794,
+      "title": "Rzeź Pragi",
+      "body": "4 listopada 1794 r. wojska rosyjskie pod dowództwem Aleksandra Suworowa zdobyły szturmem warszawską Pragę, bronioną przez gen. Józefa Zajączka. Po bitwie żołnierze wymordowali tysiące cywilów; szacunki mówią o kilkunastu do 20 tysięcy ofiar. Klęska przesądziła o upadku powstania kościuszkowskiego, a rok później o III rozbiorze Polski.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Battle_of_Praga" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1922,
+      "title": "Odnaleziono wejście do grobowca Tutanchamona",
+      "body": "4 listopada 1922 r. w Dolinie Królów robotnicy Howarda Cartera odsłonili stopień wykuty w skale, początek schodów do grobowca Tutanchamona. Następnego dnia odkopano 12 stopni i drzwi z nienaruszoną pieczęcią. Grobowiec okazał się niemal nietknięty przez rabusiów i stał się jednym z najsłynniejszych odkryć archeologii.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Howard_Carter" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1979,
+      "title": "Zajęcie ambasady USA w Teheranie",
+      "body": "4 listopada 1979 r. irańscy studenci i bojówkarze zajęli ambasadę Stanów Zjednoczonych w Teheranie. 52 Amerykanów spędziło w niewoli 444 dni, do 20 stycznia 1981 r. Kryzys zerwał stosunki dyplomatyczne obu państw, które do dziś pozostają wrogie.",
+      "source": { "name": "HowStuffWorks", "url": "https://history.howstuffworks.com/american-history/iran-hostage-crisis.htm" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Zaniedbywanie stopy bazowej",
+    "definition": "To skłonność do oceniania prawdopodobieństwa na podstawie konkretnej wskazówki z pominięciem tego, jak często dane zjawisko w ogóle występuje.",
+    "origin": "Amos Tversky i Daniel Kahneman opisali ten błąd m.in. w „zadaniu o taksówkach”: 85 proc. taksówek w mieście jest zielonych, 15 proc. niebieskich, a świadek, który myli się w 20 proc. przypadków, widział niebieską. Większość ludzi uważa, że to na 80 proc. była niebieska, choć po uwzględnieniu proporcji wychodzi ok. 41 proc.",
+    "examples": [
+      "Gdy narzędzie bezpieczeństwa, takie jak nowy wyłącznik dla agentów AI, zgłasza alarm, trzeba pamiętać, że prawdziwe ataki są rzadkie, więc część alarmów będzie fałszywa.",
+      "Pozytywny wynik testu na rzadką chorobę może częściej być fałszywy, niż się wydaje, nawet jeśli test jest dość dokładny.",
+      "Zanim uznasz, że sąsiad z drogim autem to na pewno prawnik, przypomnij sobie, ilu jest prawników, a ilu innych zamożnych ludzi."
+    ],
+    "source": { "name": "Simply Psychology", "url": "https://www.simplypsychology.org/base-rate-fallacy.html" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "pulapki-myslenia",
+    "title": "Pułapki myślenia. O myśleniu szybkim i wolnym",
+    "author": "Daniel Kahneman",
+    "day": 4,
+    "days": 7,
+    "ideaTitle": "Liczy się tylko to, co widać",
+    "idea": "Kahneman nazywa tę zasadę skrótem WYSIATI („what you see is all there is”). Szybki system myślenia buduje spójną historię z informacji, które ma pod ręką, i nie pyta, czego brakuje. Im mniej wiemy, tym łatwiej ułożyć gładką opowieść, a gładka opowieść daje poczucie pewności. Dlatego po jednym artykule czy jednej opinii potrafimy mieć zdecydowany pogląd. Pewność siebie mówi więc więcej o spójności historii niż o jakości dowodów.",
+    "moral": "Poczucie pewności nie dowodzi, że wiemy wystarczająco dużo. Warto zapytać, jakich informacji nie widzimy.",
+    "action": "Przy jednej dzisiejszej wiadomości zapisz pytanie: czego z tego tekstu nie wiem, a co mogłoby zmienić mój wniosek?",
+    "source": { "name": "Penguin Random House", "url": "https://www.penguinrandomhouse.com/books/89308/thinking-fast-and-slow-by-daniel-kahneman/" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-04-q1",
+      "ref": "fact-1",
+      "question": "Skąd wzięło się popularne wyobrażenie wikingów w rogatych hełmach?",
+      "options": ["Z hełmów znalezionych w grobach wikingów", "Z XIX-wiecznych obrazów i kostiumów operowych", "Z opisów w kronikach mnichów z IX wieku", "Z norweskich hełmów paradnych z XVII wieku"],
+      "answer": 1,
+      "explanation": "Rogate hełmy spopularyzowały XIX-wieczne obrazy i kostiumy Carla Emila Doeplera do oper Wagnera. Archeolodzy nie znaleźli żadnego hełmu wikingów z rogami."
+    },
+    {
+      "id": "2026-11-04-q2",
+      "ref": "fact-2",
+      "question": "Z czym Robin Dunbar powiązał liczbę stałych relacji, jakie może utrzymać człowiek?",
+      "options": ["Z liczbą słów w języku", "Z długością życia", "Z rozmiarem kory nowej mózgu", "Z wielkością pierwszych osad rolniczych"],
+      "answer": 2,
+      "explanation": "Dunbar zauważył, że u naczelnych wielkość grupy rośnie razem z rozmiarem kory nowej, i z tej zależności wyliczył dla ludzi ok. 150 osób."
+    },
+    {
+      "id": "2026-11-04-q3",
+      "ref": "fact-3",
+      "question": "Dlaczego Pando, las złożony z ok. 47 tys. pni osiki, uznaje się za jeden organizm?",
+      "options": ["Wszystkie pnie mają identyczne geny i wspólne korzenie", "Pnie zrastają się koronami", "Wszystkie drzewa posadzono jednego dnia", "Las otacza go jedna sieć grzybni"],
+      "answer": 0,
+      "explanation": "Pnie Pando to klony jednej osiki połączone wspólnym systemem korzeniowym, dlatego cała kolonia jest jednym organizmem."
+    },
+    {
+      "id": "2026-11-04-q4",
+      "ref": "otd-1",
+      "question": "Kto dowodził wojskami rosyjskimi podczas szturmu na Pragę w 1794 roku?",
+      "options": ["Michaił Kutuzow", "Grigorij Potiomkin", "Piotr Bagration", "Aleksander Suworow"],
+      "answer": 3,
+      "explanation": "Szturmem i późniejszą rzezią Pragi dowodził Aleksander Suworow. Klęska przesądziła o upadku powstania kościuszkowskiego."
+    },
+    {
+      "id": "2026-11-04-q5",
+      "ref": "otd-3",
+      "question": "Jak długo Amerykanie byli przetrzymywani w ambasadzie USA w Teheranie?",
+      "options": ["44 dni", "444 dni", "144 dni", "4 lata"],
+      "answer": 1,
+      "explanation": "52 Amerykanów pozostawało w niewoli 444 dni, od 4 listopada 1979 do 20 stycznia 1981 roku."
+    },
+    {
+      "id": "2026-11-04-q6",
+      "ref": "concept",
+      "question": "Na czym polega zaniedbywanie stopy bazowej?",
+      "options": ["Na pomijaniu, jak często zjawisko w ogóle występuje", "Na przecenianiu własnych umiejętności", "Na trzymaniu się pierwszej usłyszanej liczby", "Na ocenianiu decyzji tylko po jej skutkach"],
+      "answer": 0,
+      "explanation": "Kto skupia się tylko na konkretnej wskazówce, a pomija ogólną częstość zjawiska, łatwo przecenia prawdopodobieństwo rzadkich zdarzeń."
+    },
+    {
+      "id": "2026-11-04-q7",
+      "ref": "book",
+      "question": "Co według Kahnemana oznacza skrót WYSIATI?",
+      "options": ["Że wolne myślenie zawsze poprawia szybkie", "Że pamiętamy głównie początek i koniec zdarzeń", "Że wnioski budujemy z tego, co widać, nie pytając o brakujące informacje", "Że w grupie podejmujemy lepsze decyzje niż w pojedynkę"],
+      "answer": 2,
+      "explanation": "„What you see is all there is”: szybki system tworzy spójną historię z dostępnych informacji i nie zauważa, czego brakuje."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-04-r1",
+      "question": "Ile neutrin, według Fermilabu, może w ciągu całego życia człowieka wejść w reakcję z materią jego ciała?",
+      "options": ["Zaledwie jedno lub dwa", "Około miliona", "Biliony każdego dnia"],
+      "answer": 0,
+      "explanation": "Biliony neutrin przelatują przez nas co sekundę, ale tak rzadko oddziałują z materią, że w całym życiu reaguje może jedno lub dwa."
+    },
+    {
+      "id": "2026-11-04-r2",
+      "question": "Od którego państwa Panama ogłosiła niepodległość 3 listopada 1903 roku?",
+      "options": ["Od Hiszpanii", "Od Kolumbii", "Od Stanów Zjednoczonych"],
+      "answer": 1,
+      "explanation": "Panama oderwała się od Kolumbii, a wkrótce potem zawarła z USA porozumienie o budowie Kanału Panamskiego."
+    },
+    {
+      "id": "2026-11-04-r3",
+      "question": "Które zdanie dobrze opisuje błąd koniunkcji?",
+      "options": ["Szczegółowa historia wydaje się bardziej prawdopodobna, choć nie może być częstsza od ogólnej", "Zdarzenia rzadkie zdarzają się częściej, niż sądzimy", "Po serii porażek oczekujemy, że teraz musi się udać"],
+      "answer": 0,
+      "explanation": "Prawdopodobieństwo „A i B” nigdy nie jest większe niż samego „A”, nawet jeśli bardziej szczegółowa opowieść brzmi przekonująco."
+    }
+  ],
+  "evening": {
+    "question": "O czym ostatnio mieliście pewne zdanie, choć znaliście tylko jedną stronę sprawy?",
+    "hint": "Zacznijcie od drobnej sytuacji: opinii o filmie, sąsiedzie albo restauracji. Co by się zmieniło, gdybyście wiedzieli więcej?"
+  }
+}

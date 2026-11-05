@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-05",
+  "file": "2026-11-05-darkman.mp3",
+  "url": "audio/2026-11-05-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-05-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "25be8310e6f1adc3",
+  "duration": 1009.58,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 14.82
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Tusk proponuje Nawrockiemu rozmowę w cztery oczy o Trybunale",
+      "start": 15.52,
+      "end": 62.12
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Prezydent podpisał pięć ustaw, m.in. o przejazdach kolejowych i długach w ZUS",
+      "start": 62.82,
+      "end": 99.11
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Paliwa znów tańsze: benzyna 95 najwyżej po 6,37 zł",
+      "start": 99.81,
+      "end": 143.68
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Przed 11 listopada może spaść deszcz ze śniegiem",
+      "start": 144.38,
+      "end": 171.97
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Kolizja niemieckich ciężarówek wojskowych na A4 pod Wrocławiem",
+      "start": 172.67,
+      "end": 201.53
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Demokraci zdobyli też Senat i przejmują cały Kongres",
+      "start": 202.73,
+      "end": 246.55
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Ropa Brent spadła o prawie 9 proc., poniżej 95 dolarów",
+      "start": 247.25,
+      "end": 290.99
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Chamenei: porażka Trumpa nie zmieni wrogości USA",
+      "start": 291.69,
+      "end": 327.03
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "50 mln Europejczyków nie stać na ogrzanie domu",
+      "start": 327.73,
+      "end": 364.16
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Europejskie giełdy rosną, spółki zbrojeniowe tracą",
+      "start": 364.86,
+      "end": 403.12
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Uzbrojeni policjanci w warszawskim metrze. Obowiązują stopnie alarmowe",
+      "start": 404.32,
+      "end": 442.95
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Canva zwalnia ponad 1200 osób",
+      "start": 443.65,
+      "end": 471.74
+    },
+    {
+      "id": "technologia-2",
+      "chapter": "tematy",
+      "label": "Apple zacznie sprawdzać publiczne linki z iCloud",
+      "start": 472.44,
+      "end": 499.78
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Wyborcy w USA niemal wszędzie zagłosowali przeciw centrom danych",
+      "start": 500.48,
+      "end": 544.01
+    },
+    {
+      "id": "ai-2",
+      "chapter": "tematy",
+      "label": "OpenAI chce wiążących norm bezpieczeństwa AI przed wyborami 2028",
+      "start": 544.71,
+      "end": 585.1
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Dłuższy okres płodności i terapia hormonalna a zdrowsze naczynia w mózgu",
+      "start": 585.8,
+      "end": 630.33
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Trzeci sezon „Pierścieni władzy” startuje 11 listopada",
+      "start": 631.03,
+      "end": 654.68
+    },
+    {
+      "id": "filmy-2",
+      "chapter": "tematy",
+      "label": "Netflix pokazał zwiastun thrillera „Trinity”",
+      "start": 655.38,
+      "end": 675.39
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Miód w zamkniętym słoiku praktycznie się nie psuje",
+      "start": 676.59,
+      "end": 708.17
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Sygnał od sondy Voyager 1 leci do nas prawie dobę",
+      "start": 708.87,
+      "end": 741.28
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Efekt Benjamina Franklina: lubimy tych, którym pomogliśmy",
+      "start": 741.98,
+      "end": 771.54
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1916: Akt 5 listopada",
+      "start": 772.74,
+      "end": 802.24
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1605: Spisek prochowy w Londynie",
+      "start": 802.94,
+      "end": 832.99
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1872: Susan B. Anthony oddała głos w wyborach",
+      "start": 833.69,
+      "end": 868.09
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt pewności wstecznej",
+      "start": 869.29,
+      "end": 921.79
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Pułapki myślenia. O myśleniu szybkim i wolnym: Strata boli bardziej, niż cieszy zysk",
+      "start": 922.99,
+      "end": 994.65
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 995.85,
+      "end": 1009.08
+    }
+  ]
+}

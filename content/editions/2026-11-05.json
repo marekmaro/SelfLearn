@@ -1,0 +1,367 @@
+{
+  "date": "2026-11-05",
+  "intro": "Dziś m.in.: demokraci przejmują też Senat, ropa tanieje najmocniej od miesięcy, a prezydent podpisał ustawę o bezpieczeństwie na przejazdach kolejowych.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Tusk proponuje Nawrockiemu rozmowę w cztery oczy o Trybunale",
+      "summary": "Premier Donald Tusk zaproponował prezydentowi Karolowi Nawrockiemu spotkanie w cztery oczy jeszcze w tym tygodniu, żeby obniżyć napięcie wokół Trybunału Konstytucyjnego. Kancelaria prezydenta potwierdziła otrzymanie propozycji, ale nie podała terminu. Zgromadzenie sędziów Sądu Najwyższego nie miało kworum, bo 28 sędziów trzech izb odmówiło udziału. Komisja Europejska oceniła, że wybór ośmiu nowych sędziów TK mieści się w uprawnieniach Sejmu.",
+      "why": "Spór o to, kto legalnie kieruje Trybunałem, paraliżuje jego pracę. Rozmowa obu polityków byłaby pierwszą próbą porozumienia od eskalacji z 30–31 października.",
+      "thread": "Spór o Trybunał Konstytucyjny",
+      "sources": [
+        { "name": "Euronews", "url": "https://euronews.com/2026/11/04/polands-pm-seeks-meeting-with-president-to-ease-tensions-over-constitutional-court-crisis" },
+        { "name": "TVN24", "url": "https://tvn24.pl/polska/piec-rzeczy-ktore-warto-dzis-wiedziec-najwazniejsze-informacje-4-listopada-2026-roku-st9321162" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Prezydent podpisał pięć ustaw, m.in. o przejazdach kolejowych i długach w ZUS",
+      "summary": "Karol Nawrocki podpisał w środę pięć ustaw. Jedna ma poprawić bezpieczeństwo na przejazdach kolejowych, druga przewiduje częściowe umorzenie starych zaległości w składkach ZUS. Prezydent zgodził się też na ratyfikację traktatu obronnego z Wielką Brytanią i podpisał zmianę prawa autorskiego dotyczącą wypożyczeń w bibliotekach.",
+      "why": "Część zmian dotyczy codziennych spraw: dróg, składek i bibliotek. Tym razem prezydent nie zawetował żadnej z nich.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-04/karol-nawrocki-podpisal-piec-ustaw-jest-komunikat-kancelarii-prezydenta/" },
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/prezydent-nawrocki-podpisal-piec-ustaw-tym-razem-bez-weta-7347382144457152a" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Paliwa znów tańsze: benzyna 95 najwyżej po 6,37 zł",
+      "summary": "W środę obowiązywały niższe ceny maksymalne paliw niż dzień wcześniej. Litr benzyny 95 mógł kosztować najwyżej 6,37 zł, benzyny 98 – 7,24 zł, a oleju napędowego – 8,05 zł. We wtorek było to odpowiednio 6,45 zł, 7,31 zł i 8,14 zł.",
+      "why": "Spadki na stacjach idą za tanieniem ropy na świecie. Jeśli ropa dalej będzie tanieć, ceny maksymalne mogą spadać w kolejnych dniach.",
+      "sources": [
+        { "name": "TVN24 Biznes", "url": "https://tvn24.pl/biznes/pieniadze/ceny-paliw-w-polsce-4-listopada-2026-ile-kierowcy-zaplaca-za-litr-pb95-pb98-oraz-on-st9319408" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Przed 11 listopada może spaść deszcz ze śniegiem",
+      "summary": "Modele pogodowe pokazują, że tuż przed Narodowym Świętem Niepodległości w części centralnej Polski może padać deszcz ze śniegiem. Na samo 11 listopada prognozy przewidują ocieplenie. To wciąż odległa prognoza, więc szczegóły mogą się zmienić.",
+      "why": "Przed długim weekendem warto śledzić prognozy, zwłaszcza planując wyjazd lub udział w obchodach.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-04/snieg-pojawil-sie-na-mapach-pogodowych-wyroznia-sie-konkretny-dzien/" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Kolizja niemieckich ciężarówek wojskowych na A4 pod Wrocławiem",
+      "summary": "Na autostradzie A4 koło Wrocławia zderzyły się niemieckie wojskowe ciężarówki. Trzech niemieckich żołnierzy doznało lekkich potłuczeń. Żandarmeria Wojskowa wyjaśniała, dlaczego niemieckie wojsko przejeżdżało przez Polskę.",
+      "why": "Przez Polskę regularnie przejeżdżają konwoje wojsk sojuszniczych. Kierowcy na A4 i innych trasach powinni liczyć się z kolumnami wojskowymi.",
+      "sources": [
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/niemieccy-zolnierze-na-a4-zandarmeria-o-ich-obecnosci-w-polsce-7347513217763776a" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Demokraci zdobyli też Senat i przejmują cały Kongres",
+      "summary": "Agencja AP przyznała demokratom większość w Senacie. Według prognoz będą mieli co najmniej 54 miejsca, a o dwóch, w Missisipi i na Alasce, jeszcze nie rozstrzygnięto. W Maine Troy Jackson pokonał Susan Collins, senator od blisko 30 lat. W Michigan wygrał Abdul El-Sayed, pierwszy muzułmanin wybrany do Senatu USA. Nowa większość obejmie władzę 3 stycznia.",
+      "why": "Demokraci nie mieli tak wyraźnej przewagi w Senacie od 2008 roku. Z Kongresem w ich rękach Donald Trump będzie musiał szukać kompromisów przy ustawach i budżecie.",
+      "thread": "Wybory w USA",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/4/democrats-win-control-of-house-and-senate-key-us-midterms-takeaways" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/04/g-s1-148952/maine-senate-race-susan-collins-troy-jackson" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Ropa Brent spadła o prawie 9 proc., poniżej 95 dolarów",
+      "summary": "Cena ropy Brent spadła w środę o 8,7 proc., do 94,62 dolara za baryłkę. Ostatni raz poniżej 100 dolarów była we wrześniu. Wiceprezydent JD Vance powiedział, że Republikanie przegrali „przez wojnę”. Analitycy uważają, że po porażce partii Donald Trump ma większy powód, by dogadać się z Iranem. Iran zapowiada jednak, że nie przyjmie rozmów pod przymusem.",
+      "why": "Tańsza ropa szybko przekłada się na ceny na stacjach, także w Polsce. Analitycy przypominają, że plotki o porozumieniu już wcześniej obniżały ceny, a potem wojna się zaostrzała.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Chamenei: porażka Trumpa nie zmieni wrogości USA",
+      "summary": "Najwyższy przywódca Iranu Modżtaba Chamenei powiedział, że kto liczy na zmianę polityki USA wobec Iranu po wyborach, „poważnie się myli”. Przewodniczący parlamentu Mohammad Bagher Ghalibaf ocenił wynik wyborów jako odrzucenie wojny przez Amerykanów. W Teheranie odbył się wiec w rocznicę zajęcia ambasady USA w 1979 roku.",
+      "why": "Słowa Chameneiego studzą nadzieje na szybkie porozumienie, od którego zależą ceny ropy i bezpieczeństwo żeglugi w cieśninie Ormuz.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://aljazeera.com/news/2026/11/4/iran-hails-us-voters-rejecting-war-while-khamenei-warns-hostility-wont-end" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "50 mln Europejczyków nie stać na ogrzanie domu",
+      "summary": "Według danych przytaczanych przez Euronews około 50 mln mieszkańców UE nie jest w stanie odpowiednio ogrzać swoich domów. Europa wchodzi w zimę z najmniej zapełnionymi magazynami gazu od początku pomiarów w 2011 roku, a pod koniec października były pełne w ok. 75 proc. Ceny energii są wysokie głównie przez wojnę z Iranem i utrudnienia w cieśninie Ormuz.",
+      "why": "Mroźna zima mogłaby jeszcze podbić ceny gazu. Unia rozważa, jak pomóc najuboższym gospodarstwom.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/04/50-million-europeans-cant-heat-their-homes-what-is-the-eu-doing-to-help" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/amp/2026/10/30/europe-gas-prices-winter-energy-costs.html" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Europejskie giełdy rosną, spółki zbrojeniowe tracą",
+      "summary": "Po wyborach w USA europejskie indeksy poszły w górę: rano Euro Stoxx 50 zyskiwał 0,8 proc., niemiecki DAX 0,6 proc., a hiszpański IBEX 35 – 1,6 proc. Taniały natomiast akcje firm zbrojeniowych. Inwestorzy obawiają się, że Kongres pod kontrolą demokratów spowolni wzrost amerykańskich wydatków wojskowych.",
+      "why": "Wybory w USA przekładają się na europejską gospodarkę i oszczędności inwestorów, także w funduszach emerytalnych.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/04/us-midterms-what-trumps-defeat-means-for-europe-and-global-markets" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Uzbrojeni policjanci w warszawskim metrze. Obowiązują stopnie alarmowe",
+      "summary": "Policjanci z bronią automatyczną patrolują warszawskie metro. Stołeczna policja wyjaśnia, że to skutek obowiązujących w Polsce stopni alarmowych BRAVO i CHARLIE. Równolegle policja, Straż Graniczna i GROM prowadzą operację antyterrorystyczną przy granicy z obwodem królewieckim po sygnałach o możliwym przeniknięciu dywersantów.",
+      "why": "Widok uzbrojonych patroli nie oznacza konkretnego zagrożenia w metrze, ale pokazuje podwyższoną gotowość służb przed 11 listopada.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-04/policjanci-z-bronia-automatyczna-w-warszawskim-metrze-ksp-wyjasnia/" },
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/tajna-operacja-na-granicy-ekspertka-ostrzega-przed-11-listopada-7347406358067680v" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Canva zwalnia ponad 1200 osób",
+      "summary": "Twórca popularnego programu do projektowania grafik Canva zwalnia 1271 pracowników, czyli ok. 22 proc. zatrudnionych. Firma tłumaczy to spowolnieniem wzrostu.",
+      "why": "Canva była jednym z najszybciej rosnących startupów technologicznych. Zwolnienia pokazują, że nawet popularne narzędzia odczuwają konkurencję i presję na koszty.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/04/canva-lays-off-over-1200-people-amid-slowing-growth" }
+      ]
+    },
+    {
+      "id": "technologia-2",
+      "section": "technologia",
+      "rank": 2,
+      "title": "Apple zacznie sprawdzać publiczne linki z iCloud",
+      "summary": "Od systemu iOS 27.3 Apple będzie sprawdzać pliki udostępniane w iCloud opcją „Każdy, kto ma link” pod kątem szkodliwych treści. Pierwsza wersja testowa systemu jest już dostępna.",
+      "why": "Zmiana dotyczy tylko plików udostępnianych publicznie, nie prywatnych. Warto jednak wiedzieć, że takie pliki nie będą już poza kontrolą firmy.",
+      "sources": [
+        { "name": "9to5Mac", "url": "https://9to5mac.com/2026/11/04/with-ios-27-3-apple-will-start-checking-icloud-public-links-for-harmful-content/" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Wyborcy w USA niemal wszędzie zagłosowali przeciw centrom danych",
+      "summary": "Według Ballotpedii i analizy CNBC w 40 z 41 lokalnych głosowań dotyczących centrów danych wyborcy opowiedzieli się przeciw nim. Najwięcej takich głosowań, 21, odbyło się w Ohio. W sondażu CNBC 56 proc. wyborców uznało centra danych za ważny czynnik przy urnie. Akcje mniejszych dostawców chmury dla AI, np. CoreWeave, spadły o 7–10 proc.",
+      "why": "Budowa centrów danych dla AI zużywa dużo prądu i wody. Opór mieszkańców może spowolnić rozwój infrastruktury sztucznej inteligencji.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html" }
+      ]
+    },
+    {
+      "id": "ai-2",
+      "section": "ai",
+      "rank": 2,
+      "title": "OpenAI chce wiążących norm bezpieczeństwa AI przed wyborami 2028",
+      "summary": "Chris Lehane, szef polityki globalnej OpenAI, opublikował esej, w którym nazywa wybory prezydenckie w 2028 roku przełomowymi dla AI. Wzywa do egzekwowalnych norm bezpieczeństwa, niezależnych ocen modeli, nadzoru publicznego i możliwości wyłączania systemów AI. Krytycy zauważają, że to wyraźna zmiana wobec wcześniejszego nacisku firmy na szybki rozwój.",
+      "why": "Gdy wiodąca firma AI sama prosi o obowiązkowe zasady, debata o regulacjach przyspiesza, także w Europie.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Dłuższy okres płodności i terapia hormonalna a zdrowsze naczynia w mózgu",
+      "summary": "Badanie opublikowane w „Neurology” objęło 70-letnie Szwedki z kohorty Gothenburg H70. U kobiet z dłuższym okresem od pierwszej miesiączki do menopauzy oraz u tych, które brały pigułki antykoncepcyjne lub hormonalną terapię menopauzalną, naczynia krwionośne w mózgu były w lepszym stanie. Terapia hormonalna wiązała się m.in. z mniejszą liczbą mikrokrwawień. Autorzy podkreślają, że to związek, a nie dowód przyczyny.",
+      "why": "Wyniki mogą pomóc zrozumieć, dlaczego zdrowie mózgu kobiet zmienia się po menopauzie. Decyzję o terapii hormonalnej warto podjąć z lekarzem.",
+      "sources": [
+        { "name": "EurekAlert!", "url": "https://www.eurekalert.org/news-releases/1150312" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "Trzeci sezon „Pierścieni władzy” startuje 11 listopada",
+      "summary": "Prime Video pokazało oficjalny zwiastun trzeciego sezonu serialu „Władca Pierścieni: Pierścienie władzy”. Premiera zaplanowana jest na 11 listopada.",
+      "why": "To jeden z najdroższych seriali w historii. Nowy sezon trafi na platformę w polski długi weekend.",
+      "sources": [
+        { "name": "The Hollywood Reporter", "url": "https://www.hollywoodreporter.com/tv/tv-news/rings-of-power-season-3-official-trailer-1236737339/" }
+      ]
+    },
+    {
+      "id": "filmy-2",
+      "section": "filmy",
+      "rank": 2,
+      "title": "Netflix pokazał zwiastun thrillera „Trinity”",
+      "summary": "Netflix wyznaczył premierę thrillera „Trinity” z Gugu Mbathą-Raw i Richardem Maddenem na 1 grudnia i pokazał nowy zwiastun.",
+      "why": "Richard Madden zdobył popularność rolami w „Grze o tron” i „Bodyguardzie”, więc to jedna z ciekawszych premier grudnia.",
+      "sources": [
+        { "name": "Variety", "url": "https://variety.com/2026/tv/news/tv-news-roundup-week-of-nov-2-1236937906/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "nauka",
+      "title": "Miód w zamkniętym słoiku praktycznie się nie psuje",
+      "body": "Miód ma bardzo mało wody, bo pszczoły odparowują ją z nektaru, wachlując skrzydłami. W takim środowisku bakterie prawie nie mają szans. Miód jest też kwaśny, z pH ok. 3–4,5. Do tego enzym z organizmu pszczół rozkłada nektar m.in. na nadtlenek wodoru, który działa odkażająco. Warunek: słoik musi być zamknięty, bo miód chłonie wilgoć z powietrza.",
+      "source": { "name": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/science-nature/the-science-behind-honeys-eternal-shelf-life-1218690/" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "kosmos",
+      "title": "Sygnał od sondy Voyager 1 leci do nas prawie dobę",
+      "body": "Voyager 1, wystrzelony w 1977 roku, to najdalszy obiekt zbudowany przez człowieka. Jest już tak daleko, że jego sygnał radiowy potrzebuje ponad 23 godzin, by dotrzeć do Ziemi. W listopadzie 2026 roku sonda osiągnie odległość jednej doby świetlnej, ok. 25,9 mld km. Polecenie i odpowiedź zajmują więc razem około dwóch dni.",
+      "source": { "name": "New Atlas", "url": "https://newatlas.com/space/voyager-approaches-1-light-day-from-earth" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "psychologia",
+      "title": "Efekt Benjamina Franklina: lubimy tych, którym pomogliśmy",
+      "body": "Benjamin Franklin opisał, jak zjednał sobie przeciwnika z parlamentu Pensylwanii: poprosił go o pożyczenie rzadkiej książki, a po tygodniu oddał ją z podziękowaniem. Od tej pory rywal odnosił się do niego życzliwie. Psychologowie nazwali to efektem Bena Franklina: po wyświadczeniu komuś przysługi zaczynamy go bardziej lubić. Zjawisko badano eksperymentalnie od lat 60.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Ben_Franklin_effect" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1916,
+      "title": "Akt 5 listopada",
+      "body": "5 listopada 1916 r. cesarze Niemiec i Austro-Węgier ogłosili w Warszawie i Lublinie utworzenie Królestwa Polskiego jako dziedzicznej monarchii konstytucyjnej z własną armią. Państwo miało powstać na ziemiach odebranych Rosji, a granic nie określono. Polacy przyjęli akt z rezerwą, ale przywrócił on sprawę polską na arenę międzynarodową.",
+      "source": { "name": "Radio Kraków", "url": "https://www.radiokrakow.pl/audycje/akt-5-listopada-1916/" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1605,
+      "title": "Spisek prochowy w Londynie",
+      "body": "W nocy z 4 na 5 listopada 1605 r. w piwnicy pod Izbą Lordów zatrzymano Guya Fawkesa pilnującego ok. 36 beczek prochu. Grupa katolickich spiskowców pod wodzą Roberta Catesby'ego chciała wysadzić parlament i zabić króla Jakuba I. Spisek wydał anonimowy list. Na pamiątkę Brytyjczycy co roku 5 listopada palą ogniska i odpalają fajerwerki.",
+      "source": { "name": "English Heritage", "url": "https://www.english-heritage.org.uk/members-area/kids/kids-the-stuarts/bonfire-night/" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1872,
+      "title": "Susan B. Anthony oddała głos w wyborach",
+      "body": "5 listopada 1872 r. sufrażystka Susan B. Anthony zagłosowała w wyborach prezydenckich w Rochester, choć kobiety nie miały wtedy prawa głosu. Kilka tygodni później została aresztowana, a w 1873 r. sąd uznał ją za winną i skazał na 100 dolarów grzywny. Nigdy jej nie zapłaciła. Amerykanki uzyskały prawo wyborcze dopiero w 1920 r.",
+      "source": { "name": "HISTORY", "url": "https://www.history.com/this-day-in-history/November-5/susan-b-anthony-arrested-for-trying-to-vote-1872" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Efekt pewności wstecznej",
+    "definition": "To skłonność do przekonania, że coś, co już się wydarzyło, było od początku łatwe do przewidzenia („wiedziałem, że tak będzie”).",
+    "origin": "Psycholog Baruch Fischhoff opisał to zjawisko w 1975 roku. Uczestnicy jego badań, którym podano wynik wydarzenia, oceniali go jako bardziej prawdopodobny niż osoby, które wyniku nie znały, i nie zdawali sobie sprawy, że ta wiedza zmieniła ich ocenę.",
+    "examples": [
+      "Po wyborach w USA wielu komentatorów mówi, że zwycięstwo demokratów było oczywiste, choć przed głosowaniem kontrola nad Senatem uchodziła za niepewną.",
+      "Po spadku cen akcji łatwo uznać, że „było widać”, że trzeba było sprzedać, choć wcześniej nikt nie był tego pewien.",
+      "Po kłótni w związku łatwo uwierzyć, że „przecież to było jasne”, i obwiniać drugą osobę, że tego nie przewidziała."
+    ],
+    "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Hindsight_bias" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "pulapki-myslenia",
+    "title": "Pułapki myślenia. O myśleniu szybkim i wolnym",
+    "author": "Daniel Kahneman",
+    "day": 5,
+    "days": 7,
+    "ideaTitle": "Strata boli bardziej, niż cieszy zysk",
+    "idea": "Kahneman i Tversky pokazali w teorii perspektywy, że ludzie oceniają wyniki jako zyski i straty względem punktu odniesienia, a nie jako stan majątku. Strata boli mniej więcej dwa razy mocniej, niż cieszy zysk tej samej wielkości. Dlatego wiele osób odrzuca rzut monetą, w którym może wygrać 150 zł albo stracić 100 zł, choć ten zakład się opłaca. Awersja do straty wyjaśnia, czemu trzymamy się złych inwestycji i rzadziej zmieniamy dostawców, nawet gdy zmiana by się opłaciła. Część badaczy wskazuje, że siła tego efektu zależy od sytuacji i wysokości stawki.",
+    "moral": "Strach przed stratą bywa silniejszy niż rachunek zysków. Warto pytać, czy odrzucamy coś dlatego, że jest złe, czy dlatego, że boimy się coś stracić.",
+    "action": "Przypomnij sobie jedną rzecz, z której nie rezygnujesz tylko dlatego, że szkoda ci straty (abonament, plan, przedmiot), i zdecyduj, czy wybrałbyś ją dziś od nowa.",
+    "source": { "name": "Penguin Random House", "url": "https://www.penguinrandomhouse.com/books/89308/thinking-fast-and-slow-by-daniel-kahneman/" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-05-q1",
+      "ref": "fact-1",
+      "question": "Co najbardziej chroni miód przed bakteriami?",
+      "options": ["Duża zawartość witamin", "Niska zawartość wody i kwaśny odczyn", "Wysoka zawartość białka", "Przechowywanie w lodówce"],
+      "answer": 1,
+      "explanation": "Bakterie nie rozwijają się w miodzie, bo jest w nim bardzo mało wody, ma kwaśny odczyn i zawiera nadtlenek wodoru. Musi jednak być szczelnie zamknięty."
+    },
+    {
+      "id": "2026-11-05-q2",
+      "ref": "fact-2",
+      "question": "Ile w przybliżeniu trwa podróż sygnału radiowego z sondy Voyager 1 na Ziemię?",
+      "options": ["Około 23–24 godzin", "Około 8 minut", "Około tygodnia", "Około roku"],
+      "answer": 0,
+      "explanation": "Voyager 1 zbliża się do odległości jednej doby świetlnej, więc jego sygnał leci do nas prawie dobę."
+    },
+    {
+      "id": "2026-11-05-q3",
+      "ref": "fact-3",
+      "question": "Jak Benjamin Franklin zjednał sobie przeciwnika według efektu nazwanego jego nazwiskiem?",
+      "options": ["Podarował mu cenną książkę", "Publicznie go pochwalił", "Poprosił go o pożyczenie książki", "Zaprosił go na kolację"],
+      "answer": 2,
+      "explanation": "To rywal wyświadczył przysługę Franklinowi. Po pożyczeniu książki zaczął go bardziej lubić."
+    },
+    {
+      "id": "2026-11-05-q4",
+      "ref": "otd-1",
+      "question": "Kto ogłosił Akt 5 listopada 1916 roku o utworzeniu Królestwa Polskiego?",
+      "options": ["Car Rosji", "Rada Regencyjna w Warszawie", "Państwa ententy", "Cesarze Niemiec i Austro-Węgier"],
+      "answer": 3,
+      "explanation": "Akt ogłosili cesarze Niemiec i Austro-Węgier na ziemiach odebranych Rosji. Polacy przyjęli go z rezerwą."
+    },
+    {
+      "id": "2026-11-05-q5",
+      "ref": "otd-3",
+      "question": "Jak zakończyła się sprawa Susan B. Anthony po jej głosowaniu w 1872 roku?",
+      "options": ["Sąd ją uniewinnił", "Skazano ją na grzywnę, której nigdy nie zapłaciła", "Trafiła do więzienia na rok", "Kongres przyznał jej prawo głosu"],
+      "answer": 1,
+      "explanation": "Sąd skazał ją na 100 dolarów grzywny. Odmówiła zapłaty, a Amerykanki zyskały prawo głosu dopiero w 1920 roku."
+    },
+    {
+      "id": "2026-11-05-q6",
+      "ref": "concept",
+      "question": "Na czym polega efekt pewności wstecznej?",
+      "options": ["Na przekonaniu, że znany już wynik był od początku łatwy do przewidzenia", "Na przecenianiu rzadkich zdarzeń", "Na trzymaniu się pierwszej liczby, którą usłyszeliśmy", "Na unikaniu decyzji z obawy przed błędem"],
+      "answer": 0,
+      "explanation": "Gdy znamy wynik, wydaje się on oczywisty, choć wcześniej był niepewny. Fischhoff opisał to w 1975 roku."
+    },
+    {
+      "id": "2026-11-05-q7",
+      "ref": "book",
+      "question": "Co według Kahnemana i Tversky'ego mówi awersja do straty?",
+      "options": ["Zyski cieszą nas mocniej niż straty bolą", "Ludzie zawsze wybierają najbardziej opłacalną opcję", "Strata boli mniej więcej dwa razy mocniej, niż cieszy taki sam zysk", "Straty pamiętamy krócej niż zyski"],
+      "answer": 2,
+      "explanation": "Dlatego wiele osób odrzuca nawet opłacalny zakład, w którym może coś stracić."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-05-r1",
+      "question": "Ile pni osiki liczy kolonia Pando w Utah, uznawana za jeden organizm?",
+      "options": ["Około 470", "Około 47 tysięcy", "Około 4,7 miliona"],
+      "answer": 1,
+      "explanation": "Pando to ok. 47 tys. genetycznie identycznych pni połączonych wspólnym systemem korzeni."
+    },
+    {
+      "id": "2026-11-05-r2",
+      "question": "Kto 4 listopada 1922 roku odnalazł wejście do grobowca Tutanchamona?",
+      "options": ["Ekipa Howarda Cartera", "Ekspedycja Napoleona", "Archeolodzy z Kairu w 1960 roku"],
+      "answer": 0,
+      "explanation": "Robotnicy Howarda Cartera odsłonili w Dolinie Królów pierwszy stopień schodów do grobowca."
+    },
+    {
+      "id": "2026-11-05-r3",
+      "question": "Co oznacza skrót WYSIATI z książki Kahnemana?",
+      "options": ["Że lepiej decydujemy w grupie", "Że wnioski budujemy z tego, co widać, nie pytając o resztę", "Że szybkie myślenie zawsze się myli"],
+      "answer": 1,
+      "explanation": "„What you see is all there is”: z dostępnych informacji tworzymy spójną historię i nie zauważamy, czego brakuje."
+    }
+  ],
+  "evening": {
+    "question": "Z czego trudno wam zrezygnować tylko dlatego, że szkoda straty, choć dziś byście tego nie wybrali?",
+    "hint": "Zacznijcie od drobiazgu: abonamentu, rzeczy w szafie albo planu na weekend."
+  }
+}

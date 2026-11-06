@@ -1,0 +1,201 @@
+{
+  "date": "2026-11-06",
+  "file": "2026-11-06.mp3",
+  "url": "audio/2026-11-06.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-06.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "54e697a121311c62",
+  "duration": 1008.19,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 14.82
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "PSL proponuje zmianę konstytucji i nowy skład Trybunału",
+      "start": 15.52,
+      "end": 62.31
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Glapiński: inflacja w październiku spadła, ale ryzyko nie minęło",
+      "start": 63.01,
+      "end": 92.79
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Od 5 listopada drożej u notariusza",
+      "start": 93.49,
+      "end": 132.07
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Opolskie: kierowca BMW staranował radiowóz i uciekł",
+      "start": 132.77,
+      "end": 159.7
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Na warszawskiej giełdzie tylko WIG20 na plusie",
+      "start": 160.4,
+      "end": 190.22
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Najgorszy dzień na Wall Street od kwietnia 2025 roku",
+      "start": 191.42,
+      "end": 237.95
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Druga w tym tygodniu fala fałszywych alarmów bombowych w samolotach",
+      "start": 238.65,
+      "end": 281.81
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Setki tysięcy Francuzów protestowały przeciw drożyźnie",
+      "start": 282.51,
+      "end": 325.58
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Trump spotkał się z wysłannikiem Kremla",
+      "start": 326.28,
+      "end": 359.09
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Paragwaj przejął bank cyfrowy powiązany z prezydentem",
+      "start": 359.79,
+      "end": 400.28
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "ABW zatrzymała sześć osób za przemyt części do broni do Rosji",
+      "start": 401.48,
+      "end": 443.61
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Wielcy giganci technologiczni stracili w jeden dzień ponad bilion dolarów",
+      "start": 444.31,
+      "end": 483.77
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "OpenAI obiecuje płacić za prąd i rezygnuje z umów o poufności",
+      "start": 484.47,
+      "end": 531.6
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Dwie „wieczne chemikalia” powiązane z agresywnym rakiem piersi",
+      "start": 532.3,
+      "end": 579.46
+    },
+    {
+      "id": "zdrowie-2",
+      "chapter": "tematy",
+      "label": "Gogle VR mogą zmniejszać lęk dzieci przed operacją",
+      "start": 580.16,
+      "end": 614.94
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "„Godzilla Minus Zero” wchodzi do kin w USA",
+      "start": 615.64,
+      "end": 654.7
+    },
+    {
+      "id": "filmy-2",
+      "chapter": "tematy",
+      "label": "Rosamund Pike zagra w horrorze o mamie influencerki",
+      "start": 655.4,
+      "end": 685.81
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Diament i grafit to ten sam pierwiastek",
+      "start": 687.01,
+      "end": 719.63
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Węgorze z Europy płyną na tarło tysiące kilometrów",
+      "start": 720.33,
+      "end": 750.15
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Mit: Wielki Mur Chiński widać gołym okiem z kosmosu",
+      "start": 750.85,
+      "end": 780.51
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1939: Sonderaktion Krakau",
+      "start": 781.71,
+      "end": 814.31
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1860: Abraham Lincoln wybrany na prezydenta USA",
+      "start": 815.01,
+      "end": 842
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1893: Śmierć Piotra Czajkowskiego",
+      "start": 842.7,
+      "end": 867.1
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Owczy pęd",
+      "start": 868.3,
+      "end": 917.3
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Pułapki myślenia. O myśleniu szybkim i wolnym: Morał: rozpoznaj, kiedy zwolnić",
+      "start": 918.5,
+      "end": 992.16
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 993.36,
+      "end": 1007.69
+    }
+  ]
+}

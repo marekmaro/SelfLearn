@@ -1,6 +1,28 @@
 {
   "editions": [
     {
+      "date": "2026-11-06",
+      "headline": "PSL proponuje zmianę konstytucji i nowy skład Trybunału",
+      "threads": [
+        {
+          "name": "Spór o Trybunał Konstytucyjny",
+          "item": "pl-1",
+          "title": "PSL proponuje zmianę konstytucji i nowy skład Trybunału"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-4",
+          "title": "Trump spotkał się z wysłannikiem Kremla"
+        }
+      ],
+      "facts": [
+        "Diament i grafit to ten sam pierwiastek",
+        "Węgorze z Europy płyną na tarło tysiące kilometrów",
+        "Mit: Wielki Mur Chiński widać gołym okiem z kosmosu"
+      ],
+      "concept": "Owczy pęd"
+    },
+    {
       "date": "2026-11-05",
       "headline": "Tusk proponuje Nawrockiemu rozmowę w cztery oczy o Trybunale",
       "threads": [

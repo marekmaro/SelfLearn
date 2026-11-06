@@ -1,0 +1,361 @@
+{
+  "date": "2026-11-06",
+  "intro": "Dziś m.in.: najgorszy dzień na Wall Street od półtora roku, kolejna fala fałszywych alarmów bombowych w samolotach nad Europą i droższe usługi notariuszy.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "PSL proponuje zmianę konstytucji i nowy skład Trybunału",
+      "summary": "Wicepremier Władysław Kosiniak-Kamysz przedstawił projekt zmiany konstytucji, który ma zakończyć spór o Trybunał Konstytucyjny „nadzwyczajnym odnowieniem” jego składu. Na mocy ustawy miałby zostać wyłoniony nowy, jednorazowy skład TK. Krajowa Rada Sądownictwa poparła wznowienie pracy Trybunału z udziałem sędziów wybranych od kwietnia 2026 roku. Prokuratura w Rzeszowie chce uchylenia immunitetu sędziemu Bogdanowi Święczkowskiemu.",
+      "why": "Zmiana konstytucji wymaga dwóch trzecich głosów w Sejmie, więc projekt potrzebowałby poparcia także części opozycji. Marszałek Sejmu Włodzimierz Czarzasty podchodzi do niego sceptycznie.",
+      "thread": "Spór o Trybunał Konstytucyjny",
+      "sources": [
+        { "name": "Polsat News", "url": "https://polsatnews.pl/wiadomosc/2026-11-05/psl-chce-nadzwyczajnego-odnowienia-skladu-tk-kosiniak-kamysz-oglasza" },
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/kosiniak-kamysz-proponuje-reset-konstytucyjny-czarzasty-sceptyczny-7347676466674112a" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Glapiński: inflacja w październiku spadła, ale ryzyko nie minęło",
+      "summary": "Prezes NBP Adam Glapiński powiedział, że inflacja w październiku spadła, ale zagrożenie wzrostem cen nie minęło. Zaznaczył, że nie jest przesądzone, czy Rada Polityki Pieniężnej podniesie stopy procentowe w listopadzie.",
+      "why": "Ewentualna podwyżka stóp oznaczałaby wyższe raty kredytów o zmiennym oprocentowaniu, ale też lepiej oprocentowane lokaty.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-05/ceny-znowu-pojda-ostro-w-gore-prezes-nbp-o-decydujacym-miesiacu-dla-inflacji/" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Od 5 listopada drożej u notariusza",
+      "summary": "Weszło w życie rozporządzenie ministra sprawiedliwości, które podnosi maksymalne stawki taksy notarialnej. Za akt poświadczenia dziedziczenia notariusz może teraz pobrać do 200 zł zamiast 50 zł, z zapisem windykacyjnym do 300 zł zamiast 100 zł. Protokół dziedziczenia kosztuje do 200 zł zamiast 100 zł, a maksymalna stawka za testament wzrosła czterokrotnie.",
+      "why": "Część stawek nie zmieniała się od ok. 20 lat. Przy sprawach spadkowych i testamentach trzeba teraz liczyć się z wyższymi kosztami.",
+      "sources": [
+        { "name": "Wirtualna Polska", "url": "https://informacje.wp.pl/wiadomosci/nowe-stawki-u-notariuszy-od-listopada-spore-wzrosty-oplat-7347762242640352a" },
+        { "name": "PIT.pl", "url": "https://www.pit.pl/?p=59344" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Opolskie: kierowca BMW staranował radiowóz i uciekł",
+      "summary": "W województwie opolskim kierowca BMW staranował radiowóz i uciekł policjantom. Funkcjonariusze oddali dwa strzały, w tym jeden ostrzegawczy. Samochód znaleziono później porzucony, a policja prowadzi obławę.",
+      "why": "Ucieczki przed kontrolą są groźne dla wszystkich na drodze. Sprawca wciąż jest poszukiwany.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-05/kierowca-staranowal-radiowoz-i-uciekl-padly-strzaly-trwa-oblawa/" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Na warszawskiej giełdzie tylko WIG20 na plusie",
+      "summary": "WIG20 wzrósł w czwartek o 0,42 proc., do 4207,61 pkt. Był jedynym z głównych indeksów Giełdy Papierów Wartościowych w Warszawie, który zakończył sesję na plusie. Pozostałe indeksy spadały.",
+      "why": "Polskie duże spółki trzymały się lepiej niż giełdy w USA, gdzie tego dnia doszło do największej przeceny od półtora roku.",
+      "sources": [
+        { "name": "XYZ", "url": "https://xyz.pl/tylko-wig20-swiecil-sie-na-zielono-pozostale-indeksy-spadaly-notowania-gpw-z-5-listopada-2026-r/" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Najgorszy dzień na Wall Street od kwietnia 2025 roku",
+      "summary": "Indeks Nasdaq spadł w czwartek o 5,52 proc., do 24 315 pkt, i jest już ponad 10 proc. poniżej niedawnego szczytu. S&P 500 stracił 4,36 proc., a Dow Jones ponad 1800 pkt. Inwestorzy obawiają się, że Kongres kontrolowany przez demokratów spowolni budowę centrów danych dla AI. W piątek japoński Nikkei 225 spadł o 5,9 proc. i wszedł w bessę.",
+      "why": "Przecena zniwelowała środowe wzrosty po wyborach. Spadki w USA odbijają się na funduszach i oszczędnościach na całym świecie.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Druga w tym tygodniu fala fałszywych alarmów bombowych w samolotach",
+      "summary": "W czwartek fałszywe groźby bombowe dotknęły co najmniej 27 lotów w 10 krajach, m.in. we Francji, Włoszech, Bułgarii, Hiszpanii i Polsce. Samolot Aer Lingus z Dublina do Rzymu, w eskorcie myśliwców, wylądował w bazie wojskowej we Francji. W Bułgarii myśliwce sprowadziły na ziemię trzy samoloty. Nigdzie nie znaleziono materiałów wybuchowych.",
+      "why": "Podczas pierwszej fali we wtorek na krótko zamknięto lotnisko pod Warszawą. Nikt nie przyznał się do gróźb, a według UE jest za wcześnie, by stwierdzić, czy są ze sobą powiązane.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/5/bomb-threat-diverts-dublin-rome-flight-to-france" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/05/bomb-threats-flights-europe.html" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Setki tysięcy Francuzów protestowały przeciw drożyźnie",
+      "summary": "Według MSW Francji w czwartek protestowało ok. 575 tys. osób, a według związku CGT – 1,6 mln. Ludzie domagali się wyższych płac. Około jednej trzeciej liceów nie działało, transport publiczny był sparaliżowany, zamknięto też wieżę Eiffla. Do wieczora zatrzymano 448 osób, a 53 policjantów zostało rannych.",
+      "why": "Protesty trwają od września i łączą studentów oraz pracowników. Premier Sébastien Lecornu zwołał na poniedziałek rozmowy ze związkami i pracodawcami o płacach.",
+      "sources": [
+        { "name": "France 24", "url": "https://www.france24.com/en/france/20261105-live-france-nationwide-strikes-living-costs" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/5/workers-strike-across-france-hundreds-of-thousands-expected-to-protest" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Trump spotkał się z wysłannikiem Kremla",
+      "summary": "Donald Trump poinformował, że spotkał się z Kiriłłem Dmitrijewem, specjalnym wysłannikiem Władimira Putina. Według Trumpa porozumienie pokojowe w sprawie Ukrainy jest blisko i ma objąć nie tylko Ukrainę. Według Euronews USA mają pośredniczyć w rozmowach Kijowa z Moskwą 10–11 listopada w Abu Zabi.",
+      "why": "Szczegóły ewentualnej umowy nie są znane. Od jej warunków zależy bezpieczeństwo całego regionu, także Polski.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-05/trump-spotkal-sie-z-wyslannikiem-kremla-porozumienie-obejmie-nie-tylko-ukraine/" },
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/04/brussels-to-host-talks-on-ukraines-reconstruction-with-key-allies" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Paragwaj przejął bank cyfrowy powiązany z prezydentem",
+      "summary": "Bank centralny Paragwaju przejął cyfrowy bank Ueno, którego wskaźnik wypłacalności spadł poniżej połowy wymaganego minimum. Miliony klientów czekają na dostęp do pieniędzy. Prezes banku centralnego Carlos Carvallo podał się do dymisji na prośbę prezydenta Santiago Peñi, który do 2025 roku był wspólnikiem grupy właścicielskiej. Opozycja chce postawić prezydenta w stan oskarżenia.",
+      "why": "Depozyty są chronione do równowartości ok. 38 tys. dolarów. Sprawa pokazuje ryzyko banków cyfrowych powiązanych z polityką.",
+      "sources": [
+        { "name": "AP przez AJC", "url": "https://www.ajc.com/news/2026/11/paraguay-seizes-major-digital-bank-tied-to-president-leaving-millions-of-customers-in-limbo/" },
+        { "name": "The Star (Reuters)", "url": "https://www.thestar.com.my/news/world/2026/11/04/paraguay039s-central-bank-chief-resigns-at-president039s-request-as-digital-lender-crisis-deepens" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "ABW zatrzymała sześć osób za przemyt części do broni do Rosji",
+      "summary": "ABW zatrzymała pięciu Polaków w wieku 25–52 lat i 37-letnią Rosjankę. Według śledczych grupa od co najmniej czerwca 2023 do grudnia 2025 roku przemycała przez Litwę do obwodu królewieckiego części używane do produkcji amunicji i uzbrojenia, warte ponad 2 mln zł. Czworo podejrzanych usłyszało też zarzut szpiegostwa i trafiło do aresztu na trzy miesiące.",
+      "why": "Handel takimi częściami z Rosją jest zakazany. Śledztwo pokazuje, jak próbuje się obchodzić ten zakaz przez kraje UE.",
+      "sources": [
+        { "name": "Notes from Poland", "url": "https://notesfrompoland.com/2026/11/05/six-detained-in-poland-on-suspicion-of-exporting-military-components-to-russia/" },
+        { "name": "RMF24", "url": "https://www.rmf24.pl/fakty/polska/news-abw-zatrzymala-szesc-osob-mialy-dzialac-dla-rosyjskiego-wywi,nIdn,1024895" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Wielcy giganci technologiczni stracili w jeden dzień ponad bilion dolarów",
+      "summary": "Siedem największych firm technologicznych z USA, tzw. Wspaniała Siódemka, straciło w czwartek łącznie ponad bilion dolarów wartości rynkowej. Sama Nvidia straciła ponad 440 mld dolarów. Akcje Nvidii i Qualcommu spadły o ponad 9 proc., Broadcomu o ok. 10 proc. Qualcomm dodatkowo podał słabą prognozę na bieżący kwartał.",
+      "why": "Wyceny firm od chipów do AI rosły w ostatnich latach bardzo szybko, więc są wrażliwe na każdą obawę o spowolnienie inwestycji.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "OpenAI obiecuje płacić za prąd i rezygnuje z umów o poufności",
+      "summary": "Dwa dni po wyborach, w których wyborcy odrzucili prawie wszystkie lokalne projekty centrów danych, OpenAI opublikowało nowe zobowiązania. Firma potwierdziła, że pokryje pełne koszty zasilania swoich centrów danych. Zapowiedziała też publikowanie planów budowy, konsultacje z mieszkańcami i rezygnację z umów o poufności z urzędnikami. Obiecała dziesiątki milionów dolarów m.in. na szkolne obiady i parki.",
+      "why": "Krytycy zauważają, że podobne obietnice już padały i trudno je wyegzekwować. Mieszkańcy obawiają się, że centra danych podniosą ich rachunki za prąd.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/05/openai-to-pay-for-data-center-power-after-election-shows-ai-concern.html" },
+        { "name": "Axios", "url": "https://www.axios.com/2026/11/05/ai-data-center-election-backlash-concessions" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Dwie „wieczne chemikalia” powiązane z agresywnym rakiem piersi",
+      "summary": "Analiza amerykańskich Narodowych Instytutów Zdrowia (NIH) objęła 1609 kobiet, u których rozwinął się rak piersi, i 2269 kobiet z grupy porównawczej. Badacze zmierzyli poziom 17 substancji PFAS we krwi pobranej wiele lat przed diagnozą. Wyższy poziom PFOA i PFOS wiązał się z częstszym rakiem piersi bez receptorów estrogenowych: w grupie z najwyższym PFOA o 67 proc. Nie znaleziono związku z ryzykiem raka piersi ogółem.",
+      "why": "PFAS są obecne m.in. w powłokach nieprzywierających i wodzie. To badanie obserwacyjne: pokazuje różnice między grupami, a nie ryzyko pojedynczej osoby.",
+      "sources": [
+        { "name": "NIH", "url": "https://www.nih.gov/news-events/news-releases/two-forever-chemicals-associated-higher-risk-aggressive-breast-cancer-nih-analysis" }
+      ]
+    },
+    {
+      "id": "zdrowie-2",
+      "section": "zdrowie",
+      "rank": 2,
+      "title": "Gogle VR mogą zmniejszać lęk dzieci przed operacją",
+      "summary": "W szpitalu Virginia Commonwealth University 80 dzieci w wieku 6–15 lat przed zabiegiem korzystało z gogli wirtualnej rzeczywistości. Dzieci zgłaszały mniejszy niepokój i strach, a ich tętno i ciśnienie krwi były niższe. To projekt poprawy jakości opieki z analizą po fakcie, a nie badanie z grupą kontrolną.",
+      "why": "Mniejszy stres przed zabiegiem ułatwia znieczulenie i powrót do zdrowia. Potwierdzenie wymaga jednak badań z losowym przydziałem.",
+      "sources": [
+        { "name": "EurekAlert!", "url": "https://www.eurekalert.org/news-releases/1149378" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "„Godzilla Minus Zero” wchodzi do kin w USA",
+      "summary": "Nowy japoński film o Godzilli trafia dziś do amerykańskich kin. Pokazy przedpremierowe przyniosły ok. 6 mln dolarów, rekord dystrybutora GKIDS. Prognozy mówią o 25–30 mln dolarów w pierwszy weekend w Ameryce Północnej i ok. 60 mln dolarów na świecie. W Japonii film miał według Toho najlepszy pierwszy dzień w historii filmów aktorskich.",
+      "why": "Poprzednia część, „Godzilla Minus One”, zdobyła Oscara za efekty specjalne, co rozbudziło duże oczekiwania.",
+      "sources": [
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/box-office-godzilla-minus-zero-cat-in-the-hat-1237215161/" },
+        { "name": "Variety", "url": "https://variety.com/2026/film/box-office/godzilla-minus-zero-box-office-opening-weekend-estimates-cat-in-the-hat-1236938885/" }
+      ]
+    },
+    {
+      "id": "filmy-2",
+      "section": "filmy",
+      "rank": 2,
+      "title": "Rosamund Pike zagra w horrorze o mamie influencerki",
+      "summary": "Rosamund Pike zagra i będzie producentką horroru „Feed” w reżyserii Leslye Headland. To historia matki, której nastoletnia córka, gimnastyczka, zostaje gwiazdą internetu. Film inspirowany jest fińskim horrorem „Hatching” z 2022 roku.",
+      "why": "Film podejmuje temat dzieci-influencerów i presji mediów społecznościowych, o którym coraz częściej mówi się także w Polsce.",
+      "sources": [
+        { "name": "Variety", "url": "https://variety.com/2026/film/news/rosamund-pike-feed-body-horror-movie-leslye-headland-1236940925/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "nauka",
+      "title": "Diament i grafit to ten sam pierwiastek",
+      "body": "Diament i grafit w ołówku to czysty węgiel. Różni je tylko ułożenie atomów: w diamencie każdy atom jest mocno związany z czterema sąsiadami w sztywną sieć, a w graficie atomy tworzą płaskie warstwy, które łatwo się przesuwają. Dlatego diament ma w skali Mohsa twardość 10, a grafit 1–2. Co ciekawe, w zwykłych warunkach to grafit jest trwalszy, a diament bardzo powoli mógłby w niego przejść.",
+      "source": { "name": "Scientific American", "url": "https://www.scientificamerican.com/article/how-can-graphite-and-diam/" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "przyroda",
+      "title": "Węgorze z Europy płyną na tarło tysiące kilometrów",
+      "body": "Węgorze europejskie, żyjące m.in. w polskich rzekach i jeziorach, rozmnażają się w Morzu Sargassowym na Atlantyku. Jesienią wyruszają w podróż, która w zależności od miejsca startu ma 5–10 tys. km. Naukowcy śledzili je nadajnikami: ryby pokonywały od 3 do 47 km dziennie. Tarło zaczyna się prawdopodobnie w grudniu i trwa do wiosny.",
+      "source": { "name": "PMC (Science Advances)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5052013" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "historia",
+      "title": "Mit: Wielki Mur Chiński widać gołym okiem z kosmosu",
+      "body": "Według NASA Wielkiego Muru zwykle nie da się dostrzec gołym okiem z niskiej orbity okołoziemskiej. Jest za wąski, bo ma najwyżej kilka metrów szerokości, i ma kolor podobny do otoczenia. Nie wypatrzył go m.in. pierwszy chiński astronauta Yang Liwei. Pierwsze potwierdzone zdjęcie z orbity zrobił w 2004 roku Leroy Chiao, i to przez obiektyw z zoomem.",
+      "source": { "name": "NASA (archiwum)", "url": "https://webarchive.library.unt.edu/eot2008/20080917153200/http://www.nasa.gov/vision/space/workinginspace/great_wall.html" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1939,
+      "title": "Sonderaktion Krakau",
+      "body": "6 listopada 1939 r. Niemcy podstępem zwołali wykładowców do Collegium Novum Uniwersytetu Jagiellońskiego i aresztowali 183 osoby: 155 z UJ, 22 z Akademii Górniczej i trzy z Akademii Handlowej. Uczonych wywieziono do obozu Sachsenhausen. Po międzynarodowych protestach większość uwolniono, ale część zmarła w obozie lub wkrótce po wyjściu.",
+      "source": { "name": "Radio Kraków", "url": "https://www.radiokrakow.pl/aktualnosci/krakow/uczelnie-upamietnily-83-rocznice-sonderaktion-krakau" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1860,
+      "title": "Abraham Lincoln wybrany na prezydenta USA",
+      "body": "6 listopada 1860 r. Abraham Lincoln wygrał wybory w czteroosobowym wyścigu i został pierwszym prezydentem z Partii Republikańskiej. Zdobył mniej niż połowę głosów obywateli, ale większość głosów elektorskich. Jego wybór skłonił stany Południa do secesji, co doprowadziło do wojny secesyjnej.",
+      "source": { "name": "HISTORY", "url": "https://www.history.com/this-day-in-history/November-6/abraham-lincoln-elected-president" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1893,
+      "title": "Śmierć Piotra Czajkowskiego",
+      "body": "6 listopada 1893 r. w Petersburgu zmarł Piotr Czajkowski, dziewięć dni po premierze swojej VI Symfonii „Patetycznej”, którą sam dyrygował. Oficjalną przyczyną była cholera, prawdopodobnie po wypiciu skażonej wody. Okoliczności śmierci do dziś budzą spory historyków.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Death_of_Pyotr_Ilyich_Tchaikovsky" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Owczy pęd",
+    "definition": "To skłonność do naśladowania tego, co robi większość, zamiast opierać się na własnej ocenie sytuacji.",
+    "origin": "Ekonomiści opisują owczy pęd zwłaszcza na rynkach finansowych. Gdy inwestorzy kupują, bo kupują inni, ceny mogą oderwać się od realnej wartości i powstaje bańka. Gdy zaczyna się wyprzedaż, ten sam mechanizm przyspiesza spadki. Napędzają go chciwość albo strach.",
+    "examples": [
+      "Czwartkowa przecena na Wall Street: gdy jedni inwestorzy sprzedawali akcje firm od AI, inni szli w ich ślady, co pogłębiało spadki.",
+      "Kolejka przed jedną restauracją sprawia, że chętniej do niej wchodzimy, choć obok może być równie dobra.",
+      "Kupowanie gadżetu tylko dlatego, że „wszyscy go mają”."
+    ],
+    "source": { "name": "Morningstar", "url": "https://www.morningstar.com/financial-advisors/how-herding-leads-market-bubbles" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "pulapki-myslenia",
+    "title": "Pułapki myślenia. O myśleniu szybkim i wolnym",
+    "author": "Daniel Kahneman",
+    "day": 6,
+    "days": 7,
+    "ideaTitle": "Morał: rozpoznaj, kiedy zwolnić",
+    "idea": "Najważniejsza lekcja książki nie brzmi „nie ufaj intuicji”. Szybkie myślenie zwykle dobrze nam służy, a błędów nie da się całkiem wyeliminować, nawet gdy o nich wiemy. Kahneman radzi więc rozpoznawać sytuacje, w których łatwo o pomyłkę: ważne decyzje, liczby, prognozy i silne emocje. Wtedy warto celowo włączyć wolne myślenie. Pomagają w tym proste narzędzia: sprawdzić, jak zwykle kończyły się podobne sprawy, wyobrazić sobie, że plan się nie powiódł, i zapytać, dlaczego, oraz poprosić kogoś z boku o ocenę. Łatwiej dostrzec błędy innych niż własne, dlatego warto pracować nad tym razem.",
+    "moral": "Nie da się wyłączyć pułapek myślenia, ale można nauczyć się rozpoznawać chwile, gdy warto zwolnić i sprawdzić swój osąd.",
+    "action": "Wybierzcie jedną decyzję, która czeka was w tym miesiącu, i zróbcie dla niej „przedśmiertną analizę”: wyobraźcie sobie, że po roku okazała się porażką, i zapiszcie trzy możliwe powody.",
+    "source": { "name": "Penguin Random House", "url": "https://www.penguinrandomhouse.com/books/89308/thinking-fast-and-slow-by-daniel-kahneman/" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-06-q1",
+      "ref": "fact-1",
+      "question": "Czym różnią się diament i grafit?",
+      "options": ["Diament jest z węgla, grafit z krzemu", "Ułożeniem atomów tego samego pierwiastka", "Grafit zawiera domieszkę ołowiu", "Diament powstaje tylko w meteorytach"],
+      "answer": 1,
+      "explanation": "Oba to czysty węgiel. W diamencie atomy tworzą sztywną trójwymiarową sieć, a w graficie płaskie, przesuwające się warstwy."
+    },
+    {
+      "id": "2026-11-06-q2",
+      "ref": "fact-2",
+      "question": "Gdzie rozmnażają się węgorze europejskie?",
+      "options": ["W Morzu Bałtyckim", "W źródłach rzek Europy", "W Morzu Sargassowym na Atlantyku", "W Morzu Śródziemnym"],
+      "answer": 2,
+      "explanation": "Węgorze z Europy płyną na tarło do Morza Sargassowego, pokonując 5–10 tys. km."
+    },
+    {
+      "id": "2026-11-06-q3",
+      "ref": "fact-3",
+      "question": "Dlaczego Wielkiego Muru zwykle nie widać gołym okiem z orbity?",
+      "options": ["Jest za wąski i ma kolor podobny do otoczenia", "Zasłaniają go chmury przez cały rok", "Jest za krótki", "Mur jest w większości pod ziemią"],
+      "answer": 0,
+      "explanation": "Mur ma najwyżej kilka metrów szerokości i zlewa się z terenem. Zdjęcia z orbity udało się zrobić tylko przez obiektyw z zoomem."
+    },
+    {
+      "id": "2026-11-06-q4",
+      "ref": "otd-1",
+      "question": "Dokąd wywieziono uczonych aresztowanych w Sonderaktion Krakau?",
+      "options": ["Do Auschwitz", "Do Sachsenhausen", "Do Dachau", "Do Stutthofu"],
+      "answer": 1,
+      "explanation": "183 aresztowanych w Collegium Novum wykładowców trafiło do obozu Sachsenhausen pod Berlinem."
+    },
+    {
+      "id": "2026-11-06-q5",
+      "ref": "otd-2",
+      "question": "Co wyróżniało zwycięstwo Abrahama Lincolna w 1860 roku?",
+      "options": ["Wygrał jednogłośnie w kolegium elektorów", "Był pierwszym prezydentem z Partii Republikańskiej", "Kandydował bez rywali", "Wybrano go po raz drugi"],
+      "answer": 1,
+      "explanation": "Lincoln był pierwszym republikańskim prezydentem i wygrał, zdobywając mniej niż połowę głosów obywateli."
+    },
+    {
+      "id": "2026-11-06-q6",
+      "ref": "concept",
+      "question": "Co opisuje pojęcie „owczy pęd”?",
+      "options": ["Unikanie ryzyka po stracie", "Naśladowanie większości zamiast własnej oceny", "Przecenianie własnych umiejętności", "Trzymanie się pierwszej informacji"],
+      "answer": 1,
+      "explanation": "Owczy pęd sprawia, że robimy to, co inni, bo robią to inni. Na rynkach może tworzyć bańki i pogłębiać krachy."
+    },
+    {
+      "id": "2026-11-06-q7",
+      "ref": "book",
+      "question": "Co według Kahnemana jest najlepszą obroną przed pułapkami myślenia?",
+      "options": ["Całkowite odrzucenie intuicji", "Podejmowanie decyzji zawsze w pośpiechu", "Rozpoznawanie sytuacji, w których warto zwolnić i sprawdzić osąd", "Zapamiętanie listy wszystkich błędów poznawczych"],
+      "answer": 2,
+      "explanation": "Błędów nie da się wyłączyć, ale można rozpoznawać ryzykowne sytuacje i wtedy celowo włączać wolne myślenie."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-06-r1",
+      "question": "Kogo chcieli zabić spiskowcy prochowi w 1605 roku?",
+      "options": ["Królową Elżbietę I", "Króla Jakuba I", "Olivera Cromwella"],
+      "answer": 1,
+      "explanation": "Spiskowcy pod wodzą Roberta Catesby'ego chcieli wysadzić parlament i zabić króla Jakuba I."
+    },
+    {
+      "id": "2026-11-06-r2",
+      "question": "W jakich miastach ogłoszono Akt 5 listopada 1916 roku?",
+      "options": ["W Krakowie i Lwowie", "W Poznaniu i Gdańsku", "W Warszawie i Lublinie"],
+      "answer": 2,
+      "explanation": "Akt ogłoszono w Warszawie i Lublinie, stolicach niemieckiego i austriackiego generalnego gubernatorstwa."
+    },
+    {
+      "id": "2026-11-06-r3",
+      "question": "Dlaczego miód w zamkniętym słoiku praktycznie się nie psuje?",
+      "options": ["Bo zawiera alkohol", "Bo ma mało wody i jest kwaśny", "Bo pszczoły dodają do niego sól"],
+      "answer": 1,
+      "explanation": "W miodzie jest bardzo mało wody, ma on niskie pH i zawiera nadtlenek wodoru, więc bakterie nie mogą się rozwijać."
+    }
+  ],
+  "evening": {
+    "question": "Jaka decyzja czeka was w najbliższych tygodniach i co mogłoby pójść nie tak, gdyby się nie udała?",
+    "hint": "Wyobraźcie sobie, że minął rok i plan się nie powiódł. Każde z was niech poda jeden powód."
+  }
+}

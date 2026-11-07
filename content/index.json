@@ -1,6 +1,28 @@
 {
   "editions": [
     {
+      "date": "2026-11-07",
+      "headline": "Metsola w Sejmie, protest PiS i warunki prezydenta przed rozmową z Tuskiem",
+      "threads": [
+        {
+          "name": "Spór o Trybunał Konstytucyjny",
+          "item": "pl-1",
+          "title": "Metsola w Sejmie, protest PiS i warunki prezydenta przed rozmową z Tuskiem"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-3",
+          "title": "UE odrzuca porozumienie USA z Rosją ponad głowami Europy"
+        }
+      ],
+      "facts": [
+        "Ślady butów astronautów zostaną na Księżycu na miliony lat",
+        "Efekt przyjęcia koktajlowego: w gwarze usłyszysz swoje imię",
+        "Woda jest najcięższa w 4°C i dlatego jeziora nie zamarzają do dna"
+      ],
+      "concept": "Samospełniająca się przepowiednia"
+    },
+    {
       "date": "2026-11-06",
       "headline": "PSL proponuje zmianę konstytucji i nowy skład Trybunału",
       "threads": [

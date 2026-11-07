@@ -1,0 +1,382 @@
+{
+  "date": "2026-11-07",
+  "intro": "Dziś m.in.: w USA przybyło znacznie więcej miejsc pracy, niż się spodziewano, Europa odrzuca rozmowy o jej bezpieczeństwie bez jej udziału, a w weekend zatankujecie jeszcze taniej.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Metsola w Sejmie, protest PiS i warunki prezydenta przed rozmową z Tuskiem",
+      "summary": "Przewodnicząca Parlamentu Europejskiego Roberta Metsola przemawiała w piątek w Sejmie podczas dwudniowej wizyty w Warszawie. Mówiła, że zagrożenie dla Polski jest zagrożeniem dla Europy. Posłowie PiS protestowali, wywieszając transparent nazywający premiera dyktatorem, a Donald Tusk odpowiedział żartem na platformie X. Kancelaria Prezydenta postawiła warunki przed ewentualnym spotkaniem Tuska z Karolem Nawrockim w sprawie Trybunału.",
+      "why": "Spór o Trybunał przenosi się na scenę europejską. Bez rozmowy prezydenta z premierem trudno o wyjście z kryzysu.",
+      "thread": "Spór o Trybunał Konstytucyjny",
+      "sources": [
+        { "name": "TVP World", "url": "https://tvpworld.com/96335598/roberta-metsola-a-threat-to-poland-is-a-threat-to-europe" },
+        { "name": "Polsat News", "url": "https://polsatnews.pl/wiadomosc/2026-11-06/spotkanie-tuska-i-nawrockiego-kancelaria-prezydenta-postawila-warunki" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Sejm odrzucił wniosek o odwołanie szefa MSWiA",
+      "summary": "Sejm odrzucił w piątek wniosek posłów PiS o wotum nieufności wobec ministra spraw wewnętrznych i administracji Marcina Kierwińskiego. Za odwołaniem głosowało 212 posłów, przeciw 235.",
+      "why": "Głosowanie pokazało, że koalicja rządząca utrzymuje większość mimo napięć wokół Trybunału.",
+      "sources": [
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/wotum-nieufnosci-wobec-kierwinskiego-sejm-zdecydowal-7348142507715040a" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "W weekend paliwa jeszcze tańsze: benzyna 95 po 6,12 zł",
+      "summary": "Od soboty do poniedziałku włącznie maksymalna cena benzyny 95 wynosi 6,12 zł za litr, benzyny 98 – 6,80 zł, a oleju napędowego – 7,83 zł. W piątek było to 6,20 zł, 6,93 zł i 7,91 zł. Ceny wynikają z programu „Ceny Paliwa Niżej”.",
+      "why": "W ciągu tygodnia benzyna 95 potaniała o ponad 30 groszy na litrze, głównie dzięki spadkowi cen ropy.",
+      "sources": [
+        { "name": "Money.pl", "url": "https://www.money.pl/mobility/jeszcze-taniej-oto-ceny-paliw-w-weekend-7348074521610688a.html" },
+        { "name": "Bankier.pl", "url": "https://www.bankier.pl/wiadomosc/Paliwa-tanieja-od-soboty-Ministerstwo-Energii-podalo-nowy-cennik-9224877.html" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Elektrownia Ostrołęka: zarzuty dla 25 osób",
+      "summary": "Prokuratura w Białymstoku przedstawiła zarzuty 25 osobom w śledztwie dotyczącym niegospodarności przy niedokończonej budowie węglowego bloku elektrowni Ostrołęka. Straty szacuje się na ponad miliard złotych.",
+      "why": "Ostrołęka C to jedna z najdroższych nieudanych inwestycji energetycznych w Polsce, prowadzona przez państwowe spółki.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-06/sledztwo-na-niespotykana-skale-nowe-informacje-ws-elektrowni-ostroleka/" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Wkrótce ocieplenie, nawet kilkanaście stopni",
+      "summary": "Synoptycy zapowiadają zwrot w pogodzie: w najbliższych dniach temperatura może sięgnąć kilkunastu stopni na plusie.",
+      "why": "Cieplejsza pogoda przyda się przed długim weekendem 11 listopada, choć prognozy na kilka dni do przodu mogą się zmienić.",
+      "sources": [
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/wkrotce-zwrot-w-pogodzie-nawet-kilkanascie-stopni-na-plusie-7348056843524544a" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "W USA przybyło 165 tys. miejsc pracy, bezrobocie spadło do 4,1 proc.",
+      "summary": "W październiku amerykańscy pracodawcy stworzyli 165 tys. miejsc pracy, choć ekonomiści spodziewali się ok. 59 tys. Stopa bezrobocia spadła do 4,1 proc. Płace wzrosły o 3,1 proc. rok do roku. Jednocześnie 27,6 proc. bezrobotnych szuka pracy długo, najwięcej od końca 2021 roku. Nasdaq odrobił w piątek 1,09 proc. po czwartkowej przecenie.",
+      "why": "Mocny rynek pracy zwiększa szanse, że Rezerwa Federalna podniesie stopy w grudniu, co wpływa na kurs dolara i złotego.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html" },
+        { "name": "CBS News", "url": "https://www.cbsnews.com/news/october-jobs-report-us-labor-market-2026/" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Iran twierdzi, że kolejne tankowce weszły na miny w cieśninie Ormuz",
+      "summary": "Gwardia Rewolucyjna Iranu ogłosiła, że dwa tankowce weszły na miny i zapaliły się w cieśninie Ormuz lub w jej pobliżu, dzień po podobnych doniesieniach o pięciu innych statkach. Służby morskie tego nie potwierdziły, a Donald Trump zarzuca Iranowi wymyślanie ataków, by podbić ceny energii. Brytyjska agencja morska zgłosiła eksplozję na jednym tankowcu w czwartek.",
+      "why": "Przez cieśninę płynie duża część światowej ropy. Każda niepewność szybko odbija się na cenach paliw.",
+      "sources": [
+        { "name": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/6/russia-to-uae-iran-steps-up-diplomacy-amid-trump-threats-what-we-know" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "UE odrzuca porozumienie USA z Rosją ponad głowami Europy",
+      "summary": "Donald Trump zapowiedział „wielkie, piękne porozumienie” z Rosją, które mogłoby objąć „całą Europę”, ale nie podał szczegółów. Szefowa dyplomacji UE Kaja Kallas odpowiedziała, że Putin nie ma weta w sprawach bezpieczeństwa Europy, a bez UE żadnej umowy nie da się wdrożyć. Jared Kushner zapewnił, że USA będą konsultować się z Europą przy okazji rozmów w Abu Zabi.",
+      "why": "Od kształtu takiego porozumienia może zależeć obecność wojsk NATO w regionie, także w Polsce.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/06/eu-rejects-trumps-big-beautiful-security-deal-with-russia-and-all-of-europe" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Papież Leon XIV rozpoczął najdłuższą podróż pontyfikatu",
+      "summary": "Papież Leon XIV wyruszył w 12-dniową podróż do Ameryki Południowej. Do 8 listopada odwiedzi Urugwaj, do 11 listopada Argentynę, a do 17 listopada Peru, gdzie przez lata był misjonarzem i biskupem diecezji Chiclayo. Podróż odbywa się kilka tygodni po operacji, którą papież przeszedł 13 października.",
+      "why": "Wizyta w Argentynie ma szczególne znaczenie: pochodzący stamtąd Franciszek nie odwiedził ojczyzny przez cały pontyfikat.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/06/nx-s1-6026702/pope-leo-begins-12-day-3-country-tour-after-cancer-surgery" },
+        { "name": "Vatican News", "url": "https://www.vaticannews.va/en/pope/news/2026-09/hspo-programme-latin-america-logos-mottos-itinerary.html" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Russell Brand uznany winnym gwałtu i napaści seksualnych",
+      "summary": "Ława przysięgłych w Londynie jednogłośnie uznała brytyjskiego komika i aktora Russella Branda winnym jednego gwałtu i trzech napaści seksualnych na czterech kobietach. Z dwóch innych zarzutów gwałtu i jednego zarzutu usiłowania napaści został uniewinniony. Brand nie wyszedł za kaucją. Wyrok ma zapaść w poniedziałek 9 listopada.",
+      "why": "Za gwałt w Wielkiej Brytanii grozi nawet dożywocie, choć zwykle zapadają wyroki od 4 do 19 lat. Policja bada też zgłoszenia innych kobiet.",
+      "sources": [
+        { "name": "CNN", "url": "https://www.cnn.com/2026/11/05/uk/russell-brand-trial-verdict-uk-intl" },
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/05/british-comedian-russell-brand-found-guilty-of-rape-and-three-sexual-assaults-by-london-ju" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Sikorski: nie negocjujcie z Rosją ponad głowami Europy Wschodniej",
+      "summary": "Minister spraw zagranicznych Radosław Sikorski ostrzegł sojuszników, że porozumienie w sprawie Ukrainy i przyszłości Europy bez udziału Europejczyków jest politycznie nie do przyjęcia i praktycznie niemożliwe. „Ostatnie, czego chcemy, to Europa Zachodnia dogadująca się z Rosją ponad głowami Europejczyków ze Wschodu” – powiedział. Analitycy TVP World zauważają, że nie ma dowodów, by Waszyngton zgodził się na żądania Moskwy dotyczące wschodniej flanki NATO.",
+      "why": "Rosja od lat domaga się wycofania wojsk NATO z krajów, które dołączyły do sojuszu po 1997 roku, w tym z Polski.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/06/poland-warns-allies-dont-negotiate-with-russia-over-eastern-europes-head" },
+        { "name": "TVP World", "url": "https://tvpworld.com/96341822/trumps-ukraine-peace-talks-put-natos-eastern-flank-in-play" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Microsoft ogranicza współpracę z dostawcami chmury dla AI",
+      "summary": "Według CNBC Microsoft zmniejsza liczbę tzw. neochmur, czyli mniejszych firm wynajmujących moc obliczeniową dla AI, z którymi współpracuje. Wybiera kluczowych dostawców i stawia na własne centra danych. Według dwóch źródeł firma nie przedłużyła umowy z Oracle. Microsoft twierdzi, że jego strategia opiera się na „elastyczności i wyborze”.",
+      "why": "Gdy najwięksi klienci tną zamówienia, mniejsze firmy od infrastruktury AI mogą mieć kłopoty. To kolejny sygnał hamowania inwestycji.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html" }
+      ]
+    },
+    {
+      "id": "technologia-2",
+      "section": "technologia",
+      "rank": 2,
+      "title": "Meta: AI pomaga wyłapywać oszustwa. Polska chce dla niej kary 250 mln euro",
+      "summary": "Szef bezpieczeństwa Mety powiedział, że narzędzia AI pomagają firmie wykrywać więcej oszukańczych reklam, a zgłoszeń takich reklam w Polsce jest o 83 proc. mniej niż dwa lata temu. W sierpniu wicepremier Krzysztof Gawkowski poprosił Komisję Europejską o nałożenie na Metę kary ok. 250 mln euro. CERT Polska zgłosił firmie 122 fałszywe reklamy, a Meta nie usunęła 106 z nich.",
+      "why": "Fałszywe reklamy z wizerunkiem znanych osób to jeden z najczęstszych sposobów wyłudzania pieniędzy w internecie.",
+      "sources": [
+        { "name": "TVP World", "url": "https://tvpworld.com/96343136/meta-security-boss-ai-detects-more-scams-as-poland-seeks-250m-fine" },
+        { "name": "Notes from Poland", "url": "https://notesfrompoland.com/2026/08/27/poland-asks-eu-to-fine-meta-e250m-over-scam-facebook-ads/" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "OpenAI zebrało 11 mld dolarów przy wycenie 1,25 bln",
+      "summary": "Według Bloomberga OpenAI zebrało dotąd 11 mld dolarów w nowej rundzie finansowania, która wycenia firmę na 1,25 bln dolarów. Runda może łącznie sięgnąć ok. 20 mld dolarów, mniej niż wrześniowy cel 30 mld. Dyrektor finansowa Sarah Friar zapewniła, że firma będzie dalej inwestować w centra danych mimo wyników wyborów.",
+      "why": "Mniejsza od planów runda pokazuje, że inwestorzy ostrożniej podchodzą do ogromnych wydatków na AI.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html" }
+      ]
+    },
+    {
+      "id": "ai-2",
+      "section": "ai",
+      "rank": 2,
+      "title": "Firmy używają AI coraz więcej, ale płacą za nią prawie tyle samo",
+      "summary": "Według danych firmy Ramp wydatki przedsiębiorstw na AI liczone w tokenach wzrosły w sierpniu i wrześniu tylko o 1,5 proc., choć samo korzystanie z AI nadal rośnie. To sugeruje, że konkurencja cenowa ogranicza przychody firm AI. Według Bloomberga szacowana wycena Anthropic przed debiutem giełdowym spadła z ok. 2 bln dolarów na początku października do 1,2–1,3 bln.",
+      "why": "Dla użytkowników tańsza AI to dobra wiadomość, ale dla firm, które wydały na nią setki miliardów, to sygnał ostrzegawczy.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Badanie wapnia w tętnicach zamiast tabel ryzyka przy statynach?",
+      "summary": "W badaniu z udziałem ok. 5800 dorosłych porównano dwa sposoby decydowania o statynach, lekach obniżających cholesterol: tradycyjne tabele ryzyka i badanie zwapnienia tętnic wieńcowych. Przy badaniu wapnia statyny zalecano znacznie mniejszej liczbie osób, a liczba poważnych zdarzeń sercowych była podobna. Osoby, którym zalecono lek na podstawie wyniku badania, częściej go przyjmowały. Badanie nie osiągnęło jednak założonego progu statystycznego.",
+      "why": "Wynik nie dowodzi, że to podejście chroni serce równie dobrze. Decyzję o lekach warto podejmować z lekarzem.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261105224604.htm" }
+      ]
+    },
+    {
+      "id": "zdrowie-2",
+      "section": "zdrowie",
+      "rank": 2,
+      "title": "Sposób chodzenia zdradza informacje o zdrowiu wielu narządów",
+      "summary": "W piśmie „Nature Medicine” opisano modele AI, które na podstawie danych o chodzie szukały związków z 3210 wskaźnikami zdrowia z 18 układów ciała, od serca i wątroby po metabolizm i zdrowie psychiczne. Statystycznie istotne związki znaleziono dla 1887 z nich. Współautorem pracy jest firma technologiczna Newton Tech.",
+      "why": "W przyszłości zwykły zegarek czy telefon mogłyby wcześnie sygnalizować problemy zdrowotne. Na razie to związki statystyczne, a nie gotowe narzędzie diagnostyczne.",
+      "sources": [
+        { "name": "EurekAlert!", "url": "https://www.eurekalert.org/news-releases/1150895" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "Koreański serial „The Remarried Empress” z rekordem Disney+",
+      "summary": "Koreański serial fantasy „The Remarried Empress” z Shin Min-a i Ju Ji-hoonem miał najlepszą premierę lokalnej produkcji w historii Disney+ i Hulu, licząc wyświetlenia z pierwszych trzech dni. Kolejne dwa odcinki będą pojawiać się w każdą środę od 11 listopada, a finał 25 listopada.",
+      "why": "Koreańskie seriale od lat zdobywają widzów na całym świecie, także w Polsce.",
+      "sources": [
+        { "name": "Variety", "url": "https://variety.com/2026/tv/news/remarried-empress-disney-hulu-biggest-local-premiere-ever-1236941857/" }
+      ]
+    },
+    {
+      "id": "filmy-2",
+      "section": "filmy",
+      "rank": 2,
+      "title": "Serial dokumentalny o Melanii Trump trafi na Prime Video 20 listopada",
+      "summary": "Amazon wyznaczył na 20 listopada premierę dwuczęściowego serialu dokumentalnego „Melania, The Series”, kontynuacji filmu „Melania”. Odcinki noszą tytuły „Family & Trust” i „Pride & Honor”. Pokazano też zwiastun.",
+      "why": "Platformy streamingowe coraz chętniej inwestują w dokumenty o politykach i ich rodzinach, co budzi pytania o ich niezależność.",
+      "sources": [
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/melania-the-series-release-date-trailer-prime-video-1237215492/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "kosmos",
+      "title": "Ślady butów astronautów zostaną na Księżycu na miliony lat",
+      "body": "Na Księżycu nie ma wiatru ani deszczu, więc ślady butów astronautów i kół łazików z misji Apollo mogą przetrwać miliony lat. Według materiałów NASA nic ich nie zwieje. Z czasem zatrą je jednak mikrometeoryty i cząstki ze Słońca, które bez przerwy bombardują powierzchnię. Szacunki mówią o kilkudziesięciu milionach lat.",
+      "source": { "name": "NASA StarChild", "url": "https://starchild.gsfc.nasa.gov/docs/StarChild/space_level1/apollo11.html" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "psychologia",
+      "title": "Efekt przyjęcia koktajlowego: w gwarze usłyszysz swoje imię",
+      "body": "W głośnym pomieszczeniu potrafimy skupić się na jednej rozmowie i wyciszyć resztę. Brytyjski badacz Colin Cherry opisał to w 1953 roku jako „problem przyjęcia koktajlowego”. W jego eksperymentach badani powtarzali na głos tekst słyszany jednym uchem. Z drugiego ucha prawie nic nie pamiętali, ale zauważali, gdy padło tam ich imię albo zmienił się głos mówiącego.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Cocktail_party_effect" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "nauka",
+      "title": "Woda jest najcięższa w 4°C i dlatego jeziora nie zamarzają do dna",
+      "body": "Większość cieczy staje się gęstsza, gdy stygnie, ale woda ma największą gęstość w temperaturze ok. 4°C. Lód jest od niej lżejszy, więc pływa. Jesienią chłodniejsza woda opada, aż całe jezioro ma ok. 4°C. Potem lód tworzy się na powierzchni i izoluje wodę pod spodem, dzięki czemu przy dnie ryby przeżywają zimę.",
+      "source": { "name": "USGS", "url": "https://www.usgs.gov/water-science-school/science/water-density" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1867,
+      "title": "Urodziła się Maria Skłodowska-Curie",
+      "body": "7 listopada 1867 r. w Warszawie urodziła się Maria Skłodowska, później Curie. W 1903 r. otrzymała z Pierre'em Curie i Henrim Becquerelem Nagrodę Nobla z fizyki za badania promieniotwórczości, a w 1911 r. Nagrodę Nobla z chemii za odkrycie polonu i radu. Była pierwszą kobietą noblistką i do dziś jest jedyną osobą nagrodzoną w dwóch różnych naukach ścisłych.",
+      "source": { "name": "IPN", "url": "https://ipn.gov.pl/pl/historia-z-ipn/214222,Maria-Sklodowska-Curie-dwukrotna-laureatka-Nagrody-Nobla.pdf" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1917,
+      "title": "Rewolucja październikowa w Piotrogrodzie",
+      "body": "W nocy z 7 na 8 listopada 1917 r. (25–26 października według kalendarza juliańskiego) bolszewicy zajęli Pałac Zimowy w Piotrogrodzie i aresztowali ministrów Rządu Tymczasowego. Rozbieżność dat wynika z tego, że Rosja używała kalendarza juliańskiego, ok. 13 dni za resztą Europy. W ZSRR rocznicę obchodzono więc 7 listopada.",
+      "source": { "name": "Wikipedia (archiwum)", "url": "https://webarchive.library.unt.edu/web/20141031034804/http://en.wikipedia.org/wiki/October_Revolution" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1940,
+      "title": "Zawalił się most Tacoma Narrows",
+      "body": "7 listopada 1940 r. w stanie Waszyngton zawalił się wiszący most Tacoma Narrows, otwarty zaledwie cztery miesiące wcześniej. Wiatr o prędkości ok. 64 km/h rozkołysał i skręcał jego przęsło, aż konstrukcja runęła. Po katastrofie inżynierowie zaczęli testować modele mostów w tunelach aerodynamicznych przed budową.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Tacoma_Narrows_Bridge" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Samospełniająca się przepowiednia",
+    "definition": "To sytuacja, w której fałszywe przekonanie skłania ludzi do działań, które sprawiają, że staje się ono prawdą.",
+    "origin": "Pojęcie wprowadził socjolog Robert K. Merton w eseju z 1948 roku. Najbardziej znany przykład to opowieść o banku: plotka, że jest niewypłacalny, sprawia, że klienci masowo wycofują pieniądze, i bank naprawdę upada. Merton stosował to pojęcie głównie do wyjaśniania uprzedzeń i konfliktów etnicznych.",
+    "examples": [
+      "Jeśli inwestorzy uwierzą, że przecena akcji AI będzie trwać, wyprzedają je i rzeczywiście pogłębiają spadki.",
+      "Nauczyciel, który uważa ucznia za słabego, poświęca mu mniej uwagi, a uczeń zaczyna radzić sobie gorzej.",
+      "Przekonanie „i tak się nie dogadamy” sprawia, że do rozmowy siadamy nastawieni na kłótnię."
+    ],
+    "source": { "name": "EBSCO Research Starters", "url": "https://www.ebsco.com/research-starters/social-sciences-and-humanities/self-fulfilling-prophecy" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "pulapki-myslenia",
+    "title": "Pułapki myślenia. O myśleniu szybkim i wolnym",
+    "author": "Daniel Kahneman",
+    "day": 7,
+    "days": 7,
+    "ideaTitle": "Podsumowanie tygodnia",
+    "idea": "Przez tydzień przeszliśmy przez główne idee książki. Mamy dwa tryby myślenia: szybki, intuicyjny, i wolny, wymagający wysiłku. Gdy pytanie jest trudne, szybki umysł po cichu zamienia je na łatwiejsze. Mała próba częściej daje skrajne wyniki, a my budujemy pewne wnioski z tego, co akurat widać, nie pytając o resztę. Strata boli mniej więcej dwa razy mocniej, niż cieszy zysk. Wspólny morał: błędów nie da się wyłączyć, ale można rozpoznawać chwile, w których warto zwolnić.",
+    "moral": "Nasz umysł jest szybki i zwykle skuteczny, ale przewidywalnie się myli. Znajomość tych błędów pomaga lepiej decydować, zwłaszcza gdy stawka jest wysoka.",
+    "action": "Wybierzcie jedną z idei tego tygodnia i powiedzcie sobie nawzajem, gdzie w ostatnich dniach ją zauważyliście.",
+    "source": { "name": "Penguin Random House", "url": "https://www.penguinrandomhouse.com/books/89308/thinking-fast-and-slow-by-daniel-kahneman/" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-07-q1",
+      "ref": "fact-1",
+      "question": "Co w końcu zatrze ślady butów astronautów na Księżycu?",
+      "options": ["Wiatr słoneczny zdmuchnie pył w kilka lat", "Mikrometeoryty i cząstki ze Słońca", "Księżycowe deszcze", "Trzęsienia gruntu po każdym zaćmieniu"],
+      "answer": 1,
+      "explanation": "Na Księżycu nie ma wiatru ani deszczu, więc ślady zacierają powoli tylko mikrometeoryty i cząstki ze Słońca, przez miliony lat."
+    },
+    {
+      "id": "2026-11-07-q2",
+      "ref": "fact-2",
+      "question": "Co zauważali badani Colina Cherry'ego w wiadomości, której nie słuchali?",
+      "options": ["Wszystkie liczby", "Język, w którym mówiono", "Własne imię i zmianę głosu mówiącego", "Nic nie zauważali"],
+      "answer": 2,
+      "explanation": "Z drugiego ucha prawie nic nie zapamiętywali, ale wyłapywali swoje imię i zmianę głosu, co pokazuje, że mózg cały czas monitoruje otoczenie."
+    },
+    {
+      "id": "2026-11-07-q3",
+      "ref": "fact-3",
+      "question": "W jakiej temperaturze woda ma największą gęstość?",
+      "options": ["W 0°C", "W ok. 4°C", "W 10°C", "W 100°C"],
+      "answer": 1,
+      "explanation": "Woda jest najgęstsza w ok. 4°C, a lód jest lżejszy. Dlatego jeziora zamarzają od góry, a przy dnie woda zostaje płynna."
+    },
+    {
+      "id": "2026-11-07-q4",
+      "ref": "otd-1",
+      "question": "Za co Maria Skłodowska-Curie dostała Nagrodę Nobla z chemii w 1911 roku?",
+      "options": ["Za odkrycie promieni rentgenowskich", "Za odkrycie polonu i radu", "Za budowę pierwszego reaktora", "Za odkrycie elektronu"],
+      "answer": 1,
+      "explanation": "Drugi Nobel był za odkrycie polonu i radu oraz wyodrębnienie czystego radu. Pierwszy, z fizyki, za badania promieniotwórczości."
+    },
+    {
+      "id": "2026-11-07-q5",
+      "ref": "otd-2",
+      "question": "Dlaczego rewolucja październikowa wybuchła w listopadzie według naszego kalendarza?",
+      "options": ["Bo bolszewicy przesunęli datę", "Bo Rosja używała kalendarza juliańskiego", "Bo trwała cały miesiąc", "Bo nazwę nadano dopiero w 1918 roku"],
+      "answer": 1,
+      "explanation": "Kalendarz juliański był ok. 13 dni za gregoriańskim, więc 25 października w Rosji to 7 listopada w reszcie Europy."
+    },
+    {
+      "id": "2026-11-07-q6",
+      "ref": "concept",
+      "question": "Który przykład najlepiej ilustruje samospełniającą się przepowiednię?",
+      "options": ["Plotka o upadku banku sprawia, że klienci wycofują pieniądze i bank upada", "Prognoza pogody zapowiada deszcz i pada", "Ktoś przewiduje zaćmienie i ono następuje", "Lekarz stawia trafną diagnozę"],
+      "answer": 0,
+      "explanation": "W samospełniającej się przepowiedni to samo przekonanie wywołuje zachowania, które je urzeczywistniają. Deszcz czy zaćmienie nastąpiłyby bez względu na prognozę."
+    },
+    {
+      "id": "2026-11-07-q7",
+      "ref": "book",
+      "question": "Która idea z tego tygodnia z książką Kahnemana mówi, że trudne pytanie zamieniamy na łatwiejsze?",
+      "options": ["Awersja do straty", "Substytucja pytań", "Prawo małych liczb", "WYSIATI"],
+      "answer": 1,
+      "explanation": "Gdy pytanie jest trudne, szybki umysł po cichu odpowiada na prostsze, np. „czy go lubię?” zamiast „czy będzie dobrym liderem?”."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-07-r1",
+      "question": "Która forma węgla jest trwalsza w zwykłych warunkach?",
+      "options": ["Diament", "Grafit", "Obie są równie trwałe"],
+      "answer": 1,
+      "explanation": "W zwykłych warunkach trwalszy jest grafit. Diament mógłby w niego przejść, ale trwa to niezwykle długo."
+    },
+    {
+      "id": "2026-11-07-r2",
+      "question": "Ile głosów obywateli zdobył Abraham Lincoln w wyborach w 1860 roku?",
+      "options": ["Ponad 70 proc.", "Dokładnie połowę", "Mniej niż połowę"],
+      "answer": 2,
+      "explanation": "Lincoln wygrał czteroosobowy wyścig z mniej niż połową głosów obywateli, ale z większością głosów elektorskich."
+    },
+    {
+      "id": "2026-11-07-r3",
+      "question": "Co według pojęcia „owczy pęd” napędza naśladowanie innych na rynkach?",
+      "options": ["Chciwość albo strach", "Wyłącznie rzetelne analizy", "Przepisy prawa"],
+      "answer": 0,
+      "explanation": "Inwestorzy kupują, bo kupują inni, albo sprzedają w panice. To może tworzyć bańki i pogłębiać krachy."
+    }
+  ],
+  "evening": {
+    "question": "Która z idei tego tygodnia najbardziej pasuje do waszego codziennego życia?",
+    "hint": "Przypomnijcie sobie konkretną sytuację z ostatnich dni: zakup, kłótnię, decyzję albo wiadomość, w którą łatwo było uwierzyć."
+  }
+}

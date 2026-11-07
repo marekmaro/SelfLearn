@@ -1,0 +1,215 @@
+{
+  "date": "2026-11-07",
+  "file": "2026-11-07-darkman.mp3",
+  "url": "audio/2026-11-07-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-07-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "8eaf5d4c2b7e5ad4",
+  "duration": 1054.2,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 16.98
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Metsola w Sejmie, protest PiS i warunki prezydenta przed rozmową z Tuskiem",
+      "start": 17.68,
+      "end": 60.68
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Sejm odrzucił wniosek o odwołanie szefa MSWiA",
+      "start": 61.38,
+      "end": 86.61
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "W weekend paliwa jeszcze tańsze: benzyna 95 po 6,12 zł",
+      "start": 87.31,
+      "end": 129.18
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Elektrownia Ostrołęka: zarzuty dla 25 osób",
+      "start": 129.88,
+      "end": 157.08
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Wkrótce ocieplenie, nawet kilkanaście stopni",
+      "start": 157.78,
+      "end": 177.7
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "W USA przybyło 165 tys. miejsc pracy, bezrobocie spadło do 4,1 proc.",
+      "start": 178.9,
+      "end": 226.66
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Iran twierdzi, że kolejne tankowce weszły na miny w cieśninie Ormuz",
+      "start": 227.36,
+      "end": 263.84
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "UE odrzuca porozumienie USA z Rosją ponad głowami Europy",
+      "start": 264.54,
+      "end": 301.53
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Papież Leon XIV rozpoczął najdłuższą podróż pontyfikatu",
+      "start": 302.23,
+      "end": 337.06
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Russell Brand uznany winnym gwałtu i napaści seksualnych",
+      "start": 337.76,
+      "end": 375.32
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Sikorski: nie negocjujcie z Rosją ponad głowami Europy Wschodniej",
+      "start": 376.52,
+      "end": 424.87
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Microsoft ogranicza współpracę z dostawcami chmury dla AI",
+      "start": 425.57,
+      "end": 465.17
+    },
+    {
+      "id": "technologia-2",
+      "chapter": "tematy",
+      "label": "Meta: AI pomaga wyłapywać oszustwa. Polska chce dla niej kary 250 mln euro",
+      "start": 465.87,
+      "end": 508.26
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "OpenAI zebrało 11 mld dolarów przy wycenie 1,25 bln",
+      "start": 508.96,
+      "end": 548.35
+    },
+    {
+      "id": "ai-2",
+      "chapter": "tematy",
+      "label": "Firmy używają AI coraz więcej, ale płacą za nią prawie tyle samo",
+      "start": 549.05,
+      "end": 590.34
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Badanie wapnia w tętnicach zamiast tabel ryzyka przy statynach?",
+      "start": 591.04,
+      "end": 634.31
+    },
+    {
+      "id": "zdrowie-2",
+      "chapter": "tematy",
+      "label": "Sposób chodzenia zdradza informacje o zdrowiu wielu narządów",
+      "start": 635.01,
+      "end": 673.99
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Koreański serial „The Remarried Empress” z rekordem Disney+",
+      "start": 674.69,
+      "end": 707.26
+    },
+    {
+      "id": "filmy-2",
+      "chapter": "tematy",
+      "label": "Serial dokumentalny o Melanii Trump trafi na Prime Video 20 listopada",
+      "start": 707.96,
+      "end": 736.45
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Woda jest najcięższa w 4°C i dlatego jeziora nie zamarzają do dna",
+      "start": 737.65,
+      "end": 766.97
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Ślady butów astronautów zostaną na Księżycu na miliony lat",
+      "start": 767.67,
+      "end": 793.38
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Efekt przyjęcia koktajlowego: w gwarze usłyszysz swoje imię",
+      "start": 794.08,
+      "end": 824.4
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1867: Urodziła się Maria Skłodowska-Curie",
+      "start": 825.6,
+      "end": 860.24
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1917: Rewolucja październikowa w Piotrogrodzie",
+      "start": 860.94,
+      "end": 893.22
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1940: Zawalił się most Tacoma Narrows",
+      "start": 893.92,
+      "end": 921.52
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Samospełniająca się przepowiednia",
+      "start": 922.72,
+      "end": 974.92
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Pułapki myślenia. O myśleniu szybkim i wolnym: Podsumowanie tygodnia",
+      "start": 976.12,
+      "end": 1037.73
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1038.93,
+      "end": 1053.7
+    }
+  ]
+}

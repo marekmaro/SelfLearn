@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-08",
+  "file": "2026-11-08-darkman.mp3",
+  "url": "audio/2026-11-08-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-08-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "38a8f501f3baa6a9",
+  "duration": 907.23,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 17.41
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Zamach na Rynku Głównym w Krakowie: sześć ofiar na miejscu",
+      "start": 18.11,
+      "end": 62.9
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Żałoba narodowa 8 i 9 listopada, w Krakowie do 11 listopada",
+      "start": 63.6,
+      "end": 94.57
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "S&P obniża perspektywę ratingu Polski do negatywnej",
+      "start": 95.27,
+      "end": 123.2
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Shein zainwestuje 500 mln euro w centrum logistyczne pod Wrocławiem",
+      "start": 123.9,
+      "end": 161.44
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Sondaż: kryzys wokół Trybunału szkodzi wizerunkowi Polski",
+      "start": 162.14,
+      "end": 184.77
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Nowa Zelandia: centroprawicowa Partia Narodowa wygrywa wybory",
+      "start": 185.97,
+      "end": 224.57
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "USA znów uderzyły w Iran. Nowa grupa ma blokować przemyt lądem",
+      "start": 225.27,
+      "end": 263.33
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Pierwsza zimowa burza zalała 70 tys. namiotów w Strefie Gazy",
+      "start": 264.03,
+      "end": 299.51
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Paragwaj: prezydent Peña zrezygnował, a izba niższa przegłosowała impeachment",
+      "start": 300.21,
+      "end": 336.32
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Ślady czerwonych krwinek w kości dinozaura sprzed 115 mln lat",
+      "start": 337.02,
+      "end": 379.78
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Śledztwo po zamachu w Krakowie: sprawca działał sam",
+      "start": 380.98,
+      "end": 423.3
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Anthropic idzie na giełdę w gorszym klimacie dla AI",
+      "start": 424,
+      "end": 466.16
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Rapamycyna poprawiła przepływ krwi w mózgu u osób z genem ryzyka Alzheimera",
+      "start": 466.86,
+      "end": 505.87
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "„Godzilla Minus Zero” rządzi w amerykańskich kinach",
+      "start": 506.57,
+      "end": 546.88
+    },
+    {
+      "id": "filmy-2",
+      "chapter": "tematy",
+      "label": "W Toruniu trwa 34. festiwal ToruńCAMERIMAGE",
+      "start": 547.58,
+      "end": 577.5
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Grzechotniki „widzą” ciepło ofiary w ciemności",
+      "start": 578.7,
+      "end": 608.48
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Mit: w średniowieczu wierzono, że Ziemia jest płaska",
+      "start": 609.18,
+      "end": 640.22
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Najlepiej pamiętamy początek i koniec listy",
+      "start": 640.92,
+      "end": 673.59
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Piłsudski wychodzi z twierdzy w Magdeburgu",
+      "start": 674.79,
+      "end": 705.32
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1895: Wilhelm Röntgen odkrywa promienie X",
+      "start": 706.02,
+      "end": 736.15
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1939: Zamach Georga Elsera na Hitlera",
+      "start": 736.85,
+      "end": 771
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Zaniedbywanie prawdopodobieństwa",
+      "start": 772.2,
+      "end": 830.4
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Factfulness: Świat nie dzieli się na „nas” i „ich”",
+      "start": 831.6,
+      "end": 890.65
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 891.85,
+      "end": 906.73
+    }
+  ]
+}

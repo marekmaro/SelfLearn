@@ -1,0 +1,340 @@
+{
+  "date": "2026-11-08",
+  "intro": "Dziś m.in.: zamach na Rynku Głównym w Krakowie i dwa dni żałoby narodowej, agencja S&P obniża perspektywę ratingu Polski, a zaczynamy nową książkę tygodnia, „Factfulness”.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Zamach na Rynku Głównym w Krakowie: sześć ofiar na miejscu",
+      "summary": "W sobotę po południu napastnik wjechał samochodem na Rynek Główny w Krakowie i otworzył ogień do ludzi. Według policji zginęło sześć osób, cztery kobiety i dwóch mężczyzn, a co najmniej 15 zostało rannych, w tym dwóch policjantów. Wśród ofiar są też cudzoziemcy. Policjanci postrzelili sprawcę i zatrzymali go. W jego mieszkaniu w Ostrowcu Świętokrzyskim znaleziono ciała trzech osób, prawdopodobnie członków jego rodziny.",
+      "why": "Premier Donald Tusk nazwał atak aktem terroru. Śledztwo trwa, a dane mogą się jeszcze zmienić, dlatego warto śledzić komunikaty policji.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Notes from Poland", "url": "https://notesfrompoland.com/2026/11/07/fatalities-reported-in-shooting-on-historical-market-square-in-krakow/" },
+        { "name": "CNN", "url": "https://www.cnn.com/2026/11/07/europe/krakow-shooting-poland-killed-intl" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Żałoba narodowa 8 i 9 listopada, w Krakowie do 11 listopada",
+      "summary": "Prezydent Karol Nawrocki podpisał rozporządzenie o żałobie narodowej w niedzielę i poniedziałek. Prezydent Krakowa Łukasz Gibała ogłosił żałobę w mieście do 11 listopada. Odwoływane są imprezy, m.in. niedzielny Bieg Niepodległości w Kielcach.",
+      "why": "Organizatorzy wydarzeń przed Świętem Niepodległości mogą zmieniać plany, więc warto sprawdzać komunikaty przed wyjściem.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-07/zaloba-narodowa-po-ataku-w-krakowie-karola-nawrocki-zdecydowal/" },
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/krakow/bedzie-zaloba-narodowa-w-polsce-prezydent-oglosil-konkretne-daty-7348544809744864a" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "S&P obniża perspektywę ratingu Polski do negatywnej",
+      "summary": "Agencja S&P zmieniła perspektywę ratingu kredytowego Polski na negatywną i obniżyła ocenę w walucie krajowej. Jako powód podała jedno z najpoważniejszych pogorszeń stanu finansów publicznych na świecie.",
+      "why": "Negatywna perspektywa oznacza ryzyko obniżenia oceny w przyszłości, co może podnieść koszty obsługi długu państwa, a pośrednio też kredytów.",
+      "sources": [
+        { "name": "Notes from Poland", "url": "https://notesfrompoland.com/2026/11/07/rating-agency-sp-shifts-polands-credit-outlook-to-negative-and-lowers-currency-rating/" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Shein zainwestuje 500 mln euro w centrum logistyczne pod Wrocławiem",
+      "summary": "Chiński sklep internetowy Shein zapowiedział inwestycję 500 mln euro w rozbudowę centrum logistycznego pod Wrocławiem. Według doniesień ma ono urosnąć do miliona metrów kwadratowych, pracować w nim ma ponad 6500 robotów, a zatrudnienie ma wzrosnąć o ok. 2 tys. osób. Firma tłumaczy inwestycję nowymi opłatami UE za tanie paczki spoza Unii.",
+      "why": "Paczki wysyłane z Polski zamiast z Chin omijają nowe unijne cło na drobne przesyłki, a region zyskuje miejsca pracy.",
+      "sources": [
+        { "name": "FashionUnited", "url": "https://fashionunited.uk/news/business/shein-invests-500-million-euros-in-poland-to-expand-logistics-hub/2026110491208" },
+        { "name": "Wiadomości Handlowe", "url": "https://www.wiadomoscihandlowe.pl/e-commerce-i-e-grocery/platformy-zakupowe/chinski-shein-pompuje-miliardy-w-inwestycje-w-polsce-hub-urosnie-do-1-mln-mkw-2539198" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Sondaż: kryzys wokół Trybunału szkodzi wizerunkowi Polski",
+      "summary": "Według sondażu IBRiS dla Wirtualnej Polski większość badanych uważa, że spór wokół Trybunału Konstytucyjnego szkodzi wiarygodności Polski na świecie.",
+      "why": "Ocena jest wyjątkowo zgodna mimo podziałów politycznych, co może zwiększyć presję na porozumienie prezydenta z rządem.",
+      "thread": "Spór o Trybunał Konstytucyjny",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-07/polacy-zgodni-jak-nigdy-chodzi-o-kryzys-wokol-tk/" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Nowa Zelandia: centroprawicowa Partia Narodowa wygrywa wybory",
+      "summary": "W wyborach w Nowej Zelandii wygrała Partia Narodowa Christophera Luxona. Po przeliczeniu 91 proc. wstępnych wyników miała 39,4 proc. głosów, a Partia Pracy 26,6 proc. Premier Chris Hipkins uznał porażkę. Do rządzenia Partia Narodowa może potrzebować mniejszych ugrupowań, takich jak ACT i New Zealand First.",
+      "why": "To koniec sześciu lat rządów lewicy w Nowej Zelandii. Wyniki są wstępne do czasu ich zatwierdzenia przez komisję wyborczą.",
+      "sources": [
+        { "name": "SBS News", "url": "https://www.sbs.com.au/news/article/new-zealands-centre-right-national-party-to-form-government-after-labour-defeat/s2rc5sf44" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "USA znów uderzyły w Iran. Nowa grupa ma blokować przemyt lądem",
+      "summary": "Donald Trump powiedział, że USA przeprowadziły „drobne uderzenia” na Iran, m.in. na irańską obronę przeciwlotniczą. Irańskie media podały, że dwa pociski trafiły w wyspę Keszm. Amerykańskie Dowództwo Centralne utworzyło grupę zadaniową, która ma utrudniać Iranowi przewóz broni i zakazanych towarów drogą lądową. Katar zaprzeczył doniesieniom o zerwaniu rozmów.",
+      "why": "Nowe uderzenia pokazują, że mimo zapowiedzi rozmów konflikt trwa. To wpływa na ceny ropy i bezpieczeństwo żeglugi.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/07/trump-us-minor-strikes-iran-qeshm-island.html" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Pierwsza zimowa burza zalała 70 tys. namiotów w Strefie Gazy",
+      "summary": "Według biura prasowego władz Gazy pierwsza zimowa burza w ciągu 12 godzin zalała ok. 70 tys. namiotów, w których mieszkają przesiedleni Palestyńczycy. Obrona cywilna dostała ok. 1500 wezwań w 10 godzin. W Nuseirat częściowo zawalił się budynek, a w samej Gazie ponad 2 tys. budynków grozi zawaleniem.",
+      "why": "Setki tysięcy ludzi wciąż żyją w namiotach i zniszczonych budynkach, więc zima zwiększa zagrożenie dla ich zdrowia i życia.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/amp/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza" },
+        { "name": "Al Jazeera", "url": "https://aljazeera.com/features/2026/11/7/buildings-damaged-in-israel-bombing-at-risk-of-collapse-as-rain-floods-gaza" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Paragwaj: prezydent Peña zrezygnował, a izba niższa przegłosowała impeachment",
+      "summary": "Prezydent Paragwaju Santiago Peña ogłosił rezygnację w związku z upadkiem banku Ueno. Chwilę później wszyscy 78 obecnych posłów zagłosowało za postawieniem go w stan oskarżenia. Wniosek trafił do Senatu, gdzie potrzeba dwóch trzecich głosów. Posłowie odrzucili wniosek przeciw wiceprezydentowi Pedro Allianie, który ma przejąć urząd.",
+      "why": "Według doniesień impeachment ma odebrać Peñi dożywotnie miejsce w Senacie, które dawałoby mu immunitet.",
+      "sources": [
+        { "name": "MercoPress", "url": "https://en.mercopress.com/2026/11/05/paraguay-s-santiago-pena-tenders-his-resignation-but-congress-presses-ahead-with-impeachment" },
+        { "name": "Buenos Aires Herald", "url": "https://buenosairesherald.com/world/paraguay-ueno-bank-crisis-lower-house-votes-on-penas-impeachment" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Ślady czerwonych krwinek w kości dinozaura sprzed 115 mln lat",
+      "summary": "Zespół pod kierunkiem australijskiego Curtin University opisał w PNAS skamieniałe struktury przypominające czerwone krwinki w kości drapieżnego dinozaura Aratasaurus z Brazylii. Badacze wykryli w nich hem, składnik hemoglobiny. Według CNN to pierwszy raz, gdy hem znaleziono w samych strukturach w skamieniałości dinozaura. Nie wszyscy naukowcy są przekonani, bo wcześniejsze podobne odkrycia okazywały się śladami innych substancji.",
+      "why": "Jeśli wynik się potwierdzi, skamieniałości mogą przechowywać ślady cząsteczek, które pomogą lepiej poznać biologię dinozaurów.",
+      "sources": [
+        { "name": "CNN", "url": "https://www.cnn.com/2026/11/03/science/red-blood-cells-dinosaur-bone" },
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261105224542.htm" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Śledztwo po zamachu w Krakowie: sprawca działał sam",
+      "summary": "Według władz zatrzymany 24- lub 25-letni obywatel Polski działał sam. Minister spraw wewnętrznych Marcin Kierwiński powiedział, że mężczyzna wydawał się zafascynowany skrajnie prawicowymi ideologiami, ale zastrzegł, że śledztwo trwa. Według policji użył długiej broni w stylu wojskowym i miał pozwolenie na broń. Minister obrony zaprzeczył doniesieniom, że sprawca był żołnierzem.",
+      "why": "Śledczy wyjaśniają motywy sprawcy i to, jak zdobył broń. Od ustaleń może zależeć dyskusja o zasadach wydawania pozwoleń na broń.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "CNN", "url": "https://www.cnn.com/2026/11/07/europe/krakow-shooting-poland-killed-intl" },
+        { "name": "TVP World", "url": "https://tvpworld.com/96359335/poland-suspect-in-deadly-krakow-mass-shooting-is-polish-national-officials" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Anthropic idzie na giełdę w gorszym klimacie dla AI",
+      "summary": "Według CNBC Anthropic planuje debiut na Nasdaq prawdopodobnie w połowie listopada. Inwestorzy szacują wycenę na 1–1,5 bln dolarów, mniej niż wcześniej zakładane 2 bln. Firma ujawniła w prospekcie zobowiązania na ok. 895 mld dolarów, głównie na moc obliczeniową i infrastrukturę. Debiut przypada w czasie, gdy wyborcy w USA odrzucili prawie wszystkie lokalne projekty centrów danych.",
+      "why": "Wynik debiutu pokaże, jak inwestorzy oceniają przyszłość firm AI po ostatniej przecenie.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Rapamycyna poprawiła przepływ krwi w mózgu u osób z genem ryzyka Alzheimera",
+      "summary": "W małym badaniu osoby w wieku 45–65 lat z wariantem genu APOE4, który zwiększa ryzyko choroby Alzheimera, przez cztery tygodnie przyjmowały 1 mg rapamycyny dziennie. Przepływ krwi w mózgu wzrósł, najwyraźniej u kobiet. Badanie nie miało grupy kontrolnej i nie sprawdzało, czy lek chroni przed chorobą lub utratą pamięci.",
+      "why": "To wstępny wynik. Rapamycyna to lek na receptę o poważnych działaniach ubocznych i nie należy jej stosować na własną rękę.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261104084017.htm" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "„Godzilla Minus Zero” rządzi w amerykańskich kinach",
+      "summary": "Japoński film „Godzilla Minus Zero” zarobił w piątek ok. 14,5 mln dolarów w 3254 kinach w Ameryce Północnej. Według prognoz Deadline cały weekend może przynieść ok. 32 mln dolarów, najwięcej dla aktorskiego filmu nieanglojęzycznego od „Hero” z 2004 roku. Drugie miejsce zajmuje „Kot Prot” z ok. 18 mln dolarów.",
+      "why": "Ponad 70 proc. wpływów pochodzi z sal IMAX i premium, co pokazuje, że widzowie płacą więcej za widowisko na dużym ekranie.",
+      "sources": [
+        { "name": "Variety", "url": "https://variety.com/2026/film/box-office/box-office-godzilla-minus-zero-cat-in-the-hat-1236942032/" },
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/box-office-godzilla-minus-zero-cat-in-the-hat-1237215161/" }
+      ]
+    },
+    {
+      "id": "filmy-2",
+      "section": "filmy",
+      "rank": 2,
+      "title": "W Toruniu trwa 34. festiwal ToruńCAMERIMAGE",
+      "summary": "Od 7 do 14 listopada w Toruniu trwa 34. edycja Międzynarodowego Festiwalu Filmowego ToruńCAMERIMAGE, poświęconego sztuce operatorskiej. Festiwal pod tą nazwą ma odbywać się co najmniej do 2028 roku.",
+      "why": "To jeden z najważniejszych na świecie festiwali dla operatorów filmowych. Pokazy dają szansę zobaczenia filmów przed ich premierą w kinach.",
+      "sources": [
+        { "name": "Super Express", "url": "https://www.se.pl/wiadomosci/exclusive/toruncamerimage-kiedy-odbedzie-sie-festiwal-to-juz-34-edycja-miedzynarodowego-festiwalu-aa-WxWo-8k5o-jYvr.html" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Grzechotniki „widzą” ciepło ofiary w ciemności",
+      "body": "Żmije z podrodziny grzechotnikowatych mają między okiem a nozdrzem jamki, które wyczuwają promieniowanie podczerwone, czyli ciepło. W jamce jest cienka błona pełna zakończeń nerwowych, a główną rolę odgrywa w niej białko TRPA1. Dzięki temu wąż może trafić ciepłokrwistą ofiarę nawet w zupełnej ciemności. Badania mówią o wykrywaniu różnic temperatury mniejszych niż 0,6°C.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Infrared_sensing_in_snakes" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "historia",
+      "title": "Mit: w średniowieczu wierzono, że Ziemia jest płaska",
+      "body": "Wykształceni ludzie średniowiecza wiedzieli, że Ziemia jest kulą, a wiedza starożytnych Greków o tym nigdy nie zaginęła. Spór z czasów Kolumba dotyczył wielkości Ziemi, a nie jej kształtu. Mit spopularyzował w XIX wieku m.in. Washington Irving w fabularyzowanej biografii Kolumba z 1828 roku, w której wymyślił scenę sporu z duchownymi przekonanymi o płaskiej Ziemi.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Myth_of_the_flat_Earth" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "psychologia",
+      "title": "Najlepiej pamiętamy początek i koniec listy",
+      "body": "Gdy uczymy się listy słów, najlepiej zapamiętujemy pierwsze i ostatnie pozycje, a najgorzej te ze środka. To efekt pozycji szeregowej, opisany przez Hermanna Ebbinghausa na podstawie badań na samym sobie. Pierwsze pozycje częściej powtarzamy w myślach (efekt pierwszeństwa), a ostatnie wciąż mamy w pamięci krótkotrwałej (efekt świeżości). Wystarczy 15–30 sekund innego zajęcia, by efekt świeżości osłabł.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Serial-position_effect" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1918,
+      "title": "Piłsudski wychodzi z twierdzy w Magdeburgu",
+      "body": "8 listopada 1918 r. Niemcy zwolnili z więzienia w twierdzy magdeburskiej Józefa Piłsudskiego i Kazimierza Sosnkowskiego. Trzy dni później, 10 listopada, Piłsudski przyjechał do Warszawy, a 11 listopada Rada Regencyjna przekazała mu władzę nad wojskiem. Dzień jego uwolnienia uważa się za jeden z etapów odzyskania niepodległości.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/aktualnosci/8-listopada-1918-r" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1895,
+      "title": "Wilhelm Röntgen odkrywa promienie X",
+      "body": "Wieczorem 8 listopada 1895 r. w Würzburgu Wilhelm Röntgen zauważył świecenie ekranu fluorescencyjnego leżącego obok lampy, którą badał. Przez weekend powtarzał doświadczenia i odkrył nowe promieniowanie, nazwane przez niego promieniami X. Sześć tygodni później wykonał słynne zdjęcie dłoni swojej żony Anny Berthy z obrączką na palcu.",
+      "source": { "name": "History Hit", "url": "https://www.historyhit.com/william-rontgen-x-rays/" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1939,
+      "title": "Zamach Georga Elsera na Hitlera",
+      "body": "8 listopada 1939 r. w monachijskiej piwiarni Bürgerbräukeller wybuchła bomba, którą stolarz Georg Elser przez wiele nocy ukrywał w filarze przy mównicy. Hitler skończył przemówienie wcześniej, niż planował, i wyszedł kilkanaście minut przed wybuchem. Zginęło kilka osób, a kilkadziesiąt zostało rannych. Elsera zatrzymano tego samego wieczoru i zamordowano w Dachau w 1945 roku.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Georg_Elser" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Zaniedbywanie prawdopodobieństwa",
+    "definition": "To skłonność do oceniania ryzyka po tym, jak bardzo przeraża nas jego skutek, a nie po tym, jak bardzo jest prawdopodobne.",
+    "origin": "Pojęcie wprowadził prawnik Cass Sunstein. Wraz z Richardem Zeckhauserem pokazał, że przy zagrożeniach budzących silny strach ludzie są gotowi poświęcić bardzo dużo, by uniknąć ryzyka, nawet gdy jest ono skrajnie małe. Im bardziej przerażające zagrożenie, tym mniej uspokaja nas wiadomość, że jego prawdopodobieństwo spadło.",
+    "examples": [
+      "Po tragicznych wydarzeniach, takich jak zamach w Krakowie, naturalny strach może sprawić, że przeceniamy ryzyko w codziennych sytuacjach, choć takie ataki pozostają rzadkie.",
+      "Wiele osób boi się latania bardziej niż jazdy samochodem, choć statystycznie to podróż autem jest groźniejsza.",
+      "Ludzie częściej ubezpieczają się od dramatycznych, rzadkich zdarzeń niż od częstych, ale mniej widowiskowych."
+    ],
+    "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Neglect_of_probability" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "factfulness",
+    "title": "Factfulness",
+    "author": "Hans Rosling",
+    "day": 1,
+    "days": 7,
+    "ideaTitle": "Świat nie dzieli się na „nas” i „ich”",
+    "idea": "Hans Rosling, szwedzki lekarz i statystyk, zaczyna od „instynktu przepaści”: lubimy dzielić świat na dwie grupy, bogatych i biednych, kraje rozwinięte i rozwijające się. W rzeczywistości większość ludzi żyje pośrodku, w krajach o średnich dochodach, a takiej grupy w podziale na dwie strony w ogóle nie ma. Rosling proponuje zamiast tego cztery poziomy dochodu, które nie pokrywają się z granicami państw. Radzi uważać na porównania średnich, bo rozkłady często na siebie zachodzą, i na porównania skrajności, bo większość jest w środku.",
+    "moral": "Gdy ktoś mówi o „dwóch światach”, zapytaj, gdzie jest większość. Zwykle w środku, którego nie widać w prostym podziale.",
+    "action": "Przy najbliższym porównaniu „my kontra oni”, które usłyszycie, zapytajcie: ile osób jest pomiędzy tymi skrajnościami?",
+    "source": { "name": "Shortform", "url": "https://shortform.com/summary/factfulness-summary-hans-rosling" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-08-q1",
+      "ref": "fact-1",
+      "question": "Do czego grzechotnikom służą jamki między okiem a nozdrzem?",
+      "options": ["Do wąchania", "Do wyczuwania ciepła ofiary", "Do słyszenia drgań", "Do wydzielania jadu"],
+      "answer": 1,
+      "explanation": "Jamki wyczuwają promieniowanie podczerwone, czyli ciepło, więc wąż trafia ofiarę nawet w ciemności."
+    },
+    {
+      "id": "2026-11-08-q2",
+      "ref": "fact-2",
+      "question": "O co naprawdę spierano się w czasach Kolumba?",
+      "options": ["Czy Ziemia jest płaska", "Czy Ziemia krąży wokół Słońca", "Jak duża jest Ziemia", "Czy istnieje Ameryka"],
+      "answer": 2,
+      "explanation": "Wykształceni Europejczycy wiedzieli, że Ziemia jest kulą. Spór dotyczył jej wielkości, a Kolumb ją zaniżał."
+    },
+    {
+      "id": "2026-11-08-q3",
+      "ref": "fact-3",
+      "question": "Które słowa z listy zapamiętujemy zwykle najgorzej?",
+      "options": ["Pierwsze", "Ze środka", "Ostatnie", "Najdłuższe"],
+      "answer": 1,
+      "explanation": "Efekt pozycji szeregowej sprawia, że najlepiej pamiętamy początek i koniec listy, a najsłabiej środek."
+    },
+    {
+      "id": "2026-11-08-q4",
+      "ref": "otd-1",
+      "question": "Skąd 8 listopada 1918 roku zwolniono Józefa Piłsudskiego?",
+      "options": ["Z Cytadeli Warszawskiej", "Z twierdzy w Magdeburgu", "Z więzienia w Krakowie", "Z obozu w Szczypiornie"],
+      "answer": 1,
+      "explanation": "Piłsudski i Sosnkowski wyszli z niemieckiej twierdzy w Magdeburgu, a 10 listopada Piłsudski był już w Warszawie."
+    },
+    {
+      "id": "2026-11-08-q5",
+      "ref": "otd-2",
+      "question": "Co zwróciło uwagę Röntgena 8 listopada 1895 roku?",
+      "options": ["Świecący ekran fluorescencyjny obok lampy", "Pęknięta szklana płytka", "Iskra elektryczna", "Ślad na kliszy w szufladzie"],
+      "answer": 0,
+      "explanation": "Świecenie ekranu obok lampy doprowadziło Röntgena do odkrycia promieni X."
+    },
+    {
+      "id": "2026-11-08-q6",
+      "ref": "concept",
+      "question": "Na czym polega zaniedbywanie prawdopodobieństwa?",
+      "options": ["Na ocenianiu ryzyka po tym, jak bardzo przeraża skutek, a nie jak jest ono prawdopodobne", "Na zbyt częstym liczeniu procentów", "Na lekceważeniu wszystkich zagrożeń", "Na wierze, że po serii porażek musi przyjść sukces"],
+      "answer": 0,
+      "explanation": "Pojęcie Sunsteina opisuje, jak silny strach sprawia, że przestajemy brać pod uwagę, jak rzadkie jest dane zagrożenie."
+    },
+    {
+      "id": "2026-11-08-q7",
+      "ref": "book",
+      "question": "Gdzie według Roslinga żyje większość ludzi na świecie?",
+      "options": ["W krajach najbiedniejszych", "W krajach najbogatszych", "W krajach o średnich dochodach", "Po równo w krajach bogatych i biednych"],
+      "answer": 2,
+      "explanation": "Podział na kraje „rozwinięte” i „rozwijające się” pomija środek, w którym żyje większość ludzkości."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-08-r1",
+      "question": "Czym jeszcze wyróżnia się Maria Skłodowska-Curie poza dwoma Noblami?",
+      "options": ["Była pierwszą kobietą nagrodzoną Noblem", "Była pierwszą kobietą z doktoratem w Polsce", "Odkryła promieniowanie X"],
+      "answer": 0,
+      "explanation": "Skłodowska-Curie była pierwszą kobietą, która dostała Nagrodę Nobla, i jedyną osobą nagrodzoną w dwóch różnych naukach ścisłych."
+    },
+    {
+      "id": "2026-11-08-r2",
+      "question": "Ile czasu przed katastrofą otwarto most Tacoma Narrows?",
+      "options": ["Około czterech miesięcy", "Około dziesięciu lat", "Tydzień"],
+      "answer": 0,
+      "explanation": "Most otwarto latem 1940 roku, a 7 listopada tego samego roku zawalił się przy wietrze ok. 64 km/h."
+    },
+    {
+      "id": "2026-11-08-r3",
+      "question": "Kto wprowadził pojęcie samospełniającej się przepowiedni?",
+      "options": ["Daniel Kahneman", "Robert K. Merton", "Zygmunt Freud"],
+      "answer": 1,
+      "explanation": "Socjolog Robert K. Merton opisał je w eseju z 1948 roku, m.in. na przykładzie banku upadającego przez plotkę."
+    }
+  ],
+  "evening": {
+    "question": "Jak dziś możemy się nawzajem wesprzeć po trudnych wiadomościach, nie przestając żyć normalnie?",
+    "hint": "Powiedzcie sobie, co was poruszyło, a potem wybierzcie jedną spokojną rzecz, którą zrobicie razem w tym tygodniu."
+  }
+}

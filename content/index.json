@@ -1,6 +1,38 @@
 {
   "editions": [
     {
+      "date": "2026-11-08",
+      "headline": "Zamach na Rynku Głównym w Krakowie: sześć ofiar na miejscu",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-1",
+          "title": "Zamach na Rynku Głównym w Krakowie: sześć ofiar na miejscu"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-2",
+          "title": "Żałoba narodowa 8 i 9 listopada, w Krakowie do 11 listopada"
+        },
+        {
+          "name": "Spór o Trybunał Konstytucyjny",
+          "item": "pl-5",
+          "title": "Sondaż: kryzys wokół Trybunału szkodzi wizerunkowi Polski"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "bezpieczenstwo-1",
+          "title": "Śledztwo po zamachu w Krakowie: sprawca działał sam"
+        }
+      ],
+      "facts": [
+        "Grzechotniki „widzą” ciepło ofiary w ciemności",
+        "Mit: w średniowieczu wierzono, że Ziemia jest płaska",
+        "Najlepiej pamiętamy początek i koniec listy"
+      ],
+      "concept": "Zaniedbywanie prawdopodobieństwa"
+    },
+    {
       "date": "2026-11-07",
       "headline": "Metsola w Sejmie, protest PiS i warunki prezydenta przed rozmową z Tuskiem",
       "threads": [

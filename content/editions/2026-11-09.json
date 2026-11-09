@@ -1,0 +1,365 @@
+{
+  "date": "2026-11-09",
+  "intro": "Dziś m.in.: prokuratura uznała zamach w Krakowie za akt terroru, Gadi Ajzenkot dostał misję tworzenia rządu w Izraelu, a szef Nvidii przyznał się do romansu z kobietą podejrzewaną o szpiegostwo.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Zamach w Krakowie: prokuratura mówi o terroryzmie, ranni policjanci wybudzeni",
+      "summary": "Prokuratura Krajowa uznała sobotni atak na Rynku Głównym za przestępstwo o charakterze terrorystycznym. Śledztwo obejmuje też zabójstwo rodziców i siostry sprawcy w Ostrowcu Świętokrzyskim, a prokuratura współpracuje z ABW. Wśród sześciu zabitych jest czworo Polaków, Brytyjczyk i 51-letnia Austriaczka. Obaj ranni policjanci, którzy zatrzymali napastnika, zostali wybudzeni ze śpiączki. Sprawca jest w stanie krytycznym, a motyw nadal nie jest znany.",
+      "why": "Ustalenia śledztwa zdecydują o zarzutach i pokażą, czy można było wcześniej zauważyć zagrożenie. Rynek Główny jest już ponownie otwarty.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Interia", "url": "https://wydarzenia.interia.pl/malopolskie/news-ruch-prokuratury-po-strzelaninie-w-krakowie-czyn-o-charakter,nId,23570697" },
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/ranni-policjanci-wybudzeni-ze-spiaczki-oto-co-wiemy-po-zamachu-w-krakowie-7348890481228256a" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Spór polityków o motywy zamachowca",
+      "summary": "Minister spraw wewnętrznych Marcin Kierwiński mówił, że napastnik wydawał się mieć skrajnie prawicowe poglądy. Poseł Adam Andruszkiewicz nazwał sugestie o sympatiach sprawcy do prawicy „obrzydliwymi”. Szef Biura Bezpieczeństwa Narodowego Bartosz Grodecki ocenił, że przy takim nihilistycznym ekstremizmie nie ma sensu szukać przynależności ideowej.",
+      "why": "Śledczy podkreślają, że motyw nie jest jeszcze znany. Spór pokazuje, jak szybko tragedia staje się tematem politycznym.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Polsat News", "url": "https://polsatnews.pl/wiadomosc/2026-11-08/to-jest-obrzydliwe-oburzenie-po-slowach-ministra-o-zamachu-w-krakowie" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Ponad tysiąc policjantów w akcji w Krakowie, apel o krew dla rannego",
+      "summary": "Według policji w działaniach po ataku w Krakowie brało udział ponad 1000 funkcjonariuszy. Pojawiły się apele o oddawanie krwi dla ciężko rannego policjanta Jakuba Kulika, jednego z dwóch funkcjonariuszy, którzy zatrzymali napastnika.",
+      "why": "Krew jest potrzebna stale, nie tylko po tragediach. Można ją oddać w każdym regionalnym centrum krwiodawstwa.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-08/w-krakowie-interweniowalo-ponad-1000-policjantow-nie-kalkulowali-ryzyka/" },
+        { "name": "TVP World", "url": "https://tvpworld.com/96368124/krakow-shooting-calls-for-blood-as-jakub-kulik-fights-for-life" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Polscy szczypiorniści pokonali Rumunię w eliminacjach Euro",
+      "summary": "Reprezentacja Polski w piłce ręcznej mężczyzn wygrała w niedzielę w Tulczy z Rumunią 30:28. To drugie zwycięstwo w eliminacjach mistrzostw Europy po środowej wygranej 33:24 z Łotwą w Opolu. Kolejny mecz, z Francją, Polacy rozegrają 10 marca 2027 roku.",
+      "why": "Awans na mistrzostwa wywalczą dwie najlepsze drużyny z grupy i cztery najlepsze z trzecich miejsc, więc Polska jest na dobrej drodze.",
+      "sources": [
+        { "name": "Polsat Sport", "url": "https://www.polsatsport.pl/wiadomosc/2026-11-08/wazny-triumf-reprezentacji-polski-drugie-zwyciestwo-w-eliminacjach-me/" },
+        { "name": "WP SportoweFakty", "url": "https://sportowefakty.wp.pl/pilka-reczna/1283282/niezwykle-wazne-zwyciestwo-polakow-otwarta-droga-po-euro" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Benzyna tanieje, autogaz drożeje",
+      "summary": "W poniedziałek nadal obowiązują ceny maksymalne: 6,12 zł za litr benzyny 95 i 7,83 zł za olej napędowy. Nowe ceny na wtorek minister energii ma ogłosić w poniedziałek. W przeciwnym kierunku idzie autogaz: według e-petrol litr LPG kosztował 4 listopada średnio 3,79 zł, o 18 groszy więcej niż tydzień wcześniej, a prognozy na ten tydzień mówią o 4,19–4,31 zł.",
+      "why": "Kierowcy aut na gaz nie korzystają z cen maksymalnych, które obejmują tylko benzynę i olej napędowy.",
+      "sources": [
+        { "name": "Gazeta Prawna", "url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/11342013,nowe-ceny-paliw-od-7-listopada-2026-i-prognoza-na-kolejny-tydzien.html" },
+        { "name": "TVN24 Biznes", "url": "https://tvn24.pl/biznes/pieniadze/ceny-paliw-na-stacjach-w-weekend-7-9-listopada-2026-stawki-za-pb95-pb98-oraz-on-st9327197" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Gadi Ajzenkot z misją utworzenia rządu w Izraelu",
+      "summary": "Prezydent Izraela Isaac Herzog oficjalnie powierzył Gadiemu Ajzenkotowi, a nie Binjaminowi Netanjahu, misję utworzenia rządu. Ajzenkota poparło 67 ze 120 posłów, w tym ugrupowania arabskie, a Netanjahu 46. Ajzenkot ma 28 dni na zbudowanie koalicji, z możliwością przedłużenia o 14 dni.",
+      "why": "Ajzenkot wykluczał współpracę z partiami arabskimi, więc droga do większości jest trudna. Możliwy jest też rząd mniejszościowy albo koalicja z Likudem.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/07/g-s1-152536/netanyahu-israel-government-eisenkot-herzog" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Francja: czwarty weekend protestów przeciw drożyźnie",
+      "summary": "W sobotę we Francji protestowało według MSW ok. 146 tys. osób, w tym 46 tys. w Paryżu, a według organizatorów 250 tys. To czwarty weekend z rzędu, ale z mniejszą frekwencją niż wcześniej. Policja użyła gazu łzawiącego w Paryżu i Lyonie i zatrzymała co najmniej 360 osób. Zabezpieczało je ok. 70 tys. funkcjonariuszy.",
+      "why": "Fala protestów rozlewa się na inne kraje Europy. Rząd szykuje na poniedziałek rozmowy ze związkami o płacach.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/08/france-protests-clashes-arrests.html" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/7/more-than-140000-rally-as-new-protests-against-rising-costs-sweep-france" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Atak drona na bazę wojskową w Kolumbii: trzech zabitych żołnierzy",
+      "summary": "Atak drona na bazę wojskową w Santa Rosa del Sur na północy Kolumbii zabił trzech żołnierzy i ranił co najmniej 16. Władze nie podały, kto stoi za atakiem. Prezydent Abelardo de la Espriella zapowiedział, że sprawcy nie będą mieli się gdzie ukryć.",
+      "why": "Uzbrojone grupy w Kolumbii coraz częściej używają dronów, co zmienia charakter konfliktu i zagraża też cywilom.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/8/drone-attack-on-colombian-army-base-kills-three-soldiers-and-wounds-16" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Świat składa kondolencje po zamachu w Krakowie",
+      "summary": "Kondolencje Polsce przekazali m.in. kanclerz Niemiec Friedrich Merz, prezydent Francji Emmanuel Macron, prezydent Ukrainy Wołodymyr Zełenski i szefowa dyplomacji UE Kaja Kallas. Papież Leon XIV zapewnił o modlitwie za ofiary.",
+      "why": "Wśród zabitych i rannych są obywatele kilku krajów, w tym Wielkiej Brytanii, Austrii, Niemiec i Portugalii.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/08/condolences-and-solidarity-european-and-world-leaders-react-to-krakow-shooting" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-08/kondolencje-z-watykanu-papiez-reaguje-na-zamach-w-krakowie/" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "USA chcą rozszerzyć blokadę Iranu na drogi lądowe",
+      "summary": "Donald Trump powiedział, że nowa grupa zadaniowa amerykańskiego Dowództwa Centralnego ma rozszerzyć blokadę morską Iranu na przewóz towarów lądem. Ocenił, że wznowienie amerykańskich ataków jest „bardzo mało prawdopodobne”, jeśli rozmowy będą postępować. Iran bagatelizuje nową grupę.",
+      "why": "Napięcie wokół Iranu wpływa na ceny ropy i paliw. Wypowiedzi Trumpa dają nadzieję na deeskalację, ale sytuacja zmienia się z dnia na dzień.",
+      "sources": [
+        { "name": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Śledztwo terrorystyczne w Krakowie prowadzi Prokuratura Krajowa z ABW",
+      "summary": "Śledztwo w sprawie zamachu prowadzi małopolski wydział zamiejscowy Prokuratury Krajowej we współpracy z ABW. Według śledczych zebrane dowody wskazują, że za atak w Krakowie i zabójstwa w Ostrowcu Świętokrzyskim odpowiada ten sam 24-letni mężczyzna. Prokuratura chce go przesłuchać, gdy pozwoli na to jego stan zdrowia.",
+      "why": "Motyw wciąż nie jest znany. Przesłuchanie sprawcy ma pomóc go wyjaśnić.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Notes from Poland", "url": "https://notesfrompoland.com/2026/11/08/prosecutors-launcher-terror-investigation-as-poland-reels-from-fatal-shootings/" },
+        { "name": "Interia", "url": "https://wydarzenia.interia.pl/malopolskie/news-ruch-prokuratury-po-strzelaninie-w-krakowie-czyn-o-charakter,nId,23570697" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Nvidia bada relację swojego szefa z kobietą podejrzewaną o szpiegostwo",
+      "summary": "Zarząd Nvidii wszczął wewnętrzne dochodzenie w sprawie relacji prezesa Jensena Huanga z bizneswoman, którą amerykański wywiad uważa za chińskiego szpiega. Huang napisał do pracowników, że miał z nią romans, i przeprosił. Według rzecznika firmy pozostaje prezesem. Nvidia i władze Chin zaprzeczają, by dochodziło do szpiegostwa.",
+      "why": "Nvidia produkuje chipy kluczowe dla AI, których eksport do Chin jest ograniczany. Sprawą zajmują się też kongresmeni w USA.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/08/nx-s1-6034036/nvidia-launches-investigation-into-ceos-alleged-relationship-with-chinese-spy" }
+      ]
+    },
+    {
+      "id": "technologia-2",
+      "section": "technologia",
+      "rank": 2,
+      "title": "Tesla kończy produkcję Cybertrucka",
+      "summary": "Elon Musk zapowiedział, że Tesla zakończy produkcję elektrycznego pikapa Cybertruck w przyszłym roku. Musk obiecywał zasięg ok. 800 km i cenę poniżej 40 tys. dolarów, ale według TechCrunch auto nie osiągnęło żadnej z tych wartości.",
+      "why": "To jeden z najbardziej rozpoznawalnych, ale też najbardziej krytykowanych samochodów ostatnich lat.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/08/techcrunch-mobility-the-cybertruck-experiment-is-over/" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Anthropic kupuje generatory gazowe dla centrów danych",
+      "summary": "Według „Financial Times” Anthropic zawarł umowę wartą ok. 3,4 mld dolarów na generatory gazowe do zasilania centrów danych. Agencja Reuters nie zdołała od razu potwierdzić tych doniesień, a firmy nie odpowiedziały na prośby o komentarz.",
+      "why": "Firmy AI szukają własnych źródeł prądu, bo sieci energetyczne nie nadążają, a mieszkańcy boją się wyższych rachunków.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/08/anthropic-generator-deal-ai-data-centers.html" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Jedna kroplówka z żelazem poprawiła wydolność przy niewydolności serca",
+      "summary": "W badaniu Mass General Brigham, przedstawionym na kongresie Amerykańskiego Towarzystwa Kardiologicznego, wzięło udział 65 osób z najczęstszą postacią niewydolności serca (z zachowaną frakcją wyrzutową) i niedoborem żelaza. Po jednym wlewie żelaza ich wydolność w testach wysiłkowych poprawiła się po 12 tygodniach.",
+      "why": "Niedobór żelaza jest częsty u osób z niewydolnością serca. To małe badanie, więc potrzebne są większe próby.",
+      "sources": [
+        { "name": "EurekAlert!", "url": "https://www.eurekalert.org/news-releases/1150807" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "„Godzilla Minus Zero” z rekordem w Ameryce Północnej",
+      "summary": "Japoński film „Godzilla Minus Zero” zarobił w pierwszy weekend 31,6 mln dolarów w Ameryce Północnej. To najlepsze otwarcie aktorskiego filmu nieanglojęzycznego w historii tamtejszych kin, poprzedni rekord należał do „Hero” z 17,8 mln. Na całym świecie film zarobił w weekend ok. 63 mln dolarów.",
+      "why": "Budżet promocji w USA wynosił mniej niż 10 mln dolarów. To sygnał, że widzowie chętnie oglądają filmy z napisami.",
+      "sources": [
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/box-office-godzilla-minus-zero-cat-in-the-hat-1237215161/" },
+        { "name": "Variety", "url": "https://variety.com/2026/film/box-office/godzilla-minus-zero-box-office-opening-weekend-cat-in-the-hat-fizzles-1236942363" }
+      ]
+    },
+    {
+      "id": "filmy-2",
+      "section": "filmy",
+      "rank": 2,
+      "title": "Kto zagra nowego Bonda? Villeneuve zawęża listę",
+      "summary": "Reżyser Denis Villeneuve i producenci Amy Pascal oraz David Heyman są coraz bliżej wyboru nowego Jamesa Bonda. Według Variety wśród finalistów są Robert Pattinson, Nicholas Hoult, Callum Turner, Josh O'Connor i Jack Lowden.",
+      "why": "Wybór aktora do roli 007 to jedna z najważniejszych decyzji obsadowych w kinie.",
+      "sources": [
+        { "name": "Variety", "url": "https://variety.com/gallery/denis-villeneuve-james-bond-lacma-art-film-gala" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "nauka",
+      "title": "Kuchenkę mikrofalową wymyślono dzięki stopionemu batonikowi",
+      "body": "Percy Spencer, inżynier firmy Raytheon, pracował przy radarach w czasie II wojny światowej. Zauważył, że batonik w jego kieszeni się roztopił, gdy stał przy działającym magnetronie. Sprawdził to, kierując mikrofale do metalowej skrzynki: pierwszą rzeczą, którą celowo w ten sposób przygotował, był popcorn. Patent na podgrzewanie żywności zgłoszono w 1945 roku.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Microwave_oven" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "kosmos",
+      "title": "Pluton ma lodowe „serce”, które ciągle się porusza",
+      "body": "Sonda New Horizons sfotografowała w 2015 roku na Plutonie jasny obszar w kształcie serca. Jego zachodnia część, równina Sputnik Planitia, jest pokryta lodem z azotu, tlenku węgla i metanu. Lód tworzy komórki o średnicy 16–48 km, które powoli się przemieszczają jak gotująca się woda. Według NASA mają mniej niż milion lat, więc w skali geologicznej są bardzo młode.",
+      "source": { "name": "NASA", "url": "https://www.nasa.gov/news-release/nasas-new-horizons-discovers-frozen-plains-in-the-heart-of-plutos-heart/" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "historia",
+      "title": "Kopernik opisał, jak zły pieniądz wypiera dobry",
+      "body": "Mikołaj Kopernik był nie tylko astronomem. W 1526 roku na prośbę króla Zygmunta Starego napisał traktat o biciu monety. Zauważył w nim, że gdy obok dobrej monety pojawia się gorsza, ta gorsza wypiera lepszą z obiegu, bo ludzie wolą zatrzymać cenniejsze monety. W Polsce zasada nazywa się prawem Kopernika-Greshama, od nazwiska Anglika, który opisał ją później.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Monetae_cudendae_ratio" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1989,
+      "title": "Upadek muru berlińskiego",
+      "body": "9 listopada 1989 r. rzecznik władz NRD Günter Schabowski ogłosił na konferencji prasowej nowe zasady wyjazdów. Zapytany, od kiedy obowiązują, odpowiedział, że natychmiast, choć miały wejść w życie następnego dnia. Tłumy ruszyły na przejścia graniczne i o 23.30 otwarto przejście przy Bornholmer Straße. Upadek muru zapoczątkował zjednoczenie Niemiec.",
+      "source": { "name": "Bundesregierung", "url": "https://www.bundesregierung.de/breg-en/service/archive/archive/9-november-a-historically-signficant-date-411370" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1989,
+      "title": "Kohl w Warszawie przerywa wizytę",
+      "body": "Tego samego dnia, 9 listopada 1989 r., do Polski przyjechał kanclerz RFN Helmut Kohl. Wieczorem dotarła do niego wiadomość o upadku muru, więc na dobę przerwał wizytę, by pojechać do Bonn i Berlina. 12 listopada wziął udział z premierem Tadeuszem Mazowieckim we mszy pojednania w Krzyżowej, gdzie obaj przekazali sobie znak pokoju.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/node/17709" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1938,
+      "title": "Noc kryształowa",
+      "body": "W nocy z 9 na 10 listopada 1938 r. w Niemczech i Austrii doszło do zorganizowanego przez nazistów pogromu Żydów. Zniszczono lub uszkodzono ponad 1400 synagog i tysiące żydowskich sklepów i domów, zamordowano co najmniej 91 osób. Około 30 tys. żydowskich mężczyzn wywieziono do obozów koncentracyjnych. Pogrom był zapowiedzią Zagłady.",
+      "source": { "name": "Yad Vashem", "url": "https://www.yadvashem.org/november-pogrom" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Iluzja ogniskowania",
+    "definition": "To skłonność do przeceniania znaczenia jednej rzeczy, o której akurat myślimy, gdy oceniamy całe życie lub sytuację.",
+    "origin": "Psychologowie David Schkade i Daniel Kahneman zapytali w 1998 roku studentów ze Środkowego Zachodu USA i z Kalifornii o zadowolenie z życia. Obie grupy były tak samo zadowolone, ale badani zakładali, że Kalifornijczycy są szczęśliwsi, bo myśleli głównie o pogodzie. Autorzy podsumowali to zdaniem: „Nic w życiu nie jest tak ważne, jak ci się wydaje, kiedy o tym myślisz”.",
+    "examples": [
+      "Wiele osób sądzi, że przeprowadzka w cieplejsze miejsce albo wyższa pensja zmieni ich szczęście bardziej, niż zwykle się to dzieje.",
+      "Po wstrząsającej wiadomości trudno myśleć o czymkolwiek innym, choć codzienne życie wciąż składa się z wielu dobrych chwil.",
+      "Przy zakupie auta jedna cecha, np. kolor albo ekran, potrafi przesłonić to, co ważniejsze na co dzień."
+    ],
+    "source": { "name": "MIT (Psychological Science)", "url": "https://web.mit.edu/curhan/www/docs/Articles/biases/9_Psychological_Science_340_%28Schkade%29.pdf" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "factfulness",
+    "title": "Factfulness",
+    "author": "Hans Rosling",
+    "day": 2,
+    "days": 7,
+    "ideaTitle": "Instynkt negatywności: złe wiadomości słychać głośniej",
+    "idea": "Rosling opisuje „instynkt negatywności”: łatwiej zauważamy to, co złe, niż to, co dobre. Dlatego wiele osób uważa, że świat się pogarsza, choć statystyki pokazują postęp w zdrowiu, edukacji czy walce z ubóstwem. Odsetek ludzi w skrajnej biedzie spadł w ciągu ok. 20 lat mniej więcej o połowę, a w jednym z badań Roslinga poprawnie odpowiedziało na to pytanie tylko kilka procent ankietowanych. Złe i dobre rzeczy mogą dziać się jednocześnie: sytuacja może być zła, a mimo to się poprawiać.",
+    "moral": "„Źle” i „lepiej” nie wykluczają się. Pamiętaj, że o powolnej poprawie rzadko informują nagłówki.",
+    "action": "Przy jednej złej wiadomości dziś zapytaj: jak to wyglądało 10 lub 20 lat temu?",
+    "source": { "name": "Shortform", "url": "https://shortform.com/summary/factfulness-summary-hans-rosling" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-09-q1",
+      "ref": "fact-1",
+      "question": "Co naprowadziło Percy'ego Spencera na pomysł kuchenki mikrofalowej?",
+      "options": ["Wybuch jajka w laboratorium", "Stopiony batonik w kieszeni", "Przegrzany telefon", "Pęknięta lampa radiowa"],
+      "answer": 1,
+      "explanation": "Spencer zauważył, że batonik w kieszeni topi się przy działającym magnetronie. Pierwszym przygotowanym celowo daniem był popcorn."
+    },
+    {
+      "id": "2026-11-09-q2",
+      "ref": "fact-2",
+      "question": "Z czego zbudowana jest równina Sputnik Planitia w „sercu” Plutona?",
+      "options": ["Z lodu wodnego i piasku", "Z lodu azotowego z tlenkiem węgla i metanem", "Z zastygłej lawy", "Z pyłu meteorytowego"],
+      "answer": 1,
+      "explanation": "Równina jest pokryta lodem z azotu, tlenku węgla i metanu, który tworzy powoli poruszające się komórki."
+    },
+    {
+      "id": "2026-11-09-q3",
+      "ref": "fact-3",
+      "question": "Co mówi prawo Kopernika-Greshama?",
+      "options": ["Ceny rosną, gdy w obiegu jest więcej pieniędzy", "Gorszy pieniądz wypiera z obiegu lepszy", "Złoto zawsze traci na wartości", "Monety trzeba bić tylko w jednej mennicy"],
+      "answer": 1,
+      "explanation": "Gdy obok cenniejszych monet krążą gorsze, ludzie zatrzymują cenniejsze, a w obiegu zostają gorsze."
+    },
+    {
+      "id": "2026-11-09-q4",
+      "ref": "otd-1",
+      "question": "Co sprawiło, że 9 listopada 1989 roku ludzie ruszyli na przejścia w murze berlińskim?",
+      "options": ["Rozkaz armii radzieckiej", "Odpowiedź Schabowskiego, że nowe zasady obowiązują natychmiast", "Wizyta Gorbaczowa w Berlinie", "Strajk generalny w NRD"],
+      "answer": 1,
+      "explanation": "Schabowski powiedział na konferencji, że nowe zasady wyjazdów obowiązują od razu, choć miały wejść w życie następnego dnia."
+    },
+    {
+      "id": "2026-11-09-q5",
+      "ref": "otd-2",
+      "question": "Gdzie 12 listopada 1989 roku Mazowiecki i Kohl przekazali sobie znak pokoju?",
+      "options": ["Na Górze Świętej Anny", "W Krzyżowej", "W katedrze w Gnieźnie", "W Warszawie"],
+      "answer": 1,
+      "explanation": "Msza pojednania odbyła się w Krzyżowej koło Świdnicy i stała się symbolem polsko-niemieckiego pojednania."
+    },
+    {
+      "id": "2026-11-09-q6",
+      "ref": "concept",
+      "question": "Na czym polega iluzja ogniskowania?",
+      "options": ["Na przecenianiu jednej rzeczy, o której akurat myślimy", "Na kłopotach ze skupieniem uwagi", "Na wierze, że inni myślą tak jak my", "Na zapominaniu szczegółów po latach"],
+      "answer": 0,
+      "explanation": "Gdy skupiamy się na jednym czynniku, np. pogodzie, przypisujemy mu zbyt duży wpływ na całe życie."
+    },
+    {
+      "id": "2026-11-09-q7",
+      "ref": "book",
+      "question": "Co według Roslinga stało się z odsetkiem ludzi w skrajnej biedzie w ciągu ok. 20 lat?",
+      "options": ["Podwoił się", "Nie zmienił się", "Spadł mniej więcej o połowę", "Spadł do zera"],
+      "answer": 2,
+      "explanation": "Mimo poczucia, że świat się pogarsza, odsetek ludzi w skrajnej biedzie spadł mniej więcej o połowę."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-09-r1",
+      "question": "Kiedy Röntgen zrobił słynne zdjęcie dłoni swojej żony?",
+      "options": ["Tego samego wieczoru, gdy odkrył promienie", "Około sześciu tygodni później", "Po dziesięciu latach"],
+      "answer": 1,
+      "explanation": "Odkrycie nastąpiło 8 listopada 1895 roku, a zdjęcie dłoni Anny Berthy z obrączką powstało około sześć tygodni później."
+    },
+    {
+      "id": "2026-11-09-r2",
+      "question": "Dlaczego Hitler przeżył zamach Georga Elsera?",
+      "options": ["Bomba nie wybuchła", "Wyszedł z piwiarni przed wybuchem", "Ochrona znalazła bombę"],
+      "answer": 1,
+      "explanation": "Hitler skończył przemówienie wcześniej, niż planował, i wyszedł kilkanaście minut przed eksplozją."
+    },
+    {
+      "id": "2026-11-09-r3",
+      "question": "Kto wprowadził pojęcie zaniedbywania prawdopodobieństwa?",
+      "options": ["Daniel Kahneman", "Cass Sunstein", "Hans Rosling"],
+      "answer": 1,
+      "explanation": "Cass Sunstein opisał, jak silny strach sprawia, że przestajemy brać pod uwagę, jak rzadkie jest zagrożenie."
+    }
+  ],
+  "evening": {
+    "question": "Jaka jedna dobra zmiana w waszym życiu albo okolicy przeszła niezauważona, bo działo się to powoli?",
+    "hint": "Pomyślcie o zdrowiu, pracy, mieszkaniu albo ludziach wokół was sprzed pięciu czy dziesięciu lat."
+  }
+}

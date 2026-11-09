@@ -1,0 +1,201 @@
+{
+  "date": "2026-11-09",
+  "file": "2026-11-09-darkman.mp3",
+  "url": "audio/2026-11-09-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-09-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "41764b3781d69fdd",
+  "duration": 941.53,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 17.47
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Zamach w Krakowie: prokuratura mówi o terroryzmie, ranni policjanci wybudzeni",
+      "start": 18.17,
+      "end": 65.93
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Spór polityków o motywy zamachowca",
+      "start": 66.63,
+      "end": 100.32
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Ponad tysiąc policjantów w akcji w Krakowie, apel o krew dla rannego",
+      "start": 101.02,
+      "end": 129.01
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Polscy szczypiorniści pokonali Rumunię w eliminacjach Euro",
+      "start": 129.71,
+      "end": 164.29
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Benzyna tanieje, autogaz drożeje",
+      "start": 164.99,
+      "end": 208.55
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Gadi Ajzenkot z misją utworzenia rządu w Izraelu",
+      "start": 209.75,
+      "end": 248.98
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Francja: czwarty weekend protestów przeciw drożyźnie",
+      "start": 249.68,
+      "end": 288.35
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Atak drona na bazę wojskową w Kolumbii: trzech zabitych żołnierzy",
+      "start": 289.05,
+      "end": 318.37
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Świat składa kondolencje po zamachu w Krakowie",
+      "start": 319.07,
+      "end": 346.1
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "USA chcą rozszerzyć blokadę Iranu na drogi lądowe",
+      "start": 346.8,
+      "end": 379.73
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Śledztwo terrorystyczne w Krakowie prowadzi Prokuratura Krajowa z ABW",
+      "start": 380.93,
+      "end": 415.17
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Nvidia bada relację swojego szefa z kobietą podejrzewaną o szpiegostwo",
+      "start": 415.87,
+      "end": 453.57
+    },
+    {
+      "id": "technologia-2",
+      "chapter": "tematy",
+      "label": "Tesla kończy produkcję Cybertrucka",
+      "start": 454.27,
+      "end": 480.84
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Anthropic kupuje generatory gazowe dla centrów danych",
+      "start": 481.54,
+      "end": 512.09
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Jedna kroplówka z żelazem poprawiła wydolność przy niewydolności serca",
+      "start": 512.79,
+      "end": 548.48
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "„Godzilla Minus Zero” z rekordem w Ameryce Północnej",
+      "start": 549.18,
+      "end": 586.47
+    },
+    {
+      "id": "filmy-2",
+      "chapter": "tematy",
+      "label": "Kto zagra nowego Bonda? Villeneuve zawęża listę",
+      "start": 587.17,
+      "end": 613.83
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Kuchenkę mikrofalową wymyślono dzięki stopionemu batonikowi",
+      "start": 615.03,
+      "end": 645.76
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Kopernik opisał, jak zły pieniądz wypiera dobry",
+      "start": 646.46,
+      "end": 676.21
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Pluton ma lodowe „serce”, które ciągle się porusza",
+      "start": 676.91,
+      "end": 707.87
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1989: Upadek muru berlińskiego",
+      "start": 709.07,
+      "end": 742.96
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1989: Kohl w Warszawie przerywa wizytę",
+      "start": 743.66,
+      "end": 774.01
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1938: Noc kryształowa",
+      "start": 774.71,
+      "end": 805.16
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Iluzja ogniskowania",
+      "start": 806.36,
+      "end": 866.78
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Factfulness: Instynkt negatywności: złe wiadomości słychać głośniej",
+      "start": 867.98,
+      "end": 925.22
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 926.42,
+      "end": 941.03
+    }
+  ]
+}

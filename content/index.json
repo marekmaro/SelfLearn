@@ -1,6 +1,43 @@
 {
   "editions": [
     {
+      "date": "2026-11-09",
+      "headline": "Zamach w Krakowie: prokuratura mówi o terroryzmie, ranni policjanci wybudzeni",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-1",
+          "title": "Zamach w Krakowie: prokuratura mówi o terroryzmie, ranni policjanci wybudzeni"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-2",
+          "title": "Spór polityków o motywy zamachowca"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-3",
+          "title": "Ponad tysiąc policjantów w akcji w Krakowie, apel o krew dla rannego"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "sw-4",
+          "title": "Świat składa kondolencje po zamachu w Krakowie"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "bezpieczenstwo-1",
+          "title": "Śledztwo terrorystyczne w Krakowie prowadzi Prokuratura Krajowa z ABW"
+        }
+      ],
+      "facts": [
+        "Kuchenkę mikrofalową wymyślono dzięki stopionemu batonikowi",
+        "Pluton ma lodowe „serce”, które ciągle się porusza",
+        "Kopernik opisał, jak zły pieniądz wypiera dobry"
+      ],
+      "concept": "Iluzja ogniskowania"
+    },
+    {
       "date": "2026-11-08",
       "headline": "Zamach na Rynku Głównym w Krakowie: sześć ofiar na miejscu",
       "threads": [

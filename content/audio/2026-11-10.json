@@ -1,0 +1,201 @@
+{
+  "date": "2026-11-10",
+  "file": "2026-11-10.mp3",
+  "url": "audio/2026-11-10.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-10.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "3a3f59888c13c497",
+  "duration": 991.23,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 16.26
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Sprawca zamachu w Krakowie nie żyje. Tysiące ludzi w Marszu Ciszy",
+      "start": 16.96,
+      "end": 61.75
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Rząd zapowiada przegląd przepisów o broni",
+      "start": 62.45,
+      "end": 102.33
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Sześć osób zatrzymanych za fałszywe wpisy po zamachu",
+      "start": 103.03,
+      "end": 141.23
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Alert RCB dla Lubelszczyzny i Podlasia podczas rosyjskiego ataku na Ukrainę",
+      "start": 141.93,
+      "end": 175.68
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "We wtorek benzyna 95 po 6,04 zł. W Warszawie zakaz noszenia broni 11 listopada",
+      "start": 176.38,
+      "end": 220.65
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Trump: wojna z Iranem „właściwie się skończyła”. Iran zaprzecza",
+      "start": 221.85,
+      "end": 259.88
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "W Antalyi ruszył szczyt klimatyczny COP31",
+      "start": 260.58,
+      "end": 304.16
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Russell Brand skazany na 10,5 roku więzienia",
+      "start": 304.86,
+      "end": 337.26
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Wall Street mocno odbija, Dow Jones w górę o ponad 1100 pkt",
+      "start": 337.96,
+      "end": 377.41
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Wniosek o impeachment szefa Pentagonu",
+      "start": 378.11,
+      "end": 403.12
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Ćwiczenia „koalicji chętnych” w Polsce przed misją na Ukrainie",
+      "start": 404.32,
+      "end": 439.54
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Instagram wszędzie użyje AI do wyłapywania nastolatków",
+      "start": 440.24,
+      "end": 481.13
+    },
+    {
+      "id": "technologia-2",
+      "chapter": "tematy",
+      "label": "Trump broni szefa Nvidii, akcje firmy tracą",
+      "start": 481.83,
+      "end": 512.26
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Anthropic pokazał modele Claude Fable 5.2 i Mythos 5.2",
+      "start": 512.96,
+      "end": 552.16
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Leki na osteoporozę związane z mniejszym ryzykiem demencji",
+      "start": 552.86,
+      "end": 590.24
+    },
+    {
+      "id": "zdrowie-2",
+      "chapter": "tematy",
+      "label": "Lek przeciwzapalny Novo Nordisk nie zmniejszył liczby zawałów",
+      "start": 590.94,
+      "end": 620.9
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "James Gunn i Peter Safran odchodzą z DC Studios",
+      "start": 621.6,
+      "end": 655.08
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Kaczki śpią z jednym okiem otwartym",
+      "start": 656.28,
+      "end": 687.48
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Neptuna odkryto najpierw na papierze",
+      "start": 688.18,
+      "end": 719.6
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Efekt IKEA: bardziej cenimy to, co sami złożyliśmy",
+      "start": 720.3,
+      "end": 751.55
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Piłsudski przyjeżdża do Warszawy",
+      "start": 752.75,
+      "end": 785.37
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1871: „Doktor Livingstone, jak przypuszczam?”",
+      "start": 786.07,
+      "end": 819.32
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1975: Zatonięcie statku Edmund Fitzgerald",
+      "start": 820.02,
+      "end": 850.03
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Prawo Brandoliniego",
+      "start": 851.23,
+      "end": 905.45
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Factfulness: Nie każda linia rośnie w nieskończoność",
+      "start": 906.65,
+      "end": 971.61
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 972.81,
+      "end": 990.73
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "date": "2026-11-10",
+  "intro": "Dziś m.in.: Polacy oddali hołd ofiarom zamachu w Krakowie, w Turcji ruszył szczyt klimatyczny COP31, a Anthropic pokazał nowe modele AI tuż przed debiutem na giełdzie.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Sprawca zamachu w Krakowie nie żyje. Tysiące ludzi w Marszu Ciszy",
+      "summary": "24-letni sprawca sobotniego ataku na Rynku Głównym zmarł w poniedziałek nad ranem w szpitalu. W Krakowie przeszedł Marsz Ciszy, w którym wzięli udział m.in. premier Donald Tusk i prezydent Karol Nawrocki. Prezydent nadał dwóm rannym policjantom, którzy powstrzymali napastnika, Krzyże Oficerskie Orderu Odrodzenia Polski. Zbiórki dla nich zebrały już miliony złotych, a jedną wsparło ponad 110 tys. osób.",
+      "why": "Śmierć sprawcy oznacza, że nie odpowie przed sądem, ale śledztwo trwa. Księga kondolencyjna w krakowskim ratuszu będzie wyłożona do środy.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Euronews", "url": "https://euronews.com/2026/11/09/krakow-main-square-shooting-suspect-dies-in-hospital-police-say" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-09/odznaczenia-dla-policjantow-z-krakowa-jest-decyzja-prezydenta/" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Rząd zapowiada przegląd przepisów o broni",
+      "summary": "Po zamachu w Krakowie ministrowie sugerują zaostrzenie zasad posiadania broni. Wiceminister obrony wezwał do debaty o ograniczeniu liczby i rodzajów broni, jaką mogą mieć prywatne osoby. Prokuratura zapowiedziała sprawdzenie całej sprawy broni i pozwoleń sprawcy. Sejmowa komisja ds. służb specjalnych wysłucha 18 listopada informacji szefów ABW i policji.",
+      "why": "Sprawca legalnie posiadał broń, dlatego pytanie o to, jak wydaje się pozwolenia i ile broni można mieć, staje się jednym z głównych tematów po ataku.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Notes from Poland", "url": "https://notesfrompoland.com/2026/11/09/polish-government-ministers-suggest-tighter-gun-controls-after-deadly-terrorist-shooting/" },
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/krakow/prokuratura-ujawnia-wielkosc-arsenalu-zamachowca-sa-szczegoly-7349124994087360a" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Sześć osób zatrzymanych za fałszywe wpisy po zamachu",
+      "summary": "Centralne Biuro Zwalczania Cyberprzestępczości zatrzymało sześć osób w wieku od 15 do 36 lat za niepokojące wpisy w internecie po zamachu. Wszyscy przyznali się do publikowania nieprawdziwych informacji. MSWiA zgłosi do prokuratury fałszywy fotomontaż z ministrem Marcinem Kierwińskim, wygenerowany przez AI. Wicepremier Krzysztof Gawkowski mówił o blisko 4 tys. zgłoszonych kont.",
+      "why": "Po tragediach w sieci szybko szerzą się fałszywe informacje. Warto sprawdzać źródło, zanim coś udostępnimy.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-09/piec-osob-zatrzymanych-po-zamachu-w-krakowie-mswia-ujawnia-powody/" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-09/ordynarne-wprowadzanie-w-blad-mswia-reaguje-po-fotomontazu-z-michalem-o/" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Alert RCB dla Lubelszczyzny i Podlasia podczas rosyjskiego ataku na Ukrainę",
+      "summary": "W poniedziałek wieczorem Rządowe Centrum Bezpieczeństwa wysłało alert do mieszkańców województw lubelskiego i podlaskiego w związku z rosyjskim atakiem powietrznym na Ukrainę. Podniesiono gotowość polskiej obrony powietrznej. Po kilkudziesięciu minutach alarm odwołano.",
+      "why": "Alerty RCB przychodzą SMS-em na wszystkie telefony w danym regionie. Warto ich nie ignorować i sprawdzać zalecenia.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-09/rosja-atakuje-ukraine-alert-rcb-dla-dwoch-wojewodztw/" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "We wtorek benzyna 95 po 6,04 zł. W Warszawie zakaz noszenia broni 11 listopada",
+      "summary": "We wtorek maksymalna cena benzyny 95 wynosi 6,04 zł za litr, benzyny 98 – 6,67 zł, a oleju napędowego – 7,74 zł. To mniej niż w poniedziałek. Z kolei w Warszawie w dniu Święta Niepodległości będzie obowiązywał zakaz noszenia i przewożenia broni, także rozładowanej.",
+      "why": "Ceny paliw spadają od ponad tygodnia. Zakaz noszenia broni to zwykły element zabezpieczenia dużych zgromadzeń, w tym roku po zamachu w Krakowie szczególnie ważny.",
+      "sources": [
+        { "name": "RMF24", "url": "https://www.rmf24.pl/fakty/ekonomia/news-ceny-paliw-nizej-znamy-nowe-maksymalne-stawki-na-wtorek,nIdn,1025459" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-09/dzien-niepodleglosci-w-warszawie-wprowadzono-zakaz-noszenia-broni/" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Trump: wojna z Iranem „właściwie się skończyła”. Iran zaprzecza",
+      "summary": "Po spotkaniu z premierem Kataru Donald Trump powiedział, że wojna z Iranem militarnie „właściwie się skończyła”, a obecny stan oznacza utrzymanie amerykańskiej blokady irańskich portów. Irańscy urzędnicy nazwali to „fake newsem”. Teheran żąda zniesienia sankcji i blokady przed jakimikolwiek rozmowami, a sekretarz stanu Marco Rubio mówi o braku postępów.",
+      "why": "Koniec walk obniżyłby ceny ropy, ale bez porozumienia blokada i napięcie w cieśninie Ormuz trwają.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-war-effectively-over-iran-demands-surrender" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "W Antalyi ruszył szczyt klimatyczny COP31",
+      "summary": "W Antalyi w Turcji rozpoczęła się konferencja klimatyczna ONZ COP31, która potrwa do 20 listopada. Biorą w niej udział negocjatorzy z niemal 200 państw. Turcja przewodniczy obradom, a negocjacjami kieruje Australia. Prezydent COP31 Murat Kurum chce, by do 2035 roku prąd pokrywał 35 proc. światowego zapotrzebowania na energię. Najtrudniejszym tematem ma być finansowanie walki ze zmianami klimatu.",
+      "why": "Szczyt odbywa się w cieniu wojny z Iranem i wysokich cen energii, więc eksperci nie spodziewają się wielkich przełomów.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/09/we-will-not-lower-our-ambition-everything-you-need-to-know-on-day-one-of-the-cop31-climate" },
+        { "name": "France 24", "url": "https://www.france24.com/en/live-news/20261109-cop31-opens-as-climate-and-geopolitical-pressures-mount" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Russell Brand skazany na 10,5 roku więzienia",
+      "summary": "Sąd w Londynie skazał brytyjskiego komika Russella Branda na 10 lat i 6 miesięcy więzienia za gwałt i trzy napaści seksualne. Sędzia nazwał go drapieżcą seksualnym. Brand ma odsiedzieć co najmniej dwie trzecie kary i trafi do rejestru przestępców seksualnych. Policja bada jeszcze dwa inne zgłoszenia gwałtu.",
+      "why": "Wyrok zamyka głośny proces, który ruszył po latach od zgłoszeń. Brand nie przyznaje się do winy.",
+      "sources": [
+        { "name": "CNN", "url": "https://www.cnn.com/2026/11/09/entertainment/russell-brand-rape-sentence-prison-intl" },
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/09/british-comedian-russell-brand-sentenced-to-10-years-and-six-months-for-rape-sexual-assaul" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Wall Street mocno odbija, Dow Jones w górę o ponad 1100 pkt",
+      "summary": "Indeks Dow Jones wzrósł w poniedziałek o 1104 pkt, czyli o 2,15 proc., do 52 389,75 pkt. Akcje spółek od infrastruktury AI odrabiały straty po ubiegłotygodniowej przecenie, a ropa tanieje. Wyjątkiem była Nvidia, która straciła ponad 4 proc. w związku z dochodzeniem wobec jej prezesa.",
+      "why": "Rynki reagują na słowa Trumpa o końcu wojny z Iranem. Inwestorzy czekają też na wtorkowe dane o inflacji w USA.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Wniosek o impeachment szefa Pentagonu",
+      "summary": "Jeden z kongresmenów złożył w Izbie Reprezentantów rezolucję o postawienie w stan oskarżenia sekretarza obrony Pete'a Hegsetha. Kongres wraca do pracy przed styczniem, gdy władzę w obu izbach przejmą demokraci.",
+      "why": "Na razie to inicjatywa jednego posła, ale po zmianie większości w Kongresie takie wnioski mogą mieć większe szanse.",
+      "sources": [
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/czarne-chmury-nad-hegsethem-jest-wniosek-o-impeachment-7349271600011712a" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Ćwiczenia „koalicji chętnych” w Polsce przed misją na Ukrainie",
+      "summary": "W Nowej Dębie, ok. 100 km od granicy z Ukrainą, rozpoczęły się ćwiczenia tysięcy żołnierzy z 11 państw tzw. koalicji chętnych. Mają przygotować wsparcie dla Ukrainy po zakończeniu wojny. Ćwiczenia potrwają do 22 listopada. Rosja je potępiła.",
+      "why": "Ćwiczenia pokazują, że Europa przygotowuje się do zabezpieczenia ewentualnego rozejmu, niezależnie od rozmów USA z Rosją.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Notes from Poland", "url": "https://notesfrompoland.com/2026/11/09/coalition-of-the-willing-military-exercises-begin-in-poland-to-prepare-support-for-postwar-ukraine/" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Instagram wszędzie użyje AI do wyłapywania nastolatków",
+      "summary": "Meta rozszerza na cały świat system AI, który szacuje wiek użytkowników Instagrama. Ma wyłapywać nastolatków, którzy podają się za dorosłych, i przenosić ich na konta z ograniczeniami dla nastolatków. System analizuje m.in. wpisy, komentarze, opisy profilu i zdjęcia. Konta nastolatków są domyślnie prywatne, a wiadomości mogą przysyłać tylko znajomi.",
+      "why": "Meta mierzy się z wieloma pozwami o szkody dla młodzieży. Dla rodziców to dodatkowa ochrona, choć skuteczność systemu nie jest znana.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/09/meta-expands-instagrams-ai-age-guessing-tech-globally/" },
+        { "name": "Engadget", "url": "https://www.engadget.com/2310848/meta-is-expanding-ai-age-detection-for-instagram-teen-accounts/" }
+      ]
+    },
+    {
+      "id": "technologia-2",
+      "section": "technologia",
+      "rank": 2,
+      "title": "Trump broni szefa Nvidii, akcje firmy tracą",
+      "summary": "Donald Trump nazwał prezesa Nvidii Jensena Huanga „honorowym człowiekiem”, mimo dochodzenia w sprawie jego relacji z kobietą, którą wywiad USA podejrzewa o szpiegostwo na rzecz Chin. Akcje Nvidii spadły w poniedziałek o ponad 4 proc., choć reszta rynku rosła.",
+      "why": "Nvidia jest jedną z najcenniejszych firm świata, a jej chipy są podstawą rozwoju AI. Niepewność wokół prezesa niepokoi inwestorów.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/video/2026/11/09/trump-calls-nvidia-chief-jensen-huang-an-honorable-guy-amid-spy-allegations" },
+        { "name": "CNBC", "url": "https://cnbc.com/2026/11/09/nvidia-jensen-huang-probe-data-centers-cramer.html" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Anthropic pokazał modele Claude Fable 5.2 i Mythos 5.2",
+      "summary": "Anthropic zaprezentował dwa nowe najbardziej zaawansowane modele: Claude Fable 5.2, dostępny dla wszystkich, i Claude Mythos 5.2, udostępniany tylko sprawdzonym organizacjom. Według firmy odpowiadają o 30 proc. szybciej niż poprzednicy. To pierwsze takie modele od czasu, gdy szef firmy Dario Amodei wzywał do spowolnienia rozwoju AI.",
+      "why": "Premiera wypada tuż przed debiutem Anthropic na giełdzie, który według doniesień ma nastąpić w przyszłym tygodniu.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html" },
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Leki na osteoporozę związane z mniejszym ryzykiem demencji",
+      "summary": "Badacze z Uniwersytetu w Hongkongu przeanalizowali dane ponad 120 tys. starszych osób. Przyjmowanie popularnych leków na osteoporozę wiązało się z nawet o 24 proc. mniejszym ryzykiem choroby Alzheimera i innych demencji. Autorzy podkreślają, że to podstawa do dalszych badań, a nie dowód, że leki chronią przed demencją.",
+      "why": "Badanie obserwacyjne pokazuje związek, ale nie przyczynę. Leków nie należy przyjmować w tym celu bez rozmowy z lekarzem.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261108233037.htm" }
+      ]
+    },
+    {
+      "id": "zdrowie-2",
+      "section": "zdrowie",
+      "rank": 2,
+      "title": "Lek przeciwzapalny Novo Nordisk nie zmniejszył liczby zawałów",
+      "summary": "W badaniu ZEUS lek ziltiwekimab firmy Novo Nordisk obniżył wskaźniki stanu zapalnego, ale nie zmniejszył liczby zawałów, udarów ani zgonów. Wyniki przedstawiono na kongresie Amerykańskiego Towarzystwa Kardiologicznego i opublikowano w „New England Journal of Medicine”.",
+      "why": "Mimo porażki kardiolodzy chcą dalej badać leki przeciwzapalne, bo stan zapalny ma znaczenie dla chorób serca.",
+      "sources": [
+        { "name": "STAT", "url": "https://www.statnews.com/2026/11/07/aha-2026-conference-novo-nordisk-zeus-trial-ziltivekimab-results/" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "James Gunn i Peter Safran odchodzą z DC Studios",
+      "summary": "James Gunn i Peter Safran rezygnują z kierowania DC Studios, które prowadzili przez cztery lata. Zastąpi ich były szef w Marvelu Jeremy Latcham. Obaj kończą jeszcze pracę nad kontynuacją „Supermana”, „Man of Tomorrow”, która trafi do kin 9 lipca 2027 roku.",
+      "why": "DC próbuje odbudować swoje kinowe uniwersum superbohaterów, a zmiana szefów może zmienić plany kolejnych filmów.",
+      "sources": [
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Kaczki śpią z jednym okiem otwartym",
+      "body": "Kaczki potrafią spać połową mózgu, z jednym okiem otwartym, a druga połowa w tym czasie czuwa. W badaniu opublikowanym w „Nature” w 1999 roku ptaki siedzące na końcach rzędu częściej spały w ten sposób i w ok. 86 proc. przypadków kierowały otwarte oko na zewnątrz grupy. Zapis fal mózgowych potwierdził, że jedna półkula spała, a druga czuwała.",
+      "source": { "name": "University of Washington", "url": "https://staff.washington.edu/chudler/birdbrain.html" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "psychologia",
+      "title": "Efekt IKEA: bardziej cenimy to, co sami złożyliśmy",
+      "body": "Psychologowie Michael Norton, Daniel Mochon i Dan Ariely poprosili badanych o składanie pudełek IKEA, origami i klocków Lego. Uczestnicy cenili swoje amatorskie dzieła prawie tak samo jak prace ekspertów i sądzili, że inni ocenią je podobnie. Efekt znikał, gdy nie dokończyli pracy albo ją zniszczyli. Nazwę wzięto od meblowej firmy, której produkty trzeba złożyć samemu.",
+      "source": { "name": "SSRN", "url": "https://papers.ssrn.com/abstract=1777100" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "kosmos",
+      "title": "Neptuna odkryto najpierw na papierze",
+      "body": "Uran krążył inaczej, niż wynikało z praw Keplera i Newtona. Francuski matematyk Urbain Le Verrier wyliczył, że zakłóca go nieznana planeta, i wskazał, gdzie jej szukać. Johann Galle z obserwatorium w Berlinie znalazł Neptuna w nocy z 23 na 24 września 1846 roku, mniej niż stopień od przewidzianej pozycji. Galle zawsze przypisywał odkrycie Le Verrierowi.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Johann_Gottfried_Galle" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1918,
+      "title": "Piłsudski przyjeżdża do Warszawy",
+      "body": "10 listopada 1918 r. o 7.30 rano specjalny pociąg z Berlina przywiózł Józefa Piłsudskiego na warszawski Dworzec Wiedeński. Niemcy trzymali przyjazd w tajemnicy, więc nie witały go tłumy, tylko garstka członków Polskiej Organizacji Wojskowej z Adamem Kocem i przedstawiciel Rady Regencyjnej Zdzisław Lubomirski. Następnego dnia Rada Regencyjna powierzyła mu dowództwo nad wojskiem.",
+      "source": { "name": "IPN", "url": "https://ipn.gov.pl/pl/historia-z-ipn/173551,Piotr-Kilanczyk-Dlaczego-Pilsudskiego-nie-witaly-tlumy-Zajscia-na-ulicach-Warsza.html" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1871,
+      "title": "„Doktor Livingstone, jak przypuszczam?”",
+      "body": "10 listopada 1871 r. w Udżidżi nad jeziorem Tanganika dziennikarz Henry Morton Stanley odnalazł szkockiego misjonarza i podróżnika Davida Livingstone'a, o którym od lat nie było wiadomości. Według relacji Stanleya przywitał go słowami „Doktor Livingstone, jak przypuszczam?”, choć historycy spierają się, czy naprawdę tak powiedział. Jego książka o wyprawie stała się bestsellerem.",
+      "source": { "name": "EBSCO", "url": "https://ebsco.com/research-starters/history/stanley-finds-livingstone" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1975,
+      "title": "Zatonięcie statku Edmund Fitzgerald",
+      "body": "10 listopada 1975 r. podczas sztormu na Jeziorze Górnym zatonął 222-metrowy rudowiec Edmund Fitzgerald z ponad 26 tys. ton rudy żelaza. Zginęła cała 29-osobowa załoga, a statek nie wysłał sygnału alarmowego. To największy statek, który zatonął na Wielkich Jeziorach, a przyczyna katastrofy do dziś nie jest pewna.",
+      "source": { "name": "HowStuffWorks", "url": "https://history.howstuffworks.com/historical-events/edmund-fitzgerald.htm" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Prawo Brandoliniego",
+    "definition": "To zasada, według której obalenie nieprawdziwej informacji wymaga o rząd wielkości więcej wysiłku niż jej stworzenie.",
+    "origin": "Zasadę sformułował w 2013 roku włoski programista Alberto Brandolini. Nazywa się ją też zasadą asymetrii bzdur. To nie zmierzona wartość, tylko obrazowa reguła: wymyślenie plotki zajmuje chwilę, a jej sprawdzenie i sprostowanie wymaga czasu, źródeł i wyjaśnień.",
+    "examples": [
+      "Po zamachu w Krakowie fałszywy fotomontaż czy wpis może obiec sieć w kilka minut, a służby i dziennikarze potrzebują godzin, by go zdementować.",
+      "Mit o związku szczepionek z autyzmem powstał z jednej wycofanej pracy, a naukowcy od lat tłumaczą, że jest nieprawdziwy.",
+      "W rodzinnej rozmowie łatwo rzucić „słyszałem, że…”, a dużo trudniej sprawdzić, skąd pochodzi ta informacja."
+    ],
+    "source": { "name": "Effectiviology", "url": "https://effectiviology.com/brandolinis-law/" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "factfulness",
+    "title": "Factfulness",
+    "author": "Hans Rosling",
+    "day": 3,
+    "days": 7,
+    "ideaTitle": "Nie każda linia rośnie w nieskończoność",
+    "idea": "Rosling ostrzega przed „instynktem linii prostej”: zakładamy, że jeśli coś rośnie, będzie rosło dalej w tym samym tempie. Tak wiele osób myśli o liczbie ludności świata. Tymczasem rodziny mają coraz mniej dzieci, więc według prognoz, na które powołuje się Rosling, ludność wzrośnie z ok. 7 do ok. 11 mld, a potem się ustabilizuje. Rosling porównuje to do wzrostu dziecka, który z czasem zwalnia i się zatrzymuje. Przykładem błędu jest książka z 1968 roku, która z prostej linii wywnioskowała masowy głód pod koniec XX wieku.",
+    "moral": "Trendy mają różne kształty: krzywe, schodki, garby. Zanim przedłużysz linię, zapytaj, co ją napędza i czy to się nie zmieni.",
+    "action": "Przy jednej prognozie, którą usłyszycie w tym tygodniu, zastanówcie się: co musiałoby się stać, żeby ten trend się zatrzymał?",
+    "source": { "name": "Think Insights", "url": "https://thinkinsights.net/consulting/straight-line-instinct" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-10-q1",
+      "ref": "fact-1",
+      "question": "Po co kaczki śpią z jednym okiem otwartym?",
+      "options": ["Żeby lepiej trawić", "Żeby wypatrywać drapieżników", "Żeby nie zamarznąć", "Żeby szybciej się obudzić rano"],
+      "answer": 1,
+      "explanation": "Jedna półkula mózgu czuwa, a otwarte oko pozwala zauważyć zagrożenie, zwłaszcza ptakom na skraju grupy."
+    },
+    {
+      "id": "2026-11-10-q2",
+      "ref": "fact-2",
+      "question": "Kiedy w badaniach efekt IKEA znikał?",
+      "options": ["Gdy przedmiot był drogi", "Gdy badani nie dokończyli pracy albo ją zniszczyli", "Gdy pracowali w parach", "Gdy przedmiot był użyteczny"],
+      "answer": 1,
+      "explanation": "Bardziej cenimy rzeczy, które sami ukończyliśmy. Niedokończona lub zniszczona praca nie dawała tego efektu."
+    },
+    {
+      "id": "2026-11-10-q3",
+      "ref": "fact-3",
+      "question": "Jak odkryto Neptuna?",
+      "options": ["Przypadkiem, podczas obserwacji Księżyca", "Dzięki obliczeniom Le Verriera na podstawie ruchu Urana", "Na zdjęciu z sondy kosmicznej", "Dzięki sygnałom radiowym"],
+      "answer": 1,
+      "explanation": "Le Verrier wyliczył położenie nieznanej planety zakłócającej ruch Urana, a Galle znalazł ją blisko wskazanego miejsca."
+    },
+    {
+      "id": "2026-11-10-q4",
+      "ref": "otd-1",
+      "question": "Dlaczego Piłsudskiego 10 listopada 1918 roku nie witały tłumy?",
+      "options": ["Bo padał śnieg", "Bo przyjazd trzymano w tajemnicy", "Bo przyjechał samochodem", "Bo był chory"],
+      "answer": 1,
+      "explanation": "Niemcy obawiali się manifestacji, więc przyjazd był tajny. Na peronie czekała garstka członków POW."
+    },
+    {
+      "id": "2026-11-10-q5",
+      "ref": "otd-3",
+      "question": "Co wiadomo o przyczynie zatonięcia statku Edmund Fitzgerald?",
+      "options": ["Zderzył się z innym statkiem", "Przyczyna do dziś nie jest pewna", "Wybuchł na nim pożar", "Został storpedowany"],
+      "answer": 1,
+      "explanation": "Statek zatonął w sztormie bez wysłania sygnału alarmowego, a dokładna przyczyna wciąż pozostaje niejasna."
+    },
+    {
+      "id": "2026-11-10-q6",
+      "ref": "concept",
+      "question": "Co mówi prawo Brandoliniego?",
+      "options": ["Plotki same znikają po tygodniu", "Obalenie fałszu wymaga dużo więcej wysiłku niż jego stworzenie", "Prawda zawsze rozchodzi się szybciej niż kłamstwo", "Ludzie wierzą tylko w to, co powtarzają eksperci"],
+      "answer": 1,
+      "explanation": "Wymyślenie nieprawdy jest łatwe i szybkie, a jej sprostowanie wymaga czasu, źródeł i wyjaśnień."
+    },
+    {
+      "id": "2026-11-10-q7",
+      "ref": "book",
+      "question": "Na czym według Roslinga polega instynkt linii prostej?",
+      "options": ["Na zakładaniu, że trend będzie trwał w tym samym tempie", "Na unikaniu wykresów", "Na wierze, że wszystko wraca do średniej", "Na myleniu przyczyny ze skutkiem"],
+      "answer": 0,
+      "explanation": "Zakładamy, że rosnąca linia będzie rosła dalej, choć wiele trendów, np. liczba ludności, w końcu zwalnia."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-10-r1",
+      "question": "Co Percy Spencer przygotował jako pierwsze, celowo używając mikrofal?",
+      "options": ["Jajko", "Popcorn", "Kawę"],
+      "answer": 1,
+      "explanation": "Po zauważeniu stopionego batonika Spencer celowo przygotował w mikrofalach popcorn, a potem jajko."
+    },
+    {
+      "id": "2026-11-10-r2",
+      "question": "Gdzie odbyła się msza pojednania z udziałem Mazowieckiego i Kohla?",
+      "options": ["W Krzyżowej", "W Gdańsku", "W Krakowie"],
+      "answer": 0,
+      "explanation": "12 listopada 1989 roku w Krzyżowej koło Świdnicy obaj politycy przekazali sobie znak pokoju."
+    },
+    {
+      "id": "2026-11-10-r3",
+      "question": "Do czego prowadzi iluzja ogniskowania?",
+      "options": ["Do przeceniania jednej rzeczy, o której akurat myślimy", "Do lepszego skupienia w pracy", "Do zapominania nazwisk"],
+      "answer": 0,
+      "explanation": "Gdy myślimy o jednym czynniku, np. pogodzie, przypisujemy mu zbyt duży wpływ na całe życie."
+    }
+  ],
+  "evening": {
+    "question": "Co ostatnio przeczytaliście lub usłyszeliście, a potem okazało się nieprawdą? Jak to sprawdziliście?",
+    "hint": "Zacznijcie od drobiazgu, np. przepisu, porady zdrowotnej albo plotki o znajomym, i pomyślcie, po czym można było to poznać."
+  }
+}

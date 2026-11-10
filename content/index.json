@@ -1,6 +1,43 @@
 {
   "editions": [
     {
+      "date": "2026-11-10",
+      "headline": "Sprawca zamachu w Krakowie nie żyje. Tysiące ludzi w Marszu Ciszy",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-1",
+          "title": "Sprawca zamachu w Krakowie nie żyje. Tysiące ludzi w Marszu Ciszy"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-2",
+          "title": "Rząd zapowiada przegląd przepisów o broni"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-3",
+          "title": "Sześć osób zatrzymanych za fałszywe wpisy po zamachu"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "pl-4",
+          "title": "Alert RCB dla Lubelszczyzny i Podlasia podczas rosyjskiego ataku na Ukrainę"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Ćwiczenia „koalicji chętnych” w Polsce przed misją na Ukrainie"
+        }
+      ],
+      "facts": [
+        "Kaczki śpią z jednym okiem otwartym",
+        "Efekt IKEA: bardziej cenimy to, co sami złożyliśmy",
+        "Neptuna odkryto najpierw na papierze"
+      ],
+      "concept": "Prawo Brandoliniego"
+    },
+    {
       "date": "2026-11-09",
       "headline": "Zamach w Krakowie: prokuratura mówi o terroryzmie, ranni policjanci wybudzeni",
       "threads": [

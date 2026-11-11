@@ -1,6 +1,43 @@
 {
   "editions": [
     {
+      "date": "2026-11-11",
+      "headline": "Minister Żurek: w działaniach zamachowca „bardzo silne ślady” skrajnej prawicy",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-1",
+          "title": "Minister Żurek: w działaniach zamachowca „bardzo silne ślady” skrajnej prawicy"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-2",
+          "title": "Już dziewięć osób zatrzymanych za groźne wpisy po zamachu"
+        },
+        {
+          "name": "Spór o Trybunał Konstytucyjny",
+          "item": "pl-4",
+          "title": "Rząd opublikował uchwałę Trybunału. Tusk: „początek nowej ery”"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Rozmowy Rosji i Ukrainy w Abu Zabi. Zełenski: „konstruktywnie”"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-4",
+          "title": "Rosja twierdzi, że zestrzeliła 146 dronów nad obwodem leningradzkim"
+        }
+      ],
+      "facts": [
+        "Teflon odkryto przez przypadek",
+        "Biało-czerwone barwy zapisano w prawie w 1831 roku",
+        "Wszystkie żubry pochodzą od kilkunastu zwierząt"
+      ],
+      "concept": "Efekt jednoczenia wokół flagi"
+    },
+    {
       "date": "2026-11-10",
       "headline": "Sprawca zamachu w Krakowie nie żyje. Tysiące ludzi w Marszu Ciszy",
       "threads": [

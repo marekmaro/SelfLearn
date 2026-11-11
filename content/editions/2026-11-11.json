@@ -1,0 +1,363 @@
+{
+  "date": "2026-11-11",
+  "intro": "Dziś Narodowe Święto Niepodległości, a w wydaniu m.in.: nowe ustalenia śledztwa po zamachu w Krakowie, odparty cyberatak na ePUAP i pierwszy od miesięcy dzień rozmów Rosji z Ukrainą.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Minister Żurek: w działaniach zamachowca „bardzo silne ślady” skrajnej prawicy",
+      "summary": "Minister sprawiedliwości Waldemar Żurek powiedział, że śledczy znaleźli w aktywności sprawcy zamachu w Krakowie „bardzo silne ślady prawicowego ekstremizmu”, m.in. odwiedzanie stron poświęconych Andersowi Breivikowi. Zastrzegł, że badają też, czy rolę odegrały zaburzenia psychiczne. W domu sprawcy znaleziono sejf. Łącznie zginęło dziewięć osób: sześć na Rynku i troje członków rodziny napastnika.",
+      "why": "Motyw wciąż jest przedmiotem śledztwa, a politycy spierają się o jego ocenę. Ostateczne wnioski przedstawi prokuratura.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Notes from Poland", "url": "https://notesfrompoland.com/2026/11/10/strong-traces-of-right-wing-extremism-in-activity-of-krakow-terrorist-says-justice-minister/" },
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/zamach-w-krakowie-w-domu-sprawcy-znaleziono-sejf-7349544712137184a" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Już dziewięć osób zatrzymanych za groźne wpisy po zamachu",
+      "summary": "Policja zatrzymała już dziewięć osób za publikowanie w internecie niepokojących treści po tragedii w Krakowie. Mieszkaniec Warszawy usłyszał zarzut za komentarz sugerujący, że następnego dnia „coś może się wydarzyć” w stolicy.",
+      "why": "Groźby w sieci, nawet pisane „dla żartu”, są przestępstwem i angażują służby w czasie, gdy zagrożenie jest realne.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-10/niepokojace-tresci-po-zamachu-w-krakowie-kolejne-zatrzymania/" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Odparty cyberatak na ePUAP, system odłączony prewencyjnie",
+      "summary": "Ministerstwo Cyfryzacji poinformowało o wykryciu i zatrzymaniu cyberataku na platformę ePUAP, przez którą załatwia się sprawy urzędowe przez internet. System został odłączony prewencyjnie, a według resortu nie doszło do jego naruszenia. Do sprawy włączyła się ABW. Nie wiadomo, kiedy ePUAP znów będzie w pełni dostępny.",
+      "why": "ePUAP to jeden z głównych kanałów kontaktu z urzędami. Jeśli macie pilną sprawę, warto sprawdzić komunikaty ministerstwa.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://polsatnews.pl/wiadomosc/2026-11-10/cyberatak-na-system-epuap-do-akcji-wkraczaja-sluzby-specjalne" },
+        { "name": "TVP Info", "url": "https://www.tvp.info/96414055/10-listopada-2026-przeglad-najwazniejszych-wydarzen" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Rząd opublikował uchwałę Trybunału. Tusk: „początek nowej ery”",
+      "summary": "Premier Donald Tusk zapowiedział, że rząd opublikuje uchwałę Trybunału Konstytucyjnego o zmianach w regulaminie sądu, i nazwał to początkiem nowej ery. Uchwała trafiła już do Monitora Polskiego. Kolejne zgromadzenie sędziów TK zwołano na 17 listopada.",
+      "why": "Publikacja uchwały to krok rządu w sporze z prezydentem o to, kto legalnie kieruje Trybunałem.",
+      "thread": "Spór o Trybunał Konstytucyjny",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-10/rzad-opublikuje-wyrok-trybunalu-konstytucyjnego-tusk-poczatek-nowej-ery/" },
+        { "name": "TVP Info", "url": "https://www.tvp.info/96414055/10-listopada-2026-przeglad-najwazniejszych-wydarzen" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "108. rocznica odzyskania niepodległości",
+      "summary": "Dziś przypada Narodowe Święto Niepodległości. Prezydent Karol Nawrocki zapowiedział udział w Marszu Niepodległości w Warszawie. W stolicy obowiązuje zakaz noszenia i przewożenia broni, także rozładowanej. W Krakowie to ostatni dzień żałoby po zamachu, część obchodów odwołano.",
+      "why": "Po zamachu w Krakowie służby szczególnie dbają o bezpieczeństwo zgromadzeń. Warto sprawdzać komunikaty policji i organizatorów.",
+      "sources": [
+        { "name": "TVP Info", "url": "https://www.tvp.info/96404788/warszawa-na-11-listopada-marsz-niepodleglosci-i-inne-wydarzenia-rafal-trzaskowski-liczy-ze-prezydent-karol-nawrocki-uspokoi-nastroje" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-09/dzien-niepodleglosci-w-warszawie-wprowadzono-zakaz-noszenia-broni/" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Rozmowy Rosji i Ukrainy w Abu Zabi. Zełenski: „konstruktywnie”",
+      "summary": "W Abu Zabi ruszyły pierwsze od lutego trójstronne rozmowy Rosji, Ukrainy i USA. Po czterogodzinnej sesji Wołodymyr Zełenski nazwał je konstruktywnymi: rozmawiano o sprawach humanitarnych, możliwej wymianie jeńców i gwarancjach bezpieczeństwa. Według Zełenskiego USA pytały, czy Kijów oddałby Donbas w zamian za bezpieczeństwo, na co się nie zgodził. Rosja nadal żąda całego Donbasu.",
+      "why": "Rozmowy trwają drugi dzień, ale eksperci nie spodziewają się przełomu ani szybkiego rozejmu.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/10/russia-ukraine-and-us-to-meet-as-zelenskyy-claims-battlefield-successes" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Inflacja w USA wyższa od prognoz. Rynek czeka na podwyżkę stóp",
+      "summary": "Ceny w USA wzrosły w październiku o 0,4 proc. w stosunku do września, a ekonomiści spodziewali się 0,3 proc. Inflacja bazowa wyniosła 0,3 proc. Inwestorzy są niemal pewni, że Rezerwa Federalna podniesie stopy procentowe na posiedzeniu 8–9 grudnia. Rentowność 10-letnich obligacji USA wzrosła do ok. 4,95 proc., a giełdy spadały.",
+      "why": "Wyższe stopy w USA wzmacniają dolara i mogą podrożyć kredyty na całym świecie.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Portugalia zamyka szkoły przed burzami Bruna i Charles",
+      "summary": "W środę w całej kontynentalnej Portugalii zamknięte są szkoły i urzędy, a rząd ogłosił stan alertu. W ośmiu dystryktach, w tym w Lizbonie i Faro, obowiązuje czerwone ostrzeżenie. Meteorolodzy obawiają się zjawiska „sting jet”, które może przynieść porywy wiatru powyżej 150 km/h. Odwołano też drugi dzień konferencji Web Summit w Lizbonie.",
+      "why": "Na początku roku burza Kristin zabiła w Portugalii sześć osób. Osoby, które planują podróż, powinny sprawdzać komunikaty linii lotniczych.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/10/portugal-on-alert-as-storms-bruna-and-charles-raise-sting-jet-risk-of-160-kmh-winds" },
+        { "name": "The Portugal News", "url": "https://www.theportugalnews.com/news/2026-11-10/portugal-closes-schools-and-public-services-due-to-storms/1113644" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Rosja twierdzi, że zestrzeliła 146 dronów nad obwodem leningradzkim",
+      "summary": "Rosyjskie władze podały, że przechwyciły 146 dronów nad obwodem leningradzkim. Do ataku doszło w czasie, gdy w Abu Zabi trwają rozmowy pokojowe z udziałem Rosji, Ukrainy i USA.",
+      "why": "Ataki trwają mimo rozmów, co pokazuje, jak daleko jest do zawieszenia broni.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/11/russia-claims-interception-of-146-drones-in-leningrad-region" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "UE da 10 mln euro na akcje ratunkowe na Morzu Czarnym",
+      "summary": "Unia Europejska przekaże 10 mln euro na wsparcie bułgarskich służb poszukiwawczo-ratowniczych na Morzu Czarnym.",
+      "why": "Pieniądze mają wzmocnić zdolność Bułgarii do ratowania ludzi na morzu.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/10/eu-pledges-10-million-for-bulgarian-black-sea-search-rescue-operations" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Francja: za atakiem na sklepowe lodówki stoi Gwardia Rewolucyjna Iranu",
+      "summary": "Francuska agencja cyberbezpieczeństwa ANSSI przypisała październikowy atak na systemy chłodnicze w supermarketach grupie Shahid Kaveh, powiązanej z irańską Gwardią Rewolucyjną. Atak dotknął ok. 700 sklepów, temperatura w urządzeniach rosła do 50°C, a jedna sieć straciła dziesiątki milionów euro w ciągu dnia. Francja wezwała ambasadora Iranu i grozi kolejnymi sankcjami UE. Iran odrzuca oskarżenia.",
+      "why": "To przykład ataku na zwykłą infrastrukturę, która nie wygląda na strategiczną.",
+      "sources": [
+        { "name": "Khaleej Times (Reuters)", "url": "https://www.khaleejtimes.com/world/france-accuses-irgc-cyberattack-supermarket-fridges" },
+        { "name": "AJC (AP)", "url": "https://www.ajc.com/news/2026/11/france-blames-iran-for-last-months-cyberattack-on-supermarket-fridges/" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "section": "bezpieczenstwo",
+      "rank": 2,
+      "title": "Dwóch Ukraińców zatrzymanych za szpiegostwo na rzecz Rosji",
+      "summary": "W Mińsku Mazowieckim zatrzymano dwóch obywateli Ukrainy w wieku 24 i 25 lat, podejrzanych o szpiegostwo na rzecz Rosji. Według prokuratury w Łodzi ich działania miały podsycać nastroje antyukraińskie w Polsce. Obaj trafili na trzy miesiące do aresztu.",
+      "why": "Rosyjskie służby werbują ludzi różnych narodowości, a jednym z celów jest skłócanie Polaków z Ukraińcami.",
+      "sources": [
+        { "name": "TVP World", "url": "https://tvpworld.com/96402903/poland-detains-two-ukrainians-accused-of-spying-for-russia" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Adobe dodaje agentów AI do Photoshopa i Premiere",
+      "summary": "Podczas konferencji MAX w Miami Adobe zapowiedziało nowe funkcje AI w Photoshopie, Premiere, Illustratorze i InDesignie, w tym agentów wykonujących zadania. Firma udostępnia też serwer w standardzie MCP, dzięki któremu z funkcji Adobe mogą korzystać inne czaty, np. ChatGPT, Claude czy Gemini.",
+      "why": "Programy graficzne stają się asystentami, którym można zlecać pracę słowami, co zmienia zawody kreatywne.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/" }
+      ]
+    },
+    {
+      "id": "technologia-2",
+      "section": "technologia",
+      "rank": 2,
+      "title": "Twórca Cyanogena zapowiada system operacyjny z AI zamiast Windowsa",
+      "summary": "Kirt McMaster, współzałożyciel Cyanogena, który kiedyś rzucił wyzwanie Androidowi Google'a, pokazał system Kora. To oparty na Linuksie system na komputery, w który od podstaw wbudowano modele AI i autonomicznych agentów. Ma trafić na rynek w 2027 roku.",
+      "why": "Coraz więcej firm uważa, że AI zmieni sposób korzystania z komputerów tak bardzo, że potrzebne będą nowe systemy.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era/" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Anthropic wyznaczył cenę akcji: debiut 19 listopada",
+      "summary": "Anthropic ustalił przedział ceny akcji na 70–78 dolarów i chce sprzedać 825 mln akcji. Firma ma zadebiutować na Nasdaq pod symbolem ANT 19 listopada. Przy górnej granicy przedziału byłaby warta do ok. 1,4 bln dolarów. Ok. 20 proc. akcji ma trafić do inwestorów indywidualnych. Każdy z siedmiu założycieli sprzeda akcje za ok. 250 mln dolarów.",
+      "why": "To jeden z największych debiutów giełdowych w historii i test, ile inwestorzy są gotowi płacić za firmy AI po ostatniej przecenie.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html" },
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Nastolatki na świecie ruszają się za mało, zwłaszcza dziewczęta",
+      "summary": "Badanie w „The Lancet Global Health”, oparte na danych ok. 3 mln nastolatków, pokazało, że co czwarty młody człowiek ani razu w tygodniu nie ćwiczył przez godzinę z umiarkowaną lub dużą intensywnością. Wśród dziewcząt prawie 30 proc. nie ćwiczyło wcale, wśród chłopców 22 proc. Według współautorki z WHO od 15 lat sytuacja się nie poprawia.",
+      "why": "W krajach, gdzie nastolatki ruszają się więcej, szkoły zapewniają więcej zorganizowanego czasu na sport w trakcie lub po lekcjach.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/05/nx-s1-6027635/exercise-workout-teenagers-adolescents-gender-gap" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "Amy Poehler wraca z serialem „Dig”",
+      "summary": "Dziesięć lat po zakończeniu „Parks and Recreation” Amy Poehler wraca do telewizji z serialem „Dig”. Premiera odbyła się w Los Angeles, a serial będzie dostępny w serwisie Peacock od 23 listopada.",
+      "why": "Poehler to jedna z najbardziej lubianych komediowych aktorek, a „Parks and Recreation” ma w Polsce wielu fanów.",
+      "sources": [
+        { "name": "The Hollywood Reporter", "url": "https://hollywoodreporter.com/tv/tv-news/amy-poehler-new-show-dig-parks-and-rec-1236751871" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "nauka",
+      "title": "Teflon odkryto przez przypadek",
+      "body": "6 kwietnia 1938 roku chemik Roy Plunkett z firmy DuPont pracował nad nowymi gazami do lodówek. Gdy otworzył butlę z tetrafluoroetylenem, która wydawała się pusta, znalazł w niej biały proszek. Gaz sam się spolimeryzował w politetrafluoroetylen, czyli teflon. Materiał okazał się wyjątkowo śliski i odporny na chemikalia, a DuPont zaczął go sprzedawać w połowie lat 40.",
+      "source": { "name": "Science History Institute", "url": "https://www.sciencehistory.org/education/scientific-biographies/roy-j-plunkett/" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "historia",
+      "title": "Biało-czerwone barwy zapisano w prawie w 1831 roku",
+      "body": "Biel i czerwień uchodziły za polskie barwy już wcześniej, ale pierwszy przepis, który je ustalił, uchwalił Sejm Królestwa Polskiego 7 lutego 1831 roku, w czasie powstania listopadowego. Dotyczył kokardy narodowej. Barwy nawiązują do herbu: biały to kolor orła, a czerwony – tarczy, na której się znajduje.",
+      "source": { "name": "Culture.pl", "url": "https://Culture.PL/en/article/the-polish-flag-everything-youve-ever-wanted-to-know" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "przyroda",
+      "title": "Wszystkie żubry pochodzą od kilkunastu zwierząt",
+      "body": "Ostatni dziki żubr w Puszczy Białowieskiej padł około 1919 roku. Gatunek przetrwał tylko w ogrodach zoologicznych, a do hodowli wybrano 12 z kilkudziesięciu żubrów czystej krwi. Pierwsze zwierzęta wróciły do puszczy w 1929 roku. Ponieważ wszystkie dzisiejsze żubry pochodzą od tak małej grupy, naukowcy dbają o mieszanie stad z różnych miejsc.",
+      "source": { "name": "National Geographic Polska", "url": "https://www.national-geographic.pl/nauka/zubry-z-bialowiezy/" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1918,
+      "title": "Piłsudski obejmuje dowództwo nad wojskiem",
+      "body": "11 listopada 1918 r., dzień po przyjeździe Józefa Piłsudskiego do Warszawy, Rada Regencyjna powierzyła mu dowództwo nad Polską Siłą Zbrojną. Tego dnia rozbrajano też niemieckich żołnierzy w Warszawie. Data ta stała się symbolem odzyskania niepodległości po 123 latach zaborów i od 1937 r. jest świętem państwowym.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/aktualnosci/11-listopada-1937-r-odbyly-sie-pierwsze-panstwowe-obchody-swieta-niepodleglosci" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1918,
+      "title": "Rozejm w Compiègne kończy walki I wojny światowej",
+      "body": "11 listopada 1918 r. ok. 5 rano w wagonie kolejowym marszałka Ferdinanda Focha w lesie pod Compiègne Niemcy podpisały rozejm z aliantami. Wszedł w życie o 11.00 czasu paryskiego i zakończył ponad cztery lata walk. W tym samym wagonie w czerwcu 1940 r. Hitler kazał podpisać kapitulację Francji.",
+      "source": { "name": "Britannica", "url": "https://www.britannica.com/today-in-history/November-11-1918-The-Armistice-That-Ended-World-War-I" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1937,
+      "title": "Pierwsze państwowe obchody Święta Niepodległości",
+      "body": "11 listopada 1937 r. po raz pierwszy obchodzono Święto Niepodległości jako święto państwowe, ustanowione ustawą z kwietnia tego roku. W PRL święto zniesiono, a przywrócono je dopiero w 1989 roku. Dziś obchodzimy jego 108. rocznicę.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/aktualnosci/11-listopada-1937-r-odbyly-sie-pierwsze-panstwowe-obchody-swieta-niepodleglosci" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Efekt jednoczenia wokół flagi",
+    "definition": "To zjawisko, w którym w czasie nagłego kryzysu ludzie tymczasowo zwiększają poparcie dla przywódców i solidarność wewnątrz kraju.",
+    "origin": "Pojęcie opisał amerykański politolog John Mueller w 1970 roku, badając popularność prezydentów USA. Zauważył, że wydarzenia dotyczące całego kraju, nagłe i dramatyczne, chwilowo podnoszą poparcie dla władzy. Nowsze badania pokazują, że efekt bywa słaby i krótki, a czasem w ogóle nie występuje.",
+    "examples": [
+      "Po zamachu w Krakowie premier i prezydent, skonfliktowani w sprawie Trybunału, razem szli w Marszu Ciszy.",
+      "Po zamachach z 11 września 2001 roku poparcie dla prezydenta George'a W. Busha gwałtownie wzrosło.",
+      "Na początku pandemii w wielu krajach rosły notowania rządów, zanim spory wróciły."
+    ],
+    "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Rally_%27round_the_flag_effect" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "factfulness",
+    "title": "Factfulness",
+    "author": "Hans Rosling",
+    "day": 4,
+    "days": 7,
+    "ideaTitle": "Przerażające to nie to samo co niebezpieczne",
+    "idea": "Rosling opisuje „instynkt strachu”: skupiamy się na tym, co nas przeraża, zamiast na tym, co jest naprawdę groźne. Proponuje prosty wzór: ryzyko to zagrożenie razy narażenie. Katastrofa lotnicza jest straszna, ale śmiertelne wypadki zdarzają się w znikomej części lotów, więc ryzyko jest małe. Wypadki samochodowe rzadko trafiają na czołówki, choć przy codziennej jeździe jesteśmy na nie bardziej narażeni. Strach jest potrzebny, ale gdy nas paraliżuje, trudno myśleć jasno.",
+    "moral": "Pytaj nie tylko „jak bardzo to straszne?”, ale też „jak bardzo jestem na to narażony?”.",
+    "action": "Wybierz jedną rzecz, której się dziś boisz, i oszacuj, jak często naprawdę się zdarza. Porównaj to z codziennym ryzykiem, którego nie zauważasz.",
+    "source": { "name": "Gapminder", "url": "https://gapminder.org/factfulness/fear" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-11-q1",
+      "ref": "fact-1",
+      "question": "Nad czym pracował Roy Plunkett, gdy przypadkiem odkrył teflon?",
+      "options": ["Nad nowymi farbami", "Nad gazami do lodówek", "Nad paliwem rakietowym", "Nad lekami"],
+      "answer": 1,
+      "explanation": "Plunkett szukał nowych czynników chłodniczych. Gaz w butli sam zamienił się w biały proszek, czyli teflon."
+    },
+    {
+      "id": "2026-11-11-q2",
+      "ref": "fact-2",
+      "question": "Skąd pochodzą barwy biało-czerwone?",
+      "options": ["Z flagi Napoleona", "Z herbu: białego orła na czerwonej tarczy", "Z kolorów zboża i maków", "Z mundurów legionów"],
+      "answer": 1,
+      "explanation": "Biel to kolor orła, a czerwień tarczy herbowej. Sejm zapisał barwy w prawie w 1831 roku."
+    },
+    {
+      "id": "2026-11-11-q3",
+      "ref": "fact-3",
+      "question": "Od ilu żubrów wybranych do hodowli pochodzą dziś wszystkie żubry?",
+      "options": ["Od 2", "Od 12", "Od 120", "Od 1200"],
+      "answer": 1,
+      "explanation": "Do hodowli wybrano 12 żubrów czystej krwi, dlatego dziś trzeba dbać o różnorodność genetyczną stad."
+    },
+    {
+      "id": "2026-11-11-q4",
+      "ref": "otd-2",
+      "question": "O której godzinie wszedł w życie rozejm kończący walki I wojny światowej?",
+      "options": ["O 5.00", "O 11.00", "O północy", "O 15.00"],
+      "answer": 1,
+      "explanation": "Rozejm podpisano ok. 5 rano w Compiègne, a wszedł w życie o 11.00 czasu paryskiego."
+    },
+    {
+      "id": "2026-11-11-q5",
+      "ref": "otd-3",
+      "question": "Od kiedy 11 listopada jest świętem państwowym?",
+      "options": ["Od 1918 roku", "Od 1937 roku", "Od 1945 roku", "Od 2004 roku"],
+      "answer": 1,
+      "explanation": "Święto ustanowiono ustawą w 1937 roku. W PRL je zniesiono, a przywrócono w 1989 roku."
+    },
+    {
+      "id": "2026-11-11-q6",
+      "ref": "concept",
+      "question": "Na czym polega efekt jednoczenia wokół flagi?",
+      "options": ["Na trwałym wzroście patriotyzmu", "Na chwilowym wzroście solidarności i poparcia dla władz w czasie kryzysu", "Na kupowaniu większej liczby flag", "Na spadku zaufania do polityków"],
+      "answer": 1,
+      "explanation": "Nagły, dramatyczny kryzys dotyczący całego kraju chwilowo jednoczy ludzi, choć efekt bywa słaby i krótki."
+    },
+    {
+      "id": "2026-11-11-q7",
+      "ref": "book",
+      "question": "Jak Rosling definiuje ryzyko?",
+      "options": ["Jako to, jak bardzo coś nas przeraża", "Jako zagrożenie razy narażenie", "Jako liczbę artykułów na dany temat", "Jako to, co zdarzyło się ostatnio"],
+      "answer": 1,
+      "explanation": "Coś może być przerażające, ale mało groźne, jeśli rzadko jesteśmy na to narażeni."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-11-r1",
+      "question": "Po co ptaki na skraju grupy częściej śpią z jednym okiem otwartym?",
+      "options": ["Żeby pilnować drapieżników", "Żeby szybciej się nagrzać", "Żeby śledzić słońce"],
+      "answer": 0,
+      "explanation": "Otwarte oko było zwykle skierowane na zewnątrz grupy, skąd mógł nadejść drapieżnik."
+    },
+    {
+      "id": "2026-11-11-r2",
+      "question": "Kto przeprowadził obliczenia, które doprowadziły do odkrycia Neptuna?",
+      "options": ["Galileusz", "Urbain Le Verrier", "Mikołaj Kopernik"],
+      "answer": 1,
+      "explanation": "Le Verrier wyliczył położenie planety z zakłóceń ruchu Urana, a Galle znalazł ją przez teleskop."
+    },
+    {
+      "id": "2026-11-11-r3",
+      "question": "Co mówi prawo Brandoliniego?",
+      "options": ["Obalenie fałszu wymaga dużo więcej wysiłku niż jego stworzenie", "Prawda rozchodzi się szybciej niż kłamstwo", "Każda plotka zawiera ziarno prawdy"],
+      "answer": 0,
+      "explanation": "Wymyślenie nieprawdy jest szybkie, a jej sprostowanie wymaga czasu, źródeł i wyjaśnień."
+    }
+  ],
+  "evening": {
+    "question": "Co dla was znaczy niepodległość w zwykły, codzienny dzień, a nie tylko od święta?",
+    "hint": "Pomyślcie o rzeczach, które dziś wydają się oczywiste: języku, podróżach, wolności słowa, wyborach."
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "date": "2026-11-11",
+  "file": "2026-11-11.mp3",
+  "url": "audio/2026-11-11.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-11.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "47dec064df1a7be6",
+  "duration": 929.01,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 16.62
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Minister Żurek: w działaniach zamachowca „bardzo silne ślady” skrajnej prawicy",
+      "start": 17.32,
+      "end": 60.38
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Już dziewięć osób zatrzymanych za groźne wpisy po zamachu",
+      "start": 61.08,
+      "end": 89.26
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Odparty cyberatak na ePUAP, system odłączony prewencyjnie",
+      "start": 89.96,
+      "end": 126.99
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Rząd opublikował uchwałę Trybunału. Tusk: „początek nowej ery”",
+      "start": 127.69,
+      "end": 158.4
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "108. rocznica odzyskania niepodległości",
+      "start": 159.1,
+      "end": 190.32
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Rozmowy Rosji i Ukrainy w Abu Zabi. Zełenski: „konstruktywnie”",
+      "start": 191.52,
+      "end": 231.85
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Inflacja w USA wyższa od prognoz. Rynek czeka na podwyżkę stóp",
+      "start": 232.55,
+      "end": 271.54
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Portugalia zamyka szkoły przed burzami Bruna i Charles",
+      "start": 272.24,
+      "end": 310.68
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Rosja twierdzi, że zestrzeliła 146 dronów nad obwodem leningradzkim",
+      "start": 311.38,
+      "end": 337.7
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "UE da 10 mln euro na akcje ratunkowe na Morzu Czarnym",
+      "start": 338.4,
+      "end": 356.23
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Francja: za atakiem na sklepowe lodówki stoi Gwardia Rewolucyjna Iranu",
+      "start": 357.43,
+      "end": 399.6
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Dwóch Ukraińców zatrzymanych za szpiegostwo na rzecz Rosji",
+      "start": 400.3,
+      "end": 429.69
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Adobe dodaje agentów AI do Photoshopa i Premiere",
+      "start": 430.39,
+      "end": 465.96
+    },
+    {
+      "id": "technologia-2",
+      "chapter": "tematy",
+      "label": "Twórca Cyanogena zapowiada system operacyjny z AI zamiast Windowsa",
+      "start": 466.66,
+      "end": 501.14
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Anthropic wyznaczył cenę akcji: debiut 19 listopada",
+      "start": 501.84,
+      "end": 547.84
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Nastolatki na świecie ruszają się za mało, zwłaszcza dziewczęta",
+      "start": 548.54,
+      "end": 586.46
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Amy Poehler wraca z serialem „Dig”",
+      "start": 587.16,
+      "end": 613.11
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Teflon odkryto przez przypadek",
+      "start": 614.31,
+      "end": 645.34
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Wszystkie żubry pochodzą od kilkunastu zwierząt",
+      "start": 646.04,
+      "end": 675.1
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Biało-czerwone barwy zapisano w prawie w 1831 roku",
+      "start": 675.8,
+      "end": 704.9
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Piłsudski obejmuje dowództwo nad wojskiem",
+      "start": 706.1,
+      "end": 737.29
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1918: Rozejm w Compiègne kończy walki I wojny światowej",
+      "start": 737.99,
+      "end": 769.4
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1937: Pierwsze państwowe obchody Święta Niepodległości",
+      "start": 770.1,
+      "end": 796.05
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt jednoczenia wokół flagi",
+      "start": 797.25,
+      "end": 853.79
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Factfulness: Przerażające to nie to samo co niebezpieczne",
+      "start": 854.99,
+      "end": 912.41
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 913.61,
+      "end": 928.51
+    }
+  ]
+}

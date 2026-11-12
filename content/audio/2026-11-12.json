@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-12",
+  "file": "2026-11-12.mp3",
+  "url": "audio/2026-11-12.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-12.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "b59f50ecdcfac4be",
+  "duration": 993.72,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 15.51
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Marsz Niepodległości: ok. 250 tys. osób i bez poważnych incydentów",
+      "start": 16.21,
+      "end": 64.9
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Nawrocki: „naród zasługuje na wolny Trybunał”. Tusk zaprasza prezydenta do domu",
+      "start": 65.6,
+      "end": 101.12
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Kraków świętował skromniej. 11 rannych wciąż w szpitalach",
+      "start": 101.82,
+      "end": 133.8
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Ordery Orła Białego dla Wiesława Kęcika i prof. Mirosława Ząbka",
+      "start": 134.5,
+      "end": 164.82
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Życzenia dla Polski z całego świata",
+      "start": 165.52,
+      "end": 193.09
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Rosja i Ukraina uzgodniły dużą wymianę jeńców",
+      "start": 194.29,
+      "end": 234.77
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Pierwszy od 14 lat strajk generalny w Hiszpanii",
+      "start": 235.47,
+      "end": 275.43
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Ebola: już ponad 11 tys. zachorowań w Kongu",
+      "start": 276.13,
+      "end": 318.64
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Burza Charles: Portugalia odwołała ponad 300 lotów",
+      "start": 319.34,
+      "end": 343.1
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Demokrata wygrywa w Missisipi. Pierwszy taki senator od 1982 roku",
+      "start": 343.8,
+      "end": 387.38
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Rosja ostrzelała Kijów rakietami balistycznymi tuż po rozmowach",
+      "start": 388.58,
+      "end": 425.1
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Zarząd Nvidii może odwołać Jensena Huanga",
+      "start": 425.8,
+      "end": 465.95
+    },
+    {
+      "id": "technologia-2",
+      "chapter": "tematy",
+      "label": "Trump zaostrza kontrolę nad eksportem chipów Nvidii do Chin",
+      "start": 466.65,
+      "end": 497.5
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "OpenAI przekroczyło 10 mld dolarów przychodu w kwartale",
+      "start": 498.2,
+      "end": 530.07
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Napoje energetyczne częściej w zgłoszeniach zatrzymania krążenia",
+      "start": 530.77,
+      "end": 576.53
+    },
+    {
+      "id": "zdrowie-2",
+      "chapter": "tematy",
+      "label": "Przy demencji nadwaga wiązała się z mniejszym ryzykiem śmierci",
+      "start": 577.23,
+      "end": 617.64
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "FKA Twigs jako Josephine Baker w nowym filmie biograficznym",
+      "start": 618.34,
+      "end": 647.69
+    },
+    {
+      "id": "filmy-2",
+      "chapter": "tematy",
+      "label": "Finał „VisionQuest” zapowiada powrót Wandy w „Avengers: Doomsday”",
+      "start": 648.39,
+      "end": 675.63
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Mit: Maria Antonina powiedziała „niech jedzą ciastka”",
+      "start": 676.83,
+      "end": 705.86
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Ziemia nie jest idealną kulą",
+      "start": 706.56,
+      "end": 733.39
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Efekt reflektora: inni zauważają nas rzadziej, niż myślimy",
+      "start": 734.09,
+      "end": 763.26
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Piłsudski honorowym obywatelem Warszawy",
+      "start": 764.46,
+      "end": 790.09
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1980: Voyager 1 mija Saturna",
+      "start": 790.79,
+      "end": 822.47
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "2014: Philae ląduje na komecie",
+      "start": 823.17,
+      "end": 853.93
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt Dunninga-Krugera",
+      "start": 855.13,
+      "end": 908.64
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Factfulness: Samotna liczba może zmylić: porównuj i dziel",
+      "start": 909.84,
+      "end": 976.87
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 978.07,
+      "end": 993.22
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "date": "2026-11-12",
+  "intro": "Dziś m.in.: rekordowo liczny Marsz Niepodległości, porozumienie o wielkiej wymianie jeńców między Rosją a Ukrainą i strajk generalny w Hiszpanii przeciw cenom mieszkań.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Marsz Niepodległości: ok. 250 tys. osób i bez poważnych incydentów",
+      "summary": "Według Stołecznego Centrum Bezpieczeństwa w Marszu Niepodległości w Warszawie wzięło udział ok. 250 tys. osób, a organizatorzy mówili o znacznie większej liczbie. Rok temu ratusz szacował frekwencję na ok. 100 tys. W marszu szedł prezydent Karol Nawrocki. Policja nie odnotowała znaczących incydentów, choć mimo zakazu odpalano race, a trzech uczestników podpaliło flagę Lewicy. Policja zatrzymała ok. 60 osób, większość za posiadanie narkotyków lub pirotechnikę.",
+      "why": "To jeden z najliczniejszych marszów w historii, zorganizowany kilka dni po zamachu w Krakowie i w czasie ostrego sporu politycznego.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-11/jaka-frekwencja-na-marszu-niepodleglosci-sa-wyliczenia-wladz-warszawy/" },
+        { "name": "Notes from Poland", "url": "https://notesfrompoland.com/2026/11/11/annual-polish-independence-march-passes-through-warsaw/" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Nawrocki: „naród zasługuje na wolny Trybunał”. Tusk zaprasza prezydenta do domu",
+      "summary": "Podczas uroczystości na placu Piłsudskiego prezydent Karol Nawrocki powiedział, że naród zasługuje na wolny Trybunał Konstytucyjny. Wicepremier Władysław Kosiniak-Kamysz był wygwizdywany w czasie przemówienia. Premier Donald Tusk, który obchodził święto w Szczecinie, wezwał do jedności i zaprosił prezydenta z rodziną do swojego domu w Sopocie.",
+      "why": "Zaproszenie może otworzyć drogę do rozmowy o Trybunale, ale spór o jego skład wciąż trwa.",
+      "thread": "Spór o Trybunał Konstytucyjny",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-11/prezydent-zwrocil-sie-do-premierow-i-marszalkow-narod-zasluguje-na-wolny-trybunal/" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-11/obchody-11-listopada-w-szczecinie-tusk-zaprosil-prezydenta-do-swojego-domu-w-sopocie/" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Kraków świętował skromniej. 11 rannych wciąż w szpitalach",
+      "summary": "W Krakowie, w ostatnim dniu żałoby po zamachu, obchody Święta Niepodległości były skromniejsze: odprawiono mszę w katedrze na Wawelu, a uroczystość wojskową ograniczono. W pięciu krakowskich szpitalach wciąż leczonych jest 11 rannych, a jedną z poszkodowanych przewieziono do Warszawy.",
+      "why": "Dla wielu rannych powrót do zdrowia potrwa długo. Ofiary i ich rodziny potrzebują wsparcia także po zakończeniu żałoby.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-11/nowe-informacje-o-rannych-w-zamachu-kobieta-przewieziona-z-krakowa-do-warszawy/" },
+        { "name": "TVP World", "url": "https://tvpworld.com/96423547/top-officials-mark-polands-independence-day-after-krakow-mass-shooting" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Ordery Orła Białego dla Wiesława Kęcika i prof. Mirosława Ząbka",
+      "summary": "W Święto Niepodległości prezydent Karol Nawrocki wręczył w Pałacu Prezydenckim odznaczenia państwowe pięciu osobom. Najwyższe polskie odznaczenie, Order Orła Białego, otrzymali działacz opozycji demokratycznej w PRL Wiesław Kęcik i prof. Mirosław Ząbek.",
+      "why": "Order Orła Białego przyznaje się za wybitne zasługi dla Polski, a jego kawalerów jest niewielu.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-11/uroczystosc-wreczenia-odznaczen-prezydent-wyroznil-piec-osob/" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Życzenia dla Polski z całego świata",
+      "summary": "Z okazji 108. rocznicy odzyskania niepodległości życzenia przesłali m.in. przewodniczący Rady Europejskiej António Costa, prezydent Łotwy Edgars Rinkēvičs i szef dyplomacji Ukrainy. Rinkēvičs napisał, by wolna i niepodległa Polska trwała zawsze.",
+      "why": "Życzenia od sąsiadów i sojuszników pokazują, jak Polska jest postrzegana w regionie i w UE.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-11/z-roznych-stron-swiata-plyna-zyczenia-z-okazji-swieta-niepodleglosci-polska-daje-przyklad/" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Rosja i Ukraina uzgodniły dużą wymianę jeńców",
+      "summary": "Dwudniowe rozmowy w Abu Zabi zakończyły się porozumieniem o dużej wymianie jeńców, ale bez przełomu w sprawie końca wojny. Według Rosji wymiana obejmie ponad tysiąc osób z każdej strony i może się odbyć za dwa–trzy tygodnie. Rosja wciąż żąda wycofania Ukrainy z Donbasu i odrzuca natychmiastowy rozejm. Wysłannicy USA Jared Kushner i Steve Witkoff mają spotkać się z Władimirem Putinem w Moskwie.",
+      "why": "Wymiana jeńców to jedyny konkretny wynik rozmów. Według mediów może to być największa taka wymiana w tej wojnie.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/11/g-s1-152954/russia-ukraine-war-talks" },
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/11/abu-dhabi-peace-talks-end-with-prisoner-exchange-agreement-as-us-envoys-prepare-to-meet-pu" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Pierwszy od 14 lat strajk generalny w Hiszpanii",
+      "summary": "W środę miliony Hiszpanów wzięły udział w pierwszym od 14 lat strajku generalnym pod hasłem „Płace. Mieszkania. Ceny”. Najmocniej odczuły go przemysł i transport, a w Barcelonie i Madrycie odbyły się wielkie marsze. Średni czynsz w Hiszpanii prawie podwoił się w ciągu dekady, a według Banku Hiszpanii brakuje ok. 750 tys. mieszkań. Policja zatrzymała 29 osób.",
+      "why": "Strajk odbywa się przed przedterminowymi wyborami 29 listopada, w których drożyzna mieszkań będzie jednym z głównych tematów.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/11/nx-s1-6037314/spain-general-strike" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/11/its-just-too-expensive-housing-and-wages-at-the-heart-of-spains-strike" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Ebola: już ponad 11 tys. zachorowań w Kongu",
+      "summary": "Władze Demokratycznej Republiki Konga podały, że potwierdzono 11 042 przypadki eboli i co najmniej 5387 zgonów. To druga co do wielkości epidemia eboli w historii, po epidemii w Afryce Zachodniej w latach 2014–2016. Choroba objęła 8 z 26 prowincji, a przypadki odnotowano też w Ugandzie, Kenii i Nigerii.",
+      "why": "Na szczep Bundibugyo nie ma zatwierdzonej szczepionki. Walkę z epidemią utrudniają konflikty zbrojne, strajki niepłaconych pracowników i nieufność mieszkańców.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/11/ebola-cases-in-dr-congo-pass-11000-with-5387-deaths" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/11/nx-s1-6037304/ebola-congo-outbreak" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Burza Charles: Portugalia odwołała ponad 300 lotów",
+      "summary": "Portugalia odwołała ponad 300 lotów, a w całym kraju zamknięto szkoły i część firm przed nadejściem burzy Charles. Burza przeszła ostatecznie bez poważnych zniszczeń.",
+      "why": "Po tegorocznych niszczycielskich burzach władze wolą działać ostrożnie. Podróżni powinni sprawdzać status lotów.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/11/portugal-cancels-300-plus-flights-shuts-schools-ahead-of-storm-charles" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Demokrata wygrywa w Missisipi. Pierwszy taki senator od 1982 roku",
+      "summary": "Demokrata Scott Colom pokonał w Missisipi republikańską senator Cindy Hyde-Smith stosunkiem 49,18 do 48,72 proc. głosów. Będzie pierwszym demokratą wybranym do Senatu z tego stanu od 1982 roku i pierwszym czarnoskórym senatorem z Missisipi od czasów rekonstrukcji po wojnie secesyjnej. To ósme miejsce w Senacie odbite przez demokratów.",
+      "why": "Donald Trump wygrał w Missisipi w 2024 roku przewagą 20 punktów, więc wynik pokazuje skalę zmiany nastrojów w USA.",
+      "sources": [
+        { "name": "CBS News", "url": "https://www.cbsnews.com/news/mississippi-2026-senate-scott-colom-cindy-hyde-smith/" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/11/democrat-scott-colom-wins-closely-watched-us-senate-race-in-mississippi" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Rosja ostrzelała Kijów rakietami balistycznymi tuż po rozmowach",
+      "summary": "W nocy z 11 na 12 listopada, kilka godzin po zakończeniu rozmów w Abu Zabi, Rosja zaatakowała Kijów rakietami balistycznymi. Eksplozje było słychać około 1 w nocy, a druga seria przyszła niecałe pół godziny później. Według Kyiv Independent Rosja wystrzeliła w tym roku na Ukrainę ponad 500 rakiet balistycznych.",
+      "why": "Ukrainie brakuje pocisków do systemów Patriot, które jako nieliczne potrafią zestrzelić rakiety balistyczne.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/russia-attacks-kyiv-with-ballistic-missiles-hours-after-peace-talks-end/" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Zarząd Nvidii może odwołać Jensena Huanga",
+      "summary": "Według „Wall Street Journal” zarząd Nvidii przygotowuje się do odsunięcia prezesa Jensena Huanga. Wcześniej „New York Times” podał, że Huang miał też romans z wiceprezes firmy, która mu podlega. Firma tego nie potwierdziła. Akcje Nvidii spadły po zamknięciu sesji o ok. 8 proc. Zarząd zatrudnił kancelarię do zbadania sprawy jego relacji z kobietą podejrzewaną o szpiegostwo na rzecz Chin.",
+      "why": "Huang kieruje Nvidią od jej założenia, a firma jest jednym z filarów rozwoju AI na świecie. Jego odejście byłoby wstrząsem dla rynku.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html" },
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/" }
+      ]
+    },
+    {
+      "id": "technologia-2",
+      "section": "technologia",
+      "rank": 2,
+      "title": "Trump zaostrza kontrolę nad eksportem chipów Nvidii do Chin",
+      "summary": "Według Axiosa Donald Trump po raz trzeci w tym roku zgodził się na działania wobec firm podejrzanych o przemyt zaawansowanych chipów AI Nvidii do Chin. Sekretarz handlu Howard Lutnick miał wcześniej blokować te ograniczenia. W Kongresie pojawiły się też wezwania do dymisji Jensena Huanga.",
+      "why": "Chipy Nvidii są kluczowe dla AI, a USA chcą ograniczyć ich dostęp dla Chin ze względów bezpieczeństwa.",
+      "sources": [
+        { "name": "Axios", "url": "https://www.axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-congress-resign-ai-chips.html" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "OpenAI przekroczyło 10 mld dolarów przychodu w kwartale",
+      "summary": "Według Bloomberga kwartalne przychody OpenAI po raz pierwszy przekroczyły 10 mld dolarów. Ten sam raport mówi, że Anthropic wyprzedził OpenAI w rynku firmowym, z przychodami 17 mld dolarów w trzecim kwartale.",
+      "why": "Przychody szybko rosną, ale obie firmy wydają jeszcze więcej na centra danych, a inwestorzy uważnie liczą, czy to się opłaci.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Napoje energetyczne częściej w zgłoszeniach zatrzymania krążenia",
+      "summary": "Badacze przeanalizowali ponad 28 tys. zgłoszeń działań niepożądanych w bazie amerykańskiej FDA z lat 2017–2025. Zgłoszenia dotyczące napojów energetycznych i suplementów z kofeiną lub stymulantami ok. 11 razy częściej wspominały o zatrzymaniu krążenia i ok. 4,5 raza częściej o zawale. Najsilniejszy związek dotyczył osób w wieku 18–34 lat.",
+      "why": "To wstępne wyniki z dobrowolnych zgłoszeń, więc nie pokazują, jak często takie zdarzenia zdarzają się u pijących. Warto jednak uważać, zwłaszcza przy chorobach serca.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261110042543.htm" },
+        { "name": "EurekAlert!", "url": "https://www.eurekalert.org/news-releases/1149483" }
+      ]
+    },
+    {
+      "id": "zdrowie-2",
+      "section": "zdrowie",
+      "rank": 2,
+      "title": "Przy demencji nadwaga wiązała się z mniejszym ryzykiem śmierci",
+      "summary": "Badanie ponad 4500 starszych Amerykanów, opublikowane w „Journal of Alzheimer's Disease”, wykazało, że osoby z nadwagą lub otyłością w chwili rozpoznania demencji miały o 16–27 proc. mniejsze ryzyko śmierci niż osoby z prawidłową wagą. Autorzy podkreślają, że nie znaczy to, by chorzy mieli przybierać na wadze. Możliwe, że osoby z prawidłową wagą były już bardziej chore i wcześniej schudły.",
+      "why": "Badanie pokazuje, jak trudno interpretować związki statystyczne, gdy choroba sama zmienia wagę.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261109205401.htm" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "FKA Twigs jako Josephine Baker w nowym filmie biograficznym",
+      "summary": "Piosenkarka FKA Twigs zagra Josephine Baker, legendarną tancerkę i artystkę, w filmie biograficznym Maimouny Doucouré dla wytwórni Studiocanal. Zdjęcia we Francji i w Sofii w Bułgarii właśnie się kończą.",
+      "why": "Josephine Baker była gwiazdą Paryża, działaczką ruchu praw obywatelskich i uczestniczką francuskiego ruchu oporu.",
+      "sources": [
+        { "name": "Variety", "url": "https://variety.com/2026/film/news/fka-twigs-josephine-baker-maimouna-doucoure-1236944739/" }
+      ]
+    },
+    {
+      "id": "filmy-2",
+      "section": "filmy",
+      "rank": 2,
+      "title": "Finał „VisionQuest” zapowiada powrót Wandy w „Avengers: Doomsday”",
+      "summary": "Ostatni odcinek serialu Marvela „VisionQuest” w Disney+ zamknął historię zapoczątkowaną w „WandaVision”. Scena po napisach potwierdziła, że Wanda, grana przez Elizabeth Olsen, wróci w filmie „Avengers: Doomsday”, który trafi do kin 18 grudnia.",
+      "why": "„Avengers: Doomsday” to jedna z największych premier kinowych końca roku.",
+      "sources": [
+        { "name": "Variety", "url": "https://variety.com/2026/film/news/visionquest-elizabeth-olsen-avengers-doomsday-scarlet-witch-1235365599" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "kosmos",
+      "title": "Ziemia nie jest idealną kulą",
+      "body": "Ziemia obraca się, a siła odśrodkowa sprawia, że na równiku jest „grubsza” niż na biegunach. Dlatego odległość od środka Ziemi do poziomu morza jest na równiku o ok. 21 km większa niż na biegunach. Przewidział to już Isaac Newton. Do tego masa jest rozłożona nierówno, więc nawet spłaszczona kula to tylko przybliżenie kształtu naszej planety.",
+      "source": { "name": "Scientific American", "url": "https://www.scientificamerican.com/article/earth-is-not-round/" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "psychologia",
+      "title": "Efekt reflektora: inni zauważają nas rzadziej, niż myślimy",
+      "body": "W eksperymencie z 2000 roku studenci musieli wejść do sali w zawstydzającej koszulce z podobizną piosenkarza Barry'ego Manilowa. Uważali, że koszulkę zauważy ok. połowa osób, a w rzeczywistości zauważyło ją ok. 20–25 proc. Psychologowie nazwali to efektem reflektora: przeceniamy, jak bardzo inni zwracają uwagę na nasz wygląd i potknięcia.",
+      "source": { "name": "Psychology Today", "url": "https://www.psychologytoday.com/us/blog/between-you-and-me/201311/have-you-fallen-prey-to-the-spotlight-effect" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "historia",
+      "title": "Mit: Maria Antonina powiedziała „niech jedzą ciastka”",
+      "body": "Nie ma żadnych dowodów, że królowa Francji wypowiedziała to zdanie. Pochodzi ono z „Wyznań” Jana Jakuba Rousseau, który przypisał je bliżej nieokreślonej „wielkiej księżniczce”, a w oryginale chodziło o brioszkę. Rousseau pisał o tym, gdy Maria Antonina była jeszcze dzieckiem i mieszkała w Austrii. Z królową powiązano te słowa dopiero kilkadziesiąt lat później.",
+      "source": { "name": "Britannica", "url": "https://www.britannica.com/story/did-marie-antoinette-really-say-let-them-eat-cake" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1918,
+      "title": "Piłsudski honorowym obywatelem Warszawy",
+      "body": "12 listopada 1918 r. Józef Piłsudski wydał dwie odezwy, a Warszawska Rada Miejska nadała mu tytuł honorowego obywatela stolicy. Było to pierwsze takie wyróżnienie w niepodległej Polsce. Tego samego dnia oddziały polskie odzyskały Przemyśl w walkach z Ukraińcami.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/aktualnosci/12-listopada-1918-r" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1980,
+      "title": "Voyager 1 mija Saturna",
+      "body": "12 listopada 1980 r. sonda Voyager 1 przeleciała ok. 126 tys. km od Saturna, a tego samego dnia minęła w odległości ok. 6400 km Tytana, jedyny księżyc z gęstą atmosferą. Przelot obok Tytana skierował sondę poza płaszczyznę Układu Słonecznego, więc nie odwiedziła już innych planet. Dziś Voyager 1 to najdalszy obiekt zbudowany przez człowieka.",
+      "source": { "name": "NASA", "url": "https://science.nasa.gov/mission/voyager/voyager-1/" }
+    },
+    {
+      "id": "otd-3",
+      "year": 2014,
+      "title": "Philae ląduje na komecie",
+      "body": "12 listopada 2014 r. lądownik Philae z europejskiej misji Rosetta jako pierwszy w historii wylądował na jądrze komety 67P/Czuriumow–Gierasimienko. Nie zadziałały harpuny ani silniczek dociskający, więc odbił się dwa razy i spoczął ok. 1,2 km od planowanego miejsca, w cieniu. Mimo to zdążył przesłać dane, a w 2015 r. na krótko się „obudził”.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Philae_(spacecraft)" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Efekt Dunninga-Krugera",
+    "definition": "To zjawisko, w którym osoby słabsze w jakiejś dziedzinie częściej przeceniają swoje umiejętności w porównaniu z innymi.",
+    "origin": "Psychologowie Justin Kruger i David Dunning opisali je w 1999 roku. W czterech eksperymentach z logiki, gramatyki i poczucia humoru osoby z najsłabszymi wynikami szacowały, że wypadły znacznie lepiej od przeciętnej. Część badaczy uważa, że efekt jest częściowo złudzeniem statystycznym, a popularna wersja („najgłupsi są najpewniejsi siebie”) mocno upraszcza wyniki.",
+    "examples": [
+      "Ktoś po obejrzeniu kilku filmików w internecie uważa, że zna się na prawie lepiej niż prawnik.",
+      "Kierowcy często oceniają się powyżej przeciętnej, choć nie wszyscy mogą być lepsi od średniej.",
+      "Początkujący inwestor po kilku udanych transakcjach przecenia swoje wyczucie rynku."
+    ],
+    "source": { "name": "Discover Magazine", "url": "https://discovermagazine.com/mind/people-can-overestimate-their-abilities-something-known-as-the-dunning-kruger-effect" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "factfulness",
+    "title": "Factfulness",
+    "author": "Hans Rosling",
+    "day": 5,
+    "days": 7,
+    "ideaTitle": "Samotna liczba może zmylić: porównuj i dziel",
+    "idea": "Rosling opisuje „instynkt rozmiaru”: pojedyncza liczba wydaje się ogromna albo znikoma, dopóki nie zestawimy jej z inną. Radzi więc zawsze porównywać, np. 4,2 mln zgonów niemowląt rocznie brzmi przerażająco, ale w 1950 roku było ich 14,4 mln. Druga rada to dzielenie: wskaźniki na osobę są często ważniejsze niż sumy, zwłaszcza gdy porównujemy kraje różnej wielkości. Trzecia to zasada 80/20: na długiej liście poszukaj kilku największych pozycji, bo zwykle ważą więcej niż cała reszta razem.",
+    "moral": "Liczba bez porównania niewiele mówi. Zanim się przestraszysz lub zachwycisz, zapytaj: w porównaniu z czym? Na ile osób?",
+    "action": "Przy jednej liczbie z dzisiejszych wiadomości, np. liczbie zachorowań na ebolę, sprawdźcie, jak wypada w porównaniu z liczbą mieszkańców lub z poprzednimi latami.",
+    "source": { "name": "Gapminder", "url": "https://www.gapminder.org/factfulness/size" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-12-q1",
+      "ref": "fact-1",
+      "question": "Dlaczego Ziemia jest „grubsza” na równiku niż na biegunach?",
+      "options": ["Bo na równiku jest więcej wody", "Przez obrót planety i siłę odśrodkową", "Przez przyciąganie Księżyca", "Bo bieguny są przykryte lodem"],
+      "answer": 1,
+      "explanation": "Obrót Ziemi wypycha masę na zewnątrz na równiku, więc promień jest tam o ok. 21 km większy."
+    },
+    {
+      "id": "2026-11-12-q2",
+      "ref": "fact-2",
+      "question": "Co pokazał eksperyment z koszulką z Barrym Manilowem?",
+      "options": ["Że ludzie lubią zabawne koszulki", "Że przeceniamy, jak bardzo inni nas zauważają", "Że zapamiętujemy twarze lepiej niż ubrania", "Że wstyd poprawia pamięć"],
+      "answer": 1,
+      "explanation": "Badani sądzili, że koszulkę zauważy połowa osób, a zauważyło ją ok. 20–25 proc."
+    },
+    {
+      "id": "2026-11-12-q3",
+      "ref": "fact-3",
+      "question": "Skąd pochodzi zdanie „niech jedzą ciastka”?",
+      "options": ["Z pamiętnika Marii Antoniny", "Z „Wyznań” Rousseau, gdzie przypisano je nieznanej księżniczce", "Z przemówienia Ludwika XVI", "Z gazety rewolucyjnej z 1793 roku"],
+      "answer": 1,
+      "explanation": "Rousseau przypisał je „wielkiej księżniczce”, gdy Maria Antonina była jeszcze dzieckiem. Z królową powiązano je później."
+    },
+    {
+      "id": "2026-11-12-q4",
+      "ref": "otd-2",
+      "question": "Dlaczego Voyager 1 po przelocie obok Tytana nie odwiedził już innych planet?",
+      "options": ["Zabrakło mu paliwa", "Przelot skierował go poza płaszczyznę Układu Słonecznego", "Uszkodził go pierścień Saturna", "NASA wyłączyła sondę"],
+      "answer": 1,
+      "explanation": "Trasa obok Tytana wyrzuciła sondę ponad płaszczyznę, w której krążą planety."
+    },
+    {
+      "id": "2026-11-12-q5",
+      "ref": "otd-3",
+      "question": "Co poszło nie tak przy lądowaniu Philae na komecie?",
+      "options": ["Lądownik się rozbił", "Nie zadziałały harpuny i lądownik się odbił", "Kometa wybuchła", "Sonda Rosetta zgubiła sygnał na zawsze"],
+      "answer": 1,
+      "explanation": "Philae odbił się dwa razy i spoczął w cieniu, ale i tak był to pierwszy udany lądownik na jądrze komety."
+    },
+    {
+      "id": "2026-11-12-q6",
+      "ref": "concept",
+      "question": "Co według badań Krugera i Dunninga robią osoby z najsłabszymi wynikami?",
+      "options": ["Trafnie oceniają swoje wyniki", "Przeceniają swoje umiejętności w porównaniu z innymi", "Zawsze oceniają się najwyżej ze wszystkich", "Rezygnują z zadania"],
+      "answer": 1,
+      "explanation": "Słabsi uczestnicy szacowali, że wypadli lepiej od przeciętnej, choć nie dawali sobie najwyższych ocen."
+    },
+    {
+      "id": "2026-11-12-q7",
+      "ref": "book",
+      "question": "Co radzi Rosling, gdy widzimy pojedynczą, robiącą wrażenie liczbę?",
+      "options": ["Zapamiętać ją dokładnie", "Porównać ją z inną i podzielić przez liczbę ludzi", "Zaokrąglić ją w górę", "Zignorować ją"],
+      "answer": 1,
+      "explanation": "Samotna liczba łatwo zwodzi. Dopiero porównanie i przeliczenie na osobę pokazuje jej znaczenie."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-12-r1",
+      "question": "Jak odkryto teflon?",
+      "options": ["Przez przypadek, w butli z gazem", "W poszukiwaniu leku na raka", "Przy produkcji patelni"],
+      "answer": 0,
+      "explanation": "Roy Plunkett szukał gazów do lodówek i znalazł w butli biały proszek, czyli teflon."
+    },
+    {
+      "id": "2026-11-12-r2",
+      "question": "O której godzinie wszedł w życie rozejm z Compiègne?",
+      "options": ["O 5.00", "O 11.00", "O 18.00"],
+      "answer": 1,
+      "explanation": "Rozejm podpisano ok. 5 rano, a wszedł w życie o 11.00 czasu paryskiego 11 listopada 1918 roku."
+    },
+    {
+      "id": "2026-11-12-r3",
+      "question": "Jak Rosling definiuje ryzyko?",
+      "options": ["Jako zagrożenie razy narażenie", "Jako liczbę wiadomości na dany temat", "Jako to, co nas najbardziej przeraża"],
+      "answer": 0,
+      "explanation": "Coś może być przerażające, ale mało ryzykowne, jeśli rzadko jesteśmy na to narażeni."
+    }
+  ],
+  "evening": {
+    "question": "W czym przeceniacie, jak bardzo inni was oceniają, a co byście zrobili, gdybyście się tym mniej przejmowali?",
+    "hint": "Pomyślcie o drobiazgu: wystąpieniu w pracy, tańcu na weselu albo pytaniu zadanym na zebraniu."
+  }
+}

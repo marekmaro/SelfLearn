@@ -1,6 +1,38 @@
 {
   "editions": [
     {
+      "date": "2026-11-12",
+      "headline": "Marsz Niepodległości: ok. 250 tys. osób i bez poważnych incydentów",
+      "threads": [
+        {
+          "name": "Spór o Trybunał Konstytucyjny",
+          "item": "pl-2",
+          "title": "Nawrocki: „naród zasługuje na wolny Trybunał”. Tusk zaprasza prezydenta do domu"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-3",
+          "title": "Kraków świętował skromniej. 11 rannych wciąż w szpitalach"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Rosja i Ukraina uzgodniły dużą wymianę jeńców"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Rosja ostrzelała Kijów rakietami balistycznymi tuż po rozmowach"
+        }
+      ],
+      "facts": [
+        "Ziemia nie jest idealną kulą",
+        "Efekt reflektora: inni zauważają nas rzadziej, niż myślimy",
+        "Mit: Maria Antonina powiedziała „niech jedzą ciastka”"
+      ],
+      "concept": "Efekt Dunninga-Krugera"
+    },
+    {
       "date": "2026-11-11",
       "headline": "Minister Żurek: w działaniach zamachowca „bardzo silne ślady” skrajnej prawicy",
       "threads": [

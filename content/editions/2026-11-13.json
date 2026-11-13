@@ -1,0 +1,381 @@
+{
+  "date": "2026-11-13",
+  "intro": "Dziś m.in.: Jensen Huang odchodzi z Nvidii, katastrofa budowlana w Nowym Jorku i fala fałszywych alarmów bombowych we włoskich szkołach.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "NASK zgłosił prawie 4,8 tys. materiałów z dezinformacją o zamachu",
+      "summary": "Instytut NASK przekazał platformom społecznościowym do moderacji 4795 materiałów z dezinformacją o zamachu w Krakowie, zebranych od 7 do 10 listopada. Najczęściej były to przerobione przez AI zdjęcia sprawcy, np. z dorobioną naszywką ruchu antyfaszystowskiego, której nie ma na oryginale. Fałszywą grafikę łączącą ministra Marcina Kierwińskiego ze sprawcą MSWiA skieruje do prokuratury.",
+      "why": "Po głośnych tragediach fałszywe treści rozchodzą się szybciej niż sprostowania. Warto sprawdzać źródło, zanim coś udostępnimy.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/dezinformacja-wokol-zamachu-w-krakowie-nask-zglosil-4795-materialow-min-manipulacje-z" },
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/galecka-przerobione-przez-ai-zdjecie-kierwinskiego-i-sprawcy-ataku-w-krakowie-trafi-do" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Policja w siedzibie Telewizji Republika. Prokuratura chce nagrań",
+      "summary": "Na polecenie Prokuratury Regionalnej w Szczecinie policja weszła do siedziby Telewizji Republika i zażądała nagrania oraz dokumentów koncesyjnych. Śledztwo dotyczy wydarzeń z 16 października przed Trybunałem Konstytucyjnym i podejrzenia przestępstw wobec policjantów. Pracownicy stacji odmówili przyjęcia pisma. Nagrań nie wydała też telewizja wPolsce24, powołując się na tajemnicę dziennikarską. Jarosław Kaczyński nazwał to atakiem na wolność słowa. Osobno krakowska prokuratura wszczęła śledztwo w sprawie wypowiedzi na antenie Republiki po zamachu w Krakowie.",
+      "why": "Sprawa dotyczy granicy między ściganiem przestępstw a wolnością mediów, dlatego obie strony mocno się o nią spierają.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-12/policja-w-siedzibie-telewizji-republika-zadali-wydania-dokumentow/" },
+        { "name": "TVN24", "url": "https://tvn24.pl/polska/jest-sledztwo-w-sprawie-tv-republika-dotyczy-zamachu-w-krakowie-st9335441" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Prezydent bez odpowiedzi na zaproszenie premiera. Czarzasty o „juncie”",
+      "summary": "Prezydent Karol Nawrocki nie odpowiedział na zaproszenie Donalda Tuska do jego domu w Sopocie. Zamiast tego w przemówieniu w Święto Niepodległości skrytykował pracę ministra finansów Andrzeja Domańskiego. Szef Kancelarii Prezydenta Zbigniew Bogucki ocenił, że 11 listopada to nie czas na polityczne gesty. Marszałek Sejmu Włodzimierz Czarzasty, odnosząc się do przemówienia prezydenta, powiedział, że junta wojskowa nie jest częścią demokratycznej historii Polski.",
+      "why": "Napięcie między prezydentem a rządem utrudnia porozumienie w sprawach takich jak Trybunał Konstytucyjny i budżet.",
+      "sources": [
+        { "name": "TVN24", "url": "https://tvn24.pl/polska/piec-rzeczy-ktore-warto-dzis-wiedziec-najwazniejsze-informacje-12-listopada-2026-roku-st9334821" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-12/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej/" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Od piątku taniej na stacjach. Diesel o 12 groszy",
+      "summary": "W piątek 13 listopada obowiązują niższe ceny maksymalne paliw: benzyna 95 do 6,06 zł za litr, benzyna 98 do 6,68 zł, a olej napędowy do 7,54 zł. Najbardziej, o 12 groszy, potaniał diesel, a benzyna 95 o 4 grosze. Ceny wyznacza rządowy program „Ceny Paliwa Niżej”, który ma działać do końca 2026 roku. Za przekroczenie limitu stacji grozi kara do 1 mln zł.",
+      "why": "Ceny paliw wpływają na koszty dojazdów i transportu, a przez to na ceny w sklepach.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-12/zmiana-na-stacjach-od-piatku-ceny-benzyny-i-diesla-beda-nizsze/" },
+        { "name": "Bankier.pl", "url": "https://www.bankier.pl/wiadomosc/W-piatek-nizsze-ceny-maksymalne-paliw-Benzyna-95-do-6-06-zl-diesel-do-7-54-zl-za-litr-9227752.html" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Śnieg wraca na niziny, ale długo nie poleży",
+      "summary": "Z czwartku na piątek na niziny mają wrócić deszcz, deszcz ze śniegiem i śnieg. IMGW planował ostrzeżenia pierwszego stopnia przed opadami śniegu dla części trzech województw: zachodniopomorskiego, pomorskiego i warmińsko-mazurskiego (powiat gołdapski). Na nizinach może spaść 1–3 cm śniegu, ale w dzień temperatura ma wynosić od 3 do 7 stopni, więc śnieg raczej się nie utrzyma. Na Podkarpaciu, powyżej 500 m n.p.m., może przybyć 5–10 cm.",
+      "why": "Mokre i śliskie drogi to zagrożenie dla kierowców i pieszych, zwłaszcza rano i wieczorem.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-12/nadciaga-kolejny-bialy-epizod-na-nizinach-nie-zostalo-wiele-czasu/" },
+        { "name": "TVN24", "url": "https://tvn24.pl/tvnmeteo/prognoza/pogoda-ostrzezenia-imgw-intensywne-opady-deszczu-snieg-silny-wiatr-st9335689" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Wysłannicy USA u Putina. Rozmowy o pokoju będą kontynuowane",
+      "summary": "Wysłannicy USA Steve Witkoff i Jared Kushner spotkali się w czwartek w Kremlu z Władimirem Putinem. Kreml nazwał rozmowy użytecznymi i podał, że strona amerykańska poparła propozycję Putina dotyczącą wspólnej misji humanitarnej do miasta na wschodzie Ukrainy. Według doradcy Kremla Jurija Uszakowa Putin będzie kontynuował rozmowy z Donaldem Trumpem na szczycie APEC w Chinach. Kushner chciał uzyskać zgodę Moskwy na udział Europejczyków w negocjacjach. W piątek wysłannicy mają spotkać się z Wołodymyrem Zełenskim w Dublinie.",
+      "why": "To pierwsze bezpośrednie rozmowy USA z Putinem po rundzie w Abu Zabi. Spór o terytorium wciąż jest nierozwiązany.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/12/us-envoys-arrive-in-moscow-for-russia-ukraine-talks-with-putin" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Zawalił się budynek na Brooklynie. Nie żyje 8 osób",
+      "summary": "Trzypiętrowy budynek przy Flatbush Avenue na Brooklynie w Nowym Jorku runął na sąsiedni plac budowy. Według straży pożarnej zginęło osiem osób, w tym dwoje dzieci i dwóch robotników budowlanych, a 18 zostało rannych, w tym czterech strażaków. Akcja ratunkowa zakończyła się w czwartek po przeszukaniu całego terenu. Przyczyna katastrofy jest badana, a prokuratura sprawdza, czy doszło do przestępstwa.",
+      "why": "Katastrofa podważa zaufanie do nadzoru nad budowami w gęsto zabudowanym mieście.",
+      "sources": [
+        { "name": "CBS News", "url": "https://www.cbsnews.com/newyork/live-updates/brooklyn-building-collapse-search-survivors/" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/12/nx-s1-6038673/crews-search-for-survivors-after-deadly-brooklyn-building-collapse" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Fałszywe alarmy bombowe w tysiącach włoskich szkół",
+      "summary": "Drugi dzień z rzędu do włoskich szkół trafiły maile z fałszywymi alarmami bombowymi. Według Polsat News w środę dostało je ok. 6300 placówek, a w czwartek ok. 1800. Wiadomości podpisano pseudonimem „Michaił Andropow”. Szef MSZ Antonio Tajani powiedział, że powodem jest stanowisko Włoch wobec Ukrainy, i mówił o wojnie hybrydowej. Rosja zaprzecza. Rząd zapowiedział, że szkół nie trzeba ewakuować tylko z powodu takiego maila.",
+      "why": "Masowe fałszywe alarmy paraliżują szkoły i wywołują strach, nawet gdy nie ma prawdziwego zagrożenia.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-12/wlochy-sparalizowane-fala-alarmow-incydenty-w-calym-kraju/" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/12/more-than-1800-italian-schools-targeted-by-new-hoax-bomb-alerts" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Słynny liniowiec SS United States zatopiony jako sztuczna rafa",
+      "summary": "Historyczny transatlantyk SS United States został celowo zatopiony w Zatoce Meksykańskiej, ok. 20 mil morskich od wybrzeża Florydy. Statek spoczął pionowo na głębokości ok. 180 stóp (ok. 55 m) i ma stać się największą sztuczną rafą na świecie. Hrabstwo Okaloosa kupiło go w 2024 roku za ok. 1 mln dolarów, a cały projekt kosztował ok. 13 mln dolarów. Wcześniej przez rok usuwano z niego szkodliwe materiały, m.in. paliwo i okablowanie.",
+      "why": "Wrak ma przyciągnąć ryby i nurków. Hrabstwo liczy na zyski z turystyki.",
+      "sources": [
+        { "name": "CBS News", "url": "https://www.cbsnews.com/news/ss-united-states-sinking-ocean-floor-largest-artificial-reef-world-florida-gulf-coast/" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/11/nx-s1-6030853/ss-united-states-artificial-reef-sinking" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Wiceprezydent Indonezji podał się do dymisji",
+      "summary": "Wiceprezydent Indonezji Gibran Rakabuming Raka zrezygnował z urzędu, a prezydent Prabowo Subianto przyjął dymisję. Wcześniej Trybunał Konstytucyjny i Sąd Najwyższy orzekły, że jego dokumenty o wykształceniu za granicą nie spełniały wymogów wyborczych. 120 posłów z ośmiu partii złożyło wniosek, który mógł prowadzić do impeachmentu. To pierwsza taka dymisja przed końcem kadencji od upadku Suharto w 1998 roku.",
+      "why": "Następcę wybierze parlament spośród dwóch kandydatów prezydenta, w czasie protestów przeciw biedzie i korupcji.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/12/indonesia-vice-president-resigns-amid-dispute-over-eligibility" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/12/g-s1-153190/indonesias-vp-resigns-as-his-eligibility-and-academic-credentials-are-questioned" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Zełenski: ograniczenia Starshield pomagają Rosji",
+      "summary": "Według prezydenta Ukrainy Wołodymyra Zełenskiego wojskowy system łączności satelitarnej Starshield znów działa z ograniczeniem prędkości do ok. 161 km/h wzdłuż frontu i na terenach okupowanych. Przez to ukraińskie drony przechwytujące nie mogą dogonić rosyjskich dronów odrzutowych, a część rosyjskich ataków się powiodła. Zełenski podkreśla, że to nie przypadkowe błędy, lecz systematyczne ograniczenia. Nie wiadomo, kto zdecydował o limicie, a Ukraina wyjaśnia sprawę z USA.",
+      "why": "Łączność satelitarna to podstawa działania ukraińskich dronów, a sprawa pokazuje, jak bardzo Ukraina zależy od amerykańskiej technologii.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-12/zelenski-alarmuje-o-problemach-z-systemem-starshield-to-pomaga-rosjanom/" },
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/starshield-speed-restrictions-return-hampering-efforts-to-intercept-russian-drones-zelensky-says/" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "section": "bezpieczenstwo",
+      "rank": 2,
+      "title": "Rosyjski oficer zginął w wybuchu samochodu pod Petersburgiem",
+      "summary": "W czwartek w Szuszarach na obrzeżach Petersburga wybuchł samochód rosyjskiego wojskowego, który zginął na miejscu. Komitet Śledczy wszczął sprawę o zabójstwo. Według rosyjskich mediów był to pułkownik lotnictwa, a ładunek przyczepiono pod autem i odpalono zdalnie. Ukraina nie przyznała się do zamachu, a Moskwa oskarża Kijów o serię zabójstw wojskowych.",
+      "why": "To kolejny taki zamach w tej okolicy w ostatnich miesiącach. Pokazuje, że wojna toczy się także daleko od frontu.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/12/russian-officer-killed-by-car-bomb-in-st-petersburg-as-murder-investigation-begins" },
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/russian-colonel-reportedly-killed-in-car-explosion-near-st-petersburg/" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Jensen Huang odchodzi z Nvidii. Tymczasowo rządzi Colette Kress",
+      "summary": "Zarząd Nvidii przyjął rezygnację Jensena Huanga, który od razu odszedł ze stanowiska prezesa i z zarządu. Tymczasowo firmą pokieruje dyrektor finansowa Colette Kress, a pierwszym w historii przewodniczącym zarządu został Harvey C. Jones. Odejście wiąże się z doniesieniami o romansie Huanga z kobietą, którą amerykańskie służby uważają za chińskiego szpiega. Akcje Nvidii spadły w ciągu dnia nawet o 14 proc., a sesję zakończyły spadkiem o 4,34 proc.",
+      "why": "Huang założył Nvidię i kierował nią od ponad 30 lat. Firma produkuje chipy, na których działa większość systemów AI.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html" }
+      ]
+    },
+    {
+      "id": "technologia-2",
+      "section": "technologia",
+      "rank": 2,
+      "title": "Wielka awaria Outlooka i usług Microsoftu",
+      "summary": "W czwartek przez kilka godzin nie działała poczta Outlook, a problemy dotknęły też Teams, Copilota i SharePointa. W szczycie problemy zgłosiło w serwisie Downdetector prawie 130 tys. użytkowników. Microsoft podał, że część serwerów nieoczekiwanie przestała być dostępna i nie przechodziła automatycznych testów. Po południu firma zastosowała inny sposób ich sprawdzania i stopniowo przywróciła działanie usług.",
+      "why": "Wiele firm i urzędów pracuje na usługach Microsoftu, więc taka awaria szybko paraliżuje codzienną pracę.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/12/microsofts-outlook-email-hit-by-new-outage/" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/12/nx-s1-6039343/is-outlook-down-widespread-outage-hits-microsoft-email-and-other-apps" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "United Airlines blokuje agentów AI rezerwujących loty",
+      "summary": "Linie United Airlines zapowiedziały, że ograniczą dostęp agentów AI do swoich systemów rezerwacji, także przez biura podróży i porównywarki. Ostrzegają, że podawanie danych logowania asystentom AI może narazić dane osobowe, prowadzić do niechcianych zakupów albo niewłaściwego użycia mil w programie lojalnościowym. Linia wskazuje też na przepisy: przy odprawie człowiek musi sam potwierdzić, że nie przewozi zakazanych przedmiotów.",
+      "why": "Agenci AI mają robić za nas zakupy i rezerwacje, ale firmy i banki coraz częściej ostrzegają przed udostępnianiem im haseł.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/11/united-airlines-ai-agents.html" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "„Wieczne chemikalia” a agresywny rak piersi",
+      "summary": "Analiza amerykańskich Narodowych Instytutów Zdrowia (NIH) objęła ok. 1600 kobiet z rakiem piersi i ok. 2300 kobiet z grupy porównawczej. U kobiet z wyższym stężeniem we krwi dwóch związków PFAS, czyli PFOA i PFOS, częściej występował rak piersi bez receptorów estrogenowych, który zwykle jest bardziej agresywny. Przy PFOS ten nowotwór występował o 93 proc. częściej. Nie znaleziono za to wyraźnego związku tych substancji z ryzykiem raka piersi w ogóle.",
+      "why": "PFAS są w wielu produktach i długo pozostają w organizmie. Badanie pokazuje związek, a nie dowód przyczyny, i potrzebne są dalsze analizy.",
+      "sources": [
+        { "name": "NIH", "url": "https://www.nih.gov/news-events/news-releases/two-forever-chemicals-associated-higher-risk-aggressive-breast-cancer-nih-analysis" },
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261112025527.htm" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "„Ebenezer” z Johnnym Deppem wchodzi do kin. Krytycy podzieleni",
+      "summary": "W piątek do kin w USA wchodzi „Ebenezer” w reżyserii Ti Westa, mroczna, nieco horrorowa wersja „Opowieści wigilijnej” Dickensa z Johnnym Deppem jako Scrooge'em. Krytycy chwalą klimat i scenografię, ale różnie oceniają samego Deppa. Część uważa jego rolę za udany powrót, a inni piszą, że film nie wnosi nic nowego do znanej historii.",
+      "why": "To pierwsza duża hollywoodzka rola Deppa od lat i test, czy widzowie chcą jego powrotu.",
+      "sources": [
+        { "name": "The Hollywood Reporter", "url": "https://www.hollywoodreporter.com/movies/movie-news/ebenezer-reviews-johnny-depp-1236754299/" },
+        { "name": "Variety", "url": "https://variety.com/2026/film/reviews/ebenezer-review-johnny-depp-1236945154/" }
+      ]
+    },
+    {
+      "id": "filmy-2",
+      "section": "filmy",
+      "rank": 2,
+      "title": "„Godzilla Minus Zero” bije rekord w USA",
+      "summary": "Japoński film „Godzilla Minus Zero” zarobił na otwarcie w USA ok. 32 mln dolarów, a na świecie ok. 63 mln. To rekord otwarcia filmu aktorskiego w języku innym niż angielski na rynku amerykańskim.",
+      "why": "Wynik pokazuje, że film nieanglojęzyczny może przyciągnąć tłumy także do amerykańskich kin.",
+      "sources": [
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/box-office-godzilla-minus-zero-cat-in-the-hat-1237215161/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Na futrze leniwca rośnie ogród",
+      "body": "W sierści leniwców żyją zielone glony, które nadają im zielonkawy odcień. Prawdopodobnie pomaga to ukryć się przed drapieżnikami, np. harpiami, choć naukowcy uważają to za hipotezę. W futrze mieszkają też ćmy, które żyją wyłącznie na leniwcach. Gdy leniwiec mniej więcej raz w tygodniu schodzi na ziemię, by się wypróżnić, samice ciem składają jaja w jego odchodach.",
+      "source": { "name": "National Geographic", "url": "https://www.nationalgeographic.com/animals/article/sloth-poop-moth-relationship" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "nauka",
+      "title": "Wieża Eiffla codziennie „tańczy” w słońcu",
+      "body": "Wieża Eiffla jest zbudowana z żelaza, które rozszerza się w cieple. Słońce nagrzewa ją z jednej strony, więc wieża lekko odchyla się od niego. W ciągu słonecznego dnia jej szczyt zatacza krzywą o średnicy ok. 15 cm. Do tego latem wieża jest o kilka milimetrów wyższa niż zimą.",
+      "source": { "name": "La tour Eiffel", "url": "https://www.toureiffel.paris/en/news/history-and-culture/why-does-eiffel-tower-change-size" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "psychologia",
+      "title": "Iluzja częstości: nowe słowo nagle jest wszędzie",
+      "body": "Gdy poznamy nowe słowo, nazwę albo model auta, nagle wydaje się, że spotykamy je na każdym kroku. Językoznawca Arnold Zwicky ze Stanfordu nazwał to w 2005 roku iluzją częstości. Według niego stoją za tym uwaga wybiórcza i skłonność do zauważania potwierdzeń. Popularna nazwa „fenomen Baader-Meinhof” wzięła się z 1994 roku, gdy czytelnik gazety w St. Paul dwa razy w ciągu dnia usłyszał nazwę tej niemieckiej grupy terrorystycznej.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Frequency_illusion" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1924,
+      "title": "Reymont laureatem Nagrody Nobla",
+      "body": "13 listopada 1924 r. ogłoszono, że Władysław Reymont otrzyma literacką Nagrodę Nobla za powieść „Chłopi”. Był drugim polskim noblistą w dziedzinie literatury, po Henryku Sienkiewiczu. Ciężko chory pisarz nie pojechał na uroczystość do Sztokholmu.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/kalendarz-historyczny/13/11" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1907,
+      "title": "Pierwszy swobodny lot śmigłowca",
+      "body": "13 listopada 1907 r. w Coquainvilliers pod Lisieux we Francji Paul Cornu uniósł się w powietrze maszyną z dwoma wirnikami. Uchodzi to za pierwszy swobodny, czyli nieprzywiązany do ziemi, lot śmigłowca z człowiekiem na pokładzie. Lot trwał krócej niż minutę, na wysokości najwyżej kilku metrów, a współcześni inżynierowie wątpią, czy maszyna mogła latać dłużej.",
+      "source": { "name": "Britannica", "url": "https://www.britannica.com/biography/Paul-Cornu" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1985,
+      "title": "Tragedia w Armero",
+      "body": "13 listopada 1985 r. wybuchł kolumbijski wulkan Nevado del Ruiz. Gorący materiał stopił lód na szczycie i zeszły lawiny błotne, które zasypały miasto Armero, zabijając ok. trzech czwartych z jego 28,7 tys. mieszkańców. Zginęło ponad 23 tys. osób, choć mapy zagrożeń rozdano ponad miesiąc wcześniej. Burza przerwała łączność i ewakuacja się nie udała.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Armero_tragedy" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Brzytwa Ockhama",
+    "definition": "To zasada, by spośród wyjaśnień, które równie dobrze tłumaczą fakty, wybierać to z najmniejszą liczbą założeń.",
+    "origin": "Nazwa pochodzi od Williama Ockhama, XIV-wiecznego franciszkanina i logika, który sprzeciwiał się mnożeniu bytów bez potrzeby. Słynne sformułowanie „bytów nie należy mnożyć ponad potrzebę” nie pochodzi jednak od niego, tylko od XVII-wiecznego filozofa Johannesa Clauberga. To wskazówka przy budowaniu teorii, a nie dowód, że prostsze wyjaśnienie jest prawdziwe.",
+    "examples": [
+      "Gdy samochód nie zapala w mroźny poranek, najpierw sprawdź akumulator, a nie elektronikę.",
+      "Gdy znajomy nie odpisuje, prawdopodobnie jest zajęty, a nie obrażony.",
+      "Masowe maile z alarmami bombowymi to raczej zorganizowana akcja niż tysiące niezależnych żartownisiów."
+    ],
+    "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Brzytwa_Ockhama" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "factfulness",
+    "title": "Factfulness",
+    "author": "Hans Rosling",
+    "day": 6,
+    "days": 7,
+    "ideaTitle": "Dziesięć reguł na co dzień: poglądy tylko z mocnymi faktami",
+    "idea": "Najważniejszy morał książki zawiera się w jej tytule: „factfulness” to nawyk trzymania się tylko tych poglądów, które mają mocne oparcie w faktach. Rosling zbiera wszystkie omówione instynkty w listę dziesięciu reguł: luka, negatywność, linia prosta, strach, rozmiar, uogólnianie, przeznaczenie, jedna perspektywa, szukanie winnego i pilność. Każdy instynkt ma swoją krótką regułę, np. „szukaj większości”, „spodziewaj się złych wiadomości”, „porównuj i dziel” albo „szukaj przyczyn, nie złoczyńców”. To nie jest wiedza do zapamiętania raz, tylko lista kontrolna do codziennego użytku. Rosling widział jej miejsce w szkołach, firmach, mediach i organizacjach społecznych.",
+    "moral": "Nie trzeba wiedzieć wszystkiego, wystarczy zauważać, kiedy instynkt podsuwa dramatyczny obraz świata, i sprawdzić go faktami.",
+    "action": "Wybierzcie jedną dzisiejszą wiadomość i zapytajcie, który z dziesięciu instynktów w was porusza. Potem poszukajcie jednej liczby albo porównania, które go studzi.",
+    "source": { "name": "Gapminder", "url": "https://www.gapminder.org/factfulness/instincts/" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-13-q1",
+      "ref": "fact-1",
+      "question": "Co nadaje sierści leniwców zielonkawy odcień?",
+      "options": ["Barwnik z liści, które jedzą", "Glony rosnące w futrze", "Pleśń z wilgotnego lasu", "Specjalne komórki skóry"],
+      "answer": 1,
+      "explanation": "W sierści leniwców rosną zielone glony, które prawdopodobnie pomagają im się ukryć."
+    },
+    {
+      "id": "2026-11-13-q2",
+      "ref": "fact-2",
+      "question": "Dlaczego szczyt wieży Eiffla w słoneczny dzień zatacza krzywą?",
+      "options": ["Przez wiatr znad Sekwany", "Bo słońce nagrzewa ją z jednej strony i żelazo się rozszerza", "Bo grunt pod wieżą się osuwa", "Przez drgania od turystów"],
+      "answer": 1,
+      "explanation": "Nagrzana strona się rozszerza, więc wieża odchyla się od słońca, a jej szczyt zatacza krzywą o średnicy ok. 15 cm."
+    },
+    {
+      "id": "2026-11-13-q3",
+      "ref": "fact-3",
+      "question": "Czym jest iluzja częstości?",
+      "options": ["Wrażeniem, że coś nowo poznanego spotykamy nagle na każdym kroku", "Zapominaniem częstych słów", "Mylenie dźwięków o podobnej częstotliwości", "Przekonaniem, że rzadkie wydarzenia są niemożliwe"],
+      "answer": 0,
+      "explanation": "Po poznaniu nowej rzeczy zaczynamy ją zauważać, choć wcale nie występuje częściej."
+    },
+    {
+      "id": "2026-11-13-q4",
+      "ref": "otd-1",
+      "question": "Za jaką powieść Władysław Reymont dostał Nagrodę Nobla?",
+      "options": ["„Ziemia obiecana”", "„Chłopi”", "„Lalka”", "„Nad Niemnem”"],
+      "answer": 1,
+      "explanation": "Nagrodę z 1924 roku przyznano za „Chłopów”. „Ziemię obiecaną” Reymont też napisał, ale nie za nią dostał Nobla."
+    },
+    {
+      "id": "2026-11-13-q5",
+      "ref": "otd-3",
+      "question": "Co zniszczyło miasto Armero w 1985 roku?",
+      "options": ["Trzęsienie ziemi", "Lawiny błotne po stopieniu lodu przez erupcję", "Tsunami", "Pożar lasu"],
+      "answer": 1,
+      "explanation": "Erupcja Nevado del Ruiz stopiła lód na szczycie, a błotne lawiny zasypały miasto."
+    },
+    {
+      "id": "2026-11-13-q6",
+      "ref": "concept",
+      "question": "Co zaleca brzytwa Ockhama?",
+      "options": ["Wybierać najbardziej szczegółowe wyjaśnienie", "Spośród równie dobrych wyjaśnień wybierać to z najmniejszą liczbą założeń", "Zawsze ufać ekspertom", "Odrzucać każdą nową teorię"],
+      "answer": 1,
+      "explanation": "Prostsze wyjaśnienie warto sprawdzić najpierw, choć brzytwa nie dowodzi, że jest prawdziwe."
+    },
+    {
+      "id": "2026-11-13-q7",
+      "ref": "book",
+      "question": "Czym według Roslinga jest „factfulness”?",
+      "options": ["Znajomością wszystkich statystyk świata", "Nawykiem trzymania się tylko poglądów popartych mocnymi faktami", "Optymizmem niezależnie od faktów", "Unikaniem wiadomości"],
+      "answer": 1,
+      "explanation": "Chodzi o nawyk sprawdzania poglądów faktami, a nie o wiedzę encyklopedyczną."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-13-r1",
+      "question": "Którego miasta honorowym obywatelem został Piłsudski 12 listopada 1918 r.?",
+      "options": ["Krakowa", "Warszawy", "Wilna"],
+      "answer": 1,
+      "explanation": "Tytuł nadała mu Warszawska Rada Miejska. Było to pierwsze takie wyróżnienie w niepodległej Polsce."
+    },
+    {
+      "id": "2026-11-13-r2",
+      "question": "O ile odległość od środka Ziemi jest większa na równiku niż na biegunach?",
+      "options": ["Ok. 2 km", "Ok. 21 km", "Ok. 210 km"],
+      "answer": 1,
+      "explanation": "Obrót Ziemi spłaszcza ją przy biegunach, więc na równiku promień jest o ok. 21 km większy."
+    },
+    {
+      "id": "2026-11-13-r3",
+      "question": "Do czego służy zasada 80/20 w „Factfulness”?",
+      "options": ["Do szukania kilku największych pozycji na długiej liście", "Do zaokrąglania liczb", "Do oceny, ile wiadomości jest prawdziwych"],
+      "answer": 0,
+      "explanation": "Kilka największych pozycji zwykle waży więcej niż cała reszta razem."
+    }
+  ],
+  "evening": {
+    "question": "Kiedy ostatnio wymyśliliście skomplikowane wyjaśnienie czegoś, co miało prosty powód?",
+    "hint": "Pomyślcie o nieodebranym telefonie, zmęczeniu partnera albo zepsutym sprzęcie w domu."
+  }
+}

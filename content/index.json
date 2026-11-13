@@ -1,6 +1,38 @@
 {
   "editions": [
     {
+      "date": "2026-11-13",
+      "headline": "NASK zgłosił prawie 4,8 tys. materiałów z dezinformacją o zamachu",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-1",
+          "title": "NASK zgłosił prawie 4,8 tys. materiałów z dezinformacją o zamachu"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Wysłannicy USA u Putina. Rozmowy o pokoju będą kontynuowane"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Zełenski: ograniczenia Starshield pomagają Rosji"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-2",
+          "title": "Rosyjski oficer zginął w wybuchu samochodu pod Petersburgiem"
+        }
+      ],
+      "facts": [
+        "Na futrze leniwca rośnie ogród",
+        "Wieża Eiffla codziennie „tańczy” w słońcu",
+        "Iluzja częstości: nowe słowo nagle jest wszędzie"
+      ],
+      "concept": "Brzytwa Ockhama"
+    },
+    {
       "date": "2026-11-12",
       "headline": "Marsz Niepodległości: ok. 250 tys. osób i bez poważnych incydentów",
       "threads": [

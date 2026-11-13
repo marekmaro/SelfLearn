@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-13",
+  "file": "2026-11-13-darkman.mp3",
+  "url": "audio/2026-11-13-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-13-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "8751b8d1fb35f743",
+  "duration": 1108.41,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 13.55
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "NASK zgłosił prawie 4,8 tys. materiałów z dezinformacją o zamachu",
+      "start": 14.25,
+      "end": 58.53
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Policja w siedzibie Telewizji Republika. Prokuratura chce nagrań",
+      "start": 59.23,
+      "end": 109.41
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Prezydent bez odpowiedzi na zaproszenie premiera. Czarzasty o „juncie”",
+      "start": 110.11,
+      "end": 151.04
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Od piątku taniej na stacjach. Diesel o 12 groszy",
+      "start": 151.74,
+      "end": 196.52
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Śnieg wraca na niziny, ale długo nie poleży",
+      "start": 197.22,
+      "end": 239.26
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Wysłannicy USA u Putina. Rozmowy o pokoju będą kontynuowane",
+      "start": 240.46,
+      "end": 289.24
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Zawalił się budynek na Brooklynie. Nie żyje 8 osób",
+      "start": 289.94,
+      "end": 326.13
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Fałszywe alarmy bombowe w tysiącach włoskich szkół",
+      "start": 326.83,
+      "end": 369.74
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Słynny liniowiec SS United States zatopiony jako sztuczna rafa",
+      "start": 370.44,
+      "end": 415.05
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Wiceprezydent Indonezji podał się do dymisji",
+      "start": 415.75,
+      "end": 455.34
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Zełenski: ograniczenia Starshield pomagają Rosji",
+      "start": 456.54,
+      "end": 507.61
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Rosyjski oficer zginął w wybuchu samochodu pod Petersburgiem",
+      "start": 508.31,
+      "end": 544.53
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Jensen Huang odchodzi z Nvidii. Tymczasowo rządzi Colette Kress",
+      "start": 545.23,
+      "end": 591.82
+    },
+    {
+      "id": "technologia-2",
+      "chapter": "tematy",
+      "label": "Wielka awaria Outlooka i usług Microsoftu",
+      "start": 592.52,
+      "end": 631.03
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "United Airlines blokuje agentów AI rezerwujących loty",
+      "start": 631.73,
+      "end": 676.11
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "„Wieczne chemikalia” a agresywny rak piersi",
+      "start": 676.81,
+      "end": 723.71
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "„Ebenezer” z Johnnym Deppem wchodzi do kin. Krytycy podzieleni",
+      "start": 724.41,
+      "end": 760.66
+    },
+    {
+      "id": "filmy-2",
+      "chapter": "tematy",
+      "label": "„Godzilla Minus Zero” bije rekord w USA",
+      "start": 761.36,
+      "end": 787.35
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Wieża Eiffla codziennie „tańczy” w słońcu",
+      "start": 788.55,
+      "end": 812.72
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Na futrze leniwca rośnie ogród",
+      "start": 813.42,
+      "end": 840.33
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Iluzja częstości: nowe słowo nagle jest wszędzie",
+      "start": 841.03,
+      "end": 877.28
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1924: Reymont laureatem Nagrody Nobla",
+      "start": 878.48,
+      "end": 903.37
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1907: Pierwszy swobodny lot śmigłowca",
+      "start": 904.07,
+      "end": 933.66
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1985: Tragedia w Armero",
+      "start": 934.36,
+      "end": 966.19
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Brzytwa Ockhama",
+      "start": 967.39,
+      "end": 1018.36
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Factfulness: Dziesięć reguł na co dzień: poglądy tylko z mocnymi faktami",
+      "start": 1019.56,
+      "end": 1094.17
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1095.37,
+      "end": 1107.91
+    }
+  ]
+}

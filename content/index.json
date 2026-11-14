@@ -1,6 +1,38 @@
 {
   "editions": [
     {
+      "date": "2026-11-14",
+      "headline": "Prezydent zawetował ustawę o usuwaniu nielegalnych treści z internetu",
+      "threads": [
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "pl-2",
+          "title": "Polska w europejskim zespole do rozmów o pokoju w Ukrainie"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-3",
+          "title": "Ranni policjanci z Krakowa awansują. Jest też zawiadomienie na jednego z nich"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Zełenski po spotkaniu z wysłannikami USA: Europa dołączy do rozmów"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Finlandia wykryła atak na rosyjski okręt w Zatoce Fińskiej"
+        }
+      ],
+      "facts": [
+        "Słonie „słyszą” stopami",
+        "Mit: Einstein oblał matematykę",
+        "W każdej komórce mieści się ok. 2 metrów DNA"
+      ],
+      "concept": "Efekt potwierdzenia"
+    },
+    {
       "date": "2026-11-13",
       "headline": "NASK zgłosił prawie 4,8 tys. materiałów z dezinformacją o zamachu",
       "threads": [

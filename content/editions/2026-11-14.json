@@ -1,0 +1,376 @@
+{
+  "date": "2026-11-14",
+  "intro": "Dziś m.in.: Polska w europejskim zespole do rozmów o pokoju w Ukrainie, weto prezydenta wobec ustawy o treściach w internecie i paraliż lotnisk w USA.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Prezydent zawetował ustawę o usuwaniu nielegalnych treści z internetu",
+      "summary": "Prezydent Karol Nawrocki zawetował nowelizację, która miała wdrożyć unijny Akt o usługach cyfrowych (DSA) i ułatwić blokowanie nielegalnych treści w sieci, np. mowy nienawiści. Prezydent przekonuje, że ustawa oznaczałaby administracyjną cenzurę. Wicepremier Krzysztof Gawkowski odpowiedział, że prezydent zawetował ustawę, ale nie problem. Politycy PiS i Konfederacji pochwalili weto. To już drugie weto w tej sprawie. Polska jako ostatni kraj UE nie wdrożyła DSA, a Komisja Europejska pozwała ją w maju do TSUE.",
+      "why": "Bez tych przepisów trudniej szybko usuwać szkodliwe treści, a Polsce grożą kary ze strony UE.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-13/ustawa-o-uslugach-cyfrowych-prezydent-podjal-decyzje/" },
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/prezydent-zawetowal-ustawe-dot-blokowania-nielegalnych-tresci-w-internecie-miala" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Polska w europejskim zespole do rozmów o pokoju w Ukrainie",
+      "summary": "Na nieformalnym szczycie UE w Dublinie przywódcy uzgodnili, że Europę w rozmowach pokojowych będą reprezentować instytucje UE i pięć państw: Wielka Brytania, Francja, Niemcy, Włochy i Polska. Ogłosił to przewodniczący Rady Europejskiej António Costa. Szefowa unijnej dyplomacji Kaja Kallas nie została specjalną wysłanniczką, o co zabiegała. Kreml odpowiada, że o rozszerzeniu formatu rozmów zdecyduje, gdy pozna „prawdziwe intencje” Europejczyków.",
+      "why": "Polska zyskuje bezpośredni głos w rozmowach, które przesądzą o bezpieczeństwie naszego regionu.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/13/eu-leaders-bring-italy-and-poland-into-ukraine-peace-talks-team-as-kallas-fights-for-spot" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/13/europe-seeks-seat-at-ukraine-peace-talks-but-lacks-unified-voice" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Ranni policjanci z Krakowa awansują. Jest też zawiadomienie na jednego z nich",
+      "summary": "Wiceszef MSWiA Czesław Mroczek zapowiedział, że starsi posterunkowi Jakub Kulik i Artur Morański, ciężko ranni podczas zatrzymywania zamachowca, zostaną awansowani. Obaj dostali już po 100 tys. zł zapomogi oraz odznaczenia od ministra i prezydenta. Jednocześnie do krakowskiej prokuratury wpłynęło zawiadomienie, by zbadać, czy Kulik nie przekroczył uprawnień, używając broni. Minister Marcin Kierwiński skrytykował autora zawiadomienia. Stan Morańskiego jest znacznie lepszy, a Kulika czeka kolejna operacja.",
+      "why": "Prokuratura musi zbadać każde zawiadomienie, ale dla rządu i wojewody bohaterstwo policjantów nie podlega dyskusji.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "TVN24", "url": "https://tvn24.pl/krakow/bohaterscy-policjanci-z-krakowa-otrzymaja-po-100-tysiecy-zlotych-zapomogi-st9335602" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-13/zawiadomienie-w-sprawie-policjanta-z-krakowa-kierwinski-komentuje/" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Koniec świata miał nastąpić wczoraj. Przepowiednia z 1960 roku",
+      "summary": "W 1960 roku Heinz von Foerster, Patricia Mora i Lawrence Amiot opisali w „Science” model, według którego przy utrzymaniu ówczesnego tempa wzrostu liczba ludzi dążyłaby do nieskończoności 13 listopada 2026 roku. Krzywa pasowała do danych aż do początku lat 90., potem wzrost wyraźnie zwolnił. Według Banku Światowego dzietność na świecie spadła z ok. 4,7 dziecka na kobietę w 1960 roku do ok. 2,2 w 2024. ONZ przewiduje szczyt liczby ludności ok. 10,3 mld w latach 80. XXI wieku.",
+      "why": "To dobry przykład, że trendu nie można bez końca przedłużać po linii prostej, o czym pisał też Hans Rosling.",
+      "sources": [
+        { "name": "TVN24", "url": "https://tvn24.pl/ciekawostki/nauka-w-artykuje-z-1960-roku-przewidywano-mozliwy-wzrost-populacji-koniec-swiata-mial-nastepic-13-listopada-2026-st9337188" },
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/nauka/art45454211-13-listopada-2026-roku-ludzkosc-miala-zostac-zgnieciona-przepowiednia-z-1960-roku" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Po awarii Microsoftu rząd stawia na otwarte oprogramowanie",
+      "summary": "Według wicepremiera i ministra cyfryzacji Krzysztofa Gawkowskiego globalna awaria Microsoftu pokazała problemy z uzależnieniem od wielkich korporacji. Ministerstwo zapowiada konkurs na pilotażowe projekty z otwartym oprogramowaniem (open source) w samorządach, z budżetem 10 mln zł z funduszy UE. Sprawdzone rozwiązania mają trafić później do całej administracji. Krytycy przypominają raport Fundacji Instrat, według którego 99 proc. przetargów na oprogramowanie biurowe w administracji eliminuje konkurencję albo faworyzuje Microsoft.",
+      "why": "Urzędy, sądy i szkoły pracują na programach jednego dostawcy, więc jego awaria może sparaliżować pracę państwa.",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://cyfrowa.rp.pl/oprogramowanie/art45485221-bedzie-odwrot-od-microsoftu-rzad-chce-tzw-otwartego-oprogramowania" },
+        { "name": "PAP", "url": "https://samorzad.pap.pl/kategoria/e-urzad/samorzady-dostana-miliony-na-oprogramowanie-open-source-w-tle-awaria-uslug" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Zełenski po spotkaniu z wysłannikami USA: Europa dołączy do rozmów",
+      "summary": "Wołodymyr Zełenski spotkał się pod Dublinem z wysłannikami USA Stevem Witkoffem i Jaredem Kushnerem, którzy przylecieli prosto z rozmów z Władimirem Putinem w Moskwie. Zełenski powiedział potem dziennikarzom, że Europejczycy wezmą bezpośredni udział w kolejnej rundzie negocjacji, które dotąd prowadziły tylko Ukraina, Rosja i USA. Dodał, że najbliższa wymiana jeńców będzie największą w tej wojnie.",
+      "why": "Udział Europy może zmienić przebieg rozmów, ale najtrudniejszy spór, o terytorium, wciąż pozostaje nierozwiązany.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/13/finland-detects-strike-on-russian-warship-as-zelenskyy-meets-us-envoys" },
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/zelensky-arrives-in-dublin-for-european-political-community-summit-expects-a-debrief-from-witkoff-kushner/" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Wszystkie samoloty w USA uziemione na kilka godzin",
+      "summary": "W piątek amerykański urząd lotnictwa FAA na ponad cztery godziny wstrzymał starty na wszystkich lotniskach w USA z powodu awarii łączności w centrach kontroli ruchu lotniczego. Według FlightAware opóźnionych było ponad 10 tys. lotów, a ponad 4 tys. odwołano. Odwołania mają potrwać do weekendu. Sekretarz transportu Sean Duffy obwinił przestarzały sprzęt. Według Białego Domu nic nie wskazuje na celowe działanie.",
+      "why": "Awaria pokazuje, jak bardzo przestarzała jest amerykańska kontrola lotów, z której codziennie korzystają miliony pasażerów.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/13/nx-s1-6040403/faa-nationwide-groundstop-airports" },
+        { "name": "CBS News", "url": "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Mercedes wstrzymuje inwestycje w Niemczech i rozważa zamknięcie fabryk",
+      "summary": "Zarząd Mercedes-Benz wstrzymał nowe inwestycje w niemieckich zakładach z powodu wysokich kosztów pracy i braku porozumienia ze związkiem IG Metall. Według koncernu godzina pracy w Niemczech może kosztować nawet pięć razy więcej niż w Europie Wschodniej. Wcześniej szef produkcji mówił, że jeśli oszczędności okażą się za małe, mogą zostać zamknięte dwie fabryki: montażowa i podzespołów napędowych.",
+      "why": "Kłopoty niemieckiej branży motoryzacyjnej odbijają się na dostawcach w całej Europie.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/12/mercedes-benz-halts-new-investment-in-german-plants-considers-closures" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Miliony ludzi witają papieża Leona XIV w Peru",
+      "summary": "Papież Leon XIV, który przez lata pracował w Peru, odwiedza kraj nazywany przez siebie drugą ojczyzną. Według szacunków Watykanu na trasie przejazdu w Limie stanęły ok. 3 mln osób, co jest rekordem jego pontyfikatu. W Chiclayo, gdzie był biskupem, na mszę przyszło ok. 500 tys. wiernych. W przemówieniu wezwał Peruwiańczyków do zmierzenia się z bolesną historią kraju. Wizyta potrwa do ok. 17 listopada.",
+      "why": "Papież odbywa tę podróż niedługo po operacji raka płuca, a wizyta to ważny gest wobec Ameryki Łacińskiej.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/13/pope-thanks-crowds-on-emotional-return-to-second-home-in-perus-chiclayo" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/13/nx-s1-6026728/pope-leo-called-peru-home-for-20-years-he-was-welcomed-back-to-the-country-this-week" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Gwinea: co najmniej 10 zabitych w starciach o zakaz wydobycia złota",
+      "summary": "W regionie Siguiri w północno-wschodniej Gwinei co najmniej 10 osób zginęło, a 13 zostało rannych w starciach, gdy siły bezpieczeństwa egzekwowały zakaz ręcznego wydobycia złota. Wśród zabitych było pięciu cudzoziemców. Władze wprowadziły zakaz 2 listopada, tłumacząc go zanieczyszczeniem pól i rzek. Według Mali do jego stolicy dotarło ok. 100 tys. osób, które opuściły Gwineę.",
+      "why": "Dla wielu ludzi z regionu kopanie złota to główne źródło utrzymania, a zakaz wywołał falę migracji do sąsiednich krajów.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/13/at-least-10-killed-in-guinea-in-crackdown-on-gold-mining" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Finlandia wykryła atak na rosyjski okręt w Zatoce Fińskiej",
+      "summary": "Fińskie wojsko poinformowało, że wykryło uderzenie w rosyjski okręt w Zatoce Fińskiej, ale nie podało szczegółów i zapewniło, że Finlandii nic nie zagraża. Według lokalnych mediów był to mały okręt marynarki wojennej, który po ataku wrócił do Petersburga. Według fińskiej telewizji Yle do ataku przyznała się Służba Bezpieczeństwa Ukrainy. Minister obrony Antti Häkkänen poruszył sprawę z Kijowem, wskazując na zagrożenie dla środowiska i żeglugi.",
+      "why": "Wojna przenosi się na Bałtyk, którym pływają statki do polskich portów.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/13/finland-detects-strike-on-russian-warship-as-zelenskyy-meets-us-envoys" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/13/why-is-ukraine-attacking-russian-warships-in-the-baltic-sea-amid-talks" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "section": "bezpieczenstwo",
+      "rank": 2,
+      "title": "Litwa podzieli sieć energetyczną na siedem „wysp” na wypadek sabotażu",
+      "summary": "Litewski operator sieci przesyłowej Litgrid przedstawił plan podziału systemu energetycznego kraju na siedem stref, które w razie awarii głównej sieci będą mogły działać niezależnie. Do 2033 roku przy węzłach sieci ma powstać 10 nowych elektrowni o łącznej mocy 800 MW. Koszt Litgrid szacuje na ok. 880 mln euro. Powodem są zagrożenia sabotażem, cyberatakami i ekstremalną pogodą.",
+      "why": "Kraje bałtyckie uczą się na doświadczeniach Ukrainy, gdzie Rosja niszczy sieć energetyczną.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/ciekawostki/2026-11-13/litwa-buduje-system-na-wypadek-sabotazu-siec-podziela-na-siedem-niezaleznych-stref/" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Starship w kolejnym locie testowym. Nie udało się złapać rakiety nośnej",
+      "summary": "SpaceX wystrzelił w piątek rakietę Starship w 15. locie testowym, którego celem jest pokazanie, że cały statek można odzyskiwać i używać ponownie. Rakieta nośna nie została złapana przez wieżę startową, tylko wpadła do Zatoki Meksykańskiej i stanęła w płomieniach. Górny stopień dotarł na planowaną orbitę i wypuścił 26 satelitów Starlink. Na zakończenie misji SpaceX planował po raz pierwszy złapać przy wieży także górny stopień.",
+      "why": "Wielokrotne użycie całej rakiety ma znacznie obniżyć koszty lotów w kosmos.",
+      "sources": [
+        { "name": "CBS News", "url": "https://www.cbsnews.com/news/spacex-launches-starship-flight-rocket/" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/13/spacex-launches-starship-in-key-test-flight-of-massive-rocket.html" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "ChatGPT Wallet: asystent AI zrobi zakupy za ciebie",
+      "summary": "OpenAI uruchomiło ChatGPT Wallet, czyli funkcję, dzięki której agenci AI w ChatGPT mogą kupować rzeczy w imieniu użytkownika. Na początek funkcja jest dostępna dla części płacących za plan Pro w USA, którzy mają ukończone 18 lat. Każdy zakup trzeba zatwierdzić. Agent nie widzi numeru karty, tylko jednorazowy „token” płatniczy od Visy, Mastercarda albo American Express.",
+      "why": "Krótko po tym, jak United Airlines zablokowały agentów AI, OpenAI pokazuje, jak można bezpieczniej przekazać im płatności.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html" }
+      ]
+    },
+    {
+      "id": "ai-2",
+      "section": "ai",
+      "rank": 2,
+      "title": "Fed: AI to największe zagrożenie dla systemu finansowego",
+      "summary": "W ankiecie do raportu Rezerwy Federalnej USA o stabilności finansowej 87 proc. pytanych uznało sztuczną inteligencję za istotne ryzyko dla systemu finansowego. Wiosną tego roku odsetek ten wynosił 50 proc., a teraz AI stała się najczęściej wskazywanym zagrożeniem.",
+      "why": "W ciągu pół roku obawy związane z AI wyraźnie wzrosły wśród osób obserwujących rynki.",
+      "sources": [
+        { "name": "CNBC", "url": "https://cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Ozempic na początku ciąży bez większego ryzyka powikłań",
+      "summary": "Duńscy badacze przeanalizowali ponad 756 tys. ciąż z lat 2009–2023. U kobiet, które w okolicy poczęcia przyjmowały leki na odchudzanie, takie jak semaglutyd (Ozempic, Wegovy) czy liraglutyd, nie znaleziono większego ryzyka porodu przedwczesnego ani innych badanych powikłań. U kobiet stosujących te leki na cukrzycę ryzyko porodu przedwczesnego było wyższe, ale może za tym stać sama cukrzyca.",
+      "why": "Wiele kobiet zachodzi w ciążę w trakcie leczenia. To badanie obserwacyjne, więc decyzje warto podejmować z lekarzem.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261111005911.htm" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "„Gorzkie święta” Almodóvara w amerykańskich kinach",
+      "summary": "Nowy film Pedra Almodóvara „Bitter Christmas” (hiszp. „Amarga Navidad”) wszedł do kin w Nowym Jorku i Los Angeles. To opowieść o reżyserze, który pisze scenariusz, korzystając z życia bliskich mu osób. Krytycy po premierze w Cannes byli podzieleni: Variety pisało o solidnym, choć nie najlepszym Almodóvarze, a Deadline o fascynującym wglądzie w głowę mistrza.",
+      "why": "Almodóvar to jeden z najważniejszych żyjących reżyserów Europy, a ten film uchodzi za jeden z jego najbardziej osobistych.",
+      "sources": [
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/indie-films-opening-victorian-psycho-paper-tiger-almodovar-1237223240" },
+        { "name": "Variety", "url": "https://variety.com/2026/film/reviews/bitter-christmas-review-pedro-almodovar-1236753260/" }
+      ]
+    },
+    {
+      "id": "filmy-2",
+      "section": "filmy",
+      "rank": 2,
+      "title": "Finał „VisionQuest”: 3,7 mln wyświetleń w jeden dzień",
+      "summary": "Ostatni odcinek serialu Marvela „VisionQuest” obejrzano na Disney+ 3,7 mln razy na całym świecie w ciągu pierwszego dnia.",
+      "why": "Wynik pokazuje, jak duże jest zainteresowanie przed premierą filmu „Avengers: Doomsday”.",
+      "sources": [
+        { "name": "Variety", "url": "https://variety.com/2026/tv/news/visionquest-finale-ratings-views-1236947348" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Słonie „słyszą” stopami",
+      "body": "Słonie porozumiewają się niskimi pomrukami, które oprócz dźwięku wywołują też drgania gruntu. Te drgania wyczuwają receptory w stopach słonia, a przez kości docierają aż do ucha. Badania pokazują, że słonie potrafią odróżnić po drganiach różne osobniki, a także drgania wywołane przez ludzi. Według jednego z przeglądów takie sygnały mogą dochodzić nawet na ok. 3 km.",
+      "source": { "name": "Scientific American", "url": "https://blogs.scientificamerican.com/guest-blog/stealth-percussionists-of-the-animal-world/" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "historia",
+      "title": "Mit: Einstein oblał matematykę",
+      "body": "To popularna, ale nieprawdziwa historia. Z ocen Einsteina wynika, że świetnie radził sobie z matematyką i fizyką, za to słabo szło mu z francuskim, chemią i biologią. Gdy pokazano mu artykuł o rzekomo oblanej matematyce, nazwał to mitem i powiedział, że przed 15. urodzinami opanował rachunek różniczkowy i całkowy. Prawdą jest za to, że raz nie zdał egzaminu wstępnego na politechnikę w Zurychu, choć część matematyczną zaliczył.",
+      "source": { "name": "History.com", "url": "https://www.history.com/topics/inventions/einsteins-life-facts-and-fiction" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "nauka",
+      "title": "W każdej komórce mieści się ok. 2 metrów DNA",
+      "body": "DNA z jednej ludzkiej komórki rozciągnięte w jedną nić miałoby ok. 2 m długości. Wynika to z ok. 6 mld par zasad, z których każda zajmuje ok. 0,34 nanometra. A jądro komórki ma średnicę zaledwie ok. 6 mikrometrów. Mieści się w nim, bo DNA jest ciasno nawinięte na białka i poskładane w chromosomy, ok. 10 tys. razy krótsze od rozciągniętej nici.",
+      "source": { "name": "Nature Scitable", "url": "https://www.nature.com/scitable/topicpage/dna-packaging-nucleosomes-and-chromatin-310/" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1918,
+      "title": "Piłsudski przejmuje pełnię władzy",
+      "body": "14 listopada 1918 r. Rada Regencyjna rozwiązała się i przekazała Józefowi Piłsudskiemu całą zwierzchnią władzę państwową. Trzy dni wcześniej powierzyła mu tylko władzę wojskową i naczelne dowództwo. Tego samego dnia Piłsudski powierzył Ignacemu Daszyńskiemu misję utworzenia rządu, którą później przejął Jędrzej Moraczewski.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/aktualnosci/100-lat-temu-rada-regencyjna-przekazala-jozefowi-pilsudskiemu-pelnie-wladzy-panstwowej" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1889,
+      "title": "Nellie Bly rusza w podróż dookoła świata",
+      "body": "14 listopada 1889 r. amerykańska dziennikarka Nellie Bly wyruszyła z Hoboken, by pobić rekord Phileasa Fogga z powieści Juliusza Verne'a „W 80 dni dookoła świata”. Podróżowała m.in. statkami, łodziami i konno, a po drodze spotkała się z samym Verne'em. Wróciła po 72 dniach, 6 godzinach i 11 minutach, szybciej niż konkurentka z innej gazety, Elizabeth Bisland.",
+      "source": { "name": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/smart-news/nellie-blys-record-breaking-trip-around-world-was-to-her-surprise-race-180957910/" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1969,
+      "title": "Piorun trafia w rakietę Apollo 12",
+      "body": "14 listopada 1969 r. wystartowała misja Apollo 12, druga załogowa wyprawa na Księżyc. W 36. i 52. sekundzie lotu rakietę Saturn V trafiły pioruny, a w statku na chwilę wyłączyła się część elektroniki. Załoga i kontrolerzy szybko przywrócili zasilanie i misja zakończyła się sukcesem. Wyładowania wywołała sama rakieta, wlatując w silnie naelektryzowaną chmurę, więc potem zmieniono zasady startów.",
+      "source": { "name": "NASA", "url": "https://www.nasa.gov/missions/apollo/apollo-12-the-pinpoint-mission/" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Efekt potwierdzenia",
+    "definition": "To skłonność do szukania, zapamiętywania i interpretowania informacji tak, by potwierdzały to, w co już wierzymy.",
+    "origin": "Termin wprowadził angielski psycholog Peter Wason. W eksperymentach z lat 60. XX wieku badani mieli odgadnąć regułę, według której tworzono trójki liczb. Zamiast sprawdzać przykłady, które mogłyby obalić ich hipotezę, wybierali głównie te, które ją potwierdzały. Efekt jest szczególnie silny w sprawach emocjonalnych i głęboko zakorzenionych.",
+    "examples": [
+      "Kibic zapamiętuje błędy sędziego na niekorzyść swojej drużyny, a te na jej korzyść umykają mu.",
+      "Po wecie prezydenta zwolennicy i przeciwnicy ustawy czytają głównie komentarze zgodne ze swoim zdaniem.",
+      "Ktoś przekonany, że pech przychodzi w piątek 13., pamięta tylko pechowe piątki."
+    ],
+    "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Efekt_potwierdzenia" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "factfulness",
+    "title": "Factfulness",
+    "author": "Hans Rosling",
+    "day": 7,
+    "days": 7,
+    "ideaTitle": "Tydzień z „Factfulness”: świat jest lepszy, niż myślimy, ale nie dobry",
+    "idea": "Przez tydzień przeszliśmy przez najważniejsze lekcje Roslinga. Świat nie dzieli się na bogatych „nas” i biednych „ich”, bo większość ludzi żyje pośrodku. Złe wiadomości słychać głośniej, więc postęp łatwo przeoczyć. Wiele trendów nie rośnie w nieskończoność, a strach nie jest dobrą miarą ryzyka. Samotną liczbę warto porównać i podzielić. Wszystko to łączy jeden nawyk: sprawdzać swoje poglądy faktami. Wczorajsza „przepowiednia końca świata” z 1960 roku dobrze pokazuje, co się dzieje, gdy trend przedłuża się po linii bez końca.",
+    "moral": "Spokojne, oparte na faktach spojrzenie pomaga zobaczyć i postęp, i prawdziwe problemy, i lepiej wybierać, czym się martwić.",
+    "action": "Zapiszcie jedną rzecz, którą w tym tygodniu zobaczyliście inaczej dzięki tej książce, i powiedzcie o niej komuś bliskiemu.",
+    "source": { "name": "Gapminder", "url": "https://www.gapminder.org/factfulness-book/" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-14-q1",
+      "ref": "fact-1",
+      "question": "Jak słonie odbierają drgania gruntu wywołane pomrukami innych słoni?",
+      "options": ["Trąbą", "Ogonem", "Stopami i przez kości", "Kłami"],
+      "answer": 2,
+      "explanation": "Receptory w stopach wyczuwają drgania, które przez kości docierają aż do ucha."
+    },
+    {
+      "id": "2026-11-14-q2",
+      "ref": "fact-2",
+      "question": "Z czym Einstein naprawdę miał w szkole kłopoty?",
+      "options": ["Z matematyką", "Z fizyką", "Z francuskim, chemią i biologią", "Ze wszystkimi przedmiotami"],
+      "answer": 2,
+      "explanation": "Z matematyki i fizyki był świetny, gorzej szło mu z francuskim, chemią i biologią."
+    },
+    {
+      "id": "2026-11-14-q3",
+      "ref": "fact-3",
+      "question": "Ile mniej więcej miałoby DNA z jednej ludzkiej komórki po rozciągnięciu?",
+      "options": ["2 mm", "2 cm", "2 m", "2 km"],
+      "answer": 2,
+      "explanation": "Ok. 6 mld par zasad po ok. 0,34 nm każda daje ok. 2 m."
+    },
+    {
+      "id": "2026-11-14-q4",
+      "ref": "otd-1",
+      "question": "Co zrobiła Rada Regencyjna 14 listopada 1918 roku?",
+      "options": ["Ogłosiła wybory prezydenta", "Rozwiązała się i przekazała Piłsudskiemu pełnię władzy", "Uchwaliła konstytucję", "Wybrała króla Polski"],
+      "answer": 1,
+      "explanation": "11 listopada Piłsudski dostał władzę wojskową, a 14 listopada całą władzę państwową."
+    },
+    {
+      "id": "2026-11-14-q5",
+      "ref": "otd-2",
+      "question": "Czyj rekord chciała pobić Nellie Bly?",
+      "options": ["Ferdynanda Magellana", "Phileasa Fogga z powieści Verne'a", "Jamesa Cooka", "Amelii Earhart"],
+      "answer": 1,
+      "explanation": "Fogg obiegł świat w 80 dni w powieści Verne'a, a Bly zrobiła to w 72 dni."
+    },
+    {
+      "id": "2026-11-14-q6",
+      "ref": "otd-3",
+      "question": "Co wywołało wyładowania, które trafiły w rakietę Apollo 12?",
+      "options": ["Burza z piorunami nad przylądkiem", "Sama rakieta wlatująca w naelektryzowaną chmurę", "Usterka wieży startowej", "Rozbłysk na Słońcu"],
+      "answer": 1,
+      "explanation": "W chmurze nie było wcześniej piorunów, ale rakieta i jej spaliny wyzwoliły wyładowania."
+    },
+    {
+      "id": "2026-11-14-q7",
+      "ref": "concept",
+      "question": "Na czym polega efekt potwierdzenia?",
+      "options": ["Na szukaniu informacji zgodnych z tym, w co już wierzymy", "Na potwierdzaniu każdej rezerwacji", "Na wierzeniu we wszystko, co powiedzą eksperci", "Na zapominaniu własnych poglądów"],
+      "answer": 0,
+      "explanation": "Wybiórczo szukamy i zapamiętujemy to, co pasuje do naszych przekonań."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-14-r1",
+      "question": "Jak często leniwiec schodzi z drzewa na ziemię?",
+      "options": ["Codziennie", "Mniej więcej raz w tygodniu", "Raz w roku"],
+      "answer": 1,
+      "explanation": "Schodzi ok. raz w tygodniu, by się wypróżnić. Wtedy ćmy składają jaja w jego odchodach."
+    },
+    {
+      "id": "2026-11-14-r2",
+      "question": "Kim był Arnold Zwicky, który nazwał iluzję częstości?",
+      "options": ["Fizykiem z Zurychu", "Językoznawcą ze Stanfordu", "Dziennikarzem z St. Paul"],
+      "answer": 1,
+      "explanation": "Zwicky, językoznawca ze Stanfordu, użył tej nazwy w 2005 roku."
+    },
+    {
+      "id": "2026-11-14-r3",
+      "question": "Ile wirników miała maszyna, którą Paul Cornu wzniósł się w 1907 roku?",
+      "options": ["Jeden", "Dwa", "Cztery"],
+      "answer": 1,
+      "explanation": "Był to śmigłowiec z dwoma wirnikami, który uniósł się na krótko pod Lisieux."
+    }
+  ],
+  "evening": {
+    "question": "Co z „Factfulness” najbardziej zmieniło wasz sposób patrzenia na wiadomości w tym tygodniu?",
+    "hint": "Przypomnijcie sobie jedną wiadomość, która wydała się wam groźna, i zastanówcie się, czy po sprawdzeniu faktów nadal tak było."
+  }
+}

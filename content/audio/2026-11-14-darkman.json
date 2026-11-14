@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-14",
+  "file": "2026-11-14-darkman.mp3",
+  "url": "audio/2026-11-14-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-14-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "e2a6414c62854df5",
+  "duration": 1099.4,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 15.78
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Prezydent zawetował ustawę o usuwaniu nielegalnych treści z internetu",
+      "start": 16.48,
+      "end": 64.87
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Polska w europejskim zespole do rozmów o pokoju w Ukrainie",
+      "start": 65.57,
+      "end": 107.59
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Ranni policjanci z Krakowa awansują. Jest też zawiadomienie na jednego z nich",
+      "start": 108.29,
+      "end": 156.1
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Koniec świata miał nastąpić wczoraj. Przepowiednia z 1960 roku",
+      "start": 156.8,
+      "end": 212.06
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Po awarii Microsoftu rząd stawia na otwarte oprogramowanie",
+      "start": 212.76,
+      "end": 261.77
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Zełenski po spotkaniu z wysłannikami USA: Europa dołączy do rozmów",
+      "start": 262.97,
+      "end": 304.57
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Wszystkie samoloty w USA uziemione na kilka godzin",
+      "start": 305.27,
+      "end": 345.85
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Mercedes wstrzymuje inwestycje w Niemczech i rozważa zamknięcie fabryk",
+      "start": 346.55,
+      "end": 383.12
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Miliony ludzi witają papieża Leona XIV w Peru",
+      "start": 383.82,
+      "end": 423.5
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Gwinea: co najmniej 10 zabitych w starciach o zakaz wydobycia złota",
+      "start": 424.2,
+      "end": 464.87
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Finlandia wykryła atak na rosyjski okręt w Zatoce Fińskiej",
+      "start": 466.07,
+      "end": 508.14
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Litwa podzieli sieć energetyczną na siedem „wysp” na wypadek sabotażu",
+      "start": 508.84,
+      "end": 549.16
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Starship w kolejnym locie testowym. Nie udało się złapać rakiety nośnej",
+      "start": 549.86,
+      "end": 591.56
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "ChatGPT Wallet: asystent AI zrobi zakupy za ciebie",
+      "start": 592.26,
+      "end": 635.55
+    },
+    {
+      "id": "ai-2",
+      "chapter": "tematy",
+      "label": "Fed: AI to największe zagrożenie dla systemu finansowego",
+      "start": 636.25,
+      "end": 667.36
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Ozempic na początku ciąży bez większego ryzyka powikłań",
+      "start": 668.06,
+      "end": 710.34
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "„Gorzkie święta” Almodóvara w amerykańskich kinach",
+      "start": 711.04,
+      "end": 748.1
+    },
+    {
+      "id": "filmy-2",
+      "chapter": "tematy",
+      "label": "Finał „VisionQuest”: 3,7 mln wyświetleń w jeden dzień",
+      "start": 748.8,
+      "end": 770.25
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "W każdej komórce mieści się ok. 2 metrów DNA",
+      "start": 771.45,
+      "end": 804.2
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Słonie „słyszą” stopami",
+      "start": 804.9,
+      "end": 831.01
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Mit: Einstein oblał matematykę",
+      "start": 831.71,
+      "end": 865.74
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Piłsudski przejmuje pełnię władzy",
+      "start": 866.94,
+      "end": 895.56
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1889: Nellie Bly rusza w podróż dookoła świata",
+      "start": 896.26,
+      "end": 929.17
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1969: Piorun trafia w rakietę Apollo 12",
+      "start": 929.87,
+      "end": 966.15
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt potwierdzenia",
+      "start": 967.35,
+      "end": 1019.12
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Factfulness: Tydzień z „Factfulness”: świat jest lepszy, niż myślimy, ale nie dobry",
+      "start": 1020.32,
+      "end": 1082.91
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1084.11,
+      "end": 1098.9
+    }
+  ]
+}

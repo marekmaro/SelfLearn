@@ -1,6 +1,38 @@
 {
   "editions": [
     {
+      "date": "2026-11-15",
+      "headline": "Tydzień po zamachu: 10 osób w szpitalach, Requiem dla ofiar",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-1",
+          "title": "Tydzień po zamachu: 10 osób w szpitalach, Requiem dla ofiar"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-4",
+          "title": "Zadzwonił do fundacji i groził atakiem jak w Krakowie. 57-latek z zarzutem"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Zełenski: USA pytały o oddanie Donbasu w zamian za NATO"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Rosja chce „przeciąć” Ukrainę wzdłuż Dniepru"
+        }
+      ],
+      "facts": [
+        "Koty nie czują słodkiego smaku",
+        "Na Uranie lato na biegunie trwa 21 lat",
+        "Dlaczego widzimy twarze w gniazdkach i chmurach"
+      ],
+      "concept": "Prawo Moore'a"
+    },
+    {
       "date": "2026-11-14",
       "headline": "Prezydent zawetował ustawę o usuwaniu nielegalnych treści z internetu",
       "threads": [

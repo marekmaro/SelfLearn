@@ -1,0 +1,354 @@
+{
+  "date": "2026-11-15",
+  "intro": "Dziś m.in.: Kraków tydzień po zamachu, amerykańska propozycja „NATO za Donbas” i pierwszy w historii chwyt górnego stopnia Starshipa przez wieżę startową.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Tydzień po zamachu: 10 osób w szpitalach, Requiem dla ofiar",
+      "summary": "Tydzień po ataku na krakowskim Rynku Głównym w pięciu szpitalach wciąż przebywa 10 osób, a ich stan jest stabilny. Tak podał rzecznik wojewody małopolskiego. Na sobotę w Bazylice Mariackiej zaplanowano „Requiem” Mozarta w wykonaniu Capelli Cracoviensis, poświęcone pamięci ofiar. Na koncert zapraszał prezydent miasta Łukasz Gibała.",
+      "why": "Miasto wraca do codzienności, ale dla rannych i rodzin ofiar to dopiero początek długiej drogi.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/tydzien-po-tragedii-w-krakowie-w-szpitalach-pozostaje-10-osob" },
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/requiem-ku-czci-ofiar-tragedii-z-7-listopada-w-bazylice-mariackiej-0" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "„Slava UPA” na warszawskich pomnikach. Ambasada Ukrainy wskazuje na Rosję",
+      "summary": "W Warszawie zdewastowano Pomnik Bohaterów Getta, a na pomniku żołnierzy 1. Armii Wojska Polskiego pojawił się napis „Slava UPA”. Ambasada Ukrainy potępiła te czyny i nazwała je przejawem wojny hybrydowej, którą Rosja prowadzi w Europie, by skłócić Polaków i Ukraińców. Zaapelowała do Ukraińców w Polsce, by nie przyjmowali płatnych zleceń na takie akty. W Trójmieście policja zatrzymała młodego obywatela Ukrainy podejrzanego o zniszczenie siedmiu pomników.",
+      "why": "Takie prowokacje mają podsycać niechęć między sąsiadami, dlatego warto spokojnie czekać na ustalenia śledczych.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-14/upa-na-polskich-pomnikach-ambasada-ukrainy-apeluje/" },
+        { "name": "TVN24", "url": "https://tvn24.pl/trojmiasto/trojmiasto-slawa-upa-na-pomnikach-w-gdansku-i-gdyni-sprawca-dewastacji-zatrzymany-st9338391" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Polska przegrała z Rumunią i jest blisko spadku w Lidze Narodów",
+      "summary": "Reprezentacja Polski przegrała w Bukareszcie z Rumunią 1:2 w 5. kolejce Ligi Narodów. Gole dla gospodarzy zdobyli w drugiej połowie Alexandru Cicâldău (68. minuta) i Dennis Man (72. minuta), a dla Polski Marcel Reguła w 82. minucie. W październiku w Warszawie Polska wygrała z Rumunią 6:0. Porażka przybliża Biało-Czerwonych do spadku z Dywizji B.",
+      "why": "Spadek oznaczałby grę ze słabszymi rywalami i gorszą pozycję przed kolejnymi losowaniami.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-14/polska-przegrywa-z-rumunia-trzy-gole-w-kilkanascie-minut/" },
+        { "name": "Rzeczpospolita", "url": "https://sport.rp.pl/pilka-nozna/art45489201-rumunia-polska-2-1-katastrofa-w-bukareszcie-elita-nie-dla-polakow" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Zadzwonił do fundacji i groził atakiem jak w Krakowie. 57-latek z zarzutem",
+      "summary": "Policjanci z warszawskiego Mokotowa zatrzymali 57-latka, który zadzwonił do jednej z fundacji i sugerował, że może przeprowadzić atak podobny do krakowskiego. Rozmowa została nagrana. Mężczyzna usłyszał zarzut wywołania fałszywego alarmu, za co grozi od sześciu miesięcy do ośmiu lat więzienia, i trafił pod dozór policji. Tłumaczył się trudną sytuacją życiową. Po zamachu podobne zarzuty usłyszały już osoby m.in. w Elblągu.",
+      "why": "Służby traktują każdą taką groźbę poważnie, a nawet „żart” może skończyć się wyrokiem.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-14/zagrozil-atakiem-takim-jak-w-krakowie-57-latek-uslyszal-zarzut/" },
+        { "name": "TVN24", "url": "https://tvn24.pl/tvnwarszawa/mokotow/warszawa-zadzwonil-do-fundacji-i-mowil-o-ataku-w-krakowie-zostal-zatrzymany-st9338682" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Gęsta mgła i silny wiatr. Ostrzeżenia IMGW",
+      "summary": "IMGW wydał ostrzeżenia pierwszego stopnia przed gęstą mgłą na noc z soboty na niedzielę dla m.in. wielkopolskiego i lubuskiego oraz części pomorskiego, zachodniopomorskiego, kujawsko-pomorskiego, mazowieckiego i łódzkiego. Widzialność może spaść poniżej 200 m. W niedzielę od 4 do 16 na Dolnym Śląsku i Opolszczyźnie wiatr może mieć w porywach do 80 km/h.",
+      "why": "Mgła i silny wiatr utrudniają jazdę, zwłaszcza rano. Warto zwolnić i włączyć światła przeciwmgielne.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-14/uwaga-na-mgle-i-silny-wiatr-ostrzezenia-dla-kilku-wojewodztw/" },
+        { "name": "TVN24", "url": "https://tvn24.pl/tvnmeteo/prognoza/ostrzezenia-imgw-tu-noc-moze-byc-niebezpieczna-st9339052" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Zełenski: USA pytały o oddanie Donbasu w zamian za NATO",
+      "summary": "Według prezydenta Ukrainy Wołodymyra Zełenskiego amerykańscy negocjatorzy po raz pierwszy zapytali, czy Ukraina wycofałaby wojska z Donbasu w zamian za członkostwo w NATO. Zełenski zaznaczył, że nie było konkretnej oferty. Powiedział, że Ukraina nie wycofa wojsk, ale mogłaby poddać sprawę pod referendum, jeśli dostałaby mocne gwarancje bezpieczeństwa i pieniądze na odbudowę, bez uznania okupowanych ziem za rosyjskie. Rosyjskie MSZ twierdzi, że ten temat nie padł w rozmowach z wysłannikami USA w Moskwie.",
+      "why": "To pierwsza propozycja, która łączy sporne terytorium z członkostwem Ukrainy w NATO.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/us-floats-nato-membership-for-ukraine-in-exchange-for-donbas-withdrawal-zelensky-says/" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/14/us-suggested-ukraine-cede-parts-of-donbas-to-russia-to-become-part-of-nato" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Trump, Xi i Putin spotkają się w Chinach",
+      "summary": "Biały Dom i Kreml potwierdziły, że Donald Trump, Xi Jinping i Władimir Putin spotkają się w czwartek 19 listopada w Shenzhen, przy okazji szczytu APEC. To pierwsze takie spotkanie w tym składzie. Według urzędników Trump chce rozmawiać o ograniczeniu arsenałów jądrowych i o wojnie z Iranem, ale nie o wojnie w Ukrainie. Jeden z nich powiedział, że nie spodziewa się żadnego porozumienia. Zełenski obawia się, że spotkanie posłuży do rozmów o Ukrainie bez udziału Kijowa.",
+      "why": "Przywódcy trzech mocarstw jądrowych rzadko siadają razem, a ich rozmowy mogą wpłynąć na bezpieczeństwo całego świata.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china" },
+        { "name": "CBS News", "url": "https://www.cbsnews.com/news/trump-putin-xi-jinping-meeting-china-us-russia-talks/" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Węgry: miliony w gotówce zakopane w lasach",
+      "summary": "Węgierscy śledczy w dwudniowej akcji zabezpieczyli ponad 17,5 mln euro w gotówce, zakopanej w lasach i ukrytej w budynkach gospodarczych, magazynach, domu i sejfie. Pieniądze mają związek ze śledztwem wobec byłego ministra rozwoju narodowego Miklósa Sesztáka, który według śledczych w latach 2015–2018 przez pośrednika przyjął ponad 11 mld forintów nielegalnych korzyści. Zarzutów nie udowodniono.",
+      "why": "Nowy rząd Pétera Magyara rozlicza korupcję z czasów 16-letnich rządów Viktora Orbána, a to jedno z jego głośnych śledztw.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/14/hungary-seizes-millions-in-cash-found-buried-in-forests-amid-corruption-investigation" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/14/hungarian-investigators-uncover-19-5m-hidden-in-forests-and-buildings" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Chile: strajk przewoźników po podwyżkach cen paliw",
+      "summary": "W Chile wzrost cen paliw wywołał strajki w transporcie i protesty w całym kraju. Związki kierowców ciężarówek zablokowały dwie główne autostrady. Strajk zakończył się w piątek, gdy rząd prezydenta José Antonio Kasta wysłał do Kongresu projekt ustawy cofającej planowane podwyżki. Poparcie dla prezydenta spadło do 24 proc., a złość z powodu kosztów życia nadal rośnie.",
+      "why": "Ceny paliw rosną na świecie po wojnie z Iranem, a ich skutki najmocniej odczuwają kierowcy i najbiedniejsi.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Bomba przy zakładzie produkcji etanolu w USA. Ewakuowano okolicę",
+      "summary": "W piątek w pobliżu zakładu produkującego etanol w Peorii w stanie Illinois znaleziono podejrzany ładunek, który policja uznała za realne zagrożenie. Mieszkańców i pracowników w promieniu ok. 1,6 km ewakuowano. Wieczorem ładunek unieszkodliwiono, a w sobotę po południu zniesiono nakaz ewakuacji. Sprawę bada FBI. Nikt nie został ranny ani zatrzymany.",
+      "why": "Zakłady chemiczne i paliwowe to szczególnie wrażliwe cele, a wybuch mógł mieć poważne skutki.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/14/g-s1-153781/bomb-ethanol-plant-peoria-illinois-evacuations" },
+        { "name": "CBS News", "url": "https://www.cbsnews.com/news/peoria-illinois-bomb-threat-evacuation/" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Rosja chce „przeciąć” Ukrainę wzdłuż Dniepru",
+      "summary": "Według ukraińskich urzędników cytowanych przez Polsat News Rosja atakuje mosty w Kijowie i sieć energetyczną, by rozdzielić kraj wzdłuż Dniepru. Chodzi o utrudnienie transportu między brzegami rzeki i przesyłu prądu z zachodu na wschód. Inżynierowie nazywają to „efektem wyspowym”, czyli rozbijaniem sieci na odizolowane części. Tylko w ciągu jednej doby rosyjskie ataki zabiły co najmniej siedmiu cywilów i raniły 80, najmocniej ucierpiało Zaporoże.",
+      "why": "Przed zimą zniszczona sieć energetyczna oznacza dla milionów ludzi brak prądu i ogrzewania.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-14/chca-przeciac-ukraine-na-pol-ujawniaja-strategie-moskwy/" },
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/at-least-7-killed-80-injured-in-russian-attacks-across-ukraine-zaporizhzhia-among-worst-hit" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "SpaceX po raz pierwszy złapał górny stopień Starshipa",
+      "summary": "W sobotę SpaceX po raz pierwszy złapał ramionami wieży startowej górny stopień rakiety Starship, który wrócił z orbity. Statek obleciał Ziemię 14 razy i wylądował w bazie Starbase w Teksasie. Rakieta nośna z tego samego lotu nie została złapana i eksplodowała nad Zatoką Meksykańską. Pierwszy chwyt rakiety nośnej przez wieżę SpaceX wykonał w październiku 2024 roku.",
+      "why": "Odzyskanie obu części rakiety to krok do pełnego wielokrotnego użycia, które ma znacznie obniżyć koszty lotów w kosmos.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "AI traci zaufanie Amerykanów. Demokraci szykują przepisy",
+      "summary": "Według Axios branża AI mierzy się z kryzysem zaufania. W wyborach połowy kadencji w USA mieszkańcy w 40 z 41 lokalnych głosowań odrzucili budowę centrów danych. Demokraci, którzy w styczniu przejmą kontrolę nad Kongresem, przygotowują przepisy o niezależnych testach bezpieczeństwa zaawansowanych modeli AI i odpowiedzialności firm za szkodliwe wyniki. Do tego akcje Nvidii straciły w tym tygodniu 13 proc.",
+      "why": "Opór wobec centrów danych i nowe przepisy mogą spowolnić rozwój AI w USA.",
+      "sources": [
+        { "name": "Axios", "url": "https://www.axios.com/2026/11/14/ai-trust-nvidia-tech-stocks" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "USA straciły status kraju wolnego od odry",
+      "summary": "Według badaczy znających sprawę Panamerykańska Organizacja Zdrowia (PAHO) uznała, że odra w USA znów krąży bez przerwy od ponad 12 miesięcy, więc kraj traci status kraju, w którym ją wyeliminowano. Oficjalne ogłoszenie zaplanowano na 17 listopada. Według CDC w 2026 roku w USA odnotowano 5412 przypadków, ponad 590 hospitalizacji i co najmniej sześć zgonów. Wcześniej status straciły też Kanada, Hiszpania i Wielka Brytania.",
+      "why": "Odra to jedna z najbardziej zaraźliwych chorób, a status mówi o tym, czy kraj dobrze chroni się przed jej powrotem.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho" },
+        { "name": "CBS News", "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "„Ebenezer” z Deppem wygrywa weekend w kinach",
+      "summary": "„Ebenezer” z Johnnym Deppem jako Scrooge'em prowadzi w amerykańskim box office. W piątek zarobił 6,7 mln dolarów, a cały weekend miał przynieść ok. 20 mln. Widzowie wystawili mu ocenę A- w ankiecie CinemaScore, choć na Rotten Tomatoes ma tylko 33 proc. pozytywnych recenzji. Weekend w kinach był jednak słaby, ze wpływami ok. 80 mln dolarów ze wszystkich filmów.",
+      "why": "Wynik pokazuje, że widzowie mogą ocenić film zupełnie inaczej niż krytycy.",
+      "sources": [
+        { "name": "Variety", "url": "https://variety.com/2026/film/box-office/ebenezer-box-office-johnny-depp-opening-day-1236947684/" },
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/box-office-ebenezer-1237222749/" }
+      ]
+    },
+    {
+      "id": "filmy-2",
+      "section": "filmy",
+      "rank": 2,
+      "title": "Indyjska „Ramajana” przekroczyła 100 mln dolarów",
+      "summary": "Film „Ramayana: Rise of a Legend” w reżyserii Nitesha Tiwariego zarobił na świecie ponad 100 mln dolarów, z czego 67,1 mln w Indiach. Na otwarcie zebrał 55,7 mln dolarów, co jest rekordem otwarcia filmu indyjskiego w okresie święta Diwali. Widzowie oceniają go bardzo dobrze, ale przy budżecie szacowanym na ok. 250 mln dolarów zysk wciąż nie jest pewny.",
+      "why": "Indyjskie kino coraz mocniej konkuruje z Hollywood na światowym rynku.",
+      "sources": [
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/box-office-ramayana-rise-of-a-legend-1237222031/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Koty nie czują słodkiego smaku",
+      "body": "Do rozpoznawania słodyczy potrzebny jest receptor złożony z dwóch białek. U kotów gen jednego z nich, Tas1r2, jest uszkodzony, więc receptor nie może powstać. Ten sam defekt mają tygrysy i gepardy. W doświadczeniu koty nie wybierały wody z cukrem chętniej niż zwykłej, za to dobrze czują smak umami, typowy dla mięsa.",
+      "source": { "name": "Scientific American", "url": "https://www.scientificamerican.com/article/strange-but-true-cats-cannot-taste-sweets/" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "kosmos",
+      "title": "Na Uranie lato na biegunie trwa 21 lat",
+      "body": "Oś Urana jest przechylona o ok. 98 stopni, więc planeta krąży wokół Słońca niemal „na boku”. Jeden obieg trwa 84 lata ziemskie, dlatego każdy biegun ma ok. 42 lata dnia, a potem 42 lata nocy. Pojedyncza pora roku trwa ok. 21 lat. Naukowcy sądzą, że Uran został przewrócony przez zderzenie z dużym obiektem dawno temu.",
+      "source": { "name": "NASA Space Place", "url": "https://spaceplace.nasa.gov/weather-on-other-planets/en/" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "psychologia",
+      "title": "Dlaczego widzimy twarze w gniazdkach i chmurach",
+      "body": "Widzenie twarzy w przedmiotach, np. w gniazdku elektrycznym czy przodzie samochodu, to pareidolia. Badania mózgu pokazują, że takie „twarze” pobudzają ten sam obszar, który rozpoznaje prawdziwe twarze: zakręt wrzecionowaty. Lewa część reaguje podobnie na twarze i przedmioty, które je przypominają, a prawa znacznie silniej na prawdziwe twarze.",
+      "source": { "name": "Scientific American", "url": "https://www.scientificamerican.com/article/the-brain-sees-faces-everywhere/" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1920,
+      "title": "Powstaje Wolne Miasto Gdańsk",
+      "body": "15 listopada 1920 r. na podstawie traktatu wersalskiego oficjalnie proklamowano Wolne Miasto Gdańsk pod opieką Ligi Narodów, reprezentowanej przez Wysokiego Komisarza. Większość z ponad 400 tys. mieszkańców stanowili Niemcy. Wolne Miasto istniało do wybuchu II wojny światowej 1 września 1939 r.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/aktualnosci/wolne-miasto-gdansk" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1889,
+      "title": "Brazylia zostaje republiką",
+      "body": "15 listopada 1889 r. oficerowie armii pod wodzą marszałka Deodoro da Fonseki bez rozlewu krwi obalili w Rio de Janeiro monarchię i ogłosili republikę. Cesarz Piotr II, nie chcąc wojny domowej, przyjął wygnanie i dwa dni później z rodziną wypłynął do Europy. Zmarł w Paryżu w 1891 r. 15 listopada to w Brazylii święto państwowe.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Proclamation_of_the_Republic_(Brazil)" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1971,
+      "title": "Intel przedstawia mikroprocesor 4004",
+      "body": "15 listopada 1971 r. ukazała się pierwsza reklama układu Intel 4004, uważanego za pierwszy dostępny w sprzedaży mikroprocesor. Powstał na zamówienie japońskiej firmy Busicom, która chciała chipów do kalkulatorów. Pierwszeństwo bywa kwestionowane, bo podobne układy powstały prawie w tym samym czasie, m.in. w Texas Instruments.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Intel_4004" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Prawo Moore'a",
+    "definition": "To obserwacja, że liczba tranzystorów w układzie scalonym podwaja się mniej więcej co dwa lata przy niewielkim wzroście kosztów.",
+    "origin": "Gordon Moore, późniejszy współzałożyciel Intela, w 1965 roku przewidział w czasopiśmie „Electronics”, że liczba elementów w układach będzie się podwajać co rok przez dekadę. W 1975 roku zmienił prognozę na podwajanie co dwa lata. To nie prawo przyrody, tylko trend napędzany przez przemysł. Samemu Moore'owi nazwa „prawo” niezbyt się podobała.",
+    "examples": [
+      "Intel 4004 z 1971 roku miał ok. 2300 tranzystorów, a dzisiejsze procesory mają ich miliardy.",
+      "Nowy telefon kupiony po kilku latach jest zwykle wyraźnie szybszy od starego przy podobnej cenie.",
+      "Szybki wzrost mocy chipów napędza dziś rozwój sztucznej inteligencji."
+    ],
+    "source": { "name": "Britannica", "url": "https://www.britannica.com/technology/Moores-law" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "zycie-3-0",
+    "title": "Życie 3.0. Człowiek w erze sztucznej inteligencji",
+    "author": "Max Tegmark",
+    "day": 1,
+    "days": 7,
+    "ideaTitle": "Trzy etapy życia: sprzęt i oprogramowanie",
+    "idea": "Fizyk z MIT Max Tegmark proponuje opisywać życie jak komputer: ciało to „sprzęt”, a wiedza i zachowania to „oprogramowanie”. Życie 1.0, np. bakterie, nie może zmienić ani jednego, ani drugiego, bo wszystko ustala ewolucja. Życie 2.0, czyli ludzie, dostaje sprzęt od ewolucji, ale może przeprogramować swoje oprogramowanie: uczyć się języków, zawodów i zmieniać poglądy. Życie 3.0 mogłoby projektować na nowo i swoje oprogramowanie, i swój sprzęt. Takim etapem mogłaby być zaawansowana sztuczna inteligencja. Tegmark pyta, jak sprawić, by to przejście wyszło ludziom na dobre.",
+    "moral": "Siłą ludzi jest to, że mogą się uczyć i zmieniać przez całe życie, czego nie potrafią organizmy prostsze od nas.",
+    "action": "Pomyślcie o jednej umiejętności, której nauczyliście się jako dorośli. To przykład waszego „przeprogramowania” w stylu Życia 2.0.",
+    "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Life_3.0" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-15-q1",
+      "ref": "fact-1",
+      "question": "Dlaczego koty nie czują słodkiego smaku?",
+      "options": ["Mają za mało kubków smakowych", "Gen potrzebny do receptora słodyczy jest u nich uszkodzony", "Ślina kotów rozkłada cukier", "Słodycz czują tylko kocięta"],
+      "answer": 1,
+      "explanation": "Uszkodzony gen Tas1r2 sprawia, że receptor słodkiego smaku nie może powstać."
+    },
+    {
+      "id": "2026-11-15-q2",
+      "ref": "fact-2",
+      "question": "Ile mniej więcej trwa jedna pora roku na Uranie?",
+      "options": ["3 miesiące", "1 rok", "21 lat", "84 lata"],
+      "answer": 2,
+      "explanation": "Obieg trwa 84 lata, a przez ogromne nachylenie osi jedna pora roku trwa ok. 21 lat."
+    },
+    {
+      "id": "2026-11-15-q3",
+      "ref": "fact-3",
+      "question": "Jak nazywa się widzenie twarzy w przedmiotach, np. w gniazdku?",
+      "options": ["Synestezja", "Pareidolia", "Prozopagnozja", "Déjà vu"],
+      "answer": 1,
+      "explanation": "Pareidolia to dopatrywanie się znanych kształtów, zwłaszcza twarzy, w przypadkowych wzorach."
+    },
+    {
+      "id": "2026-11-15-q4",
+      "ref": "otd-1",
+      "question": "Pod czyją opieką było Wolne Miasto Gdańsk?",
+      "options": ["Niemiec", "Ligi Narodów", "Wielkiej Brytanii", "Polski"],
+      "answer": 1,
+      "explanation": "Liga Narodów sprawowała opiekę przez swojego Wysokiego Komisarza."
+    },
+    {
+      "id": "2026-11-15-q5",
+      "ref": "otd-3",
+      "question": "Do czego miał pierwotnie służyć układ Intel 4004?",
+      "options": ["Do kalkulatorów", "Do rakiet kosmicznych", "Do telewizorów", "Do zegarków"],
+      "answer": 0,
+      "explanation": "Japońska firma Busicom zamówiła u Intela chipy do kalkulatorów."
+    },
+    {
+      "id": "2026-11-15-q6",
+      "ref": "concept",
+      "question": "Co mówi prawo Moore'a w wersji z 1975 roku?",
+      "options": ["Ceny komputerów spadają o połowę co rok", "Liczba tranzystorów w układzie podwaja się mniej więcej co dwa lata", "Prędkość internetu rośnie dziesięciokrotnie co dekadę", "Komputery zużywają coraz więcej prądu"],
+      "answer": 1,
+      "explanation": "W 1965 roku Moore mówił o podwajaniu co rok, a w 1975 roku zmienił to na co dwa lata."
+    },
+    {
+      "id": "2026-11-15-q7",
+      "ref": "book",
+      "question": "Czym według Tegmarka różni się Życie 3.0 od Życia 2.0?",
+      "options": ["Może się rozmnażać", "Może przeprojektować nie tylko oprogramowanie, ale i własny sprzęt", "Żyje dłużej", "Mówi wieloma językami"],
+      "answer": 1,
+      "explanation": "Ludzie zmieniają swoje „oprogramowanie”, czyli wiedzę i nawyki, a Życie 3.0 mogłoby zmieniać także swoje „ciało”."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-15-r1",
+      "question": "Na jaką odległość według jednego z przeglądów mogą dochodzić drgania wywołane pomrukami słoni?",
+      "options": ["Ok. 30 m", "Ok. 3 km", "Ok. 300 km"],
+      "answer": 1,
+      "explanation": "Sygnały sejsmiczne słoni mogą według przeglądu dochodzić nawet na ok. 3 km."
+    },
+    {
+      "id": "2026-11-15-r2",
+      "question": "Ile dni zajęła Nellie Bly podróż dookoła świata?",
+      "options": ["Ok. 72", "Ok. 80", "Ok. 100"],
+      "answer": 0,
+      "explanation": "Wróciła po 72 dniach, 6 godzinach i 11 minutach, szybciej niż fikcyjny Phileas Fogg."
+    },
+    {
+      "id": "2026-11-15-r3",
+      "question": "Kto wprowadził pojęcie efektu potwierdzenia?",
+      "options": ["Daniel Kahneman", "Peter Wason", "Hans Rosling"],
+      "answer": 1,
+      "explanation": "Angielski psycholog Peter Wason badał to w latach 60. na zadaniu z trójkami liczb."
+    }
+  ],
+  "evening": {
+    "question": "Czego chcielibyście się jeszcze nauczyć razem, żeby „przeprogramować się” jak Życie 2.0?",
+    "hint": "Może to być taniec, język, gotowanie nowej kuchni albo wspólny sport. Wybierzcie coś, co da się zacząć w tym miesiącu."
+  }
+}

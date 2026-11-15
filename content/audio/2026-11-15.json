@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-15",
+  "file": "2026-11-15.mp3",
+  "url": "audio/2026-11-15.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-15.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "27be6b420387ed2e",
+  "duration": 1016.15,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 14.11
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Tydzień po zamachu: 10 osób w szpitalach, Requiem dla ofiar",
+      "start": 14.81,
+      "end": 50.66
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "„Slava UPA” na warszawskich pomnikach. Ambasada Ukrainy wskazuje na Rosję",
+      "start": 51.36,
+      "end": 96.09
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Polska przegrała z Rumunią i jest blisko spadku w Lidze Narodów",
+      "start": 96.79,
+      "end": 134.3
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Zadzwonił do fundacji i groził atakiem jak w Krakowie. 57-latek z zarzutem",
+      "start": 135,
+      "end": 178.28
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Gęsta mgła i silny wiatr. Ostrzeżenia IMGW",
+      "start": 178.98,
+      "end": 217.82
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Zełenski: USA pytały o oddanie Donbasu w zamian za NATO",
+      "start": 219.02,
+      "end": 267.06
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Trump, Xi i Putin spotkają się w Chinach",
+      "start": 267.76,
+      "end": 312.43
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Węgry: miliony w gotówce zakopane w lasach",
+      "start": 313.13,
+      "end": 356.39
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Chile: strajk przewoźników po podwyżkach cen paliw",
+      "start": 357.09,
+      "end": 394.38
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Bomba przy zakładzie produkcji etanolu w USA. Ewakuowano okolicę",
+      "start": 395.08,
+      "end": 433.36
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Rosja chce „przeciąć” Ukrainę wzdłuż Dniepru",
+      "start": 434.56,
+      "end": 476.44
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "SpaceX po raz pierwszy złapał górny stopień Starshipa",
+      "start": 477.14,
+      "end": 518.78
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "AI traci zaufanie Amerykanów. Demokraci szykują przepisy",
+      "start": 519.48,
+      "end": 561.55
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "USA straciły status kraju wolnego od odry",
+      "start": 562.25,
+      "end": 607.74
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "„Ebenezer” z Deppem wygrywa weekend w kinach",
+      "start": 608.44,
+      "end": 647.67
+    },
+    {
+      "id": "filmy-2",
+      "chapter": "tematy",
+      "label": "Indyjska „Ramajana” przekroczyła 100 mln dolarów",
+      "start": 648.37,
+      "end": 684.76
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Koty nie czują słodkiego smaku",
+      "start": 685.96,
+      "end": 713.47
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Na Uranie lato na biegunie trwa 21 lat",
+      "start": 714.17,
+      "end": 743.59
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Dlaczego widzimy twarze w gniazdkach i chmurach",
+      "start": 744.29,
+      "end": 770.95
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1920: Powstaje Wolne Miasto Gdańsk",
+      "start": 772.15,
+      "end": 802.93
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1889: Brazylia zostaje republiką",
+      "start": 803.63,
+      "end": 836.12
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1971: Intel przedstawia mikroprocesor 4004",
+      "start": 836.82,
+      "end": 868.75
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Prawo Moore'a",
+      "start": 869.95,
+      "end": 926.37
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Życie 3.0. Człowiek w erze sztucznej inteligencji: Trzy etapy życia: sprzęt i oprogramowanie",
+      "start": 927.57,
+      "end": 998.63
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 999.83,
+      "end": 1015.65
+    }
+  ]
+}

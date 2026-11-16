@@ -1,0 +1,350 @@
+{
+  "date": "2026-11-16",
+  "intro": "Dziś m.in.: mniejsza, niż się obawiano, redukcja wojsk USA w Europie i szansa na stałą bazę w Polsce, tragiczna lawina w Tatrach i próba sabotażu w Estonii.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Z centrum Warszawy znikają betonowe zapory. Wrócą w weekendy",
+      "summary": "W nocy z niedzieli na poniedziałek ratusz usuwa betonowe zapory z ulic prowadzących do Krakowskiego Przedmieścia: Karowej, Świętokrzyskiej, Królewskiej i Miodowej. Ustawiono je na zalecenie policji po zamachu w Krakowie 7 listopada. Od poniedziałku autobusy kilku linii, m.in. 116, 175 i 180, wracają na stałe trasy. W weekendy i podczas wydarzeń zapory będą ustawiane ponownie.",
+      "why": "Miasta szukają sposobu, by chronić tłumy na deptakach, a zarazem nie utrudniać codziennego ruchu.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/warszawa-betonowe-zapory-znikna-w-nocy-z-ulic-dochodzacych-do-krakowskiego-przedmiescia" },
+        { "name": "TVN24", "url": "https://tvn24.pl/tvnwarszawa/srodmiescie/warszawa-betonowe-zapory-znikaja-autobusy-wracaja-na-stale-trasy-st9339730" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Lawina w Tatrach. Nie żyje turysta",
+      "summary": "W niedzielę w rejonie Żółtej Turni lawina porwała mężczyznę, który spadł do Doliny Pańszczycy i został całkowicie zasypany. Zgłoszenie przyszło o 11.45 od jego towarzysza zjeżdżającego na snowboardzie. Ratownicy TOPR dolecieli śmigłowcem i odnaleźli go po wystającym plecaku ok. 30 cm pod śniegiem, ale nie udało się go uratować. W Tatrach obowiązuje pierwszy stopień zagrożenia lawinowego, a wiatr utworzył na zboczach niebezpieczne nawiewy śniegu.",
+      "why": "Nawet najniższy stopień zagrożenia nie znaczy, że lawin nie ma. Zimą w góry warto zabrać detektor, sondę i łopatę.",
+      "sources": [
+        { "name": "TVN24", "url": "https://tvn24.pl/polska/smiertelny-wypadek-w-tatrach-turysta-zasypany-przez-lawine-w-rejonie-zoltej-turni-st9340437" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "GUS potwierdził: inflacja spadła do 3,5 proc.",
+      "summary": "Według ostatecznych danych GUS ceny w październiku były o 3,5 proc. wyższe niż przed rokiem, wobec 4,1 proc. we wrześniu. W ciągu miesiąca spadły o 0,4 proc. Głównym powodem jest program „Ceny Paliwa Niżej”, który obniżył VAT na paliwa z 23 do 8 proc., a ceny transportu spadły w miesiąc o 6,1 proc. Za to węgiel i inne paliwa do ogrzewania zdrożały w miesiąc o 11,2 proc., a żywność kosztuje prawie tyle samo co rok temu.",
+      "why": "Niższa inflacja to wolniejszy wzrost cen w sklepach, ale część spadku wynika z czasowej obniżki podatków.",
+      "sources": [
+        { "name": "Bankier.pl", "url": "https://www.bankier.pl/wiadomosc/Inflacja-w-dol-dzieki-paliwom-ale-wegiel-drozeje-Ostateczne-dane-GUS-za-pazdziernik-9228292.html" },
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/dane-gospodarcze/art45483701-gus-potwierdzil-inflacja-w-pazdzierniku-powrocila-do-przedzialu-celu-nbp" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "„Pan Tadeusz” z efektami AI w Lublinie",
+      "summary": "W Centrum Spotkania Kultur w Lublinie 14 i 15 listopada wystawiono teatralno-muzyczne widowisko „Pan Tadeusz” w reżyserii Przemysława Stippy. Na scenie wystąpiło ponad stu wykonawców z orkiestrą i chórem, a twórcy wykorzystali efekty stworzone przy pomocy sztucznej inteligencji. Na widowni była para prezydencka. Producent Arkadiusz Lech mówił, że chodzi o widowisko dla wszystkich, które pokaże piękno tekstu Mickiewicza.",
+      "why": "To przykład, jak klasyka szuka nowych widzów dzięki nowym technologiom.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-15/wyjatkowy-spektakl-w-lublinie-na-widowni-para-prezydencka/" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Sondaż: więcej przeciwników niż zwolenników „resetu” Trybunału",
+      "summary": "W sondażu United Surveys by IBRiS dla Wirtualnej Polski 47,7 proc. badanych sprzeciwiło się zaproponowanemu przez PSL „resetowi” Trybunału Konstytucyjnego, a 44,2 proc. go poparło. Propozycja zakłada odwołanie wszystkich obecnych sędziów i wybór 15 nowych większością, która wymaga porozumienia rządu z opozycją. Przeciw jest 65 proc. wyborców koalicji rządzącej, a wśród wyborców opozycji 51 proc. jest za.",
+      "why": "Spór o Trybunał trwa od lat, a sondaż pokazuje, że Polacy nie są zgodni co do sposobu jego zakończenia.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-15/reset-w-tk-proponowany-przez-psl-w-sondazu-dla-wp-477-proc-badanych-przeciw-442-proc-za/" },
+        { "name": "Wirtualna Polska", "url": "https://wiadomosci.wp.pl/reset-konstytucyjny-nowy-sondaz-uwage-zwracaja-odpowiedzi-jednej-grupy-7350605711276064a" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Zełenski: ukraińskie drony wyłączyły 55 proc. rosyjskich rafinerii",
+      "summary": "Według prezydenta Ukrainy Wołodymyra Zełenskiego ukraińskie ataki wyłączyły z działania 55 proc. mocy przerobowych rosyjskich rafinerii. Ukraiński sztab generalny podał, że w nocy uderzono w dwa duże zakłady petrochemiczne w Tatarstanie, lotnisko wojskowe Achtubinsk w obwodzie astrachańskim i miejsce startu dronów w obwodzie orłowskim. W tym samym czasie rosyjskie ataki zabiły w Ukrainie cztery osoby i raniły 69, a obwód odeski znalazł się pod zmasowanym ostrzałem.",
+      "why": "Obie strony uderzają w energetykę przeciwnika. To jednak ukraińskie dane, a niezależni analitycy wcześniej podawali niższe liczby.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/ukrainian-drone-attacks-neutralized-55-of-russias-oil-refining-capacity-zelensky-says/" },
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/ukraine-war-latest-russia-launches-mass-attack-on-odesa-oblast-as-ukraine-strikes-airfield-drone-launch-site-in-russia/" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Iran atakuje dronami radar USA w Bahrajnie",
+      "summary": "Irańska Gwardia Rewolucyjna twierdzi, że wysłała sześć dronów na amerykański radar w bazie Riffa w Bahrajnie, w odwecie za amerykańskie uderzenie na wieżę telekomunikacyjną w południowym Iranie. Armia Bahrajnu podała, że jej obrona powietrzna odparła kilka irańskich ataków, a MSZ nazwało to wznowieniem irańskiej agresji. Wojsko USA nie skomentowało jeszcze niedzielnego ataku. Twierdzeń żadnej ze stron nie da się niezależnie potwierdzić.",
+      "why": "Wojna z Iranem nie wygasa, a każdy taki atak grozi rozszerzeniem konfliktu na kraje Zatoki Perskiej.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/15/iran-says-it-targets-us-radar-in-bahrain-what-do-we-know" },
+        { "name": "CBS News", "url": "https://www.cbsnews.com/live-updates/us-iran-war-trump-nuclear-material-no-deal/" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Piąta sobota protestów we Francji",
+      "summary": "W sobotę we Francji po raz piąty z rzędu protestowano przeciw rosnącym kosztom życia, za lepszym finansowaniem szkół i przeciw projektowi ustawy o policji. Według władz w całym kraju demonstrowało ok. 106 tys. osób, a według związków studenckich ok. 200 tys. Zatrzymano 219 osób. W Marsylii, gdzie obowiązywał zakaz zgromadzeń, policja użyła gazu łzawiącego i armatki wodnej. Związki zapowiedziały kolejny strajk na wtorek.",
+      "why": "Fala protestów, która zaczęła się od blokad szkół we wrześniu, rozlała się na inne kraje Europy.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/14/france-sees-fifth-consecutive-saturday-of-nationwide-protests" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/14/more-than-100000-rally-across-france-in-new-yellow-vest-protests" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Ulewy zmyły namioty w Gazie. Cztery kraje apelują o pomoc",
+      "summary": "Ministrowie spraw zagranicznych Australii, Kanady, Włoch i Wielkiej Brytanii wezwali Izrael do natychmiastowego wpuszczenia pomocy humanitarnej do Strefy Gazy. Ulewy w tym miesiącu zmyły dziesiątki tysięcy namiotów, a według ministrów 150 tys. namiotów i innych potrzebnych rzeczy czeka na granicy. Włochy przeznaczyły 5 mln euro na pomoc po powodziach. Odpowiedzi Izraela na apel na razie nie ma.",
+      "why": "Przed zimą tysiące rodzin w Gazie zostały bez dachu nad głową.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/15/australia-canada-italy-and-the-uk-urge-israel-to-allow-aid-into-gaza" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Szczytu NATO w Albanii w 2027 roku nie będzie",
+      "summary": "Premier Albanii Edi Rama ogłosił, że szczyt NATO w 2027 roku nie odbędzie się w Tiranie, a jeśli dojdzie do szczytu w 2028 roku, to tam. Albania wydaje na obronę ok. 1,49 proc. PKB, mniej niż dawny cel 2 proc. i daleko od celu 5 proc. przyjętego w 2025 roku. Według Al Jazeery NATO rozważa też rezygnację z corocznych szczytów przywódców.",
+      "why": "Sojusz chce wymusić na członkach wyższe wydatki na obronę, a w tle są napięcia z USA.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/13/albanias-pm-says-2027-nato-summit-will-not-be-held-in-tirana" },
+        { "name": "Polsat News", "url": "https://polsatnews.pl/wiadomosc/2026-11-15/tarcia-w-nato-media-szczytu-w-albanii-nie-bedzie" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Bloomberg: USA wycofają z Europy ok. 5 tys. żołnierzy, a nie 25 tys.",
+      "summary": "Według Bloomberga redukcja wojsk USA w Europie ma być mniejsza, niż się obawiano. Wycofanych ma zostać ok. 5 tys. żołnierzy, głównie z Niemiec, zamiast obawianych nawet 25 tys., a wschodnia flanka NATO ma zostać wzmocniona. Wiceszefowa MON Magdalena Sobkowiak-Czarnecka mówiła, że z przeglądu wynika, iż w Polsce powinna powstać stała baza wojsk USA. Ostateczną decyzję podejmie Donald Trump. Kongres zakazał zmniejszania liczby żołnierzy w Europie poniżej 76 tys.",
+      "why": "Obecność wojsk USA to jedna z głównych gwarancji bezpieczeństwa Polski.",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/dyplomacja/art45489531-bloomberg-usa-moga-wycofac-z-europy-ok-5-tys-zolnierzy-ale-wschodnia-flanka-ma-zyskac" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-15/wycofuja-amerykanskich-zolnierzy-z-europy-media-wiekszosc-z-jednego-kraju/" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "section": "bezpieczenstwo",
+      "rank": 2,
+      "title": "Estonia: próba sabotażu u producenta dronów. Kraj zamknie granicę z Rosją",
+      "summary": "W nocy na 14 listopada sprawcy próbowali wywołać wybuch i podpalić siedzibę estońskiej firmy Threod Systems, która w Viimsi pod Tallinem produkuje drony i systemy obserwacji. Nikt nie został ranny, a szkody były niewielkie. Według estońskich służb atak zlecił rosyjski wywiad wojskowy GRU. Zatrzymano ośmiu podejrzanych, wszystkich z Łotwy. Szef MSZ Margus Tsahkna zapowiedział zamknięcie przejść granicznych z Rosją, według jednego z raportów od 1 grudnia.",
+      "why": "To kolejny atak na estońską zbrojeniówkę po podpaleniu firmy Milrem Robotics w sierpniu.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/15/estonian-drone-maker-targeted-by-gru-ordered-sabotage-attempt-pm-says" },
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/estonia-to-close-border-with-russia-after-moscow-linked-sabotage-attempt-on-drone-maker/" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Sekretarz skarbu USA chce „gruntownych zmian” w Nvidii",
+      "summary": "Sekretarz skarbu USA Scott Bessent wezwał zarząd Nvidii do „gruntownych zmian” i zatrudnienia prezesa spoza firmy. Pytał, czy w firmie nie naciskano na podejrzaną sprzedaż chipów, by podbić wyniki. Firma Megaspeed, w której pracowała Alice Huang, jest podejrzewana o przemycanie chipów Nvidii do Chin. Nvidia przedstawi pierwsze wyniki kwartalne bez Jensena Huanga we wtorek.",
+      "why": "Afera wokół Nvidii łączy się ze sporem o eksport chipów do Chin, a Trump jedzie w tym tygodniu do Chin.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Apple bada, jak ludzie pytają AI o zdrowie",
+      "summary": "Apple uruchomiło w USA aplikację badawczą przygotowaną z firmą OpenEvidence. Uczestnicy zadają pytania o zdrowie, a odpowiedzi opierają się na publikacjach medycznych, m.in. z NEJM, JAMA i Nature. Badanie ma objąć do 200 tys. dorosłych przez ponad rok. Według Apple udostępnione dane zdrowotne są anonimizowane i nie służą do trenowania AI, a OpenEvidence usuwa pytania i odpowiedzi po 24 godzinach.",
+      "why": "Coraz więcej ludzi pyta AI o zdrowie, a takie badanie może pokazać, kiedy te odpowiedzi pomagają, a kiedy szkodzą.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Witamina C może hamować powstawanie szkodliwych związków z wędlin",
+      "summary": "Badacze z Uniwersytetu Waterloo na podstawie modelu matematycznego wyliczyli, że witamina C przyjęta razem z azotanami i azotynami może utrudniać powstawanie w żołądku związków podejrzewanych o działanie rakotwórcze. Według symulacji witamina C po posiłku mogłaby mieć umiarkowane działanie ochronne, zwłaszcza przy daniach takich jak bekon czy salami. To jednak tylko obliczenia, które trzeba jeszcze sprawdzić w badaniach na ludziach.",
+      "why": "Azotyny są w wielu wędlinach. Na razie najpewniejszą radą pozostaje jedzenie ich z umiarem i dużo warzyw i owoców.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261114202236.htm" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "Philomena Cunk wraca: tym razem o historii kina",
+      "summary": "Na Netflixie (poza Wielką Brytanią i Irlandią) oraz w BBC zadebiutował „Cunk on Cinema”, nowy prześmiewczy dokument z Diane Morgan jako naiwną i niedoinformowaną prezenterką Philomeną Cunk. Sześć krótkich odcinków opowiada historię kina od wynalezienia kamery po narzędzia AI. Wśród rozmówców są m.in. Michael Bay i Benedict Cumberbatch. Postać stworzyła Morgan razem z Charliem Brookerem, autorem „Czarnego lustra”.",
+      "why": "Według recenzenta The Hollywood Reporter formuła Cunk wciąż działa, choć pewnie nie zadziała w nieskończoność.",
+      "sources": [
+        { "name": "The Hollywood Reporter", "url": "https://www.hollywoodreporter.com/tv/tv-reviews/cunk-on-cinema-review-philomena-cunk-diane-morgan-netflix-1236752328/" },
+        { "name": "Variety", "url": "https://variety.com/2026/tv/global/cunk-on-cinema-trailer-diane-morgan-philomena-cunk-1236933850/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "nauka",
+      "title": "Piorun jest pięć razy gorętszy niż powierzchnia Słońca",
+      "body": "W ułamku sekundy piorun rozgrzewa powietrze wokół siebie nawet do ok. 30 tys. stopni Celsjusza. To ok. pięć razy więcej niż temperatura powierzchni Słońca. Ciepło powstaje, bo materia, przez którą płynie ładunek, stawia mu opór. Gwałtownie rozgrzane powietrze rozszerza się błyskawicznie, a to słyszymy jako grzmot.",
+      "source": { "name": "NASA SciJinks", "url": "https://scijinks.jpl.nasa.gov/lightning" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "przyroda",
+      "title": "Aksolotl odbudowuje kończyny bez blizny",
+      "body": "Meksykański płaz aksolotl potrafi odtworzyć utraconą kończynę, a w miejscu połączenia nie zostaje blizna. Odbudowuje też uszkodzony rdzeń kręgowy, i to nawet gdy usunie się jego fragment. Jest jednym z nielicznych kręgowców, które to potrafią. Naukowcy badają go w nadziei, że kiedyś pomoże to w leczeniu ran u ludzi.",
+      "source": { "name": "Scientific American", "url": "https://blogs.scientificamerican.com/guest-blog/regeneration-the-axolotl-story/" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "historia",
+      "title": "Firma budowlana działała ponad 1400 lat",
+      "body": "Japońska firma Kongō Gumi uchodzi za najstarsze udokumentowane przedsiębiorstwo świata. Według tradycji założył ją w 578 roku rzemieślnik z koreańskiego królestwa Baekje, którego książę Shōtoku sprowadził do budowy świątyni Shitennō-ji. Firma przez wieki budowała świątynie, chramy i zamki i była w rękach rodziny założyciela, aż w XXI wieku kupiła ją większa grupa budowlana. Data założenia jest jednak sporna, bo pochodzi z tradycyjnych przekazów.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/List_of_oldest_companies" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1918,
+      "title": "Depesza ogłasza światu niepodległą Polskę",
+      "body": "16 listopada 1918 r. Józef Piłsudski jako wódz naczelny wysłał depeszę do rządów m.in. USA, Wielkiej Brytanii, Francji, Włoch, Japonii i Niemiec. Informował w niej o istnieniu niepodległego państwa polskiego, obejmującego wszystkie ziemie zjednoczonej Polski. Alianci jej wtedy nie uznali, ale stała się symbolem odrodzenia państwa. Źródła różnią się co do dnia jej faktycznego nadania przez radio z Cytadeli.",
+      "source": { "name": "Wikipedia", "url": "https://pl.wikipedia.org/wiki/Depesza_iskrowa_notyfikuj%C4%85ca_powstanie_pa%C5%84stwa_polskiego" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1945,
+      "title": "W Londynie powstaje UNESCO",
+      "body": "16 listopada 1945 r. w Londynie przyjęto i podpisano konstytucję UNESCO, organizacji ONZ do spraw oświaty, nauki i kultury. Weszła w życie rok później, 4 listopada 1946 r., po ratyfikacji przez 20 państw. Dziś UNESCO prowadzi m.in. listę światowego dziedzictwa.",
+      "source": { "name": "UNESCO", "url": "https://www.unesco.org/en/legal-affairs/constitution" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1974,
+      "title": "Wiadomość z Arecibo leci do gwiazd",
+      "body": "16 listopada 1974 r. radioteleskop Arecibo w Portoryko wysłał w kosmos wiadomość złożoną z 1679 bitów, skierowaną do gromady gwiazd M13. Zawierała m.in. rysunek człowieka, Układu Słonecznego i podwójnej helisy DNA. Transmisja trwała niecałe trzy minuty, a ponieważ M13 jest odległa o ok. 25 tys. lat świetlnych, wiadomość dotrze tam za co najmniej 25 tys. lat. Była raczej pokazem możliwości techniki niż poważną próbą rozmowy z obcymi.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Arecibo_message" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Efekt Streisand",
+    "definition": "To zjawisko, w którym próba ukrycia albo usunięcia informacji sprawia, że staje się ona znacznie bardziej znana.",
+    "origin": "W 2003 roku Barbra Streisand pozwała fotografa o 50 mln dolarów za zdjęcie lotnicze jej domu w Malibu, jedno z 12 tys. zdjęć wybrzeża Kalifornii w publicznym archiwum. Przed pozwem zdjęcie pobrano tylko sześć razy, a w ciągu miesiąca po nagłośnieniu sprawy obejrzało je ponad 400 tys. osób. Streisand przegrała, a nazwę zjawiska wymyślił w 2005 roku bloger Mike Masnick.",
+    "examples": [
+      "Firma żąda usunięcia krytycznej recenzji, a spór o nią trafia do mediów.",
+      "Zakazana książka zaczyna się świetnie sprzedawać, bo wszyscy chcą wiedzieć, co w niej jest.",
+      "Ktoś kasuje niezręczny wpis, ale zrzuty ekranu krążą dalej, bo kasowanie zwróciło na niego uwagę."
+    ],
+    "source": { "name": "Britannica", "url": "https://www.britannica.com/topic/Streisand-effect" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "zycie-3-0",
+    "title": "Życie 3.0. Człowiek w erze sztucznej inteligencji",
+    "author": "Max Tegmark",
+    "day": 2,
+    "days": 7,
+    "ideaTitle": "Inteligencja nie potrzebuje mózgu z węgla",
+    "idea": "Tegmark zwraca uwagę, że obliczenia nie zależą od materiału, z którego zbudowano maszynę. Ten sam program może działać na różnych komputerach, zbudowanych z różnych materiałów. Liczy się wzór przetwarzania informacji, a nie to, czy wykonuje go mózg z neuronów, czy procesor. Fizycy nazywają to niezależnością od podłoża. Z tego Tegmark wyprowadza wniosek, że sztuczna inteligencja jest możliwa: inteligencja nie wymaga ciała, krwi ani atomów węgla. Dlatego pytanie nie brzmi, czy maszyny mogą myśleć, tylko jak dobrze i kiedy.",
+    "moral": "Jeśli inteligencja to sposób przetwarzania informacji, to nie jest zarezerwowana tylko dla ludzi, a od nas zależy, jak ją wykorzystamy.",
+    "action": "Zastanówcie się, którą z waszych codziennych umiejętności dałoby się opisać jako przepis krok po kroku, a której nie.",
+    "source": { "name": "Edge", "url": "https://www.edge.org/response-detail/27126" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-16-q1",
+      "ref": "fact-1",
+      "question": "Do jakiej temperatury piorun może rozgrzać powietrze?",
+      "options": ["Ok. 300 °C", "Ok. 3000 °C", "Ok. 30 000 °C", "Ok. 3 mln °C"],
+      "answer": 2,
+      "explanation": "To ok. pięć razy więcej niż temperatura powierzchni Słońca."
+    },
+    {
+      "id": "2026-11-16-q2",
+      "ref": "fact-2",
+      "question": "Co potrafi odbudować aksolotl?",
+      "options": ["Tylko ogon", "Kończyny i rdzeń kręgowy", "Tylko skórę", "Nic, to mit"],
+      "answer": 1,
+      "explanation": "Aksolotl odtwarza kończyny bez blizny i potrafi odbudować uszkodzony rdzeń kręgowy."
+    },
+    {
+      "id": "2026-11-16-q3",
+      "ref": "fact-3",
+      "question": "Czym zajmowała się Kongō Gumi, uważana za najstarszą firmę świata?",
+      "options": ["Warzeniem sake", "Budową świątyń i zamków", "Produkcją mieczy", "Handlem jedwabiem"],
+      "answer": 1,
+      "explanation": "Firma przez wieki budowała świątynie, chramy i zamki w Japonii."
+    },
+    {
+      "id": "2026-11-16-q4",
+      "ref": "otd-1",
+      "question": "O czym informowała depesza Piłsudskiego z 16 listopada 1918 roku?",
+      "options": ["O zawieszeniu broni", "O istnieniu niepodległego państwa polskiego", "O wyborach do Sejmu", "O wojnie z Rosją"],
+      "answer": 1,
+      "explanation": "Depesza notyfikowała rządom innych państw istnienie niepodległej Polski."
+    },
+    {
+      "id": "2026-11-16-q5",
+      "ref": "otd-3",
+      "question": "Dokąd skierowano wiadomość z Arecibo?",
+      "options": ["Na Marsa", "Do gromady gwiazd M13", "Na Księżyc", "Do galaktyki Andromedy"],
+      "answer": 1,
+      "explanation": "Wiadomość leci do gromady M13, odległej o ok. 25 tys. lat świetlnych."
+    },
+    {
+      "id": "2026-11-16-q6",
+      "ref": "concept",
+      "question": "Na czym polega efekt Streisand?",
+      "options": ["Celebryci zarabiają więcej na skandalach", "Próba ukrycia informacji sprawia, że staje się ona głośniejsza", "Zdjęcia z drona są nielegalne", "Ludzie szybko zapominają plotki"],
+      "answer": 1,
+      "explanation": "Pozew Streisand sprawił, że zdjęcie jej domu obejrzały setki tysięcy ludzi."
+    },
+    {
+      "id": "2026-11-16-q7",
+      "ref": "book",
+      "question": "Co według Tegmarka oznacza niezależność obliczeń od podłoża?",
+      "options": ["Komputery nie potrzebują prądu", "Ten sam program może działać na różnych materiałach, liczy się wzór przetwarzania informacji", "AI działa tylko na krzemie", "Mózg jest szybszy od komputera"],
+      "answer": 1,
+      "explanation": "Inteligencja nie wymaga atomów węgla, więc może działać także w maszynach."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-16-r1",
+      "question": "Które dzikie koty mają ten sam defekt genu słodkiego smaku co koty domowe?",
+      "options": ["Lwy i rysie", "Tygrysy i gepardy", "Pumy i ocelotki"],
+      "answer": 1,
+      "explanation": "Badanie wykazało ten sam uszkodzony gen Tas1r2 u tygrysów i gepardów."
+    },
+    {
+      "id": "2026-11-16-r2",
+      "question": "Kto przewodził obaleniu monarchii w Brazylii w 1889 roku?",
+      "options": ["Cesarz Piotr II", "Marszałek Deodoro da Fonseca", "Simón Bolívar"],
+      "answer": 1,
+      "explanation": "Oficerowie pod wodzą marszałka Deodoro da Fonseki ogłosili republikę bez rozlewu krwi."
+    },
+    {
+      "id": "2026-11-16-r3",
+      "question": "Co w 1965 roku przewidział Gordon Moore?",
+      "options": ["Podwajanie liczby elementów w układach co rok", "Podwajanie co dziesięć lat", "Koniec rozwoju komputerów"],
+      "answer": 0,
+      "explanation": "W 1965 roku mówił o podwajaniu co rok, a w 1975 roku zmienił prognozę na co dwa lata."
+    }
+  ],
+  "evening": {
+    "question": "Co w waszym związku robicie trochę jak program, z przyzwyczajenia, a co zawsze wymaga rozmowy i uczuć?",
+    "hint": "Pomyślcie o porannej rutynie, podziale obowiązków i o tym, jak godzicie się po kłótni."
+  }
+}

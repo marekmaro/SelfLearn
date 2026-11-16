@@ -1,6 +1,28 @@
 {
   "editions": [
     {
+      "date": "2026-11-16",
+      "headline": "Z centrum Warszawy znikają betonowe zapory. Wrócą w weekendy",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-1",
+          "title": "Z centrum Warszawy znikają betonowe zapory. Wrócą w weekendy"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Zełenski: ukraińskie drony wyłączyły 55 proc. rosyjskich rafinerii"
+        }
+      ],
+      "facts": [
+        "Piorun jest pięć razy gorętszy niż powierzchnia Słońca",
+        "Aksolotl odbudowuje kończyny bez blizny",
+        "Firma budowlana działała ponad 1400 lat"
+      ],
+      "concept": "Efekt Streisand"
+    },
+    {
       "date": "2026-11-15",
       "headline": "Tydzień po zamachu: 10 osób w szpitalach, Requiem dla ofiar",
       "threads": [

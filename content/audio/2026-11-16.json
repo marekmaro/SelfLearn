@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-16",
+  "file": "2026-11-16.mp3",
+  "url": "audio/2026-11-16.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-16.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "c652a5796b37bd27",
+  "duration": 1051.65,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 16.17
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Z centrum Warszawy znikają betonowe zapory. Wrócą w weekendy",
+      "start": 16.87,
+      "end": 59.01
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Lawina w Tatrach. Nie żyje turysta",
+      "start": 59.71,
+      "end": 103.15
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "GUS potwierdził: inflacja spadła do 3,5 proc.",
+      "start": 103.85,
+      "end": 148.99
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "„Pan Tadeusz” z efektami AI w Lublinie",
+      "start": 149.69,
+      "end": 186.51
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Sondaż: więcej przeciwników niż zwolenników „resetu” Trybunału",
+      "start": 187.21,
+      "end": 231.9
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Zełenski: ukraińskie drony wyłączyły 55 proc. rosyjskich rafinerii",
+      "start": 233.1,
+      "end": 280.88
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Iran atakuje dronami radar USA w Bahrajnie",
+      "start": 281.58,
+      "end": 322.8
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Piąta sobota protestów we Francji",
+      "start": 323.5,
+      "end": 364.83
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Ulewy zmyły namioty w Gazie. Cztery kraje apelują o pomoc",
+      "start": 365.53,
+      "end": 402.28
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Szczytu NATO w Albanii w 2027 roku nie będzie",
+      "start": 402.98,
+      "end": 443.01
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Bloomberg: USA wycofają z Europy ok. 5 tys. żołnierzy, a nie 25 tys.",
+      "start": 444.21,
+      "end": 494.18
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Estonia: próba sabotażu u producenta dronów. Kraj zamknie granicę z Rosją",
+      "start": 494.88,
+      "end": 540.3
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Sekretarz skarbu USA chce „gruntownych zmian” w Nvidii",
+      "start": 541,
+      "end": 579.34
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Apple bada, jak ludzie pytają AI o zdrowie",
+      "start": 580.04,
+      "end": 624.75
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Witamina C może hamować powstawanie szkodliwych związków z wędlin",
+      "start": 625.45,
+      "end": 668.59
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Philomena Cunk wraca: tym razem o historii kina",
+      "start": 669.29,
+      "end": 712.05
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Piorun jest pięć razy gorętszy niż powierzchnia Słońca",
+      "start": 713.25,
+      "end": 741.34
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Aksolotl odbudowuje kończyny bez blizny",
+      "start": 742.04,
+      "end": 767.24
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Firma budowlana działała ponad 1400 lat",
+      "start": 767.94,
+      "end": 803.5
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Depesza ogłasza światu niepodległą Polskę",
+      "start": 804.7,
+      "end": 841.69
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1945: W Londynie powstaje UNESCO",
+      "start": 842.39,
+      "end": 869.85
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1974: Wiadomość z Arecibo leci do gwiazd",
+      "start": 870.55,
+      "end": 911.55
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt Streisand",
+      "start": 912.75,
+      "end": 968.94
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Życie 3.0. Człowiek w erze sztucznej inteligencji: Inteligencja nie potrzebuje mózgu z węgla",
+      "start": 970.14,
+      "end": 1035.66
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1036.86,
+      "end": 1051.15
+    }
+  ]
+}

@@ -1,6 +1,38 @@
 {
   "editions": [
     {
+      "date": "2026-11-17",
+      "headline": "NBP wstrzymał płatności z rachunków Trybunału Konstytucyjnego",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-3",
+          "title": "Jak upamiętnić ofiary zamachu? Kraków ma trzy pomysły"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Ukraina rozmawiała z USA i Europą. Rosja nie zgadza się na szerszy format"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-2",
+          "title": "Nowe sankcje UE na Rosję: banki, ropa i „flota cieni”"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Regulatorzy z 38 krajów: rośnie ryzyko awarii jądrowej w Ukrainie"
+        }
+      ],
+      "facts": [
+        "Mit: Księżyc ma „ciemną stronę”",
+        "Rośliny wzywają na pomoc wrogów gąsienic",
+        "Lubimy to, co już widzieliśmy"
+      ],
+      "concept": "Paradoks Jevonsa"
+    },
+    {
       "date": "2026-11-16",
       "headline": "Z centrum Warszawy znikają betonowe zapory. Wrócą w weekendy",
       "threads": [

@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-17",
+  "file": "2026-11-17-darkman.mp3",
+  "url": "audio/2026-11-17-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-17-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "aceb02c0ce9dc8f1",
+  "duration": 972.67,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 14.5
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "NBP wstrzymał płatności z rachunków Trybunału Konstytucyjnego",
+      "start": 15.2,
+      "end": 58.61
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Po meczu w Bukareszcie zatrzymano 100 polskich kibiców",
+      "start": 59.31,
+      "end": 101.62
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Jak upamiętnić ofiary zamachu? Kraków ma trzy pomysły",
+      "start": 102.32,
+      "end": 139.29
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Diesel drożeje o 12 groszy",
+      "start": 139.99,
+      "end": 181.65
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Nadchodzi maksimum Leonidów. Najlepiej patrzeć w nocy na środę",
+      "start": 182.35,
+      "end": 213.47
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Ukraina rozmawiała z USA i Europą. Rosja nie zgadza się na szerszy format",
+      "start": 214.67,
+      "end": 265.66
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Nowe sankcje UE na Rosję: banki, ropa i „flota cieni”",
+      "start": 266.36,
+      "end": 310.15
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Pożar w Phuket. Zginęło co najmniej 11 osób",
+      "start": 310.85,
+      "end": 353.55
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "RPA: dwie strzelaniny, co najmniej 17 zabitych",
+      "start": 354.25,
+      "end": 387.32
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Jemen: Huti zbliżają się do Adenu",
+      "start": 388.02,
+      "end": 425.36
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Regulatorzy z 38 krajów: rośnie ryzyko awarii jądrowej w Ukrainie",
+      "start": 426.56,
+      "end": 472.32
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Wyciek danych 150 tys. kierowców Ubera",
+      "start": 473.02,
+      "end": 508.57
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Kalifornia pozywa OpenAI za modele, które wymknęły się spod kontroli",
+      "start": 509.27,
+      "end": 555.55
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Odstawienie statyn po 70. roku życia: krótko bezpieczne, ale jest haczyk",
+      "start": 556.25,
+      "end": 601.12
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Robert Pattinson nowym Jamesem Bondem",
+      "start": 601.82,
+      "end": 640.73
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Rośliny wzywają na pomoc wrogów gąsienic",
+      "start": 641.93,
+      "end": 673.7
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Mit: Księżyc ma „ciemną stronę”",
+      "start": 674.4,
+      "end": 705.01
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Lubimy to, co już widzieliśmy",
+      "start": 705.71,
+      "end": 736.97
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1918: Powstaje rząd Jędrzeja Moraczewskiego",
+      "start": 738.17,
+      "end": 766.48
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1869: Otwarcie Kanału Sueskiego",
+      "start": 767.18,
+      "end": 797.24
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1989: Studencki marsz zaczyna aksamitną rewolucję",
+      "start": 797.94,
+      "end": 831.85
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Paradoks Jevonsa",
+      "start": 833.05,
+      "end": 880.58
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Życie 3.0. Człowiek w erze sztucznej inteligencji: Bać się trzeba kompetencji, nie złej woli",
+      "start": 881.78,
+      "end": 954.15
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 955.35,
+      "end": 972.17
+    }
+  ]
+}

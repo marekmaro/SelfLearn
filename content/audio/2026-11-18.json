@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-18",
+  "file": "2026-11-18.mp3",
+  "url": "audio/2026-11-18.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-18.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "03675693ac74d017",
+  "duration": 1048.85,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 15.06
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Sejm odrzucił wotum nieufności wobec rządu Tuska",
+      "start": 15.76,
+      "end": 59.32
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Zgromadzenie sędziów TK o immunitecie Święczkowskiego. Decyzja w środę",
+      "start": 60.02,
+      "end": 102.72
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "ABW zatrzymała nastolatków podejrzanych o planowanie zamachu",
+      "start": 103.42,
+      "end": 147.52
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Remis ze Szwecją. Polska zostaje w Dywizji B",
+      "start": 148.22,
+      "end": 180.34
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Polscy astronomowie pomogli opisać kandydatkę na planetę karłowatą",
+      "start": 181.04,
+      "end": 226.09
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Studenci w parlamencie Serbii. Pierwsze posiedzenie po wyborach",
+      "start": 227.29,
+      "end": 267.64
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Iran znów atakuje Bahrajn, USA uderzają w wyspę Keszm",
+      "start": 268.34,
+      "end": 309.44
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Ukraina uszkodziła Most Krymski. Ruch wstrzymany",
+      "start": 310.14,
+      "end": 345.85
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Bangladesz: protesty szwaczek, zamknięto 500 fabryk",
+      "start": 346.55,
+      "end": 388.77
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Ulewy i ogromne fale w Kalifornii",
+      "start": 389.47,
+      "end": 429.85
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Ambasady USA w Europie ostrzegają przed zamachami w okresie świąt",
+      "start": 431.05,
+      "end": 479.32
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Katastrofa rosyjskiego samolotu wojskowego An-12 na Syberii",
+      "start": 480.02,
+      "end": 520.71
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Nvidia bez Huanga: rekordowe 115,8 mld dolarów przychodu",
+      "start": 521.41,
+      "end": 566.66
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "OpenAI wpuszcza zewnętrznych badaczy bezpieczeństwa",
+      "start": 567.36,
+      "end": 615.45
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Wino, piwo czy wódka? Duże badanie widzi różnice, ale z zastrzeżeniami",
+      "start": 616.15,
+      "end": 663.98
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "BBC nakręci serial „Droga do Indii”",
+      "start": 664.68,
+      "end": 705.02
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Co drugi oddech zawdzięczamy oceanowi",
+      "start": 706.22,
+      "end": 733.73
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Delfiny mają coś w rodzaju imion",
+      "start": 734.43,
+      "end": 764.21
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Aluminium było kiedyś cenniejsze niż złoto",
+      "start": 764.91,
+      "end": 803.38
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1965: Orędzie biskupów polskich do niemieckich",
+      "start": 804.58,
+      "end": 844.88
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1918: Łotwa ogłasza niepodległość",
+      "start": 845.58,
+      "end": 877.57
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1928: Premiera „Parowca Willie” z Myszką Miki",
+      "start": 878.27,
+      "end": 911.81
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Paradoks wyboru",
+      "start": 913.01,
+      "end": 961.16
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Życie 3.0. Człowiek w erze sztucznej inteligencji: Dwanaście możliwych przyszłości z AI",
+      "start": 962.36,
+      "end": 1032.25
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1033.45,
+      "end": 1048.35
+    }
+  ]
+}

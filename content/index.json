@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-11-18",
+      "headline": "Sejm odrzucił wotum nieufności wobec rządu Tuska",
+      "threads": [
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-3",
+          "title": "Ukraina uszkodziła Most Krymski. Ruch wstrzymany"
+        }
+      ],
+      "facts": [
+        "Delfiny mają coś w rodzaju imion",
+        "Co drugi oddech zawdzięczamy oceanowi",
+        "Aluminium było kiedyś cenniejsze niż złoto"
+      ],
+      "concept": "Paradoks wyboru"
+    },
+    {
       "date": "2026-11-17",
       "headline": "NBP wstrzymał płatności z rachunków Trybunału Konstytucyjnego",
       "threads": [

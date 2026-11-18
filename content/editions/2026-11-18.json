@@ -1,0 +1,351 @@
+{
+  "date": "2026-11-18",
+  "intro": "Dziś m.in.: Sejm odrzucił wotum nieufności wobec rządu, ABW zatrzymała nastolatków szykujących zamach, a Polska utrzymała się w Dywizji B Ligi Narodów.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Sejm odrzucił wotum nieufności wobec rządu Tuska",
+      "summary": "Sejm odrzucił wniosek klubu Rozwój Plus Mateusza Morawieckiego o konstruktywne wotum nieufności wobec rządu Donalda Tuska. Kandydatem na premiera był Marek Jurek. Przeciw głosowało 242 posłów, a za 200, w tym wszyscy obecni posłowie PiS, Rozwoju Plus i Konfederacji. Do przyjęcia wniosku potrzeba było co najmniej 231 głosów. Wnioskodawcy jako główny powód wskazali spór o Trybunał Konstytucyjny, a także rosnące zadłużenie i kryzys w ochronie zdrowia.",
+      "why": "Rząd utrzymał większość, a spór między koalicją a opozycją dalej się zaostrza.",
+      "sources": [
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/wotum-nieufnosci-wobec-rzadu-sejm-zdecydowal" },
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/polityka/art45501961-rzad-tuska-zostaje-wniosek-o-wotum-nieufnosci-odrzucono" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Zgromadzenie sędziów TK o immunitecie Święczkowskiego. Decyzja w środę",
+      "summary": "Zgromadzenie Ogólne Sędziów Trybunału Konstytucyjnego przez cały wtorek rozpatrywało wnioski prokuratury o uchylenie immunitetów prezesa TK Bogdana Święczkowskiego i wiceprezesa Bartłomieja Sochańskiego. Jeden z wniosków dotyczy zgody na zatrzymanie i areszt Święczkowskiego. Obaj nie przyszli na wysłuchanie, a grupa sędziów, w tym oni sami, twierdzi, że zgromadzenie zwołała osoba nieuprawniona i bez kworum. Komunikat o decyzji ma zostać ogłoszony w środę.",
+      "why": "Od tej decyzji zależy, czy spór o Trybunał przeniesie się na salę sądową.",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/sady-i-trybunaly/art45499551-waza-sie-losy-immunitetu-swieczkowskiego-w-trybunale-konstytucyjnym-trwa-zgromadzenie" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-17/decyzja-ws-swieczkowskiego-bedzie-opublikowana-w-srode-jest-decyzja-tk/" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "ABW zatrzymała nastolatków podejrzanych o planowanie zamachu",
+      "summary": "ABW zatrzymała dwóch 17-latków i 16-latka związanych ze środowiskiem neonazistowskim. Według śledczych wymieniali się informacjami o domowej produkcji materiałów wybuchowych, a jeden z nich miał w domu składniki bomby rurowej. Mieli planować podłożenie ładunku w bloku, by zaatakować konkretną osobę. ABW zabezpieczyła substancje chemiczne. 17-latkowie trafili do aresztu, a 16-latek do schroniska dla nieletnich. Śledztwo prowadzi Prokuratura Regionalna w Gdańsku.",
+      "why": "Śledczy podkreślają, że nie chodziło tylko o wpisy w sieci, ale o realne przygotowania do zamachu.",
+      "sources": [
+        { "name": "TVN24", "url": "https://tvn24.pl/trojmiasto/trzech-nastolatkow-zatrzymanych-przygotowywali-atak-z-uzyciem-materialow-wybuchowych-st9340738" },
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/przestepczosc/art45494461-nastolatkowie-planowali-atak-fascynowali-sie-zakazana-organizacja-terrorystyczna" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Remis ze Szwecją. Polska zostaje w Dywizji B",
+      "summary": "Polscy piłkarze zremisowali ze Szwecją 1:1 w ostatnim meczu Ligi Narodów. Gola dla Polski strzelił Adrian Benedyczak, a dla Szwecji wyrównał Hugo Larsson. Ponieważ Bośnia i Hercegowina pokonała Rumunię, Polska zajęła trzecie miejsce w grupie i utrzymała się w Dywizji B bez baraży.",
+      "why": "Uniknięcie spadku to ulga po słabej jesieni, ale komentatorzy pytają o przyszłość trenera Jana Urbana.",
+      "sources": [
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/polska-utrzymala-sie-w-ln-jest-remis-ze-szwecja-galeria" },
+        { "name": "Rzeczpospolita", "url": "https://sport.rp.pl/pilka-nozna/art45505161-polska-szwecja-mecz-zycia-abramowicza-w-ponury-listopadowy-wieczor" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Polscy astronomowie pomogli opisać kandydatkę na planetę karłowatą",
+      "summary": "Amerykańscy astronomowie ogłosili odkrycie obiektu transneptunowego 2026 ED138, znalezionego w danych Obserwatorium Very Rubin. Archiwalne obserwacje z polskiego przeglądu nieba OGLE z Obserwatorium Astronomicznego UW pozwoliły dokładniej go opisać. Obiekt jest jasny i czerwonawy, a jego średnica może sięgać 1500 km. Jeśli status się potwierdzi, dołączy do pięciu planet karłowatych uznawanych przez Międzynarodową Unię Astronomiczną.",
+      "why": "Polski przegląd OGLE od lat zbiera dane, które przydają się przy odkryciach na całym świecie.",
+      "sources": [
+        { "name": "Nauka w Polsce", "url": "https://naukawpolsce.pl/aktualnosci/news,115940,nowa-kandydatka-na-planete-karlowata-w-ukladzie-slonecznym.html" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Studenci w parlamencie Serbii. Pierwsze posiedzenie po wyborach",
+      "summary": "Zebrał się nowy parlament Serbii, pierwszy od wyborów, w których ruch studencki pokonał partię Aleksandra Vučicia. Lista Studencka ma 140 z 250 mandatów, a Serbska Partia Postępowa 104. Od zaprzysiężenia posłów biegnie 90-dniowy termin na wybór nowego rządu. Obserwatorzy z organizacji CRTA zgłaszali w czasie wyborów naciski na wyborców w prawie co trzecim obserwowanym lokalu.",
+      "why": "To koniec wieloletnich rządów Vučicia i szansa na zbliżenie Serbii do Unii Europejskiej.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/17/election-winning-student-movement-enters-serbias-new-parliament" },
+        { "name": "Euronews", "url": "https://euronews.com/2026/11/17/serbias-new-parliament-meets-for-first-time-since-student-led-movement-won-election" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Iran znów atakuje Bahrajn, USA uderzają w wyspę Keszm",
+      "summary": "We wtorek Gwardia Rewolucyjna po raz trzeci w ciągu pięciu dni wysłała drony na amerykański radar w Bahrajnie, gdzie stacjonuje 5. Flota USA. Bahrajn podał, że je zestrzelił, a dowództwo USA zaprzeczyło, by radar został trafiony. USA uderzyły w stanowisko rakietowe Gwardii na wyspie Keszm w cieśninie Ormuz. Kuwejt też zgłosił ataki dronów. Egipt, Katar, Arabia Saudyjska i ZEA potępiły atak na Bahrajn.",
+      "why": "Ataki przerwały ok. dwa miesiące spokoju, a rozmowy o zakończeniu wojny stoją w miejscu.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/17/nx-s1-6044255/us-iran-war-latest-bahrain" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/17/kuwait-reports-drone-attacks-as-iran-us-trade-attacks-on-qeshm-and-bahrain" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Ukraina uszkodziła Most Krymski. Ruch wstrzymany",
+      "summary": "Ukraina drugą noc z rzędu zaatakowała most przez Cieśninę Kerczeńską, który łączy Rosję z okupowanym Krymem. Według ukraińskiej Służby Bezpieczeństwa SBU zniszczono jeden z metalowych łuków i część jezdni pod nim. Krymski przywódca mianowany przez Rosję wstrzymał ruch na moście. Według ekspertów cytowanych przez Kyiv Independent most może być długo nieprzejezdny dla samochodów i pociągów.",
+      "why": "Most to kluczowa droga zaopatrzenia rosyjskich wojsk na Krymie i symbol rosyjskiej aneksji.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/analysis-why-ukraines-strike-on-the-crimean-bridge-is-such-a-big-deal/" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/17/ukrainian-drone-attack-kills-two-in-crimea-as-kyiv-targets-kerch-bridge" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Bangladesz: protesty szwaczek, zamknięto 500 fabryk",
+      "summary": "Policja w Bangladeszu użyła gazu łzawiącego i granatów hukowych wobec tysięcy pracowników fabryk odzieży, którzy protestowali po przełożeniu posiedzenia komisji płacowej. Protestujący zablokowali główną drogę Dhaka–Mymensingh. Według AFP zamkniętych jest ok. 500 z 4500 fabryk w kraju. Pracownicy chcą płacy minimalnej 30 tys. taka miesięcznie zamiast 12,5 tys. Nowa stawka ma zostać ogłoszona w grudniu.",
+      "why": "Z bangladeskich fabryk pochodzi wiele ubrań sprzedawanych na całym świecie, więc protesty mogą odbić się na dostawach.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/17/bangladesh-garment-workers-clash-with-police-in-fresh-protests-over-wages" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Ulewy i ogromne fale w Kalifornii",
+      "summary": "Na Kalifornię nadciągnęły silne burze. W rejonie Zatoki San Francisco obowiązują ostrzeżenia przed wiatrem, a w Big Sur ostrzeżenie przed nagłymi powodziami, bo na wypalonych przez pożary zboczach grożą lawiny błotne. W górach Santa Cruz może spaść 3–5 cali (ok. 8–13 cm) deszczu. Ogromne fale zalały plaże i ulice nad wybrzeżem, a Krajowa Służba Meteorologiczna ostrzega przed poważnymi skutkami także na południu stanu.",
+      "why": "Po pożarach zbocza nie trzymają wody, więc nawet zwykła ulewa może wywołać groźne spływy błota.",
+      "sources": [
+        { "name": "CBS News", "url": "https://www.cbsnews.com/sanfrancisco/news/bay-area-storm-november-2026-high-wind-advisory-warning-big-sur-flood-watch/" },
+        { "name": "CBS News", "url": "https://www.cbsnews.com/losangeles/news/southern-california-storm-impact-risk-november-17/" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Ambasady USA w Europie ostrzegają przed zamachami w okresie świąt",
+      "summary": "Kilkanaście ambasad USA w Europie, m.in. w Polsce, Wielkiej Brytanii, Niemczech i Hiszpanii, opublikowało ostrzeżenia dla Amerykanów przed zagrożeniem terrorystycznym. Zalecają szczególną ostrożność na jarmarkach świątecznych, imprezach masowych i w miejscach kultu. Według komunikatu zamachowcy, także działający w pojedynkę, mogą zaatakować bez ostrzeżenia, np. targowiska, centra handlowe i węzły komunikacyjne. Ostrzeżenia nie wskazują konkretnych zagrożeń.",
+      "why": "Takie ostrzeżenia nie oznaczają konkretnego zagrożenia, ale w tłumie warto zachować czujność.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-17/seria-alertow-ambasad-usa-w-europie-ostrzezenia-przed-atakami/" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "section": "bezpieczenstwo",
+      "rank": 2,
+      "title": "Katastrofa rosyjskiego samolotu wojskowego An-12 na Syberii",
+      "summary": "We wtorek wieczorem pod wsią Jagunowo w obwodzie kemerowskim rozbił się rosyjski wojskowy samolot transportowy An-12. Leciał z Nowosybirska do Kańska. Według Kyiv Independent zginęło wszystkich 17 osób na pokładzie, a Al Jazeera podaje 19 ofiar. Rosyjska telewizja Ren TV twierdzi, że załoga do końca próbowała odciągnąć płonący samolot od domów. Przyczyny katastrofy nie podano.",
+      "why": "An-12 to stare samoloty zaprojektowane jeszcze w ZSRR. Śledztwo ma wyjaśnić, co zawiodło.",
+      "sources": [
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/17-killed-in-crash-of-russian-an-12-military-plane-in-siberia/" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-17/katastrofa-rosyjskiego-samolotu-wojskowego-sa-doniesienia-o-licznych-ofiarach/" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Nvidia bez Huanga: rekordowe 115,8 mld dolarów przychodu",
+      "summary": "Nvidia przedstawiła pierwsze wyniki kwartalne po odejściu Jensena Huanga. Przychody wyniosły 115,8 mld dolarów, o 103 proc. więcej niż rok wcześniej, z czego 107,6 mld przyniosły chipy do centrów danych. Analitycy spodziewali się ok. 108 mld. Tymczasowa prezes Colette Kress zapowiedziała na kolejny kwartał ok. 130 mld dolarów przychodu. Inwestorzy pytają jednak, jak duża część sprzedaży trafiała do Chin.",
+      "why": "Wyniki Nvidii pokazują, czy boom na sztuczną inteligencję trwa mimo afery w firmie.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/" },
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/17/nvidias-kress-faces-earnings-test-after-stock-drags-wall-street-into-the-red.html" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "OpenAI wpuszcza zewnętrznych badaczy bezpieczeństwa",
+      "summary": "OpenAI podpisało umowy z czterema zewnętrznymi organizacjami: Apollo Research, METR, Transluce i Goodfire. Mają one zbadać m.in., czy modele potajemnie działają wbrew zamiarom twórców i czy zabezpieczenia to wykrywają. Według CNBC dostaną dostęp do kodu, modeli i danych treningowych. Mogą publikować wyniki, ale OpenAI może usuwać z nich poufne informacje. Krytycy, w tym samo Apollo, mówią, że to wciąż mniej niż pełny, pracowniczy dostęp.",
+      "why": "Umowy ogłoszono w dniu, w którym Kalifornia pozwała OpenAI za modele wymykające się spod kontroli.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/16/openai-independent-ai-safety-evaluators.html" },
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Wino, piwo czy wódka? Duże badanie widzi różnice, ale z zastrzeżeniami",
+      "summary": "Badacze przeanalizowali dane ponad 340 tys. dorosłych z brytyjskiego UK Biobank z lat 2006–2022. U osób pijących umiarkowanie wino ryzyko śmierci z powodu chorób serca było o 21 proc. niższe niż u niepijących lub pijących okazjonalnie. Nawet niewielkie ilości piwa, cydru i mocnych alkoholi wiązały się z ryzykiem wyższym o 9 proc. Autorzy zaznaczają, że wino częściej pije się do posiłków i piją je osoby o zdrowszym stylu życia.",
+      "why": "To badanie obserwacyjne, więc nie dowodzi, że wino chroni serce. Wcześniejsze badania w tej sprawie były niejednoznaczne.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261116015104.htm" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "BBC nakręci serial „Droga do Indii”",
+      "summary": "BBC i kanadyjska CBC zapowiedziały pięcioodcinkowy serial na podstawie powieści E.M. Forstera „Droga do Indii”. Wyreżyseruje go Richie Mehta, twórca nagrodzonego Emmy „Delhi Crime”. Doktora Aziza zagra Ali Fazal, panią Moore Fiona Shaw, a Fieldinga Tom Mison. Akcja dzieje się w latach 20. XX wieku w Indiach pod rządami Brytyjczyków, gdzie Aziza oskarżono o napaść po niewyjaśnionym zdarzeniu w jaskiniach Marabar.",
+      "why": "Powieść Forstera to klasyka o kolonializmie i uprzedzeniach, a Mehta należy do cenionych reżyserów z Indii.",
+      "sources": [
+        { "name": "Variety", "url": "https://variety.com/2026/tv/news/ali-fazal-fiona-shaw-naseeruddin-shah-passage-to-india-1236950109/" },
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/passage-to-india-bbc-cast-ali-fazal-fiona-shaw-tom-mison-1237226368/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "przyroda",
+      "title": "Delfiny mają coś w rodzaju imion",
+      "body": "Każdy delfin butlonosy ma własny, charakterystyczny gwizd, który działa trochę jak imię. W badaniach delfiny reagowały na nagrania gwizdów znajomych osobników z własnej grupy, a na obce nie. O tym, kto gwiżdże, mówi kształt gwizdu, a nie barwa głosu. Gdy grupy spotykają się w morzu, delfiny wymieniają się takimi gwizdami. Naukowcy wciąż spierają się, czy to już prawdziwe imiona.",
+      "source": { "name": "National Geographic", "url": "https://www.nationalgeographic.com/animals/article/130722-dolphins-whistle-names-identity-animals-science" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "nauka",
+      "title": "Co drugi oddech zawdzięczamy oceanowi",
+      "body": "Co najmniej połowa tlenu wytwarzanego na Ziemi powstaje w oceanie, głównie dzięki drobnemu, fotosyntetyzującemu planktonowi. Mniej więcej tyle samo zużywają organizmy morskie. Jedna z sinic, Prochlorococcus, to najmniejszy organizm prowadzący fotosyntezę na Ziemi. Według NOAA może wytwarzać nawet do 20 proc. tlenu biosfery.",
+      "source": { "name": "NOAA", "url": "https://oceanservice.noaa.gov/facts/ocean-oxygen.html" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "historia",
+      "title": "Aluminium było kiedyś cenniejsze niż złoto",
+      "body": "W połowie XIX wieku aluminium było bardzo trudne do wytworzenia i uchodziło za cenniejsze od złota. Na dworze cesarza Napoleona III najważniejsi goście jedli podobno aluminiowymi sztućcami. Gdy w 1884 roku na szczycie pomnika Waszyngtona umieszczono aluminiową nakładkę ważącą ok. 3 kg, cały świat produkował tego metalu zaledwie ok. 3,6 tony rocznie. Tanie stało się dopiero po 1886 roku, gdy Héroult i Hall opracowali metodę produkcji na skalę przemysłową.",
+      "source": { "name": "Science History Institute", "url": "https://www.sciencehistory.org/stories/magazine/aluminum-common-metal-uncommon-past/" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1965,
+      "title": "Orędzie biskupów polskich do niemieckich",
+      "body": "18 listopada 1965 r. z Rzymu, w czasie Soboru Watykańskiego II, polscy biskupi wysłali list do biskupów niemieckich. Podpisało go 34 duchownych z prymasem Stefanem Wyszyńskim na czele, a głównym autorem był abp Bolesław Kominek. List zawierał słynne słowa o wzajemnym przebaczeniu i zapraszał na obchody Millenium Chrztu Polski. Władze PRL ostro go krytykowały, a dziś uchodzi za jeden z najważniejszych gestów polsko-niemieckiego pojednania.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/aktualnosci/tekst-oredzia-biskupow-polskich-do-niemieckich-z-1965-r" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1918,
+      "title": "Łotwa ogłasza niepodległość",
+      "body": "18 listopada 1918 r. w Rydze Łotewska Rada Ludowa ogłosiła niepodległość Łotwy. Przewodniczącym Rady został Jānis Čakste, a premierem rządu tymczasowego Kārlis Ulmanis. Już 1 grudnia na nowe państwo uderzyła Rosja Sowiecka, a wojna o niepodległość zakończyła się traktatem pokojowym w 1920 roku. 18 listopada to dziś na Łotwie Święto Niepodległości.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Latvian_War_of_Independence" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1928,
+      "title": "Premiera „Parowca Willie” z Myszką Miki",
+      "body": "18 listopada 1928 r. w Nowym Jorku pokazano krótki film animowany Walta Disneya „Steamboat Willie”. Uchodzi za pierwszą kreskówkę z w pełni zsynchronizowanym dźwiękiem i przyniósł sławę Myszce Miki. Wbrew popularnej opinii nie był to pierwszy występ Mikiego, bo postać pojawiła się wcześniej w niedokończonym filmie „Plane Crazy”. W 2024 roku film przeszedł do domeny publicznej.",
+      "source": { "name": "Britannica", "url": "https://www.britannica.com/topic/Steamboat-Willie" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Paradoks wyboru",
+    "definition": "To zjawisko, w którym zbyt duża liczba możliwości utrudnia decyzję i zmniejsza zadowolenie z wyboru.",
+    "origin": "W 2000 roku Sheena Iyengar i Mark Lepper wystawili w sklepie stoisko z dżemami do degustacji: raz z 6, a raz z 24 rodzajami. Przy mniejszym wyborze ok. 30 proc. osób kupiło słoik, a przy większym tylko ok. 3 proc. Psycholog Barry Schwartz spopularyzował to w książce „Paradoks wyboru”. Nie wszystkie późniejsze badania potwierdziły jednak ten efekt równie wyraźnie.",
+    "examples": [
+      "Długie przewijanie katalogu filmów, po którym nie oglądamy nic.",
+      "Restauracja z krótkim menu często łatwiej zadowala gości niż ta z grubą kartą.",
+      "Przy wielu ofertach prądu czy telefonu łatwo odkładać decyzję w nieskończoność."
+    ],
+    "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Paradox_of_Choice" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "zycie-3-0",
+    "title": "Życie 3.0. Człowiek w erze sztucznej inteligencji",
+    "author": "Max Tegmark",
+    "day": 4,
+    "days": 7,
+    "ideaTitle": "Dwanaście możliwych przyszłości z AI",
+    "idea": "Tegmark nie przepowiada jednej przyszłości, tylko szkicuje dwanaście scenariuszy na czas, gdy powstanie AI mądrzejsza od ludzi. W „libertariańskiej utopii” ludzie, cyborgi i superinteligencje żyją obok siebie w pokoju dzięki prawom własności. W scenariuszu „dobrotliwego dyktatora” AI dba o ludzi, ale mocno ogranicza ich wolność. W wersji „opiekuna zoo” AI trzyma przy życiu niewielu ludzi, którzy czują się jak zwierzęta w ogrodzie zoologicznym. Są też scenariusze, w których ludzie powstrzymują rozwój AI. Autor nie mówi, który jest najlepszy, tylko zachęca, by wszyscy zastanowili się, jakiej przyszłości chcą.",
+    "moral": "O przyszłości z AI nie powinni decydować tylko inżynierowie. To pytanie o wartości, w którym każdy ma prawo głosu.",
+    "action": "Wybierzcie jeden scenariusz, który was przekonuje, i jeden, który przeraża, i powiedzcie sobie nawzajem dlaczego.",
+    "source": { "name": "Future of Life Institute", "url": "https://futureoflife.org/ai/ai-aftermath-scenarios/" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-18-q1",
+      "ref": "fact-1",
+      "question": "Co w gwizdzie delfina zdradza, kto gwiżdże?",
+      "options": ["Głośność", "Kształt gwizdu", "Barwa głosu", "Długość"],
+      "answer": 1,
+      "explanation": "Badania wskazują, że informację o tożsamości niesie kształt gwizdu, a nie barwa głosu."
+    },
+    {
+      "id": "2026-11-18-q2",
+      "ref": "fact-2",
+      "question": "Jaka część tlenu na Ziemi powstaje w oceanie?",
+      "options": ["Ok. 5 proc.", "Co najmniej połowa", "Prawie cały", "Żadna, tlen produkują tylko lasy"],
+      "answer": 1,
+      "explanation": "Według NOAA co najmniej połowa tlenu powstaje w oceanie dzięki planktonowi."
+    },
+    {
+      "id": "2026-11-18-q3",
+      "ref": "fact-3",
+      "question": "Dlaczego aluminium było w XIX wieku tak cenne?",
+      "options": ["Bo było go bardzo mało w ziemi", "Bo było bardzo trudne do wytworzenia", "Bo zakazano jego wydobycia", "Bo używano go tylko w zegarkach"],
+      "answer": 1,
+      "explanation": "Aluminium jest pospolite, ale do 1886 roku nie umiano go tanio wytwarzać."
+    },
+    {
+      "id": "2026-11-18-q4",
+      "ref": "otd-1",
+      "question": "Do kogo polscy biskupi skierowali w 1965 roku słynne orędzie?",
+      "options": ["Do biskupów niemieckich", "Do papieża", "Do władz PRL", "Do biskupów ukraińskich"],
+      "answer": 0,
+      "explanation": "List wysłano z Rzymu do biskupów niemieckich i stał się symbolem pojednania."
+    },
+    {
+      "id": "2026-11-18-q5",
+      "ref": "otd-3",
+      "question": "Czym wyróżniał się film „Steamboat Willie”?",
+      "options": ["Był pierwszym filmem w kolorze", "Był pierwszą kreskówką z w pełni zsynchronizowanym dźwiękiem", "Był pierwszym filmem pełnometrażowym", "Był pierwszym filmem 3D"],
+      "answer": 1,
+      "explanation": "Kreskówka z 1928 roku miała w pełni zsynchronizowaną ścieżkę dźwiękową i rozsławiła Myszkę Miki."
+    },
+    {
+      "id": "2026-11-18-q6",
+      "ref": "concept",
+      "question": "Przy którym stoisku z dżemami klienci częściej kupowali?",
+      "options": ["Przy tym z 24 rodzajami", "Przy tym z 6 rodzajami", "Przy obu tak samo", "Przy żadnym"],
+      "answer": 1,
+      "explanation": "Przy 6 rodzajach kupiło ok. 30 proc. osób, a przy 24 tylko ok. 3 proc."
+    },
+    {
+      "id": "2026-11-18-q7",
+      "ref": "book",
+      "question": "Co dzieje się w scenariuszu „dobrotliwego dyktatora” według Tegmarka?",
+      "options": ["Ludzie przejmują kontrolę nad AI", "AI dba o ludzi, ale mocno ogranicza ich wolność", "AI znika", "AI i ludzie walczą"],
+      "answer": 1,
+      "explanation": "AI zarządza światem dla dobra ludzi, ale za cenę ich swobody."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-18-r1",
+      "question": "Która sonda jako pierwsza sfotografowała niewidoczną stronę Księżyca?",
+      "options": ["Apollo 8", "Łuna 3", "Voyager 1"],
+      "answer": 1,
+      "explanation": "Radziecka sonda Łuna 3 zrobiła te zdjęcia w 1959 roku."
+    },
+    {
+      "id": "2026-11-18-r2",
+      "question": "Kto płynął na czele procesji statków przy otwarciu Kanału Sueskiego?",
+      "options": ["Królowa Wiktoria", "Cesarzowa Eugenia na jachcie „L'Aigle”", "Ferdynand de Lesseps na łodzi wiosłowej"],
+      "answer": 1,
+      "explanation": "Procesję poprowadził jacht „L'Aigle” z francuską cesarzową Eugenią na pokładzie."
+    },
+    {
+      "id": "2026-11-18-r3",
+      "question": "Jakiego przykładu użył Tegmark, by pokazać, że AI nie musi być zła, by zaszkodzić?",
+      "options": ["Budowniczego tamy i mrowiska", "Lisa w kurniku", "Burzy na morzu"],
+      "answer": 0,
+      "explanation": "Budowniczy nie nienawidzi mrówek, ale jego cel i tak niszczy mrowisko."
+    }
+  ],
+  "evening": {
+    "question": "Jak chcielibyście, żeby technologia zmieniła wasze życie za 10 lat, a czego zdecydowanie byście nie chcieli?",
+    "hint": "Pomyślcie o pracy, zdrowiu, domu i o tym, ile czasu chcecie spędzać przed ekranami."
+  }
+}

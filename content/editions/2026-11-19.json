@@ -1,0 +1,340 @@
+{
+  "date": "2026-11-19",
+  "intro": "Dziś m.in.: prezes TK traci immunitet, polskie służby udaremniły rosyjską prowokację przy granicy i rekordowy debiut Anthropic na giełdzie.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Zgromadzenie sędziów TK uchyliło immunitet Święczkowskiemu",
+      "summary": "Zgromadzenie Ogólne Sędziów Trybunału Konstytucyjnego, zwołane przez sędzię Annę Korwin-Piotrowską, uchyliło immunitet prezesowi TK Bogdanowi Święczkowskiemu w czterech sprawach. Nie zgodziło się jednak na jego zatrzymanie i areszt. Zawiesiło go w obowiązkach i obniżyło mu pensję o połowę. Immunitet stracił też wiceprezes Bartłomiej Sochański. Zarzuty dotyczą m.in. niedopuszczania do orzekania sędziów wybranych przez Sejm. Święczkowski twierdzi, że żadnego ważnego zgromadzenia nie było, a prezydent Karol Nawrocki nadal uznaje go za prezesa TK.",
+      "why": "Prokuratura może teraz postawić zarzuty prezesowi TK, a spór o to, kto legalnie kieruje Trybunałem, jeszcze się zaostrza.",
+      "sources": [
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/jest-decyzja-tk-ws-immunitetu-swieczkowskiego-i-sochanskiego" },
+        { "name": "Notes from Poland", "url": "https://notesfrompoland.com/2026/11/18/polish-constitutional-court-strips-chief-justice-of-immunity-to-face-criminal-charges/" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Benzyna poniżej 6 zł",
+      "summary": "W czwartek maksymalna cena benzyny 95 wynosi 5,97 zł za litr, o 2 grosze mniej niż w środę, a benzyny 98 6,62 zł. Przy oleju napędowym ministerstwo energii wydało korektę: najpierw podało 7,30 zł, a kilka godzin później podniosło limit do 7,51 zł za litr. Ceny ustala rządowy program „Ceny Paliwa Niżej”.",
+      "why": "Benzyna jest najtańsza od tygodni, ale korekta ceny diesla pokazuje, że warto sprawdzać aktualny komunikat przed tankowaniem.",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://energia.rp.pl/paliwa/art45508241-ministerstwo-energii-zmienia-cene-diesla-bedzie-duzo-drozszy" },
+        { "name": "Bankier.pl", "url": "https://www.bankier.pl/wiadomosc/Ceny-paliw-w-dol-Ministerstwo-oglosilo-nowe-stawki-na-czwartek-9230780.html" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Nadchodzą mrozy, miejscami nawet do -10 stopni",
+      "summary": "Według IMGW przed weekendem w całej Polsce wyraźnie się ochłodzi. W nocy z piątku na sobotę na większości obszaru kraju temperatura ma spaść do od -3 do 0 stopni. Na terenach podgórskich Karpat w nocy możliwy jest mróz do -10 stopni. Od weekendu temperatury w ciągu dnia będą jednocyfrowe, a z czasem lokalnie ujemne. Na nizinach może popadać śnieg.",
+      "why": "To dobry moment, by przygotować samochód do zimy i pamiętać o samotnych sąsiadach, dla których mróz bywa niebezpieczny.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-18/chlod-uczepi-sie-polski-miejscami-moze-byc-nawet-dwucyfrowy/" },
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/kraj/art45500391-snieg-i-mroz-w-polsce-mozliwe-juz-w-listopadzie-synoptycy-podali-date" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Świecące punkty nad Warszawą. To wojskowe testy",
+      "summary": "W środę między 16.00 a 18.30 Wojskowy Instytut Techniczny Uzbrojenia w Zielonce testował pociski oświetlające MITHRAS 1000. MON uprzedzało, że nad Warszawą, Markami, Kobyłką, Wołominem i Legionowem mogą być widoczne jasne punkty powoli opadające na spadochronach, które w grupie mogą przypominać samolot lub drona. Ministerstwo podkreślało, że to rutynowe testy i mieszkańcom nic nie grozi. To nie są pociski bojowe.",
+      "why": "W czasach, gdy ludzie wypatrują dronów, takie uprzedzenia zapobiegają niepotrzebnej panice.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-18/swietlne-pociski-nad-warszawa-mon-uspokaja/" },
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/wojsko/art45507351-mieszkancy-warszawy-i-okolic-zobacza-nietypowe-swiatla-mon-wydalo-komunikat" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Fałszywa gala bokserska z wizerunkiem prezydenta. Sprawa w ABW",
+      "summary": "Kancelaria Prezydenta ostrzega przed oszustwem: w internecie sprzedawano bilety na rzekomą galę bokserską „NowRocky Boxing Night” z udziałem Karola Nawrockiego, zapowiadaną na 20 lutego 2027 roku w Atlas Arenie w Łodzi. Według urzędników takie wydarzenie nie istnieje. Sprawę przekazano ABW.",
+      "why": "Oszuści coraz częściej wykorzystują znane twarze, więc przed zakupem biletu warto sprawdzić organizatora.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-18/falszywa-gala-z-udzialem-nawrockiego-sprawa-trafila-do-abw/" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Trump w Chinach. Dziś szczyt z Xi i Putinem",
+      "summary": "Donald Trump przyleciał do Shenzhen na szczyt APEC. Xi Jinping powitał go na płycie lotniska. W czwartek odbędzie się pierwsze w historii trójstronne spotkanie przywódców USA, Chin i Rosji. Trump chce rozmawiać o ograniczeniu arsenałów jądrowych. Według amerykańskiego urzędnika Trump spotka się też osobno z Władimirem Putinem, ale Kreml mówi o tym ostrożniej. Analitycy nie spodziewają się przełomu.",
+      "why": "Te trzy państwa mają większość broni jądrowej na świecie, a Ukraina obawia się rozmów o niej bez jej udziału.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/18/nx-s1-6045518/trump-china-xi-putin" },
+        { "name": "CBS News", "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Mary Peltola wygrywa na Alasce. Demokraci mają 56 senatorów",
+      "summary": "Demokratka Mary Peltola pokonała republikańskiego senatora Dana Sullivana w wyborach do Senatu na Alasce. Według AP zdobyła 50,1 proc. głosów pierwszego wyboru wobec 45,8 proc. rywala, więc nie trzeba było liczyć dalszych preferencji. Będzie pierwszą rdzenną mieszkanką Alaski w Senacie i pierwszą demokratką wybraną tam od 2008 roku. Demokraci mają teraz 56 miejsc w Senacie.",
+      "why": "To kolejny mandat, który demokraci odbili w tych wyborach, co wzmacnia ich przewagę w Kongresie.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/18/nx-s1-6027333/mary-peltola-flips-alaskas-senate-seat-blue" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/18/mary-peltola-wins-alaska-senate-seat-in-another-democratic-win" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Voyager 1 jest już jeden „dzień świetlny” od Ziemi",
+      "summary": "18 listopada sonda Voyager 1 znalazła się dzień świetlny od Ziemi, ok. 25,9 mld km. To rekord dla obiektu zbudowanego przez człowieka. Sygnał radiowy potrzebuje teraz całej doby, by do niej dotrzeć. Sonda wystartowała prawie 50 lat temu. Obecnie nie przesyła danych naukowych ani technicznych, ale wysyła sygnał nośny. Inżynierowie NASA szukają przyczyny, co może potrwać tygodnie.",
+      "why": "Pół wieku po starcie Voyager wciąż bada przestrzeń poza Układem Słonecznym, choć jego czas powoli się kończy.",
+      "sources": [
+        { "name": "NASA", "url": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/18/nasas-voyager-1-hits-record-one-light-day-distance-50-years-after-launch" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Rosja znów uderza w Odessę i energetykę",
+      "summary": "Według Kyiv Independent rosyjskie ataki w ciągu doby zabiły w Ukrainie pięć osób i raniły 15. Uszkodzona została infrastruktura energetyczna w obwodach kijowskim, mikołajowskim i rówieńskim. W osobnych, powtarzających się uderzeniach na centrum Odessy zginęły cztery osoby, a dziewięć zostało rannych.",
+      "why": "Ataki na energetykę przed zimą uderzają w zwykłych mieszkańców, którzy zostają bez prądu i ciepła.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/russian-attacks-kill-5-injure-15-across-ukraine-over-past-day-as-russia-continues-energy-assault/" },
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/russian-strikes-central-odesa-kills-3-injures-7/" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Robotaksówki Waymo znikają z autostrad",
+      "summary": "Kalifornijski urząd ds. pojazdów zakazał autonomicznym samochodom Waymo jazdy po autostradach w całym stanie, dopóki firma nie udowodni, że naprawiła problemy. Powodem były incydenty, m.in. wjazd trzech robotaksówek w strefę robót drogowych na drodze US 101 pod Burlingame. Waymo wstrzymało jazdy autostradami we wszystkich miastach, w których działa, także poza Kalifornią. Po zwykłych ulicach robotaksówki jeżdżą nadal.",
+      "why": "Autonomiczne auta radzą sobie w mieście, ale nietypowe sytuacje, jak roboty drogowe, wciąż sprawiają im kłopot.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/17/waymo-suspends-freeway-rides-nationwide-after-california-dmv-order/" },
+        { "name": "CBS News", "url": "https://www.cbsnews.com/sanfrancisco/news/waymo-robotaxis-california-dmv-freeways-autonomous-vehicles/" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Polskie służby udaremniły rosyjską prowokację przy granicy",
+      "summary": "Według „Rzeczpospolitej” na przełomie października i listopada polskie służby, policja i jednostki specjalne przeprowadziły tajną operację przy granicy z obwodem królewieckim. Miała ona udaremnić rosyjską prowokację: dywersanci, prawdopodobnie w ukraińskich mundurach, mieli przekroczyć granicę i upozorować atak. Rozmówca gazety porównał to do prowokacji gliwickiej z 1939 roku. Szef MON Władysław Kosiniak-Kamysz potwierdził, że służby wiedziały o planach i zareagowały.",
+      "why": "Taka akcja pod fałszywą flagą miała obciążyć Ukraińców i osłabić pomoc dla Ukrainy.",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/polityka/art45510781-szef-mon-potwierdza-doniesienia-rz-polskie-sluzby-udaremnily-rosyjska-prowokacje" },
+        { "name": "TVN24", "url": "https://tvn24.pl/polska/szef-mon-wladyslaw-kosiniak-kamysz-sluzby-wiedzialy-o-rosyjskiej-prowokacji-przy-granicy-i-odpowiednio-zareagowaly-st9346225" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Premiera GTA VI. Rekordowa przedsprzedaż",
+      "summary": "19 listopada zadebiutowała gra GTA VI, a w Polsce ruszyła o północy z 18 na 19 listopada. Według analizy Sensor Tower do 15 listopada w przedsprzedaży zamówiono prawie 16 mln kopii, a analityk spodziewa się ponad 20 mln, co byłoby rekordem. Podstawowa wersja kosztuje w Polsce 349 zł, a edycja Ultimate 429 zł. Według danych OLX we wrześniu zainteresowanie konsolami PlayStation 5 wzrosło o 233 proc.",
+      "why": "To jedna z najdroższych gier w historii i ważny sprawdzian dla całej branży, także dla polskich studiów.",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://cyfrowa.rp.pl/gry-e-sport/art45506341-gta-vi-zadebiutowalo-firmy-daja-wolne-hakerzy-ruszaja-do-ataku-a-polacy-juz-graja" },
+        { "name": "TVN24", "url": "https://tvn24.pl/biznes/tech/rynek-gier-rosnie-w-sile-gta-vi-moze-byc-sprawdzianem-dla-branzy-st9345820" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Anthropic z rekordową ofertą na giełdzie",
+      "summary": "Anthropic, firma rozwijająca model Claude, wycenił akcje w ofercie publicznej na 83 dolary, powyżej wcześniejszego przedziału 70–78 dolarów. Według CNBC i NPR oferta przyniosła ok. 81,3 mld dolarów i jest największą w historii, większą od czerwcowego debiutu SpaceX. Według Axios cała firma jest warta ok. 1,08 bln dolarów. Notowania na Nasdaq pod symbolem „ANT” mają ruszyć w czwartek.",
+      "why": "Debiut pokaże, czy inwestorzy wciąż wierzą w AI po aferze w Nvidii i obawach o bańkę.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/18/nx-s1-6046212/anthropic-record-ipo-price" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Leki typu Ozempic a mózg: nadzieje i rozczarowania",
+      "summary": "Niektóre badania wiążą leki z grupy GLP-1, takie jak Ozempic czy Mounjaro, z mniejszym ryzykiem demencji. Jednak w dużych badaniach klinicznych EVOKE i EVOKE+ firmy Novo Nordisk semaglutyd nie spowolnił postępu wczesnej choroby Alzheimera. Naukowcy wciąż sprawdzają, czy te leki mogą wspierać pracę mózgu u części pacjentów.",
+      "why": "Wokół tych leków jest wiele entuzjazmu, ale na razie nie leczą one alzheimera.",
+      "sources": [
+        { "name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261116023401.htm" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "Samuel L. Jackson w „Frisco King”. Jest zwiastun",
+      "summary": "Paramount+ pokazał zwiastun serialu „Frisco King”, spin-offu „Tulsa King” od Taylora Sheridana, z Samuelem L. Jacksonem w roli głównej. Premiera zaplanowana jest na 18 grudnia, kiedy pojawią się dwa odcinki, a kolejne będą wychodzić co piątek.",
+      "why": "Taylor Sheridan, twórca „Yellowstone”, buduje dla Paramount+ całe uniwersum seriali.",
+      "sources": [
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/frisco-king-trailer-release-date-taylor-sheridan-paramount-1237157647" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "kosmos",
+      "title": "W kosmosie astronauci rosną",
+      "body": "Na Ziemi grawitacja ściska kręgosłup. W stanie nieważkości kręgi rozluźniają się i rozsuwają, więc astronauci rosną nawet o 3 proc., czyli kilka centymetrów. Po powrocie na Ziemię wzrost wraca do normy w ciągu kilku miesięcy. Ma to też minusy: w kosmosie słabną mięśnie podtrzymujące kręgosłup, a ryzyko przepukliny dysku po powrocie jest wyższe.",
+      "source": { "name": "Scientific American", "url": "https://www.scientificamerican.com/article/astronauts-get-taller-in-space/" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "przyroda",
+      "title": "Mrówki uprawiały grzyby miliony lat przed ludźmi",
+      "body": "Niektóre mrówki z Ameryki uprawiają grzyby w swoich gniazdach i nimi się żywią. Badania Smithsonian wskazują, że to „rolnictwo” zaczęło się ok. 50–60 mln lat temu, a według części naukowców tuż po wymarciu dinozaurów. Mrówki grzybiarki znoszą do gniazd kawałki liści, na których hodują grzyb. Dziś mrówki i ich grzyb nie mogą bez siebie żyć.",
+      "source": { "name": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/smithsonian-institution/ants-farmed-fungi-in-the-wake-of-dinosaurs-demise-66-million-years-ago-180985193/" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "psychologia",
+      "title": "Wpadka może dodać sympatii",
+      "body": "W eksperymencie z 1966 roku Elliot Aronson z zespołem pokazał, że kompetentna osoba, która rozlała na siebie kawę, wydawała się badanym bardziej sympatyczna niż równie kompetentna bez wpadki. Zjawisko nazwano efektem potknięcia. U osób przeciętnych taka wpadka obniżała sympatię. Powtórzenie badania w 2002 roku nie potwierdziło jednak tego efektu, więc warto traktować go ostrożnie.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Pratfall_effect" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1995,
+      "title": "Kwaśniewski wygrywa z Wałęsą",
+      "body": "19 listopada 1995 r. w drugiej turze wyborów prezydenckich Aleksander Kwaśniewski pokonał urzędującego prezydenta Lecha Wałęsę, zdobywając 51,72 proc. głosów wobec 48,28 proc. Kwaśniewski rządził przez dwie kadencje, do 2005 roku.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/kalendarz-historyczny/19/11" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1863,
+      "title": "Mowa gettysburska Lincolna",
+      "body": "19 listopada 1863 r., podczas otwarcia cmentarza żołnierzy poległych pod Gettysburgiem, prezydent USA Abraham Lincoln wygłosił mowę trwającą ok. dwóch minut. Miała ok. 270 słów, a źródła różnią się co do dokładnej liczby. Wcześniej długie przemówienie wygłosił główny mówca, Edward Everett. To krótkie przemówienie o równości i demokracji uchodzi dziś za jedno z najważniejszych w historii USA.",
+      "source": { "name": "Britannica", "url": "https://www.britannica.com/event/Gettysburg-Address" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1990,
+      "title": "Traktat o ograniczeniu wojsk w Europie",
+      "body": "19 listopada 1990 r. w Paryżu państwa NATO i Układu Warszawskiego podpisały Traktat o konwencjonalnych siłach zbrojnych w Europie. Ograniczał liczbę czołgów, dział, samolotów i śmigłowców na kontynencie. Był jednym z symboli końca zimnej wojny.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/kalendarz-historyczny/19/11" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Paradoks Simpsona",
+    "definition": "To sytuacja, w której zależność widoczna w kilku grupach danych znika albo odwraca się po połączeniu tych grup.",
+    "origin": "Najsłynniejszy przykład pochodzi z Uniwersytetu Kalifornijskiego w Berkeley z 1973 roku. Ogółem przyjęto ok. 44 proc. mężczyzn i tylko ok. 35 proc. kobiet, co wyglądało na dyskryminację. Na poszczególnych wydziałach kobiety przyjmowano jednak podobnie albo nawet częściej. Różnica wynikała z tego, że kobiety częściej zgłaszały się na najbardziej oblegane kierunki.",
+    "examples": [
+      "Szpital leczący najcięższe przypadki może mieć gorsze ogólne wyniki, choć w każdej grupie pacjentów leczy lepiej.",
+      "Średnie wyniki uczniów w kraju mogą spadać, choć w każdej grupie rosną, jeśli zmienia się skład uczniów.",
+      "Zanim wyciągniecie wniosek z ogólnej średniej, zapytajcie, z jakich grup się składa."
+    ],
+    "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Simpson's_paradox" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "zycie-3-0",
+    "title": "Życie 3.0. Człowiek w erze sztucznej inteligencji",
+    "author": "Max Tegmark",
+    "day": 5,
+    "days": 7,
+    "ideaTitle": "To świadomość nadaje światu sens",
+    "idea": "Tegmark pyta, co by było, gdyby przyszłość należała do bardzo inteligentnych maszyn, które niczego nie przeżywają. Jego zdaniem to nie wszechświat nadaje nam sens, tylko my, świadome istoty, nadajemy sens wszechświatowi. Bez kogoś, kto cokolwiek odczuwa, kosmos byłby ogromną stratą miejsca. Świadomość opisuje jako to, jak „czuje się” informacja, gdy jest przetwarzana. Przyznaje jednak, że wciąż nie wiemy, co ma świadomość i skąd się bierze. Gdy martwimy się szkodami wyrządzanymi przez AI, świadomość nie ma znaczenia, ale ma, gdy pytamy, czy maszyna może cierpieć.",
+    "moral": "Inteligencja to umiejętność osiągania celów, a świadomość to zdolność przeżywania. Najcenniejsze jest to drugie.",
+    "action": "Zatrzymajcie się dziś na minutę przy czymś przyjemnym, np. smaku herbaty, i po prostu to poczujcie.",
+    "source": { "name": "Future of Life Institute", "url": "https://futureoflife.org/2017/08/29/transcript-life-3-0-human-age-artificial-intelligence/" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-19-q1",
+      "ref": "fact-1",
+      "question": "Dlaczego astronauci rosną w kosmosie?",
+      "options": ["Bo jedzą specjalne jedzenie", "Bo w nieważkości kręgi kręgosłupa się rozsuwają", "Bo więcej śpią", "Bo w kosmosie jest niższe ciśnienie krwi"],
+      "answer": 1,
+      "explanation": "Bez grawitacji kręgosłup nie jest ściskany, więc się wydłuża, a po powrocie wzrost wraca do normy."
+    },
+    {
+      "id": "2026-11-19-q2",
+      "ref": "fact-2",
+      "question": "Co uprawiają mrówki grzybiarki?",
+      "options": ["Zboże", "Grzyby", "Mszyce", "Kwiaty"],
+      "answer": 1,
+      "explanation": "Mrówki hodują grzyby w gniazdach na kawałkach liści, a zaczęły to robić dziesiątki milionów lat temu."
+    },
+    {
+      "id": "2026-11-19-q3",
+      "ref": "fact-3",
+      "question": "Kogo według Aronsona wpadka czyniła bardziej sympatycznym?",
+      "options": ["Każdego", "Osobę kompetentną", "Osobę przeciętną", "Nikogo"],
+      "answer": 1,
+      "explanation": "Sympatię zyskiwała osoba kompetentna, a przeciętna ją traciła. Późniejsze badanie nie potwierdziło jednak efektu."
+    },
+    {
+      "id": "2026-11-19-q4",
+      "ref": "otd-1",
+      "question": "Kogo pokonał Aleksander Kwaśniewski w wyborach w 1995 roku?",
+      "options": ["Tadeusza Mazowieckiego", "Lecha Wałęsę", "Jacka Kuronia", "Waldemara Pawlaka"],
+      "answer": 1,
+      "explanation": "W drugiej turze Kwaśniewski zdobył 51,72 proc., a Wałęsa 48,28 proc. głosów."
+    },
+    {
+      "id": "2026-11-19-q5",
+      "ref": "otd-2",
+      "question": "Ile mniej więcej trwała mowa gettysburska Lincolna?",
+      "options": ["Ok. dwóch minut", "Ok. godziny", "Ok. dwóch godzin", "Ok. 20 minut"],
+      "answer": 0,
+      "explanation": "Miała ok. 270 słów i trwała ok. dwóch minut, a wcześniej długo przemawiał Edward Everett."
+    },
+    {
+      "id": "2026-11-19-q6",
+      "ref": "concept",
+      "question": "Co wyjaśniło pozorną dyskryminację kobiet w Berkeley w 1973 roku?",
+      "options": ["Błąd w liczeniu", "Kobiety częściej zgłaszały się na najtrudniejsze kierunki", "Kobiety rzadziej składały podania", "Zmiana przepisów"],
+      "answer": 1,
+      "explanation": "Na poszczególnych wydziałach kobiety przyjmowano podobnie, a ogólną średnią zaniżał wybór oblężonych kierunków."
+    },
+    {
+      "id": "2026-11-19-q7",
+      "ref": "book",
+      "question": "Jak Tegmark opisuje świadomość?",
+      "options": ["Jako szybkość myślenia", "Jako to, jak czuje się informacja, gdy jest przetwarzana", "Jako ilość pamięci", "Jako zdolność mówienia"],
+      "answer": 1,
+      "explanation": "Według Tegmarka świadomość to sposób, w jaki przetwarzana informacja jest odczuwana od środka."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-19-r1",
+      "question": "Jak nazywa się najmniejszy organizm fotosyntetyzujący, który według NOAA daje nawet do 20 proc. tlenu biosfery?",
+      "options": ["Prochlorococcus", "Euglena", "Spirulina"],
+      "answer": 0,
+      "explanation": "Prochlorococcus to mikroskopijna sinica żyjąca w oceanie."
+    },
+    {
+      "id": "2026-11-19-r2",
+      "question": "Kto był głównym autorem orędzia biskupów polskich do niemieckich?",
+      "options": ["Prymas Stefan Wyszyński", "Abp Bolesław Kominek", "Kard. Karol Wojtyła"],
+      "answer": 1,
+      "explanation": "Głównym autorem był arcybiskup wrocławski Bolesław Kominek, a list podpisało 34 duchownych."
+    },
+    {
+      "id": "2026-11-19-r3",
+      "question": "Kto spopularyzował pojęcie „paradoksu wyboru”?",
+      "options": ["Daniel Kahneman", "Barry Schwartz", "Richard Thaler"],
+      "answer": 1,
+      "explanation": "Psycholog Barry Schwartz opisał je w książce „Paradoks wyboru”."
+    }
+  ],
+  "evening": {
+    "question": "Jaka chwila z ostatnich dni była dla was najbardziej „przeżyta”, a nie tylko odhaczona?",
+    "hint": "Może spacer, wspólny posiłek albo rozmowa. Zastanówcie się, co sprawiło, że była taka ważna."
+  }
+}

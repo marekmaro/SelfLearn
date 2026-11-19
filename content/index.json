@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-11-19",
+      "headline": "Zgromadzenie sędziów TK uchyliło immunitet Święczkowskiemu",
+      "threads": [
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-4",
+          "title": "Rosja znów uderza w Odessę i energetykę"
+        }
+      ],
+      "facts": [
+        "W kosmosie astronauci rosną",
+        "Mrówki uprawiały grzyby miliony lat przed ludźmi",
+        "Wpadka może dodać sympatii"
+      ],
+      "concept": "Paradoks Simpsona"
+    },
+    {
       "date": "2026-11-18",
       "headline": "Sejm odrzucił wotum nieufności wobec rządu Tuska",
       "threads": [

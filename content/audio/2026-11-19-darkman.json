@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-19",
+  "file": "2026-11-19-darkman.mp3",
+  "url": "audio/2026-11-19-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-19-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "c9b73c65920d2dfc",
+  "duration": 951.17,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 14.5
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Zgromadzenie sędziów TK uchyliło immunitet Święczkowskiemu",
+      "start": 15.2,
+      "end": 66.6
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Benzyna poniżej 6 zł",
+      "start": 67.3,
+      "end": 107.87
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Nadchodzą mrozy, miejscami nawet do -10 stopni",
+      "start": 108.57,
+      "end": 144.79
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Świecące punkty nad Warszawą. To wojskowe testy",
+      "start": 145.49,
+      "end": 187.83
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Fałszywa gala bokserska z wizerunkiem prezydenta. Sprawa w ABW",
+      "start": 188.53,
+      "end": 224.17
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Trump w Chinach. Dziś szczyt z Xi i Putinem",
+      "start": 225.37,
+      "end": 265.62
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Mary Peltola wygrywa na Alasce. Demokraci mają 56 senatorów",
+      "start": 266.32,
+      "end": 307.79
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Voyager 1 jest już jeden „dzień świetlny” od Ziemi",
+      "start": 308.49,
+      "end": 348.35
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Rosja znów uderza w Odessę i energetykę",
+      "start": 349.05,
+      "end": 381.25
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Robotaksówki Waymo znikają z autostrad",
+      "start": 381.95,
+      "end": 423.27
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Polskie służby udaremniły rosyjską prowokację przy granicy",
+      "start": 424.47,
+      "end": 470.63
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Premiera GTA VI. Rekordowa przedsprzedaż",
+      "start": 471.33,
+      "end": 517.94
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Anthropic z rekordową ofertą na giełdzie",
+      "start": 518.64,
+      "end": 564.22
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Leki typu Ozempic a mózg: nadzieje i rozczarowania",
+      "start": 564.92,
+      "end": 598.84
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Samuel L. Jackson w „Frisco King”. Jest zwiastun",
+      "start": 599.54,
+      "end": 630.25
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Mrówki uprawiały grzyby miliony lat przed ludźmi",
+      "start": 631.45,
+      "end": 660.26
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "W kosmosie astronauci rosną",
+      "start": 660.96,
+      "end": 686.99
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Wpadka może dodać sympatii",
+      "start": 687.69,
+      "end": 719.67
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1995: Kwaśniewski wygrywa z Wałęsą",
+      "start": 720.87,
+      "end": 750.91
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1863: Mowa gettysburska Lincolna",
+      "start": 751.61,
+      "end": 786.77
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1990: Traktat o ograniczeniu wojsk w Europie",
+      "start": 787.47,
+      "end": 810.21
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Paradoks Simpsona",
+      "start": 811.41,
+      "end": 867.03
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Życie 3.0. Człowiek w erze sztucznej inteligencji: To świadomość nadaje światu sens",
+      "start": 868.23,
+      "end": 935.09
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 936.29,
+      "end": 950.67
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-19",
+  "file": "2026-11-19.mp3",
+  "url": "audio/2026-11-19.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-19.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "eee50424bd826b60",
+  "duration": 954.06,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 14.48
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Zgromadzenie sędziów TK uchyliło immunitet Święczkowskiemu",
+      "start": 15.18,
+      "end": 67.48
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Benzyna poniżej 6 zł",
+      "start": 68.18,
+      "end": 108.02
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Nadchodzą mrozy, miejscami nawet do -10 stopni",
+      "start": 108.72,
+      "end": 146.14
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Świecące punkty nad Warszawą. To wojskowe testy",
+      "start": 146.84,
+      "end": 188.41
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Fałszywa gala bokserska z wizerunkiem prezydenta. Sprawa w ABW",
+      "start": 189.11,
+      "end": 223.6
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Trump w Chinach. Dziś szczyt z Xi i Putinem",
+      "start": 224.8,
+      "end": 264.61
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Mary Peltola wygrywa na Alasce. Demokraci mają 56 senatorów",
+      "start": 265.31,
+      "end": 308.62
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Voyager 1 jest już jeden „dzień świetlny” od Ziemi",
+      "start": 309.32,
+      "end": 350.71
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Rosja znów uderza w Odessę i energetykę",
+      "start": 351.41,
+      "end": 383.54
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Robotaksówki Waymo znikają z autostrad",
+      "start": 384.24,
+      "end": 426.06
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Polskie służby udaremniły rosyjską prowokację przy granicy",
+      "start": 427.26,
+      "end": 474.17
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Premiera GTA VI. Rekordowa przedsprzedaż",
+      "start": 474.87,
+      "end": 521.21
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Anthropic z rekordową ofertą na giełdzie",
+      "start": 521.91,
+      "end": 566.98
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Leki typu Ozempic a mózg: nadzieje i rozczarowania",
+      "start": 567.68,
+      "end": 601.7
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Samuel L. Jackson w „Frisco King”. Jest zwiastun",
+      "start": 602.4,
+      "end": 633.57
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Mrówki uprawiały grzyby miliony lat przed ludźmi",
+      "start": 634.77,
+      "end": 664.1
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "W kosmosie astronauci rosną",
+      "start": 664.8,
+      "end": 691.47
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Wpadka może dodać sympatii",
+      "start": 692.17,
+      "end": 723.71
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1995: Kwaśniewski wygrywa z Wałęsą",
+      "start": 724.91,
+      "end": 752.84
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1863: Mowa gettysburska Lincolna",
+      "start": 753.54,
+      "end": 787.65
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1990: Traktat o ograniczeniu wojsk w Europie",
+      "start": 788.35,
+      "end": 811.94
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Paradoks Simpsona",
+      "start": 813.14,
+      "end": 869.78
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Życie 3.0. Człowiek w erze sztucznej inteligencji: To świadomość nadaje światu sens",
+      "start": 870.98,
+      "end": 937.59
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 938.79,
+      "end": 953.56
+    }
+  ]
+}

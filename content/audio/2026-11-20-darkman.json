@@ -1,0 +1,201 @@
+{
+  "date": "2026-11-20",
+  "file": "2026-11-20-darkman.mp3",
+  "url": "audio/2026-11-20-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-20-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "87fedebc9162f47f",
+  "duration": 1025.49,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 17.12
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Prezydent wetuje wyższy VAT na napoje energetyczne, podpisuje wyższą akcyzę na alkohol",
+      "start": 17.82,
+      "end": 64.5
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Sekretarz energii USA: polski atom w 2036 roku jest realny",
+      "start": 65.2,
+      "end": 107.17
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Wyciek danych z Autopay. Banki blokują karty",
+      "start": 107.87,
+      "end": 152.44
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Kraków odznaczył 36 medyków, którzy ratowali rannych w zamachu",
+      "start": 153.14,
+      "end": 190.17
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Białe święta? Szanse ok. 40–60 proc.",
+      "start": 190.87,
+      "end": 224.18
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Trump, Xi i Putin: „wojny jądrowej nie da się wygrać”",
+      "start": 225.38,
+      "end": 267.85
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Międzynarodowy Trybunał Sprawiedliwości: Mjanma winna ludobójstwa Rohingja",
+      "start": 268.55,
+      "end": 314.85
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Atak Huti uszkodził najwyższy wieżowiec Rijadu",
+      "start": 315.55,
+      "end": 354.29
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Mistrzyni świata w maratonie zawieszona za doping",
+      "start": 354.99,
+      "end": 392.13
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Światowy Dzień Toalet: chodzi o zdrowie i równość",
+      "start": 392.83,
+      "end": 427.46
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Dania zatwierdziła umowę o bezpieczeństwie Grenlandii z USA",
+      "start": 428.66,
+      "end": 472.32
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Kolejny atak na Most Krymski. Rosja wstrzymuje pociągi",
+      "start": 473.02,
+      "end": 498.81
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Gemini może teraz obsługiwać komputer Mac za użytkownika",
+      "start": 499.51,
+      "end": 537.5
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Anthropic na giełdzie: akcje 17 proc. powyżej ceny emisyjnej",
+      "start": 538.2,
+      "end": 591.59
+    },
+    {
+      "id": "ai-2",
+      "chapter": "tematy",
+      "label": "Asystent AI Mety miesza rozmowy różnych użytkowników",
+      "start": 592.29,
+      "end": 619.7
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Depresja związana z zegarem biologicznym",
+      "start": 620.4,
+      "end": 648.16
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Serial „From” podbija Netflix",
+      "start": 648.86,
+      "end": 685.6
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Z ilu komórek się składamy?",
+      "start": 686.8,
+      "end": 716.92
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Drzewa mogą wymieniać się węglem przez grzyby",
+      "start": 717.62,
+      "end": 746.05
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Na olimpiadzie dawano kiedyś medale za sztukę",
+      "start": 746.75,
+      "end": 784.69
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1648: Jan Kazimierz wybrany na króla",
+      "start": 785.89,
+      "end": 816.53
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1945: Rusza proces norymberski",
+      "start": 817.23,
+      "end": 851.9
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1959: ONZ przyjmuje Deklarację Praw Dziecka",
+      "start": 852.6,
+      "end": 878.8
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt kobry",
+      "start": 880,
+      "end": 934.74
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Życie 3.0. Człowiek w erze sztucznej inteligencji: Wyścig mądrości: technologia rośnie szybciej niż rozsądek",
+      "start": 935.94,
+      "end": 1009.3
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 1010.5,
+      "end": 1024.99
+    }
+  ]
+}

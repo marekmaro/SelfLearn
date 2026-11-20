@@ -1,6 +1,28 @@
 {
   "editions": [
     {
+      "date": "2026-11-20",
+      "headline": "Prezydent wetuje wyższy VAT na napoje energetyczne, podpisuje wyższą akcyzę na alkohol",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-4",
+          "title": "Kraków odznaczył 36 medyków, którzy ratowali rannych w zamachu"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-2",
+          "title": "Kolejny atak na Most Krymski. Rosja wstrzymuje pociągi"
+        }
+      ],
+      "facts": [
+        "Z ilu komórek się składamy?",
+        "Na olimpiadzie dawano kiedyś medale za sztukę",
+        "Drzewa mogą wymieniać się węglem przez grzyby"
+      ],
+      "concept": "Efekt kobry"
+    },
+    {
       "date": "2026-11-19",
       "headline": "Zgromadzenie sędziów TK uchyliło immunitet Święczkowskiemu",
       "threads": [

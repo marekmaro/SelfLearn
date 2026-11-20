@@ -1,0 +1,360 @@
+{
+  "date": "2026-11-20",
+  "intro": "Dziś m.in.: Trump, Xi i Putin podpisali deklarację o broni jądrowej, MTS uznał Mjanmę za winną ludobójstwa Rohingja, a Polacy blokują karty po wycieku danych z Autopay.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Prezydent wetuje wyższy VAT na napoje energetyczne, podpisuje wyższą akcyzę na alkohol",
+      "summary": "Prezydent Karol Nawrocki zawetował ustawę, która podnosiła do 23 proc. VAT na napoje energetyczne z sokiem oraz piwo i wino bezalkoholowe z co najmniej 20 proc. soku. Uzasadnił to skutkami gospodarczymi i brakiem gwarancji, że pieniądze trafią do ochrony zdrowia. Ostrzegał też przed spadkiem popytu na polskie owoce. Rząd liczył na prawie 1,3 mld zł dochodu w przyszłym roku. Tego samego dnia prezydent podpisał wyższą akcyzę na alkohol od 2027 roku.",
+      "why": "Spór o podatki od niezdrowych produktów dotyczy i zdrowia, i budżetu państwa.",
+      "sources": [
+        { "name": "TVN24", "url": "https://tvn24.pl/biznes/z-kraju/vat-na-napoje-energetyczne-jest-decyzja-prezydenta-karola-nawrockiego-st9345899" },
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/polityka/art45509151-karol-nawrocki-podpisal-trzy-ustawy-akcyza-w-gore-weto-prezydenta-w-sprawie-vat" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Sekretarz energii USA: polski atom w 2036 roku jest realny",
+      "summary": "Amerykański sekretarz energii Chris Wright powiedział TVN24, że uruchomienie pierwszego bloku polskiej elektrowni jądrowej w 2036 roku jest realne, jeśli procedury i zgody będą szły zgodnie z planem. Elektrownia ma powstać w Lubiatowie-Kopalinie, a budują ją Westinghouse i Bechtel. Sejm uchwalił też nowelizację specustawy jądrowej, która pozwala zacząć część prac przed ostatecznym pozwoleniem na budowę.",
+      "why": "Elektrownia jądrowa ma dać Polsce stabilny prąd bez emisji i zmniejszyć zależność od węgla.",
+      "sources": [
+        { "name": "TVN24", "url": "https://tvn24.pl/biznes/z-kraju/co-z-elektrownia-jadrowa-w-polsce-sekretarz-energii-chris-wright-rok-2036-to-bedzie-realny-termin-st9345898" },
+        { "name": "PAP", "url": "https://biznes.pap.pl/wiadomosci/przemysl/sejm-za-uproszczeniem-inwestycji-w-energetyke-jadrowa" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Wyciek danych z Autopay. Banki blokują karty",
+      "summary": "Firma płatnicza Autopay poinformowała o cyberataku: 11 listopada wykryła nieuprawniony dostęp do części infrastruktury i danych płatniczych. Mogły wyciec e-maile, numery telefonów, adresy IP i dane kart użytych do płatności. Firma nie podała, ilu klientów to dotyczy. Część banków, m.in. banki spółdzielcze, prewencyjnie zastrzega karty. Ekspert radzi zastrzec kartę i zamówić nową, a Związek Banków Polskich ostrzega przed oszustami podszywającymi się pod banki.",
+      "why": "Wyciek danych kart to ryzyko kradzieży pieniędzy, więc warto sprawdzić historię transakcji.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-19/cyberatak-na-autopay-ekspert-o-skali-problemu-padl-apel-do-klientow/" },
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/banki/art45516611-cyberatak-na-autopay-ekspert-ostrzega-przed-utrata-pieniedzy" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Kraków odznaczył 36 medyków, którzy ratowali rannych w zamachu",
+      "summary": "Na sesji rady miasta Kraków wręczył odznaki Honoris Gratia 36 medykom, którzy pomagali rannym w zamachu z 7 listopada. Wśród nich jest 30 pracowników Krakowskiego Pogotowia Ratunkowego i dwóch obywateli Słowacji. Chirurdzy prof. Michał Pędziwiatr i dr Mateusz Wierdak byli akurat w centrum miasta i jako jedni z pierwszych ratowali rannych razem z policjantami i przechodniami.",
+      "why": "Szybka pomoc ratowników i przypadkowych osób uratowała wiele osób.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/krakow-medycy-niosacy-pomoc-po-zamachu-otrzymali-odznaki-honoris-gratia" },
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-18/zamach-w-krakowie-lekarze-i-ratownicy-medyczni-otrzymali-odznaki-honoris-gratia/" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Białe święta? Szanse ok. 40–60 proc.",
+      "summary": "Według analizy serwisu Severe Weather Europe, cytowanej przez Polsat News, zima w Polsce może być łagodna, z mniejszą ilością śniegu, zwłaszcza na nizinach. Szansę na białe Boże Narodzenie w Europie Środkowej oszacowano na ok. 40–60 proc. Prognozy długoterminowe są jednak bardzo niepewne.",
+      "why": "Długoterminowe prognozy to tylko wskazówka. Na pewną pogodę na święta trzeba poczekać do grudnia.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-19/bedzie-snieg-na-boze-narodzenie-znamy-prawdopodobienstwo-w-procentach/" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Trump, Xi i Putin: „wojny jądrowej nie da się wygrać”",
+      "summary": "Na pierwszym w historii trójstronnym spotkaniu w Shenzhen przywódcy USA, Chin i Rosji przyjęli deklarację, w której stwierdzili, że wojny jądrowej nie da się wygrać i nigdy nie wolno jej prowadzić. Zgodzili się na rozmowy o zmniejszaniu ryzyka nuklearnego, ale bez terminu. Deklaracja nie wspomina o wojnach w Ukrainie i Iranie. Xi nazwał szczyt owocnym, a Trump ocenił go na 12 w skali od 0 do 10. Według CBS spotkanie przyniosło niewiele konkretów.",
+      "why": "Wspólny sygnał w sprawie broni jądrowej jest ważny, ale najpilniejsze konflikty zostały pominięte.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/19/us-and-china-want-to-help-end-ukraine-war-trump-says-ahead-of-trilateral-with-russia" },
+        { "name": "CBS News", "url": "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "Międzynarodowy Trybunał Sprawiedliwości: Mjanma winna ludobójstwa Rohingja",
+      "summary": "Międzynarodowy Trybunał Sprawiedliwości w Hadze orzekł stosunkiem głosów 9 do 6, że Mjanma dopuściła się w 2017 roku ludobójstwa na muzułmańskiej mniejszości Rohingja. Sprawę wniosła Gambia. To pierwszy raz, gdy ten sąd uznał państwo za odpowiedzialne za ludobójstwo. Trybunał nakazał Mjanmie przedstawienie w ciągu dwóch lat planu zadośćuczynienia. Wyrok jest ostateczny, ale sąd nie ma sposobu, by go wyegzekwować. Mjanma zaprzecza i mówi o walce z rebeliantami.",
+      "why": "Wyrok to historyczny precedens w prawie międzynarodowym, choć jego realne skutki zależą od innych państw.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/19/un-top-court-finds-myanmar-killed-10000-rohingya-as-it-rules-on-genocide" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/19/nx-s1-6045926/myanmar-committed-genocide-against-its-rohingya-muslim-minority-court-rules" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Atak Huti uszkodził najwyższy wieżowiec Rijadu",
+      "summary": "Według saudyjskiej obrony cywilnej atak jemeńskich rebeliantów Huti uszkodził jedną z wież w dzielnicy finansowej Rijadu. Na zdjęciach widać 80-piętrowy wieżowiec Publicznego Funduszu Inwestycyjnego, najwyższy budynek w stolicy Arabii Saudyjskiej. Fasada jest uszkodzona na kilku piętrach, a szyby powybijane. Nikt nie został ranny. To kolejny atak Huti na saudyjskie lotniska, instalacje naftowe i biurowce.",
+      "why": "Wojna z Iranem rozlewa się na cały region, a ataki sięgają już centrów wielkich miast.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/19/saudi-led-coalition-intercepts-houthi-missiles-targeting-riyadh-and-south" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Mistrzyni świata w maratonie zawieszona za doping",
+      "summary": "Kenijka Peres Jepchirchir, mistrzyni świata i była mistrzyni olimpijska w maratonie, została zawieszona na trzy lata po wykryciu w jej organizmie zakazanego EPO. Próbkę pobrano przed jej zwycięstwem w maratonie w Sydney pod koniec sierpnia. Zawodniczka przyznała się do naruszenia przepisów, a jej wyniki od 17 lipca zostaną anulowane. Ukarano też dwoje innych znanych kenijskich biegaczy.",
+      "why": "Według szefa agencji antydopingowej w lekkoatletyce Kenia ma jeszcze długą drogę w walce z dopingiem.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/sports/2026/11/19/kenyas-marathon-champion-peres-jepchirchir-gets-three-year-ban-for-doping" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Światowy Dzień Toalet: chodzi o zdrowie i równość",
+      "summary": "19 listopada obchodzono Światowy Dzień Toalet, ustanowiony 25 lat temu. Tegoroczne hasło to „Sanitacja i równość płci: bezpieczne toalety, równa przyszłość”. Eksperci WHO i ONZ Kobiety zwracają uwagę, że brak bezpiecznych toalet szczególnie uderza w kobiety i dziewczęta, m.in. w czasie menstruacji.",
+      "why": "Dostęp do toalety brzmi zwyczajnie, ale wciąż wpływa na zdrowie, naukę i bezpieczeństwo milionów ludzi.",
+      "sources": [
+        { "name": "NPR", "url": "https://npr.org/2026/11/19/g-s1-154159/world-toilet-day-gender-equality-menstruation" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Dania zatwierdziła umowę o bezpieczeństwie Grenlandii z USA",
+      "summary": "Duński parlament jednogłośnie ratyfikował umowę z USA i Grenlandią o bezpieczeństwie wyspy. Wcześniej zrobił to parlament Grenlandii. Umowa pozwala USA rozbudować bazę Pituffik i otworzyć bazy w Narsarsuaq i Mestersvig. Żadne państwo spoza NATO nie będzie mogło mieć wojskowej obecności na Grenlandii bez zgody Danii, Grenlandii i USA. Trump mówi o „stałej kontroli” USA, a Duńczycy podkreślają, że suwerenność zostaje przy nich.",
+      "why": "Umowa łagodzi spór o Grenlandię i wzmacnia obronę Arktyki, ważnej dla NATO.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/19/denmark-parliament-approves-security-deal-with-greenland-and-us" },
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/19/danish-lawmakers-ratify-us-greenland-security-pact" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "section": "bezpieczenstwo",
+      "rank": 2,
+      "title": "Kolejny atak na Most Krymski. Rosja wstrzymuje pociągi",
+      "summary": "W nocy z 18 na 19 listopada Ukraina ponownie zaatakowała Most Krymski. Według „Rzeczpospolitej” Rosjanie wstrzymali ruch pociągów na kolejowej części mostu. Atak nastąpił tuż przed spotkaniem Putina z Trumpem i Xi w Chinach.",
+      "why": "Most to główna droga zaopatrzenia rosyjskich wojsk na Krymie.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://rp.pl/konflikty-zbrojne/art45511521-ukraincy-znow-zaatakowali-most-krymski-rosjanie-wstrzymuja-ruch-pociagow" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Gemini może teraz obsługiwać komputer Mac za użytkownika",
+      "summary": "Google dodało do aplikacji Gemini na komputery Mac funkcję, dzięki której asystent sam obsługuje programy i strony internetowe. Może np. wypełniać formularze, porządkować pliki w folderach czy tworzyć prezentacje. Pracuje w podglądzie w oknie czatu, a użytkownik może go zatrzymać i zatwierdzać działania. Na razie funkcja jest dostępna po angielsku w USA dla płacących subskrybentów.",
+      "why": "Google dogania OpenAI, Anthropic i Metę, które już oferują podobnych asystentów.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Anthropic na giełdzie: akcje 17 proc. powyżej ceny emisyjnej",
+      "summary": "Pierwszego dnia notowań na Nasdaq akcje Anthropic, twórcy modelu Claude, otworzyły się po 111,50 dolara, ok. 34 proc. powyżej ceny z oferty (83 dolary). Sesję zamknęły na poziomie 97,17 dolara, ok. 17 proc. wyżej. Oferta przyniosła 81,3 mld dolarów i jest największą w historii. Wartość firmy na koniec dnia wyniosła ok. 1,8 bln dolarów. Cały indeks Nasdaq spadł tego dnia o ponad 2 proc., a przed siedzibą firmy i giełdą protestowali przeciwnicy AI.",
+      "why": "Debiut pokazuje, jak wysoko inwestorzy wyceniają AI, mimo obaw o bańkę i spadków na rynku.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion" }
+      ]
+    },
+    {
+      "id": "ai-2",
+      "section": "ai",
+      "rank": 2,
+      "title": "Asystent AI Mety miesza rozmowy różnych użytkowników",
+      "summary": "Według Reutersa pracownicy Mety zgłaszali, że firmowy agent AI o nazwie Muse myli rozmowy między różnymi kontami, co może narażać prywatne dane. Meta szykuje też urządzenie Muse Charm, które według serwisu The Information ma kosztować 300 dolarów.",
+      "why": "Im więcej osobistych spraw powierzamy asystentom AI, tym poważniejsze są takie wpadki.",
+      "sources": [
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Depresja związana z zegarem biologicznym",
+      "summary": "Badacze z Uniwersytetu w Sydney ustalili, że ok. co czwarta badana osoba z depresją spełniała kryteria podtypu, który można nazwać depresją okołodobową. To depresja związana z zaburzeniami zegara biologicznego, czyli rytmu snu i czuwania.",
+      "why": "Jesienią, gdy dni są krótkie, warto pamiętać, że regularny sen i światło dzienne wpływają na nastrój.",
+      "sources": [
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/16/nx-s1-6035777/depression-daylight-sleep-circadian-rhythm" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "Serial „From” podbija Netflix",
+      "summary": "Serial grozy i science fiction „From”, który pierwotnie pokazywał MGM+, od 19 października jest też na Netflixie. W tydzień od 2 do 8 listopada widzowie obejrzeli go przez 1,69 mld minut, prawie dwa razy więcej niż drugie na liście „Chirurgów”. Od pojawienia się na Netflixie to już ponad 5 mld minut. Twórcy zamówili piąty, ostatni sezon.",
+      "why": "To przykład, jak mniej znany serial może stać się hitem po trafieniu do dużej platformy.",
+      "sources": [
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/from-mgm-series-netflix-streaming-viewership-1237229607/" },
+        { "name": "The Hollywood Reporter", "url": "https://www.hollywoodreporter.com/tv/tv-news/streaming-ratings-nov-2-8-2026-1236759601/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "nauka",
+      "title": "Z ilu komórek się składamy?",
+      "body": "Według często cytowanego szacunku ciało dorosłego człowieka ma ok. 37 bln komórek. Naukowcy policzyli je narząd po narządzie, korzystając z danych o objętości i gęstości różnych typów komórek. Wcześniejsze proste metody dawały bardzo różne wyniki, od 15 do 70 bln. Nowsze prace podają ok. 27–36 bln, więc to wciąż przybliżenie.",
+      "source": { "name": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/smart-news/there-are-372-trillion-cells-in-your-body-4941473/" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "historia",
+      "title": "Na olimpiadzie dawano kiedyś medale za sztukę",
+      "body": "Od 1912 do 1948 roku na igrzyskach olimpijskich przyznawano medale za malarstwo, rzeźbę, architekturę, literaturę i muzykę, a prace musiały być inspirowane sportem. Pierwsze złoto za literaturę zdobył w 1912 roku sam twórca nowożytnych igrzysk Pierre de Coubertin, pod pseudonimem, za „Odę do sportu”. W 1949 roku MKOl zastąpił konkursy wystawami bez medali. Dziś tych medali nie ma w oficjalnych statystykach.",
+      "source": { "name": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/arts-culture/when-the-olympics-gave-out-medals-for-art-6878965/" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "przyroda",
+      "title": "Drzewa mogą wymieniać się węglem przez grzyby",
+      "body": "Korzenie wielu drzew łączą się z grzybami w podziemne sieci, które czasem nazywa się „leśnym internetem”. Badania kanadyjskiej ekolożki Suzanne Simard sugerują, że przez takie sieci drzewa mogą przekazywać sobie węgiel i inne substancje. Przepływ węgla między drzewami jest dość dobrze udokumentowany, ale śmielsze tezy, np. o drzewach-matkach czy ostrzeganiu się przed szkodnikami, wciąż budzą spory.",
+      "source": { "name": "Scientific American", "url": "https://www.scientificamerican.com/article/do-trees-support-each-other-through-a-network-of-fungi/" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1648,
+      "title": "Jan Kazimierz wybrany na króla",
+      "body": "20 listopada 1648 r. Jan II Kazimierz Waza został wybrany na króla Polski po śmierci swojego brata Władysława IV. Objął tron w czasie powstania Chmielnickiego, a jego rządy przypadły na najtrudniejsze lata Rzeczypospolitej, w tym potop szwedzki. W 1668 roku jako jedyny król elekcyjny dobrowolnie abdykował.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/kalendarz-historyczny/20/11" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1945,
+      "title": "Rusza proces norymberski",
+      "body": "20 listopada 1945 r. w Pałacu Sprawiedliwości w Norymberdze rozpoczął się proces głównych nazistowskich zbrodniarzy wojennych przed Międzynarodowym Trybunałem Wojskowym. Sędziów i oskarżycieli dały cztery mocarstwa: USA, Wielka Brytania, ZSRR i Francja. Przed sądem stanęły 22 osoby. 1 października 1946 r. skazano 19 z nich, a trzech uniewinniono.",
+      "source": { "name": "USHMM", "url": "https://encyclopedia.ushmm.org/content/en/article/international-military-tribunal-at-nuremberg" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1959,
+      "title": "ONZ przyjmuje Deklarację Praw Dziecka",
+      "body": "20 listopada 1959 r. Zgromadzenie Ogólne ONZ uchwaliło Deklarację Praw Dziecka. 30 lat później, również 20 listopada, przyjęto Konwencję o prawach dziecka, której pomysłodawcą była Polska. Dlatego 20 listopada obchodzi się Międzynarodowy Dzień Praw Dziecka.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/kalendarz-historyczny/20/11" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Efekt kobry",
+    "definition": "To sytuacja, w której zachęta mająca rozwiązać problem w praktyce go pogłębia, bo ludzie zaczynają ją obchodzić.",
+    "origin": "Według popularnej opowieści Brytyjczycy w Delhi płacili nagrodę za każdą zabitą kobrę, więc ludzie zaczęli hodować kobry. Gdy nagrodę zniesiono, hodowcy wypuścili węże i było ich więcej niż przedtem. Nazwę ukuł w 2001 roku ekonomista Horst Siebert. Historycy wątpią jednak, czy ta historia jest prawdziwa, za to podobna sprawa z nagrodą za szczury w Hanoi jest dobrze udokumentowana.",
+    "examples": [
+      "Premia za liczbę zamkniętych zgłoszeń sprawia, że pracownicy zamykają je bez rozwiązania problemu.",
+      "Płacenie za każdą znalezioną usterkę w programie może zachęcać do tworzenia usterek, które potem się „znajduje”.",
+      "Kara za spóźnione odbiory dzieci z przedszkola bywa traktowana jak opłata za dodatkowy czas."
+    ],
+    "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Perverse_incentive" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "zycie-3-0",
+    "title": "Życie 3.0. Człowiek w erze sztucznej inteligencji",
+    "author": "Max Tegmark",
+    "day": 6,
+    "days": 7,
+    "ideaTitle": "Wyścig mądrości: technologia rośnie szybciej niż rozsądek",
+    "idea": "Najważniejszy morał książki to obraz wyścigu między rosnącą siłą technologii a mądrością, z jaką nią zarządzamy. Dawniej technologie były na tyle słabe, że mogliśmy uczyć się na błędach: najpierw był pożar, potem wymyślono gaśnicę. Przy broni jądrowej, biotechnologii czy AI potężniejszej od ludzi błąd może być zbyt wielki, by z niego wyciągać wnioski. Tegmark przekonuje więc, że trzeba działać zawczasu: badać bezpieczeństwo AI, zanim będzie potrzebne, i rozmawiać o tym, jakiej przyszłości chcemy. Nie chodzi o hamowanie technologii, tylko o to, by mądrość nadążała za mocą.",
+    "moral": "Przy potężnych technologiach lepiej zapobiegać, niż uczyć się na błędach. Przyszłość z AI to wybór, a nie los.",
+    "action": "Pomyślcie o jednej technologii, z której korzystacie codziennie, i ustalcie jedną zasadę, która pomoże wam używać jej mądrzej, np. godzinę bez telefonu przed snem.",
+    "source": { "name": "Future of Life Institute", "url": "https://futureoflife.org/fli-podcasts/transcript-life-3-0-human-age-artificial-intelligence/" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-20-q1",
+      "ref": "fact-1",
+      "question": "Z ilu mniej więcej komórek składa się ciało człowieka według często cytowanego szacunku?",
+      "options": ["Ok. 37 mln", "Ok. 37 mld", "Ok. 37 bln", "Ok. 37 biliardów"],
+      "answer": 2,
+      "explanation": "Najczęściej podaje się ok. 37 bln, choć nowsze szacunki mówią o 27–36 bln."
+    },
+    {
+      "id": "2026-11-20-q2",
+      "ref": "fact-2",
+      "question": "Kto zdobył pierwsze olimpijskie złoto za literaturę w 1912 roku?",
+      "options": ["Henryk Sienkiewicz", "Pierre de Coubertin pod pseudonimem", "Rudyard Kipling", "Nikt, nie przyznano medalu"],
+      "answer": 1,
+      "explanation": "Twórca nowożytnych igrzysk wysłał „Odę do sportu” pod pseudonimem i wygrał."
+    },
+    {
+      "id": "2026-11-20-q3",
+      "ref": "fact-3",
+      "question": "Co według badań drzewa mogą przekazywać sobie przez sieci grzybów?",
+      "options": ["Dźwięki", "Węgiel i inne substancje", "Prąd elektryczny", "Nasiona"],
+      "answer": 1,
+      "explanation": "Przepływ węgla jest dość dobrze udokumentowany, ale śmielsze tezy o „komunikacji” drzew są sporne."
+    },
+    {
+      "id": "2026-11-20-q4",
+      "ref": "otd-1",
+      "question": "Czym wyróżnił się Jan II Kazimierz wśród królów elekcyjnych?",
+      "options": ["Panował najdłużej", "Jako jedyny dobrowolnie abdykował", "Nie został koronowany", "Był pierwszym królem elekcyjnym"],
+      "answer": 1,
+      "explanation": "W 1668 roku Jan Kazimierz zrzekł się korony."
+    },
+    {
+      "id": "2026-11-20-q5",
+      "ref": "otd-3",
+      "question": "Które państwo zaproponowało Konwencję o prawach dziecka?",
+      "options": ["USA", "Polska", "Francja", "Szwecja"],
+      "answer": 1,
+      "explanation": "Pomysłodawcą była Polska, a konwencję przyjęto 20 listopada 1989 roku."
+    },
+    {
+      "id": "2026-11-20-q6",
+      "ref": "concept",
+      "question": "Na czym polega efekt kobry?",
+      "options": ["Zachęta do rozwiązania problemu w praktyce go pogłębia", "Węże uciekają przed ludźmi", "Ceny rosną przed świętami", "Kary zawsze działają"],
+      "answer": 0,
+      "explanation": "Nagroda za zabite kobry miała skłonić ludzi do hodowania węży."
+    },
+    {
+      "id": "2026-11-20-q7",
+      "ref": "book",
+      "question": "Jaki „wyścig” opisuje Tegmark w „Życiu 3.0”?",
+      "options": ["Wyścig zbrojeń USA i Chin", "Wyścig mocy technologii z mądrością w jej używaniu", "Wyścig firm o najlepszy model AI", "Wyścig w kosmos"],
+      "answer": 1,
+      "explanation": "Według Tegmarka mądrość musi nadążać za siłą technologii, bo na wielkich błędach nie zdążymy się nauczyć."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-20-r1",
+      "question": "O ile procent mogą urosnąć astronauci w nieważkości?",
+      "options": ["Nawet o 3 proc.", "O 30 proc.", "Wcale nie rosną"],
+      "answer": 0,
+      "explanation": "To kilka centymetrów, a po powrocie wzrost wraca do normy w ciągu kilku miesięcy."
+    },
+    {
+      "id": "2026-11-20-r2",
+      "question": "Co ograniczał traktat CFE podpisany w Paryżu w 1990 roku?",
+      "options": ["Handel bronią z Azją", "Liczbę czołgów, dział, samolotów i śmigłowców w Europie", "Liczbę rakiet jądrowych w USA"],
+      "answer": 1,
+      "explanation": "Traktat o konwencjonalnych siłach zbrojnych w Europie był jednym z symboli końca zimnej wojny."
+    },
+    {
+      "id": "2026-11-20-r3",
+      "question": "Na jakim uniwersytecie wystąpił słynny przykład paradoksu Simpsona z 1973 roku?",
+      "options": ["Harvard", "Berkeley", "Oksford"],
+      "answer": 1,
+      "explanation": "Ogólne dane z Berkeley sugerowały dyskryminację kobiet, ale dane z wydziałów pokazały co innego."
+    }
+  ],
+  "evening": {
+    "question": "Jaką jedną zasadę wobec technologii chcielibyście wprowadzić w domu, żeby mądrość nadążała za mocą gadżetów?",
+    "hint": "Na przykład telefony poza sypialnią, wspólna kolacja bez ekranów albo niedziela offline."
+  }
+}

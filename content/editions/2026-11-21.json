@@ -1,0 +1,356 @@
+{
+  "date": "2026-11-21",
+  "intro": "Dziś m.in.: rosyjskie pociski spadły na wschodzie Polski, Rosja przeprowadziła jeden z największych ataków na Ukrainę, a UE i Wielka Brytania zawarły porozumienie zbliżające je po brexicie.",
+  "news": [
+    {
+      "id": "pl-1",
+      "section": "polska",
+      "rank": 1,
+      "title": "Rosyjskie rakiety i dron spadły na terytorium Polski",
+      "summary": "W piątek nad ranem, w czasie rosyjskiego ataku na Ukrainę, trzy obiekty naruszyły polską przestrzeń powietrzną. Minister obrony Władysław Kosiniak-Kamysz potwierdził, że w Nowym Lipowcu na Lubelszczyźnie spadła rakieta Ch-101. Według wstępnych ustaleń w Rudniku nad Sanem spadła prawdopodobnie druga rakieta, a w Mołodyczu dron odrzutowy. Nikt nie ucierpiał, infrastruktura nie została uszkodzona. Polskę broniły polskie i szwedzkie myśliwce. Premier Donald Tusk mówi o „intencjonalnej prowokacji”.",
+      "why": "Rząd uważa, że to nie był przypadek, i prosi sojuszników o wsparcie obrony powietrznej.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/konflikty-zbrojne/art45519451-kosiniak-kamysz-na-terytorium-polski-spadly-dwie-rakiety-i-dron" },
+        { "name": "TVN24", "url": "https://tvn24.pl/polska/polska-przestrzen-powietrzna-naruszona-niezidentyfikowany-obiekt-spadl-w-nowym-lipowcu-st9348327" }
+      ]
+    },
+    {
+      "id": "pl-2",
+      "section": "polska",
+      "rank": 2,
+      "title": "Nie będzie opłatka u premiera. Prezydent wyśle życzenia",
+      "summary": "Premier Donald Tusk powiedział, że prezydent Karol Nawrocki nie przyjedzie przed świętami na wspólny opłatek do jego domu w Sopocie. Według Tuska prezydent zapowiedział, że prześle ciepłe życzenia. Tusk zaprosił prezydenta 11 listopada, a rzecznik prezydenta nazwał to politycznym zagraniem i wymienił warunki, m.in. wycofanie policji z Trybunału Konstytucyjnego.",
+      "why": "Mimo apeli o jedność prezydent i premier wciąż nie potrafią się spotkać, a spór o Trybunał trwa.",
+      "sources": [
+        { "name": "Polsat News", "url": "https://www.polsatnews.pl/wiadomosc/2026-11-20/nie-bedzie-oplatka-nawrockiego-i-tuska-nie-zobaczymy-sie-przed-swietami/" },
+        { "name": "TVN24", "url": "https://tvn24.pl/polska/krotka-rozmowa-karola-nawrockiego-i-donalda-tuska-w-palacu-prezydenckim-premier-o-tym-co-powiedzial-mu-prezydent-st9349289" }
+      ]
+    },
+    {
+      "id": "pl-3",
+      "section": "polska",
+      "rank": 3,
+      "title": "Policjanci z Krakowa mieli prywatne kamizelki kuloodporne",
+      "summary": "Rzeczniczka małopolskiej policji potwierdziła, że dwaj policjanci, którzy ścigali i zastrzelili zamachowca, mieli na sobie kupione prywatnie kamizelki kuloodporne. Policja sprawdzi, czy miały odpowiednie atesty. Według rzeczniczki jednostki mają służbowe kamizelki dla ok. połowy potrzebujących, a przepisy nie zabraniają noszenia własnych. Były rzecznik policji tłumaczy, że prywatne kamizelki są lżejsze i lepiej dopasowane.",
+      "why": "Sprawa pokazuje braki w wyposażeniu policji, której funkcjonariusze sami kupują sprzęt chroniący życie.",
+      "thread": "Zamach w Krakowie",
+      "sources": [
+        { "name": "TVN24", "url": "https://tvn24.pl/krakow/krakow-prywatne-kamizelki-u-policjantow-ktorzy-zastrzelili-zamachowca-policja-zapowiada-wyjasnienia-st9346642" }
+      ]
+    },
+    {
+      "id": "pl-4",
+      "section": "polska",
+      "rank": 4,
+      "title": "Afera Zondacrypto: kolejne trzy osoby w areszcie",
+      "summary": "Sąd w Warszawie aresztował na trzy miesiące kolejne trzy osoby podejrzane w sprawie giełdy kryptowalut Zondacrypto: udziałowca i szefa działu IT, dyrektorkę finansową oraz prawniczkę grupy. Usłyszały zarzuty udziału w zorganizowanej grupie przestępczej i oszukania klientów, do których się nie przyznają. Sąd zgodził się zamienić areszt na poręczenie majątkowe po milion złotych, jeśli zostanie wpłacone w ciągu tygodnia. W śledztwie zatrzymano wcześniej m.in. prezesa PKOl Radosława Piesiewicza.",
+      "why": "Afera dotyka wielu klientów giełdy i pokazuje ryzyko inwestowania w słabo nadzorowane kryptowaluty.",
+      "sources": [
+        { "name": "Bankier.pl", "url": "https://www.bankier.pl/wiadomosc/Sledztwo-Zondacrypto-nabiera-tempa-Sad-zdecydowal-o-areszcie-3-osob-9232014.html" },
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/troje-podejrzanych-w-sprawie-zondacrypto-tymczasowo-aresztowanych" }
+      ]
+    },
+    {
+      "id": "pl-5",
+      "section": "polska",
+      "rank": 5,
+      "title": "Hołownia może zostać ambasadorem w Watykanie",
+      "summary": "Konwent Służby Zagranicznej pozytywnie zaopiniował kandydaturę Szymona Hołowni na ambasadora Polski przy Stolicy Apostolskiej. Przedstawiciel prezydenta wstrzymał się od głosu. Teraz kandydaturę zaopiniuje sejmowa komisja spraw zagranicznych, a ostatecznie mianować musi prezydent. Hołownia przyznaje, że nie ma pewności, czy Karol Nawrocki podpisze nominację. Na podpis prezydenta czeka prawie 50 nominacji ambasadorskich.",
+      "why": "Spór o ambasadorów to kolejny front konfliktu między rządem a prezydentem.",
+      "sources": [
+        { "name": "TVN24", "url": "https://tvn24.pl/polska/szymon-holownia-ambasadorem-w-watykanie-jest-pozytywna-opinia-konwentu-sluzby-zagranicznej-st9345884" },
+        { "name": "Rzeczpospolita", "url": "https://www.rp.pl/polityka/art45507531-szymon-holownia-moze-zostac-ambasadorem-w-watykanie-formalnosci-ruszyly" }
+      ]
+    },
+    {
+      "id": "sw-1",
+      "section": "swiat",
+      "rank": 1,
+      "title": "Jeden z największych ataków Rosji. Uszkodzone mosty w Kijowie",
+      "summary": "Według Wołodymyra Zełenskiego Rosja wystrzeliła na Ukrainę ponad 400 dronów i ponad 110 rakiet. Pociski balistyczne uszkodziły mosty na Dnieprze w Kijowie, a Rosja uderzyła też w największą stację elektroenergetyczną w Europie. Część Kijowa i 10 obwodów zostało bez prądu. Zginęło co najmniej dziewięć osób. Dzień wcześniej uszkodzone zostały ambasady Austrii i Holandii w Kijowie. Rosja nazywa atak odwetem za zniszczenie Mostu Krymskiego.",
+      "why": "Atak nastąpił tuż po szczycie w Chinach i pokazuje, jak daleko jest do rozejmu.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "The Kyiv Independent", "url": "https://kyivindependent.com/russia-launches-mass-missile-attack-against-ukraine-after-putin-vows-revenge/" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/20/russia-unleashes-retaliatory-barrage-on-kyiv-bridges" }
+      ]
+    },
+    {
+      "id": "sw-2",
+      "section": "swiat",
+      "rank": 2,
+      "title": "UE i Wielka Brytania zawierają porozumienie po brexicie",
+      "summary": "Na szczycie w Brukseli Unia Europejska i Wielka Brytania uzgodniły pakiet, który ma zbliżyć je po latach od brexitu. Obejmuje program mobilności młodzieży, dzięki któremu po 100 tys. młodych ludzi z każdej strony będzie mogło mieszkać i pracować u drugiej strony do trzech lat. Zniesione mają zostać kontrole w handlu produktami roślinnymi i zwierzęcymi, a systemy handlu emisjami zostaną połączone. Strony mają pół roku na ustalenie opłat za studia.",
+      "why": "To pierwsze tak konkretne zbliżenie po brexicie, a program dla młodzieży otworzy szanse także młodym Europejczykom z Polski.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/20/eu-and-uk-seal-reset-deal" },
+        { "name": "NPR", "url": "https://www.npr.org/2026/11/20/g-s1-154576/uk-eu-summit" }
+      ]
+    },
+    {
+      "id": "sw-3",
+      "section": "swiat",
+      "rank": 3,
+      "title": "Szczyt klimatyczny COP31 przedłużony. Spór o paliwa kopalne",
+      "summary": "Konferencja klimatyczna ONZ COP31 w tureckiej Antalyi przeciągnęła się po czasie, bo prawie 200 państw nie może się porozumieć w sprawie końcowej deklaracji. Z projektu usunięto wszystkie wzmianki o paliwach kopalnych po sprzeciwie Arabii Saudyjskiej i innych producentów ropy i gazu. Wypadł też cel 120 mld dolarów na pomoc biedniejszym krajom w przystosowaniu się do zmian klimatu. UE ostrzega, że szczyt zmienia się w „szczyt paliw kopalnych”.",
+      "why": "Bez porozumienia w sprawie paliw kopalnych trudno będzie ograniczyć ocieplenie klimatu.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/20/fossil-fuel-talks-deadlock-pushes-cop31-climate-summit-into-overtime" },
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/19/fossil-fuels-scrubbed-from-cop31-draft-deal-despite-growing-momentum" }
+      ]
+    },
+    {
+      "id": "sw-4",
+      "section": "swiat",
+      "rank": 4,
+      "title": "Strajk generalny we Włoszech i protesty w całej Europie",
+      "summary": "W piątek we Włoszech odbył się 24-godzinny strajk generalny przeciw niskim płacom i rosnącym kosztom życia. Dziesiątki tysięcy pracowników i studentów demonstrowało w ponad 100 miastach, a transport publiczny był sparaliżowany w wielu z nich. Średnia płaca we Włoszech po uwzględnieniu inflacji spadła w latach 2000–2025 o prawie 5 proc. Protesty odbyły się tego dnia w ponad 25 krajach Europy.",
+      "why": "Koszty życia są dziś jednym z głównych źródeł niezadowolenia w całej Europie.",
+      "sources": [
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/20/protests-held-across-europe-over-wages-services-high-living-costs" },
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/20/thousands-protest-across-europe-demanding-better-wages-and-services" }
+      ]
+    },
+    {
+      "id": "sw-5",
+      "section": "swiat",
+      "rank": 5,
+      "title": "Trump: Iran może pracować nad bronią chemiczną. Teheran zaprzecza",
+      "summary": "Donald Trump powiedział, że Iran może pracować nad bronią chemiczną lub biologiczną, bo USA odcięły go od broni jądrowej. Nie przedstawił dowodów. Iran stanowczo zaprzecza i porównuje to do zarzutów wobec Iraku sprzed 2003 roku. Trump mówi, że nie spieszy się z decyzjami i zobaczy, co będzie po nowym roku, ale według źródeł CBS USA i Izrael rozważają nowy atak.",
+      "why": "Zarzuty bez dowodów mogą posłużyć za pretekst do eskalacji wojny w regionie.",
+      "sources": [
+        { "name": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-trump-tehran-denies-chemical-weapons/" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/19/trump-claims-iran-is-developing-bioweapons-is-there-any-evidence" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "section": "bezpieczenstwo",
+      "rank": 1,
+      "title": "Estonia zamyka granicę drogową z Rosją",
+      "summary": "Rząd Estonii zdecydował o zamknięciu od 1 grudnia wszystkich pięciu drogowych przejść granicznych z Rosją, na razie na pół roku. Kolej towarowa będzie nadal jeździć, ale pod ścisłą kontrolą. To odpowiedź na próbę podpalenia firmy zbrojeniowej Threod Systems, zleconą według Estonii przez rosyjski wywiad wojskowy GRU. Rosja mówi o „nowej żelaznej kurtynie” i zapowiada odpowiedź.",
+      "why": "Po Finlandii kolejny kraj odgradza się od Rosji z powodu sabotażu i zagrożeń hybrydowych.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/11/20/estonia-to-shut-border-with-russia-over-gru-linked-sabotage-attack" },
+        { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/20/russia-complains-of-new-iron-curtain-as-estonia-shuts-its-borders" }
+      ]
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "section": "bezpieczenstwo",
+      "rank": 2,
+      "title": "Ćwiczenia koalicji chętnych pod Nową Dębą",
+      "summary": "Do 22 listopada na poligonie w Nowej Dębie trwają ćwiczenia „Koalicja 26.2”, w których bierze udział kilka tysięcy żołnierzy z 11 państw. To pierwsze duże ćwiczenia Wielonarodowych Sił dla Ukrainy, które po zawieszeniu broni miałyby pomóc w odbudowie ukraińskiej armii. Szef MON zauważył, że czas i miejsce piątkowego naruszenia polskiego nieba zbiegły się z ćwiczeniami. Rosja nazywa je przygotowaniem do interwencji NATO.",
+      "why": "Ćwiczenia sprawdzają, jak szybko Europa mogłaby wesprzeć Ukrainę po zakończeniu wojny.",
+      "thread": "Wojna w Ukrainie",
+      "sources": [
+        { "name": "Rzeczpospolita", "url": "https://radar.rp.pl/wojsko-polskie/art45521321-rosyjskie-rakiety-w-rejonie-manewrow-koalicji-chetnych-czym-jest-cwiczenie-koalicja-26-2" },
+        { "name": "PAP", "url": "https://www.pap.pl/aktualnosci/cwiczenia-koalicja-262-na-poligonie-w-nowej-debie-wideo" }
+      ]
+    },
+    {
+      "id": "technologia-1",
+      "section": "technologia",
+      "rank": 1,
+      "title": "Wyprzedaż akcji spółek technologicznych. Nvidia traci 14 proc.",
+      "summary": "W piątek akcje Nvidii spadły o ok. 14 proc. po doniesieniach Reutersa, że amerykańska komisja papierów wartościowych SEC bada księgowość firmy. To najdłuższa seria tygodniowych spadków akcji Nvidii od kryzysu finansowego z 2008 roku. Indeks Nasdaq stracił 5,3 proc., a S&P 500 i Dow Jones są ponad 10 proc. poniżej rekordów. Mocno taniały też akcje AMD, Micronu i CoreWeave.",
+      "why": "Inwestorzy coraz bardziej obawiają się, że boom na AI był przesadzony.",
+      "sources": [
+        { "name": "CNBC", "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html" },
+        { "name": "Axios", "url": "https://www.axios.com/2026/11/20/anthropic-ipo-nvidia-ai-tech-selloff" }
+      ]
+    },
+    {
+      "id": "ai-1",
+      "section": "ai",
+      "rank": 1,
+      "title": "Akcje Anthropic spadły o 8,5 proc. drugiego dnia notowań",
+      "summary": "W piątek, pierwszego pełnego dnia notowań, akcje Anthropic, twórcy modelu Claude, spadły o 8,5 proc. Spółka oddała większość wzrostów z debiutu, gdy cały sektor technologiczny tracił. Dzień wcześniej akcje otworzyły się po 111,50 dolara przy cenie z oferty 83 dolary.",
+      "why": "Nawet rekordowa oferta nie zatrzymała ucieczki inwestorów od spółek związanych z AI.",
+      "sources": [
+        { "name": "CNBC", "url": "https://cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html" }
+      ]
+    },
+    {
+      "id": "zdrowie-1",
+      "section": "zdrowie",
+      "rank": 1,
+      "title": "Kobietom z chorobami autoimmunologicznymi rzadziej się wierzy",
+      "summary": "Międzynarodowe badanie ponad 6 tys. pacjentów, opublikowane w „eClinicalMedicine”, wykazało, że 43 proc. kobiet z chorobami autoimmunologicznymi słyszało, że ich objawy mają podłoże psychiczne, wobec 33 proc. mężczyzn. Za psychosomatyczne uznano je u 34 proc. kobiet i 22 proc. mężczyzn. Prawie co trzecia kobieta czekała na diagnozę cztery lata lub dłużej. Autorzy przyznają, że zmęczenie, ból czy obniżony nastrój bywają mylące, bo są też częste u zdrowych.",
+      "why": "Jeśli objawy nie mijają, warto naciskać na dalszą diagnostykę.",
+      "sources": [
+        { "name": "Euronews", "url": "https://www.euronews.com/2026/10/13/women-with-autoimmune-diseases-face-longer-waits-and-more-misdiagnoses-than-men" },
+        { "name": "EurekAlert!", "url": "https://www.eurekalert.org/news-releases/1146847" }
+      ]
+    },
+    {
+      "id": "filmy-1",
+      "section": "filmy",
+      "rank": 1,
+      "title": "Nowe „Igrzyska śmierci” z wielkim otwarciem",
+      "summary": "Film „Igrzyska śmierci: Wschód słońca w dniu dożynek” zebrał w przedpremierowych pokazach w USA 21 mln dolarów. Według piątkowych szacunków Deadline może zarobić w USA ok. 110 mln dolarów w weekend otwarcia, co byłoby czwartym wynikiem w serii. Na świecie otwarcie może sięgnąć ok. 200 mln dolarów. Film kosztował ponad 150 mln dolarów.",
+      "why": "Seria na podstawie książek Suzanne Collins wciąż przyciąga tłumy do kin.",
+      "sources": [
+        { "name": "Deadline", "url": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/" },
+        { "name": "The Hollywood Reporter", "url": "https://www.hollywoodreporter.com/movies/movie-news/hunger-games-sunrise-on-the-reaping-box-office-previews-1236760000/" }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "kind": "kosmos",
+      "title": "Na Księżycu jest lód",
+      "body": "W 2009 roku sonda NASA LCROSS uderzyła w krater Cabeus przy południowym biegunie Księżyca i wykryła w wyrzuconym gruncie wodę. Lód kryje się w kraterach, do których nigdy nie dociera światło słoneczne, a temperatura nie przekracza tam ok. -157 stopni Celsjusza. Lód rozmieszczony jest jednak nierówno. Woda na Księżycu mogłaby kiedyś służyć astronautom do picia i produkcji paliwa.",
+      "source": { "name": "NASA JPL", "url": "https://www.jpl.nasa.gov/news/ice-confirmed-at-the-moons-poles/" }
+    },
+    {
+      "id": "fact-2",
+      "kind": "przyroda",
+      "title": "Żółwie morskie wracają na „swoją” plażę dzięki magnetyzmowi",
+      "body": "Samice żółwi morskich po latach w oceanie wracają składać jaja w okolice plaży, na której się wykluły. Badanie żółwi karetta z 2015 roku pokazało, że miejsca gniazd przesuwają się razem ze zmianami ziemskiego pola magnetycznego. Każdy odcinek wybrzeża ma swój „magnetyczny podpis”, który żółwie prawdopodobnie zapamiętują. Dokładny mechanizm tej nawigacji wciąż nie jest znany.",
+      "source": { "name": "National Geographic", "url": "https://www.nationalgeographic.com/animals/article/150115-loggerheads-sea-turtles-navigation-magnetic-field-science" }
+    },
+    {
+      "id": "fact-3",
+      "kind": "psychologia",
+      "title": "Myślimy, że inni myślą jak my",
+      "body": "W 1977 roku Lee Ross z zespołem zapytał studentów, czy przeszliby się po kampusie z tablicą reklamową, a potem, ilu kolegów by się zgodziło. Ci, którzy się zgodzili, sądzili, że zgodziłaby się większość, a ci, którzy odmówili, że niewielu. To efekt fałszywego konsensusu: przeceniamy, jak bardzo inni podzielają nasze poglądy i wybory.",
+      "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/False_consensus_effect" }
+    }
+  ],
+  "onThisDay": [
+    {
+      "id": "otd-1",
+      "year": 1939,
+      "title": "Niemcy oddają Słowacji polskie ziemie",
+      "body": "21 listopada 1939 r. Niemcy przekazały Słowacji ok. 700 km² polskich terenów przygranicznych. Była to nagroda za udział wojsk słowackich w napaści na Polskę we wrześniu 1939 roku. Słowacja była wtedy państwem zależnym od III Rzeszy.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/kalendarz-historyczny/21/11" }
+    },
+    {
+      "id": "otd-2",
+      "year": 1783,
+      "title": "Pierwszy swobodny lot człowieka balonem",
+      "body": "21 listopada 1783 r. z ogrodu zamku La Muette w Paryżu wystartował balon na ogrzane powietrze braci Montgolfier z Pilâtre'em de Rozierem i markizem d'Arlandes na pokładzie. Był to pierwszy swobodny, czyli nieuwiązany do ziemi, lot ludzi. Balon przeleciał ok. 9 km w ok. 25 minut i wylądował za murami miasta.",
+      "source": { "name": "Britannica", "url": "https://www.britannica.com/biography/Montgolfier-brothers" }
+    },
+    {
+      "id": "otd-3",
+      "year": 1990,
+      "title": "Paryska Karta dla Nowej Europy",
+      "body": "21 listopada 1990 r. przywódcy państw Europy, USA i Kanady podpisali w Paryżu Paryską Kartę dla Nowej Europy. Dokument ogłaszał koniec podziału kontynentu po zimnej wojnie i zobowiązywał do demokracji, praw człowieka i współpracy. Dzień wcześniej podpisano tam traktat o ograniczeniu wojsk konwencjonalnych w Europie.",
+      "source": { "name": "Dzieje.pl", "url": "https://dzieje.pl/kalendarz-historyczny/21/11" }
+    }
+  ],
+  "concept": {
+    "id": "concept",
+    "term": "Efekt św. Mateusza",
+    "definition": "To zjawisko, w którym ci, którzy już mają przewagę, łatwiej zyskują jeszcze więcej, a reszta zostaje w tyle.",
+    "origin": "Pojęcie wprowadził w 1968 roku socjolog Robert K. Merton, a nazwę wziął z Ewangelii św. Mateusza: „każdemu, kto ma, będzie dodane”. Merton zauważył, że sławni naukowcy dostają nieproporcjonalnie dużo uznania za prace porównywalne z pracami mniej znanych. Później opisano to matematycznie jako kumulującą się przewagę, np. artykuły często cytowane są cytowane coraz częściej.",
+    "examples": [
+      "Filmy, które już mają dużo wyświetleń, algorytmy podsuwają kolejnym osobom.",
+      "Dzieci, które wcześniej zaczęły czytać, czytają więcej i szybciej rozwijają słownictwo.",
+      "Popularna restauracja z kolejką przyciąga jeszcze więcej gości niż pusta obok."
+    ],
+    "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Matthew_effect" }
+  },
+  "book": {
+    "id": "book",
+    "bookId": "zycie-3-0",
+    "title": "Życie 3.0. Człowiek w erze sztucznej inteligencji",
+    "author": "Max Tegmark",
+    "day": 7,
+    "days": 7,
+    "ideaTitle": "Tydzień z „Życiem 3.0”: przyszłość, którą wybieramy",
+    "idea": "Przez tydzień poznaliśmy główne myśli Maxa Tegmarka. Życie przeszło od etapu, w którym wszystko ustala ewolucja, do ludzi, którzy uczą się przez całe życie, a może przejść do AI zdolnej przeprojektować samą siebie. Inteligencja nie wymaga mózgu z węgla, więc maszyny mogą nas kiedyś przewyższyć. Zagrożeniem nie jest ich zła wola, tylko kompetencja w realizacji celów niezgodnych z naszymi. Tegmark szkicuje dwanaście możliwych przyszłości i przypomina, że to świadomość nadaje światu sens. Wszystko łączy wyścig mądrości: rozsądek musi nadążać za mocą technologii.",
+    "moral": "Przyszłość z AI nie jest przesądzona. To od rozmów i decyzji wielu ludzi zależy, czy będzie dobra.",
+    "action": "Porozmawiajcie przez kilka minut, która myśl z tej książki zostanie z wami na dłużej i dlaczego.",
+    "source": { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Life_3.0" }
+  },
+  "quiz": [
+    {
+      "id": "2026-11-21-q1",
+      "ref": "fact-1",
+      "question": "Gdzie na Księżycu znaleziono lód?",
+      "options": ["Na jego widocznej stronie, w pełnym słońcu", "W wiecznie zacienionych kraterach przy biegunach", "Na szczytach gór księżycowych", "Pod całą powierzchnią równomiernie"],
+      "answer": 1,
+      "explanation": "Lód przetrwał w kraterach, do których nigdy nie dociera światło słoneczne."
+    },
+    {
+      "id": "2026-11-21-q2",
+      "ref": "fact-2",
+      "question": "Co pomaga żółwiom morskim wrócić na plażę, gdzie się wykluły?",
+      "options": ["Gwiazdy", "Ziemskie pole magnetyczne", "Kolor piasku", "Prądy morskie wyłącznie"],
+      "answer": 1,
+      "explanation": "Miejsca gniazd przesuwają się razem ze zmianami pola magnetycznego, które żółwie prawdopodobnie zapamiętują."
+    },
+    {
+      "id": "2026-11-21-q3",
+      "ref": "fact-3",
+      "question": "Na czym polega efekt fałszywego konsensusu?",
+      "options": ["Przeceniamy, jak bardzo inni podzielają nasze poglądy", "Zgadzamy się z większością", "Nie lubimy się kłócić", "Ufamy autorytetom"],
+      "answer": 0,
+      "explanation": "Studenci zgadzający się nosić tablicę sądzili, że zgodziłaby się większość, a odmawiający, że niewielu."
+    },
+    {
+      "id": "2026-11-21-q4",
+      "ref": "otd-2",
+      "question": "Kto 21 listopada 1783 roku odbył pierwszy swobodny lot balonem?",
+      "options": ["Bracia Wright", "Pilâtre de Rozier i markiz d'Arlandes", "Bracia Montgolfier osobiście", "Jules Verne"],
+      "answer": 1,
+      "explanation": "Lecieli balonem braci Montgolfier, ale sami bracia nie byli na pokładzie."
+    },
+    {
+      "id": "2026-11-21-q5",
+      "ref": "otd-1",
+      "question": "Dlaczego w 1939 roku Niemcy przekazały Słowacji polskie tereny?",
+      "options": ["W zamian za pieniądze", "W nagrodę za udział w napaści na Polskę", "Na mocy traktatu pokojowego", "Na prośbę mieszkańców"],
+      "answer": 1,
+      "explanation": "Wojska słowackie wzięły udział we wrześniowej napaści na Polskę."
+    },
+    {
+      "id": "2026-11-21-q6",
+      "ref": "concept",
+      "question": "Skąd pochodzi nazwa efektu św. Mateusza?",
+      "options": ["Od nazwiska naukowca", "Z Ewangelii: „każdemu, kto ma, będzie dodane”", "Od nazwy miasta", "Od tytułu książki Mertona"],
+      "answer": 1,
+      "explanation": "Merton nawiązał do przypowieści o talentach z Ewangelii św. Mateusza."
+    },
+    {
+      "id": "2026-11-21-q7",
+      "ref": "book",
+      "question": "Co według Tegmarka jest prawdziwym zagrożeniem ze strony zaawansowanej AI?",
+      "options": ["Jej zła wola", "Jej kompetencja w realizacji celów niezgodnych z naszymi", "Jej powolność", "Jej brak pamięci"],
+      "answer": 1,
+      "explanation": "AI nie musi być zła, by zaszkodzić. Wystarczy, że skutecznie dąży do celów sprzecznych z naszymi."
+    }
+  ],
+  "recap": [
+    {
+      "id": "2026-11-21-r1",
+      "question": "Ile mniej więcej komórek ma ciało człowieka według często cytowanego szacunku?",
+      "options": ["Ok. 37 mld", "Ok. 37 bln", "Ok. 370 bln"],
+      "answer": 1,
+      "explanation": "Najczęściej podaje się ok. 37 bln, choć nowsze prace mówią o 27–36 bln."
+    },
+    {
+      "id": "2026-11-21-r2",
+      "question": "Do którego roku przyznawano olimpijskie medale za sztukę?",
+      "options": ["Do 1912", "Do 1948", "Do 1980"],
+      "answer": 1,
+      "explanation": "Ostatnie medale za sztukę przyznano na igrzyskach w Londynie w 1948 roku."
+    },
+    {
+      "id": "2026-11-21-r3",
+      "question": "Ilu oskarżonych skazano w pierwszym procesie norymberskim?",
+      "options": ["3", "19", "22"],
+      "answer": 1,
+      "explanation": "Z 22 oskarżonych 19 skazano, a trzech uniewinniono 1 października 1946 roku."
+    }
+  ],
+  "evening": {
+    "question": "Która myśl z tygodnia z „Życiem 3.0” najbardziej was poruszyła i czy zmieniła wasze podejście do technologii?",
+    "hint": "Może to być wyścig mądrości, świadomość jako źródło sensu albo dwanaście możliwych przyszłości."
+  }
+}

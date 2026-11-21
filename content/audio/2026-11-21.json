@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-21",
+  "file": "2026-11-21.mp3",
+  "url": "audio/2026-11-21.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-21.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "5b6fb01b4eb19380",
+  "duration": 994.01,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 17.19
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Rosyjskie rakiety i dron spadły na terytorium Polski",
+      "start": 17.89,
+      "end": 63.17
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Nie będzie opłatka u premiera. Prezydent wyśle życzenia",
+      "start": 63.87,
+      "end": 101.55
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Policjanci z Krakowa mieli prywatne kamizelki kuloodporne",
+      "start": 102.25,
+      "end": 143.23
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Afera Zondacrypto: kolejne trzy osoby w areszcie",
+      "start": 143.93,
+      "end": 186.96
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Hołownia może zostać ambasadorem w Watykanie",
+      "start": 187.66,
+      "end": 225.53
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Jeden z największych ataków Rosji. Uszkodzone mosty w Kijowie",
+      "start": 226.73,
+      "end": 269.41
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "UE i Wielka Brytania zawierają porozumienie po brexicie",
+      "start": 270.11,
+      "end": 312.01
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Szczyt klimatyczny COP31 przedłużony. Spór o paliwa kopalne",
+      "start": 312.71,
+      "end": 354.06
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Strajk generalny we Włoszech i protesty w całej Europie",
+      "start": 354.76,
+      "end": 392.89
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Trump: Iran może pracować nad bronią chemiczną. Teheran zaprzecza",
+      "start": 393.59,
+      "end": 431.88
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Estonia zamyka granicę drogową z Rosją",
+      "start": 433.08,
+      "end": 469.95
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Ćwiczenia koalicji chętnych pod Nową Dębą",
+      "start": 470.65,
+      "end": 508.94
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Wyprzedaż akcji spółek technologicznych. Nvidia traci 14 proc.",
+      "start": 509.64,
+      "end": 552.25
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Akcje Anthropic spadły o 8,5 proc. drugiego dnia notowań",
+      "start": 552.95,
+      "end": 587.35
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Kobietom z chorobami autoimmunologicznymi rzadziej się wierzy",
+      "start": 588.05,
+      "end": 633.93
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Nowe „Igrzyska śmierci” z wielkim otwarciem",
+      "start": 634.63,
+      "end": 671.5
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Żółwie morskie wracają na „swoją” plażę dzięki magnetyzmowi",
+      "start": 672.7,
+      "end": 704.75
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Na Księżycu jest lód",
+      "start": 705.45,
+      "end": 733.88
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Myślimy, że inni myślą jak my",
+      "start": 734.58,
+      "end": 762.16
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1939: Niemcy oddają Słowacji polskie ziemie",
+      "start": 763.36,
+      "end": 792.53
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1783: Pierwszy swobodny lot człowieka balonem",
+      "start": 793.23,
+      "end": 824.03
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1990: Paryska Karta dla Nowej Europy",
+      "start": 824.73,
+      "end": 853.92
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt św. Mateusza",
+      "start": 855.12,
+      "end": 911.74
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Życie 3.0. Człowiek w erze sztucznej inteligencji: Tydzień z „Życiem 3.0”: przyszłość, którą wybieramy",
+      "start": 912.94,
+      "end": 977.88
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 979.08,
+      "end": 993.51
+    }
+  ]
+}

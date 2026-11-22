@@ -1,6 +1,38 @@
 {
   "editions": [
     {
+      "date": "2026-11-22",
+      "headline": "Rutte: to niebezpieczny incydent, ale nie sytuacja z artykułu 5",
+      "threads": [
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "pl-1",
+          "title": "Rutte: to niebezpieczny incydent, ale nie sytuacja z artykułu 5"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-4",
+          "title": "Strażak ranny w zamachu w Krakowie zaczął rehabilitację"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Rosyjski atak na Krzywy Róg, rodzinne miasto Zełenskiego"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-2",
+          "title": "Drony trafiły rosyjski statek w Zatoce Fińskiej"
+        }
+      ],
+      "facts": [
+        "Hipopotamy mają własny filtr przeciwsłoneczny",
+        "Na Tytanie padają deszcze z metanu",
+        "Mit: krew w żyłach jest niebieska"
+      ],
+      "concept": "Tragedia wspólnego pastwiska"
+    },
+    {
       "date": "2026-11-21",
       "headline": "Rosyjskie rakiety i dron spadły na terytorium Polski",
       "threads": [

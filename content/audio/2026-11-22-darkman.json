@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-22",
+  "file": "2026-11-22-darkman.mp3",
+  "url": "audio/2026-11-22-darkman.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-22-darkman.mp3",
+  "voice": "pl_PL-darkman-medium",
+  "voiceId": "darkman",
+  "hash": "ee94778931c0f577",
+  "duration": 869.45,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 16.83
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Rutte: to niebezpieczny incydent, ale nie sytuacja z artykułu 5",
+      "start": 17.53,
+      "end": 57.74
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Spór o ambasadorów: Pałac Prezydencki kontra MSZ",
+      "start": 58.44,
+      "end": 96.63
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Silny wstrząs na Śląsku odczuli mieszkańcy sześciu miast",
+      "start": 97.33,
+      "end": 130.66
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Strażak ranny w zamachu w Krakowie zaczął rehabilitację",
+      "start": 131.36,
+      "end": 165.48
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "WIG20 traci 4,48 proc. Najgorszy tydzień roku na giełdzie",
+      "start": 166.18,
+      "end": 207.46
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Rosyjski atak na Krzywy Róg, rodzinne miasto Zełenskiego",
+      "start": 208.66,
+      "end": 233.55
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Meksyk zatrzymał bossa kartelu „El Chapo Isidro”",
+      "start": 234.25,
+      "end": 272.1
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Przepłynął Cieśninę Ormuz, by pokazać skutki wojny dla przyrody",
+      "start": 272.8,
+      "end": 308.9
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Pożar elektrowni pod Basrą. Co najmniej cztery ofiary",
+      "start": 309.6,
+      "end": 340.35
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Protesty we Francji, paraliż lotniska w Brukseli",
+      "start": 341.05,
+      "end": 365.44
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Dania wydala rosyjskiego attaché za spisek na życie rapera",
+      "start": 366.64,
+      "end": 405.51
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Drony trafiły rosyjski statek w Zatoce Fińskiej",
+      "start": 406.21,
+      "end": 426.76
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "GTA VI: 3,79 mld dolarów w pierwszej dobie",
+      "start": 427.46,
+      "end": 464.52
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "ONZ: dwa kolejne lata rozmów o „zabójczych robotach”",
+      "start": 465.22,
+      "end": 504.09
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Lek na otyłość zmniejszał ból kolan",
+      "start": 504.79,
+      "end": 541.2
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "„The Altruists” na Netflix: serial o upadku FTX",
+      "start": 541.9,
+      "end": 575.77
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Mit: krew w żyłach jest niebieska",
+      "start": 576.97,
+      "end": 601.04
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Hipopotamy mają własny filtr przeciwsłoneczny",
+      "start": 601.74,
+      "end": 629.05
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Na Tytanie padają deszcze z metanu",
+      "start": 629.75,
+      "end": 655.45
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1864: Otwarcie mostu Kierbedzia w Warszawie",
+      "start": 656.65,
+      "end": 681.98
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1918: Piłsudski Tymczasowym Naczelnikiem Państwa",
+      "start": 682.68,
+      "end": 703.47
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1963: Zamach na Johna F. Kennedy’ego",
+      "start": 704.17,
+      "end": 731.49
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Tragedia wspólnego pastwiska",
+      "start": 732.69,
+      "end": 786.39
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Dlaczego śpimy: Sen sterują dwa mechanizmy: zegar i presja snu",
+      "start": 787.59,
+      "end": 852.83
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 854.03,
+      "end": 868.95
+    }
+  ]
+}

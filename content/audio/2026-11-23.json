@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-23",
+  "file": "2026-11-23.mp3",
+  "url": "audio/2026-11-23.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-23.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "d4f71a6391685785",
+  "duration": 859.15,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 18.19
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Nie dwa, a trzy pociski Ch-101. Nowe ustalenia prokuratury",
+      "start": 18.89,
+      "end": 62.18
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Kierwiński żąda od PiS przeprosin dla policji",
+      "start": 62.88,
+      "end": 95.83
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Morawiecki złożył wniosek o rejestrację partii",
+      "start": 96.53,
+      "end": 126.55
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Śnieg i oblodzenia na początek tygodnia",
+      "start": 127.25,
+      "end": 155.39
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Polscy panczeniści z medalami w Obihiro",
+      "start": 156.09,
+      "end": 189.29
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Atak drona na blok pod Kijowem. Żałoba w obwodzie",
+      "start": 190.49,
+      "end": 226.57
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "COP31 bez porozumienia. Spór o paliwa kopalne",
+      "start": 227.27,
+      "end": 267.03
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Pożar fabryki słodyczy w Indonezji",
+      "start": 267.73,
+      "end": 304.55
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Libańczycy wracają do zniszczonych domów",
+      "start": 305.25,
+      "end": 344.88
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Płonące tankowce w Cieśninie Ormuz",
+      "start": 345.58,
+      "end": 377.95
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Rosyjska korweta zatonęła w porcie w Bengazi",
+      "start": 379.15,
+      "end": 416.02
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Microsoft wyjaśnia awarię. Wywiad USA: to nie cyberatak",
+      "start": 416.72,
+      "end": 460.23
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Tydzień wyprzedaży spółek AI. Nasdaq na minusie w skali roku",
+      "start": 460.93,
+      "end": 500.45
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Bayer zapłaci osobom z chłoniakiem po kontakcie z Roundupem",
+      "start": 501.15,
+      "end": 543.12
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "„I Play Rocky” poniżej oczekiwań, mimo zachwytu widzów",
+      "start": 543.82,
+      "end": 577.71
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Kałamarnica kolosalna ma największe oczy na świecie",
+      "start": 578.91,
+      "end": 608.54
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Wielki pożar Londynu i zagadka liczby ofiar",
+      "start": 609.24,
+      "end": 634.73
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Efekt Barnuma: jeden opis pasuje do wszystkich",
+      "start": 635.43,
+      "end": 670.48
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1793: Koniec sejmu grodzieńskiego",
+      "start": 671.68,
+      "end": 689.5
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1933: Urodził się Krzysztof Penderecki",
+      "start": 690.2,
+      "end": 713.01
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1963: Pierwszy odcinek „Doktora Who”",
+      "start": 713.71,
+      "end": 736.35
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Zasada Pareta",
+      "start": 737.55,
+      "end": 786.92
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Dlaczego śpimy: Sen utrwala to, czego się nauczyliśmy",
+      "start": 788.12,
+      "end": 843.86
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 845.06,
+      "end": 858.65
+    }
+  ]
+}

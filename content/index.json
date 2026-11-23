@@ -1,6 +1,33 @@
 {
   "editions": [
     {
+      "date": "2026-11-23",
+      "headline": "Nie dwa, a trzy pociski Ch-101. Nowe ustalenia prokuratury",
+      "threads": [
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "pl-1",
+          "title": "Nie dwa, a trzy pociski Ch-101. Nowe ustalenia prokuratury"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Atak drona na blok pod Kijowem. Żałoba w obwodzie"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Rosyjska korweta zatonęła w porcie w Bengazi"
+        }
+      ],
+      "facts": [
+        "Efekt Barnuma: jeden opis pasuje do wszystkich",
+        "Kałamarnica kolosalna ma największe oczy na świecie",
+        "Wielki pożar Londynu i zagadka liczby ofiar"
+      ],
+      "concept": "Zasada Pareta"
+    },
+    {
       "date": "2026-11-22",
       "headline": "Rutte: to niebezpieczny incydent, ale nie sytuacja z artykułu 5",
       "threads": [

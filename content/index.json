@@ -1,6 +1,38 @@
 {
   "editions": [
     {
+      "date": "2026-11-24",
+      "headline": "Rosyjski dron krótko naruszył polską przestrzeń powietrzną",
+      "threads": [
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "pl-1",
+          "title": "Rosyjski dron krótko naruszył polską przestrzeń powietrzną"
+        },
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-2",
+          "title": "Policjant postrzelony w zamachu w Krakowie wyszedł ze szpitala"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Co najmniej 15 zabitych w obwodzie kijowskim"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Zełenski: to Ukraina zatopiła rosyjską korwetę w Libii"
+        }
+      ],
+      "facts": [
+        "Na Merkurym dzień trwa dwa razy dłużej niż rok",
+        "Bambus potrafi urosnąć prawie metr w dobę",
+        "Mit: truskawka to jagoda. A banan?"
+      ],
+      "concept": "Zasada przezorności"
+    },
+    {
       "date": "2026-11-23",
       "headline": "Nie dwa, a trzy pociski Ch-101. Nowe ustalenia prokuratury",
       "threads": [

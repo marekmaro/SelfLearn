@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-24",
+  "file": "2026-11-24.mp3",
+  "url": "audio/2026-11-24.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-24.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "0008b58d56a22a37",
+  "duration": 916.26,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 14.61
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Rosyjski dron krótko naruszył polską przestrzeń powietrzną",
+      "start": 15.31,
+      "end": 54.26
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Policjant postrzelony w zamachu w Krakowie wyszedł ze szpitala",
+      "start": 54.96,
+      "end": 89.51
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Afera Polnordu: akt oskarżenia wobec 10 osób",
+      "start": 90.21,
+      "end": 130.51
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Smog dusi małe miasta. Upada mit czystego powietrza na prowincji",
+      "start": 131.21,
+      "end": 169.62
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Polscy lekarze: co piąty pacjent z nawrotem glejaka przeżył pięć lat",
+      "start": 170.32,
+      "end": 200.38
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Co najmniej 15 zabitych w obwodzie kijowskim",
+      "start": 201.58,
+      "end": 238.5
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Demokraci z największą przewagą w Izbie Reprezentantów od 1992 roku",
+      "start": 239.2,
+      "end": 282.04
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Iran: trzy tankowce weszły na miny w Cieśninie Ormuz",
+      "start": 282.74,
+      "end": 319.52
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Ebola i walki w Kongu. WHO apeluje o pokój",
+      "start": 320.22,
+      "end": 358.05
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "W Alpach chcą dowiercić się do płaszcza Ziemi",
+      "start": 358.75,
+      "end": 394.88
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Zełenski: to Ukraina zatopiła rosyjską korwetę w Libii",
+      "start": 396.08,
+      "end": 436.84
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "MSZ: Rosja dwa razy próbowała zabić ukraińskiego rapera",
+      "start": 437.54,
+      "end": 469.38
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Jensen Huang wraca na stanowisko szefa Nvidii. Akcje w górę o 31 proc.",
+      "start": 470.08,
+      "end": 511.72
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Szef AI w Mecie: nie zgadzajmy się na „przekazanie społeczeństwa AI”",
+      "start": 512.42,
+      "end": 555.37
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Erytrytol może zwiększać ryzyko udaru",
+      "start": 556.07,
+      "end": 588.19
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Zwiastun dokumentu o Justinie Timberlake’u",
+      "start": 588.89,
+      "end": 622.02
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Mit: truskawka to jagoda. A banan?",
+      "start": 623.22,
+      "end": 648.63
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Bambus potrafi urosnąć prawie metr w dobę",
+      "start": 649.33,
+      "end": 676.4
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Na Merkurym dzień trwa dwa razy dłużej niż rok",
+      "start": 677.1,
+      "end": 709.17
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1644: Kolumna Zygmunta staje w Warszawie",
+      "start": 710.37,
+      "end": 729.83
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1859: Darwin publikuje „O powstawaniu gatunków”",
+      "start": 730.53,
+      "end": 757.82
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1947: Pierwszy proces oświęcimski",
+      "start": 758.52,
+      "end": 775.43
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Zasada przezorności",
+      "start": 776.63,
+      "end": 830.29
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Dlaczego śpimy: Nastolatki nie są leniwe, ich zegar jest przesunięty",
+      "start": 831.49,
+      "end": 897.09
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 898.29,
+      "end": 915.76
+    }
+  ]
+}

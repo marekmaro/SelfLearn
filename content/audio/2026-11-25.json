@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-25",
+  "file": "2026-11-25.mp3",
+  "url": "audio/2026-11-25.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-25.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "2926703af81b4d69",
+  "duration": 888.48,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 14.63
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "ETPC: Polska naruszyła Konwencję, wydalając migranta na Białoruś",
+      "start": 15.33,
+      "end": 63.94
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Pochwalał zamach w Krakowie i zapowiadał kolejny. Zatrzymała go ABW",
+      "start": 64.64,
+      "end": 99.59
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Prokuratura chce uchylenia immunitetów trojga posłów",
+      "start": 100.29,
+      "end": 138.3
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Atak zimy. Paraliż na drogach",
+      "start": 139,
+      "end": 167.15
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Jan Urban zostaje selekcjonerem",
+      "start": 167.85,
+      "end": 198.45
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Zełenski: USA chcą zakończyć negocjacje w grudniu lub styczniu",
+      "start": 199.65,
+      "end": 234.05
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Wybuch samochodu-pułapki w Kolumbii",
+      "start": 234.75,
+      "end": 268.72
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Sanofi kupi Insmed za 41 mld dolarów",
+      "start": 269.42,
+      "end": 310.19
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Huti grożą saudyjskim portom",
+      "start": 310.89,
+      "end": 345.99
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Superksiężyc Bobrów rozświetlił niebo",
+      "start": 346.69,
+      "end": 381.7
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Polska i Wielka Brytania opracują pocisk CAMM-MR",
+      "start": 382.9,
+      "end": 425.38
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "CD Projekt z wyższym zyskiem i zaliczką na dywidendę",
+      "start": 426.08,
+      "end": 467.11
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Guterres: świat powinien w rok uzgodnić zasady nadzoru nad AI",
+      "start": 467.81,
+      "end": 508.58
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Odra w Pensylwanii: dziewiąta ofiara w tym roku",
+      "start": 509.28,
+      "end": 550.27
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Londyńska premiera 6. sezonu „Zbrodni po sąsiedzku”",
+      "start": 550.97,
+      "end": 586.2
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Koala śpi nawet 20 godzin na dobę",
+      "start": 587.4,
+      "end": 614.82
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "W 1582 roku po 4 października był od razu 15 października",
+      "start": 615.52,
+      "end": 647.25
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Księżyc co roku oddala się od Ziemi o ok. 3,8 cm",
+      "start": 647.95,
+      "end": 679.14
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1795: Abdykacja Stanisława Augusta",
+      "start": 680.34,
+      "end": 705.12
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1967: Premiera „Dziadów” Dejmka",
+      "start": 705.82,
+      "end": 728.05
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1990: Pierwsza tura wyborów prezydenckich",
+      "start": 728.75,
+      "end": 745.52
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Efekt widza (rozproszenie odpowiedzialności)",
+      "start": 746.72,
+      "end": 812.33
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Dlaczego śpimy: Sen wspiera odporność",
+      "start": 813.53,
+      "end": 871.88
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 873.08,
+      "end": 887.98
+    }
+  ]
+}

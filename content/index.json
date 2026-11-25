@@ -1,6 +1,28 @@
 {
   "editions": [
     {
+      "date": "2026-11-25",
+      "headline": "ETPC: Polska naruszyła Konwencję, wydalając migranta na Białoruś",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-2",
+          "title": "Pochwalał zamach w Krakowie i zapowiadał kolejny. Zatrzymała go ABW"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Zełenski: USA chcą zakończyć negocjacje w grudniu lub styczniu"
+        }
+      ],
+      "facts": [
+        "Koala śpi nawet 20 godzin na dobę",
+        "Księżyc co roku oddala się od Ziemi o ok. 3,8 cm",
+        "W 1582 roku po 4 października był od razu 15 października"
+      ],
+      "concept": "Efekt widza (rozproszenie odpowiedzialności)"
+    },
+    {
       "date": "2026-11-24",
       "headline": "Rosyjski dron krótko naruszył polską przestrzeń powietrzną",
       "threads": [

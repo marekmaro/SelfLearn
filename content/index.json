@@ -1,6 +1,33 @@
 {
   "editions": [
     {
+      "date": "2026-11-26",
+      "headline": "Rząd: działanie Trybunału zagrożone. Konto TK poza NBP",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-3",
+          "title": "Kraków pomoże przedsiębiorcom z Rynku po zamachu"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Rosyjskie ataki: ofiary i przerwy w dostawach prądu"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-2",
+          "title": "Libia: dwóch żołnierzy zginęło w ataku na rosyjski okręt"
+        }
+      ],
+      "facts": [
+        "Placebo może działać, nawet gdy wiemy, że to placebo",
+        "Ciekły tlen jest niebieski i przyciąga go magnes",
+        "Żyrafa śpi zaledwie kilka godzin na dobę"
+      ],
+      "concept": "Iluzja kontroli"
+    },
+    {
       "date": "2026-11-25",
       "headline": "ETPC: Polska naruszyła Konwencję, wydalając migranta na Białoruś",
       "threads": [

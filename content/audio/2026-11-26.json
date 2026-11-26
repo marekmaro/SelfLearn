@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-26",
+  "file": "2026-11-26.mp3",
+  "url": "audio/2026-11-26.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-26.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "c6e746f52fe0642a",
+  "duration": 909.49,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 17.01
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Rząd: działanie Trybunału zagrożone. Konto TK poza NBP",
+      "start": 17.71,
+      "end": 61.54
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Tusk apeluje do prezydenta o podpis pod ustawą podatkową",
+      "start": 62.24,
+      "end": 110.59
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Kraków pomoże przedsiębiorcom z Rynku po zamachu",
+      "start": 111.29,
+      "end": 147.29
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Nowa opłata na rachunkach za prąd. Prosumenci zapłacą więcej",
+      "start": 147.99,
+      "end": 191.98
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Nie żyje Andrzej Domalik",
+      "start": 192.68,
+      "end": 228.12
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Rosyjskie ataki: ofiary i przerwy w dostawach prądu",
+      "start": 229.32,
+      "end": 265.25
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "USA proponują nowe cła dla 14 gospodarek, w tym UE",
+      "start": 265.95,
+      "end": 302.42
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Pożar cysterny pod Kairem. Ponad 30 ofiar",
+      "start": 303.12,
+      "end": 334.87
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Chiny: śledztwo wobec szefa partii w Szanghaju",
+      "start": 335.57,
+      "end": 368.52
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "El Niño przyciąga tropikalne zwierzęta do Kalifornii",
+      "start": 369.22,
+      "end": 403.61
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Media: Rosja może wkrótce wystrzelić satelitę z bronią jądrową",
+      "start": 404.81,
+      "end": 450.47
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Libia: dwóch żołnierzy zginęło w ataku na rosyjski okręt",
+      "start": 451.17,
+      "end": 480.84
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Black Friday to żniwa dla cyberprzestępców",
+      "start": 481.54,
+      "end": 511.76
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Firmy inwestują w AI, ale trudno im zmierzyć zyski",
+      "start": 512.46,
+      "end": 555.37
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Letni poziom witaminy D mówi więcej o zdrowiu niż zimowy",
+      "start": 556.07,
+      "end": 593.68
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Święto Dziękczynienia w kinach: „Focker-in-Law” i „Hexed”",
+      "start": 594.38,
+      "end": 627.66
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Ciekły tlen jest niebieski i przyciąga go magnes",
+      "start": 628.86,
+      "end": 655.97
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Żyrafa śpi zaledwie kilka godzin na dobę",
+      "start": 656.67,
+      "end": 680.78
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Placebo może działać, nawet gdy wiemy, że to placebo",
+      "start": 681.48,
+      "end": 713.9
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1855: Śmierć Adama Mickiewicza",
+      "start": 715.1,
+      "end": 730.74
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1939: Zatonięcie MS „Piłsudski”",
+      "start": 731.44,
+      "end": 748.81
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1991: Polska w Radzie Europy",
+      "start": 749.51,
+      "end": 769.66
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Iluzja kontroli",
+      "start": 770.86,
+      "end": 826.42
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Dlaczego śpimy: Sen REM jako „nocna terapia” emocji",
+      "start": 827.62,
+      "end": 891.5
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 892.7,
+      "end": 908.99
+    }
+  ]
+}

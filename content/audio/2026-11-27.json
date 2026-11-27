@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-27",
+  "file": "2026-11-27.mp3",
+  "url": "audio/2026-11-27.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-27.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "0a8b8a8d098287a8",
+  "duration": 884.22,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 15.89
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Prezes TK Bogdan Święczkowski zawieszony na 12 miesięcy",
+      "start": 16.59,
+      "end": 57.58
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "CBA w Enei, Totalizatorze Sportowym i PKW",
+      "start": 58.28,
+      "end": 99.86
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Zamach w Krakowie: 250 świadków, motyw wciąż niejasny",
+      "start": 100.56,
+      "end": 139
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "Śnieżyce na południu. Bielsko-Biała zablokowana",
+      "start": 139.7,
+      "end": 176.16
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Jagiellonia remisuje z Sunderlandem w Lidze Europy",
+      "start": 176.86,
+      "end": 207
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Sztorm w Święto Dziękczynienia. Parada Macy's przełożona",
+      "start": 208.2,
+      "end": 243.98
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Dwóch Włochów zginęło w ataku dronów w Kuwejcie",
+      "start": 244.68,
+      "end": 276.92
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Hiszpan Pablo Hernández de Cos ma pokierować EBC",
+      "start": 277.62,
+      "end": 317.17
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Zalana nielegalna kopalnia złota w Indonezji",
+      "start": 317.87,
+      "end": 349.79
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Wybuch w rafinerii w Bangkoku",
+      "start": 350.49,
+      "end": 380.51
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Strefa zakazu lotów przy wschodniej granicy",
+      "start": 381.71,
+      "end": 421.62
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "Belgia otworzyła największą w Europie fabrykę satelitów",
+      "start": 422.32,
+      "end": 465.82
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "MON podpisuje umowę z Palantirem na system Saturn",
+      "start": 466.52,
+      "end": 506.66
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Ebola w Kongu: ponad 12 tys. przypadków",
+      "start": 507.36,
+      "end": 543.02
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "Wraca serial „The Hunting Wives”",
+      "start": 543.72,
+      "end": 572.03
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Pingwin cesarski nurkuje na ponad pół kilometra",
+      "start": 573.23,
+      "end": 604.38
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Najstarsze zachowane zdjęcie naświetlano wiele godzin",
+      "start": 605.08,
+      "end": 637.88
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Doba na Jowiszu trwa niecałe 10 godzin",
+      "start": 638.58,
+      "end": 667.66
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1815: Konstytucja Królestwa Polskiego",
+      "start": 668.86,
+      "end": 699.61
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1915: Urodził się Stanisław Skalski",
+      "start": 700.31,
+      "end": 716
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1981: Otwarcie mostu Grota-Roweckiego",
+      "start": 716.7,
+      "end": 735.39
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Brzytwa Hanlona",
+      "start": 736.59,
+      "end": 790.96
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Dlaczego śpimy: Morał książki: sen to fundament, a nie strata czasu",
+      "start": 792.16,
+      "end": 865.31
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 866.51,
+      "end": 883.72
+    }
+  ]
+}

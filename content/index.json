@@ -1,6 +1,28 @@
 {
   "editions": [
     {
+      "date": "2026-11-27",
+      "headline": "Prezes TK Bogdan Święczkowski zawieszony na 12 miesięcy",
+      "threads": [
+        {
+          "name": "Zamach w Krakowie",
+          "item": "pl-3",
+          "title": "Zamach w Krakowie: 250 świadków, motyw wciąż niejasny"
+        },
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "bezpieczenstwo-1",
+          "title": "Strefa zakazu lotów przy wschodniej granicy"
+        }
+      ],
+      "facts": [
+        "Doba na Jowiszu trwa niecałe 10 godzin",
+        "Pingwin cesarski nurkuje na ponad pół kilometra",
+        "Najstarsze zachowane zdjęcie naświetlano wiele godzin"
+      ],
+      "concept": "Brzytwa Hanlona"
+    },
+    {
       "date": "2026-11-26",
       "headline": "Rząd: działanie Trybunału zagrożone. Konto TK poza NBP",
       "threads": [

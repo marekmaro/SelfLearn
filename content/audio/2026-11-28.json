@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-28",
+  "file": "2026-11-28.mp3",
+  "url": "audio/2026-11-28.mp3",
+  "source": "https://github.com/marekmaro/SelfLearn/releases/download/lektor/2026-11-28.mp3",
+  "voice": "pl_PL-gosia-medium",
+  "voiceId": "gosia",
+  "hash": "0f7afd56b0f11062",
+  "duration": 870.66,
+  "items": [
+    {
+      "id": "intro",
+      "chapter": "polska",
+      "label": "Co dziś w wydaniu",
+      "start": 0.3,
+      "end": 15.16
+    },
+    {
+      "id": "pl-1",
+      "chapter": "polska",
+      "label": "Weto prezydenta: bez zmian w PIT i CIT",
+      "start": 15.86,
+      "end": 65.17
+    },
+    {
+      "id": "pl-2",
+      "chapter": "polska",
+      "label": "Biegli o przyczynach katastrofy smoleńskiej",
+      "start": 65.87,
+      "end": 109.51
+    },
+    {
+      "id": "pl-3",
+      "chapter": "polska",
+      "label": "Najzimniejsza noc sezonu. Mróz do -14 stopni",
+      "start": 110.21,
+      "end": 141.51
+    },
+    {
+      "id": "pl-4",
+      "chapter": "polska",
+      "label": "UOKiK ostrzega przed fałszywymi promocjami na Black Friday",
+      "start": 142.21,
+      "end": 177.06
+    },
+    {
+      "id": "pl-5",
+      "chapter": "polska",
+      "label": "Zaginięcie Anny i Ernestyny. Nowe ustalenia po 33 latach",
+      "start": 177.76,
+      "end": 203.74
+    },
+    {
+      "id": "sw-1",
+      "chapter": "swiat",
+      "label": "Rosja uderzyła w Kijów rakietami balistycznymi",
+      "start": 204.94,
+      "end": 235.11
+    },
+    {
+      "id": "sw-2",
+      "chapter": "swiat",
+      "label": "Hiszpania wybiera w niedzielę nowy parlament",
+      "start": 235.81,
+      "end": 270.02
+    },
+    {
+      "id": "sw-3",
+      "chapter": "swiat",
+      "label": "Przywódca sekty z Kenii skazany także za śmierć 123 osób",
+      "start": 270.72,
+      "end": 305.1
+    },
+    {
+      "id": "sw-4",
+      "chapter": "swiat",
+      "label": "Argentyna zakazuje dodruku pieniędzy na wydatki rządu",
+      "start": 305.8,
+      "end": 339.53
+    },
+    {
+      "id": "sw-5",
+      "chapter": "swiat",
+      "label": "Putin przekazał flocie okręt podwodny z rakietami Cyrkon",
+      "start": 340.23,
+      "end": 372.1
+    },
+    {
+      "id": "bezpieczenstwo-1",
+      "chapter": "tematy",
+      "label": "Napisy „Sława UPA” na pomnikach na zlecenie rosyjskiego wywiadu?",
+      "start": 373.3,
+      "end": 412.93
+    },
+    {
+      "id": "bezpieczenstwo-2",
+      "chapter": "tematy",
+      "label": "Stopnie alarmowe przedłużone do końca lutego",
+      "start": 413.63,
+      "end": 435.88
+    },
+    {
+      "id": "technologia-1",
+      "chapter": "tematy",
+      "label": "SpaceX może wystrzelić milion satelitów-centrów danych",
+      "start": 436.58,
+      "end": 476.13
+    },
+    {
+      "id": "ai-1",
+      "chapter": "tematy",
+      "label": "Agenci AI na zakupach trafiają na blokady sklepów",
+      "start": 476.83,
+      "end": 514.51
+    },
+    {
+      "id": "zdrowie-1",
+      "chapter": "tematy",
+      "label": "Ministerstwo Zdrowia: weto to strata dla NFZ",
+      "start": 515.21,
+      "end": 548.81
+    },
+    {
+      "id": "filmy-1",
+      "chapter": "tematy",
+      "label": "„Igrzyska śmierci” wygrywają Święto Dziękczynienia",
+      "start": 549.51,
+      "end": 582.47
+    },
+    {
+      "id": "fact-2",
+      "chapter": "ciekawostki",
+      "label": "Najzimniejsze miejsca we Wszechświecie są w laboratoriach",
+      "start": 583.67,
+      "end": 608.34
+    },
+    {
+      "id": "fact-1",
+      "chapter": "ciekawostki",
+      "label": "Żaba, która zamarza na zimę",
+      "start": 609.04,
+      "end": 635.52
+    },
+    {
+      "id": "fact-3",
+      "chapter": "ciekawostki",
+      "label": "Efekt Mandeli: gdy wielu ludzi pamięta coś, czego nie było",
+      "start": 636.22,
+      "end": 674.66
+    },
+    {
+      "id": "otd-1",
+      "chapter": "historia",
+      "label": "1627: Bitwa pod Oliwą",
+      "start": 675.86,
+      "end": 692.71
+    },
+    {
+      "id": "otd-2",
+      "chapter": "historia",
+      "label": "1918: Ordynacja wyborcza i Marynarka Wojenna",
+      "start": 693.41,
+      "end": 713.47
+    },
+    {
+      "id": "otd-3",
+      "chapter": "historia",
+      "label": "1948: Urodziła się Agnieszka Holland",
+      "start": 714.17,
+      "end": 728.2
+    },
+    {
+      "id": "concept",
+      "chapter": "pojecie",
+      "label": "Pojęcie: Paradoks Abilene",
+      "start": 729.4,
+      "end": 788.28
+    },
+    {
+      "id": "book",
+      "chapter": "ksiazka",
+      "label": "Dlaczego śpimy: Tydzień z „Dlaczego śpimy”: sen jako fundament życia",
+      "start": 789.48,
+      "end": 851.8
+    },
+    {
+      "id": "evening",
+      "chapter": "wieczor",
+      "label": "Na wieczór",
+      "start": 853,
+      "end": 870.16
+    }
+  ]
+}

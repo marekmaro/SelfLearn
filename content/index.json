@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-11-28",
+      "headline": "Weto prezydenta: bez zmian w PIT i CIT",
+      "threads": [
+        {
+          "name": "Wojna w Ukrainie",
+          "item": "sw-1",
+          "title": "Rosja uderzyła w Kijów rakietami balistycznymi"
+        }
+      ],
+      "facts": [
+        "Żaba, która zamarza na zimę",
+        "Najzimniejsze miejsca we Wszechświecie są w laboratoriach",
+        "Efekt Mandeli: gdy wielu ludzi pamięta coś, czego nie było"
+      ],
+      "concept": "Paradoks Abilene"
+    },
+    {
       "date": "2026-11-27",
       "headline": "Prezes TK Bogdan Święczkowski zawieszony na 12 miesięcy",
       "threads": [
